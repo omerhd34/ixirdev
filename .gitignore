@@ -1,0 +1,22 @@
+# Veritabanı, lisans ve şifreleme anahtarları
+configuration.php
+
+# Derlenmiş şablonlar
+templates_c/*
+!templates_c/index.php
+
+# Kullanıcı yüklemeleri
+attachments/*
+!attachments/index.php
+downloads/*
+!downloads/index.php
+
+# Loglar ve ortam dosyaları
+*.log
+.env
+.env.*
+
+# İşletim sistemi
+Thumbs.db
+.DS_Store
+Desktop.ini
