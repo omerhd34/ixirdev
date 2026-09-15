@@ -16,6 +16,9 @@ downloads/*
 .env
 .env.*
 
+# SFTP şifresi
+.vscode/sftp.json
+
 # İşletim sistemi
 Thumbs.db
 .DS_Store
