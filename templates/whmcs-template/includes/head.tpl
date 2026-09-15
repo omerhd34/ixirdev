@@ -4,8 +4,11 @@
 <link href="{assetPath file='all.min.css'}?v={$versionHash}" rel="stylesheet">
 <link href="{$WEB_ROOT}/assets/css/fontawesome-all.min.css" rel="stylesheet">
 {assetExists file="custom.css"}
-<link href="{$__assetPath__}" rel="stylesheet">
+<link href="{$__assetPath__}?v={$versionHash}" rel="stylesheet">
 {/assetExists}
+
+<!-- Favicon -->
+<link rel="icon" href="{$WEB_ROOT}/templates/{$template}/img/favicon.ico?v={$versionHash}" type="image/x-icon">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
