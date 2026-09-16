@@ -1,3 +1,11 @@
+{include file="$template/components/hero/hero.tpl"}
+{include file="$template/components/packages/packages.tpl"}
+
+<section id="main-body">
+    <div class="container">
+        <div class="row">
+        <div class="col-xs-12 main-content">
+
 {if $twitterusername}
 
     <h2>{$LANG.twitterlatesttweets}</h2>
@@ -43,7 +51,7 @@
                             js = d.createElement(s); js.id = id;
                             js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
                             fjs.parentNode.insertBefore(js, fjs);
-                        }(document, 'script', 'facebook-jssdk'));
+                        }(document, s, 'facebook-jssdk'));
                     </script>
                     <div class="fb-like hidden-sm hidden-xs" data-layout="standard" data-href="{fqdnRoutePath('announcement-view', $announcement.id, $announcement.urlfriendlytitle)}" data-send="true" data-width="450" data-show-faces="true" data-action="recommend"></div>
                     <div class="fb-like hidden-lg hidden-md" data-layout="button_count" data-href="{fqdnRoutePath('announcement-view', $announcement.id, $announcement.urlfriendlytitle)}" data-send="true" data-width="450" data-show-faces="true" data-action="recommend"></div>
