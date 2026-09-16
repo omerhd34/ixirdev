@@ -263,7 +263,7 @@
                     {if isset($ixirCartCount) && $ixirCartCount > 0}
                         <span class="ixir-cart-count">{$ixirCartCount} ürün</span>
                     {/if}
-                    <button type="button" class="ixir-cart-close" title="Kapat" aria-label="Kapat">
+                    <button type="button" class="ixir-cart-close ixir-close" title="Kapat" aria-label="Kapat">
                         <i class="fas fa-times"></i>
                     </button>
                 </div>
