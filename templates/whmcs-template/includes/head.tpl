@@ -3,9 +3,16 @@
 {\WHMCS\View\Asset::fontCssInclude('raleway-family.css')}
 <link href="{assetPath file='all.min.css'}?v={$versionHash}" rel="stylesheet">
 <link href="{$WEB_ROOT}/assets/css/fontawesome-all.min.css" rel="stylesheet">
-{assetExists file="custom.css"}
+{assetExists file="base.css"}
 <link href="{$__assetPath__}?v={$versionHash}" rel="stylesheet">
 {/assetExists}
+<link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}" rel="stylesheet">
+{if $templatefile == 'homepage'}
+<link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/components/packages/packages.css?v={$versionHash}" rel="stylesheet">
+{/if}
+<link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}" rel="stylesheet">
 
 <!-- Favicon -->
 <link rel="icon" href="{$WEB_ROOT}/templates/{$template}/img/favicon.ico?v={$versionHash}" type="image/x-icon">
