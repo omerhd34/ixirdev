@@ -1,0 +1,174 @@
+.ixir-auth-page #main-body {
+  padding-top: 28px !important;
+  padding-bottom: 60px !important;
+}
+.ixir-auth {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+}
+.ixir-auth-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(36, 41, 53, 0.08);
+  padding: 36px 32px 28px;
+}
+.ixir-auth-head {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.ixir-auth-head h1 {
+  margin: 0 0 8px;
+  color: #242935;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.ixir-auth-head p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ixir-auth-form .form-group {
+  position: relative;
+  margin-bottom: 14px;
+}
+.ixir-auth-form .prepend-icon .field-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b93a3;
+  z-index: 2;
+  pointer-events: none;
+}
+.ixir-auth-form .prepend-icon .field,
+.ixir-auth-form .prepend-icon .form-control {
+  height: 48px;
+  padding: 10px 16px 10px 44px;
+  border: 1px solid #e4e7ee;
+  border-radius: 12px;
+  box-shadow: none;
+  background: #f7f8fb;
+  color: #242935;
+  font-size: 15px;
+}
+.ixir-auth-form .prepend-icon .field:focus,
+.ixir-auth-form .prepend-icon .form-control:focus {
+  border-color: #242935;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(36, 41, 53, 0.08);
+}
+.ixir-auth-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 6px 0 18px;
+  font-size: 13px;
+}
+.ixir-auth-remember {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-weight: 500;
+  color: #4b5563;
+  cursor: pointer;
+}
+.ixir-auth-remember input {
+  margin: 0;
+}
+.ixir-auth-forgot {
+  color: #242935;
+  font-weight: 600;
+  text-decoration: none;
+}
+.ixir-auth-forgot:hover,
+.ixir-auth-foot a:hover {
+  color: #c9a227;
+  text-decoration: none;
+}
+.ixir-auth-captcha {
+  margin-bottom: 16px;
+}
+.ixir-auth-submit {
+  display: block;
+  width: 100%;
+  height: 48px;
+  border: 0;
+  border-radius: 12px;
+  background: #242935 !important;
+  color: #fff !important;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: none !important;
+}
+.ixir-auth-submit:hover,
+.ixir-auth-submit:focus {
+  background: #1a1e29 !important;
+  color: #fbd746 !important;
+}
+.ixir-auth-foot {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #eef0f4;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+.ixir-auth-foot a {
+  margin-left: 6px;
+  color: #242935;
+  font-weight: 700;
+  text-decoration: none;
+}
+.ixir-auth-social {
+  margin-top: 18px;
+}
+.logincontainer {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(36, 41, 53, 0.08);
+  padding: 36px 32px 28px;
+}
+.logincontainer .header-lined {
+  text-align: center;
+  margin-bottom: 18px;
+}
+.logincontainer .header-lined h1 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #242935;
+}
+.logincontainer .header-lined small {
+  display: block;
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .ixir-auth-card,
+  .logincontainer {
+    padding: 28px 20px 22px;
+    border-radius: 14px;
+  }
+  .ixir-auth-head h1,
+  .logincontainer .header-lined h1 {
+    font-size: 24px;
+  }
+  .ixir-auth-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
