@@ -164,8 +164,43 @@ add_hook('ClientAreaPage', 1, function ($vars) {
         $items = [];
     }
 
-    return [
+    $result = [
         'ixirCartItems' => $items,
         'ixirCartCount' => count($items),
+        'ixirFirstName' => '',
+        'ixirLastName' => '',
     ];
+
+    if (!isset($vars['optionalFields']) || !is_array($vars['optionalFields'])) {
+        $result['optionalFields'] = [];
+    }
+    if (!array_key_exists('clientAlerts', $vars) || $vars['clientAlerts'] === null) {
+        $result['clientAlerts'] = [];
+    }
+    if (!array_key_exists('locales', $vars) || $vars['locales'] === null) {
+        $result['locales'] = [];
+    }
+
+    try {
+        $firstName = '';
+        $lastName = '';
+        $user = $vars['loggedinuser'] ?? null;
+        if (is_object($user)) {
+            $firstName = (string) ($user->firstName ?? $user->first_name ?? '');
+            $lastName = (string) ($user->lastName ?? $user->last_name ?? '');
+        } elseif (is_array($user)) {
+            $firstName = (string) ($user['firstName'] ?? $user['first_name'] ?? '');
+            $lastName = (string) ($user['lastName'] ?? $user['last_name'] ?? '');
+        }
+        if ($firstName === '' && !empty($vars['clientsdetails']) && is_array($vars['clientsdetails'])) {
+            $firstName = (string) ($vars['clientsdetails']['firstname'] ?? '');
+            $lastName = (string) ($vars['clientsdetails']['lastname'] ?? '');
+        }
+        $result['ixirFirstName'] = $firstName;
+        $result['ixirLastName'] = $lastName;
+    } catch (\Throwable $e) {
+        // Keep empty names rather than breaking the page after registration.
+    }
+
+    return $result;
 });
