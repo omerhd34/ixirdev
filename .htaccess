@@ -1,0 +1,76 @@
+Options -Indexes -MultiViews
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Giriş
+RewriteCond %{REQUEST_METHOD} POST
+RewriteRule ^giris/?$ index.php?rp=/login/validate [L,QSA]
+RewriteRule ^giris/dogrulama/?$ index.php?rp=/login/two-factor/challenge [L,QSA]
+RewriteRule ^giris/?$ index.php?rp=/login [L,QSA]
+
+# Kayıt / çıkış / şifre
+RewriteRule ^kayit/?$ register.php [L,QSA]
+RewriteRule ^cikis/?$ logout.php [L,QSA]
+RewriteRule ^sifremi-unuttum/?$ index.php?rp=/password/reset/begin [L,QSA]
+
+# Hesap
+RewriteRule ^hesap/profil/?$ ixir-route.php?ixir_rp=user-profile [L,QSA]
+RewriteRule ^hesap/sifre/?$ ixir-route.php?ixir_rp=user-password [L,QSA]
+RewriteRule ^hesap/guvenlik/?$ ixir-route.php?ixir_rp=user-security [L,QSA]
+
+# Müşteri paneli
+RewriteRule ^musteri-paneli/hizmet/([0-9]+)/?$ clientarea.php?action=productdetails&id=$1 [L,QSA]
+RewriteRule ^musteri-paneli/alan-adi/([0-9]+)/?$ clientarea.php?action=domaindetails&id=$1 [L,QSA]
+RewriteRule ^musteri-paneli/hizmetler/?$ clientarea.php?action=services [L,QSA]
+RewriteRule ^musteri-paneli/alan-adlari/?$ clientarea.php?action=domains [L,QSA]
+RewriteRule ^musteri-paneli/faturalar/?$ clientarea.php?action=invoices [L,QSA]
+RewriteRule ^musteri-paneli/teklifler/?$ clientarea.php?action=quotes [L,QSA]
+RewriteRule ^musteri-paneli/bakiye/?$ clientarea.php?action=addfunds [L,QSA]
+RewriteRule ^musteri-paneli/bilgilerim/?$ clientarea.php?action=details [L,QSA]
+RewriteRule ^musteri-paneli/kisiler/?$ clientarea.php?action=contacts [L,QSA]
+RewriteRule ^musteri-paneli/epostalar/?$ clientarea.php?action=emails [L,QSA]
+RewriteRule ^musteri-paneli/toplu-odeme/?$ clientarea.php?action=masspay [L,QSA]
+RewriteRule ^musteri-paneli/iptal/?$ clientarea.php?action=cancel [L,QSA]
+RewriteRule ^musteri-paneli/?$ clientarea.php [L,QSA]
+
+# Sepet
+RewriteRule ^sepet/goruntule/?$ cart.php?a=view [L,QSA]
+RewriteRule ^sepet/odeme/?$ cart.php?a=checkout [L,QSA]
+RewriteRule ^sepet/?$ cart.php [L,QSA]
+
+# Destek ve içerik
+RewriteRule ^destek/yeni/?$ submitticket.php [L,QSA]
+RewriteRule ^destek/talep/?$ viewticket.php [L,QSA]
+RewriteRule ^destek/?$ supporttickets.php [L,QSA]
+RewriteRule ^bilgi-bankasi/([0-9]+)/[0-9A-Za-z-]+\.html$ knowledgebase.php?action=displayarticle&id=$1 [L,NC]
+RewriteRule ^bilgi-bankasi/([0-9]+)/([^/]*)$ knowledgebase.php?action=displaycat&catid=$1 [L,NC]
+RewriteRule ^bilgi-bankasi/?$ knowledgebase.php [L,QSA]
+RewriteRule ^duyurular/([0-9]+)/[0-9A-Za-z-]+\.html$ announcements.php?action=view&id=$1 [L,NC]
+RewriteRule ^duyurular/?$ announcements.php [L,QSA]
+RewriteRule ^dosyalar/([0-9]+)/([^/]*)$ downloads.php?action=displaycat&catid=$1 [L,NC]
+RewriteRule ^dosyalar/?$ downloads.php [L,QSA]
+RewriteRule ^sunucu-durumu/?$ serverstatus.php [L,QSA]
+RewriteRule ^iletisim/?$ contact.php [L,QSA]
+RewriteRule ^ortaklik/?$ affiliates.php [L,QSA]
+RewriteRule ^domain-sorgu/?$ cart.php?a=add&domain=register [L,QSA]
+RewriteRule ^domain-sorgula/?$ cart.php?a=add&domain=register [L,QSA]
+RewriteRule ^domain-transfer/?$ cart.php?a=add&domain=transfer [L,QSA]
+RewriteRule ^store/domain/register/?$ cart.php?a=add&domain=register [L,QSA]
+RewriteRule ^store/domain/transfer/?$ cart.php?a=add&domain=transfer [L,QSA]
+RewriteRule ^(webhosting|windows-hosting|wordpress-hosting|kurumsal-mail-hosting|developer-hosting|cloud-drive|reseller-hosting|windows-reseller-hosting|kurumsal-mail-server|outbound-mail-gateway|cloud|dedicated-server|colocation|ek-servisler|pci-tarama|kurumsal|ssl-sertifikalari|website-olusturucu|antispam)/?$ ixir-page.php?slug=$1 [L,QSA]
+RewriteRule ^whois-sorgulama/?$ ixir-whois.php [L,QSA]
+RewriteRule ^whois/?$ ixir-whois.php [L,QSA]
+RewriteRule ^ssl-yapilandir/?$ configuressl.php [L,QSA]
+RewriteRule ^yukselt/?$ upgrade.php [L,QSA]
+RewriteRule ^abonelik-iptal/?$ unsubscribe.php [L,QSA]
+RewriteRule ^fatura/([0-9]+)/?$ viewinvoice.php?id=$1 [L,QSA]
+RewriteRule ^teklif/([0-9]+)/?$ viewquote.php?id=$1 [L,QSA]
+
+# Kalan WHMCS rotaları (.php olmadan)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
