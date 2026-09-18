@@ -5,6 +5,9 @@ if (!defined('WHMCS')) {
 }
 
 require_once dirname(__DIR__) . '/ixir-product-pages.php';
+require_once dirname(__DIR__) . '/ixir-inbound-route.php';
+
+ixir_apply_inbound_route();
 
 function ixir_web_root()
 {
@@ -44,9 +47,10 @@ function ixir_url_maps()
             '/login/validate' => 'giris',
             '/login/two-factor/challenge' => 'giris/dogrulama',
             '/login/two-factor/challenge/verify' => 'giris/dogrulama',
-            '/login/two-factor/challenge/backup-verify' => 'giris/dogrulama',
+            '/login/two-factor/challenge/backup-verify' => 'giris/dogrulama/yedek',
             '/logout' => 'cikis',
             '/password/reset/begin' => 'sifremi-unuttum',
+            '/password/reset' => 'sifremi-unuttum',
             '/user/profile' => 'hesap/profil',
             '/user/password' => 'hesap/sifre',
             '/user/security' => 'hesap/guvenlik',
@@ -176,9 +180,21 @@ function ixir_make_friendly($url)
             'user-profile' => 'hesap/profil',
             'user-password' => 'hesap/sifre',
             'user-security' => 'hesap/guvenlik',
+            'login' => 'giris',
+            'login-validate' => 'giris',
+            'login-2fa' => 'giris/dogrulama',
+            'login-2fa-verify' => 'giris/dogrulama',
+            'login-2fa-backup' => 'giris/dogrulama/yedek',
+            'password-reset' => 'sifremi-unuttum',
+            'password-reset-validate' => 'sifremi-unuttum',
         ];
         if (isset($friendly[$route])) {
-            return ixir_build_url($friendly[$route], ixir_query_without($query, ['ixir_rp', 'rp']), $fragment);
+            $path = $friendly[$route];
+            $suffix = trim((string) ($params['ixir_suffix'] ?? ''), '/');
+            if ($suffix !== '' && $route === 'password-reset') {
+                $path .= '/' . $suffix;
+            }
+            return ixir_build_url($path, ixir_query_without($query, ['ixir_rp', 'rp', 'ixir_suffix']), $fragment);
         }
     }
 
@@ -290,6 +306,9 @@ function ixir_current_request_url()
 
 function ixir_should_redirect_request()
 {
+    if (!empty($_SERVER['IXIR_INTERNAL_RP'])) {
+        return false;
+    }
     $method = strtoupper($_SERVER['REQUEST_METHOD'] ?? 'GET');
     if ($method !== 'GET' && $method !== 'HEAD') {
         return false;
@@ -380,7 +399,7 @@ function ixir_smarty_urls()
 }
 
 add_hook('ClientAreaPage', -9999, function ($vars) {
-    $uri = $_SERVER['REQUEST_URI'] ?? '';
+    $uri = ixir_current_request_url();
     if (preg_match('#/admin(?:/|$)#i', $uri)) {
         return [];
     }
