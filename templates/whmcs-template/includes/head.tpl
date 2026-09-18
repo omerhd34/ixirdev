@@ -1,6 +1,4 @@
 <!-- Styling -->
-{\WHMCS\View\Asset::fontCssInclude('open-sans-family.css')}
-{\WHMCS\View\Asset::fontCssInclude('raleway-family.css')}
 <link href="{assetPath file='all.min.css'}?v={$versionHash}" rel="stylesheet">
 <link href="{$WEB_ROOT}/assets/css/fontawesome-all.min.css" rel="stylesheet">
 {assetExists file="base.css"}
@@ -9,10 +7,19 @@
 <link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}" rel="stylesheet">
 <link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}" rel="stylesheet">
 {if $templatefile == 'homepage'}
-<link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}" rel="stylesheet">
-<link href="{$WEB_ROOT}/templates/{$template}/components/packages/packages.css?v={$versionHash}" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/packages/packages.css?v={$versionHash}" rel="stylesheet">
 {/if}
 <link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}" rel="stylesheet">
+{if $showingLoginPage || $templatefile == 'login' || $templatefile == 'logout'}
+ <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}" rel="stylesheet">
+{/if}
+{if $templatefile == 'whois-sorgulama'}
+ <link href="{$WEB_ROOT}/templates/{$template}/css/whois.css?v={$versionHash}" rel="stylesheet">
+{/if}
+{if $templatefile == 'product-landing'}
+ <link href="{$WEB_ROOT}/templates/{$template}/css/product-landing.css?v={$versionHash}" rel="stylesheet">
+{/if}
 
 <!-- Favicon -->
 <link rel="icon" href="{$WEB_ROOT}/templates/{$template}/img/favicon.ico?v={$versionHash}" type="image/x-icon">
@@ -25,16 +32,16 @@
 <![endif]-->
 
 <script type="text/javascript">
-    var csrfToken = '{$token}',
-        markdownGuide = '{lang|addslashes key="markdown.title"}',
-        locale = '{if !empty($mdeLocale)}{$mdeLocale}{else}en{/if}',
-        saved = '{lang|addslashes key="markdown.saved"}',
-        saving = '{lang|addslashes key="markdown.saving"}',
-        whmcsBaseUrl = "{\WHMCS\Utility\Environment\WebHelper::getBaseUrl()}";
-    {if $captcha}{$captcha->getPageJs()}{/if}
+ var csrfToken = '{$token}',
+ markdownGuide = '{lang|addslashes key="markdown.title"}',
+ locale = '{if !empty($mdeLocale)}{$mdeLocale}{else}en{/if}',
+ saved = '{lang|addslashes key="markdown.saved"}',
+ saving = '{lang|addslashes key="markdown.saving"}',
+ whmcsBaseUrl = "{\WHMCS\Utility\Environment\WebHelper::getBaseUrl()}";
+ {if $captcha && !($loggedin && $templatefile == 'clientregister')}{$captcha->getPageJs()}{/if}
 </script>
 <script src="{assetPath file='scripts.min.js'}?v={$versionHash}"></script>
 
 {if $templatefile == "viewticket" && !$loggedin}
-  <meta name="robots" content="noindex" />
+ <meta name="robots" content="noindex" />
 {/if}
