@@ -5,16 +5,22 @@ DirectoryIndex index.php
 RewriteEngine On
 RewriteBase /
 
-# Giriş
+# Giriş 
 RewriteCond %{REQUEST_METHOD} POST
-RewriteRule ^giris/?$ index.php?rp=/login/validate [L,QSA]
-RewriteRule ^giris/dogrulama/?$ index.php?rp=/login/two-factor/challenge [L,QSA]
-RewriteRule ^giris/?$ index.php?rp=/login [L,QSA]
+RewriteRule ^giris/?$ ixir-route.php?ixir_rp=login-validate [L,QSA]
+RewriteRule ^giris/dogrulama/yedek/?$ ixir-route.php?ixir_rp=login-2fa-backup [L,QSA]
+RewriteCond %{REQUEST_METHOD} POST
+RewriteRule ^giris/dogrulama/?$ ixir-route.php?ixir_rp=login-2fa-verify [L,QSA]
+RewriteRule ^giris/dogrulama/?$ ixir-route.php?ixir_rp=login-2fa [L,QSA]
+RewriteRule ^giris/?$ ixir-route.php?ixir_rp=login [L,QSA]
 
 # Kayıt / çıkış / şifre
 RewriteRule ^kayit/?$ register.php [L,QSA]
 RewriteRule ^cikis/?$ logout.php [L,QSA]
-RewriteRule ^sifremi-unuttum/?$ index.php?rp=/password/reset/begin [L,QSA]
+RewriteCond %{REQUEST_METHOD} POST
+RewriteRule ^sifremi-unuttum/?$ ixir-route.php?ixir_rp=password-reset-validate [L,QSA]
+RewriteRule ^sifremi-unuttum/(.+)$ ixir-route.php?ixir_rp=password-reset&ixir_suffix=$1 [L,QSA]
+RewriteRule ^sifremi-unuttum/?$ ixir-route.php?ixir_rp=password-reset [L,QSA]
 
 # Hesap
 RewriteRule ^hesap/profil/?$ ixir-route.php?ixir_rp=user-profile [L,QSA]
