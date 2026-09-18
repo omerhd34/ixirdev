@@ -11,6 +11,11 @@
   left: 0;
   top: 0;
   overflow: visible;
+  --ixir-nav-cart-pad: 20px;
+  --ixir-nav-cart-icon: 22px;
+  --ixir-nav-cart-slot: calc(
+    var(--ixir-nav-cart-pad) + var(--ixir-nav-cart-icon)
+  );
 }
 .ixir-header .topbar {
   position: relative;
@@ -449,6 +454,7 @@
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  padding-right: var(--ixir-nav-cart-slot);
 }
 .mega-menu-header .col-md-4,
 .mega-menu-header .col-md-6 {
@@ -687,7 +693,7 @@
 .ixir-header .nav-cart,
 .ixir-header .ixir-nav > li.nav-cart {
   position: relative !important;
-  padding-left: 20px;
+  padding-left: var(--ixir-nav-cart-pad);
   margin-left: 10px;
   border-left: 1px solid #e7e7e8;
 }
@@ -701,8 +707,8 @@
   padding: 25px 0 !important;
 }
 .ixir-header .nav-cart > a > i {
-  font-size: 22px;
-  width: 1em;
+  font-size: var(--ixir-nav-cart-icon);
+  width: var(--ixir-nav-cart-icon);
   position: static;
   line-height: 1;
   text-align: right;
@@ -1577,8 +1583,11 @@ body.ixir-mobile-menu-open {
   .ixir-header .ixir-nav > li:not(.nav-cart) > a > i {
     display: none !important;
   }
+  .ixir-header {
+    --ixir-nav-cart-pad: 12px;
+  }
   .ixir-header .ixir-nav > li.nav-cart {
-    padding-left: 12px;
+    padding-left: var(--ixir-nav-cart-pad);
     margin-left: 6px;
   }
   .ixir-header .ixir-nav > li.nav-cart > a {
