@@ -6,99 +6,158 @@
   margin-top: -48px;
   padding: 0 0 20px;
 }
-.ixir-packages .row {
-  display: flex;
-  flex-wrap: wrap;
+.ixir-packages-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
   align-items: stretch;
-}
-.ixir-packages .col-md-4 {
-  display: flex;
 }
 .ixir-package {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "copy"
+    "features"
+    "cta";
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
   overflow: hidden;
+  padding: 18px;
   background-color: #fff;
-  border: 1px solid #f1f2f5;
+  border: 1px solid #e8edf4;
+  border-radius: 16px;
   box-shadow:
-    0 1px 1px rgba(44, 50, 66, 0.06),
-    0 8px 8px rgba(44, 50, 66, 0.01);
-  padding: 30px;
+    0 1px 1px rgba(44, 50, 66, 0.05),
+    0 10px 24px rgba(44, 50, 66, 0.05);
   color: #242736;
-  margin-bottom: 24px;
   container-type: inline-size;
   container-name: package;
 }
 .ixir-package-visual {
   position: absolute;
-  top: 8px;
+  top: 0;
   right: 0;
-  width: 156px;
-  height: 118px;
+  z-index: 0;
+  width: clamp(150px, 52cqi, 230px);
+  height: clamp(140px, 48cqi, 210px);
   overflow: hidden;
   pointer-events: none;
-  z-index: 0;
 }
 .ixir-package-visual img {
   position: absolute;
   top: 0;
   right: 0;
-  height: 158px;
+  height: clamp(170px, 62cqi, 240px);
   width: auto;
   max-width: none;
+  display: block;
 }
 .ixir-package--cloud .ixir-package-visual img {
-  right: -8px;
-  height: 148px;
-  top: 6px;
+  right: -6px;
+  height: clamp(160px, 58cqi, 228px);
+  top: 4px;
 }
-.ixir-package-main {
+.ixir-package-copy,
+.ixir-package-features,
+.ixir-package-cta {
   position: relative;
   z-index: 1;
 }
-.ixir-package-title {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0 0 5px;
-  color: #242736;
-  line-height: 1.3;
-  padding-right: 132px;
+.ixir-package-copy {
+  grid-area: copy;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0 clamp(108px, 46cqi, 190px) 12px 0;
 }
-.ixir-package-title i {
-  margin-right: 8px;
+.ixir-package-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 8px;
+  padding: 4px 10px 4px 8px;
+  border-radius: 999px;
+  background: #eef3ff;
   color: #386ce0;
-  font-size: 24px;
-  width: 1.15em;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.ixir-package-kicker i {
+  font-size: 12px;
+  width: 1em;
   text-align: center;
-  vertical-align: -2px;
+}
+.ixir-package--wordpress .ixir-package-kicker {
+  background: #eef1ff;
+  color: #4f46e5;
+}
+.ixir-package--cloud .ixir-package-kicker {
+  background: #e7f6f5;
+  color: #0f766e;
+}
+.ixir-package-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: #242736;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
 }
 .ixir-package-desc {
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.45;
   color: #4a5160;
-  border-bottom: 1px solid #d4dbe0;
-  padding: 0 132px 15px 0;
   margin: 0;
-  box-sizing: content-box;
-  min-height: 2.8em;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  overflow: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.ixir-package-features {
+  grid-area: features;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+.ixir-package-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15.5px;
+  font-weight: 400;
+  padding: 6px 0;
+  color: #242736;
+  line-height: 1.4;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  min-width: 0;
+}
+.ixir-package-features li i {
+  margin: 0.15em 0 0;
+  color: #5b6578;
+  width: 1.15em;
+  flex: 0 0 1.15em;
+  text-align: center;
+  line-height: 1;
 }
 .ixir-package-cta {
+  grid-area: cta;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px 16px;
-  margin: auto 0 0;
-  padding: 14px 16px;
-  background: linear-gradient(180deg, #f7f9fd 0%, #f3f6fb 100%);
-  border: 1px solid #e8edf4;
-  border-radius: 12px;
+  flex-wrap: wrap;
+  gap: 12px 14px;
+  align-self: end;
+  padding: 12px 0 0;
+  border-top: 1px solid #eef1f6;
+  min-width: 0;
 }
 .ixir-package-price {
   margin: 0;
@@ -110,32 +169,32 @@
   -moz-user-select: none;
 }
 .ixir-package-old {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #8a93a3;
   text-decoration: line-through;
   line-height: 1;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 .ixir-package-new {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 6px;
   line-height: 1;
   color: #242736;
-  white-space: nowrap;
 }
 .ixir-package-amount {
   display: inline-flex;
   align-items: baseline;
-  font-size: 44px;
+  font-size: 32px;
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1;
 }
 .ixir-package-amount span {
-  font-size: 24px;
+  font-size: 0.55em;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -144,16 +203,16 @@
   flex-direction: column;
   justify-content: flex-end;
   gap: 2px;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 .ixir-package-meta b {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.1;
   color: #242736;
 }
 .ixir-package-meta small {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.1;
   color: #6b7385;
@@ -161,9 +220,9 @@
 .ixir-package-order {
   position: relative;
   margin: 0;
-  flex: 0 0 auto;
-  flex-shrink: 0;
+  flex: 0 1 auto;
   align-self: center;
+  min-width: 0;
 }
 .ixir-packages .ixir-package-order .btn,
 .ixir-packages .ixir-package-order .btn.btn-primary {
@@ -171,9 +230,10 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  box-sizing: border-box;
   font-size: 14px;
   height: 42px;
-  min-width: 108px;
+  min-width: 96px;
   font-weight: 600;
   padding: 0 16px !important;
   border: 0;
@@ -182,6 +242,7 @@
   background-color: #386ce0 !important;
   line-height: 1;
   width: auto;
+  max-width: 100%;
   position: relative;
   z-index: 1;
   white-space: nowrap;
@@ -211,144 +272,87 @@
 .ixir-packages .ixir-package-order .btn:focus i {
   transform: translateX(2px);
 }
-.ixir-package-features {
-  position: relative;
-  z-index: 1;
-  list-style: none;
-  padding: 0;
-  margin: 16px 0 20px;
-  flex: 1 1 auto;
-}
-.ixir-package-features li {
-  font-size: 16px;
-  font-weight: 400;
-  padding: 7px 0;
-  color: #242736;
-  line-height: 1.35;
-}
-.ixir-package-features li i {
-  margin-right: 10px;
-  color: #4a5160;
-  width: 1.15em;
-  text-align: center;
-}
-.ixir-package-features li img {
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
-  padding-right: 6px;
-  position: relative;
-  top: -1px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
-}
 .ixir-packages ~ #main-body {
   padding-top: 20px !important;
 }
-@media only screen and (max-width: 1199px) {
-  .ixir-package-amount {
-    font-size: 38px;
-  }
-  .ixir-package-amount span {
-    font-size: 22px;
-  }
-  .ixir-packages .ixir-package-order .btn,
-  .ixir-packages .ixir-package-order .btn.btn-primary {
-    min-width: 96px;
-    padding: 0 14px !important;
-  }
-}
-@media only screen and (max-width: 991px) {
+
+@media only screen and (min-width: 640px) and (max-width: 1099px) {
   .ixir-packages {
     margin-top: -40px;
   }
-  .ixir-packages .row {
-    display: block;
-  }
-  .ixir-packages .col-md-4 {
-    display: block;
-  }
   .ixir-package {
-    margin-bottom: 20px;
+    padding: 22px;
   }
-  .ixir-package-amount {
-    font-size: 48px;
+  .ixir-package-copy {
+    padding-right: clamp(160px, 28cqi, 240px);
   }
-  .ixir-package-amount span {
-    font-size: 26px;
+  .ixir-package-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 16px;
   }
 }
+
+@media only screen and (min-width: 1100px) {
+  .ixir-packages-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .ixir-package {
+    padding: 20px;
+  }
+  .ixir-package-title {
+    font-size: 19px;
+  }
+  .ixir-package-desc {
+    min-height: 2.9em;
+  }
+  .ixir-package-amount {
+    font-size: 36px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .ixir-packages {
     margin-top: 0;
     padding: 16px 0 8px;
   }
+}
+
+@media only screen and (max-width: 639px) {
   .ixir-package {
-    padding: 24px 20px;
+    padding: 16px;
+  }
+  .ixir-package-amount {
+    font-size: 28px;
   }
 }
-@media only screen and (max-width: 420px) {
+
+@container package (max-width: 250px) {
+  .ixir-package-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .ixir-package-order,
+  .ixir-packages .ixir-package-order .btn,
+  .ixir-packages .ixir-package-order .btn.btn-primary {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+}
+
+@container package (max-width: 200px) {
   .ixir-package-visual {
-    width: 120px;
-    height: 112px;
+    display: none;
   }
-  .ixir-package-visual img {
-    height: 150px;
-  }
-  .ixir-package--cloud .ixir-package-visual img {
-    height: 140px;
-    top: 4px;
+  .ixir-package-copy {
+    padding-right: 0;
   }
   .ixir-package-title {
-    padding-right: 110px;
+    font-size: 16px;
   }
-  .ixir-package-desc {
-    padding-right: 110px;
-  }
-  .ixir-package-cta {
-    flex-direction: column;
-    align-items: stretch;
-    margin-right: 0;
-    padding: 12px;
-  }
-  .ixir-package-order,
-  .ixir-packages .ixir-package-order .btn,
-  .ixir-packages .ixir-package-order .btn.btn-primary {
-    width: 100%;
-    min-width: 0;
-  }
-}
-@container package (max-width: 360px) {
-  .ixir-package-visual {
-    width: 128px;
-    height: 118px;
-  }
-  .ixir-package-visual img {
-    height: 155px;
-  }
-  .ixir-package--cloud .ixir-package-visual img {
-    height: 148px;
-    top: 4px;
-  }
-  .ixir-package-title,
-  .ixir-package-desc {
-    padding-right: 118px;
-  }
-  .ixir-package-cta {
-    margin-right: 0;
-  }
-}
-@container package (max-width: 320px) {
-  .ixir-package-cta {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 12px;
-  }
-  .ixir-package-order,
-  .ixir-packages .ixir-package-order .btn,
-  .ixir-packages .ixir-package-order .btn.btn-primary {
-    width: 100%;
-    min-width: 0;
+  .ixir-package-amount {
+    font-size: 24px;
   }
 }
