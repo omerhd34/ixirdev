@@ -1,0 +1,97 @@
+.ixir-landing {
+  max-width: 760px;
+  margin: 0 auto 12px;
+}
+.ixir-landing-hero {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(36, 41, 53, 0.08);
+  padding: 32px 28px;
+  text-align: center;
+}
+.ixir-landing-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background: #f7f8fb;
+  color: #242935;
+  font-size: 28px;
+}
+.ixir-landing-hero p {
+  margin: 0 0 22px;
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.55;
+}
+.ixir-landing-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.ixir-landing-actions .btn-primary {
+  height: 46px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 12px;
+  background: #242935 !important;
+  color: #fff !important;
+  font-weight: 700;
+  line-height: 46px;
+}
+.ixir-landing-actions .btn-primary:hover,
+.ixir-landing-actions .btn-primary:focus {
+  background: #1a1e29 !important;
+  color: #fbd746 !important;
+}
+.ixir-landing-actions .btn-default {
+  height: 46px;
+  padding: 0 22px;
+  border-radius: 12px;
+  line-height: 44px;
+  font-weight: 700;
+}
+.ixir-landing-points {
+  margin: 16px 0 0;
+  padding: 22px 24px;
+  list-style: none;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(36, 41, 53, 0.08);
+}
+.ixir-landing-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 10px;
+  color: #374151;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.ixir-landing-points li:last-child {
+  margin-bottom: 0;
+}
+.ixir-landing-points i {
+  margin-top: 3px;
+  color: #16a34a;
+}
+.ixir-landing-note {
+  margin-top: 14px;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .ixir-landing-hero {
+    padding: 26px 18px;
+  }
+  .ixir-landing-actions .btn-primary,
+  .ixir-landing-actions .btn-default {
+    width: 100%;
+  }
+}
