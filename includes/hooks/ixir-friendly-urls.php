@@ -20,7 +20,8 @@ function ixir_url_maps()
     return [
         'files' => [
             'clientarea.php' => 'musteri-paneli',
-            'register.php' => 'kayit',
+            'register.php' => 'hesabim',
+            'ixir-hesabim.php' => 'hesabim',
             'cart.php' => 'sepet',
             'logout.php' => 'cikis',
             'contact.php' => 'iletisim',
@@ -38,23 +39,23 @@ function ixir_url_maps()
             'configuressl.php' => 'ssl-yapilandir',
             'upgrade.php' => 'yukselt',
             'unsubscribe.php' => 'abonelik-iptal',
-            'pwreset.php' => 'sifremi-unuttum',
+            'pwreset.php' => 'hesabim',
             'ixir-whois.php' => 'whois-sorgulama',
             'index.php' => '',
         ],
         'rp' => [
-            '/login' => 'giris',
-            '/login/validate' => 'giris',
+            '/login' => 'hesabim',
+            '/login/validate' => 'hesabim',
             '/login/two-factor/challenge' => 'giris/dogrulama',
             '/login/two-factor/challenge/verify' => 'giris/dogrulama',
             '/login/two-factor/challenge/backup-verify' => 'giris/dogrulama/yedek',
             '/logout' => 'cikis',
-            '/password/reset/begin' => 'sifremi-unuttum',
-            '/password/reset' => 'sifremi-unuttum',
+            '/password/reset/begin' => 'hesabim',
+            '/password/reset' => 'hesabim',
             '/user/profile' => 'hesap/profil',
             '/user/password' => 'hesap/sifre',
             '/user/security' => 'hesap/guvenlik',
-            '/register' => 'kayit',
+            '/register' => 'hesabim',
             '/cart' => 'sepet',
             '/clientarea' => 'musteri-paneli',
             '/contact' => 'iletisim',
@@ -180,22 +181,32 @@ function ixir_make_friendly($url)
             'user-profile' => 'hesap/profil',
             'user-password' => 'hesap/sifre',
             'user-security' => 'hesap/guvenlik',
-            'login' => 'giris',
-            'login-validate' => 'giris',
+            'login' => 'hesabim',
+            'login-validate' => 'hesabim',
             'login-2fa' => 'giris/dogrulama',
             'login-2fa-verify' => 'giris/dogrulama',
             'login-2fa-backup' => 'giris/dogrulama/yedek',
-            'password-reset' => 'sifremi-unuttum',
-            'password-reset-validate' => 'sifremi-unuttum',
+            'password-reset' => 'hesabim',
+            'password-reset-validate' => 'hesabim',
         ];
         if (isset($friendly[$route])) {
             $path = $friendly[$route];
             $suffix = trim((string) ($params['ixir_suffix'] ?? ''), '/');
+            $rest = ixir_query_without($query, ['ixir_rp', 'rp', 'ixir_suffix']);
             if ($suffix !== '' && $route === 'password-reset') {
-                $path .= '/' . $suffix;
+                return ixir_build_url('hesabim/sifre/' . $suffix, $rest, $fragment);
             }
-            return ixir_build_url($path, ixir_query_without($query, ['ixir_rp', 'rp', 'ixir_suffix']), $fragment);
+            if ($route === 'password-reset' || $route === 'password-reset-validate') {
+                parse_str($rest, $restParams);
+                $restParams['panel'] = 'sifre';
+                $rest = http_build_query($restParams, '', '&');
+            }
+            return ixir_build_url($path, $rest, $fragment);
         }
+    }
+
+    if ($file === 'ixir-hesabim.php') {
+        return ixir_build_url('hesabim', $query, $fragment);
     }
 
     if ($file === 'ixir-page.php') {
@@ -215,6 +226,10 @@ function ixir_make_friendly($url)
             return ixir_build_url('/', $rest, $fragment);
         }
         $rp = '/' . ltrim($rp, '/');
+        $resetUrl = ixir_friendly_password_reset($rp, $rest, $fragment);
+        if ($resetUrl !== null) {
+            return $resetUrl;
+        }
         if (isset($maps['rp'][$rp])) {
             return ixir_build_url($maps['rp'][$rp], $rest, $fragment);
         }
@@ -277,6 +292,10 @@ function ixir_make_friendly($url)
         return ixir_build_url('teklif', $query, $fragment);
     }
 
+    if ($file === 'pwreset.php') {
+        return ixir_friendly_password_reset('/password/reset', $query, $fragment);
+    }
+
     if (isset($maps['files'][$file]) && $file !== 'index.php') {
         return ixir_build_url($maps['files'][$file], $query, $fragment);
     }
@@ -287,6 +306,10 @@ function ixir_make_friendly($url)
         $relative = substr($relative, strlen($root));
     }
     $relative = '/' . ltrim($relative, '/');
+    $resetUrl = ixir_friendly_password_reset($relative, $query, $fragment);
+    if ($resetUrl !== null) {
+        return $resetUrl;
+    }
     if (isset($maps['rp'][$relative])) {
         return ixir_build_url($maps['rp'][$relative], $query, $fragment);
     }
@@ -297,6 +320,24 @@ function ixir_make_friendly($url)
     }
 
     return $url;
+}
+
+function ixir_friendly_password_reset($path, $query = '', $fragment = '')
+{
+    $path = '/' . ltrim(strtolower((string) $path), '/');
+    $path = rtrim($path, '/') ?: '/';
+
+    if ($path === '/sifremi-unuttum' || $path === '/password/reset' || $path === '/password/reset/begin') {
+        parse_str(str_replace('&amp;', '&', html_entity_decode((string) $query, ENT_QUOTES, 'UTF-8')), $params);
+        $params['panel'] = 'sifre';
+        return ixir_build_url('hesabim', http_build_query($params, '', '&'), $fragment);
+    }
+
+    if (preg_match('#^/(?:sifremi-unuttum|password/reset)/(.+)$#', $path, $match)) {
+        return ixir_build_url('hesabim/sifre/' . $match[1], $query, $fragment);
+    }
+
+    return null;
 }
 
 function ixir_current_request_url()
@@ -377,8 +418,9 @@ function ixir_smarty_urls()
     $base = $root === '' ? '' : $root;
     return [
         'home' => $base . '/',
-        'login' => $base . '/giris',
-        'register' => $base . '/kayit',
+        'login' => $base . '/hesabim',
+        'register' => $base . '/hesabim',
+        'account' => $base . '/hesabim',
         'clientarea' => $base . '/musteri-paneli',
         'services' => $base . '/musteri-paneli/hizmetler',
         'domains' => $base . '/musteri-paneli/alan-adlari',
@@ -394,7 +436,7 @@ function ixir_smarty_urls()
         'domainTransfer' => $base . '/domain-transfer',
         'whois' => $base . '/whois-sorgulama',
         'logout' => $base . '/cikis',
-        'forgot' => $base . '/sifremi-unuttum',
+        'forgot' => $base . '/hesabim?panel=sifre',
     ];
 }
 
