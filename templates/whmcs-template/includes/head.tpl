@@ -2,15 +2,24 @@
 <link href="{assetPath file='all.min.css'}?v={$versionHash}" rel="stylesheet">
 <link href="{$WEB_ROOT}/assets/css/fontawesome-all.min.css" rel="stylesheet">
 {assetExists file="base.css"}
-<link href="{$__assetPath__}?v={$versionHash}" rel="stylesheet">
+<link href="{$__assetPath__}?v={$versionHash}-r5" rel="stylesheet">
 {/assetExists}
-<link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r9" rel="stylesheet">
 <link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}" rel="stylesheet">
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}" rel="stylesheet">
  <link href="{$WEB_ROOT}/templates/{$template}/components/packages/packages.css?v={$versionHash}" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/promo-carousel/promo-carousel.css?v={$versionHash}-r5"
+  rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/trust/trust.css?v={$versionHash}-r2" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/turkey-stats/turkey-stats.css?v={$versionHash}-r9"
+  rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/testimonials/testimonials.css?v={$versionHash}-r3"
+  rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/solutions/solutions.css?v={$versionHash}-r2" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/help/help.css?v={$versionHash}-r6" rel="stylesheet">
 {/if}
-<link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}-r8" rel="stylesheet">
 {if $showingLoginPage || $templatefile == 'login' || $templatefile == 'logout'}
  <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}" rel="stylesheet">
 {/if}
