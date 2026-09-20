@@ -5,12 +5,8 @@ DirectoryIndex index.php
 RewriteEngine On
 RewriteBase /
 
-# Giriş 
-RewriteCond %{REQUEST_METHOD} POST
-RewriteRule ^giris/?$ ixir-route.php?ixir_rp=login-validate [L,QSA]
+# Giriş
 RewriteRule ^giris/dogrulama/yedek/?$ ixir-route.php?ixir_rp=login-2fa-backup [L,QSA]
-RewriteCond %{REQUEST_METHOD} POST
-RewriteRule ^giris/dogrulama/?$ ixir-route.php?ixir_rp=login-2fa-verify [L,QSA]
 RewriteRule ^giris/dogrulama/?$ ixir-route.php?ixir_rp=login-2fa [L,QSA]
 RewriteRule ^giris/?$ ixir-route.php?ixir_rp=login [L,QSA]
 

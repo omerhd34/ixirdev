@@ -7,9 +7,9 @@ function ixir_laravel_routes()
         'user-password' => '/user/password',
         'user-security' => '/user/security',
         'login' => '/login',
-        'login-validate' => '/login/validate',
+        'login-validate' => '/login',
         'login-2fa' => '/login/two-factor/challenge',
-        'login-2fa-verify' => '/login/two-factor/challenge/verify',
+        'login-2fa-verify' => '/login/two-factor/challenge',
         'login-2fa-backup' => '/login/two-factor/challenge/backup-verify',
         'password-reset' => '/password/reset',
         'password-reset-validate' => '/password/reset',
@@ -19,8 +19,8 @@ function ixir_laravel_routes()
 function ixir_friendly_inbound()
 {
     return [
-        'giris' => ['GET' => 'login', 'HEAD' => 'login', 'POST' => 'login-validate'],
-        'giris/dogrulama' => ['GET' => 'login-2fa', 'HEAD' => 'login-2fa', 'POST' => 'login-2fa-verify'],
+        'giris' => 'login',
+        'giris/dogrulama' => 'login-2fa',
         'giris/dogrulama/yedek' => 'login-2fa-backup',
         'sifremi-unuttum' => ['GET' => 'password-reset', 'HEAD' => 'password-reset', 'POST' => 'password-reset-validate'],
         'hesap/profil' => 'user-profile',
