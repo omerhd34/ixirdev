@@ -1,65 +1,17 @@
-</div><!-- /.main-content -->
-{if !$inShoppingCart && $secondarySidebar && $secondarySidebar->hasChildren()}
- <div class="col-md-3 pull-md-left sidebar sidebar-secondary">
-  {include file="$template/includes/sidebar.tpl" sidebar=$secondarySidebar}
- </div>
-{/if}
-<div class="clearfix"></div>
-</div>
-</div>
-</section>
-
-<footer class="footer">
- <div class="container">
-  <div class="row">
-
-   <div class="col-md-3">
-    <li><a href="{$WEB_ROOT}/sepet">Mağaza</a></li>
-    <li><a href="{$WEB_ROOT}/dosyalar">Dosyalar</a></li>
-    <li><a href="{$WEB_ROOT}/sepet?gid=addons">Eklentiler</a></li>
-    <li><a href="{$WEB_ROOT}/musteri-paneli/faturalar">Faturalar</a></li>
-    <li><a href="{$WEB_ROOT}/sunucu-durumu">Ağ Durumu</a></li>
-   </div>
-
-   <div class="col-md-3">
-    <li><a href="{$WEB_ROOT}/bilgi-bankasi">Bilgi Bankası</a></li>
-    <li><a href="{$WEB_ROOT}/sunucu-durumu">Sunucu Durumu</a></li>
-    <li><a href="{$WEB_ROOT}/duyurular">Duyurular</a></li>
-    <li><a href="{$WEB_ROOT}/musteri-paneli/hizmetler">Hizmetler</a></li>
-    <li><a href="{$WEB_ROOT}/iletisim">İletişim</a></li>
-   </div>
-
-   <style>
-    .footer .fab {
-     padding-right: 23px;
-     padding-left: 0px;
-     padding-top: 19px;
-     font-size: 23px !important;
-    }
-   </style>
-
-   <div class="col-md-2">
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-youtube"></i></a>
-    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-   </div>
-
-   <div class="col-md-4">
-    <img class="flogo" style="max-width: 220px;" src="{$assetLogoPath}">
-    <p>Cheap, secure and fast hosting solutions. Create your website today
-     with the most trusted hosting company!</p>
-    <br />
-    <p>Theme designed by <a href="https://aalayer.com">AALayer</a></p>
-   </div>
-
-
-
+{if $templatefile != 'homepage' || $twitterusername || $announcements}
+ </div><!-- /.main-content -->
+ {if !$inShoppingCart && $secondarySidebar && $secondarySidebar->hasChildren()}
+  <div class="col-md-3 pull-md-left sidebar sidebar-secondary">
+   {include file="$template/includes/sidebar.tpl" sidebar=$secondarySidebar}
   </div>
+ {/if}
+ <div class="clearfix"></div>
  </div>
-</footer>
+ </div>
+ </section>
+{/if}
+
+{include file="$template/components/footer/footer.tpl"}
 
 <div id="fullpage-overlay" class="hidden">
  <div class="outer-wrapper">
