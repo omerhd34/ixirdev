@@ -10,6 +10,9 @@
   height: 113px;
   pointer-events: none;
 }
+body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
+  height: 161px;
+}
 .ixir-header {
   position: fixed;
   z-index: 10000;
@@ -1607,6 +1610,9 @@ body.ixir-mobile-menu-open {
   }
   .ixir-header-spacer {
     height: 96px;
+  }
+  body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
+    height: 142px;
   }
   .mobile-header > .container {
     padding-left: 24px !important;

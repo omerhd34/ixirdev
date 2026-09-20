@@ -135,17 +135,26 @@
     var isMobile = $(window).width() <= 992;
     var $header = isMobile ? $('.mobile-header') : $('.ixir-header');
     var $spacer = $('.ixir-header-spacer');
+    var $news = $('#ixirNewsBar');
     if (!isMobile) {
      setIxirMobileMenu(false);
     }
     if (!$header.length || !$spacer.length) {
      return;
     }
-    var height = $header.outerHeight() || 0;
+    var headerHeight = $header.outerHeight() || 0;
+    var newsHeight = 0;
+    if ($news.length && $news.is(':visible') && !$news.hasClass('is-hidden') && !$('body').hasClass(
+      'ixir-auth-page')) {
+     $news.css('top', headerHeight + 'px');
+     newsHeight = $news.outerHeight() || 0;
+    }
+    var height = headerHeight + newsHeight;
     if (height > 0) {
      $spacer.css('height', height + 'px');
     }
    }
+   window.updateIxirHeaderSpacer = updateIxirHeaderSpacer;
    $(window).on('load resize', updateIxirHeaderSpacer);
    updateIxirHeaderSpacer();
   });

@@ -14,11 +14,23 @@
 <script>
  {literal}
   jQuery(function($) {
+   var onAuth = $('body').hasClass('ixir-auth-page') || /\/hesabim(?:\/|$)/i.test(location.pathname);
+   if (onAuth) {
+    $('#ixirNewsBar').remove();
+    return;
+   }
    try { localStorage.removeItem('ixirNewsBarClosed'); } catch (e) {}
    $('#ixirNewsBar').show();
+   if (typeof window.updateIxirHeaderSpacer === 'function') {
+    window.updateIxirHeaderSpacer();
+   }
    $(document).on('click', '.newsClose', function(e) {
     e.preventDefault();
-    $('#ixirNewsBar').slideUp(200);
+    $('#ixirNewsBar').addClass('is-hidden').slideUp(200, function() {
+     if (typeof window.updateIxirHeaderSpacer === 'function') {
+      window.updateIxirHeaderSpacer();
+     }
+    });
    });
   });
  {/literal}
