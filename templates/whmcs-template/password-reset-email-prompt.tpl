@@ -1,23 +1,45 @@
-<p>{$LANG.pwresetemailneeded}</p>
+<form method="post" action="{$WEB_ROOT}/hesabim?panel=sifre" role="form" class="ixir-split-form ixir-reset-form">
+ <input type="hidden" name="action" value="reset" />
 
-<form method="post" action="{routePath('password-reset-validate-email')}" role="form">
-    <input type="hidden" name="action" value="reset" />
+ <div class="ixir-split-form-head">
+  <h1>Şifremi Unuttum</h1>
+  <p>Hesabınıza kayıtlı e-posta adresinizi girin; güvenlik doğrulamasından sonra yeni şifrenizi belirlemeniz için
+   adımları sizinle paylaşacağız.</p>
+ </div>
 
-    <div class="form-group">
-        <label for="inputEmail">{$LANG.loginemail}</label>
-        <input type="email" name="email" class="form-control" id="inputEmail" placeholder="{$LANG.enteremail}" autofocus>
-    </div>
+ {if $errorMessage}
+  {include file="$template/includes/alert.tpl" type="error" msg=$errorMessage textcenter=true}
+ {/if}
 
-    {if $captcha->isEnabled()}
-        <div class="text-center margin-bottom">
-            {include file="$template/includes/captcha.tpl"}
-        </div>
-    {/if}
+ <div class="ixir-field">
+  <label for="inputResetEmail">E-Posta Adresiniz:</label>
+  <input type="email" name="email" class="form-control" id="inputResetEmail" placeholder="E-Posta" autofocus>
+ </div>
 
-    <div class="form-group text-center">
-        <button type="submit" class="btn btn-primary{$captcha->getButtonClass($captchaForm)}">
-            {$LANG.pwresetsubmit}
-        </button>
-    </div>
+ {if $captcha}
+  <div class="ixir-split-captcha">
+   {include file="$template/includes/auth-captcha.tpl"}
+  </div>
+ {/if}
 
+ <button type="submit" class="btn ixir-split-btn">
+  Şifre Sıfırlama Bağlantısı Gönder
+ </button>
+ <button type="button" class="ixir-split-switch-link" data-ixir-auth-goto="login">Giriş Yap'a dön</button>
 </form>
+<script>
+ jQuery(function() {
+  var $form = jQuery(".ixir-reset-form");
+  if (!$form.length) return;
+  $form.on("submit", function(e) {
+   var $wrap = $form.find(".ixir-captcha-wrap");
+   if (!$wrap.find(".g-recaptcha, .recaptcha-container").length) return;
+   var token = jQuery.trim($form.find("[name='g-recaptcha-response']").val() || "");
+   if (!token) {
+    e.preventDefault();
+    $wrap.addClass("is-invalid");
+    return false;
+   }
+  });
+ });
+</script>
