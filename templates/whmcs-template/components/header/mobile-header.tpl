@@ -27,16 +27,10 @@
        {include file="$template/components/header/ixir-account-menu.tpl"}
       </div>
      {else}
-      <a href="{$WEB_ROOT}/giris" title="Giriş Yap">
+      <a href="{$WEB_ROOT}/hesabim" title="Hesabım">
        <i class="far fa-user"></i>
-       <span class="mobile-auth-text">Giriş Yap</span>
+       <span class="mobile-auth-text">Hesabım</span>
       </a>
-      {if $condlinks.allowClientRegistration}
-       <a href="{$WEB_ROOT}/kayit" title="Kayıt Ol">
-        <i class="far fa-user-plus"></i>
-        <span class="mobile-auth-text">Kayıt Ol</span>
-       </a>
-      {/if}
      {/if}
     </div>
    </div>
@@ -97,22 +91,13 @@
      </span>
     </a>
    {else}
-    <a href="{$WEB_ROOT}/giris" class="ixir-mobile-auth-btn ixir-mobile-auth-btn--login">
+    <a href="{$WEB_ROOT}/hesabim" class="ixir-mobile-auth-btn ixir-mobile-auth-btn--login">
      <i class="fas fa-user"></i>
      <span>
-      <strong>Üye Girişi</strong>
-      <small>Hesabınıza giriş yapın</small>
+      <strong>Hesabım</strong>
+      <small>Giriş yapın veya kayıt olun.</small>
      </span>
     </a>
-    {if $condlinks.allowClientRegistration}
-     <a href="{$WEB_ROOT}/kayit" class="ixir-mobile-auth-btn ixir-mobile-auth-btn--register">
-      <i class="fas fa-user-plus"></i>
-      <span>
-       <strong>Yeni Kayıt</strong>
-       <small>Hemen üye olun</small>
-      </span>
-     </a>
-    {/if}
    {/if}
   </div>
   <ul class="ixir-mobile-nav">

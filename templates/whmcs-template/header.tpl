@@ -32,7 +32,10 @@
  {/if}
 </head>
 
-<body data-phone-cc-input="{$phoneNumberInputStyle}" {if $showingLoginPage} class="ixir-auth-page" {/if}>
+<body
+ {if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim'}
+ class="ixir-auth-page" data-phone-cc-input="" {else} data-phone-cc-input="{$phoneNumberInputStyle}" 
+ {/if}>
  {if $captcha && ($templatefile != 'clientregister' || !$loggedin)}{$captcha->getMarkup()}{/if}
  {$headeroutput}
 
@@ -50,6 +53,13 @@
    height: auto !important;
    overflow: visible !important;
    display: block !important;
+  }
+
+  body.ixir-auth-page {
+   display: flex !important;
+   flex-direction: column !important;
+   min-height: 100vh;
+   min-height: 100dvh;
   }
 
   html::-webkit-scrollbar,
@@ -98,10 +108,38 @@
    pointer-events: none;
   }
 
+  body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
+   height: 161px;
+  }
+
   @media only screen and (max-width: 992px) {
    .ixir-header-spacer {
     height: 96px;
    }
+
+   body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
+    height: 142px;
+   }
+  }
+
+  body.ixir-auth-page .ixir-header-spacer {
+   height: 113px;
+  }
+
+  @media only screen and (max-width: 992px) {
+   body.ixir-auth-page .ixir-header-spacer {
+    height: 96px;
+   }
+  }
+
+  body.ixir-auth-page .news-bar,
+  body.ixir-auth-page #ixirNewsBar {
+   display: none !important;
+   height: 0 !important;
+   margin: 0 !important;
+   padding: 0 !important;
+   overflow: hidden !important;
+   visibility: hidden !important;
   }
  </style>
  {include file="$template/components/header/mobile-header.tpl"}
@@ -143,12 +181,8 @@
         {include file="$template/components/header/ixir-account-menu.tpl"}
        </div>
       {else}
-       <a href="{$WEB_ROOT}/giris" title="Giriş Yap"><i class="far fa-user"></i><span class="topbar-text">Giriş
-         Yap</span></a>
-       {if $condlinks.allowClientRegistration}
-        <a href="{$WEB_ROOT}/kayit" title="Kayıt Ol"><i class="far fa-user-plus"></i><span class="topbar-text">Kayıt
-          Ol</span></a>
-       {/if}
+       <a href="{$WEB_ROOT}/hesabim" title="Hesabım"><i class="far fa-user"></i><span
+         class="topbar-text">Hesabım</span></a>
       {/if}
      </div>
     </div>
@@ -170,7 +204,9 @@
  </div>
  <div class="ixir-header-spacer" aria-hidden="true"></div>
 
- {include file="$template/components/news-bar/news-bar.tpl"}
+ {if !$ixirIsAuthPage && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $filename != 'ixir-hesabim' && $filename != 'register'}
+  {include file="$template/components/news-bar/news-bar.tpl"}
+ {/if}
  {include file="$template/components/header/header-scripts.tpl"}
  {if $templatefile != 'clientregister'}
   {include file="$template/includes/verifyemail.tpl"}
@@ -181,7 +217,12 @@
    <div class="container{if $skipMainBodyContainer}-fluid without-padding{/if}">
     <div class="row">
 
-     {if !$inShoppingCart && $primarySidebar && $secondarySidebar && ($primarySidebar->hasChildren() || $secondarySidebar->hasChildren())}
+     {assign var="ixirHideSidebar" value=false}
+     {if $templatefile == 'clientregister' || $templatefile == 'login' || $templatefile == 'password-reset' || $showingLoginPage}
+      {assign var="ixirHideSidebar" value=true}
+     {/if}
+
+     {if !$ixirHideSidebar && !$inShoppingCart && $primarySidebar && $secondarySidebar && ($primarySidebar->hasChildren() || $secondarySidebar->hasChildren())}
       {if $primarySidebar->hasChildren() && !$skipMainBodyContainer}
        <div class="col-md-9 pull-md-right">
         {include file="$template/includes/pageheader.tpl" title=$displayTitle desc=$tagline showbreadcrumb=true}
@@ -193,8 +234,8 @@
      {/if}
      <!-- Container for main page display content -->
      <div
-      class="{if !$inShoppingCart && $primarySidebar && $secondarySidebar && ($primarySidebar->hasChildren() || $secondarySidebar->hasChildren())}col-md-9 pull-md-right{else}col-xs-12{/if} main-content">
-      {if $primarySidebar && !$primarySidebar->hasChildren() && !$showingLoginPage && !$inShoppingCart && !$skipMainBodyContainer}
+      class="{if !$ixirHideSidebar && !$inShoppingCart && $primarySidebar && $secondarySidebar && ($primarySidebar->hasChildren() || $secondarySidebar->hasChildren())}col-md-9 pull-md-right{else}col-xs-12{/if} main-content">
+      {if !$ixirHideSidebar && $primarySidebar && !$primarySidebar->hasChildren() && !$showingLoginPage && $templatefile != 'clientregister' && !$inShoppingCart && !$skipMainBodyContainer}
        {include file="$template/includes/pageheader.tpl" title=$displayTitle desc=$tagline showbreadcrumb=true}
       {/if}
 {/if}
