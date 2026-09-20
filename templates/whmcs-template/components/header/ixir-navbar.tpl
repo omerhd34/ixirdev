@@ -22,7 +22,7 @@
          <a href="{$WEB_ROOT}/domain-transfer" title="Domain Transfer">
           <i class="fas fa-retweet"></i>
           Domain Transfer
-          <span>Alan adınızı en iyi fiyatlarla transfer edin.</span>
+          <span>Domain'inizi en iyi fiyatlarla transfer edin.</span>
          </a>
         </li>
        </ul>
@@ -165,7 +165,7 @@
          <a href="{$WEB_ROOT}/antispam" title="Antispam">
           <i class="fas fa-shield-alt"></i>
           AntiSpam
-          <span>Alan Adınız nerede olursa olsun gelen maillerinizi yapay zeka destekli, kvkk uyumlu olarak
+          <span>Domain'iniz nerede olursa olsun gelen maillerinizi yapay zeka destekli, kvkk uyumlu olarak
            koruyalım!</span>
          </a>
         </li>

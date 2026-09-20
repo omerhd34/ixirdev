@@ -135,7 +135,7 @@
        <i class="fas fa-retweet"></i>
        <span>
         Domain Transfer
-        <small>Alan adınızı en iyi fiyatla taşıyın</small>
+        <small>Domain'inizi en iyi fiyatla taşıyın</small>
        </span>
       </a>
       <a href="{$WEB_ROOT}/whois-sorgulama">

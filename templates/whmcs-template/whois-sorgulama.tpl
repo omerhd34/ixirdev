@@ -4,7 +4,7 @@
   <div class="ixir-whois-checker">
    <div class="ixir-whois-input">
     <span class="ixir-whois-icon" aria-hidden="true"><i class="fas fa-search"></i></span>
-    <label for="ixir-whois-domain" class="sr-only">Alan adı</label>
+    <label for="ixir-whois-domain" class="sr-only">Domain</label>
     <input type="text" id="ixir-whois-domain" class="form-control" name="domain" value="{$ixirWhoisDomain|escape}"
      placeholder="Örneğin ixirhost.com" autocapitalize="none" autocomplete="off" />
    </div>
@@ -25,7 +25,7 @@
   </div>
  {elseif $ixirWhoisStatus != ''}
   <div class="ixir-whois-alert ixir-whois-alert--taken" role="status">
-   <strong>{$ixirWhoisDomain|escape}</strong> kayıtlı bir alan adı.
+   <strong>{$ixirWhoisDomain|escape}</strong> kayıtlı bir domain.
   </div>
  {/if}
 
@@ -39,18 +39,18 @@
  <div class="ixir-whois-info">
   <div class="ixir-whois-card">
    <h2>Ücretsiz Whois Sorgulama</h2>
-   <p>Alan adının sahibini merak ediyor veya sahibi ile iletişime geçmek istiyorsanız, hemen bir alan adı sorgulayabilir
+   <p>Domainin sahibini merak ediyor veya sahibi ile iletişime geçmek istiyorsanız, hemen bir domain sorgulayabilir
     ve sonuçlara göz atabilirsiniz.</p>
   </div>
   <div class="ixir-whois-card">
    <h3>Whois Sorgulama Neden Yapılır?</h3>
-   <p>Kayıt edilen alan adlarının sahiplik bilgilerine Whois, bu bilgileri sorgulama işlemine ise whois sorgulama denir.
-    Bir alan adının kime ait olduğunu öğrenmek, alan adı sahibi ile iletişime geçmek, alan adını kayıt eden registrar
+   <p>Kayıt edilen domainlerin sahiplik bilgilerine Whois, bu bilgileri sorgulama işlemine ise whois sorgulama denir.
+    Bir domainin kime ait olduğunu öğrenmek, domain sahibi ile iletişime geçmek, domainin kayıt eden registrar
     bilgisini öğrenmek için whois sorgulama yapılır.</p>
   </div>
   <div class="ixir-whois-card">
    <h3>Whois Gizleme Neden Gereklidir?</h3>
-   <p>Kayıt ettiğiniz alan adının sahiplik bilgilerinin görüntülenmesini istemiyorsanız whois gizlemeyi tercih
+   <p>Kayıt ettiğiniz domainin sahiplik bilgilerinin görüntülenmesini istemiyorsanız whois gizlemeyi tercih
     edebilirsiniz. Müşteri panelinizden sahiplik bilgilerini gizleyerek spam ve istenmeyen iletişimleri
     engelleyebilirsiniz.</p>
   </div>

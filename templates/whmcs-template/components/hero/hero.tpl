@@ -6,17 +6,17 @@
  <div class="container">
   <div class="ixir-hero-copy">
    <h1>Mükemmel Bir Domain İle Başlayın!</h1>
-   <p>125 TL'den başlayan fiyatlarla mükemmel bir alan adına sahip olun!</p>
+   <p>125 TL'den başlayan fiyatlarla mükemmel bir domain sahip olun!</p>
   </div>
   {if $registerdomainenabled || $transferdomainenabled}
   <form method="post" action="{$WEB_ROOT}/domain-sorgu" id="frmDomainHomepage" novalidate>
    <div class="ixir-domain-checker">
     <div class="ixir-dc-input">
      <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-globe"></i></span>
-     <label for="ixir-domain-query" class="sr-only">Alan adı sorgula</label>
+     <label for="ixir-domain-query" class="sr-only">Domain sorgula</label>
      <input type="text" id="ixir-domain-query" class="form-control" name="domain" placeholder="Örneğin ixirhost.com"
       data-placeholder="Örneğin ixirhost.com" data-placeholder-sm="ixirhost.com"
-      data-placeholder-error="Lütfen bir alan adı girin." autocapitalize="none" autocomplete="off" />
+      data-placeholder-error="Lütfen bir domain girin." autocapitalize="none" autocomplete="off" />
     </div>
     <div class="ixir-dc-button">
      {if $registerdomainenabled}
@@ -29,7 +29,7 @@
      {/if}
     </div>
    </div>
-   <p class="ixir-dc-error" id="ixirDomainError" role="alert">Lütfen sorgulamak istediğiniz alan adını girin.</p>
+   <p class="ixir-dc-error" id="ixirDomainError" role="alert">Lütfen sorgulamak istediğiniz domain'i girin.</p>
   </form>
   {/if}
   <div class="ixir-domain-links-wrap" role="region" aria-label="Domain hizmetleri">
@@ -120,196 +120,196 @@
 
 <script>
  {literal}
- jQuery(function($) {
-  (function initIxirHeroFill() {
-   var hero = document.getElementById('home-banner');
-   if (!hero) {
-    return;
-   }
-
-   function apply() {
-    if (window.innerWidth > 768) {
-     hero.style.removeProperty('--ixir-hero-offset');
+  jQuery(function($) {
+   (function initIxirHeroFill() {
+    var hero = document.getElementById('home-banner');
+    if (!hero) {
      return;
     }
-    var top = Math.max(0, Math.round(hero.getBoundingClientRect().top + (window.pageYOffset || 0)));
-    hero.style.setProperty('--ixir-hero-offset', top + 'px');
-   }
-   apply();
-   window.addEventListener('resize', apply);
-   window.addEventListener('load', apply);
-   $(document).on('click', '.newsClose', function() {
-    window.setTimeout(apply, 220);
-   });
-  })();
 
-  (function initIxirTldCarousel() {
-   var viewport = document.getElementById('ixirDomainTlds');
-   if (!viewport) {
-    return;
-   }
-   var track = viewport.querySelector('.ixir-tld-track');
-   if (!track || !track.children.length) {
-    return;
-   }
-   var html = track.innerHTML;
-   track.innerHTML = html + html + html;
-   var x = 0;
-   var setWidth = 0;
-   var dragging = false;
-   var paused = false;
-   var startX = 0;
-   var startOffset = 0;
-   var lastX = 0;
-   var velocity = 0;
-   var resumeTimer = null;
-   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-   var speed = reduceMotion ? 0 : 0.55;
-
-   function measure() {
-    setWidth = track.scrollWidth / 3;
-    wrap();
+    function apply() {
+     if (window.innerWidth > 768) {
+      hero.style.removeProperty('--ixir-hero-offset');
+      return;
+     }
+     var top = Math.max(0, Math.round(hero.getBoundingClientRect().top + (window.pageYOffset || 0)));
+     hero.style.setProperty('--ixir-hero-offset', top + 'px');
+    }
     apply();
-   }
+    window.addEventListener('resize', apply);
+    window.addEventListener('load', apply);
+    $(document).on('click', '.newsClose', function() {
+     window.setTimeout(apply, 220);
+    });
+   })();
 
-   function wrap() {
-    if (!setWidth) {
+   (function initIxirTldCarousel() {
+    var viewport = document.getElementById('ixirDomainTlds');
+    if (!viewport) {
      return;
     }
-    while (x <= -setWidth * 2) {
-     x += setWidth;
+    var track = viewport.querySelector('.ixir-tld-track');
+    if (!track || !track.children.length) {
+     return;
     }
-    while (x >= 0) {
-     x -= setWidth;
-    }
-   }
+    var html = track.innerHTML;
+    track.innerHTML = html + html + html;
+    var x = 0;
+    var setWidth = 0;
+    var dragging = false;
+    var paused = false;
+    var startX = 0;
+    var startOffset = 0;
+    var lastX = 0;
+    var velocity = 0;
+    var resumeTimer = null;
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var speed = reduceMotion ? 0 : 0.55;
 
-   function apply() {
-    wrap();
-    track.style.transform = 'translate3d(' + x + 'px,0,0)';
-   }
-
-   function tick() {
-    if (!dragging && !paused && speed) {
-     x -= speed;
+    function measure() {
+     setWidth = track.scrollWidth / 3;
+     wrap();
      apply();
     }
-    window.requestAnimationFrame(tick);
-   }
 
-   function endDrag() {
-    if (!dragging) {
-     return;
+    function wrap() {
+     if (!setWidth) {
+      return;
+     }
+     while (x <= -setWidth * 2) {
+      x += setWidth;
+     }
+     while (x >= 0) {
+      x -= setWidth;
+     }
     }
-    dragging = false;
-    viewport.classList.remove('is-dragging');
-    x += velocity * 10;
-    apply();
-    window.clearTimeout(resumeTimer);
-    resumeTimer = window.setTimeout(function() {
+
+    function apply() {
+     wrap();
+     track.style.transform = 'translate3d(' + x + 'px,0,0)';
+    }
+
+    function tick() {
+     if (!dragging && !paused && speed) {
+      x -= speed;
+      apply();
+     }
+     window.requestAnimationFrame(tick);
+    }
+
+    function endDrag() {
      if (!dragging) {
+      return;
+     }
+     dragging = false;
+     viewport.classList.remove('is-dragging');
+     x += velocity * 10;
+     apply();
+     window.clearTimeout(resumeTimer);
+     resumeTimer = window.setTimeout(function() {
+      if (!dragging) {
+       paused = false;
+      }
+     }, 350);
+    }
+
+    viewport.addEventListener('pointerdown', function(e) {
+     if (e.pointerType === 'mouse' && e.button !== 0) {
+      return;
+     }
+     dragging = true;
+     paused = true;
+     startX = e.clientX;
+     startOffset = x;
+     lastX = e.clientX;
+     velocity = 0;
+     viewport.classList.add('is-dragging');
+     viewport.setPointerCapture(e.pointerId);
+     e.preventDefault();
+    });
+    viewport.addEventListener('pointermove', function(e) {
+     if (!dragging) {
+      return;
+     }
+     velocity = e.clientX - lastX;
+     lastX = e.clientX;
+     x = startOffset + (e.clientX - startX);
+     apply();
+    });
+    viewport.addEventListener('pointerup', endDrag);
+    viewport.addEventListener('pointercancel', endDrag);
+    viewport.addEventListener('pointerenter', function(e) {
+     if (e.pointerType === 'mouse' && !dragging) {
+      paused = true;
+     }
+    });
+    viewport.addEventListener('pointerleave', function(e) {
+     if (e.pointerType === 'mouse' && !dragging) {
       paused = false;
      }
-    }, 350);
-   }
+    });
+    window.addEventListener('resize', measure);
+    window.addEventListener('load', measure);
+    window.setTimeout(measure, 50);
+    measure();
+    window.requestAnimationFrame(tick);
+   })();
 
-   viewport.addEventListener('pointerdown', function(e) {
-    if (e.pointerType === 'mouse' && e.button !== 0) {
+   (function initIxirDomainChecker() {
+    var form = document.getElementById('frmDomainHomepage');
+    var input = document.getElementById('ixir-domain-query');
+    var error = document.getElementById('ixirDomainError');
+    if (!form || !input || !error) {
      return;
     }
-    dragging = true;
-    paused = true;
-    startX = e.clientX;
-    startOffset = x;
-    lastX = e.clientX;
-    velocity = 0;
-    viewport.classList.add('is-dragging');
-    viewport.setPointerCapture(e.pointerId);
-    e.preventDefault();
-   });
-   viewport.addEventListener('pointermove', function(e) {
-    if (!dragging) {
-     return;
-    }
-    velocity = e.clientX - lastX;
-    lastX = e.clientX;
-    x = startOffset + (e.clientX - startX);
-    apply();
-   });
-   viewport.addEventListener('pointerup', endDrag);
-   viewport.addEventListener('pointercancel', endDrag);
-   viewport.addEventListener('pointerenter', function(e) {
-    if (e.pointerType === 'mouse' && !dragging) {
-     paused = true;
-    }
-   });
-   viewport.addEventListener('pointerleave', function(e) {
-    if (e.pointerType === 'mouse' && !dragging) {
-     paused = false;
-    }
-   });
-   window.addEventListener('resize', measure);
-   window.addEventListener('load', measure);
-   window.setTimeout(measure, 50);
-   measure();
-   window.requestAnimationFrame(tick);
-  })();
+    var placeholderFull = input.getAttribute('data-placeholder') || input.getAttribute('placeholder');
+    var placeholderSm = input.getAttribute('data-placeholder-sm') || 'ixirhost.com';
+    var placeholderError = input.getAttribute('data-placeholder-error') || 'Lütfen bir domain girin.';
 
-  (function initIxirDomainChecker() {
-   var form = document.getElementById('frmDomainHomepage');
-   var input = document.getElementById('ixir-domain-query');
-   var error = document.getElementById('ixirDomainError');
-   if (!form || !input || !error) {
-    return;
-   }
-   var placeholderFull = input.getAttribute('data-placeholder') || input.getAttribute('placeholder');
-   var placeholderSm = input.getAttribute('data-placeholder-sm') || 'ixirhost.com';
-   var placeholderError = input.getAttribute('data-placeholder-error') || 'Lütfen bir alan adı girin.';
-
-   function isSm() {
-    return window.innerWidth <= 767;
-   }
-
-   function applyPlaceholder() {
-    if (isSm() && form.classList.contains('ixir-dc-invalid')) {
-     input.setAttribute('placeholder', placeholderError);
-    } else {
-     input.setAttribute('placeholder', isSm() ? placeholderSm : placeholderFull);
+    function isSm() {
+     return window.innerWidth <= 767;
     }
-   }
 
-   function showError() {
-    form.classList.remove('ixir-dc-shake');
-    void form.offsetWidth;
-    form.classList.add('ixir-dc-invalid', 'ixir-dc-shake');
-    input.setAttribute('aria-invalid', 'true');
+    function applyPlaceholder() {
+     if (isSm() && form.classList.contains('ixir-dc-invalid')) {
+      input.setAttribute('placeholder', placeholderError);
+     } else {
+      input.setAttribute('placeholder', isSm() ? placeholderSm : placeholderFull);
+     }
+    }
+
+    function showError() {
+     form.classList.remove('ixir-dc-shake');
+     void form.offsetWidth;
+     form.classList.add('ixir-dc-invalid', 'ixir-dc-shake');
+     input.setAttribute('aria-invalid', 'true');
+     applyPlaceholder();
+     input.focus();
+    }
+
+    function hideError() {
+     form.classList.remove('ixir-dc-invalid', 'ixir-dc-shake');
+     input.removeAttribute('aria-invalid');
+     applyPlaceholder();
+    }
+
     applyPlaceholder();
-    input.focus();
-   }
+    window.addEventListener('resize', applyPlaceholder);
 
-   function hideError() {
-    form.classList.remove('ixir-dc-invalid', 'ixir-dc-shake');
-    input.removeAttribute('aria-invalid');
-    applyPlaceholder();
-   }
+    form.addEventListener('submit', function(e) {
+     if (!$.trim(input.value)) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      showError();
+     }
+    }, true);
 
-   applyPlaceholder();
-   window.addEventListener('resize', applyPlaceholder);
-
-   form.addEventListener('submit', function(e) {
-    if (!$.trim(input.value)) {
-     e.preventDefault();
-     e.stopImmediatePropagation();
-     showError();
-    }
-   }, true);
-
-   $(input).on('input keydown', function() {
-    if ($.trim(input.value)) {
-     hideError();
-    }
-   });
-  })();
- });
+    $(input).on('input keydown', function() {
+     if ($.trim(input.value)) {
+      hideError();
+     }
+    });
+   })();
+  });
  {/literal}
 </script>
