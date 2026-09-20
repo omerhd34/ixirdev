@@ -46,7 +46,7 @@
      <ul>
       <li><a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">Kurumsal Mail Hosting</a></li>
       <li><a href="{$WEB_ROOT}/antispam" title="Antispam Filtreleme">Antispam Filtreleme</a></li>
-      <li><a href="{$WEB_ROOT}/antispam" title="Spam Koruma">Spam Filtremele</a></li>
+      <li><a href="{$WEB_ROOT}/antispam" title="Spam Koruma">Spam Filtreleme</a></li>
       <li><a href="{$WEB_ROOT}/outbound-mail-gateway" title="Outbound Mail Gateway">Outbound Mail Gateway</a></li>
       <li><a href="{$WEB_ROOT}/outbound-mail-gateway" title="Mail Gönderim Servisi">Giden Mail Saygınlığı</a></li>
       <li><a href="{$WEB_ROOT}/outbound-mail-gateway" title="Smarthost Hizmeti">Smarthost</a></li>
@@ -90,20 +90,21 @@
       width="189" height="44">
     </a>
     <div class="ixir-footer-contact">
-     <p class="ixir-footer-contact-item">
+     <a class="ixir-footer-contact-item" href="https://maps.google.com/?q=Bayrak+Cd.+Bilim+Tower+Umraniye+Istanbul"
+      target="_blank" rel="noopener noreferrer">
       <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
       <span>Bayrak Cd. Bilim Tower<br> N:30 K:16/126<br> Ümraniye / İstanbul</span>
-     </p>
-     <p class="ixir-footer-contact-item">
+     </a>
+     <a class="ixir-footer-contact-item" href="tel:+902164994947">
       <i class="fas fa-phone-alt" aria-hidden="true"></i>
       <span>0216 499 49 47</span>
-     </p>
-     <p class="ixir-footer-contact-item">
+     </a>
+     <a class="ixir-footer-contact-item" href="mailto:destek@ixirhost.com">
       <i class="fas fa-envelope" aria-hidden="true"></i>
-      <a href="mailto:destek@ixirhost.com">destek@ixirhost.com</a>
-     </p>
+      <span>destek@ixirhost.com</span>
+     </a>
     </div>
-    <div class="ixir-footer-social">
+    <nav class="ixir-footer-social" aria-label="Sosyal medya">
      <a href="https://www.facebook.com/ixirhost" title="ixirhost Facebook" target="_blank" rel="nofollow noopener"><i
        class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
      <a href="https://www.twitter.com/ixirhost" title="ixirhost Twitter" target="_blank" rel="nofollow noopener"><i
@@ -115,41 +116,11 @@
        class="sr-only">LinkedIn</span></a>
      <a href="https://www.youtube.com/ixirhostcom" title="ixirhost Youtube" target="_blank" rel="nofollow noopener"><i
        class="fab fa-youtube" aria-hidden="true"></i><span class="sr-only">YouTube</span></a>
-    </div>
+    </nav>
     <img class="ixir-footer-pay" src="{$WEB_ROOT}/templates/{$template}/img/footer/pay-logos.png?v={$versionHash}"
      alt="iyzico, Visa, American Express, Troy" width="240" height="40">
    </div>
   </div>
-
-  <section class="ixir-footer-next" aria-labelledby="ixir-next-title">
-   <h4 id="ixir-next-title">İxirNext <i class="fas fa-heart" aria-hidden="true"></i> Geleceğe Dokunuyoruz!</h4>
-   <p>İxirHost olarak 2005 yılından bu yana internet teknolojileri üretiyoruz. Bugün ise bu yolculuğun bir parçasını,
-    internetin geleceğini inşa edecek çocuklara ve gençlere armağan ediyoruz.</p>
-   <p>İxirNext kapsamında hiçbir karşılık beklemeden üniversite öğrencilerine eğitim bursu sağlıyor; köy okulları başta
-    olmak üzere ihtiyaç duyan okullara bilgisayar ve bilişim laboratuvarları kuruyor, robotik kodlama ve Arduino eğitim
-    kitleri ulaştırıyor, okul kütüphanelerine kitap desteği veriyoruz.</p>
-   <p>Bütün bunlar, yıllardır bize güvenen müşterilerimizin desteği sayesinde mümkün oluyor. Siz yalnızca bir hosting
-    hizmeti satın almıyorsunuz; aynı zamanda daha fazla gencin teknolojiyle tanışmasına ve eğitimine katkı sağlayan bu
-    yolculuğun da bir parçası oluyorsunuz.</p>
-   <p>Eğer üniversite öğrencisiyseniz ve burs desteğine ihtiyaç duyuyorsanız veya okulunuz için teknoloji ya da
-    kütüphane desteği talep etmek istiyorsanız, başvurunuzu birkaç dakika içinde iletebilirsiniz. Tüm başvurular
-    gizlilik içinde değerlendirilir; hiçbir karşılık veya yükümlülük beklenmez.</p>
-   <div class="ixir-footer-next-cards">
-    <a class="ixir-footer-next-card" href="https://ixirnext.tr" target="_blank" rel="noopener" title="Burs Başvurusu">
-     <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-     <span>Burs Başvurusu</span>
-    </a>
-    <a class="ixir-footer-next-card" href="https://ixirnext.tr" target="_blank" rel="noopener"
-     title="Okul Destek Başvurusu">
-     <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
-     <span>Okul Destek Başvurusu</span>
-    </a>
-    <a class="ixir-footer-next-card" href="https://ixirnext.tr" target="_blank" rel="noopener" title="Projeyi Keşfedin">
-     <i class="fas fa-compass" aria-hidden="true"></i>
-     <span>Projeyi Keşfedin</span>
-    </a>
-   </div>
-  </section>
  </div>
 
  <div class="ixir-footer-bottom">
@@ -157,11 +128,9 @@
    <div class="ixir-footer-bottom-inner">
     <p>© <a href="{$WEB_ROOT}/kurumsal">İksir İnternet Hizmetleri A.Ş.</a> Tüm hakları saklıdır.</p>
     <ul>
-     <li><a href="{$WEB_ROOT}/kurumsal" title="Hakkımızda">Hakkımızda</a></li>
      <li><a href="{$WEB_ROOT}/gizlilikilkesi" title="Gizlilik">Gizlilik</a></li>
      <li><a href="{$WEB_ROOT}/hizmetsozlesmesi" title="Hizmet Sözleşmesi">Hizmet Sözleşmesi</a></li>
      <li><a href="{$WEB_ROOT}/kvkkaydinlatmametni" title="KVKK Aydınlatma Metni">KVKK Aydınlatma Metni</a></li>
-     <li><a href="{$WEB_ROOT}/iletisim" title="İletişim">İletişim</a></li>
     </ul>
    </div>
   </div>
