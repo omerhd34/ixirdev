@@ -1,137 +1,1242 @@
-.ixir-auth-page #main-body {
-  padding-top: 28px !important;
-  padding-bottom: 60px !important;
+body.ixir-auth-page {
+  --ixir-auth-header: 113px;
+  --ixir-auth-news: 0px;
+  --ixir-auth-pad: 40px;
+  --ixir-auth-shell: calc(
+    100dvh - var(--ixir-auth-header) - var(--ixir-auth-news)
+  );
+  --ixir-auth-hero: calc(var(--ixir-auth-shell) - (var(--ixir-auth-pad) * 2));
 }
-.ixir-auth {
+
+@media (max-width: 992px) {
+  body.ixir-auth-page {
+    --ixir-auth-header: 96px;
+  }
+}
+
+body.ixir-auth-page:not(:has(.news-bar)),
+body.ixir-auth-page:has(.news-bar[hidden]),
+body.ixir-auth-page:has(.news-bar.is-hidden),
+body.ixir-auth-page:has(.news-bar[style*="display: none"]),
+body.ixir-auth-page:has(.news-bar[style*="display:none"]) {
+  --ixir-auth-news: 0px;
+}
+
+body.ixir-auth-page .ixir-header-spacer,
+body.ixir-auth-page .ixir-header,
+body.ixir-auth-page .mobile-header {
+  flex-shrink: 0;
+}
+
+body.ixir-auth-page .news-bar,
+body.ixir-auth-page #ixirNewsBar {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+}
+
+.ixir-auth-page #main-body,
+body.ixir-auth-page #main-body {
+  display: block !important;
+  padding-top: var(--ixir-auth-pad) !important;
+  padding-bottom: var(--ixir-auth-pad) !important;
+  min-height: var(--ixir-auth-shell) !important;
+  height: var(--ixir-auth-shell) !important;
+  background: #eef1f5 !important;
+  box-sizing: border-box !important;
+}
+
+body.ixir-auth-page #main-body > .container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  min-height: var(--ixir-auth-hero) !important;
+  height: var(--ixir-auth-hero) !important;
+  box-sizing: border-box !important;
+}
+
+body.ixir-auth-page #main-body .row {
+  display: block !important;
+  float: none !important;
+  margin: 0 !important;
+  min-height: 100% !important;
+  height: 100% !important;
+}
+
+body.ixir-auth-page #main-body .main-content,
+body.ixir-auth-page #main-body .col-xs-12 {
+  float: none !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100% !important;
+  height: 100% !important;
+}
+
+body.ixir-auth-page .ixir-footer {
+  margin-top: 0;
+}
+
+.ixir-auth-split {
   width: 100%;
-  max-width: 460px;
+  max-width: 1100px;
   margin: 0 auto;
+  min-height: 100% !important;
+  height: 100% !important;
 }
-.ixir-auth-card {
+
+.ixir-auth-split-card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100% !important;
+  height: 100% !important;
   background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 12px 40px rgba(36, 41, 53, 0.08);
-  padding: 36px 32px 28px;
+  border-radius: 28px;
+  box-shadow: 0 18px 50px rgba(36, 41, 53, 0.12);
+  overflow: hidden;
 }
-.ixir-auth-head {
+
+.ixir-auth-forms {
+  position: relative;
+  width: 50%;
+  align-self: stretch;
+  min-height: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: transform 0.55s cubic-bezier(0.4, 0.05, 0.2, 1);
+}
+
+.ixir-auth-split.is-register .ixir-auth-forms {
+  transform: translateX(100%);
+}
+
+.ixir-auth-panel {
+  height: 100%;
+  overflow-y: auto;
+  padding: 36px 40px 32px;
+  transition:
+    opacity 0.35s ease,
+    transform 0.45s ease;
+}
+
+body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body {
+  height: auto !important;
+  min-height: var(--ixir-auth-shell) !important;
+}
+
+body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body > .container,
+body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body .row,
+body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body .main-content,
+body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body .col-xs-12 {
+  height: auto !important;
+  min-height: var(--ixir-auth-hero) !important;
+}
+
+.ixir-auth-split.is-register,
+.ixir-auth-split.is-register .ixir-auth-split-card,
+.ixir-auth-split.is-register .ixir-auth-forms {
+  height: auto !important;
+  min-height: var(--ixir-auth-hero) !important;
+}
+
+.ixir-auth-split.is-register .ixir-auth-panel,
+.ixir-auth-split.is-register .ixir-auth-panel-register {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.ixir-auth-split.is-register .ixir-auth-overlay {
+  height: 100%;
+  bottom: 0;
+}
+
+.ixir-auth-panel-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ixir-auth-panel-login .ixir-login-form,
+.ixir-auth-panel-reset .ixir-split-form {
+  width: 100%;
+}
+
+.ixir-auth-panel-register {
+  display: none;
+}
+
+.ixir-auth-panel-reset {
+  display: none;
+}
+
+.ixir-auth-split.is-register .ixir-auth-panel-login,
+.ixir-auth-split.is-reset .ixir-auth-panel-login {
+  display: none;
+}
+
+.ixir-auth-split.is-register .ixir-auth-panel-register {
+  display: block;
+}
+
+.ixir-auth-split.is-reset .ixir-auth-panel-register {
+  display: none;
+}
+
+.ixir-auth-split.is-reset .ixir-auth-panel-reset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ixir-auth-overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 5;
+  transition: transform 0.55s cubic-bezier(0.4, 0.05, 0.2, 1);
+}
+
+.ixir-auth-split.is-register .ixir-auth-overlay {
+  transform: translateX(-100%);
+}
+
+.ixir-auth-overlay-bg {
+  position: absolute;
+  inset: 0;
+  background: #141c2d;
+}
+
+.ixir-auth-overlay-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../img/login.webp") center / cover no-repeat;
+  opacity: 0.42;
+}
+
+.ixir-auth-overlay-panel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 28px;
   text-align: center;
-  margin-bottom: 24px;
+  color: #fff;
+  overflow-y: auto;
+  transition:
+    opacity 0.35s ease,
+    transform 0.45s ease;
 }
-.ixir-auth-head h1 {
-  margin: 0 0 8px;
+
+.ixir-overlay-logo-link {
+  display: inline-block;
+  margin: 0 auto 22px;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.ixir-overlay-logo {
+  display: block;
+  height: 40px;
+  width: auto;
+  margin: 0;
+  filter: none !important;
+  -webkit-filter: none !important;
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.ixir-overlay-logo-link:hover .ixir-overlay-logo,
+.ixir-overlay-logo-link:focus-visible .ixir-overlay-logo {
+  transform: scale(1.12);
+}
+
+.ixir-auth-overlay-panel h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+}
+
+.ixir-auth-overlay-panel p {
+  margin: 0 0 28px;
+  max-width: 320px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 15px;
+  line-height: 1.6;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
+}
+
+.ixir-auth-overlay-left {
+  opacity: 0;
+  transform: translateX(-20%);
+  pointer-events: none;
+}
+
+.ixir-auth-overlay-right {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.ixir-auth-split.is-register .ixir-auth-overlay-left {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.ixir-auth-split.is-register .ixir-auth-overlay-right {
+  opacity: 0;
+  transform: translateX(20%);
+  pointer-events: none;
+}
+
+.ixir-auth-overlay-reset {
+  opacity: 0;
+  transform: translateX(20%);
+  pointer-events: none;
+}
+
+.ixir-auth-split.is-reset .ixir-auth-overlay-left,
+.ixir-auth-split.is-reset .ixir-auth-overlay-right {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ixir-auth-split.is-reset .ixir-auth-overlay-reset {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.ixir-auth-split.is-reset .ixir-auth-forms,
+.ixir-auth-split.is-reset .ixir-auth-overlay {
+  transform: none;
+}
+
+.ixir-overlay-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 150px;
+  height: 46px;
+  padding: 0 22px;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.ixir-overlay-btn i {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.ixir-overlay-btn:hover,
+.ixir-overlay-btn:focus {
+  background: #fff;
   color: #242935;
+  outline: none;
+  text-decoration: none;
+}
+
+.ixir-split-form-head {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.ixir-split-form-head h1 {
+  margin: 0 0 8px;
+  color: #1e293b;
   font-size: 28px;
   font-weight: 800;
   line-height: 1.2;
 }
-.ixir-auth-head p {
+
+.ixir-split-form-head p {
   margin: 0;
-  color: #6b7280;
+  color: #64748b;
   font-size: 14px;
-  line-height: 1.5;
 }
-.ixir-auth-form .form-group {
-  position: relative;
+
+.ixir-split-switch-link {
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #1e293b;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ixir-split-switch-link:hover {
+  color: #396cdf;
+}
+
+.ixir-field {
   margin-bottom: 14px;
 }
-.ixir-auth-form .prepend-icon .field-icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 44px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #8b93a3;
-  z-index: 2;
-  pointer-events: none;
+
+.ixir-field.has-error > label {
+  color: #dc2626;
 }
-.ixir-auth-form .prepend-icon .field,
-.ixir-auth-form .prepend-icon .form-control {
-  height: 48px;
-  padding: 10px 16px 10px 44px;
-  border: 1px solid #e4e7ee;
-  border-radius: 12px;
-  box-shadow: none;
-  background: #f7f8fb;
-  color: #242935;
-  font-size: 15px;
+
+.ixir-field .form-control.is-invalid,
+.ixir-field input.is-invalid,
+.ixir-select.has-error .ixir-select-trigger {
+  border-color: #dc2626 !important;
+  background: #fff5f5 !important;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12) !important;
 }
-.ixir-auth-form .prepend-icon .field:focus,
-.ixir-auth-form .prepend-icon .form-control:focus {
-  border-color: #242935;
-  background: #fff;
+
+.ixir-field-error {
+  margin-top: 6px;
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.ixir-check.has-error {
+  color: #dc2626;
+}
+
+.ixir-check.has-error a {
+  color: #dc2626;
+}
+
+.ixir-field > label {
+  display: block;
+  margin-bottom: 6px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ixir-auth-page .ixir-plain-phone,
+.ixir-split-form .ixir-plain-phone {
+  padding-left: 14px !important;
+}
+
+.ixir-auth-page .intl-tel-input {
+  width: 100%;
+}
+
+.ixir-auth-page .intl-tel-input .flag-container,
+.ixir-auth-page .intl-tel-input .selected-flag,
+.ixir-auth-page .intl-tel-input .selected-dial-code {
+  display: none !important;
+}
+
+.ixir-auth-page .intl-tel-input input.ixir-plain-phone {
+  padding-left: 14px !important;
+  width: 100% !important;
+}
+
+.ixir-field .form-control,
+.ixir-field input.form-control,
+.ixir-field select.form-control,
+.ixir-custom-control .form-control {
+  height: 46px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f1f5fb !important;
+  box-shadow: none !important;
+  color: #0f172a;
+}
+
+.ixir-field select.form-control {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 42px !important;
+  background-image: none;
+}
+
+.ixir-field select.form-control:focus,
+.ixir-field .form-control:focus,
+.ixir-custom-control .form-control:focus {
+  border-color: #396cdf;
+  background: #fff !important;
   outline: none;
-  box-shadow: 0 0 0 3px rgba(36, 41, 53, 0.08);
+  box-shadow: 0 0 0 3px rgba(57, 108, 223, 0.15) !important;
 }
-.ixir-auth-meta {
+
+.ixir-select-field {
+  position: relative;
+}
+
+.ixir-select-field:has(.ixir-select.is-open) {
+  z-index: 20;
+}
+
+.ixir-select {
+  position: relative;
+}
+
+.ixir-select-native {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.ixir-select-trigger {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin: 6px 0 18px;
-  font-size: 13px;
+  gap: 10px;
+  width: 100%;
+  height: 46px;
+  padding: 0 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f1f5fb;
+  color: #94a3b8;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
 }
-.ixir-auth-remember {
+
+.ixir-select.has-value .ixir-select-trigger {
+  color: #0f172a;
+}
+
+.ixir-select-trigger:hover {
+  border-color: #cbd5e1;
+}
+
+.ixir-select.is-open .ixir-select-trigger,
+.ixir-select-trigger:focus {
+  border-color: #396cdf;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(57, 108, 223, 0.15);
+}
+
+.ixir-select-label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ixir-select-caret {
+  color: #396cdf;
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.ixir-select.is-open .ixir-select-caret {
+  transform: rotate(180deg);
+}
+
+.ixir-select-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 30;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.ixir-select-option {
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #334155;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ixir-select-option:hover {
+  background: #f1f5fb;
+  color: #0f172a;
+}
+
+.ixir-select-option.is-selected {
+  background: #396cdf;
+  color: #fff;
+}
+
+.ixir-select-option.is-placeholder {
+  color: #94a3b8;
+}
+
+.ixir-select-option.is-placeholder.is-selected {
+  background: #e2e8f0;
+  color: #64748b;
+}
+
+.ixir-field-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+
+.ixir-field-row > .ixir-field {
+  min-width: 0;
+  width: 100%;
+}
+
+.ixir-field-row .ixir-select,
+.ixir-field-row .ixir-select-trigger,
+.ixir-field-row .form-control {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.ixir-radio-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.ixir-radio {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ixir-member-type {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ixir-member-option {
   margin: 0;
-  font-weight: 500;
-  color: #4b5563;
+  min-width: 0;
   cursor: pointer;
 }
-.ixir-auth-remember input {
-  margin: 0;
+
+.ixir-member-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
-.ixir-auth-forgot {
-  color: #242935;
+
+.ixir-member-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 12px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #64748b;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.ixir-member-option:hover .ixir-member-card {
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+.ixir-member-option input:focus-visible + .ixir-member-card,
+.ixir-member-option input:checked + .ixir-member-card {
+  border-color: #396cdf;
+  background: #fff;
+  color: #1e293b;
+  box-shadow: 0 0 0 3px rgba(57, 108, 223, 0.15);
+}
+
+.ixir-member-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #e2e8f0;
+  color: #64748b;
+  font-size: 12px;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.ixir-member-option input:checked + .ixir-member-card .ixir-member-icon {
+  background: #396cdf;
+  color: #fff;
+}
+
+.ixir-member-title {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.ixir-member-dot {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border: 2px solid #cbd5e1;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: inset 0 0 0 3px #fff;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.ixir-member-option input:checked + .ixir-member-card .ixir-member-dot {
+  border-color: #396cdf;
+  background: #396cdf;
+}
+
+.ixir-company-field {
+  display: none;
+}
+
+.ixir-company-field.is-visible {
+  display: block;
+}
+
+.ixir-split-meta {
+  display: flex;
+  align-items: center;
+  margin: 2px 0 16px;
+}
+
+.ixir-remember {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f1f5fb;
+  color: #334155;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ixir-remember input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.ixir-remember-box {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.ixir-remember-box::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-top: 0;
+  border-left: 0;
+  opacity: 0;
+  transform: scale(0.6) rotate(45deg);
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+}
+
+.ixir-remember-text {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.ixir-remember:hover {
+  border-color: #c5d4f5;
+}
+
+.ixir-remember:hover .ixir-remember-box {
+  border-color: #396cdf;
+}
+
+.ixir-remember:has(input:checked) {
+  border-color: #396cdf;
+  background: #eef3ff;
+}
+
+.ixir-remember input:checked + .ixir-remember-box {
+  background: #396cdf;
+  border-color: #396cdf;
+}
+
+.ixir-remember input:checked + .ixir-remember-box::after {
+  opacity: 1;
+  transform: scale(1) rotate(45deg);
+}
+
+.ixir-remember:has(input:focus-visible) {
+  box-shadow: 0 0 0 3px rgba(57, 108, 223, 0.18);
+}
+
+.ixir-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 10px;
+  color: #334155;
+  font-size: 13px;
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+.ixir-check input,
+.ixir-agreements input[type="checkbox"] {
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.ixir-check span {
+  flex: 1;
+}
+
+.ixir-check a {
+  color: #396cdf;
+  font-weight: 600;
+}
+
+.ixir-forgot {
+  color: #396cdf;
+  font-size: 13px;
   font-weight: 600;
   text-decoration: none;
+  white-space: nowrap;
 }
-.ixir-auth-forgot:hover,
-.ixir-auth-foot a:hover {
-  color: #c9a227;
-  text-decoration: none;
+
+.ixir-forgot:hover {
+  text-decoration: underline;
 }
-.ixir-auth-captcha {
-  margin-bottom: 16px;
+
+.ixir-agreements {
+  margin: 8px 0 16px;
 }
-.ixir-auth-submit {
+
+.ixir-split-captcha,
+.ixir-captcha-slot {
+  display: block !important;
+  width: 100%;
+  margin: 12px 0 20px !important;
+  min-height: 52px;
+  clear: both;
+  position: relative;
+  z-index: 1;
+}
+
+.ixir-captcha-source {
+  width: 100%;
+  display: block !important;
+  position: relative;
+  clear: both;
+}
+
+.ixir-captcha-wrap {
+  width: 100%;
+  display: block !important;
+  text-align: left;
+  clear: both;
+  margin: 0 0 8px !important;
+}
+
+.ixir-captcha-wrap.is-invalid .ixir-recaptcha-box,
+.ixir-captcha-wrap.is-invalid .g-recaptcha {
+  outline: 2px solid #dc2626;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.ixir-recaptcha-box,
+.ixir-captcha-wrap .recaptcha-container,
+.ixir-captcha-wrap #google-recaptcha-domainchecker,
+.ixir-captcha-wrap .g-recaptcha {
+  margin: 0 0 8px !important;
   display: block;
   width: 100%;
+  max-width: 100%;
+  min-height: 78px;
+  overflow: visible;
+}
+
+.ixir-recaptcha-box .g-recaptcha {
+  width: 304px;
+  height: 78px;
+  max-width: 100%;
+}
+
+.ixir-recaptcha-box iframe {
+  max-width: none !important;
+}
+
+.ixir-auth-page #default-captcha-domainchecker,
+.ixir-split-form #default-captcha-domainchecker,
+.ixir-captcha-wrap #default-captcha-domainchecker {
+  margin: 0 auto 16px !important;
+  float: none !important;
+  width: 100% !important;
+  max-width: 100%;
+  position: relative !important;
+  clear: both !important;
+  box-sizing: border-box;
+}
+
+.ixir-default-captcha {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 16px !important;
+  float: none !important;
+  clear: both;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.ixir-default-captcha-row {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  float: none !important;
+  box-sizing: border-box;
+}
+
+.ixir-default-captcha-row img {
+  height: 46px;
+  width: auto;
+  max-width: min(180px, 48%);
+  flex: 0 1 auto;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  float: none !important;
+}
+
+.ixir-default-captcha-row .form-control,
+.ixir-captcha-wrap #inputCaptcha,
+.ixir-split-form #inputCaptcha {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 46px !important;
+  float: none !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+  background: #f1f5fb !important;
+}
+
+.ixir-split-form .ixir-split-btn,
+.ixir-auth-page .ixir-split-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100% !important;
   height: 48px;
+  margin-top: 8px !important;
+  clear: both !important;
+  position: relative !important;
+  float: none !important;
   border: 0;
-  border-radius: 12px;
-  background: #242935 !important;
+  border-radius: 10px;
+  background: #396cdf !important;
   color: #fff !important;
   font-size: 16px;
   font-weight: 700;
   box-shadow: none !important;
+  z-index: 0;
 }
-.ixir-auth-submit:hover,
-.ixir-auth-submit:focus {
-  background: #1a1e29 !important;
-  color: #fbd746 !important;
+
+.ixir-split-btn i {
+  font-size: 15px;
+  line-height: 1;
 }
-.ixir-auth-foot {
-  margin-top: 18px;
-  padding-top: 16px;
-  border-top: 1px solid #eef0f4;
-  text-align: center;
-  color: #6b7280;
-  font-size: 14px;
+
+.ixir-split-btn:hover,
+.ixir-split-btn:focus {
+  background: #2f5bc4 !important;
+  color: #fff !important;
 }
-.ixir-auth-foot a {
-  margin-left: 6px;
-  color: #242935;
-  font-weight: 700;
+
+a.ixir-split-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
 }
-.ixir-auth-social {
+
+.ixir-register-placeholder .ixir-split-switch-link {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.ixir-split-social {
   margin-top: 18px;
 }
+
+.ixir-pw-field {
+  position: relative;
+  z-index: 1;
+}
+
+.ixir-pw-confirm-field .form-control.is-mismatch,
+.ixir-pw-field .form-control.is-mismatch {
+  border-color: #dc2626 !important;
+  background: #fff5f5 !important;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12) !important;
+}
+
+.ixir-pw-confirm-field .form-control.is-strength-weak,
+.ixir-pw-field .form-control.is-strength-weak {
+  border-color: #dc2626 !important;
+}
+
+.ixir-pw-confirm-field .form-control.is-strength-good,
+.ixir-pw-field .form-control.is-strength-good {
+  border-color: #ca8a04 !important;
+}
+
+.ixir-pw-confirm-field .form-control.is-strength-strong,
+.ixir-pw-field .form-control.is-strength-strong,
+.ixir-pw-confirm-field .form-control.is-match,
+.ixir-pw-field .form-control.is-match {
+  border-color: #16a34a !important;
+}
+
+.ixir-pw-meter {
+  display: none;
+  margin-top: 8px;
+}
+
+.ixir-pw-meter.is-visible {
+  display: block;
+}
+
+.ixir-pw-meter.is-invalid .ixir-pw-meter-top,
+.ixir-pw-meter.is-warn .ixir-pw-meter-top {
+  padding: 4px 0;
+}
+
+.ixir-pw-meter-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ixir-pw-strength-label {
+  flex-shrink: 0;
+  min-width: 42px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.ixir-pw-meter.is-warn .ixir-pw-strength-label,
+.ixir-pw-meter[data-strength="warn"] .ixir-pw-strength-label {
+  min-width: 0;
+  color: #dc2626;
+}
+
+.ixir-pw-meter.is-warn .ixir-pw-strength-bar,
+.ixir-pw-meter[data-strength="warn"] .ixir-pw-strength-bar {
+  background: #ef4444;
+}
+
+.ixir-pw-strength-track {
+  flex: 1;
+  height: 5px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.ixir-pw-strength-bar {
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: #94a3b8;
+  transition:
+    width 0.2s ease,
+    background 0.2s ease;
+}
+
+.ixir-pw-meter[data-strength="weak"] .ixir-pw-strength-label {
+  color: #dc2626;
+}
+
+.ixir-pw-meter[data-strength="weak"] .ixir-pw-strength-bar {
+  background: #ef4444;
+}
+
+.ixir-pw-meter[data-strength="good"] .ixir-pw-strength-label {
+  color: #ca8a04;
+}
+
+.ixir-pw-meter[data-strength="good"] .ixir-pw-strength-bar {
+  background: #eab308;
+}
+
+.ixir-pw-meter[data-strength="strong"] .ixir-pw-strength-label {
+  color: #16a34a;
+}
+
+.ixir-pw-meter[data-strength="strong"] .ixir-pw-strength-bar {
+  background: #22c55e;
+}
+
+.ixir-split-form .alert {
+  margin-bottom: 16px;
+}
+
+.ixir-auth-reset .ixir-split-form-head p,
+.ixir-auth-split.is-reset .ixir-split-form-head p {
+  max-width: 380px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+.ixir-auth-reset .ixir-auth-overlay-left {
+  display: none;
+}
+
+.ixir-overlay-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.ixir-overlay-forgot {
+  width: 100%;
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.ixir-overlay-forgot h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.ixir-overlay-forgot p {
+  margin: 0 auto 28px;
+  max-width: 320px;
+}
+
+.ixir-reset-form .ixir-split-switch-link {
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.ixir-reset-back {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+  color: #396cdf;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ixir-reset-back:hover {
+  color: #2f5bc4;
+  text-decoration: underline;
+}
+
+.ixir-reset-success-text {
+  margin: 0 0 20px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.ixir-pw-strength-field .progress {
+  margin-bottom: 0;
+}
+
 .logincontainer {
   width: 100%;
   max-width: 460px;
@@ -141,34 +1246,109 @@
   box-shadow: 0 12px 40px rgba(36, 41, 53, 0.08);
   padding: 36px 32px 28px;
 }
-.logincontainer .header-lined {
-  text-align: center;
-  margin-bottom: 18px;
-}
-.logincontainer .header-lined h1 {
-  font-size: 28px;
-  font-weight: 800;
-  color: #242935;
-}
-.logincontainer .header-lined small {
-  display: block;
-  margin-top: 6px;
-  color: #6b7280;
-  font-size: 14px;
-  font-weight: 400;
-}
-@media (max-width: 767px) {
-  .ixir-auth-card,
-  .logincontainer {
-    padding: 28px 20px 22px;
-    border-radius: 14px;
+
+@media (max-width: 900px) {
+  body.ixir-auth-page {
+    --ixir-auth-pad: 16px;
   }
-  .ixir-auth-head h1,
-  .logincontainer .header-lined h1 {
-    font-size: 24px;
+
+  .ixir-auth-page #main-body,
+  body.ixir-auth-page #main-body {
+    height: auto !important;
+    min-height: 0 !important;
   }
-  .ixir-auth-meta {
+
+  body.ixir-auth-page #main-body > .container,
+  body.ixir-auth-page #main-body .row,
+  body.ixir-auth-page #main-body .main-content,
+  body.ixir-auth-page #main-body .col-xs-12,
+  .ixir-auth-split,
+  .ixir-auth-split-card {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .ixir-auth-split-card {
     flex-direction: column;
-    align-items: flex-start;
+    border-radius: 20px;
+  }
+
+  .ixir-auth-forms,
+  .ixir-auth-overlay {
+    position: relative;
+    width: 100%;
+    left: auto;
+    height: auto;
+    min-height: 0;
+    transform: none !important;
+  }
+
+  .ixir-auth-overlay {
+    order: -1;
+  }
+
+  .ixir-auth-split.is-register .ixir-auth-forms,
+  .ixir-auth-split.is-register .ixir-auth-overlay {
+    transform: none !important;
+  }
+
+  .ixir-auth-overlay-panel {
+    padding: 28px 24px;
+    justify-content: center;
+  }
+
+  .ixir-auth-overlay-panel h2,
+  .ixir-overlay-forgot h2 {
+    font-size: 26px;
+  }
+
+  .ixir-overlay-forgot h2 {
+    white-space: normal;
+  }
+
+  .ixir-overlay-forgot {
+    margin-top: 18px;
+    padding-top: 16px;
+  }
+
+  .ixir-auth-overlay-left,
+  .ixir-auth-overlay-right,
+  .ixir-auth-overlay-reset {
+    position: relative;
+    inset: auto;
+    transform: none !important;
+  }
+
+  .ixir-auth-split:not(.is-reset) .ixir-auth-overlay-reset,
+  .ixir-auth-split:not(.is-register):not(.is-reset) .ixir-auth-overlay-left,
+  .ixir-auth-split.is-register .ixir-auth-overlay-right,
+  .ixir-auth-split.is-reset .ixir-auth-overlay-left,
+  .ixir-auth-split.is-reset .ixir-auth-overlay-right {
+    display: none;
+  }
+
+  .ixir-auth-split:not(.is-register):not(.is-reset) .ixir-auth-overlay-right,
+  .ixir-auth-split.is-register .ixir-auth-overlay-left,
+  .ixir-auth-split.is-reset .ixir-auth-overlay-reset {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .ixir-auth-panel {
+    padding: 24px 22px;
+  }
+
+  .ixir-field-row {
+    grid-template-columns: 1fr;
+  }
+
+  .ixir-split-meta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ixir-remember {
+    width: 100%;
   }
 }
