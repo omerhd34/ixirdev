@@ -11,6 +11,9 @@
  </section>
 {/if}
 
+{if $templatefile != 'homepage' && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $templatefile != 'logout'}
+ {include file="$template/components/ixir-next.tpl"}
+{/if}
 {include file="$template/components/footer/footer.tpl"}
 
 <div id="fullpage-overlay" class="hidden">

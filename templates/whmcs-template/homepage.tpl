@@ -6,6 +6,7 @@
 {include file="$template/components/testimonials/testimonials.tpl"}
 {include file="$template/components/solutions/solutions.tpl"}
 {include file="$template/components/help/help.tpl"}
+{include file="$template/components/ixir-next.tpl"}
 
 {if $twitterusername || $announcements}
  <section id="main-body">
