@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+/* Anasayfa güven / avantaj bölümü */
+
+.ixir-trust {
+  position: relative;
+  z-index: 1;
+  padding: 72px 0 64px;
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+.ixir-trust .container {
+  max-width: 100%;
+  min-width: 0;
+}
+.ixir-trust-head {
+  max-width: 920px;
+  margin: 0 auto 40px;
+  padding: 0 12px;
+  text-align: center;
+}
+.ixir-trust-head h2 {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.28;
+  color: #1a1f2e;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+.ixir-trust-head h2::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  margin: 16px auto 0;
+  border-radius: 99px;
+  background: #386ce0;
+}
+.ixir-trust-head p {
+  margin: 14px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #6d7588;
+  overflow-wrap: break-word;
+}
+.ixir-trust-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px 16px;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  min-width: 0;
+}
+.ixir-trust-item {
+  min-width: 0;
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 10px 4px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 20px;
+  transition: transform 0.22s ease;
+}
+.ixir-trust-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: #f4f7fd;
+  box-shadow: inset 0 0 0 1px rgba(56, 108, 224, 0.06);
+  transition:
+    background 0.22s ease,
+    box-shadow 0.22s ease,
+    transform 0.22s ease;
+}
+.ixir-trust-icon img {
+  display: block;
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+}
+.ixir-trust-item h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: #1a1f2e;
+}
+.ixir-trust-item p {
+  margin: 0 auto;
+  max-width: 34ch;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #6d7588;
+  overflow-wrap: break-word;
+}
+.ixir-trust ~ #main-body {
+  padding-top: 28px !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ixir-trust-item:hover {
+    transform: translateY(-3px);
+  }
+  .ixir-trust-item:hover .ixir-trust-icon {
+    background: #eaf0ff;
+    box-shadow: inset 0 0 0 1px rgba(56, 108, 224, 0.12);
+    transform: translateY(-1px);
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .ixir-trust-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 36px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .ixir-trust {
+    padding: 72px 0 64px;
+  }
+  .ixir-trust-head {
+    margin-bottom: 40px;
+  }
+  .ixir-trust-head h2 {
+    font-size: 32px;
+  }
+  .ixir-trust-head p {
+    font-size: 16px;
+  }
+  .ixir-trust-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 48px 44px;
+  }
+  .ixir-trust-item {
+    max-width: 300px;
+  }
+  .ixir-trust-item p {
+    min-height: 4.8em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ixir-trust {
+    padding: 44px 0 36px;
+  }
+  .ixir-trust-head {
+    margin-bottom: 32px;
+  }
+  .ixir-trust-head h2 {
+    font-size: 23px;
+    letter-spacing: -0.02em;
+  }
+  .ixir-trust-head h2::after {
+    margin-top: 12px;
+  }
+  .ixir-trust-head p {
+    font-size: 15px;
+  }
+  .ixir-trust-grid {
+    gap: 28px 16px;
+  }
+  .ixir-trust-icon {
+    width: 84px;
+    height: 84px;
+    margin-bottom: 14px;
+  }
+  .ixir-trust-icon img {
+    width: 52px;
+    height: 52px;
+  }
+}
