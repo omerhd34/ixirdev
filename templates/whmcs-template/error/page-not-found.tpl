@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/css/page-not-found.css?v={$versionHash}-r5">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/css/page-not-found.css?v={$versionHash}-r6">
 
 <section class="ixir-404" aria-labelledby="ixir-404-title">
  <div class="ixir-404-hero">
