@@ -41,6 +41,12 @@
    "name" => "İsmail Uygar",
    "role" => "Webmaster",
    "text" => "Uygun fiyatlı hizmet, kaliteli destek ve yüksek uptime, teşekkürler!"
+  ],
+  [
+   "initials" => "OHD",
+   "name" => "Ömer Halis Demir",
+   "role" => "Full Stack Developer",
+   "text" => "Full stack projelerimde performans ve uptime vazgeçilmez. ixirhost altyapısı tutarlı, panel sade, teknik ekip de gerçekten geliştirici dilinden anlıyor. Gönül rahatlığıyla öneririm."
   ]
  ]}
  {assign var="ixirReviewsRows" value=[

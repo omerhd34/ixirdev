@@ -33,7 +33,7 @@
 .ixir-trust-head h2::after {
   content: "";
   display: block;
-  width: 36px;
+  width: 100px;
   height: 3px;
   margin: 16px auto 0;
   border-radius: 99px;

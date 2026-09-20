@@ -67,7 +67,7 @@
 .ixir-help-copy h2::after {
   content: "";
   display: block;
-  width: 36px;
+  width: 100px;
   height: 3px;
   margin: 14px auto 0;
   border-radius: 99px;
