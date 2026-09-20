@@ -5,12 +5,25 @@ DirectoryIndex index.php
 RewriteEngine On
 RewriteBase /
 
-# Giriş
+# Hesabım (giriş + kayıt + şifre sıfırlama)
+RewriteRule ^hesabim/sifre/(.+)$ ixir-route.php?ixir_rp=password-reset&ixir_suffix=$1 [L,QSA]
+RewriteRule ^hesabim/?$ ixir-hesabim.php [L,QSA]
+
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteRule ^giris/?$ hesabim [R=301,L,QSA]
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteRule ^kayit/?$ hesabim?panel=kayit [R=301,L,QSA]
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteRule ^sifremi-unuttum/?$ hesabim?panel=sifre [R=301,L,QSA]
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteRule ^sifremi-unuttum/(.+)$ hesabim/sifre/$1 [R=301,L,QSA]
+
+# Giriş (POST ve 2FA)
 RewriteRule ^giris/dogrulama/yedek/?$ ixir-route.php?ixir_rp=login-2fa-backup [L,QSA]
 RewriteRule ^giris/dogrulama/?$ ixir-route.php?ixir_rp=login-2fa [L,QSA]
 RewriteRule ^giris/?$ ixir-route.php?ixir_rp=login [L,QSA]
 
-# Kayıt / çıkış / şifre
+# Kayıt POST (geriye dönük)
 RewriteRule ^kayit/?$ register.php [L,QSA]
 RewriteRule ^cikis/?$ logout.php [L,QSA]
 RewriteCond %{REQUEST_METHOD} POST
