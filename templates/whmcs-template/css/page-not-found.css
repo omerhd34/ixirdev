@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+body.ixir-404-page #main-body .header-lined,
+#main-body:has(.ixir-404) .header-lined {
+  display: none !important;
+}
+
+body.ixir-404-page #main-body,
+#main-body:has(.ixir-404) {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  background: #f6f8fb !important;
+}
+
+.ixir-404 {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 0 80px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ixir-404-hero {
+  text-align: center;
+}
+
+.ixir-404-kicker {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 10px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #eaf0ff;
+  color: #386ce0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ixir-404-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 8px 0 6px;
+  color: #1a1f2e;
+  font-family: "Raleway", sans-serif !important;
+  font-size: 112px;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.ixir-404-zero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.05em;
+  height: 1.05em;
+  color: #386ce0;
+}
+
+.ixir-404-zero svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  animation: ixir404Pulse 3.2s ease-in-out infinite;
+}
+
+.ixir-404 h1 {
+  margin: 8px 0 12px;
+  color: #1a1f2e;
+  font-family: "Raleway", sans-serif !important;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+}
+
+.ixir-404 h1::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  margin: 16px auto 0;
+  border-radius: 99px;
+  background: #386ce0;
+}
+
+.ixir-404-lead {
+  max-width: 620px;
+  margin: 16px auto 0;
+  color: #5b6578;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.ixir-404-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.ixir-404-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 12px;
+  background: none;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none !important;
+  cursor: pointer;
+  appearance: none;
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.ixir-404-btn--primary,
+.ixir-404-btn--primary:visited {
+  background: #242935;
+  color: #fff !important;
+}
+
+.ixir-404-btn--primary:hover,
+.ixir-404-btn--primary:focus {
+  background: #1a1e29;
+  color: #fbd746 !important;
+}
+
+.ixir-404-btn--support,
+.ixir-404-btn--support:visited {
+  background: #386ce0;
+  color: #fff !important;
+}
+
+.ixir-404-btn--support:hover,
+.ixir-404-btn--support:focus {
+  background: #2f5cc4;
+  color: #fff !important;
+}
+
+.ixir-404-btn--back {
+  background: #fff;
+  color: #1a1f2e;
+  box-shadow: inset 0 0 0 1px #d5dbe7;
+}
+
+.ixir-404-btn--back:hover,
+.ixir-404-btn--back:focus {
+  background: #f3f5f9;
+  color: #1a1f2e;
+  box-shadow: inset 0 0 0 1px #b8c0ce;
+}
+
+@keyframes ixir404Pulse {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@media (min-width: 1100px) {
+  .ixir-404 {
+    padding: 80px 0 96px;
+  }
+  .ixir-404-code {
+    font-size: 128px;
+  }
+  .ixir-404 h1 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ixir-404 {
+    padding: 40px 0 56px;
+  }
+  .ixir-404-code {
+    font-size: 72px;
+  }
+  .ixir-404 h1 {
+    font-size: 26px;
+  }
+  .ixir-404-lead {
+    font-size: 15px;
+  }
+  .ixir-404-btn--primary,
+  .ixir-404-btn--support,
+  .ixir-404-btn--back {
+    width: 100%;
+  }
+  .ixir-404-actions {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ixir-404-zero svg {
+    animation: none;
+  }
+}
