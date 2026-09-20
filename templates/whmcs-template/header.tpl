@@ -36,6 +36,74 @@
  {if $captcha && ($templatefile != 'clientregister' || !$loggedin)}{$captcha->getMarkup()}{/if}
  {$headeroutput}
 
+ <style>
+  html {
+   --ixir-scroll-size: 18px;
+   height: auto !important;
+   overflow-x: hidden !important;
+   overflow-y: scroll !important;
+   scrollbar-width: auto;
+   scrollbar-color: #d4d4d4 #2a2a2a;
+  }
+
+  body {
+   height: auto !important;
+   overflow: visible !important;
+   display: block !important;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+   width: var(--ixir-scroll-size) !important;
+   height: var(--ixir-scroll-size) !important;
+   display: block !important;
+   background: #2a2a2a !important;
+  }
+
+  html::-webkit-scrollbar-track,
+  body::-webkit-scrollbar-track {
+   background: #2a2a2a !important;
+  }
+
+  html::-webkit-scrollbar-thumb,
+  body::-webkit-scrollbar-thumb {
+   background: #d4d4d4 !important;
+   border-radius: 999px !important;
+   border: 3px solid #2a2a2a !important;
+   background-clip: padding-box !important;
+  }
+
+  html::-webkit-scrollbar-thumb:hover,
+  body::-webkit-scrollbar-thumb:hover {
+   background: #e4e4e4 !important;
+   border: 3px solid #2a2a2a !important;
+   background-clip: padding-box !important;
+  }
+
+  .ixir-header,
+  .mobile-header {
+   position: fixed !important;
+   top: 0 !important;
+   left: 0 !important;
+   right: 0 !important;
+   width: 100% !important;
+   z-index: 10000;
+   box-shadow: 0 2px 4px rgba(3, 27, 78, 0.1);
+  }
+
+  .ixir-header-spacer {
+   display: block;
+   width: 100%;
+   height: 113px;
+   pointer-events: none;
+  }
+
+  @media only screen and (max-width: 992px) {
+   .ixir-header-spacer {
+    height: 96px;
+   }
+  }
+ </style>
  {include file="$template/components/header/mobile-header.tpl"}
 
  <div class="ixir-header header menuTopFix">
@@ -100,6 +168,7 @@
    </div>
   </nav>
  </div>
+ <div class="ixir-header-spacer" aria-hidden="true"></div>
 
  {include file="$template/components/news-bar/news-bar.tpl"}
  {include file="$template/components/header/header-scripts.tpl"}

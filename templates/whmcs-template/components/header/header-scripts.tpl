@@ -131,35 +131,23 @@
     $(this).attr('aria-expanded', open ? 'true' : 'false');
    });
 
-   function updateIxirSticky() {
-    var y = $(window).scrollTop();
+   function updateIxirHeaderSpacer() {
     var isMobile = $(window).width() <= 992;
     var $header = isMobile ? $('.mobile-header') : $('.ixir-header');
-    var $other = isMobile ? $('.ixir-header') : $('.mobile-header');
-    $other.removeClass('sticky');
-    if ($other.next().hasClass('ixir-header-spacer')) {
-     $other.next('.ixir-header-spacer').remove();
-    }
+    var $spacer = $('.ixir-header-spacer');
     if (!isMobile) {
      setIxirMobileMenu(false);
     }
-    if ($header.hasClass('menu-open')) {
+    if (!$header.length || !$spacer.length) {
      return;
     }
-    if (y > 36) {
-     if (!$header.hasClass('sticky')) {
-      var height = $header.outerHeight() || 0;
-      $header.addClass('sticky');
-      $header.after('<div class="ixir-header-spacer" style="height:' + height + 'px"></div>');
-     }
-    } else {
-     $header.removeClass('sticky');
-     if ($header.next().hasClass('ixir-header-spacer')) {
-      $header.next('.ixir-header-spacer').remove();
-     }
+    var height = $header.outerHeight() || 0;
+    if (height > 0) {
+     $spacer.css('height', height + 'px');
     }
    }
-   $(window).on('scroll resize', updateIxirSticky);
+   $(window).on('load resize', updateIxirHeaderSpacer);
+   updateIxirHeaderSpacer();
   });
  {/literal}
 </script>
