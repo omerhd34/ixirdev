@@ -23,6 +23,7 @@ function ixir_friendly_inbound()
         'giris/dogrulama' => 'login-2fa',
         'giris/dogrulama/yedek' => 'login-2fa-backup',
         'sifremi-unuttum' => ['GET' => 'password-reset', 'HEAD' => 'password-reset', 'POST' => 'password-reset-validate'],
+        'hesabim/sifre' => ['GET' => 'password-reset', 'HEAD' => 'password-reset', 'POST' => 'password-reset-validate'],
         'hesap/profil' => 'user-profile',
         'hesap/sifre' => 'user-password',
         'hesap/guvenlik' => 'user-security',
