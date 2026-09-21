@@ -5,9 +5,15 @@ use WHMCS\ClientArea;
 define('CLIENTAREA', true);
 
 require __DIR__ . '/init.php';
+require_once __DIR__ . '/includes/ixir-corporate-pages.php';
 
 $slug = strtolower(trim((string) ($_GET['slug'] ?? '')));
 $slug = preg_replace('/[^a-z0-9-]/', '', $slug);
+
+if (ixir_render_corporate_page($slug)) {
+    exit;
+}
+
 $pages = function_exists('ixir_product_pages') ? ixir_product_pages() : [];
 
 if ($slug === '' || !isset($pages[$slug])) {
