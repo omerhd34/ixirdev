@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
-
-/* Anasayfa müşteri yorumları */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
 
 .ixir-reviews {
   position: relative;
@@ -17,7 +15,6 @@
   -webkit-font-smoothing: antialiased;
 }
 .ixir-reviews .container {
-  max-width: 100%;
   min-width: 0;
 }
 .ixir-reviews-head {
@@ -29,7 +26,7 @@
 .ixir-reviews-head h2 {
   margin: 0;
   color: #1a1f2e;
-  font-family: "Raleway", sans-serif !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -54,11 +51,7 @@
 .ixir-reviews-board {
   display: flex;
   flex-direction: column;
-}
-.ixir-reviews-viewport {
-  position: relative;
   overflow: hidden;
-  padding: 4px 0 8px;
   mask-image: linear-gradient(
     90deg,
     transparent,
@@ -74,20 +67,35 @@
     transparent
   );
 }
+.ixir-reviews-viewport {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0 8px;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+.ixir-reviews-viewport::-webkit-scrollbar {
+  display: none;
+  height: 0;
+}
+.ixir-reviews-viewport,
+.ixir-reviews-viewport * {
+  cursor: grab;
+}
+.ixir-reviews-viewport.is-dragging,
+.ixir-reviews-viewport.is-dragging * {
+  cursor: grabbing;
+}
 .ixir-reviews-track {
   display: flex;
   align-items: stretch;
   gap: 16px;
   width: max-content;
-  will-change: transform;
-}
-.ixir-reviews.is-ready .ixir-reviews-track {
-  animation: ixir-reviews-scroll var(--ixir-reviews-duration, 38s) linear
-    infinite;
-}
-.ixir-reviews.is-ready .ixir-reviews-board:hover .ixir-reviews-track,
-.ixir-reviews.is-ready .ixir-reviews-board:focus-within .ixir-reviews-track {
-  animation-play-state: paused;
 }
 .ixir-reviews-group {
   display: flex;
@@ -112,8 +120,8 @@
     0 1px 1px rgba(44, 50, 66, 0.04),
     0 12px 28px rgba(44, 50, 66, 0.06);
   text-align: left;
+  -webkit-user-drag: none;
   transition:
-    transform 0.28s ease,
     box-shadow 0.28s ease,
     border-color 0.28s ease;
 }
@@ -131,7 +139,6 @@
   pointer-events: none;
 }
 .ixir-reviews-card:hover {
-  transform: translateY(-4px);
   border-color: #d5def0;
   box-shadow:
     0 1px 1px rgba(44, 50, 66, 0.04),
@@ -216,39 +223,6 @@
   padding-top: 32px !important;
 }
 
-@keyframes ixir-reviews-scroll {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(calc(-1 * var(--ixir-reviews-shift, 50%)), 0, 0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .ixir-reviews-board {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 16px;
-  }
-  .ixir-reviews-viewport {
-    overflow-x: auto;
-    mask-image: none;
-    -webkit-mask-image: none;
-    scrollbar-width: none;
-  }
-  .ixir-reviews-viewport::-webkit-scrollbar {
-    display: none;
-  }
-  .ixir-reviews.is-ready .ixir-reviews-track,
-  .ixir-reviews-track {
-    animation: none;
-  }
-  .ixir-reviews-card:hover {
-    transform: none;
-  }
-}
-
 @media only screen and (max-width: 767px) {
   .ixir-reviews {
     padding: 36px 0 28px;
@@ -265,7 +239,7 @@
   .ixir-reviews-head p {
     font-size: 15px;
   }
-  .ixir-reviews-viewport {
+  .ixir-reviews-board {
     mask-image: linear-gradient(
       90deg,
       transparent,
