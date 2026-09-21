@@ -172,17 +172,6 @@ function ixir_product_pages()
                 'Açıkların tespit edilmesi',
             ],
         ],
-        'kurumsal' => [
-            'title' => 'Kurumsal',
-            'tagline' => '2005’ten beri internet altyapısı üreten ixirhost.',
-            'icon' => 'far fa-building',
-            'groupNames' => [],
-            'points' => [
-                'İstanbul merkezli altyapı',
-                'Domain, hosting ve sunucu hizmetleri',
-                '0850 302 7 111 telefon desteği',
-            ],
-        ],
         'ssl-sertifikalari' => [
             'title' => 'SSL Sertifikaları',
             'tagline' => 'Sitenizi HTTPS ile güvence altına alın.',
