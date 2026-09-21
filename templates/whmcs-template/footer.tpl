@@ -1,4 +1,4 @@
-{if $templatefile != 'homepage' || $twitterusername || $announcements}
+{if !$ixirCorporate && ($templatefile != 'homepage' || $twitterusername || $announcements)}
  </div><!-- /.main-content -->
  {if !$inShoppingCart && $secondarySidebar && $secondarySidebar->hasChildren()}
   <div class="col-md-3 pull-md-left sidebar sidebar-secondary">
@@ -11,7 +11,10 @@
  </section>
 {/if}
 
-{if $templatefile != 'homepage' && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $templatefile != 'logout'}
+{if !$ixirIsAuthPage && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $filename != 'ixir-hesabim' && $filename != 'register'}
+ {include file="$template/components/help/help.tpl"}
+{/if}
+{if $templatefile == 'homepage'}
  {include file="$template/components/ixir-next.tpl"}
 {/if}
 {include file="$template/components/footer/footer.tpl"}

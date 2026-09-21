@@ -34,9 +34,9 @@
 
 <body
  {if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim'}
- class="ixir-auth-page" data-phone-cc-input="" {else} data-phone-cc-input="{$phoneNumberInputStyle}" 
- {/if}>
- {if $captcha && ($templatefile != 'clientregister' || !$loggedin)}{$captcha->getMarkup()}{/if}
+  class="ixir-auth-page" data-phone-cc-input="" {else} class="{if $ixirCorporate}ixir-corporate-page{/if}"
+ data-phone-cc-input="{$phoneNumberInputStyle}" {/if}>
+ {if $ixirLoadRecaptcha && $captcha && ($templatefile != 'clientregister' || !$loggedin)}{$captcha->getMarkup()}{/if}
  {$headeroutput}
 
  <style>
@@ -212,7 +212,7 @@
   {include file="$template/includes/verifyemail.tpl"}
  {/if}
 
- {if $templatefile != 'homepage'}
+ {if $templatefile != 'homepage' && !$ixirCorporate}
   <section id="main-body">
    <div class="container{if $skipMainBodyContainer}-fluid without-padding{/if}">
     <div class="row">
