@@ -5,6 +5,7 @@ if (!defined('WHMCS')) {
 }
 
 require_once dirname(__DIR__) . '/ixir-product-pages.php';
+require_once dirname(__DIR__) . '/ixir-corporate-pages.php';
 require_once dirname(__DIR__) . '/ixir-inbound-route.php';
 
 ixir_apply_inbound_route();
@@ -212,7 +213,12 @@ function ixir_make_friendly($url)
     if ($file === 'ixir-page.php') {
         parse_str($query, $params);
         $slug = preg_replace('/[^a-z0-9-]/', '', strtolower((string) ($params['slug'] ?? '')));
-        if ($slug !== '' && isset(ixir_product_pages()[$slug])) {
+        $corpPages = function_exists('ixir_corporate_pages') ? ixir_corporate_pages() : [];
+        $corpAliases = function_exists('ixir_corporate_aliases') ? ixir_corporate_aliases() : [];
+        if (isset($corpAliases[$slug])) {
+            $slug = $corpAliases[$slug];
+        }
+        if ($slug !== '' && (isset(ixir_product_pages()[$slug]) || isset($corpPages[$slug]))) {
             return ixir_build_url($slug, ixir_query_without($query, ['slug']), $fragment);
         }
     }
