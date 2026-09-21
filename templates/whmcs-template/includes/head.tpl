@@ -1,30 +1,39 @@
+{assign var="ixirLoadRecaptcha" value=false}
+{if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim' || $templatefile == 'contact'}
+ {assign var="ixirLoadRecaptcha" value=true}
+{/if}
 <!-- Styling -->
 <link href="{assetPath file='all.min.css'}?v={$versionHash}" rel="stylesheet">
 <link href="{$WEB_ROOT}/assets/css/fontawesome-all.min.css" rel="stylesheet">
 {assetExists file="base.css"}
-<link href="{$__assetPath__}?v={$versionHash}-r5" rel="stylesheet">
+<link href="{$__assetPath__}?v={$versionHash}-r10" rel="stylesheet">
 {/assetExists}
-<link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r10" rel="stylesheet">
-<link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}-r3" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r17" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}-r6" rel="stylesheet">
 {if $templatefile == 'homepage'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}" rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/packages/packages.css?v={$versionHash}" rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/promo-carousel/promo-carousel.css?v={$versionHash}-r5"
+ <link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}-r10" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/packages/packages.css?v={$versionHash}-r7" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/promo-carousel/promo-carousel.css?v={$versionHash}-r7"
   rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/trust/trust.css?v={$versionHash}-r5" rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/turkey-stats/turkey-stats.css?v={$versionHash}-r12"
+ <link href="{$WEB_ROOT}/templates/{$template}/components/trust/trust.css?v={$versionHash}-r7" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/turkey-stats/turkey-stats.css?v={$versionHash}-r14"
   rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/testimonials/testimonials.css?v={$versionHash}-r6"
+ <link href="{$WEB_ROOT}/templates/{$template}/components/testimonials/testimonials.css?v={$versionHash}-r9"
   rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/solutions/solutions.css?v={$versionHash}-r5" rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/help/help.css?v={$versionHash}-r9" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/solutions/solutions.css?v={$versionHash}-r7" rel="stylesheet">
 {/if}
-<link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}-r29" rel="stylesheet">
-{if $showingLoginPage || $templatefile == 'login' || $templatefile == 'logout' || $templatefile == 'clientregister' || $templatefile == 'password-reset'}
- <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r59" rel="stylesheet">
+{if !$ixirIsAuthPage && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $filename != 'ixir-hesabim' && $filename != 'register'}
+ <link href="{$WEB_ROOT}/templates/{$template}/components/help/help.css?v={$versionHash}-r12" rel="stylesheet">
+{/if}
+<link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}-r36" rel="stylesheet">
+{if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'logout' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim'}
+ <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r62" rel="stylesheet">
 {/if}
 {if $templatefile == 'whois-sorgulama'}
  <link href="{$WEB_ROOT}/templates/{$template}/css/whois.css?v={$versionHash}" rel="stylesheet">
+{/if}
+{if $ixirCorporate || $templatefile == 'kurumsal' || $templatefile == 'contact'}
+ <link href="{$WEB_ROOT}/templates/{$template}/css/kurumsal.css?v={$versionHash}-r17" rel="stylesheet">
 {/if}
 {if $templatefile == 'product-landing'}
  <link href="{$WEB_ROOT}/templates/{$template}/css/product-landing.css?v={$versionHash}" rel="stylesheet">
@@ -40,11 +49,34 @@
  saved = '{lang|addslashes key="markdown.saved"}',
  saving = '{lang|addslashes key="markdown.saving"}',
  whmcsBaseUrl = "{\WHMCS\Utility\Environment\WebHelper::getBaseUrl()}";
- {if $captcha && !($loggedin && $templatefile == 'clientregister')}{$captcha->getPageJs()}{/if}
+ {if $ixirLoadRecaptcha && $captcha && !($loggedin && $templatefile == 'clientregister')}{$captcha->getPageJs()}{/if}
 </script>
 <script src="{assetPath file='scripts.min.js'}?v={$versionHash}"></script>
-{if $showingLoginPage || $templatefile == 'login' || $templatefile == 'clientregister' || $templatefile == 'password-reset'}
+{if $ixirLoadRecaptcha}
  <script>
+  window.ixirMarkRecaptchaBroken = function(wrap) {
+   if (!wrap || wrap.classList.contains("is-broken")) return;
+   wrap.classList.add("is-broken");
+   wrap.innerHTML = "";
+   wrap.hidden = true;
+   wrap.style.display = "none";
+   var slot = wrap.closest(".ixir-contact-captcha, .ixir-split-captcha");
+   if (slot) {
+    slot.hidden = true;
+    slot.style.display = "none";
+   }
+  };
+  (function() {
+   var nativeError = console.error;
+   console.error = function() {
+    var msg = Array.prototype.slice.call(arguments).join(" ");
+    if (/invalid site key|geçersiz site anahtarı|site sahibinin görmesi gereken hata|recaptcha/i.test(msg) &&
+     /invalid|geçersiz|error|hata/i.test(msg)) {
+     document.querySelectorAll(".ixir-captcha-wrap").forEach(window.ixirMarkRecaptchaBroken);
+    }
+    return nativeError.apply(console, arguments);
+   };
+  })();
   window.ixirOnRecaptchaLoad = function() {
    if (typeof grecaptcha === "undefined" || typeof grecaptcha.render !== "function") return;
    var siteKey = "";
@@ -56,11 +88,19 @@
     var key = el.getAttribute("data-sitekey") || siteKey;
     if (!key) return;
     if (el.offsetParent === null) return;
-    var id = grecaptcha.render(el, {
-     sitekey: key,
-     theme: "light"
-    });
-    el.setAttribute("data-widget-id", String(id));
+    var wrap = el.closest(".ixir-captcha-wrap");
+    try {
+     var id = grecaptcha.render(el, {
+      sitekey: key,
+      theme: "light",
+      "error-callback": function() {
+       window.ixirMarkRecaptchaBroken(wrap);
+      }
+     });
+     el.setAttribute("data-widget-id", String(id));
+    } catch (err) {
+     window.ixirMarkRecaptchaBroken(wrap);
+    }
    });
   };
   document.addEventListener("DOMContentLoaded", function() {
