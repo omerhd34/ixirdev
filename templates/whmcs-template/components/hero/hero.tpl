@@ -20,11 +20,10 @@
     </div>
     <div class="ixir-dc-button">
      {if $registerdomainenabled}
-     <button type="submit" class="btn btn-primary btn-block search{$captcha->getButtonClass($captchaForm)}"><i
-       class="fas fa-search" aria-hidden="true"></i> Sorgula</button>
+     <button type="submit" class="btn btn-primary btn-block search"><i class="fas fa-search" aria-hidden="true"></i>
+      Sorgula</button>
      {else}
-     <button type="submit" id="btnTransfer"
-      class="btn btn-primary btn-block transfer{$captcha->getButtonClass($captchaForm)}"><i class="fas fa-exchange-alt"
+     <button type="submit" id="btnTransfer" class="btn btn-primary btn-block transfer"><i class="fas fa-exchange-alt"
        aria-hidden="true"></i> Transfer</button>
      {/if}
     </div>
@@ -128,7 +127,7 @@
     }
 
     function apply() {
-     if (window.innerWidth > 768) {
+     if (window.matchMedia('(min-width: 992px)').matches) {
       hero.style.removeProperty('--ixir-hero-offset');
       return;
      }

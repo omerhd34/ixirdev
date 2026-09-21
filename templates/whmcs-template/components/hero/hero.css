@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
 
-/* Anasayfa hero  */
 section#home-banner,
 section#home-banner.ixir-hero {
   position: relative;
@@ -38,6 +37,11 @@ section#home-banner.ixir-hero {
   z-index: 1;
   width: 100%;
 }
+#home-banner .g-recaptcha,
+#home-banner .recaptcha-container,
+#home-banner iframe[src*="recaptcha"] {
+  display: none !important;
+}
 .ixir-hero-copy {
   position: relative;
   text-align: center;
@@ -45,7 +49,7 @@ section#home-banner.ixir-hero {
 .ixir-hero h1 {
   position: relative;
   display: inline-block;
-  font-family: "Raleway", sans-serif !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
   font-size: 32px;
   margin: 0 0 10px;
   padding: 0;
@@ -349,12 +353,11 @@ section#home-banner .ixir-dc-button .btn:focus {
 }
 .ixir-hero .ixir-domain-tlds {
   position: relative;
-  width: 100%;
-  max-width: 100%;
+  width: min(var(--ixir-container), calc(100% - 2 * var(--ixir-gutter)));
+  max-width: none;
   min-width: 0;
   height: 76px;
-  margin: 40px 0 0;
-  padding: 0;
+  margin: 40px auto 0;
   overflow: hidden;
   cursor: grab;
   user-select: none;
@@ -454,7 +457,7 @@ section#home-banner .ixir-dc-button .btn:focus {
   font-weight: 800;
   letter-spacing: 0.01em;
 }
-@media only screen and (min-width: 992px) and (max-width: 1359px) {
+@media only screen and (min-width: 992px) and (max-width: 1439px) {
   .ixir-hero form + .ixir-domain-links-wrap {
     margin-top: 28px;
   }
@@ -481,9 +484,19 @@ section#home-banner .ixir-dc-button .btn:focus {
 @media only screen and (max-width: 992px) {
   section#home-banner,
   section#home-banner.ixir-hero {
-    padding: 60px 0 56px !important;
+    min-height: calc(100vh - var(--ixir-hero-offset, 142px));
+    min-height: calc(100dvh - var(--ixir-hero-offset, 142px));
+    padding: 60px 0 0 !important;
+  }
+  .ixir-hero > .container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   .ixir-hero .ixir-domain-tlds {
+    margin-top: auto;
+    flex-shrink: 0;
     -webkit-mask-image: linear-gradient(
       90deg,
       transparent 0,
@@ -498,6 +511,20 @@ section#home-banner .ixir-dc-button .btn:focus {
       #000 calc(100% - 32px),
       transparent
     );
+  }
+}
+@media only screen and (min-width: 992px) {
+  section#home-banner,
+  section#home-banner.ixir-hero {
+    min-height: 0;
+    padding: 80px 0 108px !important;
+  }
+  .ixir-hero > .container {
+    flex: 0 1 auto;
+    display: block;
+  }
+  .ixir-hero .ixir-domain-tlds {
+    margin-top: 40px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -516,7 +543,7 @@ section#home-banner .ixir-dc-button .btn:focus {
   .ixir-hero form + .ixir-domain-links-wrap,
   .ixir-hero .ixir-domain-links-wrap {
     flex: 0 0 auto;
-    margin-top: 14px;
+    margin-top: 32px;
     gap: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -546,16 +573,6 @@ section#home-banner .ixir-dc-button .btn:focus {
   section#home-banner,
   section#home-banner.ixir-hero {
     padding: 46px 0 0 !important;
-  }
-  .ixir-hero h1 {
-    display: block;
-    font-size: 26px;
-    text-align: left;
-    margin-top: 0;
-  }
-  .ixir-hero p {
-    font-size: 16px;
-    text-align: left;
   }
   .ixir-hero .ixir-domain-checker {
     padding: 6px 6px 6px 14px;
@@ -668,7 +685,7 @@ section#home-banner .ixir-dc-button .btn:focus {
   }
   .ixir-hero form + .ixir-domain-links-wrap,
   .ixir-hero .ixir-domain-links-wrap {
-    margin-top: 14px;
+    margin-top: 32px;
   }
   .ixir-hero ul.ixir-domain-links li {
     padding: 0;
@@ -702,6 +719,19 @@ section#home-banner .ixir-dc-button .btn:focus {
   }
 }
 @media only screen and (max-width: 575px) {
+  .ixir-hero-copy {
+    text-align: left;
+  }
+  .ixir-hero h1 {
+    display: block;
+    font-size: 26px;
+    text-align: left;
+    margin-top: 0;
+  }
+  .ixir-hero p {
+    font-size: 16px;
+    text-align: left;
+  }
   .ixir-hero ul.ixir-domain-links li {
     padding: 0;
     font-size: 12px;
