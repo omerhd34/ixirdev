@@ -6,6 +6,7 @@ body.ixir-auth-page {
     100dvh - var(--ixir-auth-header) - var(--ixir-auth-news)
   );
   --ixir-auth-hero: calc(var(--ixir-auth-shell) - (var(--ixir-auth-pad) * 2));
+  background: #eef1f5;
 }
 
 @media (max-width: 992px) {
@@ -80,8 +81,8 @@ body.ixir-auth-page #main-body .col-xs-12 {
   height: 100% !important;
 }
 
-body.ixir-auth-page .ixir-footer {
-  margin-top: 0;
+body.ixir-auth-page .ixir-next {
+  display: none !important;
 }
 
 .ixir-auth-split {
@@ -333,10 +334,14 @@ body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body .col-xs-12 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
+  flex-shrink: 0;
   gap: 8px;
-  min-width: 150px;
+  width: max-content;
+  min-width: max-content;
+  max-width: none;
   height: 46px;
-  padding: 0 22px;
+  padding: 0 24px;
   border: 2px solid #fff;
   border-radius: 999px;
   background: transparent;
@@ -344,8 +349,10 @@ body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body .col-xs-12 {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.08em;
+  white-space: nowrap;
   text-decoration: none;
   box-sizing: border-box;
+  overflow: visible;
   cursor: pointer;
   transition:
     background 0.2s ease,
@@ -1195,7 +1202,7 @@ a.ixir-split-btn {
   font-size: 32px;
   font-weight: 800;
   line-height: 1.2;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .ixir-overlay-forgot p {
@@ -1204,10 +1211,27 @@ a.ixir-split-btn {
 }
 
 .ixir-reset-form .ixir-split-switch-link {
-  display: block;
+  display: inline;
+  width: auto;
+  margin-top: 0;
+  text-align: center;
+}
+
+.ixir-reset-switch-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 16px;
   width: 100%;
   margin-top: 14px;
   text-align: center;
+}
+
+.ixir-auth-tabs,
+.ixir-auth-mobile-links,
+.ixir-auth-mobile-inline {
+  display: none;
 }
 
 .ixir-reset-back {
@@ -1247,15 +1271,54 @@ a.ixir-split-btn {
   padding: 36px 32px 28px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1199px) and (min-width: 992px) {
+  .ixir-auth-overlay-panel {
+    padding: 28px 22px;
+  }
+
+  .ixir-auth-overlay-panel h2,
+  .ixir-overlay-forgot h2 {
+    font-size: 24px;
+    white-space: normal;
+  }
+
+  .ixir-auth-overlay-panel p,
+  .ixir-overlay-forgot p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .ixir-overlay-forgot {
+    margin-top: 18px;
+    padding-top: 16px;
+  }
+
+  .ixir-overlay-actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 991px) {
   body.ixir-auth-page {
-    --ixir-auth-pad: 16px;
+    --ixir-auth-pad: 56px;
   }
 
   .ixir-auth-page #main-body,
   body.ixir-auth-page #main-body {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
     height: auto !important;
-    min-height: 0 !important;
+    min-height: calc(100dvh - var(--ixir-auth-header) + 40px) !important;
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+
+  body.ixir-auth-page #main-body > .container {
+    flex: 0 0 auto;
+    width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 
   body.ixir-auth-page #main-body > .container,
@@ -1263,18 +1326,68 @@ a.ixir-split-btn {
   body.ixir-auth-page #main-body .main-content,
   body.ixir-auth-page #main-body .col-xs-12,
   .ixir-auth-split,
-  .ixir-auth-split-card {
+  .ixir-auth-split-card,
+  .ixir-auth-split.is-register,
+  .ixir-auth-split.is-register .ixir-auth-split-card,
+  .ixir-auth-split.is-register .ixir-auth-forms {
     min-height: 0 !important;
     height: auto !important;
   }
 
+  .ixir-auth-split {
+    max-width: 560px;
+  }
+
   .ixir-auth-split-card {
+    display: block;
     flex-direction: column;
     border-radius: 20px;
   }
 
-  .ixir-auth-forms,
-  .ixir-auth-overlay {
+  .ixir-auth-tabs {
+    display: flex;
+    gap: 0;
+    margin: 16px 16px 0;
+    padding: 4px;
+    border-radius: 14px;
+    background: #eef2f7;
+  }
+
+  .ixir-auth-split.is-reset .ixir-auth-tabs {
+    display: none;
+  }
+
+  .ixir-auth-tab {
+    flex: 1 1 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 0;
+    height: 44px;
+    padding: 0 12px;
+    border: 0;
+    border-radius: 11px;
+    background: transparent;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .ixir-auth-tab i {
+    font-size: 13px;
+  }
+
+  .ixir-auth-tab.is-active {
+    background: #fff;
+    color: #1e293b;
+    box-shadow: 0 4px 12px rgba(36, 41, 53, 0.08);
+  }
+
+  .ixir-auth-forms {
     position: relative;
     width: 100%;
     left: auto;
@@ -1283,60 +1396,38 @@ a.ixir-split-btn {
     transform: none !important;
   }
 
-  .ixir-auth-overlay {
-    order: -1;
-  }
-
   .ixir-auth-split.is-register .ixir-auth-forms,
-  .ixir-auth-split.is-register .ixir-auth-overlay {
+  .ixir-auth-split.is-reset .ixir-auth-forms {
     transform: none !important;
   }
 
-  .ixir-auth-overlay-panel {
-    padding: 28px 24px;
-    justify-content: center;
-  }
-
-  .ixir-auth-overlay-panel h2,
-  .ixir-overlay-forgot h2 {
-    font-size: 26px;
-  }
-
-  .ixir-overlay-forgot h2 {
-    white-space: normal;
-  }
-
-  .ixir-overlay-forgot {
-    margin-top: 18px;
-    padding-top: 16px;
-  }
-
-  .ixir-auth-overlay-left,
-  .ixir-auth-overlay-right,
-  .ixir-auth-overlay-reset {
-    position: relative;
-    inset: auto;
-    transform: none !important;
-  }
-
-  .ixir-auth-split:not(.is-reset) .ixir-auth-overlay-reset,
-  .ixir-auth-split:not(.is-register):not(.is-reset) .ixir-auth-overlay-left,
-  .ixir-auth-split.is-register .ixir-auth-overlay-right,
-  .ixir-auth-split.is-reset .ixir-auth-overlay-left,
-  .ixir-auth-split.is-reset .ixir-auth-overlay-right {
-    display: none;
-  }
-
-  .ixir-auth-split:not(.is-register):not(.is-reset) .ixir-auth-overlay-right,
-  .ixir-auth-split.is-register .ixir-auth-overlay-left,
-  .ixir-auth-split.is-reset .ixir-auth-overlay-reset {
-    display: flex;
-    opacity: 1;
-    pointer-events: auto;
+  .ixir-auth-overlay {
+    display: none !important;
   }
 
   .ixir-auth-panel {
-    padding: 24px 22px;
+    padding: 20px 22px 24px;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .ixir-auth-mobile-links {
+    display: block;
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+  }
+
+  .ixir-auth-mobile-inline {
+    display: inline;
+  }
+
+  .ixir-auth-mobile-links .ixir-split-switch-link,
+  .ixir-reset-switch-row .ixir-split-switch-link {
+    color: #396cdf;
+    font-size: 14px;
+    font-weight: 700;
   }
 
   .ixir-field-row {

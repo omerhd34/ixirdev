@@ -8,8 +8,8 @@
  </div>
 
  <div class="ixir-field">
-  <label for="inputEmail">E-Posta Adresiniz:</label>
-  <input type="email" name="username" class="form-control" id="inputEmail" placeholder="E-Posta" autofocus
+  <label for="inputEmail">E-posta Adresiniz:</label>
+  <input type="email" name="username" class="form-control" id="inputEmail" placeholder="E-posta" autofocus
    autocomplete="username" data-ixir-validate="1" data-ixir-required="E-posta adresi gerekli." data-ixir-type="email">
  </div>
 
@@ -36,6 +36,10 @@
   <i class="fas fa-sign-in-alt" aria-hidden="true"></i>
   Giriş Yap
  </button>
+
+ <div class="ixir-auth-mobile-links">
+  <button type="button" class="ixir-split-switch-link" data-ixir-auth-goto="reset">Şifrenizi mi unuttunuz?</button>
+ </div>
 
  {if $linkableProviders}
   <div class="ixir-split-social">

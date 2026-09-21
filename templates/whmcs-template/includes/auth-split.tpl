@@ -23,6 +23,20 @@
  id="ixirAuthSplit" data-has-register="{if $ixirHasRegister}1{else}0{/if}" data-account-url="{$WEB_ROOT}/hesabim">
 
  <div class="ixir-auth-split-card">
+  <nav class="ixir-auth-tabs" aria-label="Hesap işlemleri">
+   <button type="button"
+    class="ixir-auth-tab{if $ixirAuthMode != 'register' && $ixirAuthMode != 'reset'} is-active{/if}"
+    data-ixir-auth-goto="login">
+    <i class="fas fa-sign-in-alt" aria-hidden="true"></i> Giriş Yap
+   </button>
+   {if $ixirHasRegister}
+    <button type="button" class="ixir-auth-tab{if $ixirAuthMode == 'register'} is-active{/if}"
+     data-ixir-auth-goto="register">
+     <i class="fas fa-user-plus" aria-hidden="true"></i> Kayıt Ol
+    </button>
+   {/if}
+  </nav>
+
   <div class="ixir-auth-forms">
    <div class="ixir-auth-panel ixir-auth-panel-login">
     {include file="$template/includes/auth-login-form.tpl"}
@@ -194,6 +208,9 @@
   function setMode(mode, updateUrl) {
    root.classList.toggle("is-register", mode === "register");
    root.classList.toggle("is-reset", mode === "reset");
+   root.querySelectorAll(".ixir-auth-tab").forEach(function(tab) {
+    tab.classList.toggle("is-active", tab.getAttribute("data-ixir-auth-goto") === mode);
+   });
    placeCaptcha();
    setTimeout(renderVisibleRecaptcha, 60);
 

@@ -421,8 +421,8 @@
      data-ixir-validate="1" data-ixir-required="Telefon numarası gerekli.">
    </div>
    <div class="ixir-field">
-    <label for="inputEmailReg">E-Posta Adresi:</label>
-    <input type="email" name="email" id="inputEmailReg" class="form-control" placeholder="E-Posta Adresi"
+    <label for="inputEmailReg">E-posta Adresi:</label>
+    <input type="email" name="email" id="inputEmailReg" class="form-control" placeholder="E-posta Adresi"
      value="{$clientemail}" data-ixir-validate="1" data-ixir-required="E-posta adresi gerekli." data-ixir-type="email">
    </div>
   </div>
