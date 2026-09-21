@@ -1,9 +1,7 @@
-/* Anasayfa paket kartları */
-
 .ixir-packages {
   position: relative;
   z-index: 2;
-  margin-top: -48px;
+  margin-top: 0;
   padding: 0 0 20px;
 }
 .ixir-packages-grid {
@@ -279,10 +277,7 @@
   padding-top: 28px !important;
 }
 
-@media only screen and (min-width: 640px) and (max-width: 1099px) {
-  .ixir-packages {
-    margin-top: -40px;
-  }
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .ixir-package {
     padding: 22px;
   }
@@ -295,7 +290,30 @@
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 992px) {
+  .ixir-packages {
+    padding-top: 32px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .ixir-packages-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .ixir-package {
+    padding: 22px;
+  }
+  .ixir-package-features {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .ixir-packages {
+    margin-top: -88px;
+    padding-top: 0;
+  }
   .ixir-packages-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
@@ -314,7 +332,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .ixir-packages {
     margin-top: 0;
     padding: 16px 0 8px;

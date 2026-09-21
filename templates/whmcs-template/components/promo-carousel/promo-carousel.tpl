@@ -74,12 +74,12 @@
     <div class="ixir-promo-grid">
      <div class="ixir-promo-copy">
       <span class="ixir-promo-badge">KVKK Uyumlu</span>
-      <h2>Kurumsal E-mail</h2>
+      <h2>Kurumsal E-posta</h2>
       <p>KVKK Uyumlu Sunucularda Kurumsal E-posta Hizmeti</p>
       <ul>
        <li><i class="fas fa-check" aria-hidden="true"></i>Bulut E-posta Yapısı</li>
        <li><i class="fas fa-check" aria-hidden="true"></i>Tüm Cihazlardan Erişim</li>
-       <li><i class="fas fa-check" aria-hidden="true"></i>Güvenli E-Posta Yönetimi</li>
+       <li><i class="fas fa-check" aria-hidden="true"></i>Güvenli E-posta Yönetimi</li>
        <li><i class="fas fa-check" aria-hidden="true"></i>İhtiyaçlarınız İçin Tek Platform</li>
       </ul>
       <a href="{$WEB_ROOT}/kurumsal-mail-hosting" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"

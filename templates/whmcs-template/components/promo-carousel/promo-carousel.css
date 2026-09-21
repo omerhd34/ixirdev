@@ -330,7 +330,7 @@
   }
 }
 
-@media only screen and (max-width: 1099px) {
+@media only screen and (max-width: 1199px) {
   .ixir-promo-grid {
     min-height: 340px;
     padding: 24px 0 40px;
@@ -359,6 +359,10 @@
   .ixir-promo-copy {
     align-items: center;
     order: 2;
+  }
+  .ixir-promo .ixir-promo-btn,
+  .ixir-promo .ixir-promo-btn:visited {
+    align-self: center;
   }
   .ixir-promo-visual {
     order: 1;
