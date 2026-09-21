@@ -131,8 +131,12 @@
     $(this).attr('aria-expanded', open ? 'true' : 'false');
    });
 
+   function ixirIsMobileHeader() {
+    return window.matchMedia('(max-width: 992px)').matches;
+   }
+
    function updateIxirHeaderSpacer() {
-    var isMobile = $(window).width() <= 992;
+    var isMobile = ixirIsMobileHeader();
     var $header = isMobile ? $('.mobile-header') : $('.ixir-header');
     var $spacer = $('.ixir-header-spacer');
     var $news = $('#ixirNewsBar');

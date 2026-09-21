@@ -216,7 +216,6 @@ body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
   justify-content: space-between;
   height: 78px;
   min-width: 0;
-  max-width: 100%;
   overflow: visible;
 }
 .ixir-header .ixir-navbar > .container::before,
@@ -255,6 +254,7 @@ body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
   display: flex !important;
   flex: 1 1 auto;
   justify-content: flex-end;
+  min-width: 0;
   padding: 0;
   border: 0;
   box-shadow: none;
@@ -269,7 +269,7 @@ body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
   float: none !important;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
   margin: 0;
   width: auto;
   overflow: visible;
@@ -291,7 +291,7 @@ body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
   color: #1e293b !important;
   font-size: 16px !important;
   font-weight: 600;
-  padding: 25px 14px !important;
+  padding: 25px 16px !important;
   text-transform: none !important;
   border: 0 !important;
   background: transparent !important;
@@ -992,7 +992,7 @@ body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
   z-index: 5;
   background: #242935;
   color: #fff;
-  padding: 6px 24px;
+  padding: 6px var(--ixir-gutter);
   margin: 0;
   width: 100%;
   box-sizing: border-box;
@@ -1037,6 +1037,14 @@ body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
   text-decoration: none;
   transition: color 0.45s ease;
 }
+.mobile-top-right a.mobile-auth-link {
+  width: auto;
+  height: auto;
+  min-height: 24px;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
 .mobile-top-left a i,
 .mobile-top-right a i {
   margin: 0;
@@ -1050,6 +1058,10 @@ body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
 }
 .mobile-auth-text {
   display: none;
+}
+.mobile-top-right a.mobile-auth-link .mobile-auth-text {
+  display: inline;
+  white-space: nowrap;
 }
 .mobile-header .ixir-account-toggle .caret {
   display: none;
@@ -1078,20 +1090,12 @@ body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
   }
 }
 @media (max-width: 374px) {
-  .mobile-top {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .mobile-header > .container {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-  }
   .mobile-top-left,
   .mobile-top-right {
     gap: 8px;
   }
   .mobile-top-left a,
-  .mobile-top-right a {
+  .mobile-top-right a:not(.mobile-auth-link) {
     width: 22px;
   }
   .ixir-hamburger {
@@ -1576,24 +1580,38 @@ body.ixir-mobile-menu-open {
     transition: none;
   }
 }
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1439px) {
   .ixir-header .ixir-nav {
-    gap: 0;
+    gap: 8px;
     min-width: 0;
   }
   .ixir-header .ixir-nav > li > a {
-    font-size: 16px !important;
-    padding: 25px 15px !important;
-  }
-  .ixir-header .ixir-nav > li:not(.nav-cart) > a > i {
-    display: none !important;
+    font-size: 15px !important;
+    padding: 25px 12px !important;
   }
   .ixir-header {
-    --ixir-nav-cart-pad: 12px;
+    --ixir-nav-cart-pad: 14px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .ixir-header .ixir-nav {
+    gap: 4px;
+  }
+  .ixir-header .ixir-nav > li > a {
+    font-size: 14px !important;
+    padding: 25px 8px !important;
+  }
+  .ixir-header .ixir-nav > li:not(.nav-cart) > a > i {
+    font-size: 13px;
+    margin-right: 3px;
+  }
+  .ixir-header {
+    --ixir-nav-cart-pad: 10px;
   }
   .ixir-header .ixir-nav > li.nav-cart {
     padding-left: var(--ixir-nav-cart-pad);
-    margin-left: 6px;
+    margin-left: 4px;
   }
   .ixir-header .ixir-nav > li.nav-cart > a {
     width: auto;
@@ -1614,10 +1632,6 @@ body.ixir-mobile-menu-open {
   body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
     height: 142px;
   }
-  .mobile-header > .container {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
-  }
   .mobile-header .container,
   .mobile-header .row,
   .mobile-header-main {
@@ -1625,9 +1639,9 @@ body.ixir-mobile-menu-open {
   }
   .mobile-header .nav-cart.dropdown > .dropdown-menu.ixir-cart-menu {
     top: 100%;
-    right: 24px !important;
+    right: var(--ixir-gutter) !important;
     left: auto !important;
-    width: min(360px, calc(100% - 48px)) !important;
+    width: min(360px, calc(100% - 2 * var(--ixir-gutter))) !important;
     min-width: 0 !important;
     max-width: none !important;
     margin-top: 8px !important;

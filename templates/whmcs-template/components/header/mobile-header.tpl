@@ -27,7 +27,7 @@
        {include file="$template/components/header/ixir-account-menu.tpl"}
       </div>
      {else}
-      <a href="{$WEB_ROOT}/hesabim" title="Hesabım">
+      <a href="{$WEB_ROOT}/hesabim" class="mobile-auth-link" title="Hesabım">
        <i class="far fa-user"></i>
        <span class="mobile-auth-text">Hesabım</span>
       </a>
@@ -136,7 +136,7 @@
    <li class="has-children">
     <button type="button" class="ixir-mobile-toggle" aria-expanded="false">
      <i class="fas fa-hdd"></i>
-     <span>Web Hosting</span>
+     <span>Hosting</span>
      <span class="menu-kampanya blink ixir-mobile-badge">İNDİRİM</span>
      <i class="fas fa-chevron-down ixir-mobile-caret"></i>
     </button>

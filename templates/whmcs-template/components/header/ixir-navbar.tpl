@@ -45,7 +45,7 @@
  </li>
  <li class="dropdown">
   <a href="#" title="hosting" class="dropdown-toggle" data-toggle="dropdown">
-   <i class="far fa-hdd"></i> Web Hosting
+   <i class="far fa-hdd"></i> Hosting
    <span class="menu-kampanya blink">İNDİRİM</span>
   </a>
   <div class="dropdown-menu">
@@ -129,7 +129,7 @@
   </div>
  </li>
  <li class="dropdown">
-  <a href="#" title="E-Posta Hizmetleri" class="dropdown-toggle" data-toggle="dropdown"><i class="far fa-envelope"></i>
+  <a href="#" title="E-posta Hizmetleri" class="dropdown-toggle" data-toggle="dropdown"><i class="far fa-envelope"></i>
    E-posta</a>
   <div class="dropdown-menu">
    <div class="mega-menu-header">
