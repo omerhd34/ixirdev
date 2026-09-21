@@ -161,7 +161,7 @@ body.ixir-auth-page #ixirNewsBar,
 .news-bar .newsClose {
   position: absolute;
   top: 50%;
-  right: 150px;
+  right: max(var(--ixir-gutter), calc((100% - var(--ixir-container)) / 2));
   z-index: 4;
   width: 22px;
   height: 22px;
@@ -169,23 +169,13 @@ body.ixir-auth-page #ixirNewsBar,
   transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 1350px) {
-  .news-bar .newsClose {
-    right: 40px;
-  }
-}
-
 @media only screen and (max-width: 992px) {
   .news-bar {
     top: 96px;
     padding: 7px 0;
   }
-  .news-bar .container {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
-  }
   .news-bar .newsClose {
-    right: 24px;
+    right: max(var(--ixir-gutter), calc((100% - var(--ixir-container)) / 2));
     width: 24px;
     height: 24px;
   }
@@ -241,12 +231,7 @@ body.ixir-auth-page #ixirNewsBar,
   }
 }
 @media (max-width: 374px) {
-  .news-bar .container {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-  }
   .news-bar .newsClose {
-    right: 16px;
     width: 22px;
     height: 22px;
   }

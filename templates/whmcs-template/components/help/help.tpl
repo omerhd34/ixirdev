@@ -12,9 +12,9 @@
       <span>Telefon Destek</span>
       <small>0850 302 7 111</small>
      </a>
-     <a href="mailto:destek@ixirhost.com" class="ixir-help-card" title="ixirhost destek mail adresi">
+     <a href="mailto:destek@ixirhost.com" class="ixir-help-card" title="ixirhost destek e-posta adresi">
       <i class="far fa-paper-plane" aria-hidden="true"></i>
-      <span>Email Destek</span>
+      <span>E-posta Destek</span>
       <small>destek@ixirhost.com</small>
      </a>
      <a href="{$WEB_ROOT}/destek/yeni" class="ixir-help-card" data-ixir-chat title="Online Destek">

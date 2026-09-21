@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
 
 .ixir-help {
   position: relative;
@@ -28,7 +28,6 @@
 .ixir-help .container {
   position: relative;
   z-index: 2;
-  max-width: 100%;
   min-width: 0;
 }
 .ixir-help-stage {
@@ -58,7 +57,7 @@
 .ixir-help-copy h2 {
   margin: 0 0 10px;
   color: #fff;
-  font-family: "Raleway", sans-serif !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
   font-size: 34px;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -154,7 +153,7 @@
   }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1439px) {
   .ixir-help-copy {
     max-width: 560px;
   }

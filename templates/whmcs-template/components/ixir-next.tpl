@@ -1,7 +1,7 @@
 <section class="ixir-next" aria-labelledby="ixir-next-title">
  <div class="container">
   <div class="ixir-next-panel">
-   <h4 id="ixir-next-title"><i class="fas fa-heart" aria-hidden="true"></i> İxirNext ile Geleceğe Dokunuyoruz!</h4>
+   <h4 id="ixir-next-title">İxirNext ile Geleceğe Dokunuyoruz!</h4>
    <p><strong>İxirhost</strong> olarak 2005 yılından bu yana internet teknolojileri üretiyoruz. Bugün ise bu yolculuğun
     bir parçasını, internetin geleceğini inşa edecek çocuklara ve gençlere armağan ediyoruz.</p>
    <p><strong>İxirNext</strong> kapsamında hiçbir karşılık beklemeden üniversite öğrencilerine eğitim bursu sağlıyor;
