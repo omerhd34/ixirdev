@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
 
 .ixir-footer {
   position: relative;
@@ -23,26 +23,38 @@
   -webkit-font-smoothing: antialiased;
 }
 .ixir-footer .container {
-  max-width: 100%;
   min-width: 0;
 }
 .ixir-footer-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(260px, 0.95fr);
-  gap: 0 28px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 40px;
+  row-gap: 32px;
   width: 100%;
   min-width: 0;
   align-items: start;
 }
-.ixir-footer-col,
-.ixir-footer-brand {
+.ixir-footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   min-width: 0;
 }
 .ixir-footer-box {
   position: relative;
+  min-width: 0;
 }
-.ixir-footer-box + .ixir-footer-box {
-  margin-top: 32px;
+.ixir-footer-box--email {
+  grid-area: email;
+}
+.ixir-footer-box--hazir {
+  grid-area: hazir;
+}
+.ixir-footer-box--ssl {
+  grid-area: ssl;
+}
+.ixir-footer-box--kurumsal {
+  grid-area: kurumsal;
 }
 .ixir-footer-box h3 {
   width: max-content;
@@ -96,149 +108,6 @@
   outline-offset: 3px;
   border-radius: 3px;
 }
-.ixir-footer-brand {
-  padding: 4px 0 0 36px;
-  border-left: 1px solid rgba(255, 255, 255, 0.08);
-  text-align: left;
-}
-.ixir-footer-logo {
-  display: inline-block;
-  margin: 0 0 22px;
-}
-.ixir-footer-logo img {
-  display: block;
-  width: 176px;
-  height: auto;
-  max-width: 100%;
-  transform-origin: left center;
-  transition: transform 0.22s ease;
-}
-.ixir-footer-contact {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 12px;
-}
-.ixir-footer-contact-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin: 0;
-  color: #9aa3b8;
-  font-size: 14px;
-  line-height: 1.6;
-  text-align: left;
-  text-decoration: none;
-  transition: color 0.18s ease;
-}
-.ixir-footer-contact-item i {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  margin-top: 1px;
-  color: #9db4f0;
-  font-size: 11px;
-  line-height: 1;
-  text-align: center;
-  background: rgba(56, 108, 224, 0.14);
-  border-radius: 8px;
-  flex-shrink: 0;
-  transition:
-    color 0.18s ease,
-    background 0.18s ease;
-}
-.ixir-footer-contact-item span {
-  min-width: 0;
-  overflow-wrap: break-word;
-}
-.ixir-footer-contact-item:hover,
-.ixir-footer-contact-item:focus {
-  color: #fff;
-  text-decoration: none;
-}
-.ixir-footer-contact-item:hover i,
-.ixir-footer-contact-item:focus i {
-  color: #fff;
-  background: rgba(56, 108, 224, 0.28);
-}
-.ixir-footer-contact-item:focus-visible {
-  outline: 2px solid rgba(56, 108, 224, 0.7);
-  outline-offset: 3px;
-  border-radius: 3px;
-}
-.ixir-footer-social {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 22px 0 0;
-}
-.ixir-footer-social a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  color: #d5dae6;
-  font-size: 14px;
-  line-height: 1;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  text-decoration: none;
-  transition:
-    color 0.18s ease,
-    background 0.18s ease,
-    border-color 0.18s ease,
-    transform 0.18s ease;
-}
-.ixir-footer-social a:hover,
-.ixir-footer-social a:focus {
-  color: #fff;
-  background: #386ce0;
-  border-color: #386ce0;
-  text-decoration: none;
-}
-.ixir-footer-social a:focus-visible {
-  outline: 2px solid rgba(56, 108, 224, 0.7);
-  outline-offset: 3px;
-}
-.ixir-footer-social a[title*="Facebook"]:hover,
-.ixir-footer-social a[title*="Facebook"]:focus {
-  background: #1877f2;
-  border-color: #1877f2;
-}
-.ixir-footer-social a[title*="Twitter"]:hover,
-.ixir-footer-social a[title*="Twitter"]:focus {
-  background: #1d9bf0;
-  border-color: #1d9bf0;
-}
-.ixir-footer-social a[title*="Instagram"]:hover,
-.ixir-footer-social a[title*="Instagram"]:focus {
-  background: #e1306c;
-  border-color: #e1306c;
-}
-.ixir-footer-social a[title*="LinkedIn"]:hover,
-.ixir-footer-social a[title*="LinkedIn"]:focus {
-  background: #0a66c2;
-  border-color: #0a66c2;
-}
-.ixir-footer-social a[title*="Youtube"]:hover,
-.ixir-footer-social a[title*="Youtube"]:focus {
-  background: #ff0000;
-  border-color: #ff0000;
-}
-.ixir-footer-pay {
-  display: block;
-  margin: 22px 0 0;
-  width: 228px;
-  max-width: 100%;
-  height: auto;
-  opacity: 0.92;
-  mix-blend-mode: screen;
-}
 .ixir-next {
   position: relative;
   z-index: 1;
@@ -249,10 +118,10 @@
   -webkit-font-smoothing: antialiased;
 }
 .ixir-next .container {
-  max-width: 100%;
   min-width: 0;
 }
-body.ixir-auth-page .ixir-next {
+body.ixir-auth-page .ixir-next,
+body.ixir-auth-page .ixir-help {
   display: none;
 }
 .ixir-next-panel {
@@ -269,7 +138,7 @@ body.ixir-auth-page .ixir-next {
 .ixir-next-panel h4 {
   margin: 0 0 14px;
   color: #1a1f2e;
-  font-family: "Raleway", sans-serif !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -394,10 +263,6 @@ body.ixir-auth-page .ixir-next {
     animation: none;
   }
   .ixir-footer-box ul li a,
-  .ixir-footer-contact-item,
-  .ixir-footer-contact-item i,
-  .ixir-footer-social a,
-  .ixir-footer-logo img,
   .ixir-next-card,
   .ixir-next-card > i {
     transition: none;
@@ -479,31 +344,28 @@ body.ixir-auth-page .ixir-next {
   .ixir-footer-box ul li a:focus {
     transform: translateX(3px);
   }
-  .ixir-footer-social a:hover,
-  .ixir-footer-social a:focus {
-    transform: translateY(-2px);
-  }
-  .ixir-footer-logo:hover img,
-  .ixir-footer-logo:focus img {
-    transform: scale(1.1);
-  }
 }
 
 @media only screen and (max-width: 1199px) {
   .ixir-footer-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 32px 28px;
+    grid-template-areas:
+      "col1 col2 col3"
+      "col4 . .";
+    column-gap: 28px;
+    row-gap: 32px;
   }
-  .ixir-footer-brand {
-    grid-column: 1 / -1;
-    margin-top: 28px;
-    padding: 24px 0 0;
-    border-left: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    text-align: left;
+  .ixir-footer-col:nth-child(1) {
+    grid-area: col1;
   }
-  .ixir-footer-social {
-    justify-content: flex-start;
+  .ixir-footer-col:nth-child(2) {
+    grid-area: col2;
+  }
+  .ixir-footer-col:nth-child(3) {
+    grid-area: col3;
+  }
+  .ixir-footer-col:nth-child(4) {
+    grid-area: col4;
   }
   .ixir-next {
     padding: 56px 0 48px;
@@ -516,56 +378,21 @@ body.ixir-auth-page .ixir-next {
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .ixir-footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "col1 col2"
+      "col3 col4";
+    column-gap: 24px;
+    row-gap: 28px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .ixir-footer {
     padding-top: 36px;
-    text-align: center;
     background: #1c1f2a;
-  }
-  .ixir-footer-grid {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0;
-  }
-  .ixir-footer-box + .ixir-footer-box,
-  .ixir-footer-col + .ixir-footer-col .ixir-footer-box:first-child {
-    margin-top: 28px;
-  }
-  .ixir-footer-box h3 {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .ixir-footer-brand {
-    margin-top: 28px;
-    padding: 24px 0 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    text-align: center;
-  }
-  .ixir-footer-logo {
-    display: block;
-  }
-  .ixir-footer-logo img {
-    margin: 0 auto;
-    transform-origin: center center;
-  }
-  .ixir-footer-contact {
-    align-items: center;
-  }
-  .ixir-footer-contact-item {
-    width: min(260px, 100%);
-    justify-content: flex-start;
-    text-align: left;
-  }
-  .ixir-footer-social {
-    justify-content: center;
-  }
-  .ixir-footer-pay {
-    margin: 20px auto 0;
-  }
-  .ixir-footer-bottom {
-    margin-top: 32px;
-  }
-  .ixir-footer-bottom ul li:not(:last-child)::after {
-    margin: 0 8px;
   }
   .ixir-next {
     padding: 44px 0 36px;
@@ -594,6 +421,43 @@ body.ixir-auth-page .ixir-next {
     height: 84px;
     margin: 0 0 14px;
     font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .ixir-footer {
+    text-align: center;
+  }
+  .ixir-footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: none;
+    row-gap: 28px;
+  }
+  .ixir-footer-col,
+  .ixir-footer-col:nth-child(1),
+  .ixir-footer-col:nth-child(2),
+  .ixir-footer-col:nth-child(3),
+  .ixir-footer-col:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    grid-area: auto;
+  }
+  .ixir-footer-box--email,
+  .ixir-footer-box--hazir,
+  .ixir-footer-box--ssl,
+  .ixir-footer-box--kurumsal {
+    grid-area: auto;
+  }
+  .ixir-footer-box h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ixir-footer-bottom {
+    margin-top: 32px;
+  }
+  .ixir-footer-bottom ul li:not(:last-child)::after {
+    margin: 0 8px;
   }
   .ixir-footer-bottom-inner {
     justify-content: center;
