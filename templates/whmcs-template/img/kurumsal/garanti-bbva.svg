@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 56" role="img" aria-label="Garanti BBVA">
+  <g fill="#00A650">
+    <circle cx="18" cy="18" r="11"/>
+    <circle cx="34" cy="18" r="11"/>
+    <circle cx="18" cy="34" r="11"/>
+    <circle cx="34" cy="34" r="11"/>
+  </g>
+  <text x="52" y="38" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#072146">Garanti</text>
+  <text x="162" y="38" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" fill="#072146">BBVA</text>
+</svg>
