@@ -1,8 +1,7 @@
 <section class="ixir-solutions" aria-label="Web hosting ve altyapı çözümleri">
  <div class="container">
   <header class="ixir-solutions-head">
-   <h2><i class="fas fa-server ixir-head-icon" aria-hidden="true"></i> Türkiye'nin Güvenilir Web Hosting ve Altyapı
-    Çözümleri</h2>
+   <h2>Türkiye'nin Güvenilir Web Hosting ve Altyapı Çözümleri</h2>
    <p>2005'ten bu yana 22.000'den fazla müşteriye kesintisiz hizmet sunuyoruz.</p>
   </header>
   <div class="ixir-solutions-grid">

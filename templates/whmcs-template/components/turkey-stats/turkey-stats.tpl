@@ -8,9 +8,6 @@
    </picture>
    <h2>
     <span class="ixir-stats-heading">
-     <span class="ixir-stats-flag" aria-hidden="true">
-      <img src="{$WEB_ROOT}/templates/{$template}/img/turkey-stats/turkey-flag.png" alt="" width="34" height="23">
-     </span>
      Türkiye Bizi Tercih Ediyor!
     </span>
    </h2>

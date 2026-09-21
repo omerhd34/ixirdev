@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
-
-/* Anasayfa güven / avantaj bölümü */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
 
 .ixir-trust {
   position: relative;
@@ -11,7 +9,6 @@
   -webkit-font-smoothing: antialiased;
 }
 .ixir-trust .container {
-  max-width: 100%;
   min-width: 0;
 }
 .ixir-trust-head {
@@ -21,7 +18,7 @@
   text-align: center;
 }
 .ixir-trust-head h2 {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -119,14 +116,14 @@
   }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 768px) {
   .ixir-trust-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 40px 36px;
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 992px) {
   .ixir-trust {
     padding: 72px 0 64px;
   }

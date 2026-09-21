@@ -1,8 +1,7 @@
 <section class="ixir-trust">
  <div class="container">
   <header class="ixir-trust-head">
-   <h2><i class="fas fa-shield-alt ixir-head-icon" aria-hidden="true"></i> Yalnızca Hizmet Değil, 20 Yıldır Güven
-    Barındırıyoruz!</h2>
+   <h2>Yalnızca Hizmet Değil, 20 Yıldır Güven Barındırıyoruz!</h2>
    <p>Sektörün en tecrübeli ve yetkin hosting servis sağlayıcısına bugün geçiş yapın.</p>
   </header>
   <div class="ixir-trust-grid">
