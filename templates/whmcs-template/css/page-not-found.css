@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
 
 body.ixir-404-page #main-body .header-lined,
 #main-body:has(.ixir-404) .header-lined {
@@ -45,7 +45,7 @@ body.ixir-404-page #main-body,
   gap: 6px;
   margin: 8px 0 6px;
   color: #1a1f2e;
-  font-family: "Raleway", sans-serif !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
   font-size: 112px;
   font-weight: 700;
   letter-spacing: -0.06em;
@@ -71,7 +71,7 @@ body.ixir-404-page #main-body,
 .ixir-404 h1 {
   margin: 8px 0 12px;
   color: #1a1f2e;
-  font-family: "Raleway", sans-serif !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
   font-size: 34px;
   font-weight: 700;
   letter-spacing: -0.03em;

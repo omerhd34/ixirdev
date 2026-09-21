@@ -3500,7 +3500,7 @@ fieldset[disabled] .btn-twitter.active {
   height: auto;
 }
 #registration .prepend-icon .field {
-  -webkit-appearance: none;
+  appearance: none;
   padding-left: 36px;
 }
 #registration .prepend-icon .field-icon i {
