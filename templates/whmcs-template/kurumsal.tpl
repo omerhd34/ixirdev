@@ -1,0 +1,1 @@
+{include file="$template/components/kurumsal/shell.tpl"}

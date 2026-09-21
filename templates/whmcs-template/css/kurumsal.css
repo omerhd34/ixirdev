@@ -1,0 +1,1900 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700;800&display=swap");
+
+body.ixir-corporate-page #main-body,
+body.ixir-corporate-page .header-lined {
+  display: none !important;
+}
+
+.ixir-corp-hero {
+  position: relative;
+  margin: 0;
+  padding: 100px 0;
+  min-height: 420px;
+  color: #fff;
+  overflow: hidden;
+  background-color: #0d1524;
+  background-image: url("../img/kurumsal/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 35%;
+  background-size: cover;
+}
+
+.ixir-corp-hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  pointer-events: none;
+}
+
+.ixir-corp-hero-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 35%;
+}
+
+.ixir-corp-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 14, 28, 0.72) 0%,
+    rgba(8, 14, 28, 0.42) 48%,
+    rgba(8, 14, 28, 0.18) 100%
+  );
+}
+
+.ixir-corp-hero > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.ixir-corp-hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 220px;
+  color: #fff;
+}
+
+.ixir-corp-hero h1 {
+  margin: 0 0 20px;
+  color: #fff !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.ixir-corp-crumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ixir-corp-crumb li {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+}
+
+.ixir-corp-crumb li + li::before {
+  content: ">";
+  display: inline-block;
+  padding: 0 8px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+.ixir-corp-crumb a {
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.ixir-corp-crumb a:hover,
+.ixir-corp-crumb a:focus {
+  color: #fff;
+  opacity: 1;
+}
+
+.ixir-corp-shell {
+  position: relative;
+  padding: 56px 0 80px;
+  background: #fff;
+}
+
+.ixir-corp-grid {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 12px 32px;
+  align-items: start;
+}
+
+.ixir-corp-nav {
+  position: sticky;
+  top: 140px;
+}
+
+@media (min-width: 992px) {
+  .ixir-corp-nav {
+    padding: 22px 14px 16px;
+    border: 1px solid #eef1f6;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 16px 40px rgba(24, 39, 75, 0.07);
+  }
+}
+
+.ixir-corp-nav-title {
+  display: block;
+  margin: 0 10px 16px;
+  color: #111827;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.ixir-corp-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ixir-corp-nav-item {
+  margin: 0;
+}
+
+.ixir-corp-nav-item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-decoration: none;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.ixir-corp-nav-radio {
+  position: relative;
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #c5ced9;
+  border-radius: 50%;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.ixir-corp-nav-radio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(0.6);
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.ixir-corp-nav-label {
+  min-width: 0;
+}
+
+.ixir-corp-nav-item a:hover,
+.ixir-corp-nav-item a:focus {
+  color: #386ce0;
+  background: #f4f7fd;
+  text-decoration: none;
+}
+
+.ixir-corp-nav-item a:hover .ixir-corp-nav-radio,
+.ixir-corp-nav-item a:focus .ixir-corp-nav-radio {
+  border-color: #8aa7ea;
+}
+
+.ixir-corp-nav-item.is-active a,
+.ixir-corp-nav-item a[aria-current="page"] {
+  color: #386ce0;
+  font-weight: 700;
+  background: #eaf1ff;
+}
+
+.ixir-corp-nav-item.is-active .ixir-corp-nav-radio,
+.ixir-corp-nav-item a[aria-current="page"] .ixir-corp-nav-radio {
+  border-color: #386ce0;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(56, 108, 224, 0.14);
+}
+
+.ixir-corp-nav-item.is-active .ixir-corp-nav-radio::after,
+.ixir-corp-nav-item a[aria-current="page"] .ixir-corp-nav-radio::after {
+  background: #386ce0;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.ixir-corp-content {
+  min-width: 0;
+  padding: 8px 8px 0 18px;
+  color: #3b4453;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.ixir-corp-content h2,
+.ixir-corp-content h3,
+.ixir-corp-content h4 {
+  font-family: "IBM Plex Sans", "Roboto", sans-serif !important;
+  color: #1f2d3d;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.ixir-corp-content p {
+  margin: 0 0 18px;
+}
+
+.ixir-about-hero,
+.ixir-privacy-hero,
+.ixir-infra-hero,
+.ixir-kvkk-hero,
+.ixir-registrar-hero,
+.ixir-bank-hero {
+  margin-bottom: 32px;
+  padding: 38px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #386ce0 0%, #1f3f92 100%);
+  color: #fff;
+}
+
+.ixir-kvkk-hero {
+  padding: 42px 44px 40px;
+  border-radius: 18px;
+  background: #386ce0;
+  box-shadow: 0 14px 32px rgba(31, 63, 146, 0.18);
+}
+
+.ixir-kvkk-hero h2 {
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.ixir-kvkk-hero h2 .ixir-kvkk-ve {
+  text-transform: none;
+}
+
+.ixir-kvkk-section h3 {
+  margin: 0 0 18px;
+  color: #1e293b;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.ixir-kvkk-section .ixir-kvkk-contact-title {
+  font-size: 22px;
+  text-transform: none;
+  letter-spacing: -0.02em;
+}
+
+.ixir-kvkk-section p {
+  margin: 0 0 16px;
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.ixir-kvkk-section p:last-child {
+  margin-bottom: 0;
+}
+
+.ixir-kvkk-plain-list {
+  margin: 4px 0 18px;
+  padding: 0 0 0 18px;
+  list-style: none;
+}
+
+.ixir-kvkk-plain-list li {
+  margin: 0 0 12px;
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.ixir-kvkk-plain-list li:last-child {
+  margin-bottom: 0;
+}
+
+.ixir-kvkk-subhead {
+  margin: 28px 0 16px !important;
+  color: #1e293b !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em;
+}
+
+.ixir-kvkk-section .ixir-table-wrap {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+.ixir-kvkk-section .ixir-table th {
+  background: #3b6de0;
+}
+
+.ixir-kvkk-section .ixir-table td {
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.6;
+  vertical-align: top;
+}
+
+.ixir-kvkk-alert {
+  margin: 22px 0 0;
+  padding: 16px 18px;
+  border-left: 4px solid #e0a100;
+  border-radius: 10px;
+  background: #fff8e8;
+  color: #5c4a1f;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.ixir-kvkk-section a.ixir-kvkk-site-link,
+.ixir-kvkk-section a.ixir-kvkk-site-link:visited {
+  color: #386ce0;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(56, 108, 224, 0.45);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+}
+
+.ixir-kvkk-section a.ixir-kvkk-site-link:hover,
+.ixir-kvkk-section a.ixir-kvkk-site-link:focus {
+  color: #1d3d96;
+  text-decoration-color: #1d3d96;
+}
+
+.ixir-kvkk-download {
+  display: inline-block;
+  color: #1e293b;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ixir-kvkk-download:hover,
+.ixir-kvkk-download:focus {
+  color: #386ce0;
+}
+
+.ixir-kvkk-updated {
+  margin-top: 8px !important;
+  color: #1e293b !important;
+}
+
+.ixir-registrar-hero {
+  padding: 42px 44px 40px;
+  border-radius: 18px;
+  background: #386ce0;
+  box-shadow: 0 14px 32px rgba(31, 63, 146, 0.18);
+}
+
+.ixir-registrar-hero h2 {
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.ixir-registrar-box h3 {
+  margin: 0 0 14px;
+  color: #1e293b;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.ixir-registrar-box p {
+  margin: 0 0 16px;
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.ixir-registrar-box p:last-child {
+  margin-bottom: 0;
+}
+
+.ixir-registrar-facts {
+  margin: 22px 0 0;
+  padding: 0;
+}
+
+.ixir-registrar-row {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 12px 32px;
+  align-items: start;
+  margin: 0;
+  padding: 16px 0;
+  border-top: 1px solid #e8eef6;
+}
+
+.ixir-registrar-row:last-child {
+  padding-bottom: 2px;
+}
+
+.ixir-registrar-row dt {
+  margin: 0;
+  color: #1f2d3d;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.ixir-registrar-row dd {
+  margin: 0;
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.ixir-registrar-row a {
+  color: #386ce0;
+  font-weight: 600;
+}
+
+.ixir-registrar-row a:hover,
+.ixir-registrar-row a:focus {
+  color: #1d3d96;
+}
+
+.ixir-registrar-note {
+  margin: 8px 0 0;
+  padding: 16px 18px 16px 20px;
+  border-left: 4px solid #386ce0;
+  border-radius: 12px;
+  background: #eef4ff;
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.ixir-registrar-note > strong:first-child {
+  display: block;
+  margin: 0 0 4px;
+  color: #1e293b;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.ixir-about-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 42px 44px 40px;
+  border-radius: 22px;
+  background:
+    radial-gradient(
+      920px 240px at 100% -10%,
+      rgba(255, 255, 255, 0.24),
+      transparent 58%
+    ),
+    radial-gradient(
+      420px 220px at 0% 120%,
+      rgba(15, 36, 102, 0.35),
+      transparent 70%
+    ),
+    linear-gradient(135deg, #4b7ef2 0%, #386ce0 46%, #1d3d96 100%);
+  box-shadow: 0 18px 40px rgba(31, 63, 146, 0.22);
+}
+
+.ixir-about-hero::before {
+  content: "20+";
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.1);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: clamp(84px, 12vw, 132px);
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  line-height: 1;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.ixir-about-hero::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  bottom: -90px;
+  z-index: 0;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+.ixir-about-hero-kicker {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.ixir-about-hero h2 {
+  position: relative;
+  z-index: 1;
+  max-width: 14em;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  letter-spacing: -0.04em;
+}
+
+.ixir-about-hero p {
+  position: relative;
+  z-index: 1;
+  max-width: 46em;
+}
+
+.ixir-privacy-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 42px 44px 40px;
+  border-radius: 22px;
+  background:
+    radial-gradient(
+      920px 240px at 100% -10%,
+      rgba(255, 255, 255, 0.24),
+      transparent 58%
+    ),
+    linear-gradient(135deg, #4b7ef2 0%, #386ce0 46%, #1d3d96 100%);
+  box-shadow: 0 18px 40px rgba(31, 63, 146, 0.22);
+}
+
+.ixir-privacy-hero .ixir-about-hero-kicker,
+.ixir-privacy-hero h2,
+.ixir-privacy-hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.ixir-infra-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 42px 44px 36px;
+  border-radius: 22px;
+  background:
+    radial-gradient(
+      920px 240px at 100% -10%,
+      rgba(255, 255, 255, 0.18),
+      transparent 58%
+    ),
+    linear-gradient(135deg, #1d4ed8 0%, #163a9e 48%, #0f172a 100%);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.22);
+}
+
+.ixir-infra-hero .ixir-about-hero-kicker,
+.ixir-infra-hero h2,
+.ixir-infra-hero > p,
+.ixir-infra-location,
+.ixir-infra-stats {
+  position: relative;
+  z-index: 1;
+}
+
+.ixir-about-hero h2,
+.ixir-privacy-hero h2,
+.ixir-infra-hero h2,
+.ixir-kvkk-hero h2,
+.ixir-registrar-hero h2,
+.ixir-bank-hero h2 {
+  margin: 0 0 18px;
+  color: #fff !important;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.ixir-about-hero p,
+.ixir-privacy-hero p,
+.ixir-infra-hero p,
+.ixir-kvkk-hero p,
+.ixir-registrar-hero p,
+.ixir-bank-hero p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.ixir-about-hero p + p,
+.ixir-privacy-hero p + p,
+.ixir-kvkk-hero p + p,
+.ixir-registrar-hero p + p {
+  margin-top: 16px;
+}
+
+.ixir-about-stats,
+.ixir-infra-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 0 28px;
+}
+
+.ixir-about-stat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 188px;
+  padding: 26px 16px 22px;
+  overflow: hidden;
+  border: 1px solid rgba(56, 108, 224, 0.12);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f6f9ff 0%, #ffffff 52%);
+  box-shadow: 0 10px 28px rgba(21, 41, 86, 0.06);
+  text-align: center;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.ixir-about-stat::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 18%;
+  left: 18%;
+  height: 3px;
+  border-radius: 0 0 99px 99px;
+  background: linear-gradient(90deg, #386ce0, #6d93f0);
+}
+
+.ixir-about-stat:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 108, 224, 0.28);
+  box-shadow: 0 16px 36px rgba(21, 41, 86, 0.12);
+}
+
+.ixir-about-stat-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: rgba(56, 108, 224, 0.1);
+  color: #386ce0;
+}
+
+.ixir-about-stat-icon svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.ixir-about-stat strong,
+.ixir-infra-stat strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #386ce0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.ixir-about-stat > span:last-child,
+.ixir-infra-stat span {
+  max-width: 11.5em;
+  color: #4a5568;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.45;
+}
+
+.ixir-infra-stats {
+  margin: 26px 0 0;
+}
+
+.ixir-infra-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 118px;
+  padding: 22px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.ixir-infra-stat strong,
+.ixir-infra-stat span {
+  color: #fff;
+  max-width: none;
+}
+
+.ixir-infra-stat strong {
+  margin-bottom: 8px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 28px;
+  letter-spacing: -0.04em;
+}
+
+.ixir-infra-stat span {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ixir-infra-location {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-top: 22px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.ixir-infra-location p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.ixir-infra-pin {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  margin-top: 2px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+
+.ixir-infra-pin svg {
+  width: 18px;
+  height: 18px;
+}
+
+.ixir-box {
+  margin-bottom: 28px;
+  padding: 32px;
+  border: 1px solid rgba(56, 108, 224, 0.1);
+  border-radius: 20px;
+  background: linear-gradient(180deg, #f7f9ff 0%, #ffffff 42%);
+  box-shadow: 0 10px 28px rgba(21, 41, 86, 0.05);
+}
+
+.ixir-box h3 {
+  margin: 0 0 16px;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+
+.ixir-box p {
+  color: #3b4453;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.ixir-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.ixir-iso-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ixir-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.ixir-card {
+  padding: 22px;
+  border: 1px solid rgba(56, 108, 224, 0.1);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(21, 41, 86, 0.04);
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.ixir-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(56, 108, 224, 0.24);
+  box-shadow: 0 14px 30px rgba(21, 41, 86, 0.1);
+}
+
+.ixir-card-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 14px;
+  border-radius: 11px;
+  background: rgba(56, 108, 224, 0.1);
+  color: #386ce0;
+}
+
+.ixir-card-icon svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.ixir-card h4 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.ixir-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.ixir-iso-card {
+  min-height: 132px;
+}
+
+.ixir-iso-code {
+  display: inline-flex;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgba(56, 108, 224, 0.1);
+  color: #386ce0;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.ixir-iso-card h4 {
+  color: #1f2d3d;
+  font-size: 22px;
+  letter-spacing: -0.03em;
+}
+
+.ixir-note {
+  margin: 8px 0 18px;
+  padding: 16px 18px;
+  border-left: 4px solid #386ce0;
+  border-radius: 12px;
+  background: #eef5ff;
+  color: #2f3b52;
+}
+
+.ixir-certs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.ixir-certs button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 12px 14px;
+  border: 1px solid rgba(56, 108, 224, 0.1);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(21, 41, 86, 0.05);
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.ixir-certs button:hover,
+.ixir-certs button:focus {
+  transform: translateY(-4px);
+  border-color: rgba(56, 108, 224, 0.28);
+  box-shadow: 0 16px 32px rgba(21, 41, 86, 0.12);
+}
+
+.ixir-certs img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.ixir-certs span {
+  color: #1f2d3d;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.ixir-final {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-top: 8px;
+  padding: 38px 40px;
+  border-radius: 22px;
+  background:
+    radial-gradient(
+      700px 220px at 100% -20%,
+      rgba(56, 108, 224, 0.45),
+      transparent 55%
+    ),
+    linear-gradient(135deg, #101828 0%, #15203a 100%);
+  color: #fff;
+  box-shadow: 0 18px 40px rgba(16, 24, 40, 0.22);
+}
+
+.ixir-final::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  bottom: -90px;
+  z-index: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(56, 108, 224, 0.22);
+  pointer-events: none;
+}
+
+.ixir-final-kicker,
+.ixir-final h3,
+.ixir-final p {
+  position: relative;
+  z-index: 1;
+}
+
+.ixir-final-kicker {
+  display: inline-flex;
+  margin-bottom: 14px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #d7e4ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ixir-final h3 {
+  margin: 0 0 14px;
+  color: #fff !important;
+  font-size: 28px;
+  letter-spacing: -0.03em;
+}
+
+.ixir-final p {
+  margin: 0;
+  max-width: 48em;
+  color: #e8edf7;
+  line-height: 1.8;
+}
+
+.ixir-table-wrap {
+  overflow: hidden;
+  margin-top: 22px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.ixir-table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+.ixir-table th {
+  padding: 14px 16px;
+  background: #386ce0;
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+}
+
+.ixir-table td {
+  padding: 14px 16px;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.ixir-table-wrap + .ixir-note {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+.ixir-list {
+  margin: 0 0 18px;
+  padding-left: 20px;
+}
+
+.ixir-list li {
+  margin-bottom: 12px;
+}
+
+.ixir-checklist {
+  margin: 4px 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.ixir-checklist li {
+  position: relative;
+  margin: 0 0 12px;
+  padding-left: 22px;
+  color: #3b4453;
+  line-height: 1.7;
+}
+
+.ixir-checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #386ce0;
+}
+
+.ixir-checklist + p,
+.ixir-checklist + .ixir-note {
+  margin-top: 4px;
+}
+
+.ixir-legal {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.ixir-legal h3 {
+  margin: 32px 0 12px;
+  font-size: 20px;
+}
+
+.ixir-legal h3:first-child {
+  margin-top: 0;
+}
+
+.ixir-legal h4 {
+  margin: 20px 0 10px;
+  font-size: 16px;
+}
+
+.ixir-legal p {
+  margin: 0 0 14px;
+  text-align: justify;
+}
+
+.ixir-legal ol,
+.ixir-legal ul {
+  margin: 0 0 16px;
+  padding-left: 22px;
+}
+
+.ixir-legal li {
+  margin-bottom: 8px;
+}
+
+.ixir-legal .ixir-legal-clauses {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ixir-legal-meta {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid #e4ebf5;
+  color: #4a5568;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.ixir-legal-meta p {
+  margin: 0 0 8px;
+  text-align: left;
+}
+
+.ixir-contact-map {
+  position: relative;
+  width: 100%;
+  height: min(52vh, 460px);
+  min-height: 320px;
+  margin: 0;
+  overflow: hidden;
+  background: #e8eef5;
+}
+
+.ixir-contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.ixir-contact-page {
+  padding: 56px 0 72px;
+  background: #fff;
+}
+
+.ixir-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 64px;
+  align-items: start;
+}
+
+.ixir-contact-info h2,
+.ixir-contact-form-wrap h2 {
+  margin: 0 0 28px;
+  color: #1f2d3d;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.ixir-contact-meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 28px 40px;
+  align-items: start;
+}
+
+.ixir-contact-address h3 {
+  margin: 0 0 12px;
+  color: #1f2d3d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.ixir-contact-address > .ixir-contact-item {
+  margin-top: 22px;
+}
+
+.ixir-contact-address p,
+.ixir-contact-details p,
+.ixir-contact-details a {
+  margin: 0;
+  color: #3b4453;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.ixir-contact-details a:hover,
+.ixir-contact-details a:focus {
+  color: #386ce0;
+  text-decoration: none;
+}
+
+.ixir-contact-item + .ixir-contact-item {
+  margin-top: 22px;
+}
+
+.ixir-contact-item h6 {
+  position: relative;
+  margin: 0 0 10px;
+  padding-top: 10px;
+  color: #1f2d3d;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ixir-contact-item h6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background: #e53935;
+}
+
+.ixir-contact-item strong {
+  color: #1f2d3d;
+  font-weight: 700;
+}
+
+.ixir-contact-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ixir-contact-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1;
+  background: #252a38;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  text-decoration: none;
+  transition:
+    color 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.ixir-contact-social a:hover,
+.ixir-contact-social a:focus {
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.ixir-contact-social a:focus-visible {
+  outline: 2px solid rgba(56, 108, 224, 0.7);
+  outline-offset: 3px;
+}
+
+.ixir-contact-social a[title*="Facebook"]:hover,
+.ixir-contact-social a[title*="Facebook"]:focus {
+  background: #1877f2;
+  border-color: #1877f2;
+}
+
+.ixir-contact-social a[title*="Twitter"]:hover,
+.ixir-contact-social a[title*="Twitter"]:focus {
+  background: #1d9bf0;
+  border-color: #1d9bf0;
+}
+
+.ixir-contact-social a[title*="Instagram"]:hover,
+.ixir-contact-social a[title*="Instagram"]:focus {
+  background: #e1306c;
+  border-color: #e1306c;
+}
+
+.ixir-contact-social a[title*="LinkedIn"]:hover,
+.ixir-contact-social a[title*="LinkedIn"]:focus {
+  background: #0a66c2;
+  border-color: #0a66c2;
+}
+
+.ixir-contact-social a[title*="Youtube"]:hover,
+.ixir-contact-social a[title*="Youtube"]:focus {
+  background: #ff0000;
+  border-color: #ff0000;
+}
+
+.ixir-contact-alert {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin: 0 0 22px;
+  padding: 16px 18px;
+  border-radius: 12px;
+}
+
+.ixir-contact-alert-icon {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+}
+
+.ixir-contact-alert-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.ixir-contact-alert strong {
+  display: block;
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.ixir-contact-alert p,
+.ixir-contact-alert ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.ixir-contact-alert ul li + li {
+  margin-top: 4px;
+}
+
+.ixir-contact-alert--success {
+  border: 1px solid #bbf7d0;
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.ixir-contact-alert--success .ixir-contact-alert-icon {
+  background: rgba(22, 101, 52, 0.12);
+  color: #16a34a;
+}
+
+.ixir-contact-alert--error {
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.ixir-contact-alert--error .ixir-contact-alert-icon {
+  background: rgba(220, 38, 38, 0.12);
+  color: #dc2626;
+}
+
+.ixir-contact-field {
+  margin-bottom: 14px;
+}
+
+.ixir-contact-form .form-control {
+  height: 50px;
+  padding: 0 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: none !important;
+  color: #1f2d3d;
+  background: #f8fafc;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.ixir-contact-form .form-control::placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+.ixir-contact-form textarea.form-control {
+  height: auto;
+  min-height: 150px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  resize: vertical;
+}
+
+.ixir-contact-form .form-control:hover {
+  border-color: #cbd5e1;
+  background: #fff;
+}
+
+.ixir-contact-form .form-control:focus {
+  border-color: #386ce0 !important;
+  background: #fff !important;
+  box-shadow: 0 0 0 4px rgba(56, 108, 224, 0.12) !important;
+}
+
+.ixir-contact-field.has-error .form-control,
+.ixir-contact-form .form-control.is-invalid {
+  border-color: #dc2626 !important;
+  background: #fff5f5 !important;
+  box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.1) !important;
+}
+
+.ixir-contact-field-error {
+  display: block;
+  margin-top: 7px;
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.ixir-contact-captcha {
+  margin: 4px 0 18px;
+}
+
+.ixir-contact-page #google-recaptcha-domainchecker,
+.ixir-contact-page .recaptcha-container:not(.ixir-recaptcha-box) {
+  display: none !important;
+}
+
+.ixir-contact-form .ixir-captcha-wrap {
+  margin: 0;
+  text-align: left;
+}
+
+.ixir-contact-form .ixir-recaptcha-box,
+.ixir-contact-form .ixir-g-recaptcha {
+  display: block;
+  width: 304px;
+  max-width: 100%;
+  min-height: 78px;
+}
+
+.ixir-contact-form .ixir-captcha-wrap.is-invalid .ixir-recaptcha-box,
+.ixir-contact-form .ixir-captcha-wrap.is-invalid .g-recaptcha {
+  outline: 2px solid #dc2626;
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+.ixir-captcha-wrap.is-broken,
+.ixir-contact-captcha:has(.ixir-captcha-wrap.is-broken) {
+  display: none !important;
+}
+
+.ixir-contact-image-captcha > p {
+  margin: 0 0 10px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ixir-contact-image-captcha-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ixir-contact-image-captcha-row img {
+  height: 50px;
+  width: auto;
+  max-width: 160px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.ixir-contact-image-captcha-row .form-control {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.ixir-contact-submit {
+  height: 48px;
+  min-width: 148px;
+  padding: 0 28px;
+  border: 0;
+  border-radius: 10px;
+  background: #386ce0 !important;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 700;
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.ixir-contact-submit:hover,
+.ixir-contact-submit:focus {
+  background: #2f5bc4 !important;
+  color: #fff !important;
+}
+
+.ixir-contact-submit:active {
+  transform: translateY(1px);
+}
+
+.ixir-contact-legal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+  padding: 24px 28px;
+  border-radius: 0;
+  background: #f5f7fb;
+  color: #3b4453;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ixir-contact-legal b {
+  display: block;
+  margin-bottom: 6px;
+  color: #1f2d3d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ixir-bank-card {
+  padding: 22px 24px;
+}
+
+.ixir-bank-card dt {
+  margin: 0 0 4px;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ixir-bank-card dd {
+  margin: 0 0 14px;
+  color: #1f2d3d;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ixir-bank-card dd:last-child {
+  margin-bottom: 0;
+}
+
+.ixir-alert {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin: 0 0 16px;
+  padding: 18px 20px;
+  border-radius: 16px;
+}
+
+.ixir-alert-icon {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-top: 1px;
+  border-radius: 10px;
+}
+
+.ixir-alert-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.ixir-alert strong {
+  display: block;
+  margin: 0 0 6px;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+.ixir-alert p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.ixir-alert mark {
+  padding: 0 4px;
+  border-radius: 4px;
+  background: rgba(180, 83, 9, 0.12);
+  color: inherit;
+  font-weight: 800;
+}
+
+.ixir-alert-warn {
+  border: 1px solid #f3d39a;
+  background: #fff6dc;
+  color: #7a4b00;
+}
+
+.ixir-alert-warn .ixir-alert-icon {
+  background: rgba(180, 83, 9, 0.12);
+  color: #b45309;
+}
+
+.ixir-alert-info {
+  border: 1px solid #bfdbfe;
+  background: #e8f3ff;
+  color: #1e3a5f;
+}
+
+.ixir-alert-info .ixir-alert-icon {
+  background: rgba(56, 108, 224, 0.12);
+  color: #386ce0;
+}
+
+.ixir-alert-info b {
+  font-weight: 800;
+}
+
+.ixir-bank-account {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  margin: 28px 0;
+  padding: 28px 8px;
+}
+
+.ixir-bank-logo img {
+  display: block;
+  width: min(100%, 220px);
+  height: auto;
+}
+
+.ixir-bank-account dl {
+  margin: 0;
+  padding-left: 28px;
+  border-left: 1px solid #e5e7eb;
+}
+
+.ixir-bank-account dt {
+  margin: 0 0 4px;
+  color: #1f2d3d;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.ixir-bank-account dd {
+  margin: 0 0 14px;
+  color: #3b4453;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ixir-bank-account dd:last-child {
+  margin-bottom: 0;
+}
+
+.ixir-iban {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.02em;
+  color: #1f2d3d !important;
+}
+
+.ixir-cert-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 20000;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.ixir-cert-modal.is-open {
+  display: flex;
+}
+
+.ixir-cert-modal img {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.35);
+}
+
+.ixir-cert-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  border: 0;
+  background: none;
+  color: #fff;
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .ixir-about-stats,
+  .ixir-infra-stats,
+  .ixir-grid,
+  .ixir-certs,
+  .ixir-contact-legal {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .ixir-corp-hero {
+    min-height: 280px;
+    padding: 64px 0 56px;
+  }
+
+  .ixir-corp-hero h1 {
+    font-size: 36px;
+  }
+
+  .ixir-corp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ixir-corp-nav {
+    position: static;
+    margin-bottom: 8px;
+    padding: 0;
+    overflow-x: auto;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .ixir-corp-nav-title {
+    margin: 0 0 12px;
+  }
+
+  .ixir-corp-nav ul {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .ixir-corp-nav-item a {
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #f5f7fb;
+    white-space: nowrap;
+  }
+
+  .ixir-corp-nav-radio {
+    display: none;
+  }
+
+  .ixir-corp-nav-item.is-active a,
+  .ixir-corp-nav-item a[aria-current="page"] {
+    background: #eaf1ff;
+  }
+
+  .ixir-corp-content {
+    padding: 0;
+  }
+
+  .ixir-grid-2,
+  .ixir-contact-grid,
+  .ixir-contact-meta,
+  .ixir-bank-account {
+    grid-template-columns: 1fr;
+  }
+
+  .ixir-contact-map {
+    height: 300px;
+    min-height: 260px;
+  }
+
+  .ixir-contact-page {
+    padding: 40px 0 56px;
+  }
+
+  .ixir-contact-grid {
+    gap: 36px;
+  }
+
+  .ixir-contact-info h2,
+  .ixir-contact-form-wrap h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .ixir-bank-account dl {
+    padding-left: 0;
+    padding-top: 18px;
+    border-left: 0;
+    border-top: 1px solid #e5e7eb;
+  }
+}
+
+@media (max-width: 767px) {
+  .ixir-corp-hero h1 {
+    font-size: 30px;
+  }
+
+  .ixir-about-hero,
+  .ixir-privacy-hero,
+  .ixir-infra-hero,
+  .ixir-kvkk-hero,
+  .ixir-registrar-hero,
+  .ixir-bank-hero,
+  .ixir-box,
+  .ixir-final {
+    padding: 22px;
+  }
+
+  .ixir-about-hero::before {
+    right: 6px;
+    font-size: 72px;
+    opacity: 0.55;
+  }
+
+  .ixir-about-hero h2,
+  .ixir-privacy-hero h2,
+  .ixir-infra-hero h2,
+  .ixir-kvkk-hero h2,
+  .ixir-registrar-hero h2,
+  .ixir-bank-hero h2 {
+    font-size: 26px;
+  }
+
+  .ixir-registrar-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .ixir-about-stats,
+  .ixir-infra-stats,
+  .ixir-grid,
+  .ixir-contact-legal {
+    grid-template-columns: 1fr;
+  }
+
+  .ixir-certs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ixir-about-stat,
+  .ixir-infra-stat {
+    min-height: 0;
+  }
+
+  .ixir-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
