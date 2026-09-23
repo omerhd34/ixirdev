@@ -1,4 +1,4 @@
-<section class="ixir-help" aria-label="Destek kanalları">
+<section class="ixir-help" id="ixir-help" aria-label="Destek kanalları">
  <img class="ixir-help-visual" src="{$WEB_ROOT}/templates/{$template}/img/help/bg4.webp" alt="" width="1154"
   height="420" decoding="async" aria-hidden="true">
  <div class="container">
@@ -40,4 +40,38 @@
    }
   });
  })();
+</script>
+<script>
+ {literal}
+  (function() {
+   var root = document.getElementById('ixir-help');
+   if (!root || !window.IntersectionObserver) {
+    return;
+   }
+   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+   }
+   root.classList.add('is-armed');
+   var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+     if (!entry.isIntersecting) {
+      return;
+     }
+     observer.disconnect();
+     window.requestAnimationFrame(function() {
+      window.requestAnimationFrame(function() {
+       root.classList.add('is-in');
+       window.setTimeout(function() {
+        root.classList.remove('is-armed');
+       }, 1300);
+      });
+     });
+    });
+   }, {
+    threshold: 0.18,
+    rootMargin: '0px 0px -6% 0px'
+   });
+   observer.observe(root);
+  })();
+ {/literal}
 </script>

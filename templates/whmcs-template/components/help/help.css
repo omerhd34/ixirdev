@@ -159,7 +159,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
   .ixir-help-copy {
     max-width: 500px;
   }
@@ -168,7 +168,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .ixir-help,
   .ixir-help-stage {
     min-height: 0;
@@ -255,5 +255,55 @@
     flex: 1 1 100%;
     padding-left: 40px;
     margin-top: 0;
+  }
+}
+
+.ixir-help.is-armed .ixir-help-visual,
+.ixir-help.is-armed .ixir-help-copy h2,
+.ixir-help.is-armed .ixir-help-copy > p,
+.ixir-help.is-armed .ixir-help-card {
+  opacity: 0;
+  transform: translate3d(112px, 0, 0);
+  transition:
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms),
+    opacity 0.56s ease var(--ixir-enter-delay, 0ms);
+}
+.ixir-help.is-armed .ixir-help-visual {
+  --ixir-enter-delay: 0ms;
+}
+.ixir-help.is-armed .ixir-help-copy h2 {
+  --ixir-enter-delay: 40ms;
+}
+.ixir-help.is-armed .ixir-help-copy > p {
+  --ixir-enter-delay: 100ms;
+}
+.ixir-help.is-armed .ixir-help-card:nth-child(1) {
+  --ixir-enter-delay: 220ms;
+}
+.ixir-help.is-armed .ixir-help-card:nth-child(2) {
+  --ixir-enter-delay: 140ms;
+}
+.ixir-help.is-armed .ixir-help-card:nth-child(3) {
+  --ixir-enter-delay: 60ms;
+}
+.ixir-help.is-armed.is-in .ixir-help-visual,
+.ixir-help.is-armed.is-in .ixir-help-copy h2,
+.ixir-help.is-armed.is-in .ixir-help-copy > p,
+.ixir-help.is-armed.is-in .ixir-help-card {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .ixir-help.is-armed .ixir-help-visual,
+  .ixir-help.is-armed .ixir-help-copy h2,
+  .ixir-help.is-armed .ixir-help-copy > p,
+  .ixir-help.is-armed .ixir-help-card,
+  .ixir-help.is-armed.is-in .ixir-help-visual,
+  .ixir-help.is-armed.is-in .ixir-help-copy h2,
+  .ixir-help.is-armed.is-in .ixir-help-copy > p,
+  .ixir-help.is-armed.is-in .ixir-help-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
