@@ -1,4 +1,4 @@
-{if !$ixirCorporate && ($templatefile != 'homepage' || $twitterusername || $announcements)}
+{if !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage && ($templatefile != 'homepage' || $twitterusername || $announcements)}
  </div><!-- /.main-content -->
  {if !$inShoppingCart && $secondarySidebar && $secondarySidebar->hasChildren()}
   <div class="col-md-3 pull-md-left sidebar sidebar-secondary">

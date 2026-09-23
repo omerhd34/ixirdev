@@ -34,7 +34,8 @@
 
 <body
  {if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim'}
-  class="ixir-auth-page" data-phone-cc-input="" {else} class="{if $ixirCorporate}ixir-corporate-page{/if}"
+ class="ixir-auth-page" data-phone-cc-input="" {else}
+  class="{if $ixirCorporate}ixir-corporate-page{/if}{if $ixirDomainSearchPage} ixir-domain-search-page{/if}{if $ixirDomainTransferPage} ixir-domain-transfer-page{/if}"
  data-phone-cc-input="{$phoneNumberInputStyle}" {/if}>
  {if $ixirLoadRecaptcha && $captcha && ($templatefile != 'clientregister' || !$loggedin)}{$captcha->getMarkup()}{/if}
  {$headeroutput}
@@ -42,6 +43,7 @@
  <style>
   html {
    --ixir-scroll-size: 18px;
+   --ixir-hero-offset: 113px;
    height: auto !important;
    overflow-x: hidden !important;
    overflow-y: scroll !important;
@@ -112,7 +114,15 @@
    height: 161px;
   }
 
-  @media only screen and (max-width: 992px) {
+  body:has(.news-bar:not(.is-hidden)) {
+   --ixir-hero-offset: 161px;
+  }
+
+  @media only screen and (max-width: 991px) {
+   html {
+    --ixir-hero-offset: 96px;
+   }
+
    .ixir-header-spacer {
     height: 96px;
    }
@@ -120,13 +130,17 @@
    body:has(.news-bar:not(.is-hidden)) .ixir-header-spacer {
     height: 142px;
    }
+
+   body:has(.news-bar:not(.is-hidden)) {
+    --ixir-hero-offset: 142px;
+   }
   }
 
   body.ixir-auth-page .ixir-header-spacer {
    height: 113px;
   }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 991px) {
    body.ixir-auth-page .ixir-header-spacer {
     height: 96px;
    }
@@ -204,7 +218,7 @@
  </div>
  <div class="ixir-header-spacer" aria-hidden="true"></div>
 
- {if !$ixirIsAuthPage && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $filename != 'ixir-hesabim' && $filename != 'register'}
+ {if $templatefile == 'homepage'}
   {include file="$template/components/news-bar/news-bar.tpl"}
  {/if}
  {include file="$template/components/header/header-scripts.tpl"}
@@ -212,7 +226,7 @@
   {include file="$template/includes/verifyemail.tpl"}
  {/if}
 
- {if $templatefile != 'homepage' && !$ixirCorporate}
+ {if $templatefile != 'homepage' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage}
   <section id="main-body">
    <div class="container{if $skipMainBodyContainer}-fluid without-padding{/if}">
     <div class="row">
