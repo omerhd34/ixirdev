@@ -9038,7 +9038,7 @@ section#home-banner .btn.search {
 section#home-banner .btn.transfer {
   background-color: #bbb;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   section#home-banner h2 {
     font-size: 26px;
   }
@@ -9094,7 +9094,7 @@ section#home-banner .btn.transfer {
   margin: 0;
   line-height: 55px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .home-shortcuts ul {
     text-align: center;
   }
@@ -9882,7 +9882,7 @@ table.dtr-inline.collapsed .responsive-edit-button {
   border: 1px solid #ccc;
   overflow: hidden;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .affiliate-stat {
     font-size: 1.2em;
   }
@@ -9893,7 +9893,7 @@ table.dtr-inline.collapsed .responsive-edit-button {
     font-size: 3.6em;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .affiliate-stat {
     font-size: 1em;
   }
@@ -10458,7 +10458,7 @@ h3.kb-alsoread {
 #stepResults .label {
   font-size: 20px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #stepResults {
     font-size: 14px;
   }
@@ -10602,7 +10602,7 @@ tr.masspay-total td {
 .licensing-verification .secondary-input-submit {
   display: none;
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .licensing-verification .input-group .input-group-btn {
     display: none;
   }
@@ -10622,7 +10622,7 @@ tr.masspay-total td {
   padding-left: 15%;
   padding-right: 15%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .google-recaptcha-align {
     padding-left: 15px;
     padding-right: 15px;
