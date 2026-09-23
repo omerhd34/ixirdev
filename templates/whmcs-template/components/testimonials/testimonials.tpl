@@ -49,6 +49,7 @@
    "text" => "Full stack projelerimde performans ve uptime vazgeçilmez. ixirhost altyapısı tutarlı, panel sade, teknik ekip de gerçekten geliştirici dilinden anlıyor. Gönül rahatlığıyla öneririm."
   ]
  ]}
+
  {capture name="ixirReviewStars"}
   <div class="ixir-reviews-stars" aria-hidden="true">
    <i class="fas fa-star"></i>

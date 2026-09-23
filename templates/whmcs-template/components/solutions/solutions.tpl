@@ -1,4 +1,4 @@
-<section class="ixir-solutions" aria-label="Web hosting ve altyapı çözümleri">
+<section class="ixir-solutions" id="ixir-solutions" aria-label="Web hosting ve altyapı çözümleri">
  <div class="container">
   <header class="ixir-solutions-head">
    <h2>Türkiye'nin Güvenilir Web Hosting ve Altyapı Çözümleri</h2>
@@ -84,3 +84,37 @@
   </div>
  </div>
 </section>
+<script>
+ {literal}
+ (function() {
+  var root = document.getElementById('ixir-solutions');
+  if (!root || !window.IntersectionObserver) {
+   return;
+  }
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+   return;
+  }
+  root.classList.add('is-armed');
+  var observer = new IntersectionObserver(function(entries) {
+   entries.forEach(function(entry) {
+    if (!entry.isIntersecting) {
+     return;
+    }
+    observer.disconnect();
+    window.requestAnimationFrame(function() {
+     window.requestAnimationFrame(function() {
+      root.classList.add('is-in');
+      window.setTimeout(function() {
+       root.classList.remove('is-armed');
+      }, 1400);
+     });
+    });
+   });
+  }, {
+   threshold: 0.18,
+   rootMargin: '0px 0px -6% 0px'
+   });
+   observer.observe(root);
+  })();
+ {/literal}
+</script>

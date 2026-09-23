@@ -207,3 +207,51 @@
     font-size: 16px;
   }
 }
+
+.ixir-solutions.is-armed .ixir-solutions-head,
+.ixir-solutions.is-armed .ixir-solutions-card {
+  opacity: 0;
+  transform: translate3d(-112px, 0, 0);
+  pointer-events: none;
+  transition:
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms),
+    opacity 0.56s ease var(--ixir-enter-delay, 0ms);
+}
+.ixir-solutions.is-armed .ixir-solutions-head {
+  --ixir-enter-delay: 0ms;
+}
+.ixir-solutions.is-armed .ixir-solutions-card:nth-child(1) {
+  --ixir-enter-delay: 80ms;
+}
+.ixir-solutions.is-armed .ixir-solutions-card:nth-child(2) {
+  --ixir-enter-delay: 160ms;
+}
+.ixir-solutions.is-armed .ixir-solutions-card:nth-child(3) {
+  --ixir-enter-delay: 240ms;
+}
+.ixir-solutions.is-armed .ixir-solutions-card:nth-child(4) {
+  --ixir-enter-delay: 200ms;
+}
+.ixir-solutions.is-armed .ixir-solutions-card:nth-child(5) {
+  --ixir-enter-delay: 280ms;
+}
+.ixir-solutions.is-armed .ixir-solutions-card:nth-child(6) {
+  --ixir-enter-delay: 360ms;
+}
+.ixir-solutions.is-armed.is-in .ixir-solutions-head,
+.ixir-solutions.is-armed.is-in .ixir-solutions-card {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ixir-solutions.is-armed .ixir-solutions-head,
+  .ixir-solutions.is-armed .ixir-solutions-card,
+  .ixir-solutions.is-armed.is-in .ixir-solutions-head,
+  .ixir-solutions.is-armed.is-in .ixir-solutions-card {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
+  }
+}

@@ -148,6 +148,54 @@
   }
 }
 
+.ixir-trust.is-armed .ixir-trust-head,
+.ixir-trust.is-armed .ixir-trust-item {
+  opacity: 0;
+  transform: translate3d(-112px, 0, 0);
+  pointer-events: none;
+  transition:
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms),
+    opacity 0.56s ease var(--ixir-enter-delay, 0ms);
+}
+.ixir-trust.is-armed .ixir-trust-head {
+  --ixir-enter-delay: 0ms;
+}
+.ixir-trust.is-armed .ixir-trust-item:nth-child(1) {
+  --ixir-enter-delay: 80ms;
+}
+.ixir-trust.is-armed .ixir-trust-item:nth-child(2) {
+  --ixir-enter-delay: 160ms;
+}
+.ixir-trust.is-armed .ixir-trust-item:nth-child(3) {
+  --ixir-enter-delay: 240ms;
+}
+.ixir-trust.is-armed .ixir-trust-item:nth-child(4) {
+  --ixir-enter-delay: 200ms;
+}
+.ixir-trust.is-armed .ixir-trust-item:nth-child(5) {
+  --ixir-enter-delay: 280ms;
+}
+.ixir-trust.is-armed .ixir-trust-item:nth-child(6) {
+  --ixir-enter-delay: 360ms;
+}
+.ixir-trust.is-armed.is-in .ixir-trust-head,
+.ixir-trust.is-armed.is-in .ixir-trust-item {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ixir-trust.is-armed .ixir-trust-head,
+  .ixir-trust.is-armed .ixir-trust-item,
+  .ixir-trust.is-armed.is-in .ixir-trust-head,
+  .ixir-trust.is-armed.is-in .ixir-trust-item {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .ixir-trust {
     padding: 44px 0 36px;

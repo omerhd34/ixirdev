@@ -321,7 +321,7 @@
   }
 }
 
-@media only screen and (min-width: 1360px) {
+@media only screen and (min-width: 1440px) {
   .ixir-promo-prev {
     left: 24px;
   }
@@ -350,7 +350,7 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 991px) {
   .ixir-promo-grid {
     grid-template-columns: minmax(0, 1fr);
     padding: 20px 0 40px;
@@ -390,7 +390,7 @@
   }
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 575px) {
   .ixir-promo {
     margin-top: 8px;
   }

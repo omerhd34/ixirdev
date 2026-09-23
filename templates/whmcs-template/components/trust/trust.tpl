@@ -1,4 +1,4 @@
-<section class="ixir-trust">
+<section class="ixir-trust" id="ixir-trust">
  <div class="container">
   <header class="ixir-trust-head">
    <h2>Yalnızca Hizmet Değil, 20 Yıldır Güven Barındırıyoruz!</h2>
@@ -50,3 +50,37 @@
   </div>
  </div>
 </section>
+<script>
+ {literal}
+  (function() {
+   var root = document.getElementById('ixir-trust');
+   if (!root || !window.IntersectionObserver) {
+    return;
+   }
+   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+   }
+   root.classList.add('is-armed');
+   var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+     if (!entry.isIntersecting) {
+      return;
+     }
+     observer.disconnect();
+     window.requestAnimationFrame(function() {
+      window.requestAnimationFrame(function() {
+       root.classList.add('is-in');
+       window.setTimeout(function() {
+        root.classList.remove('is-armed');
+       }, 1400);
+      });
+     });
+    });
+   }, {
+    threshold: 0.18,
+    rootMargin: '0px 0px -6% 0px'
+   });
+   observer.observe(root);
+  })();
+ {/literal}
+</script>
