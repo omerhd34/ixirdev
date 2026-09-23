@@ -1,8 +1,20 @@
 .ixir-packages {
   position: relative;
   z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 0;
-  padding: 0 0 20px;
+  padding: 28px 0;
+  scroll-margin-top: 0;
+  background-color: #fff;
+  min-height: calc(100vh - var(--ixir-hero-offset, 113px));
+  min-height: calc(100dvh - var(--ixir-hero-offset, 113px));
+}
+.ixir-packages > .container {
+  width: 100%;
+  flex: 0 0 auto;
 }
 .ixir-packages-grid {
   display: grid;
@@ -277,7 +289,7 @@
   padding-top: 28px !important;
 }
 
-@media only screen and (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .ixir-package {
     padding: 22px;
   }
@@ -290,13 +302,13 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .ixir-packages {
-    padding-top: 32px;
+    padding: 24px 0;
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   .ixir-packages-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
@@ -311,8 +323,8 @@
 
 @media only screen and (min-width: 992px) {
   .ixir-packages {
-    margin-top: -88px;
-    padding-top: 0;
+    margin-top: 0;
+    padding: 32px 0;
   }
   .ixir-packages-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -332,14 +344,14 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .ixir-packages {
     margin-top: 0;
-    padding: 16px 0 8px;
+    padding: 16px 0;
   }
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 575px) {
   .ixir-package {
     padding: 16px;
   }
@@ -375,5 +387,54 @@
   }
   .ixir-package-amount {
     font-size: 24px;
+  }
+}
+
+.ixir-packages.is-armed {
+  overflow-x: clip;
+}
+.ixir-packages.is-armed .ixir-package {
+  opacity: 0;
+  transform: translate3d(112px, 0, 0);
+  pointer-events: none;
+  transition:
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms),
+    opacity 0.56s ease var(--ixir-enter-delay, 0ms);
+}
+.ixir-packages.is-armed .ixir-package:nth-child(1) {
+  --ixir-enter-delay: 0ms;
+}
+.ixir-packages.is-armed .ixir-package:nth-child(2) {
+  --ixir-enter-delay: 120ms;
+}
+.ixir-packages.is-armed .ixir-package:nth-child(3) {
+  --ixir-enter-delay: 240ms;
+}
+.ixir-packages.is-armed .ixir-package.is-in {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+@media (min-width: 992px) {
+  .ixir-packages.is-armed .ixir-package:nth-child(1) {
+    --ixir-enter-delay: 240ms;
+  }
+  .ixir-packages.is-armed .ixir-package:nth-child(2) {
+    --ixir-enter-delay: 120ms;
+  }
+  .ixir-packages.is-armed .ixir-package:nth-child(3) {
+    --ixir-enter-delay: 0ms;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ixir-packages.is-armed {
+    overflow-x: visible;
+  }
+  .ixir-packages.is-armed .ixir-package,
+  .ixir-packages.is-armed .ixir-package.is-in {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
   }
 }

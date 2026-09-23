@@ -1,4 +1,4 @@
-<section class="ixir-packages">
+<section class="ixir-packages" id="ixir-packages">
  <div class="container">
   <div class="ixir-packages-grid">
    <article class="ixir-package ixir-package--web">
@@ -118,3 +118,47 @@
   </div>
  </div>
 </section>
+<script>
+ {literal}
+  (function() {
+   var root = document.getElementById('ixir-packages');
+   if (!root || !window.IntersectionObserver) {
+    return;
+   }
+   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+   }
+   var cards = root.querySelectorAll('.ixir-package');
+   if (!cards.length) {
+    return;
+   }
+   root.classList.add('is-armed');
+   var shown = 0;
+   var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+     if (!entry.isIntersecting) {
+      return;
+     }
+     observer.unobserve(entry.target);
+     window.requestAnimationFrame(function() {
+      window.requestAnimationFrame(function() {
+       entry.target.classList.add('is-in');
+       shown += 1;
+       if (shown === cards.length) {
+        window.setTimeout(function() {
+         root.classList.remove('is-armed');
+        }, 1200);
+       }
+      });
+     });
+    });
+   }, {
+    threshold: 0.22,
+    rootMargin: '0px 0px -6% 0px'
+   });
+   Array.prototype.forEach.call(cards, function(card) {
+    observer.observe(card);
+   });
+  })();
+ {/literal}
+</script>
