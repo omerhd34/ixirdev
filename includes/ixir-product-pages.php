@@ -183,7 +183,7 @@ function ixir_product_pages()
                 'Hızlı kurulum ve yenileme',
             ],
         ],
-        'website-olusturucu' => [
+        'site-pratik' => [
             'title' => 'Site Pratik',
             'tagline' => 'AI destekli web sitesi oluşturucu ile sitenizi dakikalar içinde yayınlayın.',
             'icon' => 'far fa-magic',
