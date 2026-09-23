@@ -32,14 +32,24 @@
        <span class="ixir-cart-item-meta">{$item.meta|escape}</span>
       {/if}
      </span>
+     {if isset($item.removeType)}
+      <a
+       href="{$WEB_ROOT}/cart.php?a=remove&amp;r={$item.removeType|escape:'url'}&amp;i={$item.removeIndex|escape:'url'}{if isset($item.renewalType) && $item.renewalType}&amp;rt={$item.renewalType|escape:'url'}{/if}"
+       class="ixir-cart-item-remove" data-type="{$item.removeType|escape}" data-index="{$item.removeIndex|escape}"
+       data-name="{$item.name|escape}"
+       {if isset($item.renewalType) && $item.renewalType}data-rt="{$item.renewalType|escape}" {/if} title="Kaldır"
+       aria-label="{$item.name|escape} ürününü sepetten kaldır">
+       <i class="fas fa-trash-alt" aria-hidden="true"></i>
+      </a>
+     {/if}
     </li>
    {/foreach}
   </ul>
  {else}
   <div class="ixir-cart-empty">
    <span class="ixir-cart-empty-icon"><i class="fas fa-shopping-basket"></i></span>
-   <strong>Sepetiniz boş</strong>
-   <span class="ixir-cart-empty-text">Henüz ürün eklemediniz</span>
+   <strong>Sepetiniz boş.</strong>
+   <span class="ixir-cart-empty-text">Henüz ürün eklemediniz.</span>
   </div>
  {/if}
  <a href="{$WEB_ROOT}/sepet/goruntule" class="ixir-cart-view-btn">

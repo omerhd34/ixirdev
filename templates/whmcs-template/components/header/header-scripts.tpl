@@ -107,6 +107,87 @@
     e.stopPropagation();
     closeIxirCart();
    });
+
+   function ixirCartEmptyHtml() {
+    return '<div class="ixir-cart-empty">' +
+     '<span class="ixir-cart-empty-icon"><i class="fas fa-shopping-basket"></i></span>' +
+     '<strong>Sepetiniz boş.</strong>' +
+     '<span class="ixir-cart-empty-text">Henüz ürün eklemediniz.</span>' +
+     '</div>';
+   }
+
+   function ixirResetDomainCartButton(domain) {
+    if (!domain) {
+     return;
+    }
+    var needle = String(domain).toLowerCase();
+    $('button.btn-add-to-cart').each(function() {
+     var value = String($(this).attr('data-domain') || '').toLowerCase();
+     if (value !== needle) {
+      return;
+     }
+     $(this).removeClass('checkout').removeAttr('disabled');
+     $(this).find('span.added, span.loading, span.unavailable').hide();
+     $(this).find('span.to-add').show();
+    });
+   }
+
+   function ixirApplyMiniCartCount(count) {
+    count = parseInt(count, 10) || 0;
+    if (count > 0) {
+     $('.ixir-cart-count').text(count + ' ürün');
+     $('.cart-item-count').text(count).show();
+     $('#cartItemCount').text(count);
+    } else {
+     $('.ixir-cart-count').remove();
+     $('.cart-item-count').remove();
+     $('#cartItemCount').text('0');
+     $('.ixir-cart-items').each(function() {
+      $(this).replaceWith(ixirCartEmptyHtml());
+     });
+    }
+   }
+
+   $(document).on('click', '.ixir-cart-item-remove', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var $btn = $(this);
+    if ($btn.hasClass('is-busy')) {
+     return;
+    }
+    var type = $btn.attr('data-type');
+    var index = $btn.attr('data-index');
+    var domain = $btn.attr('data-name') || '';
+    var $targets = $('.ixir-cart-item-remove').filter(function() {
+     return $(this).attr('data-type') === type && String($(this).attr('data-index')) === String(index);
+    });
+    $targets.addClass('is-busy');
+    var data = {
+     r: type,
+     i: index,
+     token: typeof csrfToken !== 'undefined' ? csrfToken : ''
+    };
+    var renewalType = $btn.attr('data-rt');
+    if (renewalType) {
+     data.rt = renewalType;
+    }
+    $.ajax({
+     url: (window.whmcsBaseUrl || '') + '/ixir-cart-remove.php',
+     type: 'POST',
+     dataType: 'json',
+     data: data
+    }).done(function(res) {
+     if (!res || !res.ok) {
+      $targets.removeClass('is-busy');
+      return;
+     }
+     $targets.closest('li').remove();
+     ixirApplyMiniCartCount(res.count);
+     ixirResetDomainCartButton(res.removedName || domain);
+    }).fail(function() {
+     $targets.removeClass('is-busy');
+    });
+   });
    $(document).on('click', '.ixir-hamburger', function(e) {
     e.preventDefault();
     e.stopPropagation();
@@ -132,7 +213,7 @@
    });
 
    function ixirIsMobileHeader() {
-    return window.matchMedia('(max-width: 992px)').matches;
+    return window.matchMedia('(max-width: 991px)').matches;
    }
 
    function updateIxirHeaderSpacer() {
@@ -146,16 +227,21 @@
     if (!$header.length || !$spacer.length) {
      return;
     }
-    var headerHeight = $header.outerHeight() || 0;
-    var newsHeight = 0;
-    if ($news.length && $news.is(':visible') && !$news.hasClass('is-hidden') && !$('body').hasClass(
-      'ixir-auth-page')) {
+    var headerEl = $header[0];
+    var headerHeight = headerEl.getBoundingClientRect().height || 0;
+    var newsVisible = $news.length && $news.is(':visible') && !$news.hasClass('is-hidden') && !$('body').hasClass(
+     'ixir-auth-page');
+    var height = headerHeight;
+    if (newsVisible) {
      $news.css('top', headerHeight + 'px');
-     newsHeight = $news.outerHeight() || 0;
+     height = $news[0].getBoundingClientRect().bottom - headerEl.getBoundingClientRect().top;
+     if (height > headerHeight) {
+      height -= 1;
+     }
     }
-    var height = headerHeight + newsHeight;
     if (height > 0) {
      $spacer.css('height', height + 'px');
+     document.documentElement.style.setProperty('--ixir-hero-offset', Math.round(height) + 'px');
     }
    }
    window.updateIxirHeaderSpacer = updateIxirHeaderSpacer;

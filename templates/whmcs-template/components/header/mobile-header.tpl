@@ -287,7 +287,7 @@
     </div>
    </li>
    <li>
-    <a href="{$WEB_ROOT}/website-olusturucu">
+    <a href="{$WEB_ROOT}/site-pratik">
      <i class="fas fa-magic"></i>
      <span>Site Pratik</span>
      <span class="menu-yeni blink ixir-mobile-badge">AI Destekli</span>
