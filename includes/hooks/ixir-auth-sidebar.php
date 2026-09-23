@@ -7,14 +7,27 @@ if (!defined('WHMCS')) {
 function ixir_is_auth_page()
 {
     $uri = $_SERVER['IXIR_FRIENDLY_URI'] ?? $_SERVER['REQUEST_URI'] ?? '';
-    $isAccountPage = stripos($uri, 'hesabim') !== false
-        || stripos($uri, 'register') !== false
-        || stripos($uri, 'kayit') !== false
-        || stripos($uri, 'login') !== false
-        || stripos($uri, 'giris') !== false
-        || stripos($uri, 'sifremi-unuttum') !== false
-        || stripos($uri, 'password/reset') !== false
-        || stripos($uri, 'pwreset') !== false;
+    $path = strtolower((string) (parse_url($uri, PHP_URL_PATH) ?: $uri));
+    $path = '/' . trim($path, '/') . '/';
+
+    $authPaths = [
+        '/hesabim/',
+        '/register/',
+        '/kayit/',
+        '/login/',
+        '/giris/',
+        '/sifremi-unuttum/',
+        '/password/reset/',
+        '/pwreset/',
+    ];
+
+    $isAccountPage = false;
+    foreach ($authPaths as $authPath) {
+        if (strpos($path, $authPath) !== false) {
+            $isAccountPage = true;
+            break;
+        }
+    }
 
     if (!$isAccountPage) {
         $script = basename((string) ($_SERVER['SCRIPT_NAME'] ?? ''));
