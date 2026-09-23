@@ -1,3 +1,9 @@
+{if !$ixirDomainSearchPage && $filename == 'cart' && $domain == 'register'}
+ {assign var="ixirDomainSearchPage" value=true}
+{/if}
+{if $templatefile == 'domaintransfer'}
+ {assign var="ixirDomainTransferPage" value=true}
+{/if}
 {assign var="ixirLoadRecaptcha" value=false}
 {if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim' || $templatefile == 'contact'}
  {assign var="ixirLoadRecaptcha" value=true}
@@ -8,32 +14,39 @@
 {assetExists file="base.css"}
 <link href="{$__assetPath__}?v={$versionHash}-r10" rel="stylesheet">
 {/assetExists}
-<link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r17" rel="stylesheet">
-<link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}-r6" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r23" rel="stylesheet">
 {if $templatefile == 'homepage'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}-r10" rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/packages/packages.css?v={$versionHash}-r7" rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/promo-carousel/promo-carousel.css?v={$versionHash}-r7"
+ <link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}-r8" rel="stylesheet">
+{/if}
+{if $templatefile == 'homepage' || $ixirDomainSearchPage || $ixirDomainTransferPage}
+ <link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}-r39" rel="stylesheet">
+{/if}
+{if $ixirDomainSearchPage || $ixirDomainTransferPage}
+ <link href="{$WEB_ROOT}/templates/{$template}/css/domain-search.css?v={$versionHash}-r72" rel="stylesheet">
+{/if}
+{if $templatefile == 'homepage'}
+ <link href="{$WEB_ROOT}/templates/{$template}/components/packages/packages.css?v={$versionHash}-r11" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/promo-carousel/promo-carousel.css?v={$versionHash}-r8"
   rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/trust/trust.css?v={$versionHash}-r7" rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/turkey-stats/turkey-stats.css?v={$versionHash}-r14"
+ <link href="{$WEB_ROOT}/templates/{$template}/components/trust/trust.css?v={$versionHash}-r8" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/turkey-stats/turkey-stats.css?v={$versionHash}-r17"
   rel="stylesheet">
  <link href="{$WEB_ROOT}/templates/{$template}/components/testimonials/testimonials.css?v={$versionHash}-r9"
   rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/solutions/solutions.css?v={$versionHash}-r7" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/solutions/solutions.css?v={$versionHash}-r8" rel="stylesheet">
 {/if}
 {if !$ixirIsAuthPage && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $filename != 'ixir-hesabim' && $filename != 'register'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/help/help.css?v={$versionHash}-r12" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/help/help.css?v={$versionHash}-r14" rel="stylesheet">
 {/if}
-<link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}-r36" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}-r39" rel="stylesheet">
 {if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'logout' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim'}
- <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r62" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r63" rel="stylesheet">
 {/if}
 {if $templatefile == 'whois-sorgulama'}
  <link href="{$WEB_ROOT}/templates/{$template}/css/whois.css?v={$versionHash}" rel="stylesheet">
 {/if}
 {if $ixirCorporate || $templatefile == 'kurumsal' || $templatefile == 'contact'}
- <link href="{$WEB_ROOT}/templates/{$template}/css/kurumsal.css?v={$versionHash}-r17" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/css/kurumsal.css?v={$versionHash}-r28" rel="stylesheet">
 {/if}
 {if $templatefile == 'product-landing'}
  <link href="{$WEB_ROOT}/templates/{$template}/css/product-landing.css?v={$versionHash}" rel="stylesheet">
@@ -51,7 +64,7 @@
  whmcsBaseUrl = "{\WHMCS\Utility\Environment\WebHelper::getBaseUrl()}";
  {if $ixirLoadRecaptcha && $captcha && !($loggedin && $templatefile == 'clientregister')}{$captcha->getPageJs()}{/if}
 </script>
-<script src="{assetPath file='scripts.min.js'}?v={$versionHash}"></script>
+<script src="{assetPath file='scripts.min.js'}?v={$versionHash}-r1"></script>
 {if $ixirLoadRecaptcha}
  <script>
   window.ixirMarkRecaptchaBroken = function(wrap) {
