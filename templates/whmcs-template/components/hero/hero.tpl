@@ -4,115 +4,118 @@
   <img src="{$WEB_ROOT}/templates/{$template}/img/hero-bg.jpg" alt="">
  </picture>
  <div class="container">
-  <div class="ixir-hero-copy">
-   <h1>Mükemmel Bir Domain İle Başlayın!</h1>
-   <p>125 TL'den başlayan fiyatlarla mükemmel bir domain sahip olun!</p>
-  </div>
-  {if $registerdomainenabled || $transferdomainenabled}
-  <form method="post" action="{$WEB_ROOT}/domain-sorgu" id="frmDomainHomepage" novalidate>
-   <div class="ixir-domain-checker">
-    <div class="ixir-dc-input">
-     <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-globe"></i></span>
-     <label for="ixir-domain-query" class="sr-only">Domain sorgula</label>
-     <input type="text" id="ixir-domain-query" class="form-control" name="domain" placeholder="Örneğin ixirhost.com"
-      data-placeholder="Örneğin ixirhost.com" data-placeholder-sm="ixirhost.com"
-      data-placeholder-error="Lütfen bir domain girin." autocapitalize="none" autocomplete="off" />
-    </div>
-    <div class="ixir-dc-button">
-     {if $registerdomainenabled}
-     <button type="submit" class="btn btn-primary btn-block search"><i class="fas fa-search" aria-hidden="true"></i>
-      Sorgula</button>
-     {else}
-     <button type="submit" id="btnTransfer" class="btn btn-primary btn-block transfer"><i class="fas fa-exchange-alt"
-       aria-hidden="true"></i> Transfer</button>
-     {/if}
-    </div>
+  <div class="ixir-hero-main">
+   <div class="ixir-hero-copy">
+    <h1>İXİRHOST ile Güvenilir Hosting</h1>
+    <p>Hızlı altyapı, 7/24 destek ve uygun fiyatlarla sitenizi hemen yayına alın.</p>
    </div>
-   <p class="ixir-dc-error" id="ixirDomainError" role="alert">Lütfen sorgulamak istediğiniz domain'i girin.</p>
-  </form>
-  {/if}
-  <div class="ixir-domain-links-wrap" role="region" aria-label="Domain hizmetleri">
-   <ul class="ixir-domain-links">
+   <div class="ixir-hero-actions">
+    <a href="#ixir-packages" class="ixir-hero-btn ixir-hero-btn--primary">
+     Hosting Paketlerini İncele <i class="fas fa-arrow-right" aria-hidden="true"></i>
+    </a>
+    <a href="{$WEB_ROOT}/kurumsal-mail-hosting" class="ixir-hero-btn ixir-hero-btn--secondary">
+     E-posta Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i>
+    </a>
+   </div>
+   <p class="ixir-hero-points-title" aria-hidden="true">Avantajlar</p>
+   <ul class="ixir-hero-points" aria-label="Avantajlar">
     <li>
-     <a href="{$WEB_ROOT}/domain-transfer" title="Domain Transfer">
-      <i class="fas fa-retweet fa-fw" aria-hidden="true"></i><span>Domain Transfer</span>
-     </a>
+     <i class="fas fa-bolt" aria-hidden="true"></i>
+     <span>NVMe SSD & LiteSpeed</span>
     </li>
     <li>
-     <a href="{$WEB_ROOT}/whois-sorgulama" title="Whois Sorgulama">
-      <i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Whois Sorgulama</span>
-     </a>
+     <i class="fas fa-headset" aria-hidden="true"></i>
+     <span>7/24 uzman teknik destek</span>
     </li>
-    <li><i class="far fa-eye-slash fa-fw" aria-hidden="true"></i>Ücretsiz Whois Gizleme</li>
-    <li><i class="fas fa-server fa-fw" aria-hidden="true"></i>Ücretsiz DNS Yönetimi</li>
-    <li><i class="fas fa-link fa-fw" aria-hidden="true"></i>Ücretsiz URL Yönlendirme</li>
-    <li><i class="far fa-envelope fa-fw" aria-hidden="true"></i>Ücretsiz Mail Yönlendirme</li>
+    <li>
+     <i class="fas fa-shield-alt" aria-hidden="true"></i>
+     <span>15 gün iade garantisi</span>
+    </li>
+    <li>
+     <i class="fas fa-lock" aria-hidden="true"></i>
+     <span>Ücretsiz SSL sertifikası</span>
+    </li>
+    <li>
+     <i class="fab fa-cpanel" aria-hidden="true"></i>
+     <span>cPanel kontrol paneli</span>
+    </li>
+    <li>
+     <i class="fas fa-user-shield" aria-hidden="true"></i>
+     <span>Imunify360 koruması</span>
+    </li>
    </ul>
-   <ul class="ixir-domain-links">
-    <li><i class="fas fa-flag fa-fw" aria-hidden="true"></i><b>.TR</b> Kayıtları Başladı!</li>
-    <li><i class="fas fa-bolt fa-fw" aria-hidden="true"></i>Belgesiz <b>.com.tr</b> Anında Tescil!</li>
-    <li><i class="fas fa-check-circle fa-fw" aria-hidden="true"></i>Belgesiz <b>.net.tr</b> Anında Tescil!</li>
-   </ul>
+   <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
+    <p class="ixir-domain-links-title">Hizmetler</p>
+    <ul class="ixir-domain-links">
+     <li>
+      <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
+       <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
+      </a>
+     </li>
+     <li>
+      <a href="{$WEB_ROOT}/domain-transfer" title="Domain Transfer">
+       <i class="fas fa-retweet fa-fw" aria-hidden="true"></i><span>Domain Transfer</span>
+      </a>
+     </li>
+     <li>
+      <a href="{$WEB_ROOT}/whois-sorgulama" title="Whois Sorgulama">
+       <i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Whois Sorgulama</span>
+      </a>
+     </li>
+    </ul>
+    <ul class="ixir-domain-links">
+     <li>
+      <a href="{$WEB_ROOT}/webhosting" title="Web Hosting">
+       <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Web Hosting</span>
+      </a>
+     </li>
+     <li>
+      <a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting">
+       <i class="fab fa-windows fa-fw" aria-hidden="true"></i><span>Windows Hosting</span>
+      </a>
+     </li>
+     <li>
+      <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
+       <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
+      </a>
+     </li>
+    </ul>
+    <ul class="ixir-domain-links">
+     <li>
+      <a href="{$WEB_ROOT}/kurumsal-mail-server" title="Kurumsal Mail Server">
+       <i class="fas fa-mail-bulk fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Server</span>
+      </a>
+     </li>
+     <li>
+      <a href="{$WEB_ROOT}/cloud" title="Bulut Sunucu">
+       <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Bulut Sunucu</span>
+      </a>
+     </li>
+     <li>
+      <a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">
+       <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Dedicated Server</span>
+      </a>
+     </li>
+    </ul>
+   </div>
   </div>
  </div>
- <div class="ixir-domain-tlds" id="ixirDomainTlds">
-  <div class="ixir-tld-track">
-   <div class="ixir-tld" aria-label=".net, 855 TL yerine 655 TL">
-    <span class="ixir-tld-name">.net</span>
-    <span class="ixir-tld-prices">
-     <del class="ixir-tld-old">855 TL</del>
-     <span class="ixir-tld-new">655 TL</span>
-    </span>
-   </div>
-   <div class="ixir-tld" aria-label=".pro, 1700 TL yerine 200 TL">
-    <span class="ixir-tld-name">.pro</span>
-    <span class="ixir-tld-prices">
-     <del class="ixir-tld-old">1700 TL</del>
-     <span class="ixir-tld-new">200 TL</span>
-    </span>
-   </div>
-   <div class="ixir-tld" aria-label=".tr, 300 TL yerine 200 TL">
-    <span class="ixir-tld-name">.tr</span>
-    <span class="ixir-tld-prices">
-     <del class="ixir-tld-old">300 TL</del>
-     <span class="ixir-tld-new">200 TL</span>
-    </span>
-   </div>
-   <div class="ixir-tld" aria-label=".xyz, 775 TL yerine 125 TL">
-    <span class="ixir-tld-name">.xyz</span>
-    <span class="ixir-tld-prices">
-     <del class="ixir-tld-old">775 TL</del>
-     <span class="ixir-tld-new">125 TL</span>
-    </span>
-   </div>
-   <div class="ixir-tld" aria-label=".info, 1390 TL yerine 220 TL">
-    <span class="ixir-tld-name">.info</span>
-    <span class="ixir-tld-prices">
-     <del class="ixir-tld-old">1390 TL</del>
-     <span class="ixir-tld-new">220 TL</span>
-    </span>
-   </div>
-   <div class="ixir-tld" aria-label=".net.tr, 200 TL yerine 150 TL">
-    <span class="ixir-tld-name">.net.tr</span>
-    <span class="ixir-tld-prices">
-     <del class="ixir-tld-old">200 TL</del>
-     <span class="ixir-tld-new">150 TL</span>
-    </span>
-   </div>
-   <div class="ixir-tld" aria-label=".com.tr, 200 TL yerine 150 TL">
-    <span class="ixir-tld-name">.com.tr</span>
-    <span class="ixir-tld-prices">
-     <del class="ixir-tld-old">200 TL</del>
-     <span class="ixir-tld-new">150 TL</span>
-    </span>
-   </div>
-   <div class="ixir-tld" aria-label=".com, 775 TL yerine 615 TL">
-    <span class="ixir-tld-name">.com</span>
-    <span class="ixir-tld-prices">
-     <del class="ixir-tld-old">775 TL</del>
-     <span class="ixir-tld-new">615 TL</span>
-    </span>
-   </div>
+ <div class="ixir-hero-strip" aria-hidden="true">
+  <div class="ixir-hero-strip-track" id="ixirHeroStripTrack">
+   <span>NVMe SSD</span>
+   <span>LiteSpeed Cache</span>
+   <span>cPanel</span>
+   <span>Imunify360</span>
+   <span>CloudLinux</span>
+   <span>7/24 Destek</span>
+   <span>Ücretsiz SSL</span>
+   <span>15 Gün İade</span>
+   <span>LiteSpeed Web Server</span>
+   <span>DDoS Koruması</span>
+   <span>%99.9 Uptime</span>
+   <span>Ücretsiz Yedekleme</span>
+   <span>Türkiye Datacenter</span>
+   <span>Anında Aktivasyon</span>
   </div>
  </div>
 </section>
@@ -127,12 +130,9 @@
     }
 
     function apply() {
-     if (window.matchMedia('(min-width: 992px)').matches) {
-      hero.style.removeProperty('--ixir-hero-offset');
-      return;
-     }
-     var top = Math.max(0, Math.round(hero.getBoundingClientRect().top + (window.pageYOffset || 0)));
-     hero.style.setProperty('--ixir-hero-offset', top + 'px');
+     var offsetY = Math.max(0, Math.round(hero.getBoundingClientRect().top + (window.pageYOffset || window.scrollY ||
+      0)));
+     hero.style.setProperty('--ixir-hero-offset', offsetY + 'px');
     }
     apply();
     window.addEventListener('resize', apply);
@@ -142,17 +142,105 @@
     });
    })();
 
-   (function initIxirTldCarousel() {
-    var viewport = document.getElementById('ixirDomainTlds');
-    if (!viewport) {
+   (function initIxirHeroPackagesScroll() {
+    var link = document.querySelector('a.ixir-hero-btn--primary[href="#ixir-packages"]');
+    var target = document.getElementById('ixir-packages');
+    if (!link || !target) {
      return;
     }
-    var track = viewport.querySelector('.ixir-tld-track');
-    if (!track || !track.children.length) {
+
+    var frame = 0;
+
+    function stickyBottom() {
+     var bottom = 0;
+     var selectors = ['.ixir-header', '.mobile-header', '.news-bar'];
+     var i;
+     for (i = 0; i < selectors.length; i++) {
+      var el = document.querySelector(selectors[i]);
+      if (!el || el.classList.contains('is-hidden')) {
+       continue;
+      }
+      var style = window.getComputedStyle(el);
+      if (style.display === 'none' || style.visibility === 'hidden' || style.position !== 'fixed') {
+       continue;
+      }
+      var rect = el.getBoundingClientRect();
+      if (rect.height > 0 && rect.bottom > bottom) {
+       bottom = rect.bottom;
+      }
+     }
+     return Math.ceil(bottom);
+    }
+
+    function destination() {
+     var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+     var sectionTop = target.getBoundingClientRect().top + y;
+     return Math.max(0, Math.round(sectionTop - stickyBottom()));
+    }
+
+    function stop() {
+     if (frame) {
+      window.cancelAnimationFrame(frame);
+      frame = 0;
+     }
+    }
+
+    function easeOutCubic(t) {
+     return 1 - Math.pow(1 - t, 3);
+    }
+
+    link.addEventListener('click', function(e) {
+     if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) {
+      return;
+     }
+     e.preventDefault();
+     stop();
+     if (!target.hasAttribute('tabindex')) {
+      target.setAttribute('tabindex', '-1');
+     }
+     if (target.focus) {
+      target.focus({ preventScroll: true });
+     }
+     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+     var start = window.pageYOffset || document.documentElement.scrollTop || 0;
+     var dest = destination();
+     if (window.history && window.history.pushState) {
+      window.history.pushState(null, '', '#ixir-packages');
+     }
+     if (reduce || Math.abs(dest - start) < 2) {
+      window.scrollTo(0, dest);
+      return;
+     }
+     var distance = dest - start;
+     var duration = Math.min(900, Math.max(420, Math.abs(distance) * 0.55));
+     var t0 = null;
+
+     function step(now) {
+      if (t0 === null) {
+       t0 = now;
+      }
+      var progress = Math.min(1, (now - t0) / duration);
+      window.scrollTo(0, start + distance * easeOutCubic(progress));
+      if (progress < 1) {
+       frame = window.requestAnimationFrame(step);
+      } else {
+       frame = 0;
+       window.scrollTo(0, destination());
+      }
+     }
+
+     frame = window.requestAnimationFrame(step);
+    });
+   })();
+
+   (function initIxirHeroStrip() {
+    var strip = document.querySelector('.ixir-hero-strip');
+    var track = document.getElementById('ixirHeroStripTrack');
+    if (!strip || !track || !track.children.length) {
      return;
     }
-    var html = track.innerHTML;
-    track.innerHTML = html + html + html;
+
+    var originalHTML = track.innerHTML;
     var x = 0;
     var setWidth = 0;
     var dragging = false;
@@ -163,27 +251,37 @@
     var velocity = 0;
     var resumeTimer = null;
     var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var speed = reduceMotion ? 0 : 0.55;
+    var speed = reduceMotion ? 0 : 0.45;
 
-    function measure() {
-     setWidth = track.scrollWidth / 3;
-     wrap();
-     apply();
+    function build() {
+     var keep = x;
+     track.innerHTML = originalHTML;
+     var baseWidth = track.scrollWidth;
+     var need = Math.max(2, Math.ceil((strip.clientWidth * 2) / Math.max(baseWidth, 1)) + 1);
+     var i;
+     var html = originalHTML;
+     for (i = 1; i < need; i++) {
+      html += originalHTML;
+     }
+     track.innerHTML = html + html;
+     setWidth = track.scrollWidth / 2;
+     x = keep;
+     applyTransform();
     }
 
     function wrap() {
      if (!setWidth) {
       return;
      }
-     while (x <= -setWidth * 2) {
+     while (x <= -setWidth) {
       x += setWidth;
      }
-     while (x >= 0) {
+     while (x > 0) {
       x -= setWidth;
      }
     }
 
-    function apply() {
+    function applyTransform() {
      wrap();
      track.style.transform = 'translate3d(' + x + 'px,0,0)';
     }
@@ -191,7 +289,7 @@
     function tick() {
      if (!dragging && !paused && speed) {
       x -= speed;
-      apply();
+      applyTransform();
      }
      window.requestAnimationFrame(tick);
     }
@@ -201,9 +299,9 @@
       return;
      }
      dragging = false;
-     viewport.classList.remove('is-dragging');
+     strip.classList.remove('is-dragging');
      x += velocity * 10;
-     apply();
+     applyTransform();
      window.clearTimeout(resumeTimer);
      resumeTimer = window.setTimeout(function() {
       if (!dragging) {
@@ -212,7 +310,7 @@
      }, 350);
     }
 
-    viewport.addEventListener('pointerdown', function(e) {
+    strip.addEventListener('pointerdown', function(e) {
      if (e.pointerType === 'mouse' && e.button !== 0) {
       return;
      }
@@ -222,92 +320,38 @@
      startOffset = x;
      lastX = e.clientX;
      velocity = 0;
-     viewport.classList.add('is-dragging');
-     viewport.setPointerCapture(e.pointerId);
+     strip.classList.add('is-dragging');
+     if (strip.setPointerCapture) {
+      strip.setPointerCapture(e.pointerId);
+     }
      e.preventDefault();
     });
-    viewport.addEventListener('pointermove', function(e) {
+    strip.addEventListener('pointermove', function(e) {
      if (!dragging) {
       return;
      }
      velocity = e.clientX - lastX;
      lastX = e.clientX;
      x = startOffset + (e.clientX - startX);
-     apply();
+     applyTransform();
     });
-    viewport.addEventListener('pointerup', endDrag);
-    viewport.addEventListener('pointercancel', endDrag);
-    viewport.addEventListener('pointerenter', function(e) {
+    strip.addEventListener('pointerup', endDrag);
+    strip.addEventListener('pointercancel', endDrag);
+    strip.addEventListener('pointerenter', function(e) {
      if (e.pointerType === 'mouse' && !dragging) {
       paused = true;
      }
     });
-    viewport.addEventListener('pointerleave', function(e) {
+    strip.addEventListener('pointerleave', function(e) {
      if (e.pointerType === 'mouse' && !dragging) {
       paused = false;
      }
     });
-    window.addEventListener('resize', measure);
-    window.addEventListener('load', measure);
-    window.setTimeout(measure, 50);
-    measure();
+
+    build();
+    window.addEventListener('resize', build);
+    window.addEventListener('load', build);
     window.requestAnimationFrame(tick);
-   })();
-
-   (function initIxirDomainChecker() {
-    var form = document.getElementById('frmDomainHomepage');
-    var input = document.getElementById('ixir-domain-query');
-    var error = document.getElementById('ixirDomainError');
-    if (!form || !input || !error) {
-     return;
-    }
-    var placeholderFull = input.getAttribute('data-placeholder') || input.getAttribute('placeholder');
-    var placeholderSm = input.getAttribute('data-placeholder-sm') || 'ixirhost.com';
-    var placeholderError = input.getAttribute('data-placeholder-error') || 'Lütfen bir domain girin.';
-
-    function isSm() {
-     return window.innerWidth <= 767;
-    }
-
-    function applyPlaceholder() {
-     if (isSm() && form.classList.contains('ixir-dc-invalid')) {
-      input.setAttribute('placeholder', placeholderError);
-     } else {
-      input.setAttribute('placeholder', isSm() ? placeholderSm : placeholderFull);
-     }
-    }
-
-    function showError() {
-     form.classList.remove('ixir-dc-shake');
-     void form.offsetWidth;
-     form.classList.add('ixir-dc-invalid', 'ixir-dc-shake');
-     input.setAttribute('aria-invalid', 'true');
-     applyPlaceholder();
-     input.focus();
-    }
-
-    function hideError() {
-     form.classList.remove('ixir-dc-invalid', 'ixir-dc-shake');
-     input.removeAttribute('aria-invalid');
-     applyPlaceholder();
-    }
-
-    applyPlaceholder();
-    window.addEventListener('resize', applyPlaceholder);
-
-    form.addEventListener('submit', function(e) {
-     if (!$.trim(input.value)) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-      showError();
-     }
-    }, true);
-
-    $(input).on('input keydown', function() {
-     if ($.trim(input.value)) {
-      hideError();
-     }
-    });
    })();
   });
  {/literal}
