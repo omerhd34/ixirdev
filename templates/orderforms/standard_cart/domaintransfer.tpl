@@ -1,79 +1,500 @@
 {include file="orderforms/standard_cart/common.tpl"}
 
-<div id="order-standard_cart">
+<div id="order-standard_cart" class="ixir-domain-page ixir-transfer-page">
+ <div class="cart-sidebar hidden">{include file="orderforms/standard_cart/sidebar-categories.tpl"}</div>
+ <div class="cart-body ixir-domain-body">
+  {include file="orderforms/standard_cart/sidebar-categories-collapsed.tpl"}
 
-    <div class="row">
-        <div class="cart-sidebar">
-            {include file="orderforms/standard_cart/sidebar-categories.tpl"}
-        </div>
-        <div class="cart-body">
-            <div class="header-lined">
-                <h1 class="font-size-36">
-                    {$LANG.transferdomain}
-                </h1>
-            </div>
-            {include file="orderforms/standard_cart/sidebar-categories-collapsed.tpl"}
-
-            <div class="text-center">
-                <h2 class="font-size-30">{lang key='orderForm.transferToUs'}</h2>
-                <p>{lang key='orderForm.transferExtend'}*</p>
-            </div>
-            <br />
-
-            <form method="post" action="{$WEB_ROOT}/cart.php" id="frmDomainTransfer">
-                <input type="hidden" name="a" value="addDomainTransfer">
-
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2 offset-sm-2">
-                        <div class="panel card panel-default">
-                            <div class="panel-heading card-header pb-0">
-                                <h3 class="panel-title card-title font-size-24 mb-2">{lang key='orderForm.singleTransfer'}</h3>
-                            </div>
-                            <div class="panel-body card-body">
-                                <div class="form-group">
-                                    <label for="inputTransferDomain">{lang key='domainname'}</label>
-                                    <input type="text" class="form-control" name="domain" id="inputTransferDomain" value="{$lookupTerm}" placeholder="{lang key='yourdomainplaceholder'}.{lang key='yourtldplaceholder'}" data-toggle="tooltip" data-placement="left" data-trigger="manual" title="{lang key='orderForm.enterDomain'}" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputAuthCode" style="width:100%;">
-                                        {lang key='orderForm.authCode'}
-                                        <a data-toggle="tooltip" data-placement="left" title="{lang key='orderForm.authCodeTooltip'}" class="pull-right float-right"><i class="fas fa-question-circle"></i> {lang key='orderForm.help'}</a>
-                                    </label>
-                                    <input type="text" class="form-control" name="epp" id="inputAuthCode" placeholder="{lang key='orderForm.authCodePlaceholder'}" data-toggle="tooltip" data-placement="left" data-trigger="manual" title="{lang key='orderForm.required'}" />
-                                </div>
-                                <div id="transferUnavailable" class="alert alert-warning slim-alert text-center w-hidden"></div>
-                                {if $captcha->isEnabled() && !$captcha->recaptcha->isEnabled()}
-                                    <div class="captcha-container" id="captchaContainer">
-                                        <div class="default-captcha">
-                                            <p>{lang key="cartSimpleCaptcha"}</p>
-                                            <div>
-                                                <img id="inputCaptchaImage" src="{$systemurl}includes/verifyimage.php" />
-                                                <input id="inputCaptcha" type="text" name="code" maxlength="6" class="form-control input-sm" data-toggle="tooltip" data-placement="right" data-trigger="manual" title="{lang key='orderForm.required'}" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                {elseif $captcha->isEnabled() && $captcha->recaptcha->isEnabled() && !$captcha->recaptcha->isInvisible()}
-                                    <div class="text-center">
-                                        <div class="form-group recaptcha-container" id="captchaContainer"></div>
-                                    </div>
-                                {/if}
-                            </div>
-
-                            <div class="panel-footer card-footer text-right">
-                                <button type="submit" id="btnTransferDomain" class="btn btn-primary btn-transfer{$captcha->getButtonClass($captchaForm)}">
-                                    <span class="loader w-hidden" id="addTransferLoader">
-                                        <i class="fas fa-fw fa-spinner fa-spin"></i>
-                                    </span>
-                                    <span id="addToCart">{lang key="orderForm.addToCart"}</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </form>
-
-            <p class="text-center small">* {lang key='orderForm.extendExclusions'}</p>
-        </div>
+  <section id="home-banner" class="ixir-hero">
+   <picture class="ixir-hero-photo">
+    <source srcset="{$WEB_ROOT}/templates/{$template}/img/hero-bg.webp" type="image/webp">
+    <img src="{$WEB_ROOT}/templates/{$template}/img/hero-bg.jpg" alt="">
+   </picture>
+   <div class="container">
+    <div class="ixir-hero-main">
+     <div class="ixir-hero-copy">
+      <h1>Domain Transferi</h1>
+      <p>Alan adınızı en uygun fiyata transfer edin ve yüksek yenileme maliyetlerinden kurtulun.</p>
+     </div>
+     <form method="post" action="{$WEB_ROOT}/cart.php" id="frmDomainTransfer">
+      <input type="hidden" name="a" value="addDomainTransfer" class="no-icheck">
+      <div class="ixir-domain-checker ixir-domain-checker--solo">
+       <div class="ixir-dc-input">
+        <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-globe"></i></span>
+        <label for="inputTransferDomain" class="sr-only">Transfer edilecek alan adı</label>
+        <input type="text" name="domain" class="form-control no-icheck ixir-transfer-input" id="inputTransferDomain"
+         value="{$lookupTerm}" placeholder="Transfer etmek istediğiniz alan adını yazınız."
+         data-placeholder="Transfer etmek istediğiniz alan adını yazınız."
+         data-placeholder-error="Lütfen bir alan adı girin." autocapitalize="none" autocomplete="off" spellcheck="false"
+         inputmode="none" readonly data-toggle="tooltip" data-placement="top" data-trigger="manual"
+         title="{lang key='orderForm.enterDomain'}">
+       </div>
+      </div>
+      <div class="ixir-domain-checker">
+       <div class="ixir-dc-input">
+        <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-key"></i></span>
+        <label for="inputAuthCode" class="sr-only">{lang key='orderForm.authCode'}</label>
+        <input type="text" name="epp" class="form-control no-icheck ixir-transfer-input" id="inputAuthCode"
+         placeholder="Epp Code / Auth Code" data-placeholder="Epp Code / Auth Code"
+         data-placeholder-error="Lütfen EPP / Auth kodunu girin." autocapitalize="none" autocomplete="off"
+         spellcheck="false" inputmode="none" readonly data-toggle="tooltip" data-placement="top" data-trigger="manual"
+         title="{lang key='orderForm.required'}">
+       </div>
+       <div class="ixir-dc-button">
+        <button type="submit" id="btnTransferDomain" class="btn btn-primary btn-block">
+         <span class="loader w-hidden" id="addTransferLoader">
+          <i class="fas fa-fw fa-spinner fa-spin"></i>
+         </span>
+         <span id="addToCart">Transferi Başlat</span>
+        </button>
+       </div>
+      </div>
+      <div id="transferUnavailable" class="ixir-transfer-alert alert alert-warning slim-alert text-center w-hidden">
+      </div>
+     </form>
+     <div class="ixir-dc-tlds" aria-label="Popüler uzantılar">
+      <button type="button" class="ixir-dc-tld" data-tld="com" aria-label=".com uzantısını seç, 615 TL">
+       <span class="ixir-dc-tld-name">.com</span>
+       <span class="ixir-dc-tld-price">615 TL</span>
+      </button>
+      <button type="button" class="ixir-dc-tld" data-tld="xyz" aria-label=".xyz uzantısını seç, 125 TL">
+       <span class="ixir-dc-tld-name">.xyz</span>
+       <span class="ixir-dc-tld-price">125 TL</span>
+      </button>
+      <button type="button" class="ixir-dc-tld" data-tld="tr" aria-label=".tr uzantısını seç, 200 TL">
+       <span class="ixir-dc-tld-name">.tr</span>
+       <span class="ixir-dc-tld-price">200 TL</span>
+      </button>
+      <button type="button" class="ixir-dc-tld" data-tld="com.tr" aria-label=".com.tr uzantısını seç, 150 TL">
+       <span class="ixir-dc-tld-name">.com.tr</span>
+       <span class="ixir-dc-tld-price">150 TL</span>
+      </button>
+      <button type="button" class="ixir-dc-tld" data-tld="net" aria-label=".net uzantısını seç, 655 TL">
+       <span class="ixir-dc-tld-name">.net</span>
+       <span class="ixir-dc-tld-price">655 TL</span>
+      </button>
+      <button type="button" class="ixir-dc-tld" data-tld="info" aria-label=".info uzantısını seç, 220 TL">
+       <span class="ixir-dc-tld-name">.info</span>
+       <span class="ixir-dc-tld-price">220 TL</span>
+      </button>
+      <button type="button" class="ixir-dc-tld" data-tld="pro" aria-label=".pro uzantısını seç, 200 TL">
+       <span class="ixir-dc-tld-name">.pro</span>
+       <span class="ixir-dc-tld-price">200 TL</span>
+      </button>
+      <button type="button" class="ixir-dc-tld" data-tld="net.tr" aria-label=".net.tr uzantısını seç, 150 TL">
+       <span class="ixir-dc-tld-name">.net.tr</span>
+       <span class="ixir-dc-tld-price">150 TL</span>
+      </button>
+      {if $ixirDomainPrices}
+       {foreach $ixirDomainPrices as $price}
+        {assign var="ixirTldPlain" value=$price.tld|regex_replace:"/^\./":""}
+        {if !in_array($ixirTldPlain, array('com','xyz','tr','com.tr','net','info','pro','net.tr'))}
+         <button type="button" class="ixir-dc-tld ixir-dc-tld--more" data-tld="{$ixirTldPlain|escape:'html'}"
+          aria-label="{$price.tld|escape:'html'} uzantısını seç, {$price.registerNum|string_format:'%d'} TL">
+          <span class="ixir-dc-tld-name">{$price.tld|escape:'html'}</span>
+          <span class="ixir-dc-tld-price">{$price.registerNum|string_format:"%d"} TL</span>
+         </button>
+        {/if}
+       {/foreach}
+      {/if}
+     </div>
+     <div class="ixir-domain-links-wrap" role="region" aria-label="Transfer avantajları">
+      <p class="ixir-domain-links-title">Avantajlar</p>
+      <ul class="ixir-domain-links">
+       <li><i class="fas fa-tag fa-fw" aria-hidden="true"></i>Domain Transfer Ücreti Yok</li>
+       <li><i class="fas fa-calendar-plus fa-fw" aria-hidden="true"></i>1 Yıl Otomatik Süre Uzatma</li>
+      </ul>
+      <ul class="ixir-domain-links">
+       <li><i class="far fa-eye-slash fa-fw" aria-hidden="true"></i>Ücretsiz Whois Gizleme</li>
+       <li><i class="fas fa-server fa-fw" aria-hidden="true"></i>Ücretsiz DNS Yönetimi</li>
+      </ul>
+      <ul class="ixir-domain-links">
+       <li><i class="fas fa-link fa-fw" aria-hidden="true"></i>Ücretsiz URL Yönlendirme</li>
+      </ul>
+     </div>
     </div>
+   </div>
+   <div class="ixir-domain-tlds" id="ixirDomainTlds" aria-label="İndirimli uzantılar">
+    <div class="ixir-tld-track">
+     <div class="ixir-tld" aria-label=".net, 855 TL yerine 655 TL, yüzde 23 indirim">
+      <span class="ixir-tld-off">%23</span>
+      <span class="ixir-tld-name">.net</span>
+      <span class="ixir-tld-prices">
+       <del class="ixir-tld-old">855 TL</del>
+       <span class="ixir-tld-new">655 TL</span>
+      </span>
+     </div>
+     <div class="ixir-tld" aria-label=".pro, 1700 TL yerine 200 TL, yüzde 88 indirim">
+      <span class="ixir-tld-off">%88</span>
+      <span class="ixir-tld-name">.pro</span>
+      <span class="ixir-tld-prices">
+       <del class="ixir-tld-old">1700 TL</del>
+       <span class="ixir-tld-new">200 TL</span>
+      </span>
+     </div>
+     <div class="ixir-tld" aria-label=".tr, 300 TL yerine 200 TL, yüzde 33 indirim">
+      <span class="ixir-tld-off">%33</span>
+      <span class="ixir-tld-name">.tr</span>
+      <span class="ixir-tld-prices">
+       <del class="ixir-tld-old">300 TL</del>
+       <span class="ixir-tld-new">200 TL</span>
+      </span>
+     </div>
+     <div class="ixir-tld" aria-label=".xyz, 775 TL yerine 125 TL, yüzde 84 indirim">
+      <span class="ixir-tld-off">%84</span>
+      <span class="ixir-tld-name">.xyz</span>
+      <span class="ixir-tld-prices">
+       <del class="ixir-tld-old">775 TL</del>
+       <span class="ixir-tld-new">125 TL</span>
+      </span>
+     </div>
+     <div class="ixir-tld" aria-label=".info, 1390 TL yerine 220 TL, yüzde 84 indirim">
+      <span class="ixir-tld-off">%84</span>
+      <span class="ixir-tld-name">.info</span>
+      <span class="ixir-tld-prices">
+       <del class="ixir-tld-old">1390 TL</del>
+       <span class="ixir-tld-new">220 TL</span>
+      </span>
+     </div>
+     <div class="ixir-tld" aria-label=".net.tr, 200 TL yerine 150 TL, yüzde 25 indirim">
+      <span class="ixir-tld-off">%25</span>
+      <span class="ixir-tld-name">.net.tr</span>
+      <span class="ixir-tld-prices">
+       <del class="ixir-tld-old">200 TL</del>
+       <span class="ixir-tld-new">150 TL</span>
+      </span>
+     </div>
+     <div class="ixir-tld" aria-label=".com.tr, 200 TL yerine 150 TL, yüzde 25 indirim">
+      <span class="ixir-tld-off">%25</span>
+      <span class="ixir-tld-name">.com.tr</span>
+      <span class="ixir-tld-prices">
+       <del class="ixir-tld-old">200 TL</del>
+       <span class="ixir-tld-new">150 TL</span>
+      </span>
+     </div>
+     <div class="ixir-tld" aria-label=".com, 775 TL yerine 615 TL, yüzde 21 indirim">
+      <span class="ixir-tld-off">%21</span>
+      <span class="ixir-tld-name">.com</span>
+      <span class="ixir-tld-prices">
+       <del class="ixir-tld-old">775 TL</del>
+       <span class="ixir-tld-new">615 TL</span>
+      </span>
+     </div>
+    </div>
+   </div>
+  </section>
+ </div>
 </div>
+
+<script>
+ {literal}
+  (function() {
+   var inputs = document.querySelectorAll('.ixir-transfer-input');
+   if (!inputs.length) {
+    return;
+   }
+   var phone = window.matchMedia('(max-width: 991px)').matches ||
+    window.matchMedia('(pointer: coarse)').matches ||
+    window.matchMedia('(hover: none)').matches;
+
+   function arm(input) {
+    input.removeAttribute('readonly');
+    input.removeAttribute('inputmode');
+   }
+   window.ixirArmTransferInput = arm;
+   if (!phone) {
+    Array.prototype.forEach.call(inputs, arm);
+    return;
+   }
+   Array.prototype.forEach.call(inputs, function(input) {
+    var nativeFocus = HTMLElement.prototype.focus;
+
+    function openFromTouch() {
+     arm(input);
+     input.focus = function() {
+      nativeFocus.call(input);
+     };
+     nativeFocus.call(input);
+    }
+    input.focus = function() {};
+    input.addEventListener('touchend', openFromTouch);
+    input.addEventListener('pointerup', function(e) {
+     if (!e.pointerType || e.pointerType === 'touch' || e.pointerType === 'pen') {
+      openFromTouch();
+     }
+    });
+   });
+  })();
+
+  (function() {
+   var form = document.getElementById('frmDomainTransfer');
+   var domain = document.getElementById('inputTransferDomain');
+   var epp = document.getElementById('inputAuthCode');
+   if (!form || !domain || !epp) {
+    return;
+   }
+
+   function mark(input, invalid) {
+    var box = input.closest ? input.closest('.ixir-domain-checker') : null;
+    var normal = input.getAttribute('data-placeholder') || '';
+    var error = input.getAttribute('data-placeholder-error') || '';
+    if (!box) {
+     return;
+    }
+    if (invalid) {
+     box.classList.remove('is-shake');
+     void box.offsetWidth;
+     box.classList.add('is-invalid', 'is-shake');
+     input.setAttribute('placeholder', error);
+     input.setAttribute('aria-invalid', 'true');
+    } else {
+     box.classList.remove('is-invalid', 'is-shake');
+     input.setAttribute('placeholder', normal);
+     input.removeAttribute('aria-invalid');
+    }
+   }
+
+   function empty(input) {
+    return !String(input.value || '').replace(/^\s+|\s+$/g, '');
+   }
+   domain.addEventListener('input', function() {
+    if (!empty(domain)) {
+     mark(domain, false);
+    }
+   });
+   epp.addEventListener('input', function() {
+    if (!empty(epp)) {
+     mark(epp, false);
+    }
+   });
+   form.addEventListener('submit', function(e) {
+    var domainBad = empty(domain);
+    var eppBad = empty(epp);
+    mark(domain, domainBad);
+    mark(epp, eppBad);
+    if (!domainBad && !eppBad) {
+     return;
+    }
+    e.preventDefault();
+    e.stopPropagation();
+    var first = domainBad ? domain : epp;
+    if (window.ixirArmTransferInput) {
+     window.ixirArmTransferInput(first);
+    }
+    first.focus();
+   }, true);
+  })();
+
+  (function() {
+   var input = document.getElementById('inputTransferDomain');
+   var chips = document.querySelectorAll('.ixir-dc-tld');
+   if (!input || !chips.length) {
+    return;
+   }
+   var known = [];
+   Array.prototype.forEach.call(chips, function(chip) {
+    var name = chip.getAttribute('data-tld');
+    if (name && known.indexOf(name) === -1) {
+     known.push(name);
+    }
+   });
+   known.sort(function(a, b) {
+    return b.length - a.length;
+   });
+   var fallback = 'ixirhost';
+
+   function extractSld(value) {
+    var name = (value || '').replace(/^\s+|\s+$/g, '');
+    if (!name) {
+     return fallback;
+    }
+    name = name.replace(/^https?:\/\//i, '').replace(/^www\./i, '').split('/')[0].split('?')[0].replace(/\.+$/, '');
+    if (!name || name.charAt(0) === '.') {
+     return fallback;
+    }
+    var lower = name.toLowerCase();
+    var i;
+    var suffix;
+    for (i = 0; i < known.length; i++) {
+     suffix = '.' + known[i];
+     if (lower.length > suffix.length && lower.slice(-suffix.length) === suffix) {
+      name = name.slice(0, name.length - suffix.length);
+      break;
+     }
+    }
+    if (!name || name.charAt(0) === '.') {
+     return fallback;
+    }
+    return name;
+   }
+
+   function endsWithTld(value, tld) {
+    var lower = (value || '').replace(/^\s+|\s+$/g, '').toLowerCase();
+    var suffix = '.' + String(tld).toLowerCase();
+    return lower.length > suffix.length && lower.slice(-suffix.length) === suffix;
+   }
+
+   Array.prototype.forEach.call(chips, function(chip) {
+    chip.addEventListener('click', function() {
+     var tld = chip.getAttribute('data-tld');
+     if (!tld) {
+      return;
+     }
+     if (window.ixirArmTransferInput) {
+      window.ixirArmTransferInput(input);
+     }
+     if (chip.classList.contains('is-selected') && endsWithTld(input.value, tld)) {
+      var raw = (input.value || '').replace(/^\s+|\s+$/g, '').replace(/\.+$/, '');
+      input.value = raw.slice(0, raw.length - (String(tld).length + 1));
+      Array.prototype.forEach.call(chips, function(item) {
+       item.classList.remove('is-selected');
+      });
+     } else {
+      input.value = extractSld(input.value) + '.' + tld;
+      Array.prototype.forEach.call(chips, function(item) {
+       item.classList.toggle('is-selected', item === chip);
+      });
+     }
+     input.focus();
+    });
+   });
+  })();
+
+  (function() {
+   var hero = document.getElementById('home-banner');
+   if (!hero) {
+    return;
+   }
+
+   function apply() {
+    var offsetY = Math.max(0, Math.round(hero.getBoundingClientRect().top + (window.pageYOffset || window.scrollY ||
+     0)));
+    hero.style.setProperty('--ixir-hero-offset', offsetY + 'px');
+   }
+   apply();
+   window.addEventListener('resize', apply);
+   window.addEventListener('load', apply);
+  })();
+
+  (function() {
+   var viewport = document.getElementById('ixirDomainTlds');
+   if (!viewport) {
+    return;
+   }
+   var track = viewport.querySelector('.ixir-tld-track');
+   if (!track || !track.children.length) {
+    return;
+   }
+   var originalHTML = track.innerHTML;
+   var x = 0;
+   var setWidth = 0;
+   var dragging = false;
+   var paused = false;
+   var startX = 0;
+   var startOffset = 0;
+   var lastX = 0;
+   var velocity = 0;
+   var resumeTimer = null;
+   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+   var speed = reduceMotion ? 0 : 0.45;
+
+   function build() {
+    var keep = x;
+    track.innerHTML = originalHTML;
+    var baseWidth = track.scrollWidth;
+    var need = Math.max(2, Math.ceil((viewport.clientWidth * 2) / Math.max(baseWidth, 1)) + 1);
+    var i;
+    var html = originalHTML;
+    for (i = 1; i < need; i++) {
+     html += originalHTML;
+    }
+    track.innerHTML = html + html;
+    setWidth = track.scrollWidth / 2;
+    x = keep;
+    apply();
+   }
+
+   function wrap() {
+    if (!setWidth) {
+     return;
+    }
+    while (x <= -setWidth) {
+     x += setWidth;
+    }
+    while (x > 0) {
+     x -= setWidth;
+    }
+   }
+
+   function apply() {
+    wrap();
+    track.style.transform = 'translate3d(' + x + 'px,0,0)';
+   }
+
+   function tick() {
+    if (!dragging && !paused && speed) {
+     x -= speed;
+     apply();
+    }
+    window.requestAnimationFrame(tick);
+   }
+
+   function endDrag() {
+    if (!dragging) {
+     return;
+    }
+    dragging = false;
+    viewport.classList.remove('is-dragging');
+    x += velocity * 10;
+    apply();
+    window.clearTimeout(resumeTimer);
+    resumeTimer = window.setTimeout(function() {
+     if (!dragging) {
+      paused = false;
+     }
+    }, 350);
+   }
+   viewport.addEventListener('pointerdown', function(e) {
+    if (e.pointerType === 'mouse' && e.button !== 0) {
+     return;
+    }
+    dragging = true;
+    paused = true;
+    startX = e.clientX;
+    startOffset = x;
+    lastX = e.clientX;
+    velocity = 0;
+    viewport.classList.add('is-dragging');
+    if (viewport.setPointerCapture) {
+     viewport.setPointerCapture(e.pointerId);
+    }
+    e.preventDefault();
+   });
+   viewport.addEventListener('pointermove', function(e) {
+    if (!dragging) {
+     return;
+    }
+    velocity = e.clientX - lastX;
+    lastX = e.clientX;
+    x = startOffset + (e.clientX - startX);
+    apply();
+   });
+   viewport.addEventListener('pointerup', endDrag);
+   viewport.addEventListener('pointercancel', endDrag);
+   viewport.addEventListener('pointerenter', function(e) {
+    if (e.pointerType === 'mouse' && !dragging) {
+     paused = true;
+    }
+   });
+   viewport.addEventListener('pointerleave', function(e) {
+    if (e.pointerType === 'mouse' && !dragging) {
+     paused = false;
+    }
+   });
+   window.addEventListener('resize', build);
+   window.addEventListener('load', build);
+   build();
+   window.requestAnimationFrame(tick);
+  })();
+ {/literal}
+</script>
