@@ -1,5 +1,5 @@
-{if !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage && ($templatefile != 'homepage' || $twitterusername || $announcements)}
- </div><!-- /.main-content -->
+{if $templatefile != 'whois-sorgulama' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage && ($templatefile != 'homepage' || $twitterusername || $announcements)}
+ </div>
  {if !$inShoppingCart && $secondarySidebar && $secondarySidebar->hasChildren()}
   <div class="col-md-3 pull-md-left sidebar sidebar-secondary">
    {include file="$template/includes/sidebar.tpl" sidebar=$secondarySidebar}
