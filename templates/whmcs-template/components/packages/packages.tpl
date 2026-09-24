@@ -137,6 +137,9 @@
    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     return;
    }
+   if (window.matchMedia && window.matchMedia('(max-width: 992px)').matches) {
+    return;
+   }
    var cards = root.querySelectorAll('.ixir-package');
    if (!cards.length) {
     return;

@@ -555,6 +555,18 @@
   transform: translate3d(0, 0, 0);
   pointer-events: auto;
 }
+@media only screen and (max-width: 992px) {
+  .ixir-packages.is-armed {
+    overflow-x: visible;
+  }
+  .ixir-packages.is-armed .ixir-package,
+  .ixir-packages.is-armed .ixir-package.is-in {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
+  }
+}
 @media (min-width: 992px) {
   .ixir-packages.is-armed .ixir-package:nth-child(1) {
     --ixir-enter-delay: 240ms;
