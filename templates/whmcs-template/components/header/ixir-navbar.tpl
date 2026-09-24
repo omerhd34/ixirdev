@@ -276,14 +276,19 @@
            <ul class="icon">
             {foreach $col.items as $item}
              <li>
-              <a href="{$WEB_ROOT}{$item.href}" {if isset($item.title)} title="{$item.title}" {/if}>
-               <i class="{$item.icon}"></i>
-               {$item.label}
-               {if isset($item.badge)}
-                <span class="{$item.badge.class}" {if isset($item.badge.style)} style="{$item.badge.style}"
-                 {/if}>{$item.badge.text}</span>
-               {/if}
-               <span>{$item.desc}</span>
+              <a class="mega-menu-card" href="{$WEB_ROOT}{$item.href}" {if isset($item.title)} title="{$item.title}" {/if}>
+               <span class="mega-menu-icon"><i class="{$item.icon}"></i></span>
+               <span class="mega-menu-body">
+                <span class="mega-menu-title">
+                 {$item.label}
+                 {if isset($item.badge)}
+                  <span class="{$item.badge.class}" {if isset($item.badge.style)} style="{$item.badge.style}"
+                   {/if}>{$item.badge.text}</span>
+                 {/if}
+                </span>
+                <span class="mega-menu-desc">{$item.desc}</span>
+               </span>
+               <span class="mega-menu-arrow" aria-hidden="true"></span>
               </a>
              </li>
             {/foreach}
