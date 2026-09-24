@@ -464,7 +464,7 @@ body.ixir-auth-page .ixir-help {
   }
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1200px) {
   .ixir-footer-grid {
     grid-template-columns: repeat(3, max-content);
     justify-content: space-between;
@@ -482,29 +482,39 @@ body.ixir-auth-page .ixir-help {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
   .ixir-footer-grid {
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
+    align-items: start;
     grid-template-areas:
-      "col1 col2"
-      "col3 col3";
-    column-gap: 24px;
-    row-gap: 28px;
+      "domain sunucu"
+      "hosting email"
+      "kurumsal contact";
+    column-gap: clamp(24px, 5vw, 48px);
+    row-gap: 32px;
   }
-  .ixir-footer-col:nth-child(1) {
-    grid-area: col1;
+  .ixir-footer-col {
+    display: contents;
   }
-  .ixir-footer-col:nth-child(2) {
-    grid-area: col2;
+  .ixir-footer-col:nth-child(1) .ixir-footer-box:nth-child(1) {
+    grid-area: domain;
   }
-  .ixir-footer-col:nth-child(3) {
-    grid-area: col3;
-    justify-self: center;
+  .ixir-footer-col:nth-child(1) .ixir-footer-box:nth-child(2) {
+    grid-area: hosting;
   }
-}
-
-@media only screen and (max-width: 767px) {
+  .ixir-footer-col:nth-child(2) .ixir-footer-box:nth-child(1) {
+    grid-area: sunucu;
+  }
+  .ixir-footer-col:nth-child(2) .ixir-footer-box:nth-child(2) {
+    grid-area: email;
+  }
+  .ixir-footer-box--kurumsal {
+    grid-area: kurumsal;
+  }
+  .ixir-footer-box--contact {
+    grid-area: contact;
+  }
   .ixir-footer {
     padding-top: 36px;
     background: #1c1f2a;
@@ -539,7 +549,7 @@ body.ixir-auth-page .ixir-help {
   }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 576px) {
   .ixir-footer {
     text-align: center;
   }
@@ -561,6 +571,11 @@ body.ixir-auth-page .ixir-help {
     grid-area: auto;
     width: 100%;
     justify-self: center;
+  }
+  .ixir-footer-box,
+  .ixir-footer-box--kurumsal,
+  .ixir-footer-box--contact {
+    grid-area: auto;
   }
   .ixir-footer-box h3 {
     margin-left: auto;
