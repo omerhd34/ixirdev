@@ -117,9 +117,14 @@
       {/foreach}
       {/if}
      </div>
-     <div class="ixir-domain-links-wrap" role="region" aria-label="Domain hizmetleri">
+     <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
       <p class="ixir-domain-links-title">Hizmetler</p>
       <ul class="ixir-domain-links">
+       <li>
+        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgulama">
+         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
+        </a>
+       </li>
        <li>
         <a href="{$WEB_ROOT}/domain-transfer" title="Domain Transfer">
          <i class="fas fa-retweet fa-fw" aria-hidden="true"></i><span>Domain Transfer</span>
@@ -130,17 +135,40 @@
          <i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Whois Sorgulama</span>
         </a>
        </li>
-       <li><i class="fas fa-server fa-fw" aria-hidden="true"></i>Ücretsiz DNS Yönetimi</li>
       </ul>
       <ul class="ixir-domain-links">
-       <li><i class="far fa-eye-slash fa-fw" aria-hidden="true"></i>Ücretsiz Whois Gizleme</li>
-       <li><i class="fas fa-link fa-fw" aria-hidden="true"></i>Ücretsiz URL Yönlendirme</li>
-       <li><i class="far fa-envelope fa-fw" aria-hidden="true"></i>Ücretsiz Mail Yönlendirme</li>
+       <li>
+        <a href="{$WEB_ROOT}/webhosting" title="Web Hosting">
+         <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Web Hosting</span>
+        </a>
+       </li>
+       <li>
+        <a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting">
+         <i class="fab fa-windows fa-fw" aria-hidden="true"></i><span>Windows Hosting</span>
+        </a>
+       </li>
+       <li>
+        <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
+         <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
+        </a>
+       </li>
       </ul>
       <ul class="ixir-domain-links">
-       <li><i class="fas fa-flag fa-fw" aria-hidden="true"></i>.TR Kayıtları Başladı!</li>
-       <li><i class="fas fa-bolt fa-fw" aria-hidden="true"></i>Belgesiz .com.tr Tescil!</li>
-       <li><i class="fas fa-check-circle fa-fw" aria-hidden="true"></i>Belgesiz .net.tr Tescil!</li>
+       <li>
+        <a href="{$WEB_ROOT}/kurumsal-mail-server" title="Kurumsal Mail Server">
+         <i class="fas fa-mail-bulk fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Server</span>
+        </a>
+       </li>
+       <li>
+        <a href="{$WEB_ROOT}/cloud" title="Bulut Sunucu">
+         <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Bulut Sunucu</span>
+        </a>
+       </li>
+       <li>
+        <a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">
+         <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Dedicated Server</span>
+        </a>
+       </li>
       </ul>
      </div>
     </div>
