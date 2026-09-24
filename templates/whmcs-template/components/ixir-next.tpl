@@ -13,20 +13,7 @@
    <p>Eğer üniversite öğrencisiyseniz ve burs desteğine ihtiyaç duyuyorsanız veya okulunuz için teknoloji ya da
     kütüphane desteği talep etmek istiyorsanız, başvurunuzu birkaç dakika içinde iletebilirsiniz. Tüm başvurular
     gizlilik içinde değerlendirilir; hiçbir karşılık veya yükümlülük beklenmez.</p>
-   <div class="ixir-next-cards">
-    <a class="ixir-next-card" href="https://ixirnext.tr" target="_blank" rel="noopener" title="Burs Başvurusu">
-     <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-     <span>Burs Başvurusu</span>
-    </a>
-    <a class="ixir-next-card" href="https://ixirnext.tr" target="_blank" rel="noopener" title="Okul Destek Başvurusu">
-     <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
-     <span>Okul Destek Başvurusu</span>
-    </a>
-    <a class="ixir-next-card" href="https://ixirnext.tr" target="_blank" rel="noopener" title="Projeyi Keşfedin">
-     <i class="fas fa-compass" aria-hidden="true"></i>
-     <span>Projeyi Keşfedin</span>
-    </a>
-   </div>
+   <a class="ixir-next-cta" href="https://ixirnext.tr" target="_blank" rel="noopener">Başvuru</a>
   </div>
  </div>
 </section>

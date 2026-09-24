@@ -247,85 +247,48 @@ body.ixir-auth-page .ixir-help {
 .ixir-next-panel p:last-of-type {
   margin-bottom: 0;
 }
-.ixir-next-cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 28px 16px;
-  max-width: 1320px;
-  margin: 36px auto 0;
-}
-.ixir-next-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 0;
-  margin: 0;
-  padding: 8px 10px 4px;
-  color: #1a1f2e !important;
-  text-align: center;
-  text-decoration: none !important;
-  background: none;
-  border: none;
-  border-radius: 20px;
-  box-sizing: border-box;
-  transition:
-    color 0.22s ease,
-    transform 0.22s ease;
-}
-.ixir-next-card:hover,
-.ixir-next-card:focus {
-  color: #1a1f2e !important;
-  background: none;
-  outline: none;
-}
-.ixir-next-card:focus-visible {
-  box-shadow: 0 0 0 3px rgba(56, 108, 224, 0.28);
-}
-.ixir-next-card > i {
-  display: flex;
+.ixir-next-cta {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 96px;
-  height: 96px;
-  margin: 0 0 14px;
-  color: #386ce0;
-  font-size: 32px;
+  margin: 28px 0 0;
+  padding: 0 28px;
+  height: 46px;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 600;
   line-height: 1;
-  background: #f4f7fd;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 1px rgba(56, 108, 224, 0.06);
-  transition:
-    background 0.22s ease,
-    color 0.22s ease,
-    box-shadow 0.22s ease,
-    transform 0.22s ease;
-}
-.ixir-next-card:hover > i,
-.ixir-next-card:focus > i {
-  color: #e0245e;
-  background: #eaf0ff;
-  box-shadow: inset 0 0 0 1px rgba(56, 108, 224, 0.12);
-}
-.ixir-next-card > span {
-  display: block;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.3;
   letter-spacing: -0.01em;
+  text-decoration: none !important;
+  background: #386ce0;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(56, 108, 224, 0.22);
+  transition:
+    background-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+.ixir-next-cta:hover,
+.ixir-next-cta:focus {
+  color: #fff !important;
+  background: #1e4bb8;
+  box-shadow: 0 8px 16px rgba(30, 75, 184, 0.28);
+  outline: none;
+}
+.ixir-next-cta:focus-visible {
+  box-shadow:
+    0 8px 16px rgba(30, 75, 184, 0.28),
+    0 0 0 3px rgba(56, 108, 224, 0.28);
 }
 @media (hover: hover) and (pointer: fine) {
-  .ixir-next-card:hover,
-  .ixir-next-card:focus {
-    transform: translateY(-3px);
-  }
-  .ixir-next-card:hover > i,
-  .ixir-next-card:focus > i {
+  .ixir-next-cta:hover,
+  .ixir-next-cta:focus {
     transform: translateY(-1px);
   }
 }
 .ixir-next.is-armed .ixir-next-panel h4,
 .ixir-next.is-armed .ixir-next-panel p,
-.ixir-next.is-armed .ixir-next-card {
+.ixir-next.is-armed .ixir-next-cta {
   opacity: 0;
   transform: translate3d(-112px, 0, 0);
   pointer-events: none;
@@ -339,18 +302,12 @@ body.ixir-auth-page .ixir-help {
 .ixir-next.is-armed .ixir-next-panel p {
   --ixir-enter-delay: 80ms;
 }
-.ixir-next.is-armed .ixir-next-card:nth-child(1) {
+.ixir-next.is-armed .ixir-next-cta {
   --ixir-enter-delay: 160ms;
-}
-.ixir-next.is-armed .ixir-next-card:nth-child(2) {
-  --ixir-enter-delay: 240ms;
-}
-.ixir-next.is-armed .ixir-next-card:nth-child(3) {
-  --ixir-enter-delay: 320ms;
 }
 .ixir-next.is-armed.is-in .ixir-next-panel h4,
 .ixir-next.is-armed.is-in .ixir-next-panel p,
-.ixir-next.is-armed.is-in .ixir-next-card {
+.ixir-next.is-armed.is-in .ixir-next-cta {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   pointer-events: auto;
@@ -361,16 +318,15 @@ body.ixir-auth-page .ixir-help {
   }
   .ixir-footer-box ul li a,
   .ixir-footer-social a,
-  .ixir-next-card,
-  .ixir-next-card > i {
+  .ixir-next-cta {
     transition: none;
   }
   .ixir-next.is-armed .ixir-next-panel h4,
   .ixir-next.is-armed .ixir-next-panel p,
-  .ixir-next.is-armed .ixir-next-card,
+  .ixir-next.is-armed .ixir-next-cta,
   .ixir-next.is-armed.is-in .ixir-next-panel h4,
   .ixir-next.is-armed.is-in .ixir-next-panel p,
-  .ixir-next.is-armed.is-in .ixir-next-card {
+  .ixir-next.is-armed.is-in .ixir-next-cta {
     opacity: 1;
     transform: none;
     pointer-events: auto;
@@ -532,20 +488,8 @@ body.ixir-auth-page .ixir-help {
   .ixir-next-panel p {
     font-size: 14.5px;
   }
-  .ixir-next-cards {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 28px 16px;
-    margin-top: 32px;
-  }
-  .ixir-next-card {
-    max-width: 340px;
-    margin: 0 auto;
-  }
-  .ixir-next-card > i {
-    width: 84px;
-    height: 84px;
-    margin: 0 0 14px;
-    font-size: 28px;
+  .ixir-next-cta {
+    margin-top: 24px;
   }
 }
 
