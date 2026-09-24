@@ -274,10 +274,11 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
 .ixir-whois-page {
   background: #f4f6f9;
   padding: 80px 0 96px;
+  overflow-x: clip;
 }
 
 .ixir-whois-alert {
-  max-width: 860px;
+  max-width: 1040px;
   margin: 0 auto 28px;
   padding: 14px 16px;
   border-radius: 12px;
@@ -308,7 +309,7 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
 }
 
 .ixir-whois-result {
-  max-width: 860px;
+  max-width: 1040px;
   margin: 0 auto 36px;
   background: #fff;
   border-radius: 16px;
@@ -336,7 +337,7 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
 }
 
 .ixir-whois-card {
-  max-width: 860px;
+  max-width: 1040px;
   margin: 0 auto 40px;
   padding: 28px 28px 8px;
   background: #fff;
@@ -588,11 +589,36 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
 }
 
 .ixir-whois-raw summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 14px 28px;
   color: #5c6778;
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
+  list-style: none;
+}
+
+.ixir-whois-raw summary::-webkit-details-marker,
+.ixir-whois-raw summary::marker {
+  display: none;
+  content: none;
+}
+
+.ixir-whois-raw summary::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 0.2s ease;
+}
+
+.ixir-whois-raw[open] summary::before {
+  transform: rotate(45deg);
 }
 
 .ixir-whois-raw pre {
@@ -725,6 +751,47 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
   background: #0f8a5f;
 }
 
+.ixir-whois-guide.is-armed .ixir-whois-intro,
+.ixir-whois-guide.is-armed .ixir-whois-col {
+  opacity: 0;
+  transform: translate3d(-112px, 0, 0);
+  pointer-events: none;
+  transition:
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms),
+    opacity 0.56s ease var(--ixir-enter-delay, 0ms);
+}
+
+.ixir-whois-guide.is-armed .ixir-whois-intro {
+  --ixir-enter-delay: 0ms;
+}
+
+.ixir-whois-guide.is-armed .ixir-whois-col:nth-child(1) {
+  --ixir-enter-delay: 90ms;
+}
+
+.ixir-whois-guide.is-armed .ixir-whois-col:nth-child(2) {
+  --ixir-enter-delay: 180ms;
+}
+
+.ixir-whois-guide.is-armed.is-in .ixir-whois-intro,
+.ixir-whois-guide.is-armed.is-in .ixir-whois-col {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ixir-whois-guide.is-armed .ixir-whois-intro,
+  .ixir-whois-guide.is-armed .ixir-whois-col,
+  .ixir-whois-guide.is-armed.is-in .ixir-whois-intro,
+  .ixir-whois-guide.is-armed.is-in .ixir-whois-col {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
+  }
+}
+
 @media (max-width: 768px) {
   .ixir-whois-hero .ixir-hero h1 {
     font-size: 28px;
@@ -778,5 +845,45 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
   .ixir-whois-raw pre {
     margin-left: 16px;
     margin-right: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  #order-standard_cart.ixir-whois-page .ixir-hero-main {
+    max-width: 980px;
+  }
+
+  #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-wrap {
+    max-width: none;
+    row-gap: 10px;
+  }
+
+  #order-standard_cart.ixir-whois-page .ixir-hero ul.ixir-domain-links {
+    gap: 8px;
+  }
+
+  #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-title {
+    margin: 0 0 4px;
+  }
+}
+
+@media (min-width: 1441px) {
+  #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-wrap {
+    --ixir-links-gap: 168px;
+    column-gap: var(--ixir-links-gap);
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-wrap {
+    --ixir-links-gap: 128px;
+    column-gap: var(--ixir-links-gap);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-wrap {
+    --ixir-links-gap: 72px;
+    column-gap: var(--ixir-links-gap);
   }
 }
