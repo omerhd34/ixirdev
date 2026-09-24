@@ -146,15 +146,19 @@ section#home-banner.ixir-hero {
 .ixir-hero-btn--secondary:focus i {
   transform: translateX(3px);
 }
-.ixir-hero-points-title {
+.ixir-hero-label {
   display: block;
-  margin: 34px 0 0;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.06em;
+  line-height: 1.4;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.62);
+  color: #fff;
+}
+.ixir-hero-main > .ixir-hero-label {
+  margin: 34px 0 0;
   animation: ixirHeroIn 0.7s ease 0.22s both;
 }
 .ixir-hero-points {
@@ -205,6 +209,7 @@ section#home-banner.ixir-hero {
   border-top: 1px solid rgba(255, 255, 255, 0.16);
   animation: ixirHeroIn 0.7s ease 0.32s both;
 }
+.ixir-domain-links-wrap > .ixir-hero-label,
 .ixir-domain-links-title {
   grid-column: 1 / -1;
   margin: 0 0 4px;
@@ -212,8 +217,9 @@ section#home-banner.ixir-hero {
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.06em;
+  line-height: 1.4;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.62);
+  color: #fff;
 }
 .ixir-hero ul.ixir-domain-links {
   list-style: none;
@@ -358,7 +364,7 @@ section#home-banner.ixir-hero {
 @media (prefers-reduced-motion: reduce) {
   .ixir-hero-copy,
   .ixir-hero-actions,
-  .ixir-hero-points-title,
+  .ixir-hero-main > .ixir-hero-label,
   .ixir-hero-points,
   .ixir-domain-links-wrap {
     animation: none;
@@ -435,7 +441,9 @@ section#home-banner.ixir-hero {
     .ixir-hero-btn--secondary {
     background: rgba(16, 18, 26, 0.42);
   }
-  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points-title {
+  section#home-banner.ixir-hero:has(.ixir-hero-points)
+    .ixir-hero-main
+    > .ixir-hero-label {
     display: block;
     margin: 22px 0 0;
   }
@@ -606,7 +614,9 @@ section#home-banner.ixir-hero {
     font-size: 15px;
     white-space: normal;
   }
-  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points-title {
+  section#home-banner.ixir-hero:has(.ixir-hero-points)
+    .ixir-hero-main
+    > .ixir-hero-label {
     margin-top: 24px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points {

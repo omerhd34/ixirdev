@@ -17,7 +17,7 @@
      E-posta Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i>
     </a>
    </div>
-   <p class="ixir-hero-points-title" aria-hidden="true">Avantajlar</p>
+   <p class="ixir-hero-label" aria-hidden="true">Avantajlar</p>
    <ul class="ixir-hero-points" aria-label="Avantajlar">
     <li>
      <i class="fas fa-bolt" aria-hidden="true"></i>
@@ -45,7 +45,7 @@
     </li>
    </ul>
    <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
-    <p class="ixir-domain-links-title">Hizmetler</p>
+    <p class="ixir-hero-label">Hizmetler</p>
     <ul class="ixir-domain-links">
      <li>
       <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
