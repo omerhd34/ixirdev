@@ -63,7 +63,8 @@
 }
 
 #order-standard_cart.ixir-domain-page .ixir-hero form#frmDomainChecker,
-#order-standard_cart.ixir-domain-page .ixir-hero form#frmDomainTransfer {
+#order-standard_cart.ixir-domain-page .ixir-hero form#frmDomainTransfer,
+#order-standard_cart.ixir-domain-page .ixir-hero form.ixir-whois-form {
   width: 100%;
   max-width: 780px;
   margin: 26px auto 0;
@@ -2068,11 +2069,6 @@
   margin: 0 12px;
   color: rgba(255, 255, 255, 0.72);
   font-weight: 400;
-}
-
-#order-standard_cart.ixir-transfer-page .ixir-hero .tooltip.in,
-#order-standard_cart.ixir-transfer-page .ixir-hero .tooltip.show {
-  display: block !important;
 }
 
 @media (max-width: 768px) {
