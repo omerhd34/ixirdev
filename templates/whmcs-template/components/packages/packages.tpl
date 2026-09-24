@@ -116,6 +116,15 @@
     </footer>
    </article>
   </div>
+  <div class="ixir-packages-nav">
+   <button type="button" class="ixir-packages-arrow ixir-packages-prev" aria-label="Önceki paket">
+    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+   </button>
+   <div class="ixir-packages-dots" role="tablist" aria-label="Hosting paketleri"></div>
+   <button type="button" class="ixir-packages-arrow ixir-packages-next" aria-label="Sonraki paket">
+    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+   </button>
+  </div>
  </div>
 </section>
 <script>
@@ -132,9 +141,33 @@
    if (!cards.length) {
     return;
    }
+
+   var observer = null;
+
+   function revealNow() {
+    root.classList.add('is-settled');
+    root.classList.remove('is-armed');
+    Array.prototype.forEach.call(cards, function(card) {
+     card.classList.add('is-in');
+    });
+    if (observer) {
+     observer.disconnect();
+     observer = null;
+    }
+   }
+
+   var jump = document.querySelector('a.ixir-hero-btn--primary[href="#ixir-packages"]');
+   if (jump) {
+    jump.addEventListener('click', revealNow, true);
+   }
+   if (window.location.hash === '#ixir-packages') {
+    revealNow();
+    return;
+   }
+
    root.classList.add('is-armed');
    var shown = 0;
-   var observer = new IntersectionObserver(function(entries) {
+   observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
      if (!entry.isIntersecting) {
       return;
@@ -159,6 +192,143 @@
    Array.prototype.forEach.call(cards, function(card) {
     observer.observe(card);
    });
+  })();
+  (function() {
+   var root = document.getElementById('ixir-packages');
+   if (!root) {
+    return;
+   }
+   var grid = root.querySelector('.ixir-packages-grid');
+   var dotsWrap = root.querySelector('.ixir-packages-dots');
+   var prevBtn = root.querySelector('.ixir-packages-prev');
+   var nextBtn = root.querySelector('.ixir-packages-next');
+   if (!grid || !dotsWrap) {
+    return;
+   }
+   var cards = grid.querySelectorAll('.ixir-package');
+   if (cards.length < 2) {
+    return;
+   }
+   var mq = window.matchMedia('(max-width: 992px)');
+   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+   var dots = [];
+   var active = 0;
+   var programmatic = false;
+   var programmaticTimer = 0;
+
+   function setActive(index) {
+    if (index < 0) {
+     index = 0;
+    }
+    if (index > dots.length - 1) {
+     index = dots.length - 1;
+    }
+    active = index;
+    dots.forEach(function(dot, i) {
+     var on = i === index;
+     dot.classList.toggle('is-active', on);
+     dot.setAttribute('aria-selected', on ? 'true' : 'false');
+     dot.tabIndex = on ? 0 : -1;
+    });
+    if (prevBtn) {
+     prevBtn.disabled = index <= 0;
+    }
+    if (nextBtn) {
+     nextBtn.disabled = index >= cards.length - 1;
+    }
+   }
+
+   function indexFromScroll() {
+    var width = grid.clientWidth || 1;
+    var index = Math.round(grid.scrollLeft / width);
+    if (index < 0) {
+     return 0;
+    }
+    if (index > cards.length - 1) {
+     return cards.length - 1;
+    }
+    return index;
+   }
+
+   function goTo(index) {
+    var card = cards[index];
+    if (!card) {
+     return;
+    }
+    var left = card.getBoundingClientRect().left - grid.getBoundingClientRect().left + grid.scrollLeft;
+    programmatic = true;
+    window.clearTimeout(programmaticTimer);
+    programmaticTimer = window.setTimeout(function() {
+     programmatic = false;
+     setActive(indexFromScroll());
+    }, reduce ? 0 : 480);
+    grid.scrollTo({
+     left: left,
+     behavior: reduce ? 'auto' : 'smooth'
+    });
+    setActive(index);
+   }
+
+   Array.prototype.forEach.call(cards, function(card, i) {
+    var title = card.querySelector('.ixir-package-title');
+    var dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'ixir-packages-dot';
+    dot.setAttribute('role', 'tab');
+    dot.setAttribute('aria-label', title ? title.textContent.trim() : 'Paket ' + (i + 1));
+    dot.addEventListener('click', function() {
+     goTo(i);
+    });
+    dot.addEventListener('keydown', function(event) {
+     var next = i;
+     if (event.key === 'ArrowRight') {
+      next = Math.min(cards.length - 1, i + 1);
+     } else if (event.key === 'ArrowLeft') {
+      next = Math.max(0, i - 1);
+     } else {
+      return;
+     }
+     event.preventDefault();
+     goTo(next);
+     if (dots[next]) {
+      dots[next].focus();
+     }
+    });
+    dotsWrap.appendChild(dot);
+    dots.push(dot);
+   });
+   setActive(0);
+
+   if (prevBtn) {
+    prevBtn.addEventListener('click', function() {
+     goTo(active - 1);
+    });
+   }
+   if (nextBtn) {
+    nextBtn.addEventListener('click', function() {
+     goTo(active + 1);
+    });
+   }
+
+   var ticking = false;
+   grid.addEventListener('scroll', function() {
+    if (!mq.matches || ticking) {
+     return;
+    }
+    ticking = true;
+    window.requestAnimationFrame(function() {
+     ticking = false;
+     var index = indexFromScroll();
+     if (programmatic) {
+      if (index === active) {
+       programmatic = false;
+       window.clearTimeout(programmaticTimer);
+      }
+      return;
+     }
+     setActive(index);
+    });
+   }, { passive: true });
   })();
  {/literal}
 </script>

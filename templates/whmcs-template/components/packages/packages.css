@@ -289,7 +289,7 @@
   padding-top: 28px !important;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .ixir-package {
     padding: 22px;
   }
@@ -302,22 +302,153 @@
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   .ixir-packages {
     padding: 24px 0;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .ixir-packages-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-  }
   .ixir-package {
     padding: 22px;
   }
   .ixir-package-features {
     grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ixir-packages {
+    margin-top: 0;
+    padding: 16px 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .ixir-package {
+    padding: 16px;
+  }
+  .ixir-package-amount {
+    font-size: 28px;
+  }
+}
+
+.ixir-packages-nav,
+.ixir-packages-dots {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .ixir-packages-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 14px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding: 6px 0 4px;
+  }
+  .ixir-packages-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .ixir-packages-grid > .ixir-package {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: none;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  .ixir-packages-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin: 12px 0 0;
+  }
+  .ixir-packages-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #e8edf4;
+    border-radius: 50%;
+    background: #fff;
+    color: #386ce0;
+    font-size: 13px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(44, 50, 66, 0.06);
+    transition:
+      background-color 0.18s ease,
+      color 0.18s ease,
+      border-color 0.18s ease;
+  }
+  .ixir-packages-arrow i {
+    margin: 0;
+    pointer-events: none;
+  }
+  .ixir-packages-arrow:hover,
+  .ixir-packages-arrow:focus {
+    background: #386ce0;
+    border-color: #386ce0;
+    color: #fff;
+    outline: none;
+  }
+  .ixir-packages-arrow:focus-visible {
+    outline: 2px solid #386ce0;
+    outline-offset: 3px;
+  }
+  .ixir-packages-arrow:disabled {
+    color: #c5ccd8;
+    background: #fff;
+    border-color: #eef1f6;
+    box-shadow: none;
+    cursor: default;
+  }
+  .ixir-packages-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+  }
+  .ixir-packages-dots button {
+    box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 99px;
+    background: #d5dbe6;
+    cursor: pointer;
+    transition:
+      width 0.2s ease,
+      background-color 0.2s ease;
+  }
+  .ixir-packages-dots button.is-active {
+    width: 22px;
+    background: #386ce0;
+  }
+  .ixir-packages-dots button:focus-visible {
+    outline: 2px solid #386ce0;
+    outline-offset: 3px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .ixir-package-copy {
+    padding-right: clamp(160px, 28cqi, 240px);
+  }
+  .ixir-package-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 16px;
   }
 }
 
@@ -327,8 +458,17 @@
     padding: 32px 0;
   }
   .ixir-packages-grid {
+    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+  .ixir-packages-grid > .ixir-package {
+    flex: none;
+    width: auto;
+    max-width: 100%;
+    scroll-snap-align: none;
   }
   .ixir-package {
     padding: 20px;
@@ -342,21 +482,9 @@
   .ixir-package-amount {
     font-size: 36px;
   }
-}
-
-@media only screen and (max-width: 767px) {
-  .ixir-packages {
-    margin-top: 0;
-    padding: 16px 0;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .ixir-package {
-    padding: 16px;
-  }
-  .ixir-package-amount {
-    font-size: 28px;
+  .ixir-packages-nav,
+  .ixir-packages-dots {
+    display: none;
   }
 }
 
@@ -390,6 +518,18 @@
   }
 }
 
+.ixir-packages.is-settled,
+.ixir-packages.is-settled.is-armed {
+  overflow-x: visible;
+}
+.ixir-packages.is-settled .ixir-package,
+.ixir-packages.is-settled.is-armed .ixir-package,
+.ixir-packages.is-settled.is-armed .ixir-package.is-in {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+  transition: none;
+}
 .ixir-packages.is-armed {
   overflow-x: clip;
 }

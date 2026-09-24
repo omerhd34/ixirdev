@@ -25,7 +25,7 @@
  <link href="{$WEB_ROOT}/templates/{$template}/css/domain-search.css?v={$versionHash}-r72" rel="stylesheet">
 {/if}
 {if $templatefile == 'homepage'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/packages/packages.css?v={$versionHash}-r11" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/packages/packages.css?v={$versionHash}-r14" rel="stylesheet">
  <link href="{$WEB_ROOT}/templates/{$template}/components/promo-carousel/promo-carousel.css?v={$versionHash}-r8"
   rel="stylesheet">
  <link href="{$WEB_ROOT}/templates/{$template}/components/trust/trust.css?v={$versionHash}-r8" rel="stylesheet">
