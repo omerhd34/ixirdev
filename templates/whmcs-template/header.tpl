@@ -118,7 +118,7 @@
    --ixir-hero-offset: 161px;
   }
 
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 992px) {
    html {
     --ixir-hero-offset: 96px;
    }
@@ -140,7 +140,7 @@
    height: 113px;
   }
 
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 992px) {
    body.ixir-auth-page .ixir-header-spacer {
     height: 96px;
    }
@@ -163,8 +163,6 @@
    <div class="container">
     <div class="topbar-row">
      <div class="top-bar-left">
-      <a href="tel:+908503027111" class="topbar-phone"><i class="far fa-phone-volume"></i><span class="topbar-text">0850
-        302 7 111</span></a>
       <a href="//blog.ixirhost.com" title="ixirhost blog" rel="nofollow" target="_blank"><i
         class="fas fa-newspaper"></i><span class="topbar-text">Blog</span></a>
       <a href="{$WEB_ROOT}/kurumsal" title="ixirhost hakkında"><i class="far fa-building"></i><span

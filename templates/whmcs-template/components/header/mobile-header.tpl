@@ -3,17 +3,13 @@
   <div class="container">
    <div class="mobile-top-row">
     <div class="mobile-top-left">
-     <a href="tel:+908503027111" class="mobile-top-phone" title="Telefon">
-      <i class="far fa-phone-volume"></i>
-      <span class="sr-only">0850 302 7 111</span>
-     </a>
      <a href="//blog.ixirhost.com" title="ixirhost blog" rel="nofollow" target="_blank">
       <i class="fas fa-newspaper"></i>
-      <span class="sr-only">Blog</span>
+      <span>Blog</span>
      </a>
      <a href="{$WEB_ROOT}/kurumsal" title="ixirhost hakkında">
       <i class="far fa-building"></i>
-      <span class="sr-only">Kurumsal</span>
+      <span>Kurumsal</span>
      </a>
     </div>
     <div class="mobile-top-right">

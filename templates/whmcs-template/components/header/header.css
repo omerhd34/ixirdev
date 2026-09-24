@@ -1083,22 +1083,32 @@ body:has(.news-bar:not(.is-hidden)) {
 .mobile-top-right {
   display: flex;
   align-items: center;
+  min-width: 0;
+  gap: 10px;
+}
+.mobile-top-right {
   flex-shrink: 0;
-  gap: 12px;
 }
 .mobile-top-left a,
 .mobile-top-right a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
+  gap: 5px;
+  width: auto;
   height: 24px;
   padding: 0;
   color: #fff !important;
   font-size: 12px;
+  font-weight: 500;
   line-height: 1;
   text-decoration: none;
+  white-space: nowrap;
   transition: color 0.45s ease;
+}
+.mobile-top-left a span {
+  display: inline;
+  white-space: nowrap;
 }
 .mobile-top-right a.mobile-auth-link {
   width: auto;
@@ -1152,14 +1162,14 @@ body:has(.news-bar:not(.is-hidden)) {
     white-space: nowrap;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .mobile-top-left,
   .mobile-top-right {
     gap: 8px;
   }
-  .mobile-top-left a,
-  .mobile-top-right a:not(.mobile-auth-link) {
-    width: 22px;
+  .mobile-top-left a {
+    gap: 4px;
+    font-size: 11px;
   }
   .ixir-hamburger {
     width: 22px;
@@ -1514,11 +1524,13 @@ body.ixir-mobile-menu-open {
   margin-left: auto;
   font-size: 8px;
   letter-spacing: 0.04em;
-  padding: 4px 7px 4px 14px;
+  padding: 4px 8px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
+.ixir-mobile-nav .ixir-mobile-badge:before,
 .ixir-mobile-nav .ixir-mobile-badge:after {
   display: none;
+  content: none;
 }
 .ixir-mobile-nav .ixir-mobile-badge + .ixir-mobile-caret {
   margin-left: 10px;
@@ -1635,7 +1647,7 @@ body.ixir-mobile-menu-open {
     transition: none;
   }
 }
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1440px) {
   .ixir-header .ixir-nav {
     gap: 8px;
     min-width: 0;
@@ -1649,7 +1661,7 @@ body.ixir-mobile-menu-open {
   }
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1200px) {
   .ixir-header .ixir-nav {
     gap: 4px;
   }
@@ -1674,7 +1686,7 @@ body.ixir-mobile-menu-open {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   .ixir-header {
     display: none;
   }
@@ -1708,7 +1720,7 @@ body.ixir-mobile-menu-open {
     margin-top: 8px !important;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .ixir-mobile-auth {
     padding: 12px;
     gap: 8px;
