@@ -7,8 +7,8 @@
 
   <section id="home-banner" class="ixir-hero">
    <picture class="ixir-hero-photo">
-    <source srcset="{$WEB_ROOT}/templates/{$template}/img/hero-bg.webp" type="image/webp">
-    <img src="{$WEB_ROOT}/templates/{$template}/img/hero-bg.jpg" alt="">
+    <source srcset="{$WEB_ROOT}/templates/{$template}/img/hero-domain-transfer.webp?v=r1" type="image/webp">
+    <img src="{$WEB_ROOT}/templates/{$template}/img/hero-domain-transfer.jpg?v=r1" alt="">
    </picture>
    <div class="container">
     <div class="ixir-hero-main">
@@ -26,8 +26,7 @@
          value="{$lookupTerm}" placeholder="Transfer etmek istediğiniz alan adını yazınız."
          data-placeholder="Transfer etmek istediğiniz alan adını yazınız."
          data-placeholder-error="Lütfen bir alan adı girin." autocapitalize="none" autocomplete="off" spellcheck="false"
-         inputmode="none" readonly data-toggle="tooltip" data-placement="top" data-trigger="manual"
-         title="{lang key='orderForm.enterDomain'}">
+         inputmode="none" readonly>
        </div>
       </div>
       <div class="ixir-domain-checker">
@@ -37,8 +36,7 @@
         <input type="text" name="epp" class="form-control no-icheck ixir-transfer-input" id="inputAuthCode"
          placeholder="Epp Code / Auth Code" data-placeholder="Epp Code / Auth Code"
          data-placeholder-error="Lütfen EPP / Auth kodunu girin." autocapitalize="none" autocomplete="off"
-         spellcheck="false" inputmode="none" readonly data-toggle="tooltip" data-placement="top" data-trigger="manual"
-         title="{lang key='orderForm.required'}">
+         spellcheck="false" inputmode="none" readonly>
        </div>
        <div class="ixir-dc-button">
         <button type="submit" id="btnTransferDomain" class="btn btn-primary btn-block">
