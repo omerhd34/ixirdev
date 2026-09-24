@@ -417,7 +417,7 @@
   a:focus {
   background: none;
   box-shadow: none;
-  color: #6b9bff !important;
+  color: #fbd746 !important;
 }
 
 #order-standard_cart.ixir-domain-page
@@ -432,7 +432,7 @@
   li
   a:focus
   > i {
-  color: #6b9bff;
+  color: #fbd746;
 }
 
 #order-standard_cart.ixir-domain-page .ixir-hero ul.ixir-domain-links li b {
@@ -503,8 +503,10 @@
 }
 
 #order-standard_cart.ixir-domain-page .ixir-hero .ixir-tld {
+  position: relative;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   flex-shrink: 0;
   gap: 8px;
   height: auto;
@@ -525,12 +527,15 @@
 
 #order-standard_cart.ixir-domain-page .ixir-hero .ixir-tld::before {
   content: "";
-  width: 5px;
-  height: 5px;
-  margin-right: 28px;
-  border-radius: 50%;
-  background: #386ce0;
-  flex-shrink: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 16px;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(142, 180, 255, 0.7);
+  transform: translateY(-50%);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -620,7 +625,7 @@
     padding: 0 20px;
   }
   #order-standard_cart.ixir-domain-page .ixir-hero .ixir-tld::before {
-    margin-right: 20px;
+    margin: 0;
   }
 }
 
@@ -1825,6 +1830,73 @@
 
 #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-title {
   margin-bottom: 16px;
+}
+
+#order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
+    .ixir-transfer-page
+  )
+  .ixir-hero-main {
+  max-width: 980px;
+}
+
+@media (min-width: 992px) {
+  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
+      .ixir-transfer-page
+    )
+    .ixir-hero
+    .ixir-domain-links-wrap {
+    max-width: none;
+    row-gap: 10px;
+  }
+
+  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
+      .ixir-transfer-page
+    )
+    .ixir-hero
+    ul.ixir-domain-links {
+    gap: 8px;
+  }
+
+  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
+      .ixir-transfer-page
+    )
+    .ixir-hero
+    .ixir-domain-links-title {
+    margin: 0 0 4px;
+  }
+}
+
+@media (min-width: 1441px) {
+  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
+      .ixir-transfer-page
+    )
+    .ixir-hero
+    .ixir-domain-links-wrap {
+    --ixir-links-gap: 168px;
+    column-gap: var(--ixir-links-gap);
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
+      .ixir-transfer-page
+    )
+    .ixir-hero
+    .ixir-domain-links-wrap {
+    --ixir-links-gap: 128px;
+    column-gap: var(--ixir-links-gap);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
+      .ixir-transfer-page
+    )
+    .ixir-hero
+    .ixir-domain-links-wrap {
+    --ixir-links-gap: 72px;
+    column-gap: var(--ixir-links-gap);
+  }
 }
 
 #order-standard_cart.ixir-domain-page .ixir-domain-checker.is-invalid {
