@@ -5,7 +5,7 @@
   <div class="ixir-help-stage">
    <div class="ixir-help-copy">
     <h2>Sizler İçin Buradayız!</h2>
-    <p>Desteğe ihtiyacınız olduğu her anda bize ulaşın</p>
+    <p>Desteğe ihtiyacınız olduğu her anda bize ulaşın.</p>
     <div class="ixir-help-cards">
      <a href="tel:+908503027111" class="ixir-help-card" title="ixirhost çağrı merkezi">
       <i class="far fa-phone-volume" aria-hidden="true"></i>
