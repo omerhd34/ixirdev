@@ -15,16 +15,16 @@
 <![endif]-->
 
 <script type="text/javascript">
-    var csrfToken = '{$token}',
-        markdownGuide = '{lang|addslashes key="markdown.title"}',
-        locale = '{if !empty($mdeLocale)}{$mdeLocale}{else}en{/if}',
-        saved = '{lang|addslashes key="markdown.saved"}',
-        saving = '{lang|addslashes key="markdown.saving"}',
-        whmcsBaseUrl = "{\WHMCS\Utility\Environment\WebHelper::getBaseUrl()}";
-    {if $captcha}{$captcha->getPageJs()}{/if}
+ var csrfToken = '{$token}',
+ markdownGuide = '{lang|addslashes key="markdown.title"}',
+ locale = '{if !empty($mdeLocale)}{$mdeLocale}{else}en{/if}',
+ saved = '{lang|addslashes key="markdown.saved"}',
+ saving = '{lang|addslashes key="markdown.saving"}',
+ whmcsBaseUrl = "{\WHMCS\Utility\Environment\WebHelper::getBaseUrl()}";
+ {if $captcha}{$captcha->getPageJs()}{/if}
 </script>
 <script src="{assetPath file='scripts.min.js'}?v={$versionHash}"></script>
 
 {if $templatefile == "viewticket" && !$loggedin}
-  <meta name="robots" content="noindex" />
+ <meta name="robots" content="noindex" />
 {/if}
