@@ -86,7 +86,7 @@
   line-height: 1.5;
   text-align: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ixir-landing-hero {
     padding: 26px 18px;
   }

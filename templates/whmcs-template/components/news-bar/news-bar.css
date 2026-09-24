@@ -163,7 +163,7 @@ body.ixir-auth-page #ixirNewsBar,
   transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   .news-bar {
     top: 96px;
     padding: 7px 0;
@@ -187,7 +187,7 @@ body.ixir-auth-page #ixirNewsBar,
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .news-bar {
     padding: 6px 0;
   }
@@ -221,7 +221,7 @@ body.ixir-auth-page #ixirNewsBar,
     display: none;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .news-bar .newsClose {
     width: 22px;
     height: 22px;

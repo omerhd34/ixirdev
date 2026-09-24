@@ -41,7 +41,7 @@ body {
     margin: 15px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .invoice-container {
     padding: 45px 45px 70px 45px;
   }

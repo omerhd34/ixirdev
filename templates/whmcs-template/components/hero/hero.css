@@ -374,7 +374,7 @@ section#home-banner.ixir-hero {
     transform: none;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1439px) {
+@media only screen and (min-width: 992px) and (max-width: 1440px) {
   .ixir-hero-main {
     max-width: 800px;
   }
@@ -389,7 +389,7 @@ section#home-banner.ixir-hero {
     column-gap: var(--ixir-links-gap);
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   section#home-banner,
   section#home-banner.ixir-hero {
     min-height: calc(100vh - 96px);
@@ -529,7 +529,7 @@ section#home-banner.ixir-hero {
     align-items: flex-start;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   .ixir-hero-main {
     max-width: 720px;
   }
@@ -548,7 +548,7 @@ section#home-banner.ixir-hero {
     white-space: normal;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   section#home-banner.ixir-hero:has(.ixir-hero-points) > .container {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -563,7 +563,7 @@ section#home-banner.ixir-hero {
     font-size: 13px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .ixir-hero-strip {
     height: 48px;
   }
@@ -578,7 +578,7 @@ section#home-banner.ixir-hero {
     margin-right: 20px;
   }
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 576px) {
   section#home-banner.ixir-hero:has(.ixir-hero-points) > .container {
     padding-top: 16px;
     padding-bottom: 16px;

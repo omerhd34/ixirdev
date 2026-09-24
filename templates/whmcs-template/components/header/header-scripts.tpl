@@ -213,7 +213,7 @@
    });
 
    function ixirIsMobileHeader() {
-    return window.matchMedia('(max-width: 991px)').matches;
+    return window.matchMedia('(max-width: 992px)').matches;
    }
 
    function updateIxirHeaderSpacer() {

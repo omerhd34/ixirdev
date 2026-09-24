@@ -311,7 +311,7 @@ div.header-lined h1 {
   transform: rotate(90deg);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body {
     max-width: 100% !important;
   }

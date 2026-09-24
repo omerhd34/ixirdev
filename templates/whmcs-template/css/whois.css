@@ -135,7 +135,7 @@
   font-size: 15px;
   line-height: 1.6;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ixir-whois-checker {
     flex-direction: column;
     align-items: stretch;

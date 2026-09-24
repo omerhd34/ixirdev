@@ -171,7 +171,7 @@ section#footer .back-to-top i {
   background-color: #bbb;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .navbar-main .navbar-nav > li > a {
     padding: 3px 20px;
   }
@@ -507,13 +507,13 @@ section#home-banner .btn.transfer {
   background-color: #bbb;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   section#home-banner h2 {
     font-size: 26px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   section#home-banner h2 {
     font-size: 22px;
   }
@@ -571,12 +571,12 @@ section#home-banner .btn.transfer {
   margin: 0;
   line-height: 55px;
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .home-shortcuts ul {
     text-align: center;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .home-shortcuts li {
     display: block;
     float: none;
@@ -725,7 +725,7 @@ section#home-banner .btn.transfer {
 .tiles .tile:last-child {
   border: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .tiles .tile:nth-child(2) {
     border: 0;
   }
@@ -942,7 +942,7 @@ ul.top-nav .tooltip-inner {
   width: 250px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   ul.top-nav {
     font-size: 0.9em;
   }
@@ -955,7 +955,7 @@ ul.top-nav .tooltip-inner {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   ul.top-nav {
     margin: 0;
     font-size: 0.8em;
@@ -1040,7 +1040,7 @@ div.product-details div.product-icon {
 .product-actions-wrapper > div:not(:last-child) {
   margin-bottom: 0.5rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   div.product-details div.product-icon {
     font-size: 30px;
   }
@@ -1133,7 +1133,7 @@ div.product-details-tab-container {
   width: 130px;
   height: 130px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mc-promo-manage .logo,
   .mc-promo-login .logo {
     width: 65px;
@@ -1153,7 +1153,7 @@ div.product-details-tab-container {
   max-width: 130px;
   max-height: 130px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mc-promo-manage .logo img,
   .mc-promo-login .logo img {
     max-width: 65px;
@@ -1169,7 +1169,7 @@ div.product-details-tab-container {
   transform: translate(0, -50%);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mc-promo-manage .panel-heading,
   .mc-promo-login .panel-heading {
     padding: 10px 10px 5px 10px;
@@ -1491,7 +1491,7 @@ table.dtr-inline.collapsed .responsive-edit-button {
   overflow: hidden;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .affiliate-stat {
     font-size: 1.2em;
   }
@@ -1503,7 +1503,7 @@ table.dtr-inline.collapsed .responsive-edit-button {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .affiliate-stat {
     font-size: 1em;
   }
@@ -1979,7 +1979,7 @@ div.sidebar .list-group-item-selected .badge {
   margin-right: auto;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .panel-actions {
     border: 0;
     box-shadow: none;
@@ -2203,7 +2203,7 @@ h3.kb-alsoread {
   font-size: 20px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   #stepResults {
     font-size: 14px;
   }
@@ -2417,7 +2417,7 @@ tr.masspay-total td {
   display: none;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .licensing-verification .input-group .input-group-btn {
     display: none;
   }
@@ -2447,7 +2447,7 @@ tr.masspay-total td {
   padding-right: 15%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .google-recaptcha-align {
     padding-left: 15px;
     padding-right: 15px;
@@ -2475,7 +2475,7 @@ tr.masspay-total td {
   margin-bottom: -46px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   #google-recaptcha-domainchecker {
     padding-left: 2.5%;
   }
@@ -2955,7 +2955,7 @@ div.md-editor.active {
 .promo-banner .content {
   margin-left: 185px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .promo-banner form {
     text-align: center;
   }
@@ -3420,7 +3420,7 @@ fieldset[disabled] .btn-twitter.active {
   border-radius: 3px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .btn-xs-block {
     display: block;
     width: 100%;
@@ -3821,7 +3821,7 @@ form[data-role="json-form"] .has-error .tooltip.top .tooltip-arrow {
   overflow: hidden;
   text-align: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .featured-tld .img-container {
     height: 80px;
     line-height: 40px;
@@ -4227,7 +4227,7 @@ div[menuitemname="Active Products/Services"] .btn-view-more.disabled {
   display: flex;
   flex: 1 1 60%;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .sitejet-panel-container .sitejet-preview-item,
   .sitejet-panel-container .sitejet-actions-item {
     flex-basis: 100%;

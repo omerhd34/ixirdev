@@ -687,7 +687,7 @@
   }
  }
 
- @media (max-width: 767px) {
+ @media (max-width: 768px) {
   .social-bee .hero h2 {
    width: 100%;
    font-size: 28px;

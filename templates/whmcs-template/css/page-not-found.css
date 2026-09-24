@@ -187,7 +187,7 @@ body.ixir-404-page #main-body,
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ixir-404 {
     padding: 40px 0 56px;
   }
