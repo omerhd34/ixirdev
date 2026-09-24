@@ -14,15 +14,15 @@
 {assetExists file="base.css"}
 <link href="{$__assetPath__}?v={$versionHash}-r11" rel="stylesheet">
 {/assetExists}
-<link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r23" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r34" rel="stylesheet">
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}-r8" rel="stylesheet">
 {/if}
 {if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage}
- <link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}-r42" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}-r45" rel="stylesheet">
 {/if}
 {if $ixirDomainSearchPage || $ixirDomainTransferPage || $templatefile == 'whois-sorgulama'}
- <link href="{$WEB_ROOT}/templates/{$template}/css/domain-search.css?v={$versionHash}-r73" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/css/domain-search.css?v={$versionHash}-r76" rel="stylesheet">
 {/if}
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/packages/packages.css?v={$versionHash}-r14" rel="stylesheet">
@@ -43,7 +43,7 @@
  <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r63" rel="stylesheet">
 {/if}
 {if $templatefile == 'whois-sorgulama'}
- <link href="{$WEB_ROOT}/templates/{$template}/css/whois.css?v={$versionHash}-r13" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/css/whois.css?v={$versionHash}-r15" rel="stylesheet">
 {/if}
 {if $ixirCorporate || $templatefile == 'kurumsal' || $templatefile == 'contact'}
  <link href="{$WEB_ROOT}/templates/{$template}/css/kurumsal.css?v={$versionHash}-r28" rel="stylesheet">
