@@ -153,13 +153,13 @@
   }
 }
 
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1440px) {
   .ixir-help-copy {
     max-width: 560px;
   }
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1200px) {
   .ixir-help-copy {
     max-width: 500px;
   }
@@ -168,10 +168,13 @@
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   .ixir-help,
   .ixir-help-stage {
     min-height: 0;
+  }
+  .ixir-help-stage {
+    justify-content: center;
   }
   .ixir-help::after {
     inset: 0;
@@ -189,6 +192,8 @@
   }
   .ixir-help-copy {
     max-width: 640px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 56px 0;
   }
   .ixir-help-copy h2 {
@@ -206,7 +211,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .ixir-help {
     min-height: 0;
     margin-top: 0;
@@ -232,29 +237,21 @@
   }
   .ixir-help-cards {
     grid-template-columns: minmax(0, 1fr);
+    justify-items: stretch;
     gap: 12px;
+    width: 100%;
   }
   .ixir-help-card {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2px 12px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    justify-self: stretch;
     padding: 16px 18px;
-    text-align: left;
+    text-align: center;
   }
   .ixir-help-card > i {
-    flex: 0 0 28px;
-    margin: 0;
+    margin: 0 auto 8px;
     font-size: 26px;
-  }
-  .ixir-help-card > span {
-    flex: 1 1 auto;
-  }
-  .ixir-help-card > small {
-    flex: 1 1 100%;
-    padding-left: 40px;
-    margin-top: 0;
   }
 }
 
