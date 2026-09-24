@@ -1,4 +1,4 @@
-<div id="order-standard_cart" class="ixir-domain-page">
+<div id="order-standard_cart" class="ixir-domain-page ixir-whois-page">
  <section id="home-banner" class="ixir-hero">
   <picture class="ixir-hero-photo">
    <source srcset="{$WEB_ROOT}/templates/{$template}/img/hero-whois.webp?v=r2" type="image/webp">
@@ -33,12 +33,12 @@
       <span>Lütfen geçerli bir alan adı girin. Örneğin: <b>ixirhost.com</b></span>
      </p>
     </form>
-    <div class="ixir-domain-links-wrap" role="region" aria-label="Domain hizmetleri">
+    <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
      <p class="ixir-domain-links-title">Hizmetler</p>
      <ul class="ixir-domain-links">
       <li>
        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgulama">
-        <i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
+        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
        </a>
       </li>
       <li>
@@ -46,17 +46,45 @@
         <i class="fas fa-retweet fa-fw" aria-hidden="true"></i><span>Domain Transfer</span>
        </a>
       </li>
-      <li><i class="fas fa-server fa-fw" aria-hidden="true"></i>Ücretsiz DNS Yönetimi</li>
+      <li>
+       <a href="{$WEB_ROOT}/whois-sorgulama" title="Whois Sorgulama">
+        <i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Whois Sorgulama</span>
+       </a>
+      </li>
      </ul>
      <ul class="ixir-domain-links">
-      <li><i class="far fa-eye-slash fa-fw" aria-hidden="true"></i>Ücretsiz Whois Gizleme</li>
-      <li><i class="fas fa-link fa-fw" aria-hidden="true"></i>Ücretsiz URL Yönlendirme</li>
-      <li><i class="far fa-envelope fa-fw" aria-hidden="true"></i>Ücretsiz Mail Yönlendirme</li>
+      <li>
+       <a href="{$WEB_ROOT}/webhosting" title="Web Hosting">
+        <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Web Hosting</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting">
+        <i class="fab fa-windows fa-fw" aria-hidden="true"></i><span>Windows Hosting</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
+        <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
+       </a>
+      </li>
      </ul>
      <ul class="ixir-domain-links">
-      <li><i class="fas fa-flag fa-fw" aria-hidden="true"></i>.TR Kayıtları Başladı!</li>
-      <li><i class="fas fa-bolt fa-fw" aria-hidden="true"></i>Belgesiz .com.tr Tescil!</li>
-      <li><i class="fas fa-check-circle fa-fw" aria-hidden="true"></i>Belgesiz .net.tr Tescil!</li>
+      <li>
+       <a href="{$WEB_ROOT}/kurumsal-mail-server" title="Kurumsal Mail Server">
+        <i class="fas fa-mail-bulk fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Server</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/cloud" title="Bulut Sunucu">
+        <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Bulut Sunucu</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">
+        <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Dedicated Server</span>
+       </a>
+      </li>
      </ul>
     </div>
    </div>
@@ -276,7 +304,7 @@
    </div>
   {/if}
 
-  <div class="ixir-whois-guide">
+  <div class="ixir-whois-guide" id="ixir-whois-guide">
    <div class="ixir-whois-intro">
     <h2>Ücretsiz Whois Sorgulama</h2>
     <p>Alan adının sahibini merak ediyor veya sahibi ile iletişime geçmek istiyorsanız, hemen bir alan adı
@@ -314,34 +342,84 @@
 <script>
  {literal}
   (function() {
+   var root = document.getElementById('ixir-whois-guide');
+   if (!root || !window.IntersectionObserver) {
+    return;
+   }
+   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+   }
+   root.classList.add('is-armed');
+   var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+     if (!entry.isIntersecting) {
+      return;
+     }
+     observer.disconnect();
+     window.requestAnimationFrame(function() {
+      window.requestAnimationFrame(function() {
+       root.classList.add('is-in');
+       window.setTimeout(function() {
+        root.classList.remove('is-armed');
+       }, 1400);
+      });
+     });
+    });
+   }, {
+    threshold: 0.18,
+    rootMargin: '0px 0px -6% 0px'
+   });
+   observer.observe(root);
+  })();
+ {/literal}
+</script>
+<script>
+ {literal}
+  (function() {
    var form = document.getElementById('frmWhoisChecker');
    var input = document.getElementById('ixir-whois-domain');
    if (!form || !input) {
     return;
    }
 
-   function clearIfReload() {
+   function isReload() {
     var nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
-    var reloaded = (nav && nav.type === 'reload') || (performance.navigation && performance.navigation.type === 1);
-    if (!reloaded) {
+    return (nav && nav.type === 'reload') || (performance.navigation && performance.navigation.type === 1);
+   }
+
+   function pinTop() {
+    if ('scrollRestoration' in history) {
+     history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+   }
+
+   function clearIfReload() {
+    if (!isReload()) {
      return;
     }
+    pinTop();
     input.value = '';
     input.setAttribute('placeholder', input.getAttribute('data-placeholder') || '');
-    var page = document.querySelector('.ixir-whois-page');
-    if (!page) {
-     return;
-    }
-    var nodes = page.querySelectorAll('.ixir-whois-alert, .ixir-whois-card, .ixir-whois-result');
+    var nodes = document.querySelectorAll('.ixir-whois-alert, .ixir-whois-card, .ixir-whois-result');
     var i;
     for (i = 0; i < nodes.length; i++) {
-     nodes[i].parentNode.removeChild(nodes[i]);
+     if (nodes[i].parentNode) {
+      nodes[i].parentNode.removeChild(nodes[i]);
+     }
     }
    }
    clearIfReload();
-   window.addEventListener('pageshow', clearIfReload);
+   window.addEventListener('pageshow', function(e) {
+    if (e.persisted || isReload()) {
+     clearIfReload();
+     pinTop();
+    }
+   });
    window.addEventListener('load', function() {
-    window.setTimeout(clearIfReload, 0);
+    if (isReload()) {
+     pinTop();
+    }
    });
    var hint = document.getElementById('ixir-whois-field-error');
    var placeholder = input.getAttribute('data-placeholder') || input.getAttribute('placeholder') || '';
@@ -429,6 +507,10 @@
    var nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
    var reloaded = (nav && nav.type === 'reload') || (performance.navigation && performance.navigation.type === 1);
    if (reloaded) {
+    if ('scrollRestoration' in history) {
+     history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
     return;
    }
 
