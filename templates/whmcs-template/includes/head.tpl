@@ -19,7 +19,7 @@
  <link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}-r8" rel="stylesheet">
 {/if}
 {if $templatefile == 'homepage' || $ixirDomainSearchPage || $ixirDomainTransferPage}
- <link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}-r40" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}-r42" rel="stylesheet">
 {/if}
 {if $ixirDomainSearchPage || $ixirDomainTransferPage}
  <link href="{$WEB_ROOT}/templates/{$template}/css/domain-search.css?v={$versionHash}-r72" rel="stylesheet">

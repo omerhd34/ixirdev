@@ -36,6 +36,17 @@ section#home-banner.ixir-hero {
   object-fit: cover;
   object-position: center right;
 }
+.ixir-hero-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(7, 11, 20, 0.55) 0%,
+    rgba(7, 11, 20, 0.28) 46%,
+    rgba(7, 11, 20, 0.08) 100%
+  );
+}
 .ixir-hero > .container {
   position: relative;
   z-index: 1;
@@ -396,6 +407,16 @@ section#home-banner.ixir-hero {
   }
 }
 @media only screen and (max-width: 992px) {
+  .ixir-hero-photo img {
+    object-position: 72% center;
+  }
+  .ixir-hero-photo::after {
+    background: linear-gradient(
+      180deg,
+      rgba(7, 11, 20, 0.78) 0%,
+      rgba(7, 11, 20, 0.62) 100%
+    );
+  }
   section#home-banner,
   section#home-banner.ixir-hero {
     min-height: calc(100vh - 96px);
