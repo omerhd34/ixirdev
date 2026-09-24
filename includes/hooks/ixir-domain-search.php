@@ -900,11 +900,17 @@ function ixir_domain_search_page_vars($vars)
 
 function ixir_domain_transfer_page_vars()
 {
-    return [
+    $domain = strtolower(trim((string) ($_GET['query'] ?? '')));
+    $domain = preg_replace('/[^a-z0-9.-]/', '', $domain);
+    $data = [
         'ixirDomainTransferPage' => true,
         'skipMainBodyContainer' => true,
         'ixirDomainPrices' => ixir_domain_price_list(),
     ];
+    if ($domain !== '' && $domain !== 'transfer') {
+        $data['lookupTerm'] = $domain;
+    }
+    return $data;
 }
 
 add_hook('ClientAreaPage', -100, function ($vars) {
