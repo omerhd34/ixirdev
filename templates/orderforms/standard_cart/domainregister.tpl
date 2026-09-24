@@ -7,8 +7,8 @@
 
   <section id="home-banner" class="ixir-hero">
    <picture class="ixir-hero-photo">
-    <source srcset="{$WEB_ROOT}/templates/{$template}/img/hero-bg.webp" type="image/webp">
-    <img src="{$WEB_ROOT}/templates/{$template}/img/hero-bg.jpg" alt="">
+    <source srcset="{$WEB_ROOT}/templates/{$template}/img/hero-domain-sorgu.webp?v=r1" type="image/webp">
+    <img src="{$WEB_ROOT}/templates/{$template}/img/hero-domain-sorgu.jpg?v=r1" alt="">
    </picture>
    <div class="container">
     <div class="ixir-hero-main">
