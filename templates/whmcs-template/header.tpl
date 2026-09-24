@@ -43,12 +43,13 @@
  <style>
   html {
    --ixir-scroll-size: 18px;
+   --ixir-scroll-track: #101624;
    --ixir-hero-offset: 113px;
    height: auto !important;
    overflow-x: hidden !important;
    overflow-y: scroll !important;
-   scrollbar-width: auto;
-   scrollbar-color: #d4d4d4 #2a2a2a;
+   scrollbar-width: auto !important;
+   scrollbar-color: #4d7ef0 var(--ixir-scroll-track) !important;
   }
 
   body {
@@ -69,27 +70,52 @@
    width: var(--ixir-scroll-size) !important;
    height: var(--ixir-scroll-size) !important;
    display: block !important;
-   background: #2a2a2a !important;
+   background: var(--ixir-scroll-track) !important;
   }
 
   html::-webkit-scrollbar-track,
   body::-webkit-scrollbar-track {
-   background: #2a2a2a !important;
+   background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08), transparent 1px),
+    var(--ixir-scroll-track) !important;
   }
 
   html::-webkit-scrollbar-thumb,
   body::-webkit-scrollbar-thumb {
-   background: #d4d4d4 !important;
    border-radius: 999px !important;
-   border: 3px solid #2a2a2a !important;
+   border: 3px solid transparent !important;
+   background-color: #386ce0 !important;
+   background-image: linear-gradient(180deg, #9ec0ff 0%, #386ce0 46%, #1e4bb8 100%) !important;
    background-clip: padding-box !important;
+   min-height: 64px !important;
   }
 
   html::-webkit-scrollbar-thumb:hover,
   body::-webkit-scrollbar-thumb:hover {
-   background: #e4e4e4 !important;
-   border: 3px solid #2a2a2a !important;
+   border-width: 2px !important;
+   background-color: #5b8ef5 !important;
+   background-image: linear-gradient(180deg, #d4e4ff 0%, #4d7ef0 42%, #2a5ad4 100%) !important;
    background-clip: padding-box !important;
+  }
+
+  html::-webkit-scrollbar-thumb:active,
+  body::-webkit-scrollbar-thumb:active {
+   border-width: 3px !important;
+   background-color: #1e4bb8 !important;
+   background-image: linear-gradient(180deg, #6f9cf5 0%, #1e4bb8 100%) !important;
+   background-clip: padding-box !important;
+  }
+
+  html::-webkit-scrollbar-button,
+  body::-webkit-scrollbar-button {
+   display: none !important;
+   width: 0 !important;
+   height: 0 !important;
+  }
+
+  html::-webkit-scrollbar-corner,
+  body::-webkit-scrollbar-corner {
+   background: var(--ixir-scroll-track) !important;
   }
 
   .ixir-header,
@@ -224,7 +250,7 @@
   {include file="$template/includes/verifyemail.tpl"}
  {/if}
 
- {if $templatefile != 'homepage' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage}
+ {if $templatefile != 'homepage' && $templatefile != 'whois-sorgulama' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage}
   <section id="main-body">
    <div class="container{if $skipMainBodyContainer}-fluid without-padding{/if}">
     <div class="row">
