@@ -1,10 +1,6 @@
 <div class="ixir-alert ixir-alert-warn">
  <span class="ixir-alert-icon" aria-hidden="true">
-  <svg viewBox="0 0 24 24" fill="none">
-   <path d="M12 9v4.5M12 17h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-   <path d="M10.2 4.8 2.8 18.2A2 2 0 0 0 4.6 21h14.8a2 2 0 0 0 1.8-2.8L13.8 4.8a2 2 0 0 0-3.6 0Z" stroke="currentColor"
-    stroke-width="1.8" stroke-linejoin="round" />
-  </svg>
+  <i class="fas fa-exclamation-triangle"></i>
  </span>
  <div>
   <strong>Önemli: Hesap Sahibi Bilgisi</strong>
@@ -14,10 +10,7 @@
 
 <div class="ixir-alert ixir-alert-warn">
  <span class="ixir-alert-icon" aria-hidden="true">
-  <svg viewBox="0 0 24 24" fill="none">
-   <rect x="5" y="3.5" width="14" height="17" rx="2" stroke="currentColor" stroke-width="1.8" />
-   <path d="M8.5 8.5h7M8.5 12h7M8.5 15.5h4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-  </svg>
+  <i class="fas fa-file-alt"></i>
  </span>
  <div>
   <strong>Sipariş Takibi İçin Gerekli</strong>
@@ -39,11 +32,7 @@
 
 <div class="ixir-alert ixir-alert-info">
  <span class="ixir-alert-icon" aria-hidden="true">
-  <svg viewBox="0 0 24 24" fill="none">
-   <circle cx="12" cy="12" r="8.2" stroke="currentColor" stroke-width="1.8" />
-   <path d="M12 8.2V12l2.8 1.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-    stroke-linejoin="round" />
-  </svg>
+  <i class="fas fa-clock"></i>
  </span>
  <div>
   <strong>Ödeme İşlem Süreleri</strong>

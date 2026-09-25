@@ -7,10 +7,7 @@
  </p>
  <div class="ixir-infra-location">
   <span class="ixir-infra-pin" aria-hidden="true">
-   <svg viewBox="0 0 24 24" fill="none">
-    <path d="M12 21s7-6.2 7-11.2A7 7 0 0 0 5 9.8C5 14.8 12 21 12 21Z" stroke="currentColor" stroke-width="1.8" />
-    <circle cx="12" cy="9.8" r="2.2" stroke="currentColor" stroke-width="1.8" />
-   </svg>
+   <i class="fas fa-map-marker-alt"></i>
   </span>
   <p>Veri merkezimiz, İstanbul’un finans ve teknoloji merkezlerinden biri olan <strong>Levent</strong> lokasyonunda
    konumlanmakta olup; düşük gecikme süreleri, güçlü operatör erişimi ve yüksek erişilebilirlik avantajı sunmaktadır.
@@ -29,44 +26,28 @@
  <div class="ixir-grid-2">
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <path d="M4 7h16v4H4V7Zm0 6h16v4H4v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
-     <path d="M7 9h.01M7 15h.01" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-    </svg>
+    <i class="fas fa-server"></i>
    </span>
    <h4>Dell EMC Sunucu Altyapısı</h4>
    <p>Sunucu ve depolama altyapımızın temelinde kurumsal seviyede Dell EMC sistemleri yer almaktadır.</p>
   </div>
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <circle cx="6" cy="12" r="2.2" stroke="currentColor" stroke-width="1.8" />
-     <circle cx="18" cy="7" r="2.2" stroke="currentColor" stroke-width="1.8" />
-     <circle cx="18" cy="17" r="2.2" stroke="currentColor" stroke-width="1.8" />
-     <path d="M8.2 12h7.2M8.2 11.2 16 8.2M8.2 12.8 16 15.8" stroke="currentColor" stroke-width="1.8" />
-    </svg>
+    <i class="fas fa-network-wired"></i>
    </span>
    <h4>Cisco &amp; HPE Network</h4>
    <p>Ağ ve switching tarafında Cisco ve HPE ekipmanları ile yüksek performanslı veri iletişimi sağlanmaktadır.</p>
   </div>
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <rect x="3.5" y="8" width="17" height="8" rx="2" stroke="currentColor" stroke-width="1.8" />
-     <path d="M7 12h.01M10.5 12h3M17 12h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-    </svg>
+    <i class="fas fa-route"></i>
    </span>
    <h4>Juniper MX Routing</h4>
    <p>Main routing ve operatör bağlantıları Juniper MX serisi router altyapısı üzerinden yönetilmektedir.</p>
   </div>
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <circle cx="6" cy="7" r="2.2" stroke="currentColor" stroke-width="1.8" />
-     <circle cx="18" cy="7" r="2.2" stroke="currentColor" stroke-width="1.8" />
-     <circle cx="12" cy="17" r="2.2" stroke="currentColor" stroke-width="1.8" />
-     <path d="M8 7h8M6.6 9.1 11 15.2M17.4 9.1 13 15.2" stroke="currentColor" stroke-width="1.8" />
-    </svg>
+    <i class="fas fa-project-diagram"></i>
    </span>
    <h4>BGP Yedekli Ağ Yapısı</h4>
    <p>Tüm operatör bağlantıları BGP mimarisi ile yedekli çalışmakta ve trafik otomatik yönlendirilmektedir.</p>
@@ -159,31 +140,21 @@
  <div class="ixir-grid">
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <path d="M12 3v18M5.6 6.5 18.4 17.5M18.4 6.5 5.6 17.5" stroke="currentColor" stroke-width="1.8"
-      stroke-linecap="round" />
-    </svg>
+    <i class="fas fa-snowflake"></i>
    </span>
    <h4>Aktif Soğutma</h4>
    <p>5.850.000 BTU aktif soğutma kapasitesi</p>
   </div>
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <path d="M12 3.2 4.8 6.2v5.3c0 4.4 3 7.6 7.2 9.3 4.2-1.7 7.2-4.9 7.2-9.3V6.2L12 3.2Z" stroke="currentColor"
-      stroke-width="1.8" stroke-linejoin="round" />
-    </svg>
+    <i class="fas fa-shield-alt"></i>
    </span>
    <h4>Yedek Soğutma</h4>
    <p>2.900.000 BTU yedek kapasite (N+1)</p>
   </div>
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <path d="M12 20V10M8 12c0-2.8 1.8-5 4-5s4 2.2 4 5" stroke="currentColor" stroke-width="1.8"
-      stroke-linecap="round" />
-     <path d="M7 20h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-    </svg>
+    <i class="fas fa-wind"></i>
    </span>
    <h4>Free Cooling</h4>
    <p>Enerji verimliliği odaklı chiller mimarisi</p>

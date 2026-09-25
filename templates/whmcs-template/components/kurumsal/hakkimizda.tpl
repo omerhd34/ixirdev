@@ -10,45 +10,28 @@
 <div class="ixir-about-stats">
  <div class="ixir-about-stat">
   <span class="ixir-about-stat-icon" aria-hidden="true">
-   <svg viewBox="0 0 24 24" fill="none">
-    <path d="M8 21h8M12 17v4M7 4h10v5.2A5 5 0 0 1 12 14a5 5 0 0 1-5-4.8V4Z" stroke="currentColor" stroke-width="1.8"
-     stroke-linejoin="round" />
-    <path d="M7 6H4.8A1.8 1.8 0 0 1 3 4.2V4h4M17 6h2.2A1.8 1.8 0 0 0 21 4.2V4h-4" stroke="currentColor"
-     stroke-width="1.8" stroke-linecap="round" />
-   </svg>
+   <i class="fas fa-trophy"></i>
   </span>
   <strong>20+</strong>
   <span>Yıllık Sektör Tecrübesi</span>
  </div>
  <div class="ixir-about-stat">
   <span class="ixir-about-stat-icon" aria-hidden="true">
-   <svg viewBox="0 0 24 24" fill="none">
-    <rect x="3.5" y="5" width="17" height="15.5" rx="2.5" stroke="currentColor" stroke-width="1.8" />
-    <path d="M8 3.5V7M16 3.5V7M3.5 10h17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-   </svg>
+   <i class="fas fa-calendar-alt"></i>
   </span>
   <strong>2005</strong>
   <span>Kuruluş Yılı</span>
  </div>
  <div class="ixir-about-stat">
   <span class="ixir-about-stat-icon" aria-hidden="true">
-   <svg viewBox="0 0 24 24" fill="none">
-    <path d="M12 3.2 4.8 6.2v5.3c0 4.4 3 7.6 7.2 9.3 4.2-1.7 7.2-4.9 7.2-9.3V6.2L12 3.2Z" stroke="currentColor"
-     stroke-width="1.8" stroke-linejoin="round" />
-    <path d="m8.8 12 2.1 2.1 4.3-4.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-     stroke-linejoin="round" />
-   </svg>
+   <i class="fas fa-certificate"></i>
   </span>
   <strong>4</strong>
   <span>Uluslararası Yönetim Sistemi Sertifikası</span>
  </div>
  <div class="ixir-about-stat">
   <span class="ixir-about-stat-icon" aria-hidden="true">
-   <svg viewBox="0 0 24 24" fill="none">
-    <circle cx="12" cy="12" r="8.2" stroke="currentColor" stroke-width="1.8" />
-    <path d="M12 8.2V12l2.8 1.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-     stroke-linejoin="round" />
-   </svg>
+   <i class="fas fa-clock"></i>
   </span>
   <strong>7/24</strong>
   <span>İzleme ve Operasyon Kültürü</span>
@@ -71,68 +54,42 @@
  <div class="ixir-grid">
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <path d="M4 7h16v4H4V7Zm0 6h16v4H4v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
-     <path d="M7 9h.01M7 15h.01" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-    </svg>
+    <i class="fas fa-server"></i>
    </span>
    <h4>Güvenilir Altyapı</h4>
    <p>Hosting, sunucu ve e-posta servislerinde süreklilik odaklı, ölçeklenebilir ve güvenli altyapı yaklaşımı.</p>
   </div>
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <path d="M5 14v-2a7 7 0 0 1 14 0v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-     <rect x="3.5" y="13" width="4" height="6" rx="1.5" stroke="currentColor" stroke-width="1.8" />
-     <rect x="16.5" y="13" width="4" height="6" rx="1.5" stroke="currentColor" stroke-width="1.8" />
-    </svg>
+    <i class="fas fa-headset"></i>
    </span>
    <h4>Gerçek Teknik Destek</h4>
    <p>Satış sonrası hizmeti işin merkezine alan, çözüm üretmeye odaklanan deneyimli destek anlayışı.</p>
   </div>
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <path d="M12 3.2 4.8 6.2v5.3c0 4.4 3 7.6 7.2 9.3 4.2-1.7 7.2-4.9 7.2-9.3V6.2L12 3.2Z" stroke="currentColor"
-      stroke-width="1.8" stroke-linejoin="round" />
-     <path d="m8.8 12 2.1 2.1 4.3-4.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-      stroke-linejoin="round" />
-    </svg>
+    <i class="fas fa-shield-alt"></i>
    </span>
    <h4>Bilgi Güvenliği Kültürü</h4>
    <p>Müşteri verilerinin gizliliğini ve güvenliğini öncelik kabul eden kurumsal operasyon yapısı.</p>
   </div>
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <path d="M4 16.5 9.2 11l3.2 3.2L20 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-      stroke-linejoin="round" />
-     <path d="M15 7h5v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
+    <i class="fas fa-chart-line"></i>
    </span>
    <h4>Öz Sermaye ile Büyüme</h4>
    <p>Yıllar içinde kendi kaynaklarıyla güçlenen, sürdürülebilir ve sorumluluk sahibi şirket yapısı.</p>
   </div>
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <rect x="5" y="4" width="14" height="16" rx="2" stroke="currentColor" stroke-width="1.8" />
-     <path d="M8.5 9h7M8.5 13h7M8.5 17h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-    </svg>
+    <i class="fas fa-file-alt"></i>
    </span>
    <h4>Kurumsal Hizmet Disiplini</h4>
    <p>Fatura, destek, operasyon, güvenlik ve müşteri süreçlerinde düzenli, takip edilebilir ve şeffaf yapı.</p>
   </div>
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-     <path d="M4.8 12A7.2 7.2 0 0 1 12 4.8 7.2 7.2 0 0 1 19.2 12" stroke="currentColor" stroke-width="1.8"
-      stroke-linecap="round" />
-     <path d="M19.2 12A7.2 7.2 0 0 1 12 19.2 7.2 7.2 0 0 1 4.8 12" stroke="currentColor" stroke-width="1.8"
-      stroke-linecap="round" stroke-dasharray="3 3" />
-     <path d="M16.2 4.8H19.2V7.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-      stroke-linejoin="round" />
-    </svg>
+    <i class="fas fa-sync-alt"></i>
    </span>
    <h4>Sürekli Gelişim</h4>
    <p>Değişen teknolojiye uyum sağlayan, altyapısını ve hizmet kalitesini sürekli yenileyen yaklaşım.</p>

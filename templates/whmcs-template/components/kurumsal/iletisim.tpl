@@ -61,9 +61,7 @@
     {if $sent}
      <div class="ixir-contact-alert ixir-contact-alert--success" role="status">
       <span class="ixir-contact-alert-icon" aria-hidden="true">
-       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
-       </svg>
+       <i class="fas fa-check"></i>
       </span>
       <div>
        <strong>Mesajınız gönderildi</strong>
@@ -75,11 +73,7 @@
     {if $errormessage}
      <div class="ixir-contact-alert ixir-contact-alert--error" role="alert">
       <span class="ixir-contact-alert-icon" aria-hidden="true">
-       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="12" cy="12" r="9" />
-        <path d="M12 8v5" stroke-linecap="round" />
-        <circle cx="12" cy="16" r="0.8" fill="currentColor" stroke="none" />
-       </svg>
+       <i class="fas fa-exclamation-circle"></i>
       </span>
       <div>
        <strong>Form gönderilemedi</strong>

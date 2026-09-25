@@ -744,10 +744,14 @@ body.ixir-corporate-page {
   color: #386ce0;
 }
 
-.ixir-about-stat-icon svg {
+.ixir-about-stat-icon svg,
+.ixir-about-stat-icon i {
   display: block;
   width: 22px;
   height: 22px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
 }
 
 .ixir-about-stat strong,
@@ -838,9 +842,12 @@ body.ixir-corporate-page {
   color: #fff;
 }
 
-.ixir-infra-pin svg {
+.ixir-infra-pin svg,
+.ixir-infra-pin i {
   width: 18px;
   height: 18px;
+  font-size: 16px;
+  line-height: 1;
 }
 
 .ixir-box {
@@ -911,10 +918,14 @@ body.ixir-corporate-page {
   color: #386ce0;
 }
 
-.ixir-card-icon svg {
+.ixir-card-icon svg,
+.ixir-card-icon i {
   display: block;
   width: 20px;
   height: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
 }
 
 .ixir-card h4 {
@@ -1384,9 +1395,13 @@ body.ixir-corporate-page {
   border-radius: 10px;
 }
 
-.ixir-contact-alert-icon svg {
+.ixir-contact-alert-icon svg,
+.ixir-contact-alert-icon i {
   width: 18px;
   height: 18px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
 }
 
 .ixir-contact-alert strong {
@@ -1660,9 +1675,13 @@ body.ixir-corporate-page {
   border-radius: 10px;
 }
 
-.ixir-alert-icon svg {
+.ixir-alert-icon svg,
+.ixir-alert-icon i {
   width: 20px;
   height: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
 }
 
 .ixir-alert strong {
