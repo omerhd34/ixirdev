@@ -329,7 +329,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 8px;
   width: auto;
   margin: 0;
   padding: 0;
@@ -671,7 +671,7 @@
 }
 
 .ixir-domain-results {
-  width: min(var(--ixir-container), calc(100% - 2 * var(--ixir-gutter)));
+  width: var(--ixir-wrap);
   max-width: none;
   margin: 28px auto 12px;
 }
@@ -1396,14 +1396,26 @@
   margin: 0 0 12px;
   color: #64748b;
   font-size: 13px;
+  line-height: 1;
+}
+
+.ixir-domain-prices-search label {
+  margin: 0;
+  padding: 0;
+  line-height: 34px;
+  font-weight: 400;
 }
 
 .ixir-domain-prices-search input {
   width: 220px;
   height: 34px;
+  margin: 0;
   padding: 0 10px;
   border: 1px solid #d9dee7;
   border-radius: 6px;
+  box-sizing: border-box;
+  line-height: 32px;
+  vertical-align: middle;
 }
 
 .ixir-domain-prices-table-wrap {
@@ -1499,7 +1511,7 @@
 
 .ixir-domain-prices-pager {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 6px;
   margin: 16px 0 0;
@@ -1593,14 +1605,12 @@
   line-height: 1.65;
 }
 
-@media (max-width: 992px) {
-  .ixir-spotlights .spotlight-tlds-container,
-  #order-standard_cart.ixir-domain-page .spotlight-tlds-container {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+@media (max-width: 1023px) {
+  .ixir-domain-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .ixir-domain-feature-grid,
   .ixir-domain-transfer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(200px, 280px);
   }
   .ixir-domain-transfer-copy {
     padding: 36px 0 8px;
@@ -1637,7 +1647,7 @@
   }
   .ixir-spotlights .spotlight-tlds-container,
   #order-standard_cart.ixir-domain-page .spotlight-tlds-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
   }
   .ixir-suggestions #domainSuggestions,
   #order-standard_cart.ixir-domain-page .ixir-suggestions .list-group {
@@ -1656,11 +1666,25 @@
   .ixir-domain-prices-search input {
     width: 100%;
   }
+  .ixir-domain-prices-table {
+    min-width: 720px;
+  }
+  .ixir-domain-prices-table th:first-child {
+    width: auto;
+    white-space: nowrap;
+  }
+  .ixir-domain-prices-table th:first-child .ixir-dp-sort {
+    float: none;
+    margin-left: 6px;
+  }
   #order-standard_cart.ixir-domain-page .ixir-hero h1 {
-    font-size: 28px;
+    font-size: 24px;
+    margin: 0 0 12px;
+    line-height: 1.15;
   }
   #order-standard_cart.ixir-domain-page .ixir-hero-copy > p {
     font-size: 16px;
+    line-height: 1.35;
   }
   #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-wrap {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1668,6 +1692,8 @@
     justify-items: start;
     width: 100%;
     max-width: 100%;
+    margin-top: 14px;
+    padding-top: 10px;
     column-gap: 16px;
     row-gap: 10px;
   }
@@ -1689,7 +1715,14 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1023px) {
+  #order-standard_cart.ixir-domain-page .ixir-hero h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  #order-standard_cart.ixir-domain-page .ixir-hero-copy > p {
+    font-size: 17px;
+  }
   #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-wrap {
     --ixir-links-gap: 36px;
     column-gap: var(--ixir-links-gap);
@@ -1706,31 +1739,23 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 767px) {
   #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-wrap {
     position: relative;
   }
   #order-standard_cart.ixir-domain-page
     .ixir-hero
     .ixir-domain-links-wrap::before {
-    content: "";
-    position: absolute;
-    top: 42px;
-    bottom: 2px;
-    left: 50%;
-    width: 1px;
-    background: rgba(255, 255, 255, 0.4);
-    transform: translateX(-0.5px);
-    pointer-events: none;
+    content: none;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1023px) {
   #order-standard_cart.ixir-domain-page section#home-banner.ixir-hero {
     box-sizing: border-box;
-    height: calc(100dvh - var(--ixir-hero-offset, 96px));
+    height: auto;
     min-height: calc(100dvh - var(--ixir-hero-offset, 96px));
-    max-height: calc(100dvh - var(--ixir-hero-offset, 96px));
+    max-height: none;
     padding: 0 !important;
   }
   #order-standard_cart.ixir-domain-page .ixir-hero > .container {
@@ -1747,7 +1772,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1023px) {
   #order-standard_cart.ixir-domain-page .ixir-dc-tlds {
     display: flex;
     flex-wrap: nowrap;
@@ -1783,12 +1808,12 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 479px) {
   #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-wrap {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 14px;
-    padding-top: 12px;
-    column-gap: 12px;
+    margin-top: 12px;
+    padding-top: 8px;
+    column-gap: 16px;
     row-gap: 8px;
     border-top: 1px solid rgba(255, 255, 255, 0.16);
   }
@@ -1799,8 +1824,8 @@
   }
   #order-standard_cart.ixir-domain-page .ixir-hero ul.ixir-domain-links li {
     align-items: flex-start;
-    font-size: 13px;
-    line-height: 1.3;
+    font-size: 12.5px;
+    line-height: 1.2;
   }
   #order-standard_cart.ixir-domain-page .ixir-hero ul.ixir-domain-links li a {
     align-items: flex-start;
@@ -1829,73 +1854,33 @@
 }
 
 #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-title {
-  margin-bottom: 16px;
+  margin-bottom: 4px;
 }
 
-#order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
-    .ixir-transfer-page
-  )
-  .ixir-hero-main {
+#order-standard_cart.ixir-domain-page:not(.ixir-whois-page) .ixir-hero-main {
   max-width: 980px;
 }
 
-@media (min-width: 992px) {
-  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
-      .ixir-transfer-page
-    )
+@media (min-width: 1024px) {
+  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page)
     .ixir-hero
     .ixir-domain-links-wrap {
     max-width: none;
     row-gap: 10px;
+    --ixir-links-gap: 168px;
+    column-gap: var(--ixir-links-gap);
   }
 
-  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
-      .ixir-transfer-page
-    )
+  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page)
     .ixir-hero
     ul.ixir-domain-links {
     gap: 8px;
   }
 
-  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
-      .ixir-transfer-page
-    )
+  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page)
     .ixir-hero
     .ixir-domain-links-title {
     margin: 0 0 4px;
-  }
-}
-
-@media (min-width: 1441px) {
-  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
-      .ixir-transfer-page
-    )
-    .ixir-hero
-    .ixir-domain-links-wrap {
-    --ixir-links-gap: 168px;
-    column-gap: var(--ixir-links-gap);
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 1440px) {
-  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
-      .ixir-transfer-page
-    )
-    .ixir-hero
-    .ixir-domain-links-wrap {
-    --ixir-links-gap: 128px;
-    column-gap: var(--ixir-links-gap);
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page):not(
-      .ixir-transfer-page
-    )
-    .ixir-hero
-    .ixir-domain-links-wrap {
-    --ixir-links-gap: 72px;
-    column-gap: var(--ixir-links-gap);
   }
 }
 
@@ -1945,7 +1930,7 @@
   flex: 0 0 188px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 479px) {
   #order-standard_cart.ixir-transfer-page
     .ixir-hero
     form#frmDomainTransfer
@@ -2178,5 +2163,532 @@
     li:not(:last-child)::after {
     content: none;
     margin: 0;
+  }
+}
+
+.ixir-xfer-steps {
+  background: #f7f9fc;
+}
+
+.ixir-xfer-notes {
+  background: #1c2433;
+}
+
+.ixir-xfer-steps {
+  padding: 56px 0;
+}
+
+.ixir-xfer-uses {
+  padding: 56px 0;
+}
+
+.ixir-xfer-steps h2,
+.ixir-xfer-notes h2,
+.ixir-xfer-uses h2 {
+  margin: 0 0 8px;
+  color: #2c3345;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ixir-xfer-lead {
+  margin: 0 0 36px;
+  color: #8b93a3;
+  font-size: 16px;
+  text-align: center;
+}
+
+.ixir-xfer-step-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: visible;
+}
+
+.ixir-xfer-step-list li {
+  position: relative;
+  padding: 28px 18px 22px;
+  background: #fff;
+  border: 1px solid #e6eaf1;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(31, 45, 74, 0.04);
+}
+
+.ixir-xfer-step-arrow {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 20px);
+  z-index: 2;
+  color: #386ce0;
+  font-size: 20px;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+}
+
+.ixir-xfer-step-no {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 14px;
+  border: 2px solid #386ce0;
+  border-radius: 50%;
+  color: #386ce0;
+  font-size: 16px;
+  font-weight: 700;
+  background: #fff;
+}
+
+.ixir-xfer-step-list h3 {
+  margin: 0 0 8px;
+  color: #2c3345;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ixir-xfer-step-list p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ixir-xfer-notes {
+  padding: 56px 0;
+}
+
+.ixir-xfer-notes h2 {
+  color: #fff;
+}
+
+.ixir-xfer-notes-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(220px, 360px);
+  gap: 24px 40px;
+  align-items: center;
+}
+
+.ixir-xfer-notes h2 {
+  margin-bottom: 18px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.ixir-xfer-notes ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ixir-xfer-notes li {
+  position: relative;
+  margin: 0 0 12px;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.ixir-xfer-notes li:last-child {
+  margin-bottom: 0;
+}
+
+.ixir-xfer-notes li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #386ce0;
+}
+
+.ixir-xfer-notes a {
+  color: #9ec0ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-xfer-notes a:hover,
+#order-standard_cart.ixir-transfer-page .ixir-xfer-notes a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.ixir-xfer-notes-art {
+  display: flex;
+  justify-content: center;
+}
+
+.ixir-xfer-notes-art img {
+  display: block;
+  width: min(100%, 280px);
+  height: auto;
+}
+
+.ixir-xfer-uses {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background: #fff;
+}
+
+.ixir-xfer-uses h2 {
+  margin-bottom: 28px;
+}
+
+.ixir-xfer-use-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.ixir-xfer-use-grid article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 22px 24px;
+  background: #fff;
+  border: 1px solid #e8edf4;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(31, 45, 74, 0.05);
+}
+
+.ixir-xfer-use-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.ixir-xfer-use-art img {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
+
+.ixir-xfer-use-grid h3 {
+  margin: 0 0 8px;
+  color: #2c3345;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ixir-xfer-use-grid p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ixir-xfer-use-btn,
+#order-standard_cart.ixir-domain-page .ixir-xfer-use-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  height: 40px;
+  margin-top: auto;
+  padding: 0 18px;
+  border-radius: 8px;
+  background: #386ce0;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.ixir-xfer-use-btn:hover,
+#order-standard_cart.ixir-domain-page .ixir-xfer-use-btn:hover {
+  background: #1e4bb8;
+}
+
+@media (max-width: 1279px) {
+  .ixir-xfer-step-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .ixir-xfer-step-arrow {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .ixir-xfer-use-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .ixir-xfer-notes-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
+  }
+}
+@media (max-width: 767px) {
+  .ixir-domain-feature-grid,
+  .ixir-domain-transfer-grid,
+  .ixir-xfer-step-list,
+  .ixir-xfer-use-grid,
+  .ixir-xfer-notes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ixir-xfer-step-list {
+    gap: 14px;
+  }
+
+  .ixir-xfer-step-arrow {
+    display: none;
+  }
+
+  .ixir-xfer-notes h2 {
+    text-align: center;
+  }
+
+  .ixir-xfer-notes-art {
+    display: none;
+  }
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-features,
+#order-standard_cart.ixir-transfer-page .ixir-domain-faq {
+  background: #1c2433;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-features h2,
+#order-standard_cart.ixir-transfer-page .ixir-domain-faq h2,
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid h3 {
+  color: #fff;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-features-lead,
+#order-standard_cart.ixir-transfer-page .ixir-domain-faq-lead,
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid p {
+  max-width: 34ch;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-prices {
+  background: #fff;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-features,
+#order-standard_cart.ixir-transfer-page .ixir-domain-prices,
+#order-standard_cart.ixir-transfer-page .ixir-domain-faq {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-faq {
+  margin-bottom: 0;
+}
+
+body.ixir-domain-transfer-page #main-body {
+  padding-bottom: 0 !important;
+}
+
+body.ixir-domain-transfer-page .ixir-help,
+body.ixir-domain-search-page .ixir-help {
+  margin-top: 0;
+}
+
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(
+    .ixir-whois-page
+  )
+  .ixir-domain-features {
+  background: #f7f9fc;
+  padding: 56px 0;
+}
+
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(
+    .ixir-whois-page
+  )
+  .ixir-domain-transfer {
+  background: #1c2433;
+}
+
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(
+    .ixir-whois-page
+  )
+  .ixir-domain-transfer-copy
+  h2 {
+  color: #fff;
+}
+
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(
+    .ixir-whois-page
+  )
+  .ixir-domain-transfer-copy
+  p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(
+    .ixir-whois-page
+  )
+  .ixir-domain-prices {
+  background: #fff;
+  padding: 56px 0;
+}
+
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(
+    .ixir-whois-page
+  )
+  .ixir-domain-faq {
+  background: #1c2433;
+  padding: 56px 0;
+}
+
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(
+    .ixir-whois-page
+  )
+  .ixir-domain-faq
+  h2 {
+  color: #fff;
+}
+
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(
+    .ixir-whois-page
+  )
+  .ixir-domain-faq-lead {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+#order-standard_cart.ixir-domain-page.ixir-transfer-page {
+  overflow-x: clip;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-slide {
+  transition:
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.56s ease;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-slide--left.is-armed:not(.is-in) {
+  opacity: 0;
+  transform: translate3d(-96px, 0, 0);
+  pointer-events: none;
+}
+
+#order-standard_cart.ixir-transfer-page
+  .ixir-slide--right.is-armed:not(.is-in) {
+  opacity: 0;
+  transform: translate3d(96px, 0, 0);
+  pointer-events: none;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-slide.is-in {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-slide.is-reset {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #order-standard_cart.ixir-transfer-page .ixir-slide,
+  #order-standard_cart.ixir-transfer-page
+    .ixir-slide--left.is-armed:not(.is-in),
+  #order-standard_cart.ixir-transfer-page
+    .ixir-slide--right.is-armed:not(.is-in),
+  #order-standard_cart.ixir-transfer-page .ixir-slide.is-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    pointer-events: auto;
+  }
+}
+
+@media (max-width: 1535px) {
+  .ixir-spotlights .spotlight-tlds-container,
+  #order-standard_cart.ixir-domain-page .spotlight-tlds-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1279px) {
+  .ixir-spotlights .spotlight-tlds-container,
+  #order-standard_cart.ixir-domain-page .spotlight-tlds-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-wrap {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: start;
+    justify-items: start;
+    column-gap: 56px;
+    row-gap: 12px;
+    margin-top: 12px;
+    padding-top: 10px;
+  }
+  #order-standard_cart.ixir-domain-page .ixir-hero ul.ixir-domain-links {
+    display: contents;
+  }
+}
+
+@media (max-width: 1023px) {
+  .ixir-spotlights .spotlight-tlds-container,
+  #order-standard_cart.ixir-domain-page .spotlight-tlds-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .ixir-spotlights .spotlight-tlds-container,
+  #order-standard_cart.ixir-domain-page .spotlight-tlds-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-wrap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #order-standard_cart.ixir-domain-page .ixir-hero ul.ixir-domain-links {
+    display: contents;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  #order-standard_cart.ixir-domain-page .ixir-hero h1 {
+    font-size: 34px;
+  }
+  #order-standard_cart.ixir-domain-page .ixir-hero-copy > p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #order-standard_cart.ixir-domain-page .ixir-hero h1 {
+    font-size: 24px;
+    margin: 0 0 12px;
+    line-height: 1.15;
+  }
+  #order-standard_cart.ixir-domain-page .ixir-hero-copy > p {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 479px) {
+  #order-standard_cart.ixir-domain-page .ixir-hero h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  #order-standard_cart.ixir-domain-page .ixir-hero-copy > p {
+    font-size: 16px;
+  }
+  #order-standard_cart.ixir-domain-page .ixir-hero > .container {
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
