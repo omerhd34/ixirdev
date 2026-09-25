@@ -420,7 +420,7 @@ body.ixir-auth-page .ixir-help {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1279px) {
   .ixir-footer-grid {
     grid-template-columns: repeat(3, max-content);
     justify-content: space-between;
@@ -493,7 +493,7 @@ body.ixir-auth-page .ixir-help {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 479px) {
   .ixir-footer {
     text-align: center;
   }
