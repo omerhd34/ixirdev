@@ -1,10 +1,11 @@
-<section class="ixir-stats" id="ixir-stats" aria-label="Türkiye tercih istatistikleri">
+<section class="ixir-stats ixir-slide ixir-slide--left is-slide-on" id="ixir-stats"
+ aria-label="Türkiye tercih istatistikleri">
  <div class="container">
   <div class="ixir-stats-stage">
    <picture class="ixir-stats-map">
-    <source srcset="{$WEB_ROOT}/templates/{$template}/img/turkey-stats/turkey-map.webp" type="image/webp">
-    <img src="{$WEB_ROOT}/templates/{$template}/img/turkey-stats/turkey-map.jpg" alt="Türkiye haritası" width="816"
-     height="343" decoding="async">
+    <source srcset="{$WEB_ROOT}/templates/{$template}/img/turkey-stats/ixirhost-map.webp?v=9" type="image/webp">
+    <img src="{$WEB_ROOT}/templates/{$template}/img/turkey-stats/ixirhost-map.png?v=9" alt="ixirhost Türkiye"
+     width="3600" height="1500" decoding="async">
    </picture>
    <h2>
     <span class="ixir-stats-heading">
@@ -107,8 +108,7 @@
      });
     });
    }, {
-    threshold: 0.18,
-    rootMargin: '0px 0px -6% 0px'
+    threshold: 0
    });
    observer.observe(root);
   })();
