@@ -44,8 +44,8 @@
      <span>Imunify360 koruması</span>
     </li>
    </ul>
-   <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
-    <p class="ixir-hero-label">Hizmetler</p>
+   <div class="ixir-domain-links-wrap" role="region" aria-label="Bazı hizmetler">
+    <p class="ixir-hero-label">Bazı Hizmetler</p>
     <ul class="ixir-domain-links">
      <li>
       <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
@@ -62,6 +62,11 @@
        <i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Whois Sorgulama</span>
       </a>
      </li>
+     <li>
+      <a href="{$WEB_ROOT}/ssl-sertifikalari" title="SSL Sertifikaları">
+       <i class="far fa-lock fa-fw" aria-hidden="true"></i><span>SSL Sertifikaları</span>
+      </a>
+     </li>
     </ul>
     <ul class="ixir-domain-links">
      <li>
@@ -75,12 +80,22 @@
       </a>
      </li>
      <li>
-      <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
-       <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
+      <a href="{$WEB_ROOT}/wordpress-hosting" title="WordPress Hosting">
+       <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress Hosting</span>
+      </a>
+     </li>
+     <li>
+      <a href="{$WEB_ROOT}/reseller-hosting" title="Linux Bayi Hosting">
+       <i class="fab fa-linux fa-fw" aria-hidden="true"></i><span>Linux Bayi Hosting</span>
       </a>
      </li>
     </ul>
     <ul class="ixir-domain-links">
+     <li>
+      <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
+       <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
+      </a>
+     </li>
      <li>
       <a href="{$WEB_ROOT}/kurumsal-mail-server" title="Kurumsal Mail Server">
        <i class="fas fa-mail-bulk fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Server</span>
