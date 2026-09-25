@@ -1,4 +1,5 @@
-<section class="ixir-help" id="ixir-help" aria-label="Destek kanalları">
+<section class="ixir-help{if $templatefile == 'homepage'} ixir-slide ixir-slide--right is-slide-on{/if}" id="ixir-help"
+ aria-label="Destek kanalları">
  <img class="ixir-help-visual" src="{$WEB_ROOT}/templates/{$template}/img/help/bg4.webp" alt="" width="1154"
   height="420" decoding="async" aria-hidden="true">
  <div class="container">
@@ -68,8 +69,7 @@
      });
     });
    }, {
-    threshold: 0.18,
-    rootMargin: '0px 0px -6% 0px'
+    threshold: 0
    });
    observer.observe(root);
   })();
