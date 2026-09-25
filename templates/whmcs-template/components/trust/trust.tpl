@@ -1,4 +1,4 @@
-<section class="ixir-trust" id="ixir-trust">
+<section class="ixir-trust ixir-slide ixir-slide--right is-slide-on" id="ixir-trust">
  <div class="container">
   <header class="ixir-trust-head">
    <h2>Yalnızca Hizmet Değil, 20 Yıldır Güven Barındırıyoruz!</h2>
@@ -77,8 +77,7 @@
      });
     });
    }, {
-    threshold: 0.18,
-    rootMargin: '0px 0px -6% 0px'
+    threshold: 0
    });
    observer.observe(root);
   })();

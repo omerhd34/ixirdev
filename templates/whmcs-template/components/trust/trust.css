@@ -123,7 +123,7 @@
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .ixir-trust {
     padding: 72px 0 64px;
   }
