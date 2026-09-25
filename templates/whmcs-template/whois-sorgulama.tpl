@@ -34,10 +34,10 @@
      </p>
     </form>
     <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
-     <p class="ixir-domain-links-title">Hizmetler</p>
+     <p class="ixir-domain-links-title">Bazı Hizmetler</p>
      <ul class="ixir-domain-links">
       <li>
-       <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgulama">
+       <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
        </a>
       </li>
@@ -49,6 +49,11 @@
       <li>
        <a href="{$WEB_ROOT}/whois-sorgulama" title="Whois Sorgulama">
         <i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Whois Sorgulama</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/ssl-sertifikalari" title="SSL Sertifikaları">
+        <i class="far fa-lock fa-fw" aria-hidden="true"></i><span>SSL Sertifikaları</span>
        </a>
       </li>
      </ul>
@@ -64,12 +69,22 @@
        </a>
       </li>
       <li>
-       <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
-        <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
+       <a href="{$WEB_ROOT}/wordpress-hosting" title="WordPress Hosting">
+        <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress Hosting</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/reseller-hosting" title="Linux Bayi Hosting">
+        <i class="fab fa-linux fa-fw" aria-hidden="true"></i><span>Linux Bayi Hosting</span>
        </a>
       </li>
      </ul>
      <ul class="ixir-domain-links">
+      <li>
+       <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
+        <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
+       </a>
+      </li>
       <li>
        <a href="{$WEB_ROOT}/kurumsal-mail-server" title="Kurumsal Mail Server">
         <i class="fas fa-mail-bulk fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Server</span>
@@ -366,8 +381,7 @@
      });
     });
    }, {
-    threshold: 0.18,
-    rootMargin: '0px 0px -6% 0px'
+    threshold: 0
    });
    observer.observe(root);
   })();
@@ -387,18 +401,10 @@
     return (nav && nav.type === 'reload') || (performance.navigation && performance.navigation.type === 1);
    }
 
-   function pinTop() {
-    if ('scrollRestoration' in history) {
-     history.scrollRestoration = 'manual';
-    }
-    window.scrollTo(0, 0);
-   }
-
    function clearIfReload() {
     if (!isReload()) {
      return;
     }
-    pinTop();
     input.value = '';
     input.setAttribute('placeholder', input.getAttribute('data-placeholder') || '');
     var nodes = document.querySelectorAll('.ixir-whois-alert, .ixir-whois-card, .ixir-whois-result');
@@ -413,12 +419,6 @@
    window.addEventListener('pageshow', function(e) {
     if (e.persisted || isReload()) {
      clearIfReload();
-     pinTop();
-    }
-   });
-   window.addEventListener('load', function() {
-    if (isReload()) {
-     pinTop();
     }
    });
    var hint = document.getElementById('ixir-whois-field-error');
@@ -507,10 +507,6 @@
    var nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
    var reloaded = (nav && nav.type === 'reload') || (performance.navigation && performance.navigation.type === 1);
    if (reloaded) {
-    if ('scrollRestoration' in history) {
-     history.scrollRestoration = 'manual';
-    }
-    window.scrollTo(0, 0);
     return;
    }
 
