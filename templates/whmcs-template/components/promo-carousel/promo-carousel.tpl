@@ -1,4 +1,5 @@
-<section class="ixir-promo" id="ixirPromo" aria-roledescription="carousel" aria-label="Öne çıkan hizmetler">
+<section class="ixir-promo ixir-slide ixir-slide--left is-slide-on" id="ixirPromo" aria-roledescription="carousel"
+ aria-label="Öne çıkan hizmetler">
  <div class="ixir-promo-viewport">
   <article class="ixir-promo-slide is-active" data-theme="developer" aria-hidden="false">
    <div class="container">

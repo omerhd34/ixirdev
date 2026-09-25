@@ -1,15 +1,17 @@
 .ixir-promo {
   position: relative;
   z-index: 1;
-  margin: 12px 0 0;
+  margin: 0;
+  max-width: 100%;
   color: #fff;
-  background: #111722;
+  background: #1c2433;
   user-select: none;
   -webkit-user-select: none;
 }
 .ixir-promo-viewport {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
+  contain: paint;
   touch-action: pan-y;
 }
 .ixir-promo-slide {
@@ -324,7 +326,7 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1536px) {
   .ixir-promo-prev {
     left: 28px;
   }
@@ -333,7 +335,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1279px) {
   .ixir-promo-grid {
     min-height: 340px;
     padding: 24px 0 40px;
@@ -353,7 +355,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 767px) {
   .ixir-promo-grid {
     grid-template-columns: minmax(0, 1fr);
     padding: 20px 0 40px;
@@ -378,12 +380,11 @@
     object-position: center;
     margin: 0 auto;
   }
-  .ixir-promo-copy ul {
+  .ixir-promo-copy ul,
+  .ixir-promo-slide[data-theme="wordpress"] .ixir-promo-copy ul {
+    grid-template-columns: minmax(0, 1fr);
     max-width: 420px;
     text-align: left;
-  }
-  .ixir-promo-slide[data-theme="wordpress"] .ixir-promo-copy ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .ixir-promo-nav {
     top: 50%;
@@ -405,9 +406,9 @@
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 479px) {
   .ixir-promo {
-    margin-top: 8px;
+    margin-top: 0;
   }
   .ixir-promo-grid {
     padding: 16px 0 38px;
