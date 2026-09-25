@@ -250,7 +250,7 @@
   {include file="$template/includes/verifyemail.tpl"}
  {/if}
 
- {if $templatefile != 'homepage' && $templatefile != 'whois-sorgulama' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage}
+ {if $templatefile != 'homepage' && $templatefile != 'whois-sorgulama' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage && !($templatefile == 'product-landing' && $ixirPageSlug == 'webhosting')}
   <section id="main-body">
    <div class="container{if $skipMainBodyContainer}-fluid without-padding{/if}">
     <div class="row">
