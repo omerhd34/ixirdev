@@ -1,4 +1,5 @@
-<section class="ixir-solutions" id="ixir-solutions" aria-label="Web hosting ve altyapı çözümleri">
+<section class="ixir-solutions ixir-slide ixir-slide--left is-slide-on" id="ixir-solutions"
+ aria-label="Web hosting ve altyapı çözümleri">
  <div class="container">
   <header class="ixir-solutions-head">
    <h2>Türkiye'nin Güvenilir Web Hosting ve Altyapı Çözümleri</h2>
@@ -106,13 +107,12 @@
       root.classList.add('is-in');
       window.setTimeout(function() {
        root.classList.remove('is-armed');
-      }, 1400);
+       }, 1400);
+      });
      });
     });
-   });
-  }, {
-   threshold: 0.18,
-   rootMargin: '0px 0px -6% 0px'
+   }, {
+    threshold: 0
    });
    observer.observe(root);
   })();
