@@ -6,15 +6,7 @@
   <div class="ixir-404-code" aria-hidden="true">
    <span>4</span>
    <span class="ixir-404-zero">
-    <svg viewBox="0 0 88 88" role="presentation" focusable="false">
-     <circle cx="44" cy="44" r="30" fill="none" stroke="currentColor" stroke-width="3.5"></circle>
-     <ellipse cx="44" cy="44" rx="12" ry="30" fill="none" stroke="currentColor" stroke-width="3"></ellipse>
-     <path d="M14 44h60M18 32h52M18 56h52" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
-     </path>
-     <circle cx="62" cy="62" r="14" fill="#242935"></circle>
-     <circle cx="62" cy="62" r="6.5" fill="none" stroke="#fbd746" stroke-width="3"></circle>
-     <path d="M71 71l8 8" fill="none" stroke="#fbd746" stroke-width="3.4" stroke-linecap="round"></path>
-    </svg>
+    <i class="fas fa-search" aria-hidden="true"></i>
    </span>
    <span>4</span>
   </div>
