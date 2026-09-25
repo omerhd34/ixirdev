@@ -76,7 +76,7 @@ function ixir_product_pages()
         'reseller-hosting' => [
             'title' => 'Linux Bayi Hosting',
             'tagline' => 'WHM / cPanel ile sınırsız site barındırma.',
-            'icon' => 'fab fa-cpanel',
+            'icon' => 'fab fa-linux',
             'groupNames' => ['Reseller Hosting', 'Linux Reseller', 'Bayi Hosting'],
             'points' => [
                 'WHM / cPanel bayi paneli',
@@ -87,7 +87,7 @@ function ixir_product_pages()
         'windows-reseller-hosting' => [
             'title' => 'Windows Bayi Hosting',
             'tagline' => 'Plesk panelli Windows reseller hosting.',
-            'icon' => 'fas fa-atom',
+            'icon' => 'fab fa-windows',
             'groupNames' => ['Windows Reseller', 'Windows Bayi Hosting'],
             'points' => [
                 'Plesk kontrol paneli',

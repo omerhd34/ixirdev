@@ -181,14 +181,14 @@
        </span>
       </a>
       <a href="{$WEB_ROOT}/reseller-hosting">
-       <i class="fab fa-cpanel"></i>
+       <i class="fab fa-linux"></i>
        <span>
         Linux Bayi Hosting
         <small>WHM / cPanel reseller</small>
        </span>
       </a>
       <a href="{$WEB_ROOT}/windows-reseller-hosting">
-       <i class="fas fa-atom"></i>
+       <i class="fab fa-windows"></i>
        <span>
         Windows Bayi Hosting
         <small>Plesk panel reseller</small>
