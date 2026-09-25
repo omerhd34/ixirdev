@@ -93,11 +93,11 @@ body {
   box-sizing: border-box;
 }
 ::-moz-selection {
-  background: #5c6370;
+  background: #4d7ef0;
   color: white;
 }
 ::selection {
-  background: #5c6370;
+  background: #4d7ef0;
   color: white;
 }
 html {
