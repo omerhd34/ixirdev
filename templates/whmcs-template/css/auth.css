@@ -9,7 +9,7 @@ body.ixir-auth-page {
   background: #eef1f5;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1023px) {
   body.ixir-auth-page {
     --ixir-auth-header: 96px;
   }
@@ -52,7 +52,7 @@ body.ixir-auth-page #main-body {
 
 body.ixir-auth-page #main-body > .container {
   width: 100% !important;
-  max-width: 1200px !important;
+  max-width: 1279px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   padding-left: 40px !important;
@@ -1271,7 +1271,7 @@ a.ixir-split-btn {
   padding: 36px 32px 28px;
 }
 
-@media (max-width: 1200px) and (min-width: 992px) {
+@media (max-width: 1279px) and (min-width: 1024px) {
   .ixir-auth-overlay-panel {
     padding: 28px 22px;
   }
@@ -1298,7 +1298,7 @@ a.ixir-split-btn {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1023px) {
   body.ixir-auth-page {
     --ixir-auth-pad: 56px;
   }
