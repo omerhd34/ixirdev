@@ -1,5 +1,5 @@
 {if $ixirPageSlug == 'webhosting'}
- <section id="home-banner" class="ixir-hero ixir-wh-hero" aria-label="Web Hosting">
+ <section id="home-banner" class="ixir-hero ixir-hero--webhosting" aria-label="Web Hosting">
   <picture class="ixir-hero-photo">
    <img src="{$WEB_ROOT}/templates/{$template}/img/bg6.webp?v=r1" alt="">
   </picture>
@@ -7,30 +7,131 @@
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
      <h1>Web Hosting</h1>
-     <p>NVMe SSD, LiteSpeed ve cPanel ile güçlü, hızlı ve kesintisiz web hosting deneyimi yaşayın.</p>
+     <p>NVMe SSD, LiteSpeed ve cPanel ile güçlü, hızlı ve kesintisiz bir web hosting deneyimi yaşayın. Linux yerine
+      Windows tercih ediyorsanız planlarımıza göz atabilirsiniz.</p>
     </div>
-    <a href="#ixir-wh-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-wh-plans-btn">
-     Web Hosting Paketleri <i class="fas fa-arrow-down" aria-hidden="true"></i>
-    </a>
-    <ul class="ixir-wh-features">
-     <li><i class="fas fa-hdd" aria-hidden="true"></i><span>%100 NVMe SSD Disk</span></li>
-     <li><i class="fas fa-bolt" aria-hidden="true"></i><span>LiteSpeed Web Sunucusu</span></li>
-     <li><i class="fas fa-th-large" aria-hidden="true"></i><span>cPanel Kontrol Paneli</span></li>
-     <li><i class="fas fa-lock" aria-hidden="true"></i><span>Ücretsiz SSL Sertifikası</span></li>
-     <li><i class="fas fa-clock" aria-hidden="true"></i><span>%99.9 Uptime Garantisi</span></li>
-     <li><i class="fas fa-undo" aria-hidden="true"></i><span>15 Gün Para İade Garantisi</span></li>
+    <div class="ixir-hero-actions">
+     <a href="#ixir-wh-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-wh-plans-btn">
+      Web Hosting Paketleri <i class="fas fa-arrow-down" aria-hidden="true"></i>
+     </a>
+     <a href="{$WEB_ROOT}/windows-hosting" class="ixir-hero-btn ixir-hero-btn--secondary">
+      Windows Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i>
+     </a>
+    </div>
+    <p class="ixir-hero-label" aria-hidden="true">Özellikler</p>
+    <ul class="ixir-hero-points" aria-label="Özellikler">
+     <li>
+      <i class="fas fa-hdd" aria-hidden="true"></i>
+      <span>%100 NVMe SSD Disk</span>
+     </li>
+     <li>
+      <i class="fas fa-bolt" aria-hidden="true"></i>
+      <span>LiteSpeed Web Sunucusu</span>
+     </li>
+     <li>
+      <i class="fab fa-cpanel" aria-hidden="true"></i>
+      <span>cPanel Kontrol Paneli</span>
+     </li>
+     <li>
+      <i class="fas fa-lock" aria-hidden="true"></i>
+      <span>Ücretsiz SSL Sertifikası</span>
+     </li>
+     <li>
+      <i class="fas fa-clock" aria-hidden="true"></i>
+      <span>%99.9 Uptime Garantisi</span>
+     </li>
+     <li>
+      <i class="fas fa-undo" aria-hidden="true"></i>
+      <span>15 Gün Para İade Garantisi</span>
+     </li>
     </ul>
-    <a class="ixir-wh-rating" href="https://www.google.com/search?q=ixirhost" target="_blank" rel="noopener noreferrer">
-     <img src="{$WEB_ROOT}/templates/{$template}/img/google.png" alt="Google" class="ixir-wh-google">
-     <span>Değerlendirmeleri <b>4.9</b></span>
-     <span class="ixir-wh-stars" aria-label="5 üzerinden 4.9">
-      <i class="fas fa-star" aria-hidden="true"></i>
-      <i class="fas fa-star" aria-hidden="true"></i>
-      <i class="fas fa-star" aria-hidden="true"></i>
-      <i class="fas fa-star" aria-hidden="true"></i>
-      <i class="fas fa-star-half-alt" aria-hidden="true"></i>
-     </span>
-    </a>
+    <div class="ixir-domain-links-wrap" role="region" aria-label="Bazı hizmetler">
+     <p class="ixir-hero-label">Bazı Hizmetler</p>
+     <ul class="ixir-domain-links">
+      <li>
+       <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
+        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/domain-transfer" title="Domain Transfer">
+        <i class="fas fa-retweet fa-fw" aria-hidden="true"></i><span>Domain Transfer</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/whois-sorgulama" title="Whois Sorgulama">
+        <i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Whois Sorgulama</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/ssl-sertifikalari" title="SSL Sertifikaları">
+        <i class="far fa-lock fa-fw" aria-hidden="true"></i><span>SSL Sertifikaları</span>
+       </a>
+      </li>
+     </ul>
+     <ul class="ixir-domain-links">
+      <li>
+       <a href="{$WEB_ROOT}/webhosting" title="Web Hosting">
+        <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Web Hosting</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting">
+        <i class="fab fa-windows fa-fw" aria-hidden="true"></i><span>Windows Hosting</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/wordpress-hosting" title="WordPress Hosting">
+        <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress Hosting</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/reseller-hosting" title="Linux Bayi Hosting">
+        <i class="fab fa-linux fa-fw" aria-hidden="true"></i><span>Linux Bayi Hosting</span>
+       </a>
+      </li>
+     </ul>
+     <ul class="ixir-domain-links">
+      <li>
+       <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
+        <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/kurumsal-mail-server" title="Kurumsal Mail Server">
+        <i class="fas fa-mail-bulk fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Server</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/cloud" title="Bulut Sunucu">
+        <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Bulut Sunucu</span>
+       </a>
+      </li>
+      <li>
+       <a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">
+        <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Dedicated Server</span>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <div class="ixir-hero-strip" aria-hidden="true">
+   <div class="ixir-hero-strip-track" id="ixirHeroStripTrack">
+    <span>NVMe SSD</span>
+    <span>LiteSpeed Cache</span>
+    <span>cPanel</span>
+    <span>Imunify360</span>
+    <span>CloudLinux</span>
+    <span>7/24 Destek</span>
+    <span>Ücretsiz SSL</span>
+    <span>15 Gün İade</span>
+    <span>LiteSpeed Web Server</span>
+    <span>DDoS Koruması</span>
+    <span>%99.9 Uptime</span>
+    <span>Ücretsiz Yedekleme</span>
+    <span>Türkiye Datacenter</span>
+    <span>Anında Aktivasyon</span>
    </div>
   </div>
  </section>
@@ -115,6 +216,103 @@
       frame = window.requestAnimationFrame(step);
      });
     }
+
+    var strip = document.querySelector('.ixir-hero-strip');
+    var track = document.getElementById('ixirHeroStripTrack');
+    if (strip && track && track.children.length) {
+     var originalHTML = track.innerHTML;
+     var x = 0;
+     var setWidth = 0;
+     var dragging = false;
+     var paused = false;
+     var startX = 0;
+     var startOffset = 0;
+     var lastX = 0;
+     var velocity = 0;
+     var resumeTimer = null;
+     var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+     var speed = reduceMotion ? 0 : 0.45;
+
+     function buildStrip() {
+      var keep = x;
+      track.innerHTML = originalHTML;
+      var baseWidth = track.scrollWidth;
+      var need = Math.max(2, Math.ceil((strip.clientWidth * 2) / Math.max(baseWidth, 1)) + 1);
+      var html = originalHTML;
+      var i;
+      for (i = 1; i < need; i++) {
+       html += originalHTML;
+      }
+      track.innerHTML = html + html;
+      setWidth = track.scrollWidth / 2;
+      x = keep;
+      applyStrip();
+     }
+
+     function wrapStrip() {
+      if (!setWidth) return;
+      while (x <= -setWidth) x += setWidth;
+      while (x > 0) x -= setWidth;
+     }
+
+     function applyStrip() {
+      wrapStrip();
+      track.style.transform = 'translate3d(' + x + 'px,0,0)';
+     }
+
+     function tickStrip() {
+      if (!dragging && !paused && speed) {
+       x -= speed;
+       applyStrip();
+      }
+      window.requestAnimationFrame(tickStrip);
+     }
+
+     function endDrag(e) {
+      if (!dragging) return;
+      dragging = false;
+      strip.classList.remove('is-dragging');
+      x += velocity * 10;
+      applyStrip();
+      window.clearTimeout(resumeTimer);
+      resumeTimer = window.setTimeout(function() {
+       if (!dragging) paused = false;
+      }, 350);
+     }
+
+     strip.addEventListener('pointerdown', function(e) {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      dragging = true;
+      paused = true;
+      startX = e.clientX;
+      startOffset = x;
+      lastX = e.clientX;
+      velocity = 0;
+      strip.classList.add('is-dragging');
+      if (strip.setPointerCapture) strip.setPointerCapture(e.pointerId);
+      e.preventDefault();
+     });
+     strip.addEventListener('pointermove', function(e) {
+      if (!dragging) return;
+      velocity = e.clientX - lastX;
+      lastX = e.clientX;
+      x = startOffset + (e.clientX - startX);
+      applyStrip();
+     });
+     strip.addEventListener('pointerup', endDrag);
+     strip.addEventListener('pointercancel', endDrag);
+     strip.addEventListener('pointerenter', function(e) {
+      if (e.pointerType === 'mouse' && !dragging) paused = true;
+     });
+     strip.addEventListener('pointerleave', function(e) {
+      if (e.pointerType === 'mouse' && !dragging) paused = false;
+     });
+
+     buildStrip();
+     window.addEventListener('resize', buildStrip);
+     window.addEventListener('load', buildStrip);
+     window.requestAnimationFrame(tickStrip);
+    }
    })();
   {/literal}
  </script>
@@ -125,7 +323,7 @@
      var root = document.getElementById('ixir-wh-plans');
      if (!root || !window.IntersectionObserver) return;
      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-     if (window.matchMedia && window.matchMedia('(max-width: 992px)').matches) return;
+     if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
      root.classList.add('is-armed');
     })();
    {/literal}
@@ -480,39 +678,7 @@
     </ul>
    </div>
   </div>
-  <ul class="ixir-wh-assurances">
-   <li>
-    <i class="far fa-clock" aria-hidden="true"></i>
-    <strong>15 Gün Para İade</strong>
-    <span>Koşulsuz iade garantisi</span>
-   </li>
-   <li>
-    <i class="fas fa-chart-line" aria-hidden="true"></i>
-    <strong>%99.9 Uptime</strong>
-    <span>Kesintisiz erişilebilirlik</span>
-   </li>
-   <li>
-    <i class="fas fa-headset" aria-hidden="true"></i>
-    <strong>7/24 Teknik Destek</strong>
-    <span>Her zaman yanınızdayız.</span>
-   </li>
-   <li>
-    <i class="fas fa-th-large" aria-hidden="true"></i>
-    <strong>İstanbul Veri Merkezi</strong>
-    <span>TIER III altyapı güvencesi</span>
-   </li>
-  </ul>
  </section>
- <div class="ixir-wh-win">
-  <span class="ixir-wh-win-note">
-   <i class="fab fa-linux" aria-hidden="true"></i>
-   Linux ile ilgilenmiyor musunuz?
-  </span>
-  <a class="ixir-wh-win-cta" href="{$WEB_ROOT}/windows-hosting">
-   <i class="fab fa-windows" aria-hidden="true"></i>
-   <span>Windows Planlarımıza göz atın!</span>
-  </a>
- </div>
  <section class="ixir-wh-story" aria-label="Web hosting özellikleri">
   <script>
    {literal}
@@ -520,7 +686,7 @@
      var root = document.querySelector('.ixir-wh-story');
      if (!root || !window.IntersectionObserver) return;
      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-     if (window.matchMedia && window.matchMedia('(max-width: 992px)').matches) return;
+     if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
      root.classList.add('is-armed');
     })();
    {/literal}
@@ -539,12 +705,15 @@
     </p>
     <a class="ixir-wh-story-cta" href="#ixir-wh-plans">Hemen Satın Al</a>
    </div>
-   <article class="ixir-wh-story-row">
+   <article class="ixir-wh-story-row ixir-wh-story-row--cpanel">
     <div class="ixir-wh-story-visual" aria-hidden="true">
-     <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/cpanel.webp" alt="">
+     <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/cpanel.webp?v=2" alt="">
     </div>
     <div class="ixir-wh-story-copy">
-     <h3 class="ixir-wh-story-title">cPanel Kontrol Paneli</h3>
+     <div class="ixir-wh-story-heading">
+      <span class="ixir-wh-story-badge" aria-hidden="true"><i class="fas fa-th-large"></i></span>
+      <h3 class="ixir-wh-story-title">cPanel Kontrol Paneli</h3>
+     </div>
      <p>Aşina olduğunuz dünyanın en popüler web hosting kontrol panellleri olan <strong>cPanel</strong> ve
       <strong>Plesk</strong> ile web hosting
       hizmetinizi kolay ve zahmetsizce yönetebilirsiniz. <strong>Disk alanı yönetimi</strong>, <strong>e-mail hesap
@@ -556,24 +725,30 @@
      </p>
     </div>
    </article>
-   <article class="ixir-wh-story-row ixir-wh-story-row--flip">
+   <article class="ixir-wh-story-row ixir-wh-story-row--flip ixir-wh-story-row--speed">
     <div class="ixir-wh-story-visual" aria-hidden="true">
-     <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/litespeed.webp" alt="">
+     <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/litespeed.webp?v=2" alt="">
     </div>
     <div class="ixir-wh-story-copy">
-     <h3 class="ixir-wh-story-title">LiteSpeed ve LsCache Desteği</h3>
+     <div class="ixir-wh-story-heading">
+      <span class="ixir-wh-story-badge" aria-hidden="true"><i class="fas fa-bolt"></i></span>
+      <h3 class="ixir-wh-story-title">LiteSpeed ve LsCache Desteği</h3>
+     </div>
      <p>Web sitenizin hız ve yavaş açılma problemi mi var? Sorun değil. <strong>Litespeed</strong> ile apache'den
      <strong>kat ve kat daha hızlı</strong> ve
      <strong>stabil</strong> fiyat/performans dengesinde bir hosting deneyimi yaşatmak üzere tasarlandı.
     </p>
    </div>
   </article>
-  <article class="ixir-wh-story-row">
+  <article class="ixir-wh-story-row ixir-wh-story-row--mail">
    <div class="ixir-wh-story-visual" aria-hidden="true">
-    <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/reputation-macbook.webp" alt="">
+    <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/reputation-macbook.webp?v=2" alt="">
    </div>
    <div class="ixir-wh-story-copy">
-    <h3 class="ixir-wh-story-title">Giden Mail Saygınlığı</h3>
+    <div class="ixir-wh-story-heading">
+     <span class="ixir-wh-story-badge" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
+     <h3 class="ixir-wh-story-title">Giden Mail Saygınlığı</h3>
+    </div>
     <p>Günümüzde e-mail kullanıcılarının gönderdiği e-postaların <strong>%16’sı</strong> sahiplerine hiç ulaşmamaktadır.
      E-Postaların
      ulaşmamasının en önemli sebebi ise <strong>düşük gönderici puanı</strong> ve <strong>düşün IP
@@ -594,7 +769,7 @@
    var root = document.querySelector('.ixir-wh-diff');
    if (!root || !window.IntersectionObserver) return;
    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-   if (window.matchMedia && window.matchMedia('(max-width: 992px)').matches) return;
+   if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
    root.classList.add('is-armed');
   })();
   {/literal}
@@ -663,7 +838,7 @@
    var root = document.querySelector('.ixir-wh-apps');
    if (!root || !window.IntersectionObserver) return;
    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-   if (window.matchMedia && window.matchMedia('(max-width: 992px)').matches) return;
+   if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
    root.classList.add('is-armed');
   })();
   {/literal}
@@ -719,7 +894,7 @@
    var root = document.getElementById('ixir-wh-compare');
    if (!root || !window.IntersectionObserver) return;
    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-   if (window.matchMedia && window.matchMedia('(max-width: 992px)').matches) return;
+   if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
    root.classList.add('is-armed');
   })();
   {/literal}
@@ -922,7 +1097,7 @@
     </div>
     <div class="ixir-wh-table-group">
      <button type="button" class="ixir-wh-table-toggle" aria-expanded="false" aria-controls="ixir-cmp-sql">
-      <span>Veritabanı (SQL) Özellikleri</span><i class="fas fa-chevron-down" aria-hidden="true"></i>
+      <span>Veritabanı Özellikleri(SQL)</span><i class="fas fa-chevron-down" aria-hidden="true"></i>
      </button>
      <div class="ixir-wh-table-rows" id="ixir-cmp-sql" hidden>
       <div class="ixir-wh-table-row">
@@ -1251,7 +1426,7 @@
    var root = document.querySelector('.ixir-wh-faq');
    if (!root || !window.IntersectionObserver) return;
    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-   if (window.matchMedia && window.matchMedia('(max-width: 992px)').matches) return;
+   if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
    root.classList.add('is-armed');
   })();
   {/literal}
@@ -1339,6 +1514,17 @@
  </div>
 </section>
 <section class="ixir-wh-guide" aria-label="Web hosting rehberi">
+ <script>
+  {literal}
+  (function() {
+   var root = document.querySelector('.ixir-wh-guide');
+   if (!root || !window.IntersectionObserver) return;
+   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+   if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+   root.classList.add('is-armed');
+  })();
+  {/literal}
+ </script>
  <div class="container">
   <div class="ixir-wh-guide-list">
    <article class="ixir-wh-guide-item">
@@ -1539,49 +1725,27 @@
    root.classList.remove('is-armed');
    return;
   }
-  var trigger = root.querySelector('.ixir-wh-plans-head') || root;
+  var pending = nodes.length;
   var observer = new IntersectionObserver(function(entries) {
    entries.forEach(function(entry) {
     if (!entry.isIntersecting) return;
-    observer.disconnect();
+    observer.unobserve(entry.target);
     window.requestAnimationFrame(function() {
-     window.requestAnimationFrame(function() {
-      Array.prototype.forEach.call(nodes, function(node) {
-       node.classList.add('is-in');
-      });
-      window.setTimeout(function() {
-       root.classList.remove('is-armed');
-       root.classList.add('is-settled');
-      }, 1300);
-     });
+     entry.target.classList.add('is-in');
     });
-   });
-  }, {
-   threshold: 0.55,
-   rootMargin: '0px 0px -6% 0px'
-  });
-  observer.observe(trigger);
- })();
- (function() {
-  var root = document.getElementById('ixir-wh-plans');
-  var bar = document.querySelector('.ixir-wh-assurances');
-  if (!root || !bar || !root.classList.contains('is-armed') || !window.IntersectionObserver) return;
-  bar.classList.add('is-pending');
-  var observer = new IntersectionObserver(function(entries) {
-   entries.forEach(function(entry) {
-    if (!entry.isIntersecting) return;
-    observer.disconnect();
-    window.requestAnimationFrame(function() {
-     bar.classList.add('is-in');
-    });
+    pending -= 1;
+    if (pending > 0) return;
     window.setTimeout(function() {
-     bar.classList.remove('is-pending');
-    }, 1200);
+     root.classList.remove('is-armed');
+     root.classList.add('is-settled');
+    }, 1300);
    });
   }, {
-   threshold: 0.4
+   threshold: 0.15
   });
-  observer.observe(bar);
+  Array.prototype.forEach.call(nodes, function(node) {
+   observer.observe(node);
+  });
  })();
  (function() {
   var root = document.querySelector('.ixir-wh-diff');
@@ -1591,25 +1755,27 @@
    root.classList.remove('is-armed');
    return;
   }
+  var pending = nodes.length;
   var observer = new IntersectionObserver(function(entries) {
    entries.forEach(function(entry) {
     if (!entry.isIntersecting) return;
-    observer.disconnect();
+    observer.unobserve(entry.target);
     window.requestAnimationFrame(function() {
-     Array.prototype.forEach.call(nodes, function(node) {
-      node.classList.add('is-in');
-     });
-     window.setTimeout(function() {
-      root.classList.remove('is-armed');
-      root.classList.add('is-settled');
-     }, 1100);
+     entry.target.classList.add('is-in');
     });
+    pending -= 1;
+    if (pending > 0) return;
+    window.setTimeout(function() {
+     root.classList.remove('is-armed');
+     root.classList.add('is-settled');
+    }, 1100);
    });
   }, {
-   threshold: 0.35,
-   rootMargin: '0px 0px -8% 0px'
+   threshold: 0.15
   });
-  observer.observe(root);
+  Array.prototype.forEach.call(nodes, function(node) {
+   observer.observe(node);
+  });
  })();
  (function() {
   var root = document.getElementById('ixir-wh-compare');
@@ -1619,26 +1785,27 @@
    root.classList.remove('is-armed');
    return;
   }
-  var trigger = root.querySelector('.ixir-wh-plans-head') || root;
+  var pending = nodes.length;
   var observer = new IntersectionObserver(function(entries) {
    entries.forEach(function(entry) {
     if (!entry.isIntersecting) return;
-    observer.disconnect();
+    observer.unobserve(entry.target);
     window.requestAnimationFrame(function() {
-     Array.prototype.forEach.call(nodes, function(node) {
-      node.classList.add('is-in');
-     });
-     window.setTimeout(function() {
-      root.classList.remove('is-armed');
-      root.classList.add('is-settled');
-     }, 1100);
+     entry.target.classList.add('is-in');
     });
+    pending -= 1;
+    if (pending > 0) return;
+    window.setTimeout(function() {
+     root.classList.remove('is-armed');
+     root.classList.add('is-settled');
+    }, 1100);
    });
   }, {
-   threshold: 0.6,
-   rootMargin: '0px 0px -8% 0px'
+   threshold: 0.15
   });
-  observer.observe(trigger);
+  Array.prototype.forEach.call(nodes, function(node) {
+   observer.observe(node);
+  });
  })();
  (function() {
   var root = document.querySelector('.ixir-wh-faq');
@@ -1648,26 +1815,27 @@
    root.classList.remove('is-armed');
    return;
   }
-  var trigger = root.querySelector('.ixir-wh-plans-head') || root;
+  var pending = nodes.length;
   var observer = new IntersectionObserver(function(entries) {
    entries.forEach(function(entry) {
     if (!entry.isIntersecting) return;
-    observer.disconnect();
+    observer.unobserve(entry.target);
     window.requestAnimationFrame(function() {
-     Array.prototype.forEach.call(nodes, function(node) {
-      node.classList.add('is-in');
-     });
-     window.setTimeout(function() {
-      root.classList.remove('is-armed');
-      root.classList.add('is-settled');
-     }, 1300);
+     entry.target.classList.add('is-in');
     });
+    pending -= 1;
+    if (pending > 0) return;
+    window.setTimeout(function() {
+     root.classList.remove('is-armed');
+     root.classList.add('is-settled');
+    }, 1300);
    });
   }, {
-   threshold: 0.6,
-   rootMargin: '0px 0px -8% 0px'
+   threshold: 0.15
   });
-  observer.observe(trigger);
+  Array.prototype.forEach.call(nodes, function(node) {
+   observer.observe(node);
+  });
  })();
  (function() {
   var root = document.querySelector('.ixir-wh-apps');
@@ -1678,25 +1846,27 @@
    root.classList.remove('is-armed');
    return;
   }
+  var pending = nodes.length;
   var observer = new IntersectionObserver(function(entries) {
    entries.forEach(function(entry) {
     if (!entry.isIntersecting) return;
-    observer.disconnect();
+    observer.unobserve(entry.target);
     window.requestAnimationFrame(function() {
-     Array.prototype.forEach.call(nodes, function(node) {
-      node.classList.add('is-in');
-     });
-     window.setTimeout(function() {
-      root.classList.remove('is-armed');
-      root.classList.add('is-settled');
-     }, 1200);
+     entry.target.classList.add('is-in');
     });
+    pending -= 1;
+    if (pending > 0) return;
+    window.setTimeout(function() {
+     root.classList.remove('is-armed');
+     root.classList.add('is-settled');
+    }, 1200);
    });
   }, {
-   threshold: 0.35,
-   rootMargin: '0px 0px -8% 0px'
+   threshold: 0.15
   });
-  observer.observe(root);
+  Array.prototype.forEach.call(nodes, function(node) {
+   observer.observe(node);
+  });
  })();
  (function() {
   var root = document.querySelector('.ixir-wh-story');
@@ -1722,8 +1892,38 @@
     }, 900);
    });
   }, {
-   threshold: 0.35,
-   rootMargin: '0px 0px -8% 0px'
+   threshold: 0.2,
+   rootMargin: '0px'
+  });
+  Array.prototype.forEach.call(nodes, function(node) {
+   observer.observe(node);
+  });
+ })();
+ (function() {
+  var root = document.querySelector('.ixir-wh-guide');
+  if (!root || !root.classList.contains('is-armed') || !window.IntersectionObserver) return;
+  var nodes = root.querySelectorAll('.ixir-wh-guide-item');
+  if (!nodes.length) {
+   root.classList.remove('is-armed');
+   return;
+  }
+  var pending = nodes.length;
+  var observer = new IntersectionObserver(function(entries) {
+   entries.forEach(function(entry) {
+    if (!entry.isIntersecting) return;
+    observer.unobserve(entry.target);
+    window.requestAnimationFrame(function() {
+     entry.target.classList.add('is-in');
+    });
+    pending -= 1;
+    if (pending > 0) return;
+    window.setTimeout(function() {
+     root.classList.remove('is-armed');
+     root.classList.add('is-settled');
+      }, 900);
+     });
+    }, {
+     threshold: 0.15
     });
     Array.prototype.forEach.call(nodes, function(node) {
      observer.observe(node);
