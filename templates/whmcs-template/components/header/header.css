@@ -305,7 +305,8 @@ body:has(.news-bar:not(.is-hidden)) {
   background: transparent !important;
   line-height: 1.4;
   white-space: nowrap;
-  transition: color 0.45s ease;
+  text-decoration: none !important;
+  transition: color 0.25s ease;
 }
 .ixir-header .ixir-nav > li:not(.nav-cart) > a > i {
   margin-right: 4px;
@@ -316,8 +317,9 @@ body:has(.news-bar:not(.is-hidden)) {
 .ixir-header .ixir-nav > li > a:hover,
 .ixir-header .dropdown:hover > a,
 .ixir-header .dropdown.open > a {
-  color: #1e293b !important;
+  color: #2456c4 !important;
   background: transparent !important;
+  text-decoration: none !important;
 }
 .ixir-header .ixir-nav > li > a:focus {
   color: #1e293b !important;
@@ -327,30 +329,33 @@ body:has(.news-bar:not(.is-hidden)) {
 .ixir-header .ixir-nav > li > a:hover:focus,
 .ixir-header .dropdown:hover > a:focus,
 .ixir-header .dropdown.open > a:focus {
-  color: #1e293b !important;
+  color: #2456c4 !important;
 }
 .ixir-header .ixir-nav .open > a,
 .ixir-header .ixir-nav .open > a:hover,
 .ixir-header .ixir-nav .open > a:focus {
   background: transparent !important;
-  color: #1e293b !important;
+  color: #2456c4 !important;
   border-color: transparent !important;
 }
 .ixir-header .dropdown:not(.nav-cart) > a:before,
 .ixir-header .ixir-nav > li:not(.dropdown):not(.nav-cart) > a:before {
   position: absolute;
   content: "";
-  bottom: 18px;
-  left: 3px;
-  height: 3px;
-  width: calc(100% - 6px);
-  background: #fbd746;
+  top: 16px;
+  bottom: 16px;
+  left: 6px;
+  right: 6px;
+  border-radius: 10px;
+  background: rgba(56, 108, 224, 0.1);
   opacity: 0;
-  transition: opacity 0.45s ease;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
 }
 .ixir-header .dropdown:not(.nav-cart):hover > a:before,
 .ixir-header .dropdown:not(.nav-cart).open > a:before,
-.ixir-header .ixir-nav > li:not(.dropdown):not(.nav-cart) > a:hover:before {
+.ixir-header .ixir-nav > li:not(.dropdown):not(.nav-cart) > a:hover:before,
+.ixir-header .ixir-nav > li:not(.nav-cart) > a:focus-visible:before {
   opacity: 1;
 }
 .ixir-header .ixir-nav > li.dropdown:not(.nav-cart) > a:after {
@@ -435,6 +440,11 @@ body:has(.news-bar:not(.is-hidden)) {
     opacity 0.12s ease,
     transform 0.12s ease,
     visibility 0s linear;
+}
+.ixir-header .ixir-nav:hover > li.dropdown:not(.nav-cart):not(:hover) > a,
+.ixir-header .dropdown:not(.nav-cart).mega-closed > a,
+.ixir-header .dropdown:not(.nav-cart).mega-closed:hover > a {
+  color: #1e293b !important;
 }
 .ixir-header
   .ixir-nav:hover
