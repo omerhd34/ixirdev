@@ -1,4 +1,5 @@
 <div class="news-bar" id="ixirNewsBar">
+ <div class="news-bar-fx" aria-hidden="true"></div>
  <div class="container">
   <div class="news-content">
    <span class="news-badge"><i class="far fa-envelope"></i></span>
