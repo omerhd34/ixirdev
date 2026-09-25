@@ -8,7 +8,7 @@
   margin-top: 0;
   padding: 28px 0;
   scroll-margin-top: 0;
-  background-color: #fff;
+  background-color: #f7f9fc;
   min-height: calc(100vh - var(--ixir-hero-offset, 113px));
   min-height: calc(100dvh - var(--ixir-hero-offset, 113px));
 }
@@ -289,7 +289,7 @@
   padding-top: 28px !important;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .ixir-package {
     padding: 22px;
   }
@@ -302,7 +302,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1023px) {
   .ixir-packages {
     padding: 24px 0;
   }
@@ -324,7 +324,7 @@
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 479px) {
   .ixir-package {
     padding: 16px;
   }
@@ -338,11 +338,19 @@
   display: none;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 767px) {
+  .ixir-packages,
+  .ixir-packages > .container {
+    min-width: 0;
+    max-width: 100%;
+  }
   .ixir-packages-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     gap: 14px;
     overflow-x: auto;
     overscroll-behavior-x: contain;
@@ -442,7 +450,7 @@
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 992px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .ixir-package-copy {
     padding-right: clamp(160px, 28cqi, 240px);
   }
@@ -452,7 +460,27 @@
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .ixir-packages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+  .ixir-packages-grid > .ixir-package {
+    flex: none;
+    width: auto;
+    max-width: 100%;
+    scroll-snap-align: none;
+  }
+  .ixir-packages-nav,
+  .ixir-packages-dots {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   .ixir-packages {
     margin-top: 0;
     padding: 32px 0;
@@ -555,7 +583,7 @@
   transform: translate3d(0, 0, 0);
   pointer-events: auto;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 767px) {
   .ixir-packages.is-armed {
     overflow-x: visible;
   }
@@ -567,7 +595,7 @@
     transition: none;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .ixir-packages.is-armed .ixir-package:nth-child(1) {
     --ixir-enter-delay: 240ms;
   }

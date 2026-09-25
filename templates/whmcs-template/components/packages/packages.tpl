@@ -1,4 +1,4 @@
-<section class="ixir-packages" id="ixir-packages">
+<section class="ixir-packages ixir-slide ixir-slide--right is-slide-on" id="ixir-packages">
  <div class="container">
   <div class="ixir-packages-grid">
    <article class="ixir-package ixir-package--web">
@@ -137,7 +137,7 @@
    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     return;
    }
-   if (window.matchMedia && window.matchMedia('(max-width: 992px)').matches) {
+   if (window.matchMedia && window.matchMedia('(max-width: 767px)').matches) {
     return;
    }
    var cards = root.querySelectorAll('.ixir-package');
@@ -189,8 +189,7 @@
      });
     });
    }, {
-    threshold: 0.22,
-    rootMargin: '0px 0px -6% 0px'
+    threshold: 0.15
    });
    Array.prototype.forEach.call(cards, function(card) {
     observer.observe(card);
@@ -212,7 +211,7 @@
    if (cards.length < 2) {
     return;
    }
-   var mq = window.matchMedia('(max-width: 992px)');
+   var mq = window.matchMedia('(max-width: 767px)');
    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
    var dots = [];
    var active = 0;
