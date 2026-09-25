@@ -417,7 +417,7 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
 
 .ixir-whois-stats {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
   margin: 22px 0 8px;
 }
@@ -494,7 +494,7 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
 
 .ixir-whois-meta {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 14px 24px;
   margin: 22px 0 0;
 }
@@ -662,7 +662,7 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
 
 .ixir-whois-cols {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
 }
 
@@ -792,9 +792,25 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
   }
 }
 
+@media (max-width: 1023px) {
+  .ixir-whois-hero .ixir-hero h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .ixir-whois-hero .ixir-hero-copy > p {
+    font-size: 17px;
+  }
+}
+
 @media (max-width: 768px) {
   .ixir-whois-hero .ixir-hero h1 {
-    font-size: 28px;
+    font-size: 24px;
+    margin: 0 0 12px;
+    line-height: 1.15;
+  }
+  .ixir-whois-hero .ixir-hero-copy > p {
+    font-size: 16px;
+    line-height: 1.35;
   }
 
   .ixir-whois-hero .ixir-dc-button {
@@ -811,7 +827,6 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
   }
 
   .ixir-whois-cols {
-    grid-template-columns: 1fr;
     gap: 14px;
   }
 
@@ -829,7 +844,7 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
 
   .ixir-whois-stats,
   .ixir-whois-meta {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .ixir-whois-raw {
@@ -848,7 +863,7 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   #order-standard_cart.ixir-whois-page .ixir-hero-main {
     max-width: 980px;
   }
@@ -856,6 +871,8 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
   #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-wrap {
     max-width: none;
     row-gap: 10px;
+    --ixir-links-gap: 168px;
+    column-gap: var(--ixir-links-gap);
   }
 
   #order-standard_cart.ixir-whois-page .ixir-hero ul.ixir-domain-links {
@@ -867,23 +884,35 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
   }
 }
 
-@media (min-width: 1441px) {
-  #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-wrap {
-    --ixir-links-gap: 168px;
-    column-gap: var(--ixir-links-gap);
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .ixir-whois-hero .ixir-hero h1 {
+    font-size: 34px;
+  }
+  .ixir-whois-hero .ixir-hero-copy > p {
+    font-size: 18px;
   }
 }
 
-@media (min-width: 1201px) and (max-width: 1440px) {
-  #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-wrap {
-    --ixir-links-gap: 128px;
-    column-gap: var(--ixir-links-gap);
+@media (max-width: 479px) {
+  .ixir-whois-hero .ixir-hero h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  .ixir-whois-hero .ixir-hero-copy > p {
+    font-size: 16px;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-  #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-wrap {
-    --ixir-links-gap: 72px;
-    column-gap: var(--ixir-links-gap);
+@media (min-width: 768px) {
+  .ixir-whois-cols,
+  .ixir-whois-meta,
+  .ixir-whois-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .ixir-whois-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
