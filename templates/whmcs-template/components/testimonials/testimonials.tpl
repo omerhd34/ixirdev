@@ -1,4 +1,4 @@
-<section class="ixir-reviews" id="ixirReviews" aria-label="Müşteri yorumları">
+<section class="ixir-reviews ixir-slide ixir-slide--right is-slide-on" id="ixirReviews" aria-label="Müşteri yorumları">
  <div class="container">
   <header class="ixir-reviews-head">
    <h2>Gerçek Deneyimler, Mutlu Müşteriler!</h2>

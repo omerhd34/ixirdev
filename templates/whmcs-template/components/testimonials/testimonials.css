@@ -4,13 +4,7 @@
   position: relative;
   z-index: 1;
   padding: 52px 0 40px;
-  background:
-    radial-gradient(
-      1200px 280px at 50% -40px,
-      rgba(56, 108, 224, 0.1),
-      transparent 70%
-    ),
-    #f4f7fd;
+  background: #f7f9fc;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
 }
