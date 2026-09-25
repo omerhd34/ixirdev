@@ -11,12 +11,14 @@
  </section>
 {/if}
 
-{if !$ixirIsAuthPage && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $filename != 'ixir-hesabim' && $filename != 'register'}
- {include file="$template/components/help/help.tpl"}
-{/if}
 {if $templatefile == 'homepage'}
  {include file="$template/components/ixir-next.tpl"}
 {/if}
+
+{if !$ixirIsAuthPage && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $filename != 'ixir-hesabim' && $filename != 'register'}
+ {include file="$template/components/help/help.tpl"}
+{/if}
+
 {include file="$template/components/footer/footer.tpl"}
 
 <div id="fullpage-overlay" class="hidden">
