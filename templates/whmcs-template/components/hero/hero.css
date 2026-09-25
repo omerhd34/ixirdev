@@ -174,7 +174,7 @@ section#home-banner.ixir-hero {
   color: #fff;
 }
 .ixir-hero-main > .ixir-hero-label {
-  margin: 34px 0 0;
+  margin: 28px 0 0;
   animation: ixirHeroIn 0.7s ease 0.22s both;
 }
 .ixir-hero-points {
@@ -184,30 +184,30 @@ section#home-banner.ixir-hero {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 20px;
-  row-gap: 14px;
+  row-gap: 10px;
   animation: ixirHeroIn 0.7s ease 0.22s both;
 }
 .ixir-hero-points li {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 1.35;
-  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.4;
+  color: #fff;
 }
 .ixir-hero-points li i {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 1.15em;
+  height: auto;
   flex-shrink: 0;
-  border-radius: 50%;
-  font-size: 12px;
-  color: #fff;
-  background: #386ce0;
+  border-radius: 0;
+  font-size: 13px;
+  color: #386ce0;
+  background: none;
 }
 .ixir-domain-links-wrap {
   display: grid;
@@ -303,10 +303,13 @@ section#home-banner.ixir-hero {
   z-index: 1;
   box-sizing: border-box;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   height: 56px;
   margin-top: auto;
   flex-shrink: 0;
-  overflow: hidden;
+  overflow: clip;
+  contain: paint;
   cursor: grab;
   user-select: none;
   touch-action: pan-y;
@@ -404,7 +407,7 @@ section#home-banner.ixir-hero {
     transform: rotate(-45deg);
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1535px) {
   .ixir-hero-main {
     max-width: 800px;
   }
@@ -414,12 +417,8 @@ section#home-banner.ixir-hero {
   .ixir-hero ul.ixir-domain-links li {
     font-size: 13px;
   }
-  .ixir-domain-links-wrap {
-    --ixir-links-gap: 128px;
-    column-gap: var(--ixir-links-gap);
-  }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1023px) {
   .ixir-hero-photo img {
     object-position: 72% center;
   }
@@ -457,13 +456,13 @@ section#home-banner.ixir-hero {
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) h1 {
     font-size: 32px;
+    margin-bottom: 16px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-copy > p {
     font-size: 17px;
-    max-width: 38rem;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-actions {
-    margin-top: 22px;
+    margin-top: 28px;
     gap: 12px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-btn {
@@ -479,7 +478,7 @@ section#home-banner.ixir-hero {
     .ixir-hero-main
     > .ixir-hero-label {
     display: block;
-    margin: 22px 0 0;
+    margin: 20px 0 0;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points {
     margin-top: 10px;
@@ -503,7 +502,7 @@ section#home-banner.ixir-hero {
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-domain-links-wrap {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     --ixir-links-gap: 16px;
     column-gap: 14px;
     row-gap: 8px;
@@ -511,7 +510,7 @@ section#home-banner.ixir-hero {
     padding-top: 14px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links {
-    display: flex;
+    display: contents;
     width: auto;
     max-width: 100%;
     min-width: 0;
@@ -557,7 +556,7 @@ section#home-banner.ixir-hero {
     );
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   section#home-banner,
   section#home-banner.ixir-hero {
     min-height: calc(100vh - 113px);
@@ -571,7 +570,7 @@ section#home-banner.ixir-hero {
     align-items: flex-start;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .ixir-hero-main {
     max-width: 720px;
   }
@@ -581,28 +580,68 @@ section#home-banner.ixir-hero {
   .ixir-hero-copy > p {
     font-size: 18px;
   }
-  .ixir-domain-links-wrap {
-    --ixir-links-gap: 72px;
-    column-gap: var(--ixir-links-gap);
-  }
   .ixir-hero ul.ixir-domain-links li {
     font-size: 12.5px;
     white-space: normal;
   }
 }
 @media only screen and (max-width: 768px) {
+  section#home-banner.ixir-hero:has(.ixir-hero-points) {
+    height: auto;
+    overflow: visible;
+  }
   section#home-banner.ixir-hero:has(.ixir-hero-points) > .container {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) h1 {
-    font-size: 28px;
+    font-size: 24px;
+    margin: 0 0 12px;
+    line-height: 1.15;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-copy > p {
     font-size: 16px;
+    line-height: 1.35;
+  }
+  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-actions {
+    margin-top: 8px;
+    gap: 8px;
+  }
+  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-btn {
+    min-height: 40px;
+  }
+  section#home-banner.ixir-hero:has(.ixir-hero-points)
+    .ixir-hero-main
+    > .ixir-hero-label {
+    margin-top: 18px;
+  }
+  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 16px;
+    row-gap: 10px;
+    margin-top: 8px;
+  }
+  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points li {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-domain-links-wrap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 14px;
+    padding-top: 10px;
+    column-gap: 16px;
+    row-gap: 10px;
+  }
+  section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links {
+    display: contents;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links li {
     font-size: 13px;
+    line-height: 1.2;
+  }
+  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-strip {
+    height: 40px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -620,44 +659,44 @@ section#home-banner.ixir-hero {
     margin: 0;
   }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 479px) {
   section#home-banner.ixir-hero:has(.ixir-hero-points) > .container {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) h1 {
-    font-size: 26px;
-    margin: 0 0 8px;
+    font-size: 24px;
+    margin: 0 0 10px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-copy > p {
-    font-size: 15px;
+    font-size: 16px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-actions {
     flex-direction: column;
     align-items: stretch;
     margin-top: 14px;
-    gap: 8px;
+    gap: 6px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-btn--primary,
   section#home-banner.ixir-hero:has(.ixir-hero-points)
     .ixir-hero-btn--secondary {
     width: 100%;
     max-width: none;
-    min-height: 44px;
+    min-height: 40px;
     padding: 0 16px;
-    font-size: 15px;
+    font-size: 14px;
     white-space: normal;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points)
     .ixir-hero-main
     > .ixir-hero-label {
-    margin-top: 24px;
+    margin-top: 18px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points {
-    margin-top: 8px;
+    margin-top: 6px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: 16px;
+    row-gap: 8px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points li {
     align-items: center;
@@ -665,29 +704,37 @@ section#home-banner.ixir-hero {
     gap: 8px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points li i {
-    width: 1.15em;
-    height: auto;
     margin-top: 0;
-    border-radius: 0;
-    font-size: 13px;
-    color: #386ce0;
-    background: none;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-domain-links-wrap {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 14px;
-    padding-top: 12px;
-    column-gap: 12px;
+    margin-top: 12px;
+    padding-top: 8px;
+    column-gap: 16px;
     row-gap: 8px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links {
     display: contents;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links li {
-    font-size: 13px;
-    line-height: 1.3;
+    font-size: 12.5px;
+    line-height: 1.2;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-strip {
-    height: 44px;
+    height: 36px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points {
+    column-gap: 32px;
+    row-gap: 12px;
+  }
+  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-domain-links-wrap {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: start;
+    column-gap: 56px;
+    row-gap: 12px;
+    margin-top: 12px;
+    padding-top: 10px;
   }
 }
