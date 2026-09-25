@@ -4,11 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
 
 :root {
-  --ixir-container: 1500px;
   --ixir-gutter: 16px;
+  --ixir-max: 100%;
+  --ixir-container: var(--ixir-max);
+  --ixir-wrap: min(var(--ixir-max), calc(100% - 2 * var(--ixir-gutter)));
 }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   :root {
     --ixir-gutter: 20px;
   }
@@ -18,29 +20,27 @@
     --ixir-gutter: 24px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   :root {
     --ixir-gutter: 32px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   :root {
     --ixir-gutter: 40px;
-  }
-}
-@media (min-width: 1440px) {
-  :root {
-    --ixir-gutter: 64px;
+    --ixir-max: 1200px;
   }
 }
 @media (min-width: 1536px) {
   :root {
-    --ixir-gutter: 80px;
+    --ixir-gutter: 64px;
+    --ixir-max: 1500px;
   }
 }
 @media (min-width: 1920px) {
   :root {
-    --ixir-gutter: 150px;
+    --ixir-gutter: 80px;
+    --ixir-max: 1920px;
   }
 }
 
@@ -61,8 +61,13 @@ h6 {
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden;
   overscroll-behavior-x: none;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: clip;
 }
 body {
   background-color: #fff !important;
@@ -81,10 +86,7 @@ body {
   display: none !important;
 }
 .container {
-  width: min(
-    var(--ixir-container),
-    calc(100% - 2 * var(--ixir-gutter))
-  ) !important;
+  width: var(--ixir-wrap) !important;
   max-width: none !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -344,6 +346,54 @@ div.header-lined h1 {
 .ixir-close:hover i,
 .ixir-close:focus i {
   transform: rotate(90deg);
+}
+
+.ixir-slide {
+  max-width: 100%;
+  transition:
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.56s ease;
+}
+
+.ixir-slide--left.is-slide-on:not(.is-slide-in) {
+  opacity: 0;
+  transform: translate3d(-96px, 0, 0);
+  pointer-events: none;
+}
+
+.ixir-slide--right.is-slide-on:not(.is-slide-in) {
+  opacity: 0;
+  transform: translate3d(96px, 0, 0);
+  pointer-events: none;
+}
+
+.ixir-slide.is-slide-in {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+
+.ixir-slide.is-slide-reset {
+  transition: none;
+}
+
+@media (max-width: 1023px) {
+  .ixir-slide--left.is-slide-on:not(.is-slide-in),
+  .ixir-slide--right.is-slide-on:not(.is-slide-in) {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ixir-slide,
+  .ixir-slide--left.is-slide-on:not(.is-slide-in),
+  .ixir-slide--right.is-slide-on:not(.is-slide-in),
+  .ixir-slide.is-slide-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    pointer-events: auto;
+  }
 }
 
 @media (max-width: 768px) {
