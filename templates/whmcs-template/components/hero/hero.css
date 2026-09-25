@@ -124,6 +124,9 @@ section#home-banner.ixir-hero {
   font-size: 13px;
   transition: transform 0.18s ease;
 }
+.ixir-hero-btn--secondary i {
+  transform: rotate(-45deg);
+}
 .ixir-hero-btn--primary {
   color: #fff !important;
   background-color: #386ce0;
@@ -152,10 +155,12 @@ section#home-banner.ixir-hero {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
 .ixir-hero-btn--primary:hover i,
-.ixir-hero-btn--primary:focus i,
+.ixir-hero-btn--primary:focus i {
+  transform: translateY(3px);
+}
 .ixir-hero-btn--secondary:hover i,
 .ixir-hero-btn--secondary:focus i {
-  transform: translateX(3px);
+  transform: translate(2px, -2px) rotate(-45deg);
 }
 .ixir-hero-label {
   display: block;
@@ -370,11 +375,11 @@ section#home-banner.ixir-hero {
 @keyframes ixirHeroIn {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    translate: 0 16px;
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    translate: 0 0;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -390,10 +395,13 @@ section#home-banner.ixir-hero {
   .ixir-hero-btn--primary:hover i,
   .ixir-hero-btn--primary:focus i,
   .ixir-hero-btn--secondary:hover,
-  .ixir-hero-btn--secondary:focus,
+  .ixir-hero-btn--secondary:focus {
+    transform: none;
+  }
+  .ixir-hero-btn--secondary i,
   .ixir-hero-btn--secondary:hover i,
   .ixir-hero-btn--secondary:focus i {
-    transform: none;
+    transform: rotate(-45deg);
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1440px) {

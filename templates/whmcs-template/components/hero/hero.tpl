@@ -11,7 +11,7 @@
    </div>
    <div class="ixir-hero-actions">
     <a href="#ixir-packages" class="ixir-hero-btn ixir-hero-btn--primary">
-     Hosting Paketlerini İncele <i class="fas fa-arrow-right" aria-hidden="true"></i>
+     Hosting Paketlerini İncele <i class="fas fa-arrow-down" aria-hidden="true"></i>
     </a>
     <a href="{$WEB_ROOT}/kurumsal-mail-hosting" class="ixir-hero-btn ixir-hero-btn--secondary">
      E-posta Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i>
