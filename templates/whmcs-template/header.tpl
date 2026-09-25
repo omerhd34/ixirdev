@@ -2,6 +2,69 @@
 <html lang="tr">
 
 <head>
+ <script>
+  {literal}
+   (function() {
+    var key = 'ixirScroll';
+
+    function readY() {
+     return window.pageYOffset || document.documentElement.scrollTop || (document.body && document.body.scrollTop) || 0;
+    }
+
+    function save() {
+     try {
+      sessionStorage.setItem(key, JSON.stringify({
+       u: location.pathname + location.search + location.hash,
+       y: readY()
+      }));
+     } catch (e) {}
+    }
+
+    function navType() {
+     var list = performance.getEntriesByType && performance.getEntriesByType('navigation');
+     if (list && list[0] && list[0].type) return list[0].type;
+     if (performance.navigation && performance.navigation.type === 1) return 'reload';
+     return 'navigate';
+    }
+    var saved = null;
+    try {
+     saved = JSON.parse(sessionStorage.getItem(key) || 'null');
+    } catch (e) {}
+    var here = location.pathname + location.search + location.hash;
+    if (navType() === 'reload' && saved && saved.u === here && saved.y > 8) {
+     var target = saved.y;
+
+     function restore() {
+      var height = Math.max(document.documentElement.scrollHeight, document.body ? document.body.scrollHeight : 0);
+      var max = Math.max(0, height - window.innerHeight);
+      if (max + 8 < target && document.readyState !== 'complete') return;
+      window.scrollTo(0, Math.min(target, max));
+     }
+     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+     restore();
+     document.addEventListener('DOMContentLoaded', restore);
+     window.addEventListener('load', function() {
+      restore();
+      window.setTimeout(restore, 60);
+      window.setTimeout(function() {
+       restore();
+       if ('scrollRestoration' in history) history.scrollRestoration = 'auto';
+      }, 400);
+     });
+    }
+    var scrollTimer = 0;
+    window.addEventListener('scroll', function() {
+     if (scrollTimer) return;
+     scrollTimer = window.setTimeout(function() {
+      scrollTimer = 0;
+      save();
+     }, 150);
+    }, { passive: true });
+    window.addEventListener('pagehide', save);
+    window.addEventListener('beforeunload', save);
+   })();
+  {/literal}
+ </script>
  <meta charset="{$charset}" />
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +109,7 @@
    --ixir-scroll-track: #101624;
    --ixir-hero-offset: 113px;
    height: auto !important;
-   overflow-x: hidden !important;
+   overflow-x: clip !important;
    overflow-y: scroll !important;
    scrollbar-width: auto !important;
    scrollbar-color: #4d7ef0 var(--ixir-scroll-track) !important;
@@ -54,7 +117,8 @@
 
   body {
    height: auto !important;
-   overflow: visible !important;
+   overflow-x: clip !important;
+   overflow-y: visible !important;
    display: block !important;
   }
 
@@ -144,7 +208,7 @@
    --ixir-hero-offset: 161px;
   }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1023px) {
    html {
     --ixir-hero-offset: 96px;
    }
@@ -166,7 +230,7 @@
    height: 113px;
   }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1023px) {
    body.ixir-auth-page .ixir-header-spacer {
     height: 96px;
    }
