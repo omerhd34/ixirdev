@@ -521,45 +521,88 @@
    </div>
   </section>
 
-  <section class="ixir-domain-faq">
+  <section class="ixir-wh-faq" aria-labelledby="ixir-domain-faq-title">
    <div class="container">
-    <h2>Sıkça Sorulan Sorular</h2>
-    <p class="ixir-domain-faq-lead">Alan adı tescil ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
-    <div class="ixir-domain-faq-list">
-     <details>
-      <summary>Alan adı tescili hemen gerçekleşiyor mu?</summary>
-      <p>Tabi, alan adınız ödemeniz ardından anında tescil edilecektir.</p>
-     </details>
-     <details>
-      <summary>Neden İxirhost’dan alan adı almalıyım?</summary>
-      <p>Bir çok ücretsiz özellik ve maliyet fiyatına yakın fiyatlar ve en önemlisi 17 yıllık sektör tecrübemiz ile
-       güvenle bizi tercih edebilirsiniz.</p>
-     </details>
-     <details>
-      <summary>Alt isim sunucu oluşturabilir miyim?</summary>
-      <p>Tabi müşteri panelinizden bir kaç tıklama ile yapabilirsiniz.</p>
-     </details>
-     <details>
-      <summary>Alan adıyla birlikte hangi servisler ücretsiz?</summary>
-      <p>Whois gizleme, dns yönetimi, url yönlendirme, e-posta yönlendirme gibi servisler alan adı alan müşterilerimize
-       ücretsiz sağlanmaktadır.<br>*Bu servisler yalnızca .com, .net, .org gibi alan adlarını kapsamaktadır. .tr
-       uzantılarda kullanılamamaktadır.</p>
-     </details>
-     <details>
-      <summary>Hatalı domain (com/net/org) tescil ettim ne yapabilirim?</summary>
-      <p>Aynı gün içerisinde yarı bedel kesilerek kalan tutar iade edilebilir. (Yalnızca com/net/org domainleri
-       kapsamaktadır.)</p>
-     </details>
-     <details>
-      <summary>Domanin Tesciline İptal ve İade Mevcut mu?</summary>
-      <p>Hayır, domain tescili registrar (alan adı yazmanı) tarafından tescili ve kayıdı gerçekleştirildiğinden, tescil
-       edilmiş domainin hiçbir firmada olmadığı gibi bizde de iptal ve iadesi mümkün değildir. Dolayısıyla alan adınız
-       tescil dönemi boyunca açık kalacaktır. Tescil edilemeyen, tescile uygun olmayan domainlerin iadesi ise yalnızca
-       müşteri hesabınıza bakiye ekleme yoluyla iadesi gerçekleştirilmektedir.</p>
-     </details>
+    <header class="ixir-wh-plans-head">
+     <h2 id="ixir-domain-faq-title">Sıkça Sorulan Sorular</h2>
+     <p>Alan adı tescil ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
+    </header>
+    <div class="ixir-wh-faq-list">
+     <div class="ixir-wh-faq-item">
+      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+        aria-hidden="true"></i>Alan adı tescili hemen gerçekleşiyor mu?</button>
+      <div class="ixir-wh-faq-a">
+       <p>Alan adınız ödemenizin ardından <strong>anında tescil</strong> edilecektir.</p>
+      </div>
+     </div>
+     <div class="ixir-wh-faq-item">
+      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+        aria-hidden="true"></i>Neden İXİRHOST'dan alan adı almalıyım?</button>
+      <div class="ixir-wh-faq-a">
+       <p>Birçok <strong>ücretsiz özellik</strong> ve maliyet fiyatına yakın fiyatlar, en önemlisi <strong>17 yıllık
+         sektör tecrübemiz</strong> ile
+        güvenle bizi tercih edebilirsiniz.</p>
+      </div>
+     </div>
+     <div class="ixir-wh-faq-item">
+      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+        aria-hidden="true"></i>Alt isim sunucu oluşturabilir miyim?</button>
+      <div class="ixir-wh-faq-a">
+       <p>Evet, <strong>müşteri panelinizden</strong> birkaç tıklama ile yapabilirsiniz.</p>
+      </div>
+     </div>
+     <div class="ixir-wh-faq-item">
+      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+        aria-hidden="true"></i>Alan adıyla birlikte hangi servisler ücretsiz?</button>
+      <div class="ixir-wh-faq-a">
+       <p><strong>Whois gizleme</strong>, <strong>DNS yönetimi</strong>, <strong>URL yönlendirme</strong> ve
+        <strong>e-posta yönlendirme</strong> alan adı alan müşterilerimize
+        <strong>ücretsiz</strong> sağlanmaktadır.<br>*Bu servisler yalnızca <strong>.com, .net, .org</strong> gibi alan
+        adlarını kapsamaktadır. <strong>.tr
+         uzantılarda kullanılamamaktadır</strong>.
+       </p>
+      </div>
+     </div>
+     <div class="ixir-wh-faq-item">
+      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+        aria-hidden="true"></i>Hatalı domain (com/net/org) tescil ettim ne yapabilirim?</button>
+      <div class="ixir-wh-faq-a">
+       <p><strong>Aynı gün</strong> içerisinde <strong>yarı bedel</strong> kesilerek kalan tutar iade edilebilir.
+        Yalnızca
+        <strong>com/net/org</strong> alan adlarını
+        kapsamaktadır.
+       </p>
+      </div>
+     </div>
+     <div class="ixir-wh-faq-item">
+      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+        aria-hidden="true"></i>Domanin Tesciline İptal ve İade Mevcut mu?</button>
+      <div class="ixir-wh-faq-a">
+       <p>Hayır. Alan adı, kayıt kuruluşu tarafından tescil edildiği için tescil edilmiş bir alan adının bizde de
+        <strong>iptal ve iadesi mümkün değildir</strong>. Alan adınız tescil dönemi boyunca açık kalır. Tescil
+        edilemeyen
+        alan adlarının iadesi ise yalnızca <strong>müşteri hesabınıza bakiye</strong> eklenerek yapılır.
+       </p>
+      </div>
+     </div>
     </div>
    </div>
   </section>
+  <script>
+   {literal}
+    (function() {
+     var list = document.querySelector('.ixir-wh-faq-list');
+     if (!list) return;
+     Array.prototype.forEach.call(list.querySelectorAll('.ixir-wh-faq-q'), function(btn) {
+      btn.addEventListener('click', function() {
+       var item = btn.parentNode;
+       var open = item.classList.toggle('is-open');
+       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+     });
+    })();
+   {/literal}
+  </script>
  </div>
 </div>
 
@@ -1480,17 +1523,17 @@
   });
 
   {if $lookupTerm && !$invalid}
-   ixirShowResults();
-   ixirRunDomainSearch();
-   jQuery(function() {
-    ixirScheduleScrollPastHero();
-   });
+  ixirShowResults();
+  ixirRunDomainSearch();
+  jQuery(function() {
+   ixirScheduleScrollPastHero();
+  });
   {/if}
   {if $invalid}
-   ixirShowResults();
-   jQuery('#primaryLookupSearching').hide();
-   jQuery('#primaryLookupResult').removeClass('w-hidden').show().children().hide();
-   jQuery('.domain-invalid').show();
+  ixirShowResults();
+  jQuery('#primaryLookupSearching').hide();
+  jQuery('#primaryLookupResult').removeClass('w-hidden').show().children().hide();
+  jQuery('.domain-invalid').show();
   {/if}
 
   (function initIxirHeroFill() {
