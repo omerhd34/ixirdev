@@ -31,7 +31,7 @@
      <img src="{$WEB_ROOT}/templates/{$template}/img/trust/money.svg" alt="">
     </div>
     <h3>Ücret iadesi</h3>
-    <p>Web Hosting paketlerimizde 15 gün koşulsuz iade sayesinde çekinmeden deneyin.</p>
+    <p>Linux Hosting paketlerimizde 15 gün koşulsuz iade sayesinde çekinmeden deneyin.</p>
    </article>
    <article class="ixir-trust-item">
     <div class="ixir-trust-icon" aria-hidden="true">

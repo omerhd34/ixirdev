@@ -7,7 +7,7 @@
     </div>
     <header class="ixir-package-copy">
      <span class="ixir-package-kicker"><i class="far fa-hdd" aria-hidden="true"></i>Hosting</span>
-     <h2 class="ixir-package-title">Web Hosting</h2>
+     <h2 class="ixir-package-title">Linux Hosting</h2>
      <p class="ixir-package-desc">Siteleriniz için hızlı, güvenilir ve ekonomik başlangıç</p>
     </header>
     <ul class="ixir-package-features">
@@ -34,7 +34,7 @@
       </div>
      </div>
      <div class="ixir-package-order">
-      <a href="{$WEB_ROOT}/webhosting" class="btn btn-primary">İncele <i class="fas fa-arrow-right"
+      <a href="{$WEB_ROOT}/linux-hosting" class="btn btn-primary">İncele <i class="fas fa-arrow-right"
         aria-hidden="true"></i></a>
      </div>
     </footer>

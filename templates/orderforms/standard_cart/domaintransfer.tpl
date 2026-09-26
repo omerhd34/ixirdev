@@ -122,8 +122,8 @@
       </ul>
       <ul class="ixir-domain-links">
        <li>
-        <a href="{$WEB_ROOT}/webhosting" title="Web Hosting">
-         <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Web Hosting</span>
+        <a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting">
+         <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Linux Hosting</span>
         </a>
        </li>
        <li>
@@ -397,6 +397,8 @@
        <tbody id="ixirDomainPriceBody">
         {if $ixirDomainPrices}
 
+
+
       {foreach $ixirDomainPrices as $price}
           <tr data-tld="{$price.tld|escape:'html'}" data-period="{$price.period|escape:'html'}"
            data-register="{$price.registerNum}" data-transfer="{$price.transferNum}" data-renew="{$price.renewNum}">
@@ -407,7 +409,11 @@
            <td>{$price.renew}</td>
           </tr>
 
+
+
       {/foreach}
+
+
 
      {/if}
        </tbody>
@@ -499,6 +505,8 @@
        });
       });
      })();
+
+
 
 
 

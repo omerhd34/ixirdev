@@ -13,7 +13,7 @@
     <div class="ixir-footer-box">
      <h3>Hosting</h3>
      <ul>
-      <li><a href="{$WEB_ROOT}/webhosting" title="Web Hosting">Web Hosting</a></li>
+      <li><a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting">Linux Hosting</a></li>
       <li><a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting">Windows Hosting</a></li>
       <li><a href="{$WEB_ROOT}/wordpress-hosting" title="Wordpress Hosting">Wordpress Hosting</a></li>
       <li><a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">Kurumsal Mail Hosting</a></li>

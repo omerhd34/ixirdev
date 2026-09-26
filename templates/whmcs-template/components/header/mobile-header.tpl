@@ -138,10 +138,10 @@
     </button>
     <div class="ixir-mobile-sub">
      <div class="ixir-mobile-sub-inner">
-      <a href="{$WEB_ROOT}/webhosting">
+      <a href="{$WEB_ROOT}/linux-hosting">
        <i class="fas fa-infinity"></i>
        <span>
-        Web Hosting
+        Linux Hosting
         <small>NVMe, LiteSpeed, ücretsiz SSL</small>
        </span>
       </a>

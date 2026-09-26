@@ -7,8 +7,8 @@ if (!defined('WHMCS')) {
 function ixir_product_pages()
 {
     return [
-        'webhosting' => [
-            'title' => 'Web Hosting',
+        'linux-hosting' => [
+            'title' => 'Linux Hosting',
             'tagline' => 'NVMe, LiteSpeed, ücretsiz SSL ve cPanel ile Linux web hosting.',
             'icon' => 'fas fa-infinity',
             'groupNames' => ['Web Hosting', 'Linux Hosting', 'Hosting'],

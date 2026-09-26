@@ -1,18 +1,18 @@
-{if $ixirPageSlug == 'webhosting'}
- <section id="home-banner" class="ixir-hero ixir-hero--webhosting" aria-label="Web Hosting">
+{if $ixirPageSlug == 'linux-hosting'}
+ <section id="home-banner" class="ixir-hero ixir-hero--webhosting" aria-label="Linux Hosting">
   <picture class="ixir-hero-photo">
    <img src="{$WEB_ROOT}/templates/{$template}/img/bg6.webp?v=r1" alt="">
   </picture>
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
-     <h1>Web Hosting</h1>
+     <h1>Linux Hosting</h1>
      <p>NVMe SSD, LiteSpeed ve cPanel ile güçlü, hızlı ve kesintisiz bir web hosting deneyimi yaşayın. Linux yerine
       Windows tercih ediyorsanız planlarımıza göz atabilirsiniz.</p>
     </div>
     <div class="ixir-hero-actions">
      <a href="#ixir-wh-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-wh-plans-btn">
-      Web Hosting Paketleri <i class="fas fa-arrow-down" aria-hidden="true"></i>
+      Linux Hosting Paketleri <i class="fas fa-arrow-down" aria-hidden="true"></i>
      </a>
      <a href="{$WEB_ROOT}/windows-hosting" class="ixir-hero-btn ixir-hero-btn--secondary">
       Windows Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i>
@@ -71,8 +71,8 @@
      </ul>
      <ul class="ixir-domain-links">
       <li>
-       <a href="{$WEB_ROOT}/webhosting" title="Web Hosting">
-        <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Web Hosting</span>
+       <a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting">
+        <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Linux Hosting</span>
        </a>
       </li>
       <li>
@@ -330,7 +330,7 @@
   </script>
   <div class="container">
    <header class="ixir-wh-plans-head">
-    <h2 id="ixir-wh-plans-title">Web Hosting Paketleri</h2>
+    <h2 id="ixir-wh-plans-title">Linux Hosting Paketleri</h2>
     <p>İhtiyacınıza uygun paketi seçin, sitenizi hemen yayına alın.</p>
    </header>
    <div class="ixir-wh-grid">
@@ -694,7 +694,7 @@
   <div class="container">
    <div class="ixir-wh-story-intro">
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
-    <h2>Web Hosting Nedir?</h2>
+    <h2>Linux Hosting Nedir?</h2>
     <p><strong>Web hosting hizmeti</strong>, web sitenizi veya uygulamalarınızı web üzerine yayınlayabilmenizi sağlayan
      bir hizmettir.
      Hosting hizmetini üzerine bina inşa edeceğiniz <strong>arsa</strong> gibi düşünebilirsiniz. Dijital bu arsayı web
@@ -902,7 +902,7 @@
  <div class="container">
   <header class="ixir-wh-plans-head">
    <h2 id="ixir-wh-compare-title">Özellik Karşılaştırma Tablosu</h2>
-   <p>Web Hosting paketlerimiz arasından size en uygun olan seçimi yapın</p>
+   <p>Linux Hosting paketlerimiz arasından size en uygun olan seçimi yapın</p>
   </header>
   <div class="ixir-wh-table-scroll">
    <div class="ixir-wh-table">
@@ -992,7 +992,7 @@
     </div>
     <div class="ixir-wh-table-group">
      <button type="button" class="ixir-wh-table-toggle" aria-expanded="false" aria-controls="ixir-cmp-web">
-      <span>Web Hosting Özellikleri</span><i class="fas fa-chevron-down" aria-hidden="true"></i>
+      <span>Linux Hosting Özellikleri</span><i class="fas fa-chevron-down" aria-hidden="true"></i>
      </button>
      <div class="ixir-wh-table-rows" id="ixir-cmp-web" hidden>
       <div class="ixir-wh-table-row">
@@ -1434,7 +1434,7 @@
  <div class="container">
   <header class="ixir-wh-plans-head">
    <h2 id="ixir-wh-faq-title">Sıkça Sorulan Sorular</h2>
-   <p>Web Hosting paketlerimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
+   <p>Linux Hosting paketlerimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
   </header>
   <div class="ixir-wh-faq-list">
    <div class="ixir-wh-faq-item">
@@ -1545,7 +1545,7 @@
   <div class="ixir-wh-guide-list">
    <article class="ixir-wh-guide-item">
     <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-server"></i></span>
-    <h2>Web Hosting Altyapısı Neden Bu Kadar Önemlidir?</h2>
+    <h2>Linux Hosting Altyapısı Neden Bu Kadar Önemlidir?</h2>
     <p>Web sitenizin yükleme hızı yalnızca kodunuza ya da tasarımınıza değil, barındırıldığı sunucunun altyapısına
      doğrudan bağlıdır. Geleneksel HDD disk sistemlerine kıyasla %100 NVMe SSD altyapısı, dosya okuma ve yazma hızını 40
      kata kadar artırarak veritabanı sorgularını anlık tamamlar, sayfa yükleme sürelerini minimuma indirir. ixirhost web
@@ -1556,7 +1556,7 @@
     </article>
     <article class="ixir-wh-guide-item">
      <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
-     <h2>Hangi Web Hosting Paketi Size Uygun?</h2>
+     <h2>Hangi Linux Hosting Paketi Size Uygun?</h2>
      <p>Paket seçimi, sitenizin trafiğine, barındırmak istediğiniz alan adı sayısına ve kaynak ihtiyacınıza göre
       şekillenmelidir. Tek bir web sitesi yayınlayan ve yeni başlayanlar için <strong>Budget planı</strong> bir başlangıç
       noktasıdır. Birden fazla alan adını tek panelde yönetmek isteyenler <strong>Economy veya Professional</strong>
@@ -1567,7 +1567,7 @@
    </article>
    <article class="ixir-wh-guide-item">
     <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
-    <h2>İXİRHOST ile Türkiye'de Güvenilir Web Hosting</h2>
+    <h2>İXİRHOST ile Türkiye'de Güvenilir Linux Hosting</h2>
      <p>ixirhost, tüm web hosting hizmetlerini İstanbul'daki TIER III+ veri merkezinden, 3 operatör yedekli ağ
      altyapısıyla sunmaktadır. Bu sayede %99.9 uptime garantisiyle web siteniz her zaman erişilebilir kalır. Satın alma
      tarihinden itibaren 15 gün boyunca geçerli olan koşulsuz para iade garantisi sayesinde hizmeti risksiz deneyimleme

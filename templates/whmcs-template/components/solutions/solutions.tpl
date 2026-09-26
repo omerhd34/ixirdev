@@ -9,13 +9,13 @@
    <article class="ixir-solutions-card">
     <div class="ixir-solutions-top">
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-server"></i></span>
-     <h3>Web Hosting &amp; WordPress Hosting</h3>
+     <h3>Linux Hosting &amp; WordPress Hosting</h3>
     </div>
     <p>Litespeed Web Server, NVMe SSD diskler ve Imunify360 WAF güvenliğiyle donatılmış hosting altyapımız; kişisel
      bloglardan kurumsal sitelere kadar her ölçekte hız ve güvenlik sunar. AccelerateWP ve Litespeed Cache desteğiyle
      WordPress siteniz 10 kata kadar daha hızlı çalışır.</p>
     <div class="ixir-solutions-links">
-     <a href="{$WEB_ROOT}/webhosting">Web Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+     <a href="{$WEB_ROOT}/linux-hosting">Linux Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
      <a href="{$WEB_ROOT}/wordpress-hosting">WordPress Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
     </div>
    </article>

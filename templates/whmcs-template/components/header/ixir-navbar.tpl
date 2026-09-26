@@ -53,10 +53,10 @@
         "width" => "col-md-4",
         "items" => [
           [
-            "href" => "/webhosting",
-            "title" => "Web Hosting",
-            "icon" => "fas fa-infinity",
-            "label" => "Web Hosting",
+            "href" => "/linux-hosting",
+            "title" => "Linux Hosting",
+            "icon" => "fab fa-linux",
+            "label" => "Linux Hosting",
             "desc" => "70.47 TL 'den başlayan fiyatlarla Nvme, Litespeed, Ücretsiz SSL ve Cpanel Linux Web hosting hizmeti"
           ],
           [

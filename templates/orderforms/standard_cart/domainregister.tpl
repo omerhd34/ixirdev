@@ -143,8 +143,8 @@
       </ul>
       <ul class="ixir-domain-links">
        <li>
-        <a href="{$WEB_ROOT}/webhosting" title="Web Hosting">
-         <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Web Hosting</span>
+        <a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting">
+         <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Linux Hosting</span>
         </a>
        </li>
        <li>
