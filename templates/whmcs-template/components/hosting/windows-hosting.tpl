@@ -1019,10 +1019,10 @@
        </div>
        <div class="ixir-wh-table-row">
         <div>MySQL Uzak Erişim</div>
-        <div><i class="fas fa-check" aria-label="Yok"></i></div>
-        <div><i class="fas fa-check" aria-label="Yok"></i></div>
-        <div class="is-best"><i class="fas fa-check" aria-label="Yok"></i></div>
-        <div><i class="fas fa-check" aria-label="Yok"></i></div>
+        <div><i class="fas fa-times" aria-label="Yok"></i></div>
+        <div><i class="fas fa-times" aria-label="Yok"></i></div>
+        <div class="is-best"><i class="fas fa-times" aria-label="Yok"></i></div>
+        <div><i class="fas fa-times" aria-label="Yok"></i></div>
        </div>
        <div class="ixir-wh-table-row">
         <div>MsSQL Uzak Erişim</div>
