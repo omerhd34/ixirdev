@@ -1,4 +1,4 @@
-{include file="$template/components/hero/hero.tpl"}
+{include file="$template/components/homepage-hero/homepage-hero.tpl"}
 {include file="$template/components/packages/packages.tpl"}
 {include file="$template/components/promo-carousel/promo-carousel.tpl"}
 {include file="$template/components/trust/trust.tpl"}

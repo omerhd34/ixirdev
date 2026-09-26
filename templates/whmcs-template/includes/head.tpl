@@ -19,7 +19,8 @@
  <link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}-r12" rel="stylesheet">
 {/if}
 {if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting'))}
- <link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}-r49" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/homepage-hero/homepage-hero.css?v={$versionHash}-r49"
+  rel="stylesheet">
 {/if}
 {if $ixirDomainSearchPage || $ixirDomainTransferPage || $templatefile == 'whois-sorgulama'}
  <link href="{$WEB_ROOT}/templates/{$template}/css/domain-search.css?v={$versionHash}-r102" rel="stylesheet">
