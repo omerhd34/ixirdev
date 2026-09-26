@@ -58,6 +58,7 @@ section#home-banner.ixir-hero {
   align-items: flex-start;
 }
 .ixir-hero-main {
+  --ixir-hero-label-gap: 10px;
   width: 100%;
   max-width: 860px;
 }
@@ -179,7 +180,7 @@ section#home-banner.ixir-hero {
 }
 .ixir-hero-points {
   list-style: none;
-  margin: 10px 0 0;
+  margin: var(--ixir-hero-label-gap, 10px) 0 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -217,7 +218,8 @@ section#home-banner.ixir-hero {
   align-items: start;
   --ixir-links-gap: 168px;
   column-gap: var(--ixir-links-gap);
-  row-gap: 10px;
+  --ixir-links-row-gap: 10px;
+  row-gap: var(--ixir-links-row-gap);
   width: 100%;
   max-width: 100%;
   margin-top: 36px;
@@ -236,6 +238,11 @@ section#home-banner.ixir-hero {
   line-height: 1.4;
   text-transform: uppercase;
   color: #fff;
+}
+.ixir-domain-links-wrap > .ixir-hero-label {
+  margin-bottom: calc(
+    var(--ixir-hero-label-gap, 14px) - var(--ixir-links-row-gap, 10px)
+  );
 }
 .ixir-hero ul.ixir-domain-links {
   list-style: none;
@@ -452,6 +459,7 @@ section#home-banner.ixir-hero {
     box-sizing: border-box;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-main {
+    --ixir-hero-label-gap: 10px;
     max-width: 100%;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) h1 {
@@ -481,7 +489,6 @@ section#home-banner.ixir-hero {
     margin: 20px 0 0;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points {
-    margin-top: 10px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 16px;
     row-gap: 12px;
@@ -505,7 +512,7 @@ section#home-banner.ixir-hero {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     --ixir-links-gap: 16px;
     column-gap: 14px;
-    row-gap: 8px;
+    --ixir-links-row-gap: 8px;
     margin-top: 18px;
     padding-top: 14px;
   }
@@ -616,11 +623,13 @@ section#home-banner.ixir-hero {
     > .ixir-hero-label {
     margin-top: 18px;
   }
+  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-main {
+    --ixir-hero-label-gap: 8px;
+  }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 16px;
     row-gap: 10px;
-    margin-top: 8px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points li {
     font-size: 13px;
@@ -631,7 +640,7 @@ section#home-banner.ixir-hero {
     margin-top: 14px;
     padding-top: 10px;
     column-gap: 16px;
-    row-gap: 10px;
+    --ixir-links-row-gap: 10px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links {
     display: contents;
@@ -692,8 +701,10 @@ section#home-banner.ixir-hero {
     > .ixir-hero-label {
     margin-top: 18px;
   }
+  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-main {
+    --ixir-hero-label-gap: 6px;
+  }
   section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points {
-    margin-top: 6px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 16px;
     row-gap: 8px;
@@ -711,7 +722,7 @@ section#home-banner.ixir-hero {
     margin-top: 12px;
     padding-top: 8px;
     column-gap: 16px;
-    row-gap: 8px;
+    --ixir-links-row-gap: 8px;
   }
   section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links {
     display: contents;
@@ -733,7 +744,7 @@ section#home-banner.ixir-hero {
     grid-template-columns: repeat(2, max-content);
     justify-content: start;
     column-gap: 56px;
-    row-gap: 12px;
+    --ixir-links-row-gap: 12px;
     margin-top: 12px;
     padding-top: 10px;
   }
