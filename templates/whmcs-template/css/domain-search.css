@@ -1249,8 +1249,7 @@
 }
 
 .ixir-domain-features h2,
-.ixir-domain-prices h2,
-.ixir-domain-faq h2 {
+.ixir-domain-prices h2 {
   margin: 0 0 8px;
   color: #2c3345;
   font-size: 28px;
@@ -1259,8 +1258,7 @@
 }
 
 .ixir-domain-features-lead,
-.ixir-domain-prices-lead,
-.ixir-domain-faq-lead {
+.ixir-domain-prices-lead {
   margin: 0 0 36px;
   color: #8b93a3;
   font-size: 16px;
@@ -1539,70 +1537,132 @@
   cursor: default;
 }
 
-.ixir-domain-faq {
-  padding: 36px 0 64px;
-  background: #f7f9fc;
+#order-standard_cart .ixir-wh-faq {
+  padding: 56px 0 48px;
+  background: #1c2433;
 }
 
-.ixir-domain-faq-list {
+#order-standard_cart .ixir-wh-faq .ixir-wh-plans-head {
+  max-width: 640px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+#order-standard_cart .ixir-wh-faq .ixir-wh-plans-head h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: clamp(26px, 2.2vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+#order-standard_cart .ixir-wh-faq .ixir-wh-plans-head p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#order-standard_cart .ixir-wh-faq-list {
   display: grid;
   gap: 12px;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-.ixir-domain-faq-list details {
+#order-standard_cart .ixir-wh-faq-item {
+  border: 1px solid #e4e7ee;
+  border-radius: 6px;
   background: #fff;
-  border: 1px solid #e6e8ee;
-  border-radius: 10px;
-  overflow: hidden;
 }
 
-.ixir-domain-faq-list summary {
+#order-standard_cart .ixir-wh-faq-q {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 16px 18px;
-  color: #334155;
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+  padding: 14px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  box-shadow: none;
+  color: #3d4453;
+  font-family: inherit;
   font-size: 15px;
   font-weight: 600;
+  line-height: 1.4;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: 0;
   cursor: pointer;
-  list-style: none;
 }
 
-.ixir-domain-faq-list summary::-webkit-details-marker,
-.ixir-domain-faq-list summary::marker {
-  display: none;
-  content: none;
+#order-standard_cart .ixir-wh-faq-q:hover,
+#order-standard_cart .ixir-wh-faq-q:focus {
+  background: transparent;
+  color: #3d4453;
+  outline: none;
+  box-shadow: none;
 }
 
-.ixir-domain-faq-list summary::after {
-  content: "";
-  width: 8px;
-  height: 8px;
+#order-standard_cart .ixir-wh-faq-q i {
   flex-shrink: 0;
-  border-right: 2px solid #94a3b8;
-  border-bottom: 2px solid #94a3b8;
-  transform: translateY(-2px) rotate(45deg);
+  width: 14px;
+  color: #9aa1ab;
+  font-size: 12px;
+  text-align: center;
   transition:
-    transform 0.2s ease,
-    border-color 0.2s ease;
+    transform 0.4s ease,
+    color 0.4s ease;
 }
 
-.ixir-domain-faq-list details[open] summary {
-  color: #386ce0;
+#order-standard_cart .ixir-wh-faq-item.is-open .ixir-wh-faq-q {
+  color: #2a6fdb;
+  font-weight: 700;
 }
 
-.ixir-domain-faq-list details[open] summary::after {
-  border-color: #386ce0;
-  transform: translateY(2px) rotate(225deg);
+#order-standard_cart .ixir-wh-faq-item.is-open .ixir-wh-faq-q i {
+  color: #2a6fdb;
+  transform: rotate(-90deg);
 }
 
-.ixir-domain-faq-list details p {
+#order-standard_cart .ixir-wh-faq-a {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease;
+}
+
+#order-standard_cart .ixir-wh-faq-item.is-open .ixir-wh-faq-a {
+  grid-template-rows: 1fr;
+}
+
+#order-standard_cart .ixir-wh-faq-a p {
+  min-height: 0;
   margin: 0;
-  padding: 0 18px 16px;
-  color: #64748b;
-  font-size: 14px;
+  overflow: hidden;
+  padding: 0 16px 0 40px;
+  color: #5c6573;
+  font-size: 14.5px;
   line-height: 1.65;
+  transition: padding-bottom 0.4s ease;
+}
+
+#order-standard_cart .ixir-wh-faq-item.is-open .ixir-wh-faq-a p {
+  padding-bottom: 16px;
+}
+
+#order-standard_cart .ixir-wh-faq-a strong {
+  color: #242935;
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #order-standard_cart .ixir-wh-faq-a,
+  #order-standard_cart .ixir-wh-faq-q i {
+    transition: none;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -2455,19 +2515,16 @@
   }
 }
 
-#order-standard_cart.ixir-transfer-page .ixir-domain-features,
-#order-standard_cart.ixir-transfer-page .ixir-domain-faq {
+#order-standard_cart.ixir-transfer-page .ixir-domain-features {
   background: #1c2433;
 }
 
 #order-standard_cart.ixir-transfer-page .ixir-domain-features h2,
-#order-standard_cart.ixir-transfer-page .ixir-domain-faq h2,
 #order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid h3 {
   color: #fff;
 }
 
 #order-standard_cart.ixir-transfer-page .ixir-domain-features-lead,
-#order-standard_cart.ixir-transfer-page .ixir-domain-faq-lead,
 #order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid p {
   color: rgba(255, 255, 255, 0.72);
 }
@@ -2481,14 +2538,9 @@
 }
 
 #order-standard_cart.ixir-transfer-page .ixir-domain-features,
-#order-standard_cart.ixir-transfer-page .ixir-domain-prices,
-#order-standard_cart.ixir-transfer-page .ixir-domain-faq {
+#order-standard_cart.ixir-transfer-page .ixir-domain-prices {
   padding-top: 56px;
   padding-bottom: 56px;
-}
-
-#order-standard_cart.ixir-transfer-page .ixir-domain-faq {
-  margin-bottom: 0;
 }
 
 body.ixir-domain-transfer-page #main-body {
@@ -2537,29 +2589,6 @@ body.ixir-domain-search-page .ixir-help {
   .ixir-domain-prices {
   background: #fff;
   padding: 56px 0;
-}
-
-#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(
-    .ixir-whois-page
-  )
-  .ixir-domain-faq {
-  background: #1c2433;
-  padding: 56px 0;
-}
-
-#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(
-    .ixir-whois-page
-  )
-  .ixir-domain-faq
-  h2 {
-  color: #fff;
-}
-
-#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(
-    .ixir-whois-page
-  )
-  .ixir-domain-faq-lead {
-  color: rgba(255, 255, 255, 0.72);
 }
 
 #order-standard_cart.ixir-domain-page.ixir-transfer-page {
