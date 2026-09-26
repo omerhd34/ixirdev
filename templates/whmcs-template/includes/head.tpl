@@ -18,7 +18,7 @@
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}-r12" rel="stylesheet">
 {/if}
-{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting'))}
+{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting'))}
  <link href="{$WEB_ROOT}/templates/{$template}/components/hero/hero.css?v={$versionHash}-r49" rel="stylesheet">
 {/if}
 {if $ixirDomainSearchPage || $ixirDomainTransferPage || $templatefile == 'whois-sorgulama'}
@@ -49,7 +49,7 @@
  <link href="{$WEB_ROOT}/templates/{$template}/css/kurumsal.css?v={$versionHash}-r30" rel="stylesheet">
 {/if}
 {if $templatefile == 'product-landing'}
- <link href="{$WEB_ROOT}/templates/{$template}/css/product-landing.css?v={$versionHash}-r52" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/css/product-landing.css?v={$versionHash}-r53" rel="stylesheet">
 {/if}
 
 <!-- Favicon -->
