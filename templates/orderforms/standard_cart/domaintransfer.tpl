@@ -470,6 +470,9 @@
 
 
 
+
+
+
       {foreach $ixirDomainPrices as $price}
           <tr data-tld="{$price.tld|escape:'html'}" data-period="{$price.period|escape:'html'}"
            data-register="{$price.registerNum}" data-transfer="{$price.transferNum}" data-renew="{$price.renewNum}">
@@ -479,6 +482,9 @@
            <td>{$price.transfer}</td>
            <td>{$price.renew}</td>
           </tr>
+
+
+
 
 
 
@@ -628,6 +634,9 @@
 
 
 
+
+
+
      {/if}
        </tbody>
       </table>
@@ -636,45 +645,92 @@
     </div>
    </section>
 
-   <section class="ixir-domain-faq ixir-slide ixir-slide--left is-armed">
+   <section class="ixir-wh-faq" aria-labelledby="ixir-transfer-faq-title">
     <div class="container">
-     <h2>Sıkça Sorulan Sorular</h2>
-     <p class="ixir-domain-faq-lead">Alan adı transfer ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
-     <div class="ixir-domain-faq-list">
-      <details>
-       <summary>Alan adı transfer öncesi neler yapılmalıdır?</summary>
-       <p>Mevcut sağlayıcınızdan EPP / transfer kodunu alın, transfer kilidi açıksa kapatın. Kayıt, yenileme veya son
-        transferin üzerinden 60 gün geçtiğinden ve bitiş tarihine en az 7 gün kaldığından emin olun. Bu şartlar
-        sağlandıktan sonra EPP kodu ile sipariş verebilirsiniz.</p>
-      </details>
-      <details>
-       <summary>Alan adımı neden İxirhost’a transfer edeyim?</summary>
-       <p>Şeffaf fiyatlar ve gizli uygulama yoktur. Süresi biten alan adını yenileme bekleme süresinde aynı fiyattan
-        yenileyebilirsiniz; kurtarma bedeli uygulanmaz. Ücretsiz whois gizleme ve adil fiyatlandırma politikası sunulur.
-       </p>
-      </details>
-      <details>
-       <summary>Ücretsiz Whois Gizliliği Sağlıyor musunuz?</summary>
-       <p>Bilgi gizliliğine önem veriyoruz ve whois gizliliğini ücretsiz sağlıyoruz.</p>
-      </details>
-      <details>
-       <summary>Transferim gerçekleşmezse ödediğim ücret iade oluyor mu?</summary>
-       <p>Transfer başarısız olursa ödediğiniz tutar müşteri hesabınıza kredi olarak eklenir.</p>
-      </details>
-      <details>
-       <summary>Alan adı transferi kaç günde tamamlanır?</summary>
-       <p>Belge gerektirmeyen alan adlarında transfer genellikle 3 ile 7 gün arasında tamamlanır. Belge gerektiren
-        .com.tr gibi uzantılarda süre, belgenin doğrulanmasına bağlı olarak 15 güne kadar uzayabilir. Transfer
-        tamamlandığında veya başarısız olduğunda sizi bilgilendiririz.</p>
-      </details>
-      <details>
-       <summary>Süresi biten alan adlarını transfer edebilir miyim?</summary>
-       <p>Süresi bitmiş alan adları transfer edilemez. Alan adını bulunduğu firmada yeniledikten ve yenilemenin üzerinden
-        ortalama 60 gün geçtikten sonra transfer edebilirsiniz.</p>
-      </details>
+     <header class="ixir-wh-plans-head">
+      <h2 id="ixir-transfer-faq-title">Sıkça Sorulan Sorular</h2>
+      <p>Alan adı transfer ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
+     </header>
+     <div class="ixir-wh-faq-list">
+      <div class="ixir-wh-faq-item">
+       <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+         aria-hidden="true"></i>Alan adı transfer öncesi neler yapılmalıdır?</button>
+       <div class="ixir-wh-faq-a">
+        <p>Mevcut sağlayıcınızdan <strong>EPP / transfer kodunu</strong> alın, <strong>transfer kilidi</strong> açıksa
+         kapatın. Kayıt, yenileme veya son
+         transferin üzerinden <strong>60 gün</strong> geçtiğinden ve bitiş tarihine en az <strong>7 gün</strong>
+         kaldığından emin olun. Bu şartlar
+         sağlandıktan sonra EPP kodu ile sipariş verebilirsiniz.</p>
+       </div>
+      </div>
+      <div class="ixir-wh-faq-item">
+       <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+         aria-hidden="true"></i>Alan adımı neden İxirhost’a transfer edeyim?</button>
+       <div class="ixir-wh-faq-a">
+        <p><strong>Şeffaf fiyat</strong> uygulanır, <strong>gizli ücret yoktur</strong>. Süresi biten alan adını
+         yenileme
+         bekleme süresinde <strong>aynı fiyattan</strong>
+         yenileyebilirsiniz; <strong>kurtarma bedeli uygulanmaz</strong>. <strong>Ücretsiz whois gizleme</strong>
+         sunulur.
+        </p>
+       </div>
+      </div>
+      <div class="ixir-wh-faq-item">
+       <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+         aria-hidden="true"></i>Ücretsiz Whois Gizliliği Sağlıyor musunuz?</button>
+       <div class="ixir-wh-faq-a">
+        <p><strong>Whois gizliliğini ücretsiz</strong> sağlıyoruz.</p>
+       </div>
+      </div>
+      <div class="ixir-wh-faq-item">
+       <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+         aria-hidden="true"></i>Transferim gerçekleşmezse ödediğim ücret iade oluyor mu?</button>
+       <div class="ixir-wh-faq-a">
+        <p>Transfer başarısız olursa ödediğiniz tutar <strong>müşteri hesabınıza kredi</strong> olarak eklenir.</p>
+       </div>
+      </div>
+      <div class="ixir-wh-faq-item">
+       <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+         aria-hidden="true"></i>Alan adı transferi kaç günde tamamlanır?</button>
+       <div class="ixir-wh-faq-a">
+        <p>Belge gerektirmeyen alan adlarında transfer genellikle <strong>3 ile 7 gün</strong> arasında tamamlanır. Belge
+         gerektiren
+         <strong>.com.tr</strong> gibi uzantılarda süre, belgenin doğrulanmasına bağlı olarak <strong>15 güne
+          kadar</strong> uzayabilir. Transfer
+         tamamlandığında veya başarısız olduğunda sizi bilgilendiririz.
+        </p>
+       </div>
+      </div>
+      <div class="ixir-wh-faq-item">
+       <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+         aria-hidden="true"></i>Süresi biten alan adlarını transfer edebilir miyim?</button>
+       <div class="ixir-wh-faq-a">
+        <p>Süresi bitmiş alan adları <strong>transfer edilemez</strong>. Alan adını bulunduğu firmada yeniledikten ve
+         yenilemenin üzerinden
+         ortalama <strong>60 gün</strong> geçtikten sonra transfer edebilirsiniz.</p>
+       </div>
+      </div>
      </div>
     </div>
    </section>
+   <script>
+    
+     {literal}
+     (function() {
+      var list = document.querySelector('.ixir-wh-faq-list');
+      if (!list) return;
+      Array.prototype.forEach.call(list.querySelectorAll('.ixir-wh-faq-q'), function(btn) {
+       btn.addEventListener('click', function() {
+        var item = btn.parentNode;
+        var open = item.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+       });
+      });
+     })();
+
+     
+     {/literal}
+   </script>
   </div>
  </div>
 
