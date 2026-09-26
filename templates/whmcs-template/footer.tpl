@@ -19,6 +19,10 @@
  {include file="$template/components/help/help.tpl"}
 {/if}
 
+{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || $ixirCorporate || $templatefile == 'kurumsal' || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting'))}
+ {include file="$template/components/animations/ixir-slides.tpl"}
+{/if}
+
 {include file="$template/components/footer/footer.tpl"}
 
 <div id="fullpage-overlay" class="hidden">
