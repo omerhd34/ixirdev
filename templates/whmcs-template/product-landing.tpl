@@ -1948,7 +1948,9 @@
  {/literal}
 </script>
 {elseif $ixirPageSlug == 'windows-hosting'}
- {include file="$template/components/hosting/windows-hosting.tpl"}
+{include file="$template/components/hosting/windows-hosting.tpl"}
+{elseif $ixirPageSlug == 'wordpress-hosting'}
+ {include file="$template/components/hosting/wordpress-hosting.tpl"}
 {else}
  <div class="ixir-landing">
   <div class="ixir-landing-hero">
