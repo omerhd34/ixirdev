@@ -1478,6 +1478,10 @@
 .ixir-wh-faq-item.is-open .ixir-wh-faq-a p {
   padding-bottom: 16px;
 }
+.ixir-wh-faq-a strong {
+  color: #242935;
+  font-weight: 700;
+}
 @media (prefers-reduced-motion: reduce) {
   .ixir-wh-faq-a,
   .ixir-wh-faq-q i {
@@ -1957,7 +1961,8 @@
   }
 }
 @media only screen and (min-width: 993px) {
-  section#home-banner.ixir-hero--webhosting .ixir-hero-photo img {
+  section#home-banner.ixir-hero--webhosting .ixir-hero-photo img,
+  section#home-banner.ixir-hero--windows .ixir-hero-photo img {
     object-position: 50% center;
   }
 }
