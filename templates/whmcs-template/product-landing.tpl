@@ -721,35 +721,35 @@
        sitesi ve e-posta yedekleme</strong>, <strong>güvenlik</strong> gibi temel ve ileri seviye ayar ve
       yapılandırmalarınızı kolayca yapın.
       Windows tabanlı web siteleri için <strong>Plesk</strong>, Linux tabanlı web siteleriniz için
-      <strong>cPanel</strong>’i tercih edebilirsiniz.
-     </p>
-    </div>
-   </article>
-   <article class="ixir-wh-story-row ixir-wh-story-row--flip ixir-wh-story-row--speed">
-    <div class="ixir-wh-story-visual" aria-hidden="true">
-     <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/litespeed.webp?v=2" alt="">
-    </div>
-    <div class="ixir-wh-story-copy">
-     <div class="ixir-wh-story-heading">
-      <span class="ixir-wh-story-badge" aria-hidden="true"><i class="fas fa-bolt"></i></span>
-      <h3 class="ixir-wh-story-title">LiteSpeed ve LsCache Desteği</h3>
-     </div>
-     <p>Web sitenizin hız ve yavaş açılma problemi mi var? Sorun değil. <strong>Litespeed</strong> ile apache'den
-     <strong>kat ve kat daha hızlı</strong> ve
-     <strong>stabil</strong> fiyat/performans dengesinde bir hosting deneyimi yaşatmak üzere tasarlandı.
+      <strong>cPanel</strong>'i tercih edebilirsiniz.
     </p>
    </div>
   </article>
-  <article class="ixir-wh-story-row ixir-wh-story-row--mail">
+  <article class="ixir-wh-story-row ixir-wh-story-row--flip ixir-wh-story-row--speed">
    <div class="ixir-wh-story-visual" aria-hidden="true">
-    <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/reputation-macbook.webp?v=2" alt="">
+    <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/litespeed.webp?v=2" alt="">
    </div>
    <div class="ixir-wh-story-copy">
     <div class="ixir-wh-story-heading">
-     <span class="ixir-wh-story-badge" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
-     <h3 class="ixir-wh-story-title">Giden Mail Saygınlığı</h3>
+     <span class="ixir-wh-story-badge" aria-hidden="true"><i class="fas fa-bolt"></i></span>
+     <h3 class="ixir-wh-story-title">LiteSpeed ve LsCache Desteği</h3>
     </div>
-    <p>Günümüzde e-mail kullanıcılarının gönderdiği e-postaların <strong>%16’sı</strong> sahiplerine hiç ulaşmamaktadır.
+    <p>Web sitenizin hız ve yavaş açılma problemi mi var? Sorun değil. <strong>Litespeed</strong> ile apache'den
+      <strong>kat ve kat daha hızlı</strong> ve
+      <strong>stabil</strong> fiyat/performans dengesinde bir hosting deneyimi yaşatmak üzere tasarlandı.
+     </p>
+    </div>
+   </article>
+   <article class="ixir-wh-story-row ixir-wh-story-row--mail">
+    <div class="ixir-wh-story-visual" aria-hidden="true">
+     <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/reputation-macbook.webp?v=2" alt="">
+    </div>
+    <div class="ixir-wh-story-copy">
+     <div class="ixir-wh-story-heading">
+      <span class="ixir-wh-story-badge" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
+      <h3 class="ixir-wh-story-title">Giden Mail Saygınlığı</h3>
+     </div>
+     <p>Günümüzde e-mail kullanıcılarının gönderdiği e-postaların <strong>%16'sı</strong> sahiplerine hiç ulaşmamaktadır.
      E-Postaların
      ulaşmamasının en önemli sebebi ise <strong>düşük gönderici puanı</strong> ve <strong>düşün IP
       popülerliği</strong>dir. Tüm Hosting paketlerinde
@@ -1442,9 +1442,11 @@
       aria-hidden="true"></i>Linux Hosting paketlerinde sadece PHP mi
      kullanabilirim?</button>
     <div class="ixir-wh-faq-a">
-     <p>Tüm linux hosting hizmetlerimizde sadece PHP;HTML ve MySQL kullanabilirsiniz. ASP ve ASP.NET yazılım kullanan
+     <p>Tüm linux hosting hizmetlerimizde sadece <strong>PHP</strong>, <strong>HTML</strong> ve
+      <strong>MySQL</strong> kullanabilirsiniz. <strong>ASP</strong> ve <strong>ASP.NET</strong> yazılım kullanan
       bir
-      web siteniz var ise windows hosting hizmetlerimizden satın almalısınız.</p>
+      web siteniz var ise <strong>Windows Hosting</strong> hizmetlerimizden satın almalısınız.
+     </p>
     </div>
    </div>
    <div class="ixir-wh-faq-item">
@@ -1452,25 +1454,31 @@
       aria-hidden="true"></i>Hosting hizmetimde ne kadar CPU kullanabilirim?
     </button>
     <div class="ixir-wh-faq-a">
-     <p>Budget ve Economy paketlerde 1 Core Intel Xeon Gold, Professional ve Extreme paketlerde 2 Core Intel Xeon Gold
+     <p><strong>Budget</strong> ve <strong>Economy</strong> paketlerde <strong>1 Core Intel Xeon Gold</strong>,
+      <strong>Professional</strong> ve <strong>Extreme</strong> paketlerde <strong>2 Core Intel Xeon Gold</strong>
       işlemci kaynağı tahsis edilmektedir. Daha fazla kaynağa ihtiyaç duyarsanız destek ekibimizle irtibata
-      geçebilirsiniz.</p>
+      geçebilirsiniz.
+     </p>
     </div>
    </div>
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>E-posta gönderiminde limit var mı?</button>
     <div class="ixir-wh-faq-a">
-     <p>Evet, spam engellemesi amacıyla saatlik e-posta gönderim limiti uygulanmaktadır. Budget pakette saatte 100 adet,
-      Economy pakette 200 adet, Professional ve Extreme paketlerde 400 adet e-posta gönderimi yapılabilmektedir. Toplu
-      e-posta ihtiyacınız için destek ekibimizle iletişime geçebilirsiniz.</p>
+     <p>Evet, spam engellemesi amacıyla <strong>saatlik e-posta gönderim limiti</strong> uygulanmaktadır.
+      <strong>Budget</strong> pakette saatte <strong>100 adet</strong>,
+      <strong>Economy</strong> pakette <strong>200 adet</strong>, <strong>Professional</strong> ve
+      <strong>Extreme</strong> paketlerde <strong>400 adet</strong> e-posta gönderimi yapılabilmektedir. Toplu
+      e-posta ihtiyacınız için destek ekibimizle iletişime geçebilirsiniz.
+     </p>
     </div>
    </div>
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Para iade garantisi sunuyor musunuz?</button>
     <div class="ixir-wh-faq-a">
-     <p>Evet, tüm hosting hizmetlerimizde olduğu gibi 15 gün boyunca koşulsuz para iade garantisi sunuyoruz. Muhasebe
+     <p>Evet, tüm hosting hizmetlerimizde olduğu gibi <strong>15 gün</strong> boyunca <strong>koşulsuz para iade
+       garantisi</strong> sunuyoruz. Muhasebe
       servisimize bunu iletmeniz yeterlidir.</p>
     </div>
    </div>
@@ -1479,8 +1487,11 @@
       aria-hidden="true"></i>Yeni bir kullanıcıyım ücretsiz deneme yapabilir
      miyim?</button>
     <div class="ixir-wh-faq-a">
-     <p>Elbette Web sitemize üye olup denemek istediğiniz ürünün siparişini verin ve ödeme kısmında banka havalesi
-      seçiniz. Sonrasında Destek talebi ileterek yada telefon ile arayarak seçmiş olduğunuz ürünü 2 günlük bir süre
+     <p>Elbette Web sitemize üye olup denemek istediğiniz ürünün siparişini verin ve ödeme kısmında <strong>banka
+       havalesi</strong>
+      seçiniz. Sonrasında destek talebi ileterek ya da telefon ile arayarak seçmiş olduğunuz ürünü <strong>2
+       günlük</strong>
+      bir süre
       içersinde deneyebilirsiniz.</p>
     </div>
    </div>
@@ -1489,7 +1500,8 @@
       aria-hidden="true"></i>Sipariş verdiğim ürün hemen aktif olacak mı?
     </button>
     <div class="ixir-wh-faq-a">
-     <p>Evet, siparişinizi verdiğiniz hizmetin ödemesini gerçekleştirdiğiniz anda otomatik olarak aktif olacaktır.</p>
+     <p>Evet, siparişinizi verdiğiniz hizmetin ödemesini gerçekleştirdiğiniz anda <strong>otomatik olarak aktif</strong>
+      olacaktır.</p>
     </div>
    </div>
    <div class="ixir-wh-faq-item">
@@ -1497,17 +1509,21 @@
       aria-hidden="true"></i>Hosting hizmetini yanlış satın aldım, değiştirebilir
      miyim?</button>
     <div class="ixir-wh-faq-a">
-     <p>Tabiki eğer yanlış hizmeti sipariş verdiğinizi düşünüyorsanız yada linux hosting yerine başka bir hosting
-      hizmetimizi kullanmak istediniz bu değişikliği istediğiniz zaman yaptırabilirsiniz. Bu konuda bize destek talebi
-      iletmeniz yeterlidir hemen yapacağız.</p>
+     <p>Yanlış hizmeti sipariş verdiğinizi düşünüyorsanız ya da <strong>Linux Hosting</strong> yerine başka bir hosting
+      hizmetimizi kullanmak isterseniz bu değişikliği <strong>istediğiniz zaman</strong> yaptırabilirsiniz. Bunun için
+      bize
+      <strong>destek talebi</strong>
+      iletmeniz yeterlidir.
+     </p>
     </div>
    </div>
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Ücretsiz .COM.TR Alan Adı Şartları</button>
     <div class="ixir-wh-faq-a">
-     <p>Sipariş esnasında sepette yeni com.tr / net.tr alan adınızı sepete eklediğinizde ilk 1 yıl hediye olarak
-      sağlanacaktır. Yalnızca sipariş esnasında geçerlidir, sonradan bu hak kullanılamamaktadır.</p>
+     <p>Sipariş esnasında sepette yeni <strong>com.tr / net.tr</strong> alan adınızı sepete eklediğinizde <strong>ilk 1
+       yıl hediye</strong> olarak
+      sağlanacaktır. Bu hak <strong>yalnızca sipariş esnasında</strong> geçerlidir, sonradan kullanılamamaktadır.</p>
     </div>
    </div>
   </div>
@@ -1920,17 +1936,19 @@
     window.setTimeout(function() {
      root.classList.remove('is-armed');
      root.classList.add('is-settled');
-      }, 900);
-     });
-    }, {
-     threshold: 0.15
-    });
-    Array.prototype.forEach.call(nodes, function(node) {
-     observer.observe(node);
-    });
-   })();
-  {/literal}
- </script>
+    }, 900);
+   });
+  }, {
+   threshold: 0.15
+  });
+  Array.prototype.forEach.call(nodes, function(node) {
+   observer.observe(node);
+  });
+ })();
+ {/literal}
+</script>
+{elseif $ixirPageSlug == 'windows-hosting'}
+ {include file="$template/components/hosting/windows-hosting.tpl"}
 {else}
  <div class="ixir-landing">
   <div class="ixir-landing-hero">
