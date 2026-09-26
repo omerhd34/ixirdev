@@ -1,4 +1,4 @@
-  <section class="ixir-xfer-steps ixir-slide ixir-slide--right is-armed" aria-labelledby="ixirXferStepsTitle">
+  <section class="ixir-xfer-steps ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixirXferStepsTitle">
    <div class="container">
     <h2 id="ixirXferStepsTitle">Domain Transferi Nasıl Yapılır?</h2>
     <p class="ixir-xfer-lead">Dört adımda alan adınızı İXİRHOST'a taşıyın.</p>

@@ -1,4 +1,4 @@
- <section class="ixir-wh-why" aria-label="WordPress Hosting avantajları">
+ <section class="ixir-wh-why ixir-slide ixir-slide--right is-slide-on" aria-label="WordPress Hosting avantajları">
   <script>
    {literal}
     (function() {

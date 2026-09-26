@@ -1,4 +1,5 @@
- <section class="ixir-wh-plans" id="ixir-wh-plans" aria-labelledby="ixir-wh-plans-title">
+ <section class="ixir-wh-plans ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-plans"
+  aria-labelledby="ixir-wh-plans-title">
   <script>
    {literal}
     (function() {

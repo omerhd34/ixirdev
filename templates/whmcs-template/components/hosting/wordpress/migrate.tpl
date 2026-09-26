@@ -1,4 +1,4 @@
- <section class="ixir-wh-migrate" aria-labelledby="ixir-wh-migrate-title">
+ <section class="ixir-wh-migrate ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-wh-migrate-title">
   <script>
    {literal}
     (function() {

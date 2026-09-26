@@ -14,7 +14,7 @@
   {/if}
 
   {if $ixirWhoisParsed}
-   <article class="ixir-whois-card" id="ixir-whois-kayit">
+   <article class="ixir-whois-card ixir-slide ixir-slide--left is-slide-on" id="ixir-whois-kayit">
     <header class="ixir-whois-card-head">
      <div class="ixir-whois-card-ident">
       <span class="ixir-whois-card-mark" aria-hidden="true"><i class="fas fa-globe"></i></span>
@@ -143,7 +143,7 @@
    </div>
   {/if}
 
-  <div class="ixir-whois-guide" id="ixir-whois-guide">
+  <div class="ixir-whois-guide ixir-slide ixir-slide--right is-slide-on" id="ixir-whois-guide">
    <div class="ixir-whois-intro">
     <h2>Ücretsiz Whois Sorgulama</h2>
     <p>Alan adının sahibini merak ediyor veya sahibi ile iletişime geçmek istiyorsanız, hemen bir alan adı

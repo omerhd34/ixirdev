@@ -1,4 +1,4 @@
-  <section class="ixir-domain-transfer">
+  <section class="ixir-domain-transfer ixir-slide ixir-slide--right is-slide-on">
    <div class="container">
     <div class="ixir-domain-transfer-grid">
      <div class="ixir-domain-transfer-copy">

@@ -1,4 +1,5 @@
- <section class="ixir-wh-story ixir-wh-story--features" aria-label="WordPress Hosting özellikleri">
+ <section class="ixir-wh-story ixir-wh-story--features ixir-slide ixir-slide--right is-slide-on"
+  aria-label="WordPress Hosting özellikleri">
   <script>
    {literal}
     (function() {

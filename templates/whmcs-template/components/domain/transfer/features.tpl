@@ -1,4 +1,4 @@
-   <section class="ixir-domain-features ixir-slide ixir-slide--left is-armed">
+   <section class="ixir-domain-features ixir-slide ixir-slide--left is-slide-on">
     <div class="container">
      <h2>Alan Adınızı Bize Transfer Etmek İçin Mükemmel Sebepler</h2>
      <p class="ixir-domain-features-lead">Alan adınızı gelişmiş domain paneli ile zahmetsizce yönetin.</p>

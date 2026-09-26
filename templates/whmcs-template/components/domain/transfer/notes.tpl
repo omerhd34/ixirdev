@@ -1,4 +1,4 @@
-   <section class="ixir-xfer-notes ixir-slide ixir-slide--left is-armed" aria-labelledby="ixirXferNotesTitle">
+   <section class="ixir-xfer-notes ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixirXferNotesTitle">
     <div class="container">
      <div class="ixir-xfer-notes-grid">
       <div>

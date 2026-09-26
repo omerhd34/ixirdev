@@ -1,4 +1,4 @@
-   <section class="ixir-xfer-uses ixir-slide ixir-slide--right is-armed" aria-labelledby="ixirXferUsesTitle">
+   <section class="ixir-xfer-uses ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixirXferUsesTitle">
     <div class="container">
      <h2 id="ixirXferUsesTitle">Alan Adınız ile Ne Yapacaksınız?</h2>
      <div class="ixir-xfer-use-grid">

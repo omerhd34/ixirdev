@@ -1,4 +1,4 @@
- <section class="ixir-wh-story" aria-label="Web hosting özellikleri">
+ <section class="ixir-wh-story ixir-slide ixir-slide--left is-slide-on" aria-label="Web hosting özellikleri">
   <script>
    {literal}
     (function() {

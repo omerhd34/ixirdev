@@ -1,4 +1,4 @@
-   <section class="ixir-domain-prices ixir-slide ixir-slide--right is-armed" id="ixirDomainPrices">
+   <section class="ixir-domain-prices ixir-slide ixir-slide--right is-slide-on" id="ixirDomainPrices">
     <div class="container">
      <h2>Domain Fiyatları</h2>
      <p class="ixir-domain-prices-lead">Yıl boyu ekonomik domain fiyatlaması ile yatırım ve yenileme maliyetlerinizi

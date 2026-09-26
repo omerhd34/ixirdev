@@ -1,4 +1,4 @@
-  <section class="ixir-wh-faq" aria-labelledby="ixir-domain-faq-title">
+  <section class="ixir-wh-faq ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-domain-faq-title">
    <div class="container">
     <header class="ixir-wh-plans-head">
      <h2 id="ixir-domain-faq-title">Sıkça Sorulan Sorular</h2>
