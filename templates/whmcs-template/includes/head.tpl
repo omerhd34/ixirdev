@@ -12,7 +12,7 @@
 <link href="{assetPath file='all.min.css'}?v={$versionHash}" rel="stylesheet">
 <link href="{$WEB_ROOT}/assets/css/fontawesome-all.min.css" rel="stylesheet">
 {assetExists file="base.css"}
-<link href="{$__assetPath__}?v={$versionHash}-r18" rel="stylesheet">
+<link href="{$__assetPath__}?v={$versionHash}-r19" rel="stylesheet">
 {/assetExists}
 <link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r37" rel="stylesheet">
 {if $templatefile == 'homepage'}
@@ -23,7 +23,7 @@
   rel="stylesheet">
 {/if}
 {if $ixirDomainSearchPage || $ixirDomainTransferPage || $templatefile == 'whois-sorgulama'}
- <link href="{$WEB_ROOT}/templates/{$template}/css/domain-search.css?v={$versionHash}-r102" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/css/domain-search.css?v={$versionHash}-r103" rel="stylesheet">
 {/if}
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/packages/packages.css?v={$versionHash}-r18" rel="stylesheet">
