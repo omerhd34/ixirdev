@@ -23,3 +23,15 @@ downloads/*
 Thumbs.db
 .DS_Store
 Desktop.ini
+
+# Bağımlılıklar (en kritik)
+vendor/
+
+# Yerel geçici
+_tmp_preview/
+
+# İsteğe bağlı (boyut için)
+assets/img/marketconnect/
+assets/webfonts/
+# admin/
+# modules/
