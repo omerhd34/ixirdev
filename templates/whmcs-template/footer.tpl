@@ -1,4 +1,4 @@
-{if $templatefile != 'whois-sorgulama' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage && !($templatefile == 'product-landing' && $ixirPageSlug == 'webhosting') && ($templatefile != 'homepage' || $twitterusername || $announcements)}
+{if $templatefile != 'whois-sorgulama' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage && !($templatefile == 'product-landing' && ($ixirPageSlug == 'webhosting' || $ixirPageSlug == 'windows-hosting')) && ($templatefile != 'homepage' || $twitterusername || $announcements)}
  </div>
  {if !$inShoppingCart && $secondarySidebar && $secondarySidebar->hasChildren()}
   <div class="col-md-3 pull-md-left sidebar sidebar-secondary">
