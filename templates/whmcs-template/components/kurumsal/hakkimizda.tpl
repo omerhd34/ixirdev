@@ -1,5 +1,5 @@
 <div class="ixir-about-hero">
- <span class="ixir-about-hero-kicker">2005’ten beri</span>
+ <span class="ixir-about-hero-kicker">2005'ten beri</span>
  <h2>20 Yıldır Güven Barındırıyoruz.</h2>
  <p><strong>İksir İnternet Hizmetleri A.Ş.</strong> olarak 20 yılı aşkın süredir; hosting, sunucu, alan adı, e-posta,
   SSL, güvenlik ve
@@ -41,7 +41,7 @@
 <div class="ixir-box ixir-story">
  <h3>Biz Sadece Hosting Satmıyoruz; İş Sürekliliği Sağlıyoruz.</h3>
  <p>Bir web sitesinin, e-posta servisinin veya sunucunun çalışması; bugün bir işletmenin itibarı, geliri ve müşteri
-  ilişkileri için kritik öneme sahiptir. Bu nedenle İXİRHOST’ta her hizmeti yalnızca teknik bir ürün olarak değil,
+  ilişkileri için kritik öneme sahiptir. Bu nedenle İXİRHOST'ta her hizmeti yalnızca teknik bir ürün olarak değil,
   müşterilerimizin dijital operasyonlarının devamlılığı olarak görüyoruz.</p>
  <p>Kurulduğumuz günden bu yana yatırım kararlarımızın merkezinde iki temel ilke yer aldı:
   <strong>kesintisizlik</strong> ve <strong>teknik destek kalitesi</strong>. Her sunucu, her web sitesi, her e-posta
@@ -127,7 +127,7 @@
 
 <div class="ixir-box">
  <h3>Sertifikalarımız</h3>
- <div class="ixir-note">Türkiye’de tek akreditasyon kurumu olan <strong>TÜRKAK</strong> tarafından onaylı
+ <div class="ixir-note">Türkiye'de tek akreditasyon kurumu olan <strong>TÜRKAK</strong> tarafından onaylı
   sertifikalarımızı üzerine tıklayarak görüntüleyebilirsiniz.</div>
  <div class="ixir-certs" id="ixirCerts">
   <button type="button" data-full="{$WEB_ROOT}/templates/{$template}/img/kurumsal/iso27001.jpg"

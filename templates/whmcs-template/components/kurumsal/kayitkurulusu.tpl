@@ -40,7 +40,7 @@
  <p>Bu iş birliği; alan adı işlemlerinizin mevzuata uygun, kesintisiz ve güvenilir şekilde tamamlanmasını sağlamakla
   birlikte, hizmetin muhatabı her zaman <strong>İXİRHOST</strong> olmaya devam etmektedir. Fatura, destek talebi ve tüm
   süreç yönetimi
-  için tek adresiniz <strong>İXİRHOST</strong>’tur.</p>
+  için tek adresiniz <strong>İXİRHOST</strong>'tur.</p>
  <div class="ixir-registrar-note">
   <strong>Önemli:</strong>
   .TR Kayıt Kuruluşu bilgileri, yalnızca yasal şeffaflık yükümlülüğü kapsamında paylaşılmaktadır. Alan adınızla ilgili

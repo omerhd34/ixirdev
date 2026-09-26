@@ -9,7 +9,7 @@
   <span class="ixir-infra-pin" aria-hidden="true">
    <i class="fas fa-map-marker-alt"></i>
   </span>
-  <p>Veri merkezimiz, İstanbul’un finans ve teknoloji merkezlerinden biri olan <strong>Levent</strong> lokasyonunda
+  <p>Veri merkezimiz, İstanbul'un finans ve teknoloji merkezlerinden biri olan <strong>Levent</strong> lokasyonunda
    konumlanmakta olup; düşük gecikme süreleri, güçlü operatör erişimi ve yüksek erişilebilirlik avantajı sunmaktadır.
   </p>
  </div>
