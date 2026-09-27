@@ -1,0 +1,9 @@
+{include file="$template/components/hosting/developer/hero.tpl"}
+{include file="$template/components/hosting/developer/plans.tpl"}
+{include file="$template/components/hosting/developer/story.tpl"}
+{include file="$template/components/hosting/developer/diff.tpl"}
+{include file="$template/components/hosting/developer/guide.tpl"}
+{include file="$template/components/hosting/developer/about.tpl"}
+{include file="$template/components/hosting/developer/compare.tpl"}
+{include file="$template/components/hosting/developer/faq.tpl"}
+{include file="$template/components/hosting/developer/scripts.tpl"}
