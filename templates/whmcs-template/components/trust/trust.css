@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
 
 .ixir-trust {
   position: relative;
@@ -18,7 +18,7 @@
   text-align: center;
 }
 .ixir-trust-head h2 {
-  font-family: "IBM Plex Sans", sans-serif !important;
+  font-family: "Space Grotesk", sans-serif !important;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: -0.03em;

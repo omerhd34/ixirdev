@@ -1089,7 +1089,7 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -6348,7 +6348,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857143;
@@ -6464,7 +6464,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857143;
@@ -8474,7 +8474,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Open Sans", Verdana, Tahoma, serif;
+  font-family: "Roboto", sans-serif;
   color: #333;
 }
 h1,
@@ -8483,12 +8483,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:
-    IBM Plex Sans,
-    "Helvetica Neue",
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
   font-weight: 700;
 }
 .container-fluid.without-padding {
@@ -8501,12 +8496,7 @@ h6 {
   background-color: #0e5077;
   border: 0;
   min-height: 38px;
-  font-family:
-    IBM Plex Sans,
-    "Helvetica Neue",
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
 .navbar-main li.account {
@@ -8695,7 +8685,7 @@ section#header .logo img {
   vertical-align: middle;
 }
 section#header .logo-text {
-  font-family: IBM Plex Sans;
+  font-family: "Space Grotesk";
   font-weight: 400;
   font-size: 2.6em;
   white-space: nowrap;
@@ -9973,7 +9963,7 @@ table.dtr-inline.collapsed .responsive-edit-button {
 .ticket-reply .rating-done .rated {
   display: inline-block;
   font-size: 12px;
-  font-family: Tahoma;
+  font-family: "Roboto", sans-serif;
 }
 .ticket-reply .rating span.star:hover {
   cursor: pointer;
@@ -10054,7 +10044,7 @@ table.dtr-inline.collapsed .responsive-edit-button {
   padding: 5px 10px;
   border-color: #ddd;
   min-width: 310px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .popover-user-notifications .popover-content {
   padding: 0;
@@ -10508,7 +10498,7 @@ h3.with-badge .badge {
   margin: 25px 0 0 auto;
   padding: 4px 10px;
   max-width: 240px;
-  font-family: Tahoma;
+  font-family: "Roboto", sans-serif;
   font-size: 0.7em;
   text-align: right;
 }
@@ -10869,7 +10859,7 @@ div.md-editor.active {
 .panel-sidebar .panel-title {
   font-size: 1.1em;
   font-weight: 300;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
   line-height: 26px;
   color: #555;
 }

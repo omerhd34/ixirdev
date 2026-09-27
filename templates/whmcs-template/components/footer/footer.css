@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
 
 .ixir-footer {
   position: relative;
@@ -203,7 +203,7 @@ body.ixir-auth-page .ixir-help {
 .ixir-next-panel h4 {
   margin: 0 0 14px;
   color: #1a1f2e;
-  font-family: "IBM Plex Sans", sans-serif !important;
+  font-family: "Space Grotesk", sans-serif !important;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: -0.03em;
