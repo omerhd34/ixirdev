@@ -42,7 +42,7 @@
 
 #order-standard_cart.ixir-domain-page .ixir-hero-main {
   width: 100%;
-  max-width: 780px;
+  max-width: 980px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -226,87 +226,6 @@
   }
 }
 
-#order-standard_cart.ixir-domain-page .ixir-dc-tlds {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px 12px;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 780px;
-  margin: 18px auto 0;
-  padding: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 18px;
-  background: rgba(8, 12, 18, 0.42);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  animation: ixirHeroIn 0.7s ease 0.22s both;
-}
-
-#order-standard_cart.ixir-domain-page .ixir-dc-tld {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  width: 100%;
-  min-width: 0;
-  height: 38px;
-  margin: 0;
-  padding: 0 12px;
-  border: 0;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.38);
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1;
-  cursor: pointer;
-  box-shadow: none;
-  transition:
-    background 0.18s ease,
-    box-shadow 0.18s ease;
-}
-
-#order-standard_cart.ixir-domain-page .ixir-dc-tld.ixir-dc-tld--more {
-  display: none;
-}
-
-#order-standard_cart.ixir-domain-page .ixir-dc-tld-name {
-  color: #4ad34a;
-  font-weight: 800;
-}
-
-#order-standard_cart.ixir-domain-page .ixir-dc-tld-price {
-  display: inline-flex;
-  align-items: center;
-  height: auto;
-  padding: 0;
-  border-radius: 0;
-  background: transparent;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-#order-standard_cart.ixir-domain-page .ixir-dc-tld:hover,
-#order-standard_cart.ixir-domain-page .ixir-dc-tld:focus,
-#order-standard_cart.ixir-domain-page .ixir-dc-tld.is-selected {
-  background: rgba(255, 255, 255, 0.14);
-  color: #fff;
-  outline: none;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
-}
-
-#order-standard_cart.ixir-domain-page .ixir-dc-tld:hover .ixir-dc-tld-price,
-#order-standard_cart.ixir-domain-page .ixir-dc-tld:focus .ixir-dc-tld-price,
-#order-standard_cart.ixir-domain-page
-  .ixir-dc-tld.is-selected
-  .ixir-dc-tld-price {
-  background: transparent;
-  color: #fff;
-}
-
 #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-wrap {
   display: grid;
   grid-template-columns: repeat(3, max-content);
@@ -315,9 +234,9 @@
   align-items: start;
   --ixir-links-gap: 64px;
   column-gap: var(--ixir-links-gap);
-  row-gap: 0;
+  --ixir-links-row-gap: 0px;
+  row-gap: var(--ixir-links-row-gap);
   width: 100%;
-  max-width: 980px;
   margin: 28px auto 0;
   padding: 20px 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
@@ -539,8 +458,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  #order-standard_cart.ixir-domain-page .ixir-hero form#frmDomainChecker,
-  #order-standard_cart.ixir-domain-page .ixir-dc-tlds {
+  #order-standard_cart.ixir-domain-page .ixir-hero form#frmDomainChecker {
     animation: none;
   }
 }
@@ -1567,8 +1485,6 @@
 #order-standard_cart .ixir-wh-faq-list {
   display: grid;
   gap: 12px;
-  max-width: 980px;
-  margin: 0 auto;
 }
 
 #order-standard_cart .ixir-wh-faq-item {
@@ -1755,7 +1671,8 @@
     margin-top: 14px;
     padding-top: 10px;
     column-gap: 16px;
-    row-gap: 10px;
+    --ixir-links-row-gap: 10px;
+    row-gap: var(--ixir-links-row-gap);
   }
   #order-standard_cart.ixir-domain-page .ixir-hero ul.ixir-domain-links {
     display: contents;
@@ -1832,49 +1749,14 @@
   }
 }
 
-@media (max-width: 1023px) {
-  #order-standard_cart.ixir-domain-page .ixir-dc-tlds {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 8px;
-    width: 100%;
-    max-width: 100%;
-    margin-top: 14px;
-    padding: 0 0 2px;
-    border: 0;
-    border-radius: 0;
-    background: none;
-    box-shadow: none;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-  }
-  #order-standard_cart.ixir-domain-page .ixir-dc-tlds::-webkit-scrollbar {
-    display: none;
-  }
-  #order-standard_cart.ixir-domain-page .ixir-dc-tld {
-    flex: 0 0 auto;
-    width: auto;
-    height: 36px;
-    padding: 0 12px;
-    scroll-snap-align: start;
-    background: rgba(8, 12, 18, 0.72);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-  }
-  #order-standard_cart.ixir-domain-page .ixir-dc-tld.ixir-dc-tld--more {
-    display: flex;
-  }
-}
-
 @media (max-width: 479px) {
   #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-wrap {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-top: 12px;
     padding-top: 8px;
     column-gap: 16px;
-    row-gap: 8px;
+    --ixir-links-row-gap: 8px;
+    row-gap: var(--ixir-links-row-gap);
     border-top: 1px solid rgba(255, 255, 255, 0.16);
   }
   #order-standard_cart.ixir-domain-page
@@ -1913,20 +1795,12 @@
   align-items: center;
 }
 
-#order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-title {
-  margin-bottom: 4px;
-}
-
-#order-standard_cart.ixir-domain-page:not(.ixir-whois-page) .ixir-hero-main {
-  max-width: 980px;
-}
-
 @media (min-width: 1024px) {
   #order-standard_cart.ixir-domain-page:not(.ixir-whois-page)
     .ixir-hero
     .ixir-domain-links-wrap {
-    max-width: none;
-    row-gap: 10px;
+    --ixir-links-row-gap: 10px;
+    row-gap: var(--ixir-links-row-gap);
     --ixir-links-gap: 168px;
     column-gap: var(--ixir-links-gap);
   }
@@ -1935,12 +1809,6 @@
     .ixir-hero
     ul.ixir-domain-links {
     gap: 8px;
-  }
-
-  #order-standard_cart.ixir-domain-page:not(.ixir-whois-page)
-    .ixir-hero
-    .ixir-domain-links-title {
-    margin: 0 0 4px;
   }
 }
 
@@ -2615,7 +2483,8 @@ body.ixir-domain-search-page .ixir-help {
     justify-content: start;
     justify-items: start;
     column-gap: 56px;
-    row-gap: 12px;
+    --ixir-links-row-gap: 12px;
+    row-gap: var(--ixir-links-row-gap);
     margin-top: 12px;
     padding-top: 10px;
   }
