@@ -33,7 +33,7 @@
      </p>
     </form>
     <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
-     <p class="ixir-domain-links-title">Bazı Hizmetler</p>
+     <p class="ixir-hero-label">Bazı Hizmetler</p>
      <ul class="ixir-domain-links">
       <li>
        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
@@ -46,13 +46,13 @@
        </a>
       </li>
       <li>
-       <a href="{$WEB_ROOT}/whois-sorgulama" title="Whois Sorgulama">
-        <i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Whois Sorgulama</span>
+       <a href="{$WEB_ROOT}/ssl-sertifikalari" title="SSL Sertifikaları">
+        <i class="far fa-lock fa-fw" aria-hidden="true"></i><span>SSL Sertifikaları</span>
        </a>
       </li>
       <li>
-       <a href="{$WEB_ROOT}/ssl-sertifikalari" title="SSL Sertifikaları">
-        <i class="far fa-lock fa-fw" aria-hidden="true"></i><span>SSL Sertifikaları</span>
+       <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
+        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
        </a>
       </li>
      </ul>

@@ -65,13 +65,13 @@
      </ul>
      <ul class="ixir-domain-links">
       <li>
-       <a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting">
-        <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Linux Hosting</span>
+       <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
+        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
        </a>
       </li>
       <li>
-       <a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting">
-        <i class="fab fa-windows fa-fw" aria-hidden="true"></i><span>Windows Hosting</span>
+       <a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting">
+        <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Linux Hosting</span>
        </a>
       </li>
       <li>
