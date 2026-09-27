@@ -43,63 +43,12 @@
       <div id="transferUnavailable" class="ixir-transfer-alert alert alert-warning slim-alert text-center w-hidden">
       </div>
      </form>
-     <div class="ixir-dc-tlds" aria-label="Popüler uzantılar">
-      <button type="button" class="ixir-dc-tld" data-tld="com" aria-label=".com uzantısını seç, 615 TL">
-       <span class="ixir-dc-tld-name">.com</span>
-       <span class="ixir-dc-tld-price">615 TL</span>
-      </button>
-      <button type="button" class="ixir-dc-tld" data-tld="xyz" aria-label=".xyz uzantısını seç, 125 TL">
-       <span class="ixir-dc-tld-name">.xyz</span>
-       <span class="ixir-dc-tld-price">125 TL</span>
-      </button>
-      <button type="button" class="ixir-dc-tld" data-tld="tr" aria-label=".tr uzantısını seç, 200 TL">
-       <span class="ixir-dc-tld-name">.tr</span>
-       <span class="ixir-dc-tld-price">200 TL</span>
-      </button>
-      <button type="button" class="ixir-dc-tld" data-tld="com.tr" aria-label=".com.tr uzantısını seç, 150 TL">
-       <span class="ixir-dc-tld-name">.com.tr</span>
-       <span class="ixir-dc-tld-price">150 TL</span>
-      </button>
-      <button type="button" class="ixir-dc-tld" data-tld="net" aria-label=".net uzantısını seç, 655 TL">
-       <span class="ixir-dc-tld-name">.net</span>
-       <span class="ixir-dc-tld-price">655 TL</span>
-      </button>
-      <button type="button" class="ixir-dc-tld" data-tld="info" aria-label=".info uzantısını seç, 220 TL">
-       <span class="ixir-dc-tld-name">.info</span>
-       <span class="ixir-dc-tld-price">220 TL</span>
-      </button>
-      <button type="button" class="ixir-dc-tld" data-tld="pro" aria-label=".pro uzantısını seç, 200 TL">
-       <span class="ixir-dc-tld-name">.pro</span>
-       <span class="ixir-dc-tld-price">200 TL</span>
-      </button>
-      <button type="button" class="ixir-dc-tld" data-tld="net.tr" aria-label=".net.tr uzantısını seç, 150 TL">
-       <span class="ixir-dc-tld-name">.net.tr</span>
-       <span class="ixir-dc-tld-price">150 TL</span>
-      </button>
-      {if $ixirDomainPrices}
-       {foreach $ixirDomainPrices as $price}
-        {assign var="ixirTldPlain" value=$price.tld|regex_replace:"/^\./":""}
-        {if !in_array($ixirTldPlain, array('com','xyz','tr','com.tr','net','info','pro','net.tr'))}
-         <button type="button" class="ixir-dc-tld ixir-dc-tld--more" data-tld="{$ixirTldPlain|escape:'html'}"
-          aria-label="{$price.tld|escape:'html'} uzantısını seç, {$price.registerNum|string_format:'%d'} TL">
-          <span class="ixir-dc-tld-name">{$price.tld|escape:'html'}</span>
-          <span class="ixir-dc-tld-price">{$price.registerNum|string_format:"%d"} TL</span>
-         </button>
-        {/if}
-       {/foreach}
-      {/if}
-     </div>
      <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
-      <p class="ixir-domain-links-title">Bazı Hizmetler</p>
+      <p class="ixir-hero-label">Bazı Hizmetler</p>
       <ul class="ixir-domain-links">
        <li>
         <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
          <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
-        </a>
-       </li>
-       <li>
-        <a href="{$WEB_ROOT}/domain-transfer" title="Domain Transfer">
-         <i class="fas fa-retweet fa-fw" aria-hidden="true"></i><span>Domain Transfer</span>
         </a>
        </li>
        <li>
@@ -110,6 +59,11 @@
        <li>
         <a href="{$WEB_ROOT}/ssl-sertifikalari" title="SSL Sertifikaları">
          <i class="far fa-lock fa-fw" aria-hidden="true"></i><span>SSL Sertifikaları</span>
+        </a>
+       </li>
+       <li>
+        <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
+         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
         </a>
        </li>
       </ul>
