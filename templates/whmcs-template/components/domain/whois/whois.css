@@ -1,169 +1,3 @@
-section#home-banner.ixir-whois-hero {
-  min-height: calc(100vh - var(--ixir-hero-offset, 113px));
-  min-height: calc(100dvh - var(--ixir-hero-offset, 113px));
-  padding: 0 !important;
-}
-
-section#home-banner.ixir-whois-hero > .container {
-  align-items: center;
-  justify-content: center;
-}
-
-.ixir-whois-hero .ixir-hero-main {
-  width: 100%;
-  max-width: 980px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.ixir-whois-hero .ixir-hero-copy {
-  width: 100%;
-}
-
-section#home-banner.ixir-whois-hero .ixir-hero-copy,
-section#home-banner.ixir-whois-hero h1,
-section#home-banner.ixir-whois-hero .ixir-hero-copy > p {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center !important;
-}
-
-.ixir-whois-hero .ixir-domain-links-wrap {
-  justify-content: center;
-  width: 100%;
-  max-width: 980px;
-  margin-right: auto;
-  margin-left: auto;
-  --ixir-links-gap: 64px;
-}
-
-.ixir-whois-hero .ixir-hero h1 {
-  display: block;
-  font-size: 36px;
-}
-
-.ixir-whois-hero .ixir-hero-copy > p {
-  font-size: 18px;
-}
-
-.ixir-whois-hero .ixir-whois-form {
-  width: 100%;
-  max-width: 780px;
-  margin: 26px auto 0;
-}
-
-.ixir-whois-hero .ixir-domain-checker {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  background: #fff;
-  padding: 8px 8px 8px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  border-radius: 16px;
-  box-shadow:
-    0 1px 2px rgba(15, 23, 42, 0.06),
-    0 14px 36px rgba(15, 23, 42, 0.2);
-  transition: box-shadow 0.22s ease;
-}
-
-.ixir-whois-hero .ixir-domain-checker:focus-within {
-  box-shadow:
-    0 0 0 4px rgba(56, 108, 224, 0.24),
-    0 14px 36px rgba(15, 23, 42, 0.2);
-}
-
-.ixir-whois-hero .ixir-dc-input {
-  display: flex;
-  align-items: center;
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
-.ixir-whois-hero .ixir-dc-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  flex-shrink: 0;
-  color: #9aa3b2;
-  font-size: 18px;
-  transition: color 0.2s ease;
-}
-
-.ixir-whois-hero .ixir-domain-checker:focus-within .ixir-dc-icon {
-  color: #386ce0;
-}
-
-.ixir-whois-hero .ixir-dc-input .form-control {
-  border: 0 !important;
-  box-shadow: none !important;
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  padding: 6px 8px 6px 4px;
-  border-radius: 0;
-  background: transparent;
-  color: #1a1f2e;
-  -webkit-text-fill-color: #1a1f2e;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.ixir-whois-hero .ixir-dc-input .form-control::placeholder {
-  color: #8b93a3;
-  -webkit-text-fill-color: #8b93a3;
-  font-size: 16px;
-  font-weight: 400;
-  opacity: 1;
-}
-
-.ixir-whois-hero .ixir-dc-button {
-  width: 148px;
-  flex: 0 0 148px;
-}
-
-section#home-banner.ixir-whois-hero .ixir-dc-button .btn,
-section#home-banner.ixir-whois-hero .ixir-dc-button .btn.btn-block {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  padding: 0 16px;
-  border: 0;
-  border-radius: 12px !important;
-  background: #386ce0 !important;
-  color: #fff !important;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  box-shadow: 0 8px 18px rgba(56, 108, 224, 0.28);
-  transform: translateY(0);
-  transition:
-    transform 0.18s ease,
-    background-color 0.18s ease,
-    box-shadow 0.18s ease;
-}
-
-.ixir-whois-hero .ixir-dc-button .btn i {
-  margin-right: 8px;
-  font-size: 14px;
-}
-
-section#home-banner.ixir-whois-hero .ixir-dc-button .btn:hover,
-section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
-  background: #1e4bb8 !important;
-  background-color: #1e4bb8 !important;
-  color: #fff !important;
-  border-color: transparent;
-  transform: translateY(-1px);
-  box-shadow: 0 10px 22px rgba(30, 75, 184, 0.38);
-}
-
 #order-standard_cart.ixir-domain-page
   form.ixir-whois-form.ixir-dc-invalid
   .ixir-domain-checker,
@@ -244,31 +78,6 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
 
 .ixir-whois-form .ixir-whois-field-error b {
   font-weight: 800;
-}
-
-.ixir-whois-hero-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  margin-top: 22px;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.ixir-whois-hero-links a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.ixir-whois-hero-links a:hover,
-.ixir-whois-hero-links a:focus {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.ixir-whois-hero-links span {
-  color: rgba(255, 255, 255, 0.85);
 }
 
 .ixir-whois-page {
@@ -633,11 +442,6 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
   word-break: break-word;
 }
 
-.ixir-whois-guide {
-  max-width: 980px;
-  margin: 0 auto;
-}
-
 .ixir-whois-intro {
   max-width: 640px;
   margin: 0 auto 36px;
@@ -792,32 +596,7 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
   }
 }
 
-@media (max-width: 1023px) {
-  .ixir-whois-hero .ixir-hero h1 {
-    font-size: 32px;
-    margin-bottom: 16px;
-  }
-  .ixir-whois-hero .ixir-hero-copy > p {
-    font-size: 17px;
-  }
-}
-
 @media (max-width: 768px) {
-  .ixir-whois-hero .ixir-hero h1 {
-    font-size: 24px;
-    margin: 0 0 12px;
-    line-height: 1.15;
-  }
-  .ixir-whois-hero .ixir-hero-copy > p {
-    font-size: 16px;
-    line-height: 1.35;
-  }
-
-  .ixir-whois-hero .ixir-dc-button {
-    width: 108px;
-    flex-basis: 108px;
-  }
-
   .ixir-whois-page {
     padding: 48px 0 64px;
   }
@@ -864,42 +643,15 @@ section#home-banner.ixir-whois-hero .ixir-dc-button .btn:focus {
 }
 
 @media (min-width: 1024px) {
-  #order-standard_cart.ixir-whois-page .ixir-hero-main {
-    max-width: 980px;
-  }
-
   #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-wrap {
-    max-width: none;
-    row-gap: 10px;
+    --ixir-links-row-gap: 10px;
+    row-gap: var(--ixir-links-row-gap);
     --ixir-links-gap: 168px;
     column-gap: var(--ixir-links-gap);
   }
 
   #order-standard_cart.ixir-whois-page .ixir-hero ul.ixir-domain-links {
     gap: 8px;
-  }
-
-  #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-title {
-    margin: 0 0 4px;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .ixir-whois-hero .ixir-hero h1 {
-    font-size: 34px;
-  }
-  .ixir-whois-hero .ixir-hero-copy > p {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 479px) {
-  .ixir-whois-hero .ixir-hero h1 {
-    font-size: 24px;
-    margin: 0 0 10px;
-  }
-  .ixir-whois-hero .ixir-hero-copy > p {
-    font-size: 16px;
   }
 }
 
