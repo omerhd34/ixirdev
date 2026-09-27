@@ -1,0 +1,24 @@
+:root {
+  --ixir-hero-label-gap: 12px;
+}
+
+.ixir-hero-label {
+  display: block;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.ixir-hero-label + .ixir-hero-points {
+  margin-top: var(--ixir-hero-label-gap);
+}
+
+.ixir-domain-links-wrap > .ixir-hero-label {
+  grid-column: 1 / -1;
+  margin: 0 0 calc(var(--ixir-hero-label-gap) - var(--ixir-links-row-gap, 10px));
+}
