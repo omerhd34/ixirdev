@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
 
 body.ixir-corporate-page #main-body,
 body.ixir-corporate-page .header-lined {
@@ -17,7 +17,7 @@ body.ixir-corporate-page {
   color: #fff;
   overflow: hidden;
   background-color: #0d1524;
-  background-image: url("../img/kurumsal/hero.jpg");
+  background-image: url("../../img/kurumsal/hero.jpg");
   background-repeat: no-repeat;
   background-position: 0 35%;
   background-size: cover;
@@ -72,7 +72,7 @@ body.ixir-corporate-page {
 .ixir-corp-hero h1 {
   margin: 0 0 20px;
   color: #fff !important;
-  font-family: "IBM Plex Sans", sans-serif !important;
+  font-family: "Space Grotesk", sans-serif !important;
   font-size: 54px;
   font-weight: 700;
   line-height: 1.15;
@@ -149,7 +149,7 @@ body.ixir-corporate-page {
   display: block;
   margin: 0 10px 16px;
   color: #111827;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 22px;
   font-weight: 800;
   line-height: 1.2;
@@ -267,7 +267,7 @@ body.ixir-corporate-page {
 .ixir-corp-content h2,
 .ixir-corp-content h3,
 .ixir-corp-content h4 {
-  font-family: "IBM Plex Sans", "Roboto", sans-serif !important;
+  font-family: "Space Grotesk", "Roboto", sans-serif !important;
   color: #1f2d3d;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -555,7 +555,7 @@ body.ixir-corporate-page {
   right: 18px;
   z-index: 0;
   color: rgba(255, 255, 255, 0.1);
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: clamp(84px, 12vw, 132px);
   font-weight: 800;
   letter-spacing: -0.08em;
@@ -599,7 +599,7 @@ body.ixir-corporate-page {
   position: relative;
   z-index: 1;
   max-width: 14em;
-  font-family: "IBM Plex Sans", sans-serif !important;
+  font-family: "Space Grotesk", sans-serif !important;
   letter-spacing: -0.04em;
 }
 
@@ -759,7 +759,7 @@ body.ixir-corporate-page {
   display: block;
   margin-bottom: 8px;
   color: #386ce0;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 34px;
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -800,7 +800,7 @@ body.ixir-corporate-page {
 
 .ixir-infra-stat strong {
   margin-bottom: 8px;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 28px;
   letter-spacing: -0.04em;
 }
@@ -1771,7 +1771,7 @@ body.ixir-corporate-page {
 }
 
 .ixir-iban {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px !important;
   font-weight: 800 !important;
   letter-spacing: 0.02em;
