@@ -500,7 +500,7 @@
       rgba(59, 120, 231, 0.22),
       transparent 62%
     ),
-    #1c2433;
+    #0b2545;
   color: #fff;
 }
 .ixir-wh-story.is-armed {
@@ -902,7 +902,7 @@
 }
 .ixir-wh-migrate-copy h2 {
   margin: 0 0 12px;
-  color: #1c2433;
+  color: #0b2545;
   font-size: clamp(28px, 3.4vw, 42px);
   font-weight: 800;
   letter-spacing: -0.035em;
@@ -949,7 +949,7 @@
   box-shadow: 0 14px 26px rgba(59, 120, 231, 0.34);
 }
 .ixir-wh-migrate-cta:focus-visible {
-  outline: 2px solid #1c2433;
+  outline: 2px solid #0b2545;
   outline-offset: 3px;
 }
 @media (min-width: 992px) {
@@ -976,7 +976,7 @@
       rgba(163, 212, 58, 0.1),
       transparent 70%
     ),
-    linear-gradient(165deg, #1c2433 0%, #0b2545 52%, #1a202c 100%);
+    linear-gradient(165deg, #0b2545 0%, #0b2545 52%, #1a202c 100%);
   overflow: hidden;
 }
 .ixir-wh-why .container {
@@ -1382,7 +1382,7 @@
 }
 .ixir-wh-apps {
   padding: 88px 0 80px;
-  background: #1c2433;
+  background: #0b2545;
   color: #fff;
   text-align: center;
 }
@@ -1654,7 +1654,7 @@
       rgba(59, 120, 231, 0.22),
       transparent 62%
     ),
-    #1c2433;
+    #0b2545;
 }
 .ixir-wh-compare--dark .ixir-wh-plans-head h2 {
   color: #fff;
@@ -1856,7 +1856,7 @@
 }
 .ixir-wh-faq {
   padding: 56px 0 48px;
-  background: #1c2433;
+  background: #0b2545;
 }
 .ixir-wh-faq .ixir-wh-plans-head h2 {
   color: #fff;
@@ -2118,7 +2118,7 @@
       rgba(59, 120, 231, 0.22),
       transparent 62%
     ),
-    #1c2433;
+    #0b2545;
 }
 .ixir-wh-guide--dark .ixir-wh-guide-item {
   border-color: rgba(255, 255, 255, 0.08);
@@ -2512,7 +2512,7 @@
   padding: 44px
     max(var(--ixir-gutter), calc((100% - var(--ixir-container)) / 2));
   list-style: none;
-  background: #1c2433;
+  background: #0b2545;
 }
 .ixir-wh-assurances li {
   display: flex;
@@ -2860,7 +2860,7 @@
       rgba(59, 120, 231, 0.22),
       transparent 62%
     ),
-    #1c2433;
+    #0b2545;
 }
 .ixir-wh-page--wp .ixir-wh-story--features {
   padding: 56px 0 64px;
@@ -2886,7 +2886,7 @@
       rgba(163, 212, 58, 0.1),
       transparent 70%
     ),
-    linear-gradient(165deg, #1c2433 0%, #0b2545 52%, #1a202c 100%);
+    linear-gradient(165deg, #0b2545 0%, #0b2545 52%, #1a202c 100%);
 }
 .ixir-wh-page--wp .ixir-wh-migrate-eyebrow {
   background: rgba(255, 255, 255, 0.1);
@@ -2927,7 +2927,7 @@
   color: rgba(36, 41, 53, 0.035);
 }
 .ixir-wh-page--wp .ixir-wh-why-head h2 {
-  color: #1c2433;
+  color: #0b2545;
 }
 .ixir-wh-page--wp .ixir-wh-why-head p {
   color: #6b7280;
@@ -2961,7 +2961,7 @@
       rgba(59, 120, 231, 0.16),
       transparent 65%
     ),
-    #1c2433;
+    #0b2545;
 }
 .ixir-wh-page--wp .ixir-wh-diff-head h2 {
   color: #fff;
@@ -2985,7 +2985,7 @@
   background: #f6f7f9;
 }
 .ixir-wh-page--wp .ixir-wh-faq {
-  background: #1c2433;
+  background: #0b2545;
 }
 .ixir-wh-page--wp .ixir-wh-guide {
   background: #f6f7f9;
