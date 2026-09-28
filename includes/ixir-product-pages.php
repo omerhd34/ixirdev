@@ -13,7 +13,7 @@ function ixir_product_pages()
             'icon' => 'fas fa-infinity',
             'groupNames' => ['Web Hosting', 'Linux Hosting', 'Hosting'],
             'points' => [
-                'NVMe disk ve LiteSpeed web sunucusu',
+                'NVMe disk ve LiteSpeed web server',
                 'Ücretsiz SSL ve cPanel kontrol paneli',
                 'Imunify360 ile güvenlik',
             ],
@@ -101,7 +101,7 @@ function ixir_product_pages()
             'icon' => 'fas fa-server',
             'groupNames' => ['Kurumsal Mail Server', 'Mail Server'],
             'points' => [
-                'Size özel mail sunucusu',
+                'Size özel mail server',
                 'Yüksek gönderim kapasitesi',
                 'KVKK uyumlu altyapı',
             ],
@@ -113,26 +113,28 @@ function ixir_product_pages()
             'groupNames' => ['Outbound Mail Gateway', 'SmartHost'],
             'points' => [
                 'Yüksek reputation & sender score',
-                'Kendi sunucunuzdan bağımsız gönderim',
+                "Kendi server'ınızden bağımsız gönderim",
                 'KVKK uyumlu altyapı',
             ],
         ],
-        'cloud' => [
-            'title' => 'Bulut Sunucu',
-            'tagline' => '60 saniyede kurulan, yüksek performanslı cloud sunucu.',
+        'bulut-server' => [
+            'title' => 'Bulut Server',
+            'tagline' => '60 saniyede kurulan, yüksek performanslı cloud server.',
             'icon' => 'far fa-cloud',
-            'groupNames' => ['Cloud', 'Bulut Sunucu', 'Cloud Server', 'VPS'],
+            'groupSlugs' => ['cloud'],
+            'groupNames' => ['Cloud', 'Bulut Server', 'Cloud Server', 'VPS'],
             'points' => [
                 'Dakikalar içinde teslim',
                 'Ölçeklenebilir kaynaklar',
                 'İstanbul lokasyonu',
             ],
         ],
-        'dedicated-server' => [
-            'title' => 'Dedicated Server',
-            'tagline' => 'İstanbul merkezli, operatör yedekli fiziksel sunucu.',
+        'kiralik-server' => [
+            'title' => 'Kiralık Server',
+            'tagline' => 'İstanbul merkezli, operatör yedekli fiziksel server.',
             'icon' => 'fas fa-server',
-            'groupNames' => ['Dedicated Server', 'Dedicated', 'Fiziksel Sunucu'],
+            'groupSlugs' => ['dedicated-server'],
+            'groupNames' => ['Kiralık Server', 'Dedicated Server', 'Dedicated', 'Fiziksel Server'],
             'points' => [
                 'Size özel donanım',
                 'Operatör yedekli bağlantı',
@@ -141,9 +143,9 @@ function ixir_product_pages()
         ],
         'colocation' => [
             'title' => 'Co-Location',
-            'tagline' => 'Tier III veri merkezinde sunucunuzu güvenle barındırın.',
+            'tagline' => "Tier III veri merkezinde server'ınızı güvenle barındırın.",
             'icon' => 'fas fa-database',
-            'groupNames' => ['Colocation', 'Co-Location', 'Sunucu Barındırma'],
+            'groupNames' => ['Colocation', 'Co-Location', 'Server Barındırma'],
             'points' => [
                 'Tier III veri merkezi',
                 'Kesintisiz elektrik ve soğutma',
@@ -151,19 +153,19 @@ function ixir_product_pages()
             ],
         ],
         'ek-servisler' => [
-            'title' => 'Sunucu Servisleri',
-            'tagline' => 'Çözüm odaklı sunucu yönetim ve destek hizmeti.',
+            'title' => 'Server Servisleri',
+            'tagline' => 'Çözüm odaklı server yönetim ve destek hizmeti.',
             'icon' => 'far fa-life-ring',
-            'groupNames' => ['Ek Servisler', 'Sunucu Yönetimi', 'Managed'],
+            'groupNames' => ['Ek Servisler', 'Server Yönetimi', 'Managed'],
             'points' => [
-                'Sunucu kurulum ve yönetim',
+                'Server kurulum ve yönetim',
                 '7/24 izleme ve müdahale',
                 'Güvenlik ve yedekleme desteği',
             ],
         ],
         'pci-tarama' => [
             'title' => 'PCI-DSS Tarama',
-            'tagline' => 'Sunucu güvenliği için PCI-DSS uyumluluk taraması.',
+            'tagline' => 'Server güvenliği için PCI-DSS uyumluluk taraması.',
             'icon' => 'fas fa-shield-alt',
             'groupNames' => ['PCI-DSS', 'PCI Tarama'],
             'points' => [
@@ -201,7 +203,7 @@ function ixir_product_pages()
             'groupNames' => ['AntiSpam', 'SpamExperts', 'Spam Filtering'],
             'points' => [
                 'Yapay zeka destekli spam filtresi',
-                'Alan adınız nerede olursa olsun koruma',
+                "Domain'iniz nerede olursa olsun koruma",
                 'KVKK uyumlu altyapı',
             ],
         ],
@@ -221,10 +223,11 @@ function ixir_find_product_group($slug, array $page)
 
     try {
         $names = $page['groupNames'] ?? [];
+        $slugs = array_merge([$slug], $page['groupSlugs'] ?? []);
         return \WHMCS\Database\Capsule::table('tblproductgroups')
             ->where('hidden', 0)
-            ->where(function ($q) use ($slug, $names) {
-                $q->where('slug', $slug);
+            ->where(function ($q) use ($slugs, $names) {
+                $q->whereIn('slug', $slugs);
                 foreach ($names as $name) {
                     $q->orWhere('name', $name);
                 }
