@@ -18,13 +18,14 @@
      <p><strong>ASP.NET</strong>, <strong>.NET Core</strong> ve <strong>MVC</strong> gibi Microsoft teknolojileriyle
       geliştirilmiş web uygulamaları için en doğal
       barındırma ortamı <strong>Windows Hosting</strong>'dir. <strong>IIS (Internet Information Services)</strong> web
-      sunucusu, <strong>MSSQL Server 2022</strong>
+      server'ı, <strong>MSSQL Server 2022</strong>
       veritabanı ve <strong>Plesk</strong> kontrol panelinin bir arada çalıştığı bu platform; kişisel projelerden
       kurumsal
       e-ticaret
       sistemlerine kadar her ölçekte güvenilir ve yüksek performanslı bir altyapı sunar. <strong>IxirHost Windows
        Hosting</strong>
-      sunucuları, İstanbul'daki <strong>Tier III+</strong> veri merkezinde <strong>Enterprise NVMe SSD</strong> depolama
+      server'ları, İstanbul'daki <strong>Tier III+</strong> veri merkezinde <strong>Enterprise NVMe SSD</strong>
+      depolama
       ve cluster yedekli mimariyle
       çalışmakta; <strong>%99.9 uptime</strong> garantisi kapsamında sitenizin her zaman hızlı ve erişilebilir kalması
       sağlanmaktadır.

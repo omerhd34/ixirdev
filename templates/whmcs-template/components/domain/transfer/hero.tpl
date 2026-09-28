@@ -7,18 +7,18 @@
     <div class="ixir-hero-main">
      <div class="ixir-hero-copy">
       <h1>Domain Transferi</h1>
-      <p>Alan adınızı en uygun fiyata transfer edin ve yüksek yenileme maliyetlerinden kurtulun.</p>
+      <p>Domain'inizi en uygun fiyata transfer edin ve yüksek yenileme maliyetlerinden kurtulun.</p>
      </div>
      <form method="post" action="{$WEB_ROOT}/cart.php" id="frmDomainTransfer">
       <input type="hidden" name="a" value="addDomainTransfer" class="no-icheck">
       <div class="ixir-domain-checker ixir-domain-checker--solo">
        <div class="ixir-dc-input">
         <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-globe"></i></span>
-        <label for="inputTransferDomain" class="sr-only">Transfer edilecek alan adı</label>
+        <label for="inputTransferDomain" class="sr-only">Transfer edilecek domain</label>
         <input type="text" name="domain" class="form-control no-icheck ixir-transfer-input" id="inputTransferDomain"
-         value="{$lookupTerm}" placeholder="Transfer etmek istediğiniz alan adını yazınız."
-         data-placeholder="Transfer etmek istediğiniz alan adını yazınız."
-         data-placeholder-error="Lütfen bir alan adı girin." autocapitalize="none" autocomplete="off" spellcheck="false"
+         value="{$lookupTerm}" placeholder="Transfer etmek istediğiniz domain'i yazınız."
+         data-placeholder="Transfer etmek istediğiniz domain'i yazınız."
+         data-placeholder-error="Lütfen bir domain girin." autocapitalize="none" autocomplete="off" spellcheck="false"
          inputmode="none" readonly>
        </div>
       </div>
@@ -101,13 +101,13 @@
         </a>
        </li>
        <li>
-        <a href="{$WEB_ROOT}/cloud" title="Bulut Sunucu">
-         <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Bulut Sunucu</span>
+        <a href="{$WEB_ROOT}/bulut-server" title="Bulut Server">
+         <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Bulut Server</span>
         </a>
        </li>
        <li>
-        <a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">
-         <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Dedicated Server</span>
+        <a href="{$WEB_ROOT}/kiralik-server" title="Kiralık Server">
+         <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Kiralık Server</span>
         </a>
        </li>
       </ul>

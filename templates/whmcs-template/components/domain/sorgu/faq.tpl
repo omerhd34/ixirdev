@@ -2,19 +2,19 @@
    <div class="container">
     <header class="ixir-wh-plans-head">
      <h2 id="ixir-domain-faq-title">Sıkça Sorulan Sorular</h2>
-     <p>Alan adı tescil ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
+     <p>Domain tescil ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
     </header>
     <div class="ixir-wh-faq-list">
      <div class="ixir-wh-faq-item">
       <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
-        aria-hidden="true"></i>Alan adı tescili hemen gerçekleşiyor mu?</button>
+        aria-hidden="true"></i>Domain tescili hemen gerçekleşiyor mu?</button>
       <div class="ixir-wh-faq-a">
-       <p>Alan adınız ödemenizin ardından <strong>anında tescil</strong> edilecektir.</p>
+       <p>Domain'iniz ödemenizin ardından <strong>anında tescil</strong> edilecektir.</p>
       </div>
      </div>
      <div class="ixir-wh-faq-item">
       <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
-        aria-hidden="true"></i>Neden İXİRHOST'dan alan adı almalıyım?</button>
+        aria-hidden="true"></i>Neden İXİRHOST'dan domain almalıyım?</button>
       <div class="ixir-wh-faq-a">
        <p>Birçok <strong>ücretsiz özellik</strong> ve maliyet fiyatına yakın fiyatlar, en önemlisi <strong>17 yıllık
          sektör tecrübemiz</strong> ile
@@ -23,17 +23,17 @@
      </div>
      <div class="ixir-wh-faq-item">
       <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
-        aria-hidden="true"></i>Alt isim sunucu oluşturabilir miyim?</button>
+        aria-hidden="true"></i>Alt isim server oluşturabilir miyim?</button>
       <div class="ixir-wh-faq-a">
        <p>Evet, <strong>müşteri panelinizden</strong> birkaç tıklama ile yapabilirsiniz.</p>
       </div>
      </div>
      <div class="ixir-wh-faq-item">
       <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
-        aria-hidden="true"></i>Alan adıyla birlikte hangi servisler ücretsiz?</button>
+        aria-hidden="true"></i>Domain'iyle birlikte hangi servisler ücretsiz?</button>
       <div class="ixir-wh-faq-a">
        <p><strong>Whois gizleme</strong>, <strong>DNS yönetimi</strong>, <strong>URL yönlendirme</strong> ve
-        <strong>e-posta yönlendirme</strong> alan adı alan müşterilerimize
+        <strong>e-posta yönlendirme</strong> domain alan müşterilerimize
         <strong>ücretsiz</strong> sağlanmaktadır.<br>*Bu servisler yalnızca <strong>.com, .net, .org</strong> gibi alan
         adlarını kapsamaktadır. <strong>.tr
          uzantılarda kullanılamamaktadır</strong>.
@@ -46,7 +46,7 @@
       <div class="ixir-wh-faq-a">
        <p><strong>Aynı gün</strong> içerisinde <strong>yarı bedel</strong> kesilerek kalan tutar iade edilebilir.
         Yalnızca
-        <strong>com/net/org</strong> alan adlarını
+        <strong>com/net/org</strong> domain'leri
         kapsamaktadır.
        </p>
       </div>
@@ -55,10 +55,10 @@
       <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
         aria-hidden="true"></i>Domanin Tesciline İptal ve İade Mevcut mu?</button>
       <div class="ixir-wh-faq-a">
-       <p>Hayır. Alan adı, kayıt kuruluşu tarafından tescil edildiği için tescil edilmiş bir alan adının bizde de
-        <strong>iptal ve iadesi mümkün değildir</strong>. Alan adınız tescil dönemi boyunca açık kalır. Tescil
+       <p>Hayır. Domain, kayıt kuruluşu tarafından tescil edildiği için tescil edilmiş bir domain'in bizde de
+        <strong>iptal ve iadesi mümkün değildir</strong>. Domain'iniz tescil dönemi boyunca açık kalır. Tescil
         edilemeyen
-        alan adlarının iadesi ise yalnızca <strong>müşteri hesabınıza bakiye</strong> eklenerek yapılır.
+        domain'lerinin iadesi ise yalnızca <strong>müşteri hesabınıza bakiye</strong> eklenerek yapılır.
        </p>
       </div>
      </div>

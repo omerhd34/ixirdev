@@ -38,7 +38,7 @@
       siteleri ve web tabanlı projelerinizi güvenle
       barındırabileceğiniz özel oluşturulmuş <strong>Windows Hosting</strong> paketlerinde tercihinize göre
       <strong>MySQL</strong> ve <strong>MSSQL</strong> veritabanları
-      kullanabilirsiniz. <strong>Özel sunucu konfigürasyonu</strong>, <strong>sürekli güncelleme</strong> ve
+      kullanabilirsiniz. <strong>Özel server konfigürasyonu</strong>, <strong>sürekli güncelleme</strong> ve
       <strong>7/24
        teknik destek</strong> ile projelerinizi yüksek
       performanslı ve sorunsuz olarak gönül rahatlığıyla yayınlayabilirsiniz.
@@ -78,7 +78,7 @@
       yazma ve IOPS değerine sahiptir.
       IxirHost Windows Hosting paketlerinin tamamında <strong>NVME SSD</strong> disk <strong>standart özellik</strong>
       olarak yer almaktadır. NVME SSD
-      disklerin sahip olduğu <strong>yüksek okuma, yazma ve IOPS</strong> değerleri ile Windows Hosting sunucusunda
+      disklerin sahip olduğu <strong>yüksek okuma, yazma ve IOPS</strong> değerleri ile Windows Hosting server'ında
       çalışan internet
       siteleriniz yüksek performansla çalışır. Siz de sitenizin ziyaretçilerine hızlı ve unutulmaz bir deneyim
       yaşatabilirsiniz.</p>

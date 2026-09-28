@@ -40,38 +40,38 @@
   olanakları,
   kuralları, ödeme ve temerrüdü düzenler. Sözleşmeye konu edilen servisler ve tanımları;
  </p>
- <p><strong>3.2.</strong> Alan Adı Tescili (Domain Name Registration); MÜŞTERİ'nin siparişine göre alınacak olan
+ <p><strong>3.2.</strong> Domain Tescili; MÜŞTERİ'nin siparişine göre alınacak olan
   internet
   adresinin
   tescili
-  için gerekli tüm başvuruların, global alan adı otoritesinin (ICANN) ve .TR uzantılarda ODTU otoritesince ve bahsi
+  için gerekli tüm başvuruların, global domain otoritesinin (ICANN) ve .TR uzantılarda ODTU otoritesince ve bahsi
   geçen otoritelerin kurallarına uygun şartlarda, MÜŞTERİ adına başvurularını yapıp tescil ve/veya transfer etmek,
   yenilemektir.</p>
  <p><strong>3.3.</strong> Hosting (Bulundurma), MÜŞTERİ'nin web sitesini internete açık <strong>İXİRHOST</strong>
-  sunucularında
+  server'larında
   bulundurulması servisidir.
  </p>
- <p><strong>3.4.</strong> Dedicated Server (Sunucu kiralama), MÜŞTERİ'nin, <strong>İXİRHOST</strong>'dan kiraladığı
+ <p><strong>3.4.</strong> Kiralık Server , MÜŞTERİ'nin, <strong>İXİRHOST</strong>'dan kiraladığı
   mülkiyeti
   <strong>İXİRHOST</strong>'a ait olan fiziksel
-  sunucu servisini ifade etmektedir.
+  server servisini ifade etmektedir.
  </p>
- <p><strong>3.5.</strong> Co-Location (Sunucu barındırma), MÜŞTERİ'nin, <strong>İXİRHOST</strong> altyapısına ekleyip,
+ <p><strong>3.5.</strong> Co-Location (Server barındırma), MÜŞTERİ'nin, <strong>İXİRHOST</strong> altyapısına ekleyip,
   yayın yapacak
   mülkiyeti kendisine
   ait
-  fiziksel sunucu servisini ifade etmektedir.</p>
- <p><strong>3.6.</strong> Cloud Server (Bulut sunucu), MÜŞTERİ'nin, <strong>İXİRHOST</strong> internet ve donanım
+  fiziksel server servisini ifade etmektedir.</p>
+ <p><strong>3.6.</strong> Bulut Server, MÜŞTERİ'nin, <strong>İXİRHOST</strong> internet ve donanım
   altyapısında
   kiralayacağı sanal özel
-  dedike sunucu servisini ifade etmektedir.</p>
- <p><strong>3.7.</strong> SSL, Web sitesi güvenlik anahtarıdır, <strong>İXİRHOST</strong> sunucuları üzerinde
+  dedike server servisini ifade etmektedir.</p>
+ <p><strong>3.7.</strong> SSL, Web sitesi güvenlik anahtarıdır, <strong>İXİRHOST</strong> server'ları üzerinde
   barındırılan sitelerle
   birlikte MÜŞTERİ
-  <strong>İXİRHOST</strong>'dan almış olduğu SSL sertifikasını başka bir hosting servisinde, sunucuda
+  <strong>İXİRHOST</strong>'dan almış olduğu SSL sertifikasını başka bir hosting servisinde, server'da
   kullanabilmektedir.
  </p>
- <p><strong>3.8.</strong> PCI Tarama, MÜŞTERİnin sitesinin, sunucusunun uluslararası kabul görmüş standartlarda güvenlik
+ <p><strong>3.8.</strong> PCI Tarama, MÜŞTERİnin sitesinin, server'ının uluslararası kabul görmüş standartlarda güvenlik
   testlerinin
   yapılması ve raporlaması servisini ifade etmektedir.</p>
  <p><strong>3.9.</strong> Cloud Drive (Bulut Depolama), MÜŞTERİ'nin erişimine açık, internet tabanlı tek merkezli veri
@@ -82,7 +82,7 @@
   Telekomünikasyon
   A.Ş. yetkili bayisidir. Kayıt Kuruluşu Tel: 0850 850 46 78 .TR alan adları TRABİS mevzuatına uygun olarak yetkili
   bayilik üzerinden kayıt edilmektedir.</p>
- <p><strong>3.11.</strong> MÜŞTERİ; İAA (İnternet Alan Adı) başvurusu, tahsisi ve kullanımı kapsamında aşağıdaki
+ <p><strong>3.11.</strong> MÜŞTERİ; İAA (İnternet Domain) başvurusu, tahsisi ve kullanımı kapsamında aşağıdaki
   hususları kabul, beyan ve
   taahhüt eder:</p>
  <ul class="ixir-legal-clauses">
@@ -97,7 +97,7 @@
   <li>e) KK'lar arası zorunlu transfer hallerinde, bilgilendirilmesini müteakip gereken işlemleri yapacağını;</li>
   <li>f) Yönetmelik ve ilgili mevzuatta öngörülen iptal hallerinde İAA'nın iptal edileceğini ve iptal veya feragat
    durumunda bu işlemlerin İAAS lehine bir hak doğurmayacağını;</li>
-  <li>g) Alan adının süresi içinde yenilenmesinden kendisinin sorumlu olduğunu, süresinde yenilenmeyen alan adının
+  <li>g) Domain'in süresi içinde yenilenmesinden kendisinin sorumlu olduğunu, süresinde yenilenmeyen domain'in
    mevzuata göre iptal edilebileceğini;</li>
   <li>h) Başvuru sırasında bildirdiği elektronik posta adresine yapılan bildirimlerin kendisine yapılmış geçerli
    tebligat sayılacağını;</li>
@@ -108,10 +108,11 @@
  <h3>4. Hizmet Tanımı</h3>
  <p><strong>İxirhost</strong>'un MÜŞTERİ'ye vermiş olduğu temel hizmet olarak MÜŞTERİ'nin web site veya sitelerinin
   <strong>İxirhost</strong>
-  sunucularında
-  barındırılarak internet ağı üzerinden yayınlanmasıdır. MÜŞTERİ sözleşme kapsamında web hosting, bayi/reseller hosting,
-  sunucu kiralama (dedicated server), co-location (sunucu barındırma), cloud server (bulut sunucu), cloud drive, ssl ve
-  alan adı tescili servisini birlikte veya tek tek alabilir.
+  server'larında
+  barındırılarak internet ağı üzerinden yayınlanmasıdır. MÜŞTERİ sözleşme kapsamında web hosting, bayi/reseller
+  hosting,server kiralama, co-location (server barındırma), bulut server, cloud drive, ssl ve domain tescili servisini
+  birlikte
+  veya tek tek alabilir.
  </p>
  <p>MÜŞTERİ bu servisleri başlatırken ve kullanırken <strong>İXİRHOST</strong>, sözleşme, politika ve prosedürlerine ve
   bununla birlikte
@@ -141,10 +142,10 @@
   olacaktır, bu servis üzerinde barındıracağı hosting hesaplarından, bu hesaplarda yapılan işlemlerden sorumludurlar ve
   bu hesapta barındıracağı hizmetlere MÜŞTERİ kendi müşterilerine kendi destek vermekle yükümlüdür.
  </p>
- <p><strong>4.5.</strong> Hosting/Sunucu taşıma servisleri her site/sunucu için verilemeyebilir, aktarım/taşıma hizmeti
+ <p><strong>4.5.</strong> Hosting/server taşıma servisleri her site/server için verilemeyebilir, aktarım/taşıma hizmeti
   sadece dataların
   eski hizmet alınan firmadaki servis/hizmet üzerinden alınıp firmamız bünyesindeki hizmetinize (hosting/cloud
-  sunucu/dedicated server/ co-location vb.) aktarılmasını kapsamaktadır, aktarım sırasında veya sonrasında oluşan veya
+  server/kiralık server/ co-location vb.) aktarılmasını kapsamaktadır, aktarım sırasında veya sonrasında oluşan veya
   oluşabilecek data bütünlüğü ve doğruluğu bununla birlikte, site yazılımından/yazılımdan doğacak arıza, ayar, bakım,
   güncelleme müşteriyi bağlar. <strong>İXİRHOST</strong> hızlı internet bağlantı kapasitesini ve alanını kullanarak
   verilerin
@@ -243,8 +244,8 @@
   <li>Sosyal medya abone, takipçi, otomasyon ile beğeni, yorum vb. scriptleri</li>
  </ul>
 
- <h4>b) Kiralık Sunucu (Dedicated Server), Sunucu Barındırma (Co-Location), Cloud Sunucu (Bulut Sunucu) ve sanal özel
-  sunucu hizmetinde kabul edilmeyecek materyallar;</h4>
+ <h4>b) Kiralık Server , Server Barındırma (Co-Location), Bulut Server ve sanal özel
+  server hizmetinde kabul edilmeyecek materyallar;</h4>
  <ul>
   <li>Adult, Pornografi ve Escort bilgileri içeren siteler</li>
   <li>Korsan, İzinsiz yazılım / Warez / Keygen / Crack</li>
@@ -263,7 +264,7 @@
   <li>Telif hakkı ödenmemiş içeriklerin yayınlanması</li>
   <li>Yasa ve kanun dışı ilaç, tıbbi malzeme, gıda takviyesi ve uyuşturucu ürünleri siteleri</li>
   <li>Sosyal medya abone, takipçi, otomasyon ile beğeni, yorum vb. scriptleri</li>
-  <li>İllegal veya yasadışı faaliyetlerde kullanılmak üzere kurulan VPN sunucuları</li>
+  <li>İllegal veya yasadışı faaliyetlerde kullanılmak üzere kurulan VPN server'ları</li>
   <li>Türü veya kaynağı ne olursa olursun herhangi bir şekilde mining / madencilik uygulamaları</li>
  </ul>
  <p>Yukarıda ki maddelerde belirtilmemesine rağmen yasalara, kanunlara ve kanun hükmündeki kararnamelere aykırı ve suç
@@ -281,18 +282,18 @@
   doğrulamak için izleyebilir, bu süreçte bilgiler incelenebilir, kaydedilebilir, kopyalanabilir, MÜŞTERİ bu süreçte
   yapılacak faaliyetleri kabul eder.</p>
 
- <h4><strong>6.3.</strong> Sunucu Kaynak Kullanımı Sınırlandırması</h4>
+ <h4><strong>6.3.</strong> Server Kaynak Kullanımı Sınırlandırması</h4>
  <p>MÜŞTERİ; Paylaşımlı hosting, bayii hosting hizmetlerinde aşağıda belirtilen kaynak kullanım sınırlandırmasına uymak
   zorundadır;</p>
  <ul>
   <li><strong>6.3.1.</strong> Sistem kaynaklarının %25 veya daha fazlasının 90 saniyeden uzun bir süre kullanamaz.</li>
   <li><strong>6.3.2.</strong> 10 Dakikadan daha sık süreyle Cron-Job görevleri çalıştıramaz</li>
   <li><strong>6.3.3.</strong> Internet Relay Chat (IRC) programları, scriptleri çalıştıramaz</li>
-  <li><strong>6.3.4.</strong> Herhangi bir oyun sunucusu çalıştıramazsınız (half life, counter strike vb.)</li>
+  <li><strong>6.3.4.</strong> Herhangi bir oyun server'ı çalıştıramazsınız (half life, counter strike vb.)</li>
   <li><strong>6.3.5.</strong> P2P, Torrent istemci ve yayıncıları çalıştırılamaz</li>
   <li><strong>6.3.6.</strong> SSL Sertifikası olmayan siteler HTTPS protokolünü aktif edip kullanamazlar.</li>
   <li><strong>6.3.7.</strong> Toplu Mail gönderimi yapılamaz.</li>
-  <li><strong>6.3.8.</strong> Aksi belirtilmedikçe tüm sunucularımızda saatlik 200 e-posta gönderim limiti vardır.</li>
+  <li><strong>6.3.8.</strong> Aksi belirtilmedikçe tüm server'larımızda saatlik 200 e-posta gönderim limiti vardır.</li>
   <li><strong>6.3.9.</strong> Limitlendirilmemiş ve Limitsiz kaynaklar ek fatura oluşturmamak içindir, gerektiğinde disk
    veya inode limiti
    uygulanablir</li>
@@ -314,7 +315,7 @@
   erişimini kullanarak <strong>İXİRHOST</strong>'un sistemine ve MÜŞTERİlerinin özel program ve dosyalarına izinsiz
   ulaşmamayı,
   kullanmamayı ve zarar vermemeyi kabul eder.</p>
- <p><strong>6.6.</strong> MÜŞTERİ, Alan adı tescili, Hosting hizmeti, Sunucu hizmetlerinin kullandırılmasından
+ <p><strong>6.6.</strong> MÜŞTERİ, Domain tescili, Hosting hizmeti, Server hizmetlerinin kullandırılmasından
   kaynaklanan yürürlülükte
   olan ve ileride yürürlülüğe girecek olan tüm vergi, harç ve benzeri yükümlülüklerinin kendisine ait olduğunu,
   ödeyeceğini beyan eder.</p>
@@ -323,12 +324,12 @@
   birlikte bu
   yedekleme MÜŞTERİ kullanımı için değil, teknik arıza veya felaket durumlarında veri kaybı yaşanmaması için
   yapılmakta olup MÜŞTERİ kendi verisini yedeklemekle yükümlüdür.</p>
- <p><strong>6.8.</strong> <strong>İXİRHOST</strong>, Kiralık sunucu (dedicated server), Sunucu Barındırma (Co-Location),
+ <p><strong>6.8.</strong> <strong>İXİRHOST</strong>, Kiralık server , Server Barındırma (Co-Location),
   VDS Server,
   Cloud Server, Sanal
-  Özel Sunucu hizmetlerinde verilerin yedeklenmesi, sistemdeki hataların giderilmesi, panel hatalarının giderilmesi vb.
-  hizmetleri ek bir servis olan "sunucu yönetim ve yedekleme servisi" kapsamında almamış MÜŞTERİler için sağlamaz, bu
-  durumda MÜŞTERİ sunucu servislerinde yedek ve hataların giderilmesinden kendisi sorumludur.</p>
+  Özel Server hizmetlerinde verilerin yedeklenmesi, sistemdeki hataların giderilmesi, panel hatalarının giderilmesi vb.
+  hizmetleri ek bir servis olan "server yönetim ve yedekleme servisi" kapsamında almamış MÜŞTERİler için sağlamaz, bu
+  durumda MÜŞTERİ server servislerinde yedek ve hataların giderilmesinden kendisi sorumludur.</p>
  <p><strong>6.9.</strong> MÜŞTERİ, Hangi servis olursa olsun Yedeklerini/Datalarını almakla yükümlüdür, hizmet süresi
   sonunda kapatılan
   hizmetler, yenilemesi yapılmamış hizmetler, kapatılmış hizmetlerde yedekleme, dataları edinme MÜŞTERİnin
@@ -364,7 +365,7 @@
  <p><strong>7.4.</strong> Sınırlandırılmamış / Limitlendirilmemiş hesaplar ile birlikte diğer tüm "web hosting"
   hesaplarında E-POSTA
   hesapları, e-posta arşivleme, depolama, saklama, ücretsiz e-posta dağıtma maksadıyla kullanılamaz, MÜŞTERİ
-  E-POSTA'larını sunucu üzerinde biriktiriyorsa belirli periyotlarda POP3 bağlantısı yaparak sunucuda ki maillerini
+  E-POSTA'larını server üzerinde biriktiriyorsa belirli periyotlarda POP3 bağlantısı yaparak server'da ki maillerini
   download etmek durumundadır, ADİL KULLANIM yapmadığını tespit ettiğimiz hesaplarda ki E-POSTA datalarını kalıcı olarak
   silebilir ve kalıcı sınırlandırma getirebiliriz.</p>
  <p><strong>7.5.</strong> Sınırlandırılmamış / Limitlendirilmemiş hesaplar ile birlikte diğer tüm "web hosting"
@@ -373,13 +374,13 @@
   kabul edilebilir boyutlarda olmalıdır, 2GB'dan büyük veritabanları için ADİL KULLANIM koşulları uygulanabilir. ADİL
   KULLANIM yapmadığını tespit ettiğimiz hesapları kalıcı olarak silebilir ve kalıcı sınırlandırma getirebiliriz.
   Kullanılan veritabanları herhangi bir crm, erp, muhasebe veya uzaktaki bir site, program tarafından veritabanı
-  sunucusu olarak kullanılamaz, aykırı kullanımda erişimi kapatılacaktır.</p>
+  server'ı olarak kullanılamaz, aykırı kullanımda erişimi kapatılacaktır.</p>
  <p><strong>7.6.</strong> Sınırlandırılmamış / Limitlendirilmemiş hesaplar ek bir fatura çıkmadan, disk, mail,
   veritabanı, subdomain vb.
   ücretlerden tüketiciyi korumak için planlanmış ve yürürlüğe alınmıştır. Müşterilerimizin sitelerinin aşımlarından
   dolayı ek faturalar ile karşılaşmaması için planlanmıştır. Burada "iyi niyetli kullanım" baz alınmakta olup, suistimal
   durumlarında, diğer müşterilerimizin yayınlarının etkilenmemesi için, suistimal yapan müşteri/müşterilerin verilerin
-  sunucu üzerinden tamamen kaldırılması, hesapların kalıcı olarak limitlendirilmesi, tekrar hizmet verilmemesi
+  server üzerinden tamamen kaldırılması, hesapların kalıcı olarak limitlendirilmesi, tekrar hizmet verilmemesi
   <strong>İXİRHOST</strong>
   insiyatifindedir.
  </p>
@@ -387,7 +388,7 @@
   kabul edilebilir
   değerdir, üzerinde ki kullanımlar adil kullanım limitleri kapsamında değerlendiremez, 10 GB ve üstü disk
   kullanımlarında
-  disk limiti, hard inode limiti koyulmaktadır, öncesinde tüketici uyarılmaktadır, bu bağlamda sunucu depolama, I/O
+  disk limiti, hard inode limiti koyulmaktadır, öncesinde tüketici uyarılmaktadır, bu bağlamda server depolama, I/O
   performans dengesi sağlanmaktadır.</p>
 
  <h3>8. Depolama, Yedekleme ve Güvenlik</h3>
@@ -406,8 +407,8 @@
   onun
   müşterilerini, yayınladığı
   web
-  site ve sunucuları bunların işlevselliğini, gizliliğini bozamaz, zarar veremez ve bu şekilde servisleri kullanamaz.
-  Müşteri hiçbir suretle yayınladığı site, sunucu vb. tüm hizmet kalemleri içerisinde <strong>İXİRHOST</strong> ve
+  site ve server'ları bunların işlevselliğini, gizliliğini bozamaz, zarar veremez ve bu şekilde servisleri kullanamaz.
+  Müşteri hiçbir suretle yayınladığı site, server vb. tüm hizmet kalemleri içerisinde <strong>İXİRHOST</strong> ve
   müşterilerinin
   hizmetlerinin aksamasına neden olabilecek bir site, uygulama çalıştıramaz.</p>
 
@@ -474,7 +475,8 @@
   kayıtlarının, mikrofilm,
   mikrofiş, fatura, mail, bilgisayar kayıtlarının, <strong>İXİRHOST</strong>'un göndermiş olduğu elektronik posta ve
   benzeri iletilerle
-  MÜŞTERİ'nin internet ortamında yaptığı ve <strong>İXİRHOST</strong>'un sunucularında depolanmış kayıtların Hukuk Usulü
+  MÜŞTERİ'nin internet ortamında yaptığı ve <strong>İXİRHOST</strong>'un server'larında depolanmış kayıtların Hukuk
+  Usulü
   Mahkemeleri
   kanununun 287. maddesi anlamında geçerli, bağlayıcı, kesin ve öncelikli delil teşkil edeceğini ve bu maddenin delil
   sözleşmesi niteliğinde olduğunu, yukarıda belirtilen <strong>İXİRHOST</strong> kayıtlarına karşı her türlü itiraz ve
@@ -497,7 +499,7 @@
 
  <div class="ixir-legal-meta">
   <p><strong>Revizyon:</strong> 27/07/2026 12:00 IKSIRAS-HS-REV06</p>
-  <p><strong>Revizyon Notu:</strong> TRABİS mevzuatına uyum kapsamında, MÜŞTERİ'nin İAA (İnternet Alan Adı) başvurusu,
+  <p><strong>Revizyon Notu:</strong> TRABİS mevzuatına uyum kapsamında, MÜŞTERİ'nin İAA (İnternet Domain) başvurusu,
    tahsisi ve kullanımına ilişkin kabul, beyan ve taahhütlerini düzenleyen 3.11 maddesi eklenmiştir.</p>
  </div>
 </div>

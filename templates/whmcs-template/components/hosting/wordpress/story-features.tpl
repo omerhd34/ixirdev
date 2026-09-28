@@ -22,7 +22,7 @@
       <h3 class="ixir-wh-story-title">Yüksek CPU & RAM Kaynağı</h3>
      </div>
      <p>Wordpress web siteleri klasik web sitelerine göre çok daha yüksek RAM ve CPU kaynağı tüketir ve bu sebeple
-      yüksek kaynak sunan sunucu ,donanım ve yazılım altyapısında çalıştırılmalıdır. İxir Hosting tarafından sunulan
+      yüksek kaynak sunan server ,donanım ve yazılım altyapısında çalıştırılmalıdır. İxir Hosting tarafından sunulan
       gelişmiş WordPress Hosting hizmetinde web sitelerinizin ihtiyaç duyduğu yüksek RAM ve CPU kaynağı bulunmaktadır ve
       dilediğiniz zaman bulunduğunuz paketten daha yüksek CPU & RAM kaynağı olan pakete geçiş yapabilirsiniz.</p>
     </div>
@@ -53,7 +53,7 @@
       <h3 class="ixir-wh-story-title">LiteSpeed ve LsCache Desteği</h3>
      </div>
      <p>WordPress web sitenizin yavaş açılma problemi mi var ? Sorun değil. LiteSpeed gelişmiş önbellekleme teknolojisi
-      web sitelerinin% 6,4'ü tarafından kullanıldığı tahmin edilen en popüler 5. web sunucusudur ve tüm WordPress
+      web sitelerinin% 6,4'ü tarafından kullanıldığı tahmin edilen en popüler 5. web server'ıdır ve tüm WordPress
       hosting paketlerinde sunulan LiteSpeed Cache desteği sayesinde web siteleriniz Apache veya Mod_LSAPI ile çalışan
       klasik hosting hizmetlerine nazaran 10 kata kadar daha yüksek hız performansı gösterir.</p>
     </div>

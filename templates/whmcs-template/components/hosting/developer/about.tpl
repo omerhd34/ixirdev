@@ -26,7 +26,7 @@
    <div class="ixir-wh-about-split">
     <div class="ixir-wh-about-copy ixir-wh-about-anim">
      <h3><span aria-hidden="true"><i class="fas fa-terminal"></i></span>Maliyet avantajı, geliştirici özgürlüğü</h3>
-     <p>Geleneksel paylaşımlı hosting ile sunucu arasında kalan developer hosting, hem
+     <p>Geleneksel paylaşımlı hosting ile server arasında kalan developer hosting, hem
       <strong>maliyet avantajı</strong> hem de <strong>geliştirici özgürlüğü</strong> sunar.
       <code>php artisan migrate</code>, <code>npm run build</code> veya <code>python manage.py collectstatic</code>
       gibi CLI komutlarını doğrudan terminal üzerinden çalıştırabilir; cPanel'de Node.js Selector ile versiyon

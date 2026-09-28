@@ -458,7 +458,7 @@
    }
    var placeholderFull = input.getAttribute('data-placeholder') || input.getAttribute('placeholder');
    var placeholderSm = input.getAttribute('data-placeholder-sm') || 'ixirhost.com';
-   var placeholderError = input.getAttribute('data-placeholder-error') || 'Lütfen bir alan adı girin.';
+   var placeholderError = input.getAttribute('data-placeholder-error') || 'Lütfen bir domain girin.';
 
    function isSm() {
     return window.innerWidth <= 767;

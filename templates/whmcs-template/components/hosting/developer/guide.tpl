@@ -19,7 +19,7 @@
     <p>Standart paylaşımlı hosting paketleri çoğu zaman SSH, Git, Composer ve Node.js gibi geliştirici araçlarına izin
      vermez. Developer Hosting ise Laravel, Node.js, Python ve Ruby projelerinizi tek bir cPanel hesabında geliştirip
      yayınlamanız için bu araçları bir arada sunar. Terminal erişimi sayesinde <strong>php artisan</strong>,
-     <strong>npm install</strong>, <strong>pip</strong> ve <strong>git clone</strong> gibi komutları doğrudan sunucuda
+     <strong>npm install</strong>, <strong>pip</strong> ve <strong>git clone</strong> gibi komutları doğrudan server'da
      çalıştırabilir; hem staging hem canlı ortamı aynı altyapıda yönetebilirsiniz.
     </p>
    </article>

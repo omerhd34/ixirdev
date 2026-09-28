@@ -66,17 +66,17 @@
    {assign var="ixirSpotList" value=$ixirSpotlightTlds}
    {if !$ixirSpotList}
     {assign var="ixirSpotList" value=[
-                                                                                                                             ['tldNoDots'=>'com','tld'=>'.com','register'=>'615.00TL'],
-                                                                                                                             ['tldNoDots'=>'net','tld'=>'.net','register'=>'655.00TL'],
-                                                                                                                             ['tldNoDots'=>'comtr','tld'=>'.com.tr','register'=>'150.00TL'],
-                                                                                                                             ['tldNoDots'=>'nettr','tld'=>'.net.tr','register'=>'150.00TL'],
-                                                                                                                             ['tldNoDots'=>'tr','tld'=>'.tr','register'=>'200.00TL'],
-                                                                                                                             ['tldNoDots'=>'xyz','tld'=>'.xyz','register'=>'125.00TL'],
-                                                                                                                             ['tldNoDots'=>'info','tld'=>'.info','register'=>'220.00TL'],
-                                                                                                                             ['tldNoDots'=>'pro','tld'=>'.pro','register'=>'200.00TL'],
-                                                                                                                             ['tldNoDots'=>'org','tld'=>'.org','register'=>'555.00TL'],
-                                                                                                                             ['tldNoDots'=>'work','tld'=>'.work','register'=>'150.00TL']
-                                                                                                                           ]}
+                                                                                                                              ['tldNoDots'=>'com','tld'=>'.com','register'=>'615.00TL'],
+                                                                                                                              ['tldNoDots'=>'net','tld'=>'.net','register'=>'655.00TL'],
+                                                                                                                              ['tldNoDots'=>'comtr','tld'=>'.com.tr','register'=>'150.00TL'],
+                                                                                                                              ['tldNoDots'=>'nettr','tld'=>'.net.tr','register'=>'150.00TL'],
+                                                                                                                              ['tldNoDots'=>'tr','tld'=>'.tr','register'=>'200.00TL'],
+                                                                                                                              ['tldNoDots'=>'xyz','tld'=>'.xyz','register'=>'125.00TL'],
+                                                                                                                              ['tldNoDots'=>'info','tld'=>'.info','register'=>'220.00TL'],
+                                                                                                                              ['tldNoDots'=>'pro','tld'=>'.pro','register'=>'200.00TL'],
+                                                                                                                              ['tldNoDots'=>'org','tld'=>'.org','register'=>'555.00TL'],
+                                                                                                                              ['tldNoDots'=>'work','tld'=>'.work','register'=>'150.00TL']
+                                                                                                                            ]}
    {/if}
    <div id="spotlightTlds" class="ixir-spotlights spotlight-tlds clearfix">
     <div class="spotlight-tlds-container">
@@ -142,7 +142,7 @@
      <a id="moreSuggestions" href="#">Daha fazla öneri göster <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
      <span id="noMoreSuggestions" class="no-more small w-hidden">Başka öneri yok</span>
     </div>
-    <p class="text-center text-muted domain-suggestions-warning">Sepete eklerken alan adının hâlâ müsait olduğu tekrar
+    <p class="text-center text-muted domain-suggestions-warning">Sepete eklerken domain'in hâlâ müsait olduğu tekrar
      kontrol edilir.</p>
    </div>
   </div>

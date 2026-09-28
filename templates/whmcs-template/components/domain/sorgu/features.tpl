@@ -1,7 +1,7 @@
   <section class="ixir-domain-features ixir-slide ixir-slide--left is-slide-on">
    <div class="container">
     <h2>Kolay ve Pratik Domain Yönetimi</h2>
-    <p class="ixir-domain-features-lead">Alan adınızı gelişmiş domain paneli ile zahmetsizce yönetin</p>
+    <p class="ixir-domain-features-lead">Domain'inizi gelişmiş domain paneli ile zahmetsizce yönetin</p>
     <div class="ixir-domain-feature-grid">
      <article>
       <span class="ixir-domain-feature-icon" aria-hidden="true"><i class="fas fa-cog"></i></span>
@@ -14,7 +14,7 @@
       <span class="ixir-domain-feature-icon" aria-hidden="true"><i class="fas fa-percent"></i></span>
       <div>
        <h3>Ekonomik Fiyatlar</h3>
-       <p>Yıl boyu en ekonomik fiyatlardan alan adı kaydedin, ayrıca zaman zaman bazı uzantılarda çok cazip fiyatlar
+       <p>Yıl boyu en ekonomik fiyatlardan domain kaydedin, ayrıca zaman zaman bazı uzantılarda çok cazip fiyatlar
         sunmaktayız</p>
       </div>
      </article>
@@ -22,7 +22,7 @@
       <span class="ixir-domain-feature-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span>
       <div>
        <h3>Özel NS Yönetimi</h3>
-       <p>Kendi isim sunucunuzu oluşturarak web sitenize ve markanıza değer katın.</p>
+       <p>Kendi isim server'ınızı oluşturarak web sitenize ve markanıza değer katın.</p>
       </div>
      </article>
      <article>
@@ -36,7 +36,7 @@
       <span class="ixir-domain-feature-icon" aria-hidden="true"><i class="fas fa-exchange-alt"></i></span>
       <div>
        <h3>İç Transfer</h3>
-       <p>Kullanıcılar arasında alan adını ücretsiz ve hızlı transfer edin.</p>
+       <p>Kullanıcılar arasında domain'i ücretsiz ve hızlı transfer edin.</p>
       </div>
      </article>
      <article>

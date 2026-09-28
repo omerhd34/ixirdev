@@ -146,7 +146,7 @@
   <div class="ixir-whois-guide ixir-slide ixir-slide--right is-slide-on" id="ixir-whois-guide">
    <div class="ixir-whois-intro">
     <h2>Ücretsiz Whois Sorgulama</h2>
-    <p>Alan adının sahibini merak ediyor veya sahibi ile iletişime geçmek istiyorsanız, hemen bir alan adı
+    <p>Domain'inin sahibini merak ediyor veya sahibi ile iletişime geçmek istiyorsanız, hemen bir domain
      sorgulayabilir ve sonuçlara göz atabilirsiniz.</p>
    </div>
    <div class="ixir-whois-cols">
@@ -155,9 +155,9 @@
       <span class="ixir-whois-col-icon" aria-hidden="true"><i class="far fa-eye"></i></span>
       <h3>Whois Sorgulama Neden Yapılır?</h3>
      </div>
-     <p>Whois, kayıtlı bir alan adının sahiplik kaydıdır. Sorgulama ile bu kayda bakılır.</p>
+     <p>Whois, kayıtlı bir domain'inin sahiplik kaydıdır. Sorgulama ile bu kayda bakılır.</p>
      <ul class="ixir-whois-points">
-      <li>Alan adının kime ait olduğu görülür.</li>
+      <li>Domain'inin kime ait olduğu görülür.</li>
       <li>Sahibiyle iletişime geçilebilir.</li>
       <li>Kaydı yapan firma (registrar) öğrenilir.</li>
      </ul>
@@ -180,293 +180,293 @@
 </section>
 <script>
  {literal}
-  (function() {
-   var root = document.getElementById('ixir-whois-guide');
-   if (!root || !window.IntersectionObserver) {
-    return;
-   }
-   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    return;
-   }
-   root.classList.add('is-armed');
-   var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-     if (!entry.isIntersecting) {
-      return;
-     }
-     observer.disconnect();
+ (function() {
+  var root = document.getElementById('ixir-whois-guide');
+  if (!root || !window.IntersectionObserver) {
+   return;
+  }
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+   return;
+  }
+  root.classList.add('is-armed');
+  var observer = new IntersectionObserver(function(entries) {
+   entries.forEach(function(entry) {
+    if (!entry.isIntersecting) {
+     return;
+    }
+    observer.disconnect();
+    window.requestAnimationFrame(function() {
      window.requestAnimationFrame(function() {
-      window.requestAnimationFrame(function() {
-       root.classList.add('is-in');
-       window.setTimeout(function() {
-        root.classList.remove('is-armed');
-       }, 1400);
-      });
+      root.classList.add('is-in');
+      window.setTimeout(function() {
+       root.classList.remove('is-armed');
+      }, 1400);
      });
     });
-   }, {
-    threshold: 0
    });
-   observer.observe(root);
-  })();
+  }, {
+   threshold: 0
+  });
+  observer.observe(root);
+ })();
  {/literal}
 </script>
 <script>
  {literal}
-  (function() {
-   var form = document.getElementById('frmWhoisChecker');
-   var input = document.getElementById('ixir-whois-domain');
-   if (!form || !input) {
-    return;
-   }
+ (function() {
+  var form = document.getElementById('frmWhoisChecker');
+  var input = document.getElementById('ixir-whois-domain');
+  if (!form || !input) {
+   return;
+  }
 
-   function isReload() {
-    var nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
-    return (nav && nav.type === 'reload') || (performance.navigation && performance.navigation.type === 1);
-   }
-
-   function clearIfReload() {
-    if (!isReload()) {
-     return;
-    }
-    input.value = '';
-    input.setAttribute('placeholder', input.getAttribute('data-placeholder') || '');
-    var nodes = document.querySelectorAll('.ixir-whois-alert, .ixir-whois-card, .ixir-whois-result');
-    var i;
-    for (i = 0; i < nodes.length; i++) {
-     if (nodes[i].parentNode) {
-      nodes[i].parentNode.removeChild(nodes[i]);
-     }
-    }
-   }
-   clearIfReload();
-   window.addEventListener('pageshow', function(e) {
-    if (e.persisted || isReload()) {
-     clearIfReload();
-    }
-   });
-   var hint = document.getElementById('ixir-whois-field-error');
-   var placeholder = input.getAttribute('data-placeholder') || input.getAttribute('placeholder') || '';
-   var placeholderError = input.getAttribute('data-placeholder-error') || 'Lütfen bir alan adı girin.';
-
-   function empty() {
-    return !String(input.value || '').replace(/^\s+|\s+$/g, '');
-   }
-
-   function normalize(value) {
-    return String(value || '').replace(/^\s+|\s+$/g, '').toLowerCase()
-     .replace(/^https?:\/\//, '')
-     .replace(/^www\./, '')
-     .replace(/[/?#].*$/, '')
-     .replace(/\s+/g, '')
-     .replace(/^\.+|\.+$/g, '');
-   }
-
-   function valid() {
-    return /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$/i.test(normalize(input.value));
-   }
-
-   function shake() {
-    form.classList.remove('ixir-dc-shake');
-    void form.offsetWidth;
-    form.classList.add('ixir-dc-invalid', 'ixir-dc-shake');
-    input.setAttribute('aria-invalid', 'true');
-   }
-
-   function hide() {
-    form.classList.remove('ixir-dc-invalid', 'ixir-dc-shake');
-    input.setAttribute('placeholder', placeholder);
-    input.removeAttribute('aria-invalid');
-    if (hint) {
-     hint.hidden = true;
-    }
-   }
-
-   function showEmpty() {
-    if (hint) {
-     hint.hidden = true;
-    }
-    input.value = '';
-    shake();
-    input.setAttribute('placeholder', placeholderError);
-    input.focus();
-   }
-
-   function showInvalid() {
-    shake();
-    input.setAttribute('placeholder', placeholder);
-    if (hint) {
-     hint.hidden = false;
-    }
-    input.focus();
-   }
-
-   input.addEventListener('input', function() {
-    if (empty() || valid()) {
-     hide();
-    }
-   });
-
-   form.addEventListener('submit', function(e) {
-    if (empty()) {
-     e.preventDefault();
-     e.stopPropagation();
-     showEmpty();
-     return;
-    }
-    if (!valid()) {
-     e.preventDefault();
-     e.stopPropagation();
-     showInvalid();
-    }
-   }, true);
-  })();
-
-  (function() {
-   var target = document.getElementById('ixir-whois-kayit') || document.querySelector(
-    '.ixir-whois-alert, .ixir-whois-result');
-   if (!target) {
-    return;
-   }
+  function isReload() {
    var nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
-   var reloaded = (nav && nav.type === 'reload') || (performance.navigation && performance.navigation.type === 1);
-   if (reloaded) {
+   return (nav && nav.type === 'reload') || (performance.navigation && performance.navigation.type === 1);
+  }
+
+  function clearIfReload() {
+   if (!isReload()) {
     return;
    }
+   input.value = '';
+   input.setAttribute('placeholder', input.getAttribute('data-placeholder') || '');
+   var nodes = document.querySelectorAll('.ixir-whois-alert, .ixir-whois-card, .ixir-whois-result');
+   var i;
+   for (i = 0; i < nodes.length; i++) {
+    if (nodes[i].parentNode) {
+     nodes[i].parentNode.removeChild(nodes[i]);
+    }
+   }
+  }
+  clearIfReload();
+  window.addEventListener('pageshow', function(e) {
+   if (e.persisted || isReload()) {
+    clearIfReload();
+   }
+  });
+  var hint = document.getElementById('ixir-whois-field-error');
+  var placeholder = input.getAttribute('data-placeholder') || input.getAttribute('placeholder') || '';
+  var placeholderError = input.getAttribute('data-placeholder-error') || 'Lütfen bir domain girin.';
 
-   function go() {
-    var spacer = document.querySelector('.ixir-header-spacer');
-    var offset = spacer ? spacer.getBoundingClientRect().height : 0;
-    var top = target.getBoundingClientRect().top + (window.pageYOffset || window.scrollY || 0) - offset - 20;
-    window.scrollTo({
-     top: Math.max(0, top),
-     behavior: 'smooth'
-    });
-   }
-   window.addEventListener('load', function() {
-    window.setTimeout(go, 80);
-   });
-  })();
+  function empty() {
+   return !String(input.value || '').replace(/^\s+|\s+$/g, '');
+  }
 
-  (function() {
-   var viewport = document.getElementById('ixirDomainTlds');
-   if (!viewport) {
-    return;
-   }
-   var track = viewport.querySelector('.ixir-tld-track');
-   if (!track || !track.children.length) {
-    return;
-   }
-   var originalHTML = track.innerHTML;
-   var x = 0;
-   var setWidth = 0;
-   var dragging = false;
-   var paused = false;
-   var startX = 0;
-   var startOffset = 0;
-   var lastX = 0;
-   var velocity = 0;
-   var resumeTimer = null;
-   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-   var speed = reduceMotion ? 0 : 0.45;
+  function normalize(value) {
+   return String(value || '').replace(/^\s+|\s+$/g, '').toLowerCase()
+    .replace(/^https?:\/\//, '')
+    .replace(/^www\./, '')
+    .replace(/[/?#].*$/, '')
+    .replace(/\s+/g, '')
+    .replace(/^\.+|\.+$/g, '');
+  }
 
-   function build() {
-    var keep = x;
-    track.innerHTML = originalHTML;
-    var baseWidth = track.scrollWidth;
-    var need = Math.max(2, Math.ceil((viewport.clientWidth * 2) / Math.max(baseWidth, 1)) + 1);
-    var i;
-    var html = originalHTML;
-    for (i = 1; i < need; i++) {
-     html += originalHTML;
-    }
-    track.innerHTML = html + html;
-    setWidth = track.scrollWidth / 2;
-    x = keep;
-    apply();
-   }
+  function valid() {
+   return /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$/i.test(normalize(input.value));
+  }
 
-   function wrap() {
-    if (!setWidth) {
-     return;
-    }
-    while (x <= -setWidth) {
-     x += setWidth;
-    }
-    while (x > 0) {
-     x -= setWidth;
-    }
-   }
+  function shake() {
+   form.classList.remove('ixir-dc-shake');
+   void form.offsetWidth;
+   form.classList.add('ixir-dc-invalid', 'ixir-dc-shake');
+   input.setAttribute('aria-invalid', 'true');
+  }
 
-   function apply() {
-    wrap();
-    track.style.transform = 'translate3d(' + x + 'px,0,0)';
+  function hide() {
+   form.classList.remove('ixir-dc-invalid', 'ixir-dc-shake');
+   input.setAttribute('placeholder', placeholder);
+   input.removeAttribute('aria-invalid');
+   if (hint) {
+    hint.hidden = true;
    }
+  }
 
-   function tick() {
-    if (!dragging && !paused && speed) {
-     x -= speed;
-     apply();
-    }
-    window.requestAnimationFrame(tick);
+  function showEmpty() {
+   if (hint) {
+    hint.hidden = true;
    }
+   input.value = '';
+   shake();
+   input.setAttribute('placeholder', placeholderError);
+   input.focus();
+  }
 
-   function endDrag() {
-    if (!dragging) {
-     return;
-    }
-    dragging = false;
-    viewport.classList.remove('is-dragging');
-    x += velocity * 10;
-    apply();
-    window.clearTimeout(resumeTimer);
-    resumeTimer = window.setTimeout(function() {
-     if (!dragging) {
-      paused = false;
-     }
-    }, 350);
+  function showInvalid() {
+   shake();
+   input.setAttribute('placeholder', placeholder);
+   if (hint) {
+    hint.hidden = false;
    }
-   viewport.addEventListener('pointerdown', function(e) {
-    if (e.pointerType === 'mouse' && e.button !== 0) {
-     return;
-    }
-    dragging = true;
-    paused = true;
-    startX = e.clientX;
-    startOffset = x;
-    lastX = e.clientX;
-    velocity = 0;
-    viewport.classList.add('is-dragging');
-    if (viewport.setPointerCapture) {
-     viewport.setPointerCapture(e.pointerId);
-    }
+   input.focus();
+  }
+
+  input.addEventListener('input', function() {
+   if (empty() || valid()) {
+    hide();
+   }
+  });
+
+  form.addEventListener('submit', function(e) {
+   if (empty()) {
     e.preventDefault();
+    e.stopPropagation();
+    showEmpty();
+    return;
+   }
+   if (!valid()) {
+    e.preventDefault();
+    e.stopPropagation();
+    showInvalid();
+   }
+  }, true);
+ })();
+
+ (function() {
+  var target = document.getElementById('ixir-whois-kayit') || document.querySelector(
+   '.ixir-whois-alert, .ixir-whois-result');
+  if (!target) {
+   return;
+  }
+  var nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+  var reloaded = (nav && nav.type === 'reload') || (performance.navigation && performance.navigation.type === 1);
+  if (reloaded) {
+   return;
+  }
+
+  function go() {
+   var spacer = document.querySelector('.ixir-header-spacer');
+   var offset = spacer ? spacer.getBoundingClientRect().height : 0;
+   var top = target.getBoundingClientRect().top + (window.pageYOffset || window.scrollY || 0) - offset - 20;
+   window.scrollTo({
+    top: Math.max(0, top),
+    behavior: 'smooth'
    });
-   viewport.addEventListener('pointermove', function(e) {
-    if (!dragging) {
-     return;
-    }
-    velocity = e.clientX - lastX;
-    lastX = e.clientX;
-    x = startOffset + (e.clientX - startX);
+  }
+  window.addEventListener('load', function() {
+   window.setTimeout(go, 80);
+  });
+ })();
+
+ (function() {
+  var viewport = document.getElementById('ixirDomainTlds');
+  if (!viewport) {
+   return;
+  }
+  var track = viewport.querySelector('.ixir-tld-track');
+  if (!track || !track.children.length) {
+   return;
+  }
+  var originalHTML = track.innerHTML;
+  var x = 0;
+  var setWidth = 0;
+  var dragging = false;
+  var paused = false;
+  var startX = 0;
+  var startOffset = 0;
+  var lastX = 0;
+  var velocity = 0;
+  var resumeTimer = null;
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var speed = reduceMotion ? 0 : 0.45;
+
+  function build() {
+   var keep = x;
+   track.innerHTML = originalHTML;
+   var baseWidth = track.scrollWidth;
+   var need = Math.max(2, Math.ceil((viewport.clientWidth * 2) / Math.max(baseWidth, 1)) + 1);
+   var i;
+   var html = originalHTML;
+   for (i = 1; i < need; i++) {
+    html += originalHTML;
+   }
+   track.innerHTML = html + html;
+   setWidth = track.scrollWidth / 2;
+   x = keep;
+   apply();
+  }
+
+  function wrap() {
+   if (!setWidth) {
+    return;
+   }
+   while (x <= -setWidth) {
+    x += setWidth;
+   }
+   while (x > 0) {
+    x -= setWidth;
+   }
+  }
+
+  function apply() {
+   wrap();
+   track.style.transform = 'translate3d(' + x + 'px,0,0)';
+  }
+
+  function tick() {
+   if (!dragging && !paused && speed) {
+    x -= speed;
     apply();
-   });
-   viewport.addEventListener('pointerup', endDrag);
-   viewport.addEventListener('pointercancel', endDrag);
-   viewport.addEventListener('pointerenter', function(e) {
-    if (e.pointerType === 'mouse' && !dragging) {
-     paused = true;
-    }
-   });
-   viewport.addEventListener('pointerleave', function(e) {
-    if (e.pointerType === 'mouse' && !dragging) {
+   }
+   window.requestAnimationFrame(tick);
+  }
+
+  function endDrag() {
+   if (!dragging) {
+    return;
+   }
+   dragging = false;
+   viewport.classList.remove('is-dragging');
+   x += velocity * 10;
+   apply();
+   window.clearTimeout(resumeTimer);
+   resumeTimer = window.setTimeout(function() {
+    if (!dragging) {
      paused = false;
     }
-   });
-   window.addEventListener('resize', build);
-   window.addEventListener('load', build);
-   build();
-   window.requestAnimationFrame(tick);
-  })();
+   }, 350);
+  }
+  viewport.addEventListener('pointerdown', function(e) {
+   if (e.pointerType === 'mouse' && e.button !== 0) {
+    return;
+   }
+   dragging = true;
+   paused = true;
+   startX = e.clientX;
+   startOffset = x;
+   lastX = e.clientX;
+   velocity = 0;
+   viewport.classList.add('is-dragging');
+   if (viewport.setPointerCapture) {
+    viewport.setPointerCapture(e.pointerId);
+   }
+   e.preventDefault();
+  });
+  viewport.addEventListener('pointermove', function(e) {
+   if (!dragging) {
+    return;
+   }
+   velocity = e.clientX - lastX;
+   lastX = e.clientX;
+   x = startOffset + (e.clientX - startX);
+   apply();
+  });
+  viewport.addEventListener('pointerup', endDrag);
+  viewport.addEventListener('pointercancel', endDrag);
+  viewport.addEventListener('pointerenter', function(e) {
+   if (e.pointerType === 'mouse' && !dragging) {
+    paused = true;
+   }
+  });
+  viewport.addEventListener('pointerleave', function(e) {
+   if (e.pointerType === 'mouse' && !dragging) {
+    paused = false;
+   }
+  });
+  window.addEventListener('resize', build);
+  window.addEventListener('load', build);
+  build();
+  window.requestAnimationFrame(tick);
+ })();
  {/literal}
 </script>

@@ -1,7 +1,7 @@
 <div class="ixir-about-hero">
  <span class="ixir-about-hero-kicker">2005'ten beri</span>
  <h2>20 Yıldır Güven Barındırıyoruz.</h2>
- <p><strong>İksir İnternet Hizmetleri A.Ş.</strong> olarak 20 yılı aşkın süredir; hosting, sunucu, alan adı, e-posta,
+ <p><strong>İksir İnternet Hizmetleri A.Ş.</strong> olarak 20 yılı aşkın süredir; hosting, server, domain, e-posta,
   SSL, güvenlik ve
   veri merkezi hizmetlerinde binlerce bireysel ve kurumsal müşteriye güvenilir teknoloji altyapısı sunuyoruz.
  </p>
@@ -40,11 +40,11 @@
 
 <div class="ixir-box ixir-story">
  <h3>Biz Sadece Hosting Satmıyoruz; İş Sürekliliği Sağlıyoruz.</h3>
- <p>Bir web sitesinin, e-posta servisinin veya sunucunun çalışması; bugün bir işletmenin itibarı, geliri ve müşteri
+ <p>Bir web sitesinin, e-posta servisinin veya server'ının çalışması; bugün bir işletmenin itibarı, geliri ve müşteri
   ilişkileri için kritik öneme sahiptir. Bu nedenle İXİRHOST'ta her hizmeti yalnızca teknik bir ürün olarak değil,
   müşterilerimizin dijital operasyonlarının devamlılığı olarak görüyoruz.</p>
  <p>Kurulduğumuz günden bu yana yatırım kararlarımızın merkezinde iki temel ilke yer aldı:
-  <strong>kesintisizlik</strong> ve <strong>teknik destek kalitesi</strong>. Her sunucu, her web sitesi, her e-posta
+  <strong>kesintisizlik</strong> ve <strong>teknik destek kalitesi</strong>. Her server, her web sitesi, her e-posta
   hesabı ve her müşteri bizim için ayrı bir sorumluluktur.
  </p>
 </div>
@@ -57,7 +57,7 @@
     <i class="fas fa-server"></i>
    </span>
    <h4>Güvenilir Altyapı</h4>
-   <p>Hosting, sunucu ve e-posta servislerinde süreklilik odaklı, ölçeklenebilir ve güvenli altyapı yaklaşımı.</p>
+   <p>Hosting, server ve e-posta servislerinde süreklilik odaklı, ölçeklenebilir ve güvenli altyapı yaklaşımı.</p>
   </div>
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">
@@ -157,7 +157,7 @@
 <div class="ixir-final">
  <span class="ixir-final-kicker">Birlikte büyüyelim</span>
  <h3>Bugünün Altyapısı, Yarının Güveni</h3>
- <p>Web sitenizi yayına almak, e-posta altyapınızı güçlendirmek, sunucu ihtiyaçlarınızı karşılamak veya mevcut
+ <p>Web sitenizi yayına almak, e-posta altyapınızı güçlendirmek, server ihtiyaçlarınızı karşılamak veya mevcut
   sistemlerinizi daha güvenli ve kesintisiz hale getirmek için İXİRHOST yanınızda. 20 yılı aşkın deneyimimizle,
   müşterilerimizin dijital dünyadaki güvenilir teknoloji partneri olmaya devam ediyoruz.</p>
 </div>

@@ -239,22 +239,22 @@
    <li class="has-children">
     <button type="button" class="ixir-mobile-toggle" aria-expanded="false">
      <i class="fas fa-server"></i>
-     <span>Sunucu</span>
+     <span>Server</span>
      <i class="fas fa-chevron-down ixir-mobile-caret"></i>
     </button>
     <div class="ixir-mobile-sub">
      <div class="ixir-mobile-sub-inner">
-      <a href="{$WEB_ROOT}/cloud">
+      <a href="{$WEB_ROOT}/bulut-server">
        <i class="far fa-cloud"></i>
        <span>
-        Bulut Sunucu
-        <small>60 saniyede kurulan cloud sunucu</small>
+        Bulut Server
+        <small>60 saniyede kurulan cloud server</small>
        </span>
       </a>
-      <a href="{$WEB_ROOT}/dedicated-server">
+      <a href="{$WEB_ROOT}/kiralik-server">
        <i class="fas fa-server"></i>
        <span>
-        Dedicated Server
+        Kiralık Server
         <small>İstanbul merkezli, operatör yedekli</small>
        </span>
       </a>
@@ -268,8 +268,8 @@
       <a href="{$WEB_ROOT}/ek-servisler">
        <i class="far fa-life-ring"></i>
        <span>
-        Sunucu Servisleri
-        <small>Çözüm odaklı sunucu desteği</small>
+        Server Servisleri
+        <small>Çözüm odaklı server desteği</small>
        </span>
       </a>
       <a href="{$WEB_ROOT}/pci-tarama">

@@ -2,12 +2,12 @@
     <div class="container">
      <header class="ixir-wh-plans-head">
       <h2 id="ixir-transfer-faq-title">Sıkça Sorulan Sorular</h2>
-      <p>Alan adı transfer ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
+      <p>Domain transfer ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
      </header>
      <div class="ixir-wh-faq-list">
       <div class="ixir-wh-faq-item">
        <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
-         aria-hidden="true"></i>Alan adı transfer öncesi neler yapılmalıdır?</button>
+         aria-hidden="true"></i>Domain transfer öncesi neler yapılmalıdır?</button>
        <div class="ixir-wh-faq-a">
         <p>Mevcut sağlayıcınızdan <strong>EPP / transfer kodunu</strong> alın, <strong>transfer kilidi</strong> açıksa
          kapatın. Kayıt, yenileme veya son
@@ -18,9 +18,9 @@
       </div>
       <div class="ixir-wh-faq-item">
        <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
-         aria-hidden="true"></i>Alan adımı neden İxirhost’a transfer edeyim?</button>
+         aria-hidden="true"></i>Domain'imi neden İXİRHOST’a transfer edeyim?</button>
        <div class="ixir-wh-faq-a">
-        <p><strong>Şeffaf fiyat</strong> uygulanır, <strong>gizli ücret yoktur</strong>. Süresi biten alan adını
+        <p><strong>Şeffaf fiyat</strong> uygulanır, <strong>gizli ücret yoktur</strong>. Süresi biten domain'i
          yenileme
          bekleme süresinde <strong>aynı fiyattan</strong>
          yenileyebilirsiniz; <strong>kurtarma bedeli uygulanmaz</strong>. <strong>Ücretsiz whois gizleme</strong>
@@ -44,9 +44,9 @@
       </div>
       <div class="ixir-wh-faq-item">
        <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
-         aria-hidden="true"></i>Alan adı transferi kaç günde tamamlanır?</button>
+         aria-hidden="true"></i>Domain transferi kaç günde tamamlanır?</button>
        <div class="ixir-wh-faq-a">
-        <p>Belge gerektirmeyen alan adlarında transfer genellikle <strong>3 ile 7 gün</strong> arasında tamamlanır.
+        <p>Belge gerektirmeyen domain'lerde transfer genellikle <strong>3 ile 7 gün</strong> arasında tamamlanır.
          Belge
          gerektiren
          <strong>.com.tr</strong> gibi uzantılarda süre, belgenin doğrulanmasına bağlı olarak <strong>15 güne
@@ -57,9 +57,9 @@
       </div>
       <div class="ixir-wh-faq-item">
        <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
-         aria-hidden="true"></i>Süresi biten alan adlarını transfer edebilir miyim?</button>
+         aria-hidden="true"></i>Süresi biten domain'leri transfer edebilir miyim?</button>
        <div class="ixir-wh-faq-a">
-        <p>Süresi bitmiş alan adları <strong>transfer edilemez</strong>. Alan adını bulunduğu firmada yeniledikten ve
+        <p>Süresi bitmiş domain'ler <strong>transfer edilemez</strong>. Domain'iniz bulunduğu firmada yeniledikten ve
          yenilemenin üzerinden
          ortalama <strong>60 gün</strong> geçtikten sonra transfer edebilirsiniz.</p>
        </div>

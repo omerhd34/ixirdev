@@ -7,7 +7,7 @@
     <div class="ixir-hero-main">
      <div class="ixir-hero-copy">
       <h1>Mükemmel Bir Domain İle Başlayın!</h1>
-      <p>125 TL'den başlayan fiyatlarla mükemmel bir alan adına sahip olun!</p>
+      <p>125 TL'den başlayan fiyatlarla mükemmel bir domain'e sahip olun!</p>
      </div>
      <form method="post" action="{$WEB_ROOT}/cart.php" id="frmDomainChecker" novalidate>
       <input type="hidden" name="a" value="checkDomain" class="no-icheck">
@@ -18,7 +18,7 @@
         <label for="inputDomain" class="sr-only">Domain sorgula</label>
         <input type="text" name="domain" class="form-control no-icheck" placeholder="Örneğin ixirhost.com"
          value="{$lookupTerm}" id="inputDomain" data-placeholder="Örneğin ixirhost.com"
-         data-placeholder-sm="ixirhost.com" data-placeholder-error="Lütfen bir alan adı girin." autocapitalize="none"
+         data-placeholder-sm="ixirhost.com" data-placeholder-error="Lütfen bir domain girin." autocapitalize="none"
          autocomplete="off" inputmode="none" readonly />
         <script>
          (function() {
@@ -122,13 +122,13 @@
         </a>
        </li>
        <li>
-        <a href="{$WEB_ROOT}/cloud" title="Bulut Sunucu">
-         <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Bulut Sunucu</span>
+        <a href="{$WEB_ROOT}/bulut-server" title="Bulut Server">
+         <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Bulut Server</span>
         </a>
        </li>
        <li>
-        <a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">
-         <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Dedicated Server</span>
+        <a href="{$WEB_ROOT}/kiralik-server" title="Kiralık Server">
+         <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Kiralık Server</span>
         </a>
        </li>
       </ul>

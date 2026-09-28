@@ -56,7 +56,7 @@
         uygulamaları</strong> için tasarlanmıştır;
        masaüstü uygulamalar, saha yazılımları veya <strong>ERP/CRM</strong> sistemleri gibi uygulamaların MSSQL'i
        doğrudan veritabanı
-       sunucusu olarak kullanması politikamıza aykırıdır ve bu tür kullanımlarda <strong>hizmet
+       server'ı olarak kullanması politikamıza aykırıdır ve bu tür kullanımlarda <strong>hizmet
         sonlandırılmaktadır</strong>.</p>
      </div>
     </div>
@@ -128,15 +128,14 @@
     </div>
     <div class="ixir-wh-faq-item">
      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
-       aria-hidden="true"></i>Ücretsiz .COM.TR alan adı hediyesi nasıl kullanılır?</button>
+       aria-hidden="true"></i>Ücretsiz .COM.TR domain hediyesi nasıl kullanılır?</button>
      <div class="ixir-wh-faq-a">
-      <p>Sipariş esnasında sepete yeni bir <strong>.com.tr</strong> veya <strong>.net.tr</strong> alan adı
+      <p>Sipariş esnasında sepete yeni bir <strong>.com.tr</strong> veya <strong>.net.tr</strong> domain
        eklediğinizde,
-       alan adının <strong>ilk yıllık ücreti</strong>
+       domain'inin <strong>ilk yıllık ücreti</strong>
        otomatik olarak sepetinizden düşülür. Bu hak <strong>yalnızca yeni sipariş sırasında</strong> ve <strong>yeni
-        alan
-        adı kaydı</strong> için
-       geçerlidir; mevcut alan adlarında veya sonradan kullanılamaz.</p>
+        domain kaydı</strong> için
+       geçerlidir; mevcut domain'lerde veya sonradan kullanılamaz.</p>
      </div>
     </div>
 
@@ -147,7 +146,7 @@
       <p>
        Tüm <strong>Windows Hosting</strong> paketlerimizde dünyanın en yaygın kullanılan Windows hosting kontrol paneli
        olan
-       <strong>Plesk</strong> kullanılmaktadır. Plesk üzerinden <strong>alan adı yönetimi</strong>, <strong>e-posta
+       <strong>Plesk</strong> kullanılmaktadır. Plesk üzerinden <strong>domain yönetimi</strong>, <strong>e-posta
         hesabı oluşturma</strong>, <strong>MSSQL</strong> ve
        <strong>MySQL</strong> veritabanı
        yönetimi, <strong>SSL sertifikası</strong> kurulumu, <strong>FTP hesapları</strong>, <strong>zamanlanmış görevler

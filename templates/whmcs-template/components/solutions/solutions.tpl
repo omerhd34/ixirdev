@@ -22,14 +22,14 @@
    <article class="ixir-solutions-card">
     <div class="ixir-solutions-top">
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-cloud"></i></span>
-     <h3>Bulut Sunucu &amp; Kiralık Sunucu</h3>
+     <h3>Bulut Server &amp; Kiralık Server</h3>
     </div>
     <p>İstanbul merkezli Tier III+ veri merkezimizde Intel Xeon işlemciler ve SSD depolama ile tam kontrol sizde. 60
-     saniyede kurulan bulut sunucularımız; Windows &amp; Linux desteği, 3 operatör yedekli bağlantı ve otomatik
+     saniyede kurulan bulut server'larımız; Windows &amp; Linux desteği, 3 operatör yedekli bağlantı ve otomatik
      yedekleme seçenekleriyle kurumsal altyapınızın güvencesidir.</p>
     <div class="ixir-solutions-links">
-     <a href="{$WEB_ROOT}/cloud">Bulut Sunucu <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-     <a href="{$WEB_ROOT}/dedicated-server">Kiralık Sunucu <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+     <a href="{$WEB_ROOT}/bulut-server">Bulut Server <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+     <a href="{$WEB_ROOT}/kiralik-server">Kiralık Server <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
     </div>
    </article>
    <article class="ixir-solutions-card">
@@ -37,7 +37,7 @@
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
      <h3>Kurumsal E-posta &amp; AntiSpam</h3>
     </div>
-    <p>KVKK uyumlu sunucularda barındırılan kurumsal e-posta çözümlerimiz; makine öğrenimi destekli %99.8 spam
+    <p>KVKK uyumlu server'larda barındırılan kurumsal e-posta çözümlerimiz; makine öğrenimi destekli %99.8 spam
      engelleme ve antivirüs koruması sunar. Tüm cihazlardan erişim, güvenli e-posta yönetimi ve giden mail saygınlığı
      hizmetleriyle iş iletişiminizi kesintisiz sürdürün.</p>
     <div class="ixir-solutions-links">

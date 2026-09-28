@@ -69,7 +69,7 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <meta name="robots" content="noindex, nofollow">
- <title>{$companyname} | Hosting, Domain, Cloud, Dedicated Server</title>
+ <title>{$companyname} | Hosting, Domain, Cloud, Kiralık Server</title>
  {include file="$template/includes/head.tpl"}
  {$headoutput}
  {if $templatefile == 'homepage'}

@@ -138,8 +138,8 @@
     <div class="ixir-wh-faq-a">
      <p>
       Hesabınız aktif olduktan sonra size iletilen <strong>kullanıcı adı ve SSH şifresi</strong> ile
-      PuTTY, macOS / Linux Terminal veya benzeri bir SSH istemcisi üzerinden sunucuya bağlanabilirsiniz.
-      Bağlantı sağladıktan sonra alan adı dizininizde <strong>framework CLI komutlarını, paket yöneticilerini
+      PuTTY, macOS / Linux Terminal veya benzeri bir SSH istemcisi üzerinden server'a bağlanabilirsiniz.
+      Bağlantı sağladıktan sonra domain dizininizde <strong>framework CLI komutlarını, paket yöneticilerini
        ve Git işlemlerini</strong> doğrudan çalıştırabilirsiniz.
      </p>
     </div>
@@ -175,7 +175,7 @@
      <p>
       <strong>PHP 5.x, 7.x ve 8.x</strong> sürümleri arasında cPanel üzerinden kolayca geçiş yapabilirsiniz.
       Ayrıca <strong>MultiPHP INI Düzenleyicisi</strong> ile PHP yapılandırma ayarlarınızı özelleştirebilirsiniz.
-      Her alan adı için <strong>bağımsız PHP sürümü seçimi</strong> desteklenmektedir.
+      Her domain için <strong>bağımsız PHP sürümü seçimi</strong> desteklenmektedir.
      </p>
     </div>
 
@@ -273,11 +273,11 @@
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-     Sunucularınız nerede barındırılıyor?
+     Server'larınız nerede barındırılıyor?
     </button>
     <div class="ixir-wh-faq-a">
      <p>
-      Developer Hosting sunucularımız, tüm hizmetlerimizde olduğu gibi
+      Developer Hosting server'larımız, tüm hizmetlerimizde olduğu gibi
       <strong>İstanbul'daki kendi TIER III+ veri merkezimizde</strong>
       barındırılmaktadır. Altyapımız
       <strong>ISO 27001, ISO 9001 ve ISO 10002 sertifikalarına</strong>

@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 if ($input !== '') {
     $domain = ixir_whois_normalize_domain($input);
     if ($domain === '' || !ixir_whois_valid_domain($domain)) {
-        $error = 'Lütfen geçerli bir alan adı girin. Örneğin: ixirhost.com';
+        $error = 'Lütfen geçerli bir domain girin. Örneğin: ixirhost.com';
         $domain = $input;
     } else {
         $now = time();
@@ -51,12 +51,12 @@ if ($input !== '') {
 }
 
 $ca->assign('displayTitle', 'WHOIS Sorgulama');
-$ca->assign('tagline', 'Alan adının sahiplik bilgilerini ücretsiz ve anında sorgulayın');
+$ca->assign('tagline', 'Domain'in sahiplik bilgilerini ücretsiz ve anında sorgulayın');
 $ca->assign('ixirWhoisDomain', $domain);
 $ca->assign('ixirWhoisResult', $whois);
 $ca->assign('ixirWhoisParsed', $whois !== '' ? ixir_whois_parse($whois, $domain) : null);
 $ca->assign('ixirWhoisError', $error);
-$ca->assign('ixirWhoisInvalid', $error === 'Lütfen geçerli bir alan adı girin. Örneğin: ixirhost.com');
+$ca->assign('ixirWhoisInvalid', $error === 'Lütfen geçerli bir domain girin. Örneğin: ixirhost.com');
 $ca->assign('ixirWhoisStatus', $status);
 $ca->setTemplate('whois-sorgulama');
 $ca->output();

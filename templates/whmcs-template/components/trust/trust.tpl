@@ -38,7 +38,7 @@
      <img src="{$WEB_ROOT}/templates/{$template}/img/trust/cog.svg" alt="">
     </div>
     <h3>Ücretsiz Servisler</h3>
-    <p>Hosting, domain ve sunucu hizmetlerindeki ücretsiz servisler sayesinde ek maliyetlerden kurtulun.</p>
+    <p>Hosting, domain ve server hizmetlerindeki ücretsiz servisler sayesinde ek maliyetlerden kurtulun.</p>
    </article>
    <article class="ixir-trust-item">
     <div class="ixir-trust-icon" aria-hidden="true">

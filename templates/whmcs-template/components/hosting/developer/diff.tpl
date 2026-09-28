@@ -38,7 +38,7 @@
     <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fab fa-python"></i></span>
     <div>
      <h3>Python</h3>
-     <p>Python WSGI, Web sunucusu ağ geçidi ile python uygulamalarının iletişimi ve çalışmasını sağlayan bir
+     <p>Python WSGI, Web server ağ geçidi ile python uygulamalarının iletişimi ve çalışmasını sağlayan bir
       platformdur, flask/django ile birlikte çalışabilmektedir.</p>
      <p>Desteklenen sürümler:
       <strong>v2.7, v3.3, v3.4, v3.5, v3.6, v3.7, v3.8, v3.9, v3.10, v3.11, v3.12, v3.13, v3.14, v3.15, v3.16</strong>

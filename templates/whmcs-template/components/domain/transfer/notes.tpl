@@ -4,15 +4,15 @@
       <div>
        <h2 id="ixirXferNotesTitle">Domain Transferi ile İlgili Önemli Bilgiler</h2>
        <ul>
-        <li>Alan adının transfer kodunu(authorization code, epp code, vs.) alan adı tescil firmanızdan alın.</li>
-        <li>Alan adınızın tescil, yenileme veya transfer işleminin üzerinden 60 gün geçmiş olması gerektiğini unutmayın.
+        <li>Domain'in transfer kodunu(authorization code, epp code, vs.) domain tescil firmanızdan alın.</li>
+        <li>Domain'inizin tescil, yenileme veya transfer işleminin üzerinden 60 gün geçmiş olması gerektiğini unutmayın.
         </li>
-        <li>Transfer onayı, alan adınızın sahiplik (whois) bilgisinde yer alan e-postaya gideceğinden, e-posta adresi
+        <li>Transfer onayı, domain'inizin sahiplik (whois) bilgisinde yer alan e-postaya gideceğinden, e-posta adresi
          çalışır olduğundan emin olun.</li>
-        <li>Alan adı firmanızın müşteri panelinde domain yönetimi alanına girerek domain transfer kilidini kaldırın.
+        <li>Domain firmanızın müşteri panelinde domain yönetimi alanına girerek domain transfer kilidini kaldırın.
         </li>
-        <li>Askıda ve pasif olan alan adlarının transfer edilemeyeceğini unutmayın.</li>
-        <li>Alan adının hangi firmada olduğunu <a href="{$WEB_ROOT}/whois-sorgulama">whois sorgulama</a> ile
+        <li>Askıda ve pasif olan domain'lerinin transfer edilemeyeceğini unutmayın.</li>
+        <li>Domain'in hangi firmada olduğunu <a href="{$WEB_ROOT}/whois-sorgulama">whois sorgulama</a> ile
          öğrenebilirsiniz.</li>
        </ul>
       </div>

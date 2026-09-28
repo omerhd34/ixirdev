@@ -98,9 +98,9 @@
    </div>
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
-      aria-hidden="true"></i>Ücretsiz .COM.TR Alan Adı Şartları</button>
+      aria-hidden="true"></i>Ücretsiz .COM.TR Domain Şartları</button>
     <div class="ixir-wh-faq-a">
-     <p>Sipariş esnasında sepette yeni <strong>com.tr / net.tr</strong> alan adınızı sepete eklediğinizde <strong>ilk 1
+     <p>Sipariş esnasında sepette yeni <strong>com.tr / net.tr</strong> domain'inizi sepete eklediğinizde <strong>ilk 1
        yıl hediye</strong> olarak
       sağlanacaktır. Bu hak <strong>yalnızca sipariş esnasında</strong> geçerlidir, sonradan kullanılamamaktadır.</p>
     </div>

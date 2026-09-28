@@ -123,6 +123,63 @@
     ]
   ],
   [
+   "type" => "dropdown",
+   "title" => "Server",
+   "icon" => "far fa-server",
+   "columns" => [
+     [
+       "width" => "col-md-4",
+       "items" => [
+         [
+           "href" => "/bulut-server",
+           "title" => "Bulut Server",
+           "icon" => "far fa-cloud",
+           "label" => "Bulut Server",
+           "desc" => "Uygun fiyatlı ve yüksek performanslı 60 saniyede kurulan bulut server çözümleri "
+         ],
+         [
+           "href" => "/pci-tarama",
+           "title" => "PCI-DSS Tarama",
+           "icon" => "fas fa-shield-alt",
+           "label" => "PCI-DSS",
+           "desc" => "PCI-DSS hizmeti ile server güvenliği kontrol hizmeti"
+         ]
+       ]
+     ],
+     [
+       "width" => "col-md-4",
+       "items" => [
+         [
+           "href" => "/kiralik-server",
+           "title" => "Kiralık Server",
+           "icon" => "fas fa-server",
+           "label" => "Kiralık Server",
+           "desc" => "Yüksek performanslı, İstanbul Merkezli ve Operatör Yedekli Altyapı ile server'ınızı şimdi kiralayın!"
+         ],
+         [
+           "href" => "/colocation",
+           "title" => "Co-Location",
+           "icon" => "fas fa-database",
+           "label" => "Co-Location",
+           "desc" => "Tier III veri merkezinde server'ınızı güvenle barındırın."
+         ]
+       ]
+     ],
+     [
+       "width" => "col-md-4 last",
+       "items" => [
+         [
+           "href" => "/ek-servisler",
+           "title" => "Server Yönetim Servisleri",
+           "icon" => "far fa-life-ring",
+           "label" => "Server Servisleri",
+           "desc" => "Çözüm odaklı server destek hizmeti"
+         ]
+       ]
+     ]
+   ]
+  ],
+  [
     "type" => "dropdown",
     "title" => "E-posta",
     "titleAttr" => "E-posta Hizmetleri",
@@ -180,62 +237,7 @@
       ]
     ]
   ],
-  [
-    "type" => "dropdown",
-    "title" => "Sunucu",
-    "icon" => "far fa-server",
-    "columns" => [
-      [
-        "width" => "col-md-4",
-        "items" => [
-          [
-            "href" => "/cloud",
-            "icon" => "far fa-cloud",
-            "label" => "Bulut Sunucu",
-            "desc" => "Uygun fiyatlı ve yüksek performanslı 60 saniyede kurulan bulut sunucu çözümleri "
-          ],
-          [
-            "href" => "/pci-tarama",
-            "title" => "PCI-DSS Tarama",
-            "icon" => "fas fa-shield-alt",
-            "label" => "PCI-DSS",
-            "desc" => "PCI-DSS hizmeti ile sunucu güvenliği kontrol hizmeti"
-          ]
-        ]
-      ],
-      [
-        "width" => "col-md-4",
-        "items" => [
-          [
-            "href" => "/dedicated-server",
-            "title" => "Dedicated Server",
-            "icon" => "fas fa-server",
-            "label" => "Dedicated Server",
-            "desc" => "Yüksek performanslı, İstanbul Merkezli ve Operatör Yedekli Altyapı ile sunucunuzu şimdi kiralayın!"
-          ],
-          [
-            "href" => "/colocation",
-            "title" => "Co-Location",
-            "icon" => "fas fa-database",
-            "label" => "Co-Location",
-            "desc" => "Tier III veri merkezinde sunucunuzu güvenle barındırın."
-          ]
-        ]
-      ],
-      [
-        "width" => "col-md-4 last",
-        "items" => [
-          [
-            "href" => "/ek-servisler",
-            "title" => "Sunucu Yönetim Servisleri",
-            "icon" => "far fa-life-ring",
-            "label" => "Sunucu Servisleri",
-            "desc" => "Çözüm odaklı sunucu destek hizmeti"
-          ]
-        ]
-      ]
-    ]
-  ],
+
   [
     "type" => "link",
     "href" => "/site-pratik",

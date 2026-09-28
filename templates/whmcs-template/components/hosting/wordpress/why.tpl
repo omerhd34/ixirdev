@@ -35,7 +35,7 @@
       <li><span class="ixir-wh-why-check" aria-hidden="true"><i class="fas fa-check"></i></span>Litespeed + LSCache<span
         class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn" aria-label="Litespeed açıklaması"><i
           class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box"
-         role="tooltip">Geleneksel Apache web sunucusuna göre 10 kat daha fazla performans ve önbellekleme
+         role="tooltip">Geleneksel Apache web server'ına göre 10 kat daha fazla performans ve önbellekleme
          desteği.</span></span></li>
       <li><span class="ixir-wh-why-check" aria-hidden="true"><i class="fas fa-check"></i></span>Accelerate WP<span
         class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn" aria-label="Accelerate WP açıklaması"><i

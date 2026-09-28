@@ -7,7 +7,7 @@
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
      <h1>Whois Domain Sorgulama</h1>
-     <p>Alan adının sahiplik bilgilerini ücretsiz ve anında sorgulayın.</p>
+     <p>Domain'inin sahiplik bilgilerini ücretsiz ve anında sorgulayın.</p>
     </div>
     <form method="post" action="{$WEB_ROOT}/whois-sorgulama"
      class="ixir-whois-form{if $ixirWhoisInvalid} ixir-dc-invalid{/if}" id="frmWhoisChecker" novalidate>
@@ -15,11 +15,10 @@
      <div class="ixir-domain-checker">
       <div class="ixir-dc-input">
        <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-globe"></i></span>
-       <label for="ixir-whois-domain" class="sr-only">Alan adı</label>
+       <label for="ixir-whois-domain" class="sr-only">Domain</label>
        <input type="text" id="ixir-whois-domain" class="form-control" name="domain" value="{$ixirWhoisDomain|escape}"
-        placeholder="Bir alan adı yazınız (örn: ixirhost.com)"
-        data-placeholder="Bir alan adı yazınız (örn: ixirhost.com)" data-placeholder-error="Lütfen bir alan adı girin."
-        autocapitalize="none" autocomplete="off" spellcheck="false" />
+        placeholder="Bir domain yazınız (örn: ixirhost.com)" data-placeholder="Bir domain yazınız (örn: ixirhost.com)"
+        data-placeholder-error="Lütfen bir domain girin." autocapitalize="none" autocomplete="off" spellcheck="false" />
       </div>
       <div class="ixir-dc-button">
        <button type="submit" class="btn btn-primary btn-block search">
@@ -29,7 +28,7 @@
      </div>
      <p class="ixir-whois-field-error" id="ixir-whois-field-error" role="alert" {if !$ixirWhoisInvalid} hidden{/if}>
       <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
-      <span>Lütfen geçerli bir alan adı girin. Örneğin: <b>ixirhost.com</b></span>
+      <span>Lütfen geçerli bir domain girin. Örneğin: <b>ixirhost.com</b></span>
      </p>
     </form>
     <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
@@ -90,13 +89,13 @@
        </a>
       </li>
       <li>
-       <a href="{$WEB_ROOT}/cloud" title="Bulut Sunucu">
-        <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Bulut Sunucu</span>
+       <a href="{$WEB_ROOT}/bulut-server" title="Bulut Server">
+        <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Bulut Server</span>
        </a>
       </li>
       <li>
-       <a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">
-        <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Dedicated Server</span>
+       <a href="{$WEB_ROOT}/kiralik-server" title="Kiralık Server">
+        <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Kiralık Server</span>
        </a>
       </li>
      </ul>

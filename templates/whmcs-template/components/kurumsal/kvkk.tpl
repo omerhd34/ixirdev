@@ -50,7 +50,7 @@
   <li>Bankalar ve ödeme kuruluşları</li>
   <li>Mali müşavirler ve hukuk danışmanları</li>
   <li>Veri merkezi ve altyapı sağlayıcıları</li>
-  <li>Alan adı, SSL ve lisans hizmet sağlayıcıları</li>
+  <li>Domain, SSL ve lisans hizmet sağlayıcıları</li>
   <li>Teknik tedarikçiler ve iş ortakları</li>
  </ul>
  <p>ile paylaşılabilmektedir.</p>

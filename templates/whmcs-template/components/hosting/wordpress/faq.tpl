@@ -20,7 +20,7 @@
      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
        aria-hidden="true"></i>WordPress Hosting'in hiğer hosting paketlerinden farkı nedir?</button>
      <div class="ixir-wh-faq-a">
-      <p>WordPress Hosting; LiteSpeed web sunucusu, AccelerateWP, PHP X-RAY ve Imunify360 WAF gibi WordPress'e özel
+      <p>WordPress Hosting; LiteSpeed web server'ı, AccelerateWP, PHP X-RAY ve Imunify360 WAF gibi WordPress'e özel
        araçlarla donatılmış, yüksek CPU ve RAM kaynaklarına sahip özelleştirilmiş bir hosting çözümüdür. Klasik web
        hostingden farklı olarak disk, bant genişliği, veritabanı, CPU ve RAM kaynakları WordPress sitelerinin en iyi
        performansı göstereceği seviyede optimize edilmiştir. Bunun yanı sıra tek tıkla WordPress kurulumu ve ücretsiz

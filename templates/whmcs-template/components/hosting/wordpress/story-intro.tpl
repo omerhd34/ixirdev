@@ -15,10 +15,10 @@
    <div class="ixir-wh-story-intro">
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
     <h2>WordPress Hosting Nedir?</h2>
-    <p>WordPress Hosting, WordPress web siteleri için özel olarak tasarlanmış sunucu ve ağ altyapısında sunulan; tek
+    <p>WordPress Hosting, WordPress web siteleri için özel olarak tasarlanmış server ve ağ altyapısında sunulan; tek
      tıkla kurulum, yüksek CPU ve RAM kaynakları ile WordPress’e özel optimizasyonlar içeren bir hosting çözümüdür.
-     LiteSpeed web sunucusu, AccelerateWP ve PHP X-RAY gibi araçlarla desteklenen bu hizmette disk, bant genişliği,
-     veritabanı, CPU, RAM ve sunucu önbelleği gibi tüm kaynaklar WordPress sitelerinin en verimli şekilde çalışacağı
+     LiteSpeed web server'ı, AccelerateWP ve PHP X-RAY gibi araçlarla desteklenen bu hizmette disk, bant genişliği,
+     veritabanı, CPU, RAM ve server önbelleği gibi tüm kaynaklar WordPress sitelerinin en verimli şekilde çalışacağı
      seviyede yapılandırılmıştır. Imunify360 WAF ile güvenlik, JetBackup ile haftalık yedekleme ve ücretsiz SSL tüm
      paketlerde standarttır.</p>
     <a class="ixir-wh-story-cta" href="#ixir-wh-plans">Hemen Satın Al</a>

@@ -1,6 +1,6 @@
 # ixirdev
 
-**ixirdev**, [İksir İnternet Hizmetleri A.Ş.](https://www.ixirhost.com) bünyesindeki **ixirHost** markasının müşteri paneli / hizmet yönetim yazılımıdır. Domain (alan adı), web hosting, bulut/kiralık sunucu, kurumsal e-posta ve SSL sertifikası gibi hizmetlerin satışı, sipariş süreci, faturalandırma ve müşteri desteğinin yönetildiği web tabanlı yönetim sistemidir.
+**ixirdev**, [İksir İnternet Hizmetleri A.Ş.](https://www.ixirhost.com) bünyesindeki **ixirHost** markasının müşteri paneli / hizmet yönetim yazılımıdır. Domain, web hosting, bulut/kiralık sunucu, kurumsal e-posta ve SSL sertifikası gibi hizmetlerin satışı, sipariş süreci, faturalandırma ve müşteri desteğinin yönetildiği web tabanlı yönetim sistemidir.
 
 🔗 Canlı adres: [ixirdev.com.tr](https://ixirdev.com.tr/)
 

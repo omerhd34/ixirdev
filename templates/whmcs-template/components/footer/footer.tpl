@@ -26,12 +26,12 @@
    </div>
    <div class="ixir-footer-col">
     <div class="ixir-footer-box">
-     <h3>Sunucu</h3>
+     <h3>Server</h3>
      <ul>
-      <li><a href="{$WEB_ROOT}/cloud" title="Bulut Sunucu">Bulut Sunucu</a></li>
-      <li><a href="{$WEB_ROOT}/dedicated-server" title="Kiralık Sunucu">Kiralık Sunucu</a></li>
+      <li><a href="{$WEB_ROOT}/bulut-server" title="Bulut Server">Bulut Server</a></li>
+      <li><a href="{$WEB_ROOT}/kiralik-server" title="Kiralık Server">Kiralık Server</a></li>
+      <li><a href="{$WEB_ROOT}/ek-servisler" title="Server Servisleri">Server Servisleri</a></li>
       <li><a href="{$WEB_ROOT}/colocation" title="Co-Location">Co-Location</a></li>
-      <li><a href="{$WEB_ROOT}/ek-servisler" title="Sunucu Servisleri">Sunucu Servisleri</a></li>
       <li><a href="{$WEB_ROOT}/pci-tarama" title="PCI-DSS">PCI-DSS</a></li>
      </ul>
     </div>

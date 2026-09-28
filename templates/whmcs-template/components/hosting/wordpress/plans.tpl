@@ -68,7 +68,7 @@
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>1<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-          class="ixir-wh-tip-box" role="tooltip">Başlangıç planında yalnızca 1 alan adı
+          class="ixir-wh-tip-box" role="tooltip">Başlangıç planında yalnızca 1 domain
           barındırabilirsiniz.</span></span></b></li>
       <li><span>NVMe disk boyutu</span><b>1 GB<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="NVMe açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -221,7 +221,7 @@
       <li><span>Web sitesi adeti</span><b>5<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
           class="ixir-wh-tip-box" role="tooltip">5 adet web sitesi, hosting planınızda ana domain ile birlikte toplamda
-          5 adet alt alan adı barındırabilmenizi sağlar.</span></span></b></li>
+          5 adet alt domain barındırabilmenizi sağlar.</span></span></b></li>
       <li><span>NVMe disk boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button"
           class="ixir-wh-tip-btn" aria-label="NVMe açıklaması"><i class="fas fa-info-circle"
            aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Enterprise NVMe ile geleneksel
@@ -253,13 +253,13 @@
     <ul class="ixir-wh-shared">
      <li><i class="fas fa-check" aria-hidden="true"></i>Litespeed Web Server<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Litespeed Web Server açıklaması"><i class="fas fa-info-circle"
-         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Geleneksel Apache web sunucusuna
+         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Geleneksel Apache web server'ına
         göre 10 kat daha fazla performans sağlar.</span></span></li>
 
      <li><i class="fas fa-check" aria-hidden="true"></i>Litespeed Cache
       <span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn" aria-label="Litespeed Cache açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box"
-        role="tooltip">Geleneksel Apache web sunucusuna
+        role="tooltip">Geleneksel Apache web server'ına
         göre 10 kat daha fazla performans sağlar.</span></span>
      </li>
 
