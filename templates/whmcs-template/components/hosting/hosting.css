@@ -18,7 +18,7 @@
   margin-bottom: 16px;
   border-radius: 16px;
   background: #f7f8fb;
-  color: #242935;
+  color: #0b2545;
   font-size: 28px;
 }
 .ixir-landing-hero p {
@@ -38,7 +38,7 @@
   padding: 0 22px;
   border: 0;
   border-radius: 12px;
-  background: #242935 !important;
+  background: #0b2545 !important;
   color: #fff !important;
   font-weight: 700;
   line-height: 46px;
@@ -110,7 +110,7 @@
 }
 .ixir-wh-plans-head h2 {
   margin: 0 0 8px;
-  color: #242935;
+  color: #0b2545;
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: clamp(26px, 2.2vw, 34px);
   font-weight: 700;
@@ -145,7 +145,7 @@
   box-shadow: 0 8px 24px rgba(36, 41, 53, 0.05);
 }
 .ixir-wh-plan--best {
-  border-color: #242935;
+  border-color: #0b2545;
   box-shadow: 0 16px 36px rgba(36, 41, 53, 0.12);
 }
 .ixir-wh-badge {
@@ -156,7 +156,7 @@
   padding: 5px 12px;
   border-radius: 999px;
   background: #fbd746;
-  color: #242935;
+  color: #0b2545;
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
@@ -164,7 +164,7 @@
 }
 .ixir-wh-plan-head h3 {
   margin: 0 0 6px;
-  color: #242935;
+  color: #0b2545;
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -195,7 +195,7 @@
   display: flex;
   align-items: flex-start;
   margin-top: 4px;
-  color: #242935;
+  color: #0b2545;
   line-height: 1;
 }
 .ixir-wh-amount b {
@@ -216,7 +216,7 @@
   display: flex;
   flex-direction: column;
   margin: 5px 0 0 6px;
-  color: #242935;
+  color: #0b2545;
   font-size: 13px;
   font-weight: 700;
   line-height: 1;
@@ -299,7 +299,7 @@
   margin-bottom: 8px;
 }
 .ixir-wh-billing-top strong {
-  color: #242935;
+  color: #0b2545;
   font-size: 16px;
 }
 .ixir-wh-billing-close {
@@ -332,7 +332,7 @@
 .ixir-wh-billing-pop td {
   padding: 11px 8px;
   border-top: 1px solid #eef0f4;
-  color: #242935;
+  color: #0b2545;
 }
 .ixir-wh-billing-pop tr.is-best td {
   background: #fff8d6;
@@ -353,7 +353,7 @@
   height: 44px;
   margin-bottom: 14px;
   border-radius: 10px;
-  background: #242935;
+  background: #0b2545;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
@@ -369,11 +369,11 @@
 }
 .ixir-wh-plan--best .ixir-wh-buy {
   background: #fbd746;
-  color: #242935;
+  color: #0b2545;
 }
 .ixir-wh-plan--best .ixir-wh-buy:hover,
 .ixir-wh-plan--best .ixir-wh-buy:focus {
-  background: #242935;
+  background: #0b2545;
   color: #fbd746;
 }
 .ixir-wh-specs {
@@ -392,7 +392,7 @@
   font-size: 13px;
 }
 .ixir-wh-specs b {
-  color: #242935;
+  color: #0b2545;
   font-weight: 700;
   text-align: right;
 }
@@ -414,7 +414,7 @@
 }
 .ixir-wh-more:hover,
 .ixir-wh-more:focus {
-  color: #242935;
+  color: #0b2545;
   text-decoration: none;
 }
 .ixir-wh-more:hover i,
@@ -430,7 +430,7 @@
   margin: 0;
   padding: 52px 28px;
   background: #f6f7f9;
-  color: #242935;
+  color: #0b2545;
   border-top: 1px solid #e6e8ee;
   border-bottom: 1px solid #e6e8ee;
   font-size: 22px;
@@ -455,7 +455,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: #242935;
+  color: #0b2545;
   font-weight: 600;
   text-decoration: none;
 }
@@ -603,7 +603,7 @@
   text-decoration: none;
 }
 .ixir-wh-story-cta:focus-visible {
-  outline: 2px solid #242935;
+  outline: 2px solid #0b2545;
   outline-offset: 3px;
 }
 .ixir-wh-story-row {
@@ -724,7 +724,7 @@
 }
 .ixir-wh-story-copy h3 {
   margin: 0;
-  color: #242935;
+  color: #0b2545;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -740,11 +740,11 @@
   line-height: 1.7;
 }
 .ixir-wh-story-copy strong {
-  color: #242935;
+  color: #0b2545;
   font-weight: 700;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ixir-wh-story {
     padding: 40px 0 48px;
   }
@@ -976,7 +976,7 @@
       rgba(163, 212, 58, 0.1),
       transparent 70%
     ),
-    linear-gradient(165deg, #1c2433 0%, #242935 52%, #1a202c 100%);
+    linear-gradient(165deg, #1c2433 0%, #0b2545 52%, #1a202c 100%);
   overflow: hidden;
 }
 .ixir-wh-why .container {
@@ -1168,7 +1168,7 @@
     padding: 36px 34px 32px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ixir-wh-migrate {
     padding: 48px 0 56px;
   }
@@ -1261,7 +1261,7 @@
 }
 .ixir-wh-diff-head h2 {
   margin: 0 0 10px;
-  color: #242935;
+  color: #0b2545;
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: clamp(26px, 2.2vw, 34px);
   font-weight: 700;
@@ -1318,7 +1318,7 @@
 }
 .ixir-wh-diff-grid h3 {
   margin: 2px 0 6px;
-  color: #242935;
+  color: #0b2545;
   font-size: 16.5px;
   font-weight: 700;
   letter-spacing: -0.015em;
@@ -1343,7 +1343,7 @@
   border-left: 3px solid #3b78e7;
   border-radius: 8px;
   background: #f5f8fe;
-  color: #242935;
+  color: #0b2545;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -1365,7 +1365,7 @@
   text-transform: none;
   overflow-wrap: anywhere;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ixir-wh-diff {
     padding: 28px 0;
   }
@@ -1715,7 +1715,7 @@
   position: relative;
   padding-top: 22px;
   padding-bottom: 4px;
-  color: #242935;
+  color: #0b2545;
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 700;
@@ -1783,7 +1783,7 @@
 }
 .ixir-wh-table-prices b,
 .ixir-wh-table-foot b {
-  color: #242935;
+  color: #0b2545;
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -1805,7 +1805,7 @@
   border: 0;
   border-top: 1px solid #eef0f4;
   background: #f7f8fb;
-  color: #242935;
+  color: #0b2545;
   font-family: "Roboto", sans-serif;
   font-size: 14.5px;
   font-weight: 700;
@@ -1824,7 +1824,7 @@
   line-height: 1.35;
 }
 .ixir-wh-table-row > div:first-child {
-  color: #242935;
+  color: #0b2545;
   font-weight: 600;
 }
 .ixir-wh-table-row .fa-check {
@@ -1847,11 +1847,11 @@
 }
 .ixir-wh-table-foot .is-best .ixir-wh-buy {
   background: #fbd746;
-  color: #242935;
+  color: #0b2545;
 }
 .ixir-wh-table-foot .is-best .ixir-wh-buy:hover,
 .ixir-wh-table-foot .is-best .ixir-wh-buy:focus {
-  background: #242935;
+  background: #0b2545;
   color: #fbd746;
 }
 .ixir-wh-faq {
@@ -1931,7 +1931,7 @@
   background: #f6f7f9;
 }
 .ixir-wh-faq--light .ixir-wh-plans-head h2 {
-  color: #242935;
+  color: #0b2545;
 }
 .ixir-wh-faq--light .ixir-wh-plans-head p {
   color: #6b7280;
@@ -2004,7 +2004,7 @@
   padding-bottom: 16px;
 }
 .ixir-wh-faq-a strong {
-  color: #242935;
+  color: #0b2545;
   font-weight: 700;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2076,13 +2076,13 @@
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: #242935;
+  background: #0b2545;
   color: #fbd746;
   font-size: 18px;
 }
 .ixir-wh-guide-item h2 {
   margin: 0;
-  color: #242935;
+  color: #0b2545;
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -2097,7 +2097,7 @@
   line-height: 1.75;
 }
 .ixir-wh-guide-item strong {
-  color: #242935;
+  color: #0b2545;
   font-weight: 700;
 }
 .ixir-wh-guide-item a {
@@ -2127,7 +2127,7 @@
 }
 .ixir-wh-guide--dark .ixir-wh-guide-icon {
   background: #fbd746;
-  color: #242935;
+  color: #0b2545;
 }
 .ixir-wh-guide--dark .ixir-wh-guide-item h2,
 .ixir-wh-guide--dark .ixir-wh-guide-item strong {
@@ -2203,7 +2203,7 @@
 }
 .ixir-wh-about-head h2 {
   margin: 0 0 16px;
-  color: #242935;
+  color: #0b2545;
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: clamp(26px, 2.2vw, 34px);
   font-weight: 700;
@@ -2217,7 +2217,7 @@
   line-height: 1.8;
 }
 .ixir-wh-about-body strong {
-  color: #242935;
+  color: #0b2545;
   font-weight: 700;
 }
 .ixir-wh-about-split {
@@ -2232,7 +2232,7 @@
   align-items: center;
   gap: 12px;
   margin: 0 0 14px;
-  color: #242935;
+  color: #0b2545;
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -2247,7 +2247,7 @@
   width: 40px;
   height: 40px;
   border-radius: 12px;
-  background: #242935;
+  background: #0b2545;
   color: #fbd746;
   font-size: 15px;
 }
@@ -2371,7 +2371,7 @@
   border-left: 1px solid #eef0f4;
 }
 .ixir-wh-about-stats b {
-  color: #242935;
+  color: #0b2545;
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -2469,7 +2469,7 @@
 }
 .ixir-wh-shared-label {
   margin: 0 0 12px;
-  color: #242935;
+  color: #0b2545;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0;
@@ -2492,7 +2492,7 @@
   padding: 8px 10px;
   border-radius: 10px;
   background: #f4f6f8;
-  color: #242935;
+  color: #0b2545;
   font-size: 13px;
   font-weight: 500;
   line-height: 1.3;
@@ -2577,7 +2577,7 @@
   width: 230px;
   padding: 8px 10px;
   border-radius: 8px;
-  background: #242935;
+  background: #0b2545;
   color: #fff;
   font-size: 12px;
   font-weight: 500;
@@ -2617,7 +2617,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ixir-wh-grid,
   .ixir-wh-shared,
   .ixir-wh-assurances {
@@ -2864,7 +2864,7 @@
 }
 .ixir-wh-page--wp .ixir-wh-story--features {
   padding: 56px 0 64px;
-  color: #242935;
+  color: #0b2545;
   background:
     radial-gradient(
       ellipse 60% 40% at 50% 0%,
@@ -2886,7 +2886,7 @@
       rgba(163, 212, 58, 0.1),
       transparent 70%
     ),
-    linear-gradient(165deg, #1c2433 0%, #242935 52%, #1a202c 100%);
+    linear-gradient(165deg, #1c2433 0%, #0b2545 52%, #1a202c 100%);
 }
 .ixir-wh-page--wp .ixir-wh-migrate-eyebrow {
   background: rgba(255, 255, 255, 0.1);
@@ -2900,7 +2900,7 @@
   color: rgba(255, 255, 255, 0.72);
 }
 .ixir-wh-page--wp .ixir-wh-why {
-  color: #242935;
+  color: #0b2545;
   background:
     radial-gradient(
       ellipse 55% 50% at 80% 0%,
@@ -2934,7 +2934,7 @@
 }
 .ixir-wh-page--wp .ixir-wh-why li {
   background: rgba(36, 41, 53, 0.03);
-  color: #242935;
+  color: #0b2545;
 }
 .ixir-wh-page--wp .ixir-wh-why li:hover {
   background: rgba(36, 41, 53, 0.055);
@@ -2952,7 +2952,7 @@
 }
 .ixir-wh-page--wp .ixir-wh-why .ixir-wh-tip-btn:hover,
 .ixir-wh-page--wp .ixir-wh-why .ixir-wh-tip-btn:focus {
-  color: #242935;
+  color: #0b2545;
 }
 .ixir-wh-page--wp .ixir-wh-diff {
   background:

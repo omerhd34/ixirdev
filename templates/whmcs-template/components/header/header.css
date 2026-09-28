@@ -40,7 +40,7 @@ body:has(.news-bar:not(.is-hidden)) {
   position: relative;
   z-index: 5;
   padding: 5px 0;
-  background: #242935;
+  background: #0b2545;
   overflow: visible;
 }
 .ixir-header .topbar-row {
@@ -1065,7 +1065,7 @@ body:has(.news-bar:not(.is-hidden)) {
   bottom: 0;
   left: 0;
   z-index: -1;
-  background: #242935;
+  background: #0b2545;
   border-radius: 10px;
   box-shadow: 0 6px 16px rgba(36, 41, 53, 0.22);
   transition:
@@ -1135,7 +1135,7 @@ body:has(.news-bar:not(.is-hidden)) {
 .mobile-top {
   position: relative;
   z-index: 5;
-  background: #242935;
+  background: #0b2545;
   color: #fff;
   padding: 6px var(--ixir-gutter);
   margin: 0;
@@ -1512,7 +1512,7 @@ body.ixir-mobile-menu-open {
   text-overflow: ellipsis;
 }
 .ixir-mobile-auth-btn--login {
-  background: #242935;
+  background: #0b2545;
   color: #fff !important;
   box-shadow: 0 8px 18px rgba(36, 41, 53, 0.22);
 }
@@ -1521,15 +1521,15 @@ body.ixir-mobile-menu-open {
 }
 .ixir-mobile-auth-btn--register {
   background: #fbd746;
-  color: #242935 !important;
+  color: #0b2545 !important;
   box-shadow: 0 8px 18px rgba(251, 215, 70, 0.28);
 }
 .ixir-mobile-auth-btn--register > i {
   background: rgba(36, 41, 53, 0.12);
-  color: #242935;
+  color: #0b2545;
 }
 .ixir-mobile-auth-btn--account {
-  background: #242935;
+  background: #0b2545;
   color: #fff !important;
   box-shadow: 0 8px 18px rgba(36, 41, 53, 0.22);
 }
@@ -1538,7 +1538,7 @@ body.ixir-mobile-menu-open {
 }
 .ixir-mobile-auth-btn--logout {
   background: #fff;
-  color: #242935 !important;
+  color: #0b2545 !important;
   border: 1px solid #e2e5ea;
 }
 .ixir-mobile-auth-btn--logout > i {
@@ -1637,7 +1637,7 @@ body.ixir-mobile-menu-open {
 }
 .ixir-mobile-nav > li.is-open .ixir-mobile-caret {
   transform: rotate(180deg);
-  color: #242935 !important;
+  color: #0b2545 !important;
 }
 .ixir-mobile-sub {
   display: grid;
@@ -1717,7 +1717,7 @@ body.ixir-mobile-menu-open {
 }
 .ixir-mobile-drawer-foot a:hover,
 .ixir-mobile-drawer-foot a:focus {
-  color: #242935 !important;
+  color: #0b2545 !important;
 }
 @media (prefers-reduced-motion: reduce) {
   .ixir-hamburger-bar,

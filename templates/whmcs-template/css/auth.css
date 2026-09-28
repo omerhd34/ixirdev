@@ -367,7 +367,7 @@ body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body .col-xs-12 {
 .ixir-overlay-btn:hover,
 .ixir-overlay-btn:focus {
   background: #fff;
-  color: #242935;
+  color: #0b2545;
   outline: none;
   text-decoration: none;
 }

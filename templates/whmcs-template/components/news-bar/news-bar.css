@@ -95,7 +95,7 @@ body.ixir-auth-page #ixirNewsBar,
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: #242935;
+  background: #0b2545;
   color: #ffd54f;
   line-height: 1;
   box-shadow: 0 2px 6px rgba(36, 41, 53, 0.22);
@@ -127,7 +127,7 @@ body.ixir-auth-page #ixirNewsBar,
   height: 30px;
   margin-left: 4px;
   padding: 0 14px;
-  background: #242935;
+  background: #0b2545;
   color: #fff !important;
   font-size: 12px;
   font-weight: 700;
