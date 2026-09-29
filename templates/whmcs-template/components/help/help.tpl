@@ -1,5 +1,5 @@
 <section
- class="ixir-help{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || $ixirCorporate || $templatefile == 'kurumsal' || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive'))} ixir-slide ixir-slide--right is-slide-on{/if}"
+ class="ixir-help{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || $ixirCorporate || $templatefile == 'kurumsal' || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting'))} ixir-slide ixir-slide--right is-slide-on{/if}"
  id="ixir-help" aria-label="Destek kanalları">
  <img class="ixir-help-visual" src="{$WEB_ROOT}/templates/{$template}/img/help/bg4.webp" alt="" width="1154"
   height="420" decoding="async" aria-hidden="true">

@@ -314,7 +314,8 @@
   {include file="$template/includes/verifyemail.tpl"}
  {/if}
 
- {if $templatefile != 'homepage' && $templatefile != 'whois-sorgulama' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage && !($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive'))}
+ {if $templatefile != 'homepage' && $templatefile != 'whois-sorgulama' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage && !($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting'))}
+
   <section id="main-body">
    <div class="container{if $skipMainBodyContainer}-fluid without-padding{/if}">
     <div class="row">

@@ -19,7 +19,7 @@
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}-r12" rel="stylesheet">
 {/if}
-{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive'))}
+{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting'))}
  <link href="{$WEB_ROOT}/templates/{$template}/components/homepage-hero/homepage-hero.css?v={$versionHash}-r54"
   rel="stylesheet">
 {/if}

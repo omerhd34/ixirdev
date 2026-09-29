@@ -11,7 +11,7 @@
 {elseif $ixirPageSlug == 'kurumsal-mail-hosting'}
  {include file="$template/components/hosting/kurumsal-mail-hosting/kurumsal-mail-hosting.tpl"}
 {elseif $ixirPageSlug == 'linux-reseller-hosting'}
- {include file="$template/components/hosting/linux-reseller-hosting/linux-reseller-hosting.tpl"}
+ {include file="$template/components/hosting/linux-reseller/linux-reseller.tpl"}
 {elseif $ixirPageSlug == 'windows-reseller-hosting'}
- {include file="$template/components/hosting/windows-reseller-hosting/windows-reseller-hosting.tpl"}
+ {include file="$template/components/hosting/windows-reseller/windows-reseller.tpl"}
 {/if}
