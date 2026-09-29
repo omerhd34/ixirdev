@@ -1,0 +1,9 @@
+{include file="$template/components/hosting/linux-reseller/hero.tpl"}
+{include file="$template/components/hosting/linux-reseller/plans.tpl"}
+{include file="$template/components/hosting/linux-reseller/story.tpl"}
+{include file="$template/components/hosting/linux-reseller/manage.tpl"}
+{include file="$template/components/hosting/linux-reseller/diff.tpl"}
+{include file="$template/components/hosting/linux-reseller/features.tpl"}
+{include file="$template/components/hosting/linux-reseller/compare.tpl"}
+{include file="$template/components/hosting/linux-reseller/faq.tpl"}
+{include file="$template/components/hosting/linux-reseller/guide.tpl"}
