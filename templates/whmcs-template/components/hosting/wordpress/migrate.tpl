@@ -13,8 +13,10 @@
   <div class="container">
    <div class="ixir-wh-migrate-grid">
     <div class="ixir-wh-migrate-visual">
-     <img src="{$WEB_ROOT}/templates/{$template}/img/wordpress-transfer.webp" alt="WordPress ücretsiz site taşıma"
-      width="420" height="320" loading="lazy" decoding="async">
+     <span class="ixir-wh-migrate-art">
+      <img src="{$WEB_ROOT}/templates/{$template}/img/wordpress-transfer.webp" alt="WordPress ücretsiz site taşıma"
+       width="439" height="415" loading="lazy" decoding="async">
+     </span>
     </div>
     <div class="ixir-wh-migrate-copy">
      <span class="ixir-wh-migrate-eyebrow"><i class="fas fa-exchange-alt" aria-hidden="true"></i> Ücretsiz Taşıma</span>
