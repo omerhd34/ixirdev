@@ -324,23 +324,26 @@
     </article>
    </div>
    <div class="ixir-wh-shared-box">
-    <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+    <div class="ixir-wh-shared-head">
+     <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+     <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
+    </div>
     <ul class="ixir-wh-shared">
-     <li><i class="fas fa-check" aria-hidden="true"></i>Ücretsiz COM.TR domain<span class="ixir-wh-tip"><button
+     <li><i class="fas fa-globe" aria-hidden="true"></i>Ücretsiz COM.TR domain<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Yalnızca yeni siparişte ve 1 yıl
         geçerlidir, yeni sipariş verirken sepete ekleyebilirsiniz, sonradan bu hak kullanılamaz.</span></span></li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Ücretsiz SSL<span class="ixir-wh-tip"><button type="button"
+     <li><i class="fas fa-lock" aria-hidden="true"></i>Ücretsiz SSL<span class="ixir-wh-tip"><button type="button"
         class="ixir-wh-tip-btn" aria-label="SSL açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Let's Encrypt SSL sertifikanız
         otomatik kurulur ve ömür boyu ücretsizdir.
        </span></span></li>
 
-     <li><i class="fas fa-check" aria-hidden="true"></i>Windows Server 2022</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>MSSQL Server 2022</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>ASP.Net Core 10</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>ASP.Net 4.8</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>IIS 10</li>
+     <li><i class="fab fa-windows" aria-hidden="true"></i>Windows Server 2022</li>
+     <li><i class="fas fa-database" aria-hidden="true"></i>MSSQL Server 2022</li>
+     <li><i class="fas fa-code" aria-hidden="true"></i>ASP.Net Core 10</li>
+     <li><i class="fab fa-microsoft" aria-hidden="true"></i>ASP.Net 4.8</li>
+     <li><i class="fas fa-server" aria-hidden="true"></i>IIS 10</li>
     </ul>
    </div>
   </div>

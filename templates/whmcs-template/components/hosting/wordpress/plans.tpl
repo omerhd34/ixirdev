@@ -249,53 +249,56 @@
 
    </div>
    <div class="ixir-wh-shared-box">
-    <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+    <div class="ixir-wh-shared-head">
+     <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+     <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
+    </div>
     <ul class="ixir-wh-shared">
-     <li><i class="fas fa-check" aria-hidden="true"></i>Litespeed Web Server<span class="ixir-wh-tip"><button
+     <li><i class="fas fa-rocket" aria-hidden="true"></i>Litespeed Web Server<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Litespeed Web Server açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Geleneksel Apache web server'ına
         göre 10 kat daha fazla performans sağlar.</span></span></li>
 
-     <li><i class="fas fa-check" aria-hidden="true"></i>Litespeed Cache
+     <li><i class="fas fa-bolt" aria-hidden="true"></i>Litespeed Cache
       <span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn" aria-label="Litespeed Cache açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box"
         role="tooltip">Geleneksel Apache web server'ına
         göre 10 kat daha fazla performans sağlar.</span></span>
      </li>
 
-     <li><i class="fas fa-check" aria-hidden="true"></i>PHP X-RAY
+     <li><i class="fas fa-search" aria-hidden="true"></i>PHP X-RAY
       <span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn" aria-label="PHP X-RAY açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">PHP
         X-Ray ile web sitenizin hız ve performansını analiz edebilir ve iyileştirmeler yapabilirsiniz.
        </span></span>
      </li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Accelerate WP
+     <li><i class="fas fa-tachometer-alt" aria-hidden="true"></i>Accelerate WP
       <span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn" aria-label="Accelerate WP açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box"
         role="tooltip">AccelerateWP LitespeedCache yerine kullanabileceğiniz wordpress hızlandırma platformudur, sayfa
         yükleme sürelerini optimize eder.</span></span>
      </li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Imunify360 WAF
+     <li><i class="fas fa-shield-alt" aria-hidden="true"></i>Imunify360 WAF
       <span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn" aria-label="Imunify360 WAF açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Web
         sitelerinizi malware, virüs, dos saldırılarından koruyan gelişmiş bir çözümdür.
        </span></span>
      </li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>JetBackup Yedekleme
+     <li><i class="fas fa-history" aria-hidden="true"></i>JetBackup Yedekleme
       <span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
         aria-label="JetBackup Yedekleme açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
         class="ixir-wh-tip-box" role="tooltip">Adil kullanım politikasına uygun hesabınız haftalık olarak ücretsiz
         yedeklenir ve ücretsiz olarak panelinizden isterseniz tüm yedek, isterseniz dosya, mail, veritabanı bazlı
         yedeklerden geri dönebilirsiniz.</span></span>
      </li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Ücretsiz SSL
+     <li><i class="fas fa-lock" aria-hidden="true"></i>Ücretsiz SSL
       <span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn" aria-label="Ücretsiz SSL açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Let's
         Encrypt SSL sertifikanız otomatik kurulur ve ömür boyu ücretsizdir.
        </span></span>
      </li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Cloud Linux OS</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>cPanel Kontrol Paneli</li>
+     <li><i class="fab fa-linux" aria-hidden="true"></i>Cloud Linux OS</li>
+     <li><i class="fas fa-th-large" aria-hidden="true"></i>cPanel Kontrol Paneli</li>
     </ul>
    </div>
   </div>

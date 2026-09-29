@@ -234,42 +234,45 @@
     </article>
    </div>
    <div class="ixir-wh-shared-box">
-    <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+    <div class="ixir-wh-shared-head">
+     <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+     <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
+    </div>
     <ul class="ixir-wh-shared">
-     <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz NVMe Disk Alanı<span class="ixir-wh-tip"><button
+     <li><i class="fas fa-hdd" aria-hidden="true"></i>Limitsiz NVMe Disk Alanı<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Limitsiz NVMe Disk Alanı açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box"
         role="tooltip">Enterprise NVMe ile geleneksel
         depolama birimlerine göre 40 kat daha fazla hız, daha fazla I/O sağlıyoruz, hosting planınızda
         limitlendirilmemiş depolama alanı sunuyoruz. Ancak adil kullanım politikaları geçerlidir.</span></span></li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz Trafik
+     <li><i class="fas fa-exchange-alt" aria-hidden="true"></i>Limitsiz Trafik
       <span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn" aria-label="Limitsiz Trafik açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box"
         role="tooltip">Limitsiz Trafik, hosting planınızda limitlendirilmemiş trafik sağlar. Ancak adil kullanım
         politikaları geçerlidir.</span></span>
      </li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz E-posta<span class="ixir-wh-tip"><button type="button"
-        class="ixir-wh-tip-btn" aria-label="Limitsiz E-posta açıklaması"><i class="fas fa-info-circle"
+     <li><i class="fas fa-envelope" aria-hidden="true"></i>Limitsiz E-posta<span class="ixir-wh-tip"><button
+        type="button" class="ixir-wh-tip-btn" aria-label="Limitsiz E-posta açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Limitsiz E-Posta, hosting
         planınızda limitlendirilmemiş posta kutusu sayısını ifade eder. Ancak adil kullanım politikaları
         geçerlidir.</span></span></li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Site Başına 1 Core CPU<span class="ixir-wh-tip"><button
+     <li><i class="fas fa-microchip" aria-hidden="true"></i>Site Başına 1 Core CPU<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Site Başına 1 Core CPU açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">En yeni
         nesil Intel Xeon Gold
         İşlemcilerle 5 kata kadar daha fazla performans.</span></span></li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Ücretsiz SSL<span class="ixir-wh-tip"><button type="button"
+     <li><i class="fas fa-lock" aria-hidden="true"></i>Ücretsiz SSL<span class="ixir-wh-tip"><button type="button"
         class="ixir-wh-tip-btn" aria-label="SSL açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Tüm siteleriniz için Let's Encrypt
         SSL sertifikanız otomatik kurulur ve ömür boyu ücretsizdir.</span></span></li>
      </li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Site Başına 1 GB RAM</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Windows Server 2022</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>MSSQL Server 2022</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>ASP.Net Core 10</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>ASP.Net 4.8</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>IIS 10</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Plesk Kontrol Paneli</li>
+     <li><i class="fas fa-memory" aria-hidden="true"></i>Site Başına 1 GB RAM</li>
+     <li><i class="fab fa-windows" aria-hidden="true"></i>Windows Server 2022</li>
+     <li><i class="fas fa-database" aria-hidden="true"></i>MSSQL Server 2022</li>
+     <li><i class="fas fa-code" aria-hidden="true"></i>ASP.Net Core 10</li>
+     <li><i class="fab fa-microsoft" aria-hidden="true"></i>ASP.Net 4.8</li>
+     <li><i class="fas fa-server" aria-hidden="true"></i>IIS 10</li>
+     <li><i class="fas fa-sliders-h" aria-hidden="true"></i>Plesk Kontrol Paneli</li>
     </ul>
    </div>
   </div>

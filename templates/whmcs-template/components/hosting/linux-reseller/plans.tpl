@@ -231,9 +231,12 @@
     </article>
    </div>
    <div class="ixir-wh-shared-box">
-    <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+    <div class="ixir-wh-shared-head">
+     <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+     <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
+    </div>
     <ul class="ixir-wh-shared">
-     <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz NVMe Disk Alanı<span class="ixir-wh-tip"><button
+     <li><i class="fas fa-hdd" aria-hidden="true"></i>Limitsiz NVMe Disk Alanı<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Limitsiz NVMe Disk Alanı açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box"
         role="tooltip">Enterprise NVMe ile geleneksel
@@ -241,59 +244,59 @@
         limitlendirilmemiş depolama alanı sunuyoruz. Ancak adil kullanım politikaları geçerlidir.</span></span></li>
 
 
-     <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz Trafik
+     <li><i class="fas fa-exchange-alt" aria-hidden="true"></i>Limitsiz Trafik
       <span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn" aria-label="Limitsiz Trafik açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box"
         role="tooltip">Limitsiz Trafik, hosting planınızda limitlendirilmemiş trafik sağlar. Ancak adil kullanım
         politikaları geçerlidir.</span></span>
      </li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz E-posta<span class="ixir-wh-tip"><button type="button"
-        class="ixir-wh-tip-btn" aria-label="Limitsiz E-posta açıklaması"><i class="fas fa-info-circle"
+     <li><i class="fas fa-envelope" aria-hidden="true"></i>Limitsiz E-posta<span class="ixir-wh-tip"><button
+        type="button" class="ixir-wh-tip-btn" aria-label="Limitsiz E-posta açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Limitsiz E-Posta, hosting
         planınızda limitlendirilmemiş posta kutusu sayısını ifade eder. Ancak adil kullanım politikaları
         geçerlidir.</span></span></li>
 
-     <li><i class="fas fa-check" aria-hidden="true"></i>Site Başına 1 Core CPU<span class="ixir-wh-tip"><button
+     <li><i class="fas fa-microchip" aria-hidden="true"></i>Site Başına 1 Core CPU<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Site Başına 1 Core CPU açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">En yeni
         nesil Intel Xeon Gold
         İşlemcilerle 5 kata kadar daha fazla performans.</span></span></li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Site Başına 1 GB RAM</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Site Başına 20 MB I/O Limiti</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Cloud Linux OS</li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Litespeed Web Server<span class="ixir-wh-tip"><button
+     <li><i class="fas fa-memory" aria-hidden="true"></i>Site Başına 1 GB RAM</li>
+     <li><i class="fas fa-stream" aria-hidden="true"></i>Site Başına 20 MB I/O Limiti</li>
+     <li><i class="fab fa-linux" aria-hidden="true"></i>Cloud Linux OS</li>
+     <li><i class="fas fa-rocket" aria-hidden="true"></i>Litespeed Web Server<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Litespeed Web Server açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Geleneksel Apache web sunucusuna
         göre 10 kat daha fazla performans sağlar.</span></span></li>
 
-     <li><i class="fas fa-check" aria-hidden="true"></i>Litespeed Cache<span class="ixir-wh-tip"><button type="button"
+     <li><i class="fas fa-bolt" aria-hidden="true"></i>Litespeed Cache<span class="ixir-wh-tip"><button type="button"
         class="ixir-wh-tip-btn" aria-label="Litespeed Cache açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Litespeed Cache önbellekleme ile
         web sitenizin performansını arttırabilirsiniz, özellikle wordpress siteler ile uyumludur.</span></span></li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>PHP X-RAY<span class="ixir-wh-tip"><button type="button"
+     <li><i class="fas fa-search" aria-hidden="true"></i>PHP X-RAY<span class="ixir-wh-tip"><button type="button"
         class="ixir-wh-tip-btn" aria-label="PHP X-RAY açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">PHP X-Ray ile web sitenizin hız ve
         performansını analiz edebilir ve iyileştirmeler yapabilirsiniz.</span></span></li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Accelerate WP<span class="ixir-wh-tip"><button type="button"
-        class="ixir-wh-tip-btn" aria-label="Accelerate WP açıklaması"><i class="fas fa-info-circle"
+     <li><i class="fas fa-tachometer-alt" aria-hidden="true"></i>Accelerate WP<span class="ixir-wh-tip"><button
+        type="button" class="ixir-wh-tip-btn" aria-label="Accelerate WP açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">AccelerateWP, AccelerateWP
         LitespeedCache yerine kullanabileceğiniz wordpress hızlandırma platformudur, sayfa yükleme sürelerini optimize
         eder.</span></span>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Imunify360 WAF<span class="ixir-wh-tip"><button type="button"
-        class="ixir-wh-tip-btn" aria-label="Imunify360 açıklaması"><i class="fas fa-info-circle"
+     <li><i class="fas fa-shield-alt" aria-hidden="true"></i>Imunify360 WAF<span class="ixir-wh-tip"><button
+        type="button" class="ixir-wh-tip-btn" aria-label="Imunify360 açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Web sitelerinizi malware, virüs ve
         DDoS saldırılarından koruyan gelişmiş bir çözümdür.</span></span></li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>JetBackup yedekleme<span class="ixir-wh-tip"><button
+     <li><i class="fas fa-history" aria-hidden="true"></i>JetBackup yedekleme<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="JetBackup açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Adil kullanım politikasına uygun
         hesabınız haftalık olarak ücretsiz yedeklenir. Panelinizden isterseniz tüm yedeği, isterseniz dosya, mail veya
         veritabanı bazlı yedeklerden geri dönebilirsiniz.</span></span></li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>Ücretsiz SSL<span class="ixir-wh-tip"><button type="button"
+     <li><i class="fas fa-lock" aria-hidden="true"></i>Ücretsiz SSL<span class="ixir-wh-tip"><button type="button"
         class="ixir-wh-tip-btn" aria-label="SSL açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Tüm siteleriniz için Let's Encrypt
         SSL sertifikanız otomatik kurulur ve ömür boyu ücretsizdir.</span></span></li>
      </li>
-     <li><i class="fas fa-check" aria-hidden="true"></i>cPanel kontrol paneli</li>
+     <li><i class="fas fa-th-large" aria-hidden="true"></i>cPanel kontrol paneli</li>
     </ul>
    </div>
   </div>

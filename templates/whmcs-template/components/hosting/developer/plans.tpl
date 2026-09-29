@@ -339,43 +339,46 @@
    </article>
   </div>
   <div class="ixir-wh-shared-box">
-   <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+   <div class="ixir-wh-shared-head">
+    <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+    <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
+   </div>
    <ul class="ixir-wh-shared">
-    <li><i class="fas fa-check" aria-hidden="true"></i>Node.Js / Nest.js vb.<span class="ixir-wh-tip"><button
+    <li><i class="fab fa-node-js" aria-hidden="true"></i>Node.Js / Nest.js vb.<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">v16,v18,v20,v22,v24
        sürümleri desteklenmektedir. cPanel Node.js Selector aracıyla her uygulama için bağımsız versiyon
        seçebilirsiniz.</span></span></li>
-    <li><i class="fas fa-check" aria-hidden="true"></i>Python / Django vb.<span class="ixir-wh-tip"><button
+    <li><i class="fab fa-python" aria-hidden="true"></i>Python / Django vb.<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">v3.9 · v3.10 · v3.11 · v3.12 ·
        v3.13 sürümleri desteklenmektedir. cPanel Python Selector aracıyla her uygulama için bağımsız versiyon
        seçebilirsiniz.</span></span></li>
-    <li><i class="fas fa-check" aria-hidden="true"></i>Litespeed Web Server<span class="ixir-wh-tip"><button
+    <li><i class="fas fa-rocket" aria-hidden="true"></i>Litespeed Web Server<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Geleneksel Apache web server'una
        göre 10 kat daha fazla performans sağlar.
       </span></span></li>
-    <li><i class="fas fa-check" aria-hidden="true"></i>Litespeed Cache<span class="ixir-wh-tip"><button type="button"
+    <li><i class="fas fa-bolt" aria-hidden="true"></i>Litespeed Cache<span class="ixir-wh-tip"><button type="button"
        class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Litespeed Cache önbellekleme ile
        web sitenizin performansını arttırabilirsiniz, özellikle wordpress siteler ile uyumludur.
       </span></span></li>
-    <li><i class="fas fa-check" aria-hidden="true"></i>JetBackup Yedekleme<span class="ixir-wh-tip"><button
+    <li><i class="fas fa-history" aria-hidden="true"></i>JetBackup Yedekleme<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Adil kullanım politikasına uygun
        hesabınız haftalık olarak ücretsiz yedeklenir ve ücretsiz olarak panelinizden isterseniz tüm yedek, isterseniz
        dosya, mail, veritabanı bazlı yedeklerden geri dönebilirsiniz.</span></span></li>
-    <li><i class="fas fa-check" aria-hidden="true"></i>Ücretsiz SSL<span class="ixir-wh-tip"><button type="button"
+    <li><i class="fas fa-lock" aria-hidden="true"></i>Ücretsiz SSL<span class="ixir-wh-tip"><button type="button"
        class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Let's Encrypt SSL sertifikanız
        otomatik kurulur ve ömür boyu ücretsizdir.</span></span></li>
-    <li><i class="fas fa-check" aria-hidden="true"></i>PHP Laravel / Symfony vb.</li>
-    <li><i class="fas fa-check" aria-hidden="true"></i>Ruby on Rails</li>
-    <li><i class="fas fa-check" aria-hidden="true"></i>Git</li>
-    <li><i class="fas fa-check" aria-hidden="true"></i>SSH / Terminal</li>
-    <li><i class="fas fa-check" aria-hidden="true"></i>Cloud Linux OS</li>
-    <li><i class="fas fa-check" aria-hidden="true"></i>cPanel Kontrol Paneli</li>
+    <li><i class="fab fa-laravel" aria-hidden="true"></i>PHP Laravel / Symfony vb.</li>
+    <li><i class="fas fa-gem" aria-hidden="true"></i>Ruby on Rails</li>
+    <li><i class="fab fa-git-alt" aria-hidden="true"></i>Git</li>
+    <li><i class="fas fa-terminal" aria-hidden="true"></i>SSH / Terminal</li>
+    <li><i class="fab fa-linux" aria-hidden="true"></i>Cloud Linux OS</li>
+    <li><i class="fas fa-th-large" aria-hidden="true"></i>cPanel Kontrol Paneli</li>
    </ul>
   </div>
  </div>
