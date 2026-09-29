@@ -1,104 +1,3 @@
-.ixir-landing {
-  max-width: 760px;
-  margin: 0 auto 12px;
-}
-.ixir-landing-hero {
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 12px 40px rgba(36, 41, 53, 0.08);
-  padding: 32px 28px;
-  text-align: center;
-}
-.ixir-landing-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  margin-bottom: 16px;
-  border-radius: 16px;
-  background: #f7f8fb;
-  color: #0b2545;
-  font-size: 28px;
-}
-.ixir-landing-hero p {
-  margin: 0 0 22px;
-  color: #6b7280;
-  font-size: 16px;
-  line-height: 1.55;
-}
-.ixir-landing-actions {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.ixir-landing-actions .btn-primary {
-  height: 46px;
-  padding: 0 22px;
-  border: 0;
-  border-radius: 12px;
-  background: #0b2545 !important;
-  color: #fff !important;
-  font-weight: 700;
-  line-height: 46px;
-}
-.ixir-landing-actions .btn-primary:hover,
-.ixir-landing-actions .btn-primary:focus {
-  background: #1a1e29 !important;
-  color: #fbd746 !important;
-}
-.ixir-landing-actions .btn-default {
-  height: 46px;
-  padding: 0 22px;
-  border-radius: 12px;
-  line-height: 44px;
-  font-weight: 700;
-}
-.ixir-landing-points {
-  margin: 16px 0 0;
-  padding: 22px 24px;
-  list-style: none;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 12px 40px rgba(36, 41, 53, 0.08);
-}
-.ixir-landing-points li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin: 0 0 10px;
-  color: #374151;
-  font-size: 15px;
-  line-height: 1.5;
-}
-.ixir-landing-points li:last-child {
-  margin-bottom: 0;
-}
-.ixir-landing-points i {
-  margin-top: 3px;
-  color: #16a34a;
-}
-.ixir-landing-note {
-  margin-top: 14px;
-  color: #6b7280;
-  font-size: 13px;
-  line-height: 1.5;
-  text-align: center;
-}
-@media (max-width: 768px) {
-  .ixir-landing-hero {
-    padding: 26px 18px;
-  }
-  .ixir-landing-actions .btn-primary,
-  .ixir-landing-actions .btn-default {
-    width: 100%;
-  }
-}
-
-.ixir-wh-plans {
-  scroll-margin-top: 130px;
-}
 .ixir-wh-plans {
   padding: 40px 0 48px;
   background: #f6f7f9;
@@ -421,77 +320,6 @@
 .ixir-wh-more:focus i {
   transform: translateY(2px);
 }
-.ixir-wh-win {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px 22px;
-  margin: 0;
-  padding: 52px 28px;
-  background: #f6f7f9;
-  color: #0b2545;
-  border-top: 1px solid #e6e8ee;
-  border-bottom: 1px solid #e6e8ee;
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  line-height: 1.35;
-  text-align: center;
-}
-.ixir-wh-win-note {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-.ixir-wh-win-note .fa-linux {
-  color: #c89612;
-  font-family: "Font Awesome 5 Brands";
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 1;
-}
-.ixir-wh-win-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #0b2545;
-  font-weight: 600;
-  text-decoration: none;
-}
-.ixir-wh-win-cta:hover,
-.ixir-wh-win-cta:focus {
-  color: #1a56c4;
-  text-decoration: none;
-}
-.ixir-wh-win-cta:focus-visible {
-  outline: 2px solid #1a56c4;
-  outline-offset: 3px;
-  border-radius: 4px;
-}
-.ixir-wh-win-cta .fa-windows {
-  color: #2176c7;
-  font-family: "Font Awesome 5 Brands";
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1;
-}
-.ixir-wh-win-cta:hover .fa-windows,
-.ixir-wh-win-cta:focus .fa-windows {
-  color: #1a56c4;
-}
-.ixir-wh-win-cta span {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
-}
-@media (max-width: 640px) {
-  .ixir-wh-win {
-    gap: 6px 12px;
-    padding: 28px 18px;
-    font-size: 18px;
-  }
-}
 .ixir-wh-story {
   padding: 56px 0 64px;
   background:
@@ -774,20 +602,9 @@
     height: auto;
     aspect-ratio: 4 / 3;
   }
-  .ixir-wh-story-visual img {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-  }
   .ixir-wh-story-copy h3 {
     font-size: 22px;
   }
-}
-.ixir-wh-story--intro {
-  padding-bottom: 20px;
-}
-.ixir-wh-story--features {
-  padding-top: 28px;
 }
 .ixir-wh-migrate {
   position: relative;
@@ -835,9 +652,6 @@
 .ixir-wh-migrate.is-settled .ixir-wh-migrate-visual,
 .ixir-wh-migrate.is-settled .ixir-wh-migrate-copy {
   transition: none;
-}
-.ixir-wh-migrate.is-settled .ixir-wh-migrate-visual img {
-  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .ixir-wh-migrate-grid {
   display: grid;
@@ -1197,19 +1011,7 @@
 .ixir-wh-diff--wp .ixir-wh-diff-grid {
   gap: 28px 36px;
 }
-.ixir-wh-diff--wp .ixir-wh-diff-grid li {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-}
 @media (min-width: 768px) {
-  .ixir-wh-diff--wp .ixir-wh-diff-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-@media (min-width: 1024px) {
   .ixir-wh-diff--wp .ixir-wh-diff-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2502,46 +2304,6 @@
   color: #1f8a4c;
   font-size: 11px;
 }
-.ixir-wh-assurances {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 28px 24px;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  padding: 44px
-    max(var(--ixir-gutter), calc((100% - var(--ixir-container)) / 2));
-  list-style: none;
-  background: #0b2545;
-}
-.ixir-wh-assurances li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 0;
-  text-align: center;
-}
-.ixir-wh-assurances > li > i {
-  margin-bottom: 12px;
-  color: #fbd746;
-  font-size: 30px;
-  line-height: 1;
-}
-.ixir-wh-assurances strong {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  line-height: 1.25;
-}
-.ixir-wh-assurances li > span:last-child {
-  margin-top: 5px;
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 15px;
-  font-weight: 400;
-  letter-spacing: -0.005em;
-  line-height: 1.35;
-}
 .ixir-wh-shared .ixir-wh-tip {
   margin-left: auto;
   flex-shrink: 0;
@@ -2564,9 +2326,6 @@
   font-size: 12px;
   line-height: 1;
   cursor: help;
-}
-.ixir-wh-save .ixir-wh-tip-btn {
-  color: #7a5b00;
 }
 .ixir-wh-tip-box {
   display: none;
@@ -2608,9 +2367,6 @@
   .ixir-wh-shared {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .ixir-wh-assurances {
-    row-gap: 28px;
-  }
 }
 @media (max-width: 1023px) {
   .ixir-wh-shared {
@@ -2622,9 +2378,6 @@
   .ixir-wh-shared,
   .ixir-wh-assurances {
     grid-template-columns: minmax(0, 1fr);
-  }
-  .ixir-wh-plan-head p {
-    min-height: 0;
   }
 }
 @media (min-width: 768px) {
@@ -2668,29 +2421,6 @@
 }
 .ixir-wh-plans.is-armed .ixir-wh-shared-box {
   --ixir-enter-delay: 360ms;
-}
-.ixir-wh-assurances.is-pending li {
-  opacity: 0;
-  transform: translate3d(-72px, 0, 0);
-  transition:
-    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms),
-    opacity 0.55s ease var(--ixir-enter-delay, 0ms);
-}
-.ixir-wh-assurances.is-pending li:nth-child(1) {
-  --ixir-enter-delay: 0ms;
-}
-.ixir-wh-assurances.is-pending li:nth-child(2) {
-  --ixir-enter-delay: 90ms;
-}
-.ixir-wh-assurances.is-pending li:nth-child(3) {
-  --ixir-enter-delay: 180ms;
-}
-.ixir-wh-assurances.is-pending li:nth-child(4) {
-  --ixir-enter-delay: 270ms;
-}
-.ixir-wh-assurances.is-pending.is-in li {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
 }
 .ixir-wh-plans.is-armed .ixir-wh-plans-head.is-in,
 .ixir-wh-plans.is-armed .ixir-wh-plan.is-in,
@@ -2846,12 +2576,6 @@
   }
 }
 
-/* ------------------------------------------------------------------
-   WordPress page rhythm: light / dark backgrounds + left / right enter
-------------------------------------------------------------------- */
-.ixir-wh-page--wp .ixir-wh-plans {
-  background: #f6f7f9;
-}
 .ixir-wh-page--wp .ixir-wh-story--intro {
   padding: 56px 0 64px;
   background:
@@ -2981,15 +2705,6 @@
 .ixir-wh-page--wp .ixir-wh-diff-grid p {
   color: rgba(255, 255, 255, 0.66);
 }
-.ixir-wh-page--wp .ixir-wh-compare {
-  background: #f6f7f9;
-}
-.ixir-wh-page--wp .ixir-wh-faq {
-  background: #0b2545;
-}
-.ixir-wh-page--wp .ixir-wh-guide {
-  background: #f6f7f9;
-}
 
 /* Enter directions: odd → left, even → right (staggered) */
 .ixir-wh-page--wp .ixir-wh-plans.is-armed .ixir-wh-plans-head:not(.is-in) {
@@ -3000,46 +2715,18 @@
   .ixir-wh-plan:nth-child(odd):not(.is-in) {
   transform: translate3d(-112px, 0, 0);
 }
-.ixir-wh-page--wp
-  .ixir-wh-plans.is-armed
-  .ixir-wh-plan:nth-child(even):not(.is-in) {
-  transform: translate3d(112px, 0, 0);
-}
 .ixir-wh-page--wp .ixir-wh-plans.is-armed .ixir-wh-shared-box:not(.is-in) {
   transform: translate3d(72px, 0, 0);
-}
-.ixir-wh-page--wp
-  .ixir-wh-story--intro.is-armed
-  .ixir-wh-story-intro:not(.is-in) {
-  transform: translate3d(112px, 0, 0);
-}
-.ixir-wh-page--wp
-  .ixir-wh-story--features.is-armed
-  .ixir-wh-story-row:not(.is-in) {
-  transform: translate3d(-112px, 0, 0);
-}
-.ixir-wh-page--wp
-  .ixir-wh-story--features.is-armed
-  .ixir-wh-story-row--flip:not(.is-in) {
-  transform: translate3d(112px, 0, 0);
 }
 .ixir-wh-page--wp
   .ixir-wh-migrate.is-armed
   .ixir-wh-migrate-visual:not(.is-in) {
   transform: translate3d(-72px, 0, 0);
 }
-.ixir-wh-page--wp .ixir-wh-migrate.is-armed .ixir-wh-migrate-copy:not(.is-in) {
-  transform: translate3d(72px, 0, 0);
-}
 .ixir-wh-page--wp
   .ixir-wh-why.is-armed
   .ixir-wh-why-card:nth-child(1):not(.is-in) {
   transform: translate3d(-72px, 0, 0);
-}
-.ixir-wh-page--wp
-  .ixir-wh-why.is-armed
-  .ixir-wh-why-card:nth-child(2):not(.is-in) {
-  transform: translate3d(72px, 0, 0);
 }
 .ixir-wh-page--wp .ixir-wh-diff.is-armed .ixir-wh-diff-head:not(.is-in) {
   transform: translate3d(-64px, 0, 0);
@@ -3050,35 +2737,13 @@
   li:nth-child(odd):not(.is-in) {
   transform: translate3d(-112px, 0, 0);
 }
-.ixir-wh-page--wp
-  .ixir-wh-diff.is-armed
-  .ixir-wh-diff-grid
-  li:nth-child(even):not(.is-in) {
-  transform: translate3d(112px, 0, 0);
-}
-.ixir-wh-page--wp .ixir-wh-compare.is-armed .ixir-wh-plans-head:not(.is-in) {
-  transform: translate3d(64px, 0, 0);
-}
 .ixir-wh-page--wp .ixir-wh-compare.is-armed .ixir-wh-table-scroll:not(.is-in) {
-  transform: translate3d(-112px, 0, 0);
-}
-.ixir-wh-page--wp .ixir-wh-faq.is-armed .ixir-wh-plans-head:not(.is-in) {
-  transform: translate3d(-64px, 0, 0);
-}
-.ixir-wh-page--wp
-  .ixir-wh-faq.is-armed
-  .ixir-wh-faq-item:nth-child(odd):not(.is-in) {
   transform: translate3d(-112px, 0, 0);
 }
 .ixir-wh-page--wp
   .ixir-wh-faq.is-armed
   .ixir-wh-faq-item:nth-child(even):not(.is-in) {
   transform: translate3d(112px, 0, 0);
-}
-.ixir-wh-page--wp
-  .ixir-wh-guide.is-armed
-  .ixir-wh-guide-item:nth-child(odd):not(.is-in) {
-  transform: translate3d(-112px, 0, 0);
 }
 .ixir-wh-page--wp
   .ixir-wh-guide.is-armed
