@@ -2666,9 +2666,6 @@
   .ixir-wh-assurances {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .ixir-wh-plan--best {
-    order: -1;
-  }
   .ixir-wh-shared {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2679,10 +2676,43 @@
   }
 }
 @media (max-width: 768px) {
-  .ixir-wh-grid,
   .ixir-wh-shared,
   .ixir-wh-assurances {
     grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .ixir-wh-plans.ixir-slide.is-slide-in {
+    transform: none;
+  }
+  .ixir-wh-grid {
+    display: flex;
+    gap: 12px;
+    margin: 0 calc(-1 * var(--ixir-gutter, 16px));
+    padding: 14px var(--ixir-gutter, 16px) 20px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 var(--ixir-gutter, 16px);
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .ixir-wh-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .ixir-wh-grid > .ixir-wh-plan {
+    flex: 0 0 84%;
+    max-width: 340px;
+    scroll-snap-align: start;
+  }
+  .ixir-wh-billing-pop {
+    position: fixed;
+    z-index: 1050;
+    top: 50%;
+    left: 50%;
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    transform: translate(-50%, -50%);
   }
 }
 @media (min-width: 768px) {
