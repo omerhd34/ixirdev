@@ -443,14 +443,14 @@ body.ixir-auth-page .ixir-help {
 
 @media only screen and (max-width: 768px) {
   .ixir-footer-grid {
-    grid-template-columns: repeat(2, max-content);
-    justify-content: space-between;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: stretch;
     align-items: start;
     grid-template-areas:
-      "domain server"
-      "hosting email"
-      "kurumsal contact";
-    column-gap: clamp(24px, 5vw, 48px);
+      "domain email"
+      "hosting kurumsal"
+      "server contact";
+    column-gap: 32px;
     row-gap: 32px;
   }
   .ixir-footer-col {
@@ -463,7 +463,7 @@ body.ixir-auth-page .ixir-help {
     grid-area: hosting;
   }
   .ixir-footer-col:nth-child(2) .ixir-footer-box:nth-child(1) {
-    grid-area: sunucu;
+    grid-area: server;
   }
   .ixir-footer-col:nth-child(2) .ixir-footer-box:nth-child(2) {
     grid-area: email;
@@ -474,9 +474,23 @@ body.ixir-auth-page .ixir-help {
   .ixir-footer-box--contact {
     grid-area: contact;
   }
+  .ixir-footer-box--contact ul li a {
+    overflow-wrap: anywhere;
+  }
   .ixir-footer {
-    padding-top: 36px;
+    padding-top: 40px;
     background: #1c1f2a;
+  }
+  .ixir-footer-bottom {
+    margin-top: 36px;
+  }
+  .ixir-footer-bottom-inner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .ixir-footer-payments {
+    object-position: center;
   }
   .ixir-next {
     padding: 44px 0 36px;
@@ -498,54 +512,39 @@ body.ixir-auth-page .ixir-help {
 
 @media only screen and (max-width: 479px) {
   .ixir-footer {
-    text-align: center;
+    padding-top: 32px;
   }
   .ixir-footer-grid {
-    grid-template-columns: minmax(0, 1fr);
-    justify-content: center;
-    justify-items: center;
-    grid-template-areas: none;
-    row-gap: 28px;
-  }
-  .ixir-footer-col,
-  .ixir-footer-col:nth-child(1),
-  .ixir-footer-col:nth-child(2),
-  .ixir-footer-col:nth-child(3) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 28px;
-    grid-area: auto;
-    width: 100%;
-    justify-self: center;
-  }
-  .ixir-footer-box,
-  .ixir-footer-box--kurumsal,
-  .ixir-footer-box--contact {
-    grid-area: auto;
+    column-gap: 16px;
+    row-gap: 26px;
   }
   .ixir-footer-box h3 {
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .ixir-footer-box h3::after {
+    margin-top: 7px;
+  }
+  .ixir-footer-box ul li a {
+    font-size: 13.5px;
+  }
+  .ixir-footer-box--contact ul li a {
+    gap: 6px;
   }
   .ixir-footer-social {
-    justify-content: center;
+    gap: 6px;
   }
-  .ixir-footer-payments {
-    margin: 4px auto 0;
-    object-position: center;
+  .ixir-footer-social a {
+    width: 32px;
+    height: 32px;
   }
   .ixir-footer-bottom {
-    margin-top: 32px;
+    margin-top: 28px;
   }
-  .ixir-footer-bottom ul li:not(:last-child)::after {
-    margin: 0 8px;
+  .ixir-footer-bottom p {
+    font-size: 12.5px;
   }
-  .ixir-footer-bottom-inner {
-    justify-content: center;
-    text-align: center;
-  }
-  .ixir-footer-bottom ul {
-    justify-content: center;
+  .ixir-footer-payments {
+    max-width: min(240px, 100%);
   }
 }
