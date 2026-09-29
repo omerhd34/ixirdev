@@ -180,17 +180,17 @@
         <small>Yüksek kotalı bulut depolama</small>
        </span>
       </a>
-      <a href="{$WEB_ROOT}/reseller-hosting">
+      <a href="{$WEB_ROOT}/linux-reseller-hosting">
        <i class="fab fa-linux"></i>
        <span>
-        Linux Bayi Hosting
+        Linux Reseller Hosting
         <small>WHM / cPanel reseller</small>
        </span>
       </a>
       <a href="{$WEB_ROOT}/windows-reseller-hosting">
        <i class="fab fa-windows"></i>
        <span>
-        Windows Bayi Hosting
+        Windows Reseller Hosting
         <small>Plesk panel reseller</small>
        </span>
       </a>

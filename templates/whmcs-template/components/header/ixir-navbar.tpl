@@ -105,17 +105,17 @@
         "width" => "col-md-4 last",
         "items" => [
           [
-            "href" => "/reseller-hosting",
+            "href" => "/linux-reseller-hosting",
             "title" => "Linux Reseller Hosting",
             "icon" => "fab fa-linux",
-            "label" => "Linux Bayi Hosting",
+            "label" => "Linux Reseller Hosting",
             "desc" => "Sınırsız disk ve site barındırmaya sahip WHM/Cpanel reseller hosting hizmeti"
           ],
           [
             "href" => "/windows-reseller-hosting",
             "title" => "Windows Reseller Hosting",
             "icon" => "fab fa-windows",
-            "label" => "Windows Bayi Hosting",
+            "label" => "Windows Reseller Hosting",
             "desc" => "Sınırsız site barındırabileceğiniz Windows Plesk panel reseller hosting hizmeti"
           ]
         ]

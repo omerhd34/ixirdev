@@ -73,11 +73,11 @@ function ixir_product_pages()
                 'Yedekli altyapı',
             ],
         ],
-        'reseller-hosting' => [
-            'title' => 'Linux Bayi Hosting',
+        'linux-reseller-hosting' => [
+            'title' => 'Linux Reseller Hosting',
             'tagline' => 'WHM / cPanel ile sınırsız site barındırma.',
             'icon' => 'fab fa-linux',
-            'groupNames' => ['Reseller Hosting', 'Linux Reseller', 'Bayi Hosting'],
+            'groupNames' => ['Linux Reseller Hosting', 'Linux Reseller', 'Bayi Hosting'],
             'points' => [
                 'WHM / cPanel bayi paneli',
                 'Sınırsız site barındırma',
@@ -85,10 +85,10 @@ function ixir_product_pages()
             ],
         ],
         'windows-reseller-hosting' => [
-            'title' => 'Windows Bayi Hosting',
+            'title' => 'Windows Reseller Hosting',
             'tagline' => 'Plesk panelli Windows reseller hosting.',
             'icon' => 'fab fa-windows',
-            'groupNames' => ['Windows Reseller', 'Windows Bayi Hosting'],
+            'groupNames' => ['Windows Reseller', 'Windows Reseller Hosting'],
             'points' => [
                 'Plesk kontrol paneli',
                 'Sınırsız site barındırma',

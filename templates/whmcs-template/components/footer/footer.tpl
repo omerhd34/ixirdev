@@ -19,8 +19,9 @@
       <li><a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">Kurumsal Mail Hosting</a></li>
       <li><a href="{$WEB_ROOT}/developer-hosting" title="Developer Hosting">Developer Hosting</a></li>
       <li><a href="{$WEB_ROOT}/cloud-drive" title="Bulut Depolama">Cloud Drive</a></li>
-      <li><a href="{$WEB_ROOT}/reseller-hosting" title="Linux Reseller Hosting">Linux Bayi Hosting</a></li>
-      <li><a href="{$WEB_ROOT}/windows-reseller-hosting" title="Windows Reseller Hosting">Windows Bayi Hosting</a></li>
+      <li><a href="{$WEB_ROOT}/linux-reseller-hosting" title="Linux Reseller Hosting">Linux Reseller Hosting</a></li>
+      <li><a href="{$WEB_ROOT}/windows-reseller-hosting" title="Windows Reseller Hosting">Windows Reseller Hosting</a>
+      </li>
      </ul>
     </div>
    </div>

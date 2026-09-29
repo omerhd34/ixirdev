@@ -84,8 +84,8 @@
         </a>
        </li>
        <li>
-        <a href="{$WEB_ROOT}/reseller-hosting" title="Linux Bayi Hosting">
-         <i class="fab fa-linux fa-fw" aria-hidden="true"></i><span>Linux Bayi Hosting</span>
+        <a href="{$WEB_ROOT}/linux-reseller-hosting" title="Linux Reseller Hosting">
+         <i class="fab fa-linux fa-fw" aria-hidden="true"></i><span>Linux Reseller Hosting</span>
         </a>
        </li>
       </ul>
