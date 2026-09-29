@@ -24,7 +24,7 @@
      </li>
      <li>
       <i class="fas fa-bolt" aria-hidden="true"></i>
-      <span>Limitsiz NVME Disk</span>
+      <span>Limitsiz NVMe Disk</span>
      </li>
      <li>
       <i class="fab fa-cpanel" aria-hidden="true"></i>
@@ -112,20 +112,25 @@
   </div>
   <div class="ixir-hero-strip" aria-hidden="true">
    <div class="ixir-hero-strip-track" id="ixirHeroStripTrack">
-    <span>NVMe SSD</span>
-    <span>LiteSpeed Cache</span>
-    <span>cPanel</span>
-    <span>Imunify360</span>
-    <span>CloudLinux</span>
-    <span>7/24 Destek</span>
+    <span>WHM/cPanel</span>
+    <span>Limitsiz NVMe Disk</span>
+    <span>Ücretsiz Site Taşıma</span>
+    <span>%99.9 Uptime Garantisi</span>
+    <span>15 Gün Para İade Garantisi</span>
+    <span>Limitsiz Trafik</span>
+    <span>Limitsiz E-posta</span>
+    <span>Site Başına 1 Core CPU</span>
+    <span>Site Başına 1 GB RAM</span>
+    <span>Site Başına 20 MB I/O Limiti</span>
+    <span>Cloud Linux OS</span>
+    <span>Litespeed Web Server</span>
+    <span>Litespeed Cache</span>
+    <span>PHP X-RAY</span>
+    <span>Accelerate WP</span>
+    <span>Imunify360 WAF</span>
+    <span>JetBackup Yedekleme</span>
     <span>Ücretsiz SSL</span>
-    <span>15 Gün İade</span>
-    <span>LiteSpeed Web Server</span>
-    <span>DDoS Koruması</span>
-    <span>%99.9 Uptime</span>
-    <span>Ücretsiz Yedekleme</span>
-    <span>Türkiye Datacenter</span>
-    <span>Anında Aktivasyon</span>
+    <span>cPanel Kontrol Paneli</span>
    </div>
   </div>
  </section>

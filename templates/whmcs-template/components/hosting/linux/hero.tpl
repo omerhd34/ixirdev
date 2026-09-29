@@ -21,7 +21,7 @@
     <ul class="ixir-hero-points" aria-label="Özellikler">
      <li>
       <i class="fas fa-hdd" aria-hidden="true"></i>
-      <span>%100 NVMe SSD Disk</span>
+      <span>Sınırsız NVMe SSD Disk</span>
      </li>
      <li>
       <i class="fas fa-bolt" aria-hidden="true"></i>
@@ -117,20 +117,16 @@
   </div>
   <div class="ixir-hero-strip" aria-hidden="true">
    <div class="ixir-hero-strip-track" id="ixirHeroStripTrack">
-    <span>NVMe SSD</span>
-    <span>LiteSpeed Cache</span>
-    <span>cPanel</span>
-    <span>Imunify360</span>
-    <span>CloudLinux</span>
-    <span>7/24 Destek</span>
-    <span>Ücretsiz SSL</span>
-    <span>15 Gün İade</span>
+    <span>COM.TR domain</span>
     <span>LiteSpeed Web Server</span>
-    <span>DDoS Koruması</span>
-    <span>%99.9 Uptime</span>
-    <span>Ücretsiz Yedekleme</span>
-    <span>Türkiye Datacenter</span>
-    <span>Anında Aktivasyon</span>
+    <span>LiteSpeed Cache</span>
+    <span>PHP X-RAY</span>
+    <span>Accelerate WP</span>
+    <span>Imunify360 WAF</span>
+    <span>JetBackup yedekleme</span>
+    <span>Ücretsiz SSL</span>
+    <span>Cloud Linux OS</span>
+    <span>cPanel kontrol paneli</span>
    </div>
   </div>
  </section>

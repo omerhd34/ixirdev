@@ -114,20 +114,19 @@
  </div>
  <div class="ixir-hero-strip" aria-hidden="true">
   <div class="ixir-hero-strip-track" id="ixirHeroStripTrack">
-   <span>NVMe SSD</span>
-   <span>LiteSpeed Cache</span>
-   <span>cPanel</span>
-   <span>Imunify360</span>
-   <span>CloudLinux</span>
-   <span>7/24 Destek</span>
-   <span>Ücretsiz SSL</span>
-   <span>15 Gün İade</span>
+   <span>Composer, npm, pip Desteği</span>
+   <span>Framework Desteği</span>
+   <span>SSH / Terminal Erişimi</span>
+   <span>Git Desteği</span>
+   <span>Enterprise NVMe SSD Disk</span>
+   <span>JetBackup Yedekleme</span>
    <span>LiteSpeed Web Server</span>
-   <span>DDoS Koruması</span>
-   <span>%99.9 Uptime</span>
-   <span>Ücretsiz Yedekleme</span>
-   <span>Türkiye Datacenter</span>
-   <span>Anında Aktivasyon</span>
+   <span>LiteSpeed Cache</span>
+   <span>JetBackup Yedekleme</span>
+   <span>Ücretsiz SSL</span>
+   <span>Ruby on Rails</span>
+   <span>cPanel Kontrol Paneli</span>
+   <span>Cloud Linux OS</span>
   </div>
  </div>
 </section>

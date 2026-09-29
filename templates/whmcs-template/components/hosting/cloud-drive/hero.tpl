@@ -109,20 +109,15 @@
   </div>
   <div class="ixir-hero-strip" aria-hidden="true">
    <div class="ixir-hero-strip-track" id="ixirHeroStripTrack">
-    <span>NVMe SSD</span>
-    <span>WordPress</span>
-    <span>LiteSpeed</span>
-    <span>AccelerateWP</span>
-    <span>cPanel</span>
-    <span>7/24 Destek</span>
-    <span>Ücretsiz SSL</span>
-    <span>15 Gün İade</span>
-    <span>LiteSpeed Cache</span>
-    <span>DDoS Koruması</span>
-    <span>%99.9 Uptime</span>
-    <span>Ücretsiz Yedekleme</span>
-    <span>Türkiye Datacenter</span>
-    <span>Anında Aktivasyon</span>
+    <span>Sınırsız Trafik</span>
+    <span>Otomatik Senkronizasyon</span>
+    <span>Her Yerden Erişim</span>
+    <span>Mobil Senkronizasyon</span>
+    <span>Desktop Senkronizasyon</span>
+    <span>Dosya Paylaşımı</span>
+    <span>Yüksek Bağlantı Hızı</span>
+    <span>Yüksek Kota</span>
+    <span>Yedekleme</span>
    </div>
   </div>
  </section>

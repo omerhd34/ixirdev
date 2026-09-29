@@ -24,7 +24,7 @@
      </li>
      <li>
       <i class="fas fa-bolt" aria-hidden="true"></i>
-      <span>%100 NVME SSD Disk</span>
+      <span>Limitsiz NVMe SSD Disk</span>
      </li>
      <li>
       <i class="fab fa-cpanel" aria-hidden="true"></i>
@@ -104,20 +104,19 @@
   </div>
   <div class="ixir-hero-strip" aria-hidden="true">
    <div class="ixir-hero-strip-track" id="ixirHeroStripTrack">
-    <span>NVMe SSD</span>
-    <span>LiteSpeed Cache</span>
-    <span>cPanel</span>
-    <span>Imunify360</span>
-    <span>CloudLinux</span>
-    <span>7/24 Destek</span>
+    <span>Plesk Yönetim Paneli</span>
+    <span>Limitsiz NVMe SSD Disk</span>
+    <span>Ücretsiz Site Taşıma</span>
+    <span>Limitsiz Trafik</span>
+    <span>Limitsiz E-posta</span>
+    <span>Site Başına 1 Core CPU</span>
     <span>Ücretsiz SSL</span>
-    <span>15 Gün İade</span>
-    <span>LiteSpeed Web Server</span>
-    <span>DDoS Koruması</span>
-    <span>%99.9 Uptime</span>
-    <span>Ücretsiz Yedekleme</span>
-    <span>Türkiye Datacenter</span>
-    <span>Anında Aktivasyon</span>
+    <span>Site Başına 1 GB RAM</span>
+    <span>Windows Server 2022</span>
+    <span>MSSQL Server 2022</span>
+    <span>ASP.Net Core 10</span>
+    <span>ASP.Net 4.8</span>
+    <span>IIS 10</span>
    </div>
   </div>
  </section>

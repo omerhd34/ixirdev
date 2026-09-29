@@ -28,7 +28,7 @@
     <ul class="ixir-hero-points" aria-label="Özellikler">
      <li>
       <i class="fas fa-hdd" aria-hidden="true"></i>
-      <span>%100 NVMe SSD Disk</span>
+      <span>Limitsiz NVMe SSD Disk</span>
      </li>
      <li>
       <i class="fas fa-desktop" aria-hidden="true"></i>
@@ -112,20 +112,13 @@
   </div>
   <div class="ixir-hero-strip" aria-hidden="true">
    <div class="ixir-hero-strip-track" id="ixirHeroStripTrack">
-    <span>NVMe SSD</span>
-    <span>ASP.NET</span>
-    <span>Plesk</span>
-    <span>MSSQL</span>
+    <span>Limitsiz NVMe SSD Disk </span>
+    <span>Plesk Kontrol Paneli</span>
+    <span>Ücretsiz SSL Sertifikası</span>
     <span>Windows Server</span>
-    <span>7/24 Destek</span>
-    <span>Ücretsiz SSL</span>
-    <span>15 Gün İade</span>
-    <span>.NET Core</span>
-    <span>DDoS Koruması</span>
-    <span>%99.9 Uptime</span>
-    <span>Ücretsiz Yedekleme</span>
-    <span>Türkiye Datacenter</span>
-    <span>Anında Aktivasyon</span>
+    <span>ASP.Net Core 10</span>
+    <span>ASP.Net 4.8</span>
+    <span>IIS 10</span>
    </div>
   </div>
  </section>
