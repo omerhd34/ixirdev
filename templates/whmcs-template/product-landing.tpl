@@ -6,5 +6,12 @@
  {include file="$template/components/hosting/wordpress/wordpress-hosting.tpl"}
 {elseif $ixirPageSlug == 'developer-hosting'}
  {include file="$template/components/hosting/developer/developer-hosting.tpl"}
-{else}
+{elseif $ixirPageSlug == 'cloud-drive'}
+ {include file="$template/components/hosting/cloud-drive/cloud-drive.tpl"}
+{elseif $ixirPageSlug == 'kurumsal-mail-hosting'}
+ {include file="$template/components/hosting/kurumsal-mail-hosting/kurumsal-mail-hosting.tpl"}
+{elseif $ixirPageSlug == 'linux-reseller-hosting'}
+ {include file="$template/components/hosting/linux-reseller-hosting/linux-reseller-hosting.tpl"}
+{elseif $ixirPageSlug == 'windows-reseller-hosting'}
+ {include file="$template/components/hosting/windows-reseller-hosting/windows-reseller-hosting.tpl"}
 {/if}
