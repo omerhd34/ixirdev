@@ -82,8 +82,8 @@
      <img src="{$WEB_ROOT}/templates/{$template}/img/package/hosting_bg3.webp" alt="">
     </div>
     <header class="ixir-package-copy">
-     <span class="ixir-package-kicker"><i class="far fa-cloud" aria-hidden="true"></i>Sunucu</span>
-     <h2 class="ixir-package-title">Bulut Sunucu</h2>
+     <span class="ixir-package-kicker"><i class="far fa-cloud" aria-hidden="true"></i>Server</span>
+     <h2 class="ixir-package-title">Bulut Server</h2>
      <p class="ixir-package-desc">Saniyeler içinde kurulan, panelden yönetilen sunucu</p>
     </header>
     <ul class="ixir-package-features">
@@ -110,7 +110,7 @@
       </div>
      </div>
      <div class="ixir-package-order">
-      <a href="{$WEB_ROOT}/cloud" class="btn btn-primary">İncele <i class="fas fa-arrow-right"
+      <a href="{$WEB_ROOT}/bulut-server" class="btn btn-primary">İncele <i class="fas fa-arrow-right"
         aria-hidden="true"></i></a>
      </div>
     </footer>
@@ -131,72 +131,6 @@
  {literal}
   (function() {
    var root = document.getElementById('ixir-packages');
-   if (!root || !window.IntersectionObserver) {
-    return;
-   }
-   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    return;
-   }
-   if (window.matchMedia && window.matchMedia('(max-width: 767px)').matches) {
-    return;
-   }
-   var cards = root.querySelectorAll('.ixir-package');
-   if (!cards.length) {
-    return;
-   }
-
-   var observer = null;
-
-   function revealNow() {
-    root.classList.add('is-settled');
-    root.classList.remove('is-armed');
-    Array.prototype.forEach.call(cards, function(card) {
-     card.classList.add('is-in');
-    });
-    if (observer) {
-     observer.disconnect();
-     observer = null;
-    }
-   }
-
-   var jump = document.querySelector('a.ixir-hero-btn--primary[href="#ixir-packages"]');
-   if (jump) {
-    jump.addEventListener('click', revealNow, true);
-   }
-   if (window.location.hash === '#ixir-packages') {
-    revealNow();
-    return;
-   }
-
-   root.classList.add('is-armed');
-   var shown = 0;
-   observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-     if (!entry.isIntersecting) {
-      return;
-     }
-     observer.unobserve(entry.target);
-     window.requestAnimationFrame(function() {
-      window.requestAnimationFrame(function() {
-       entry.target.classList.add('is-in');
-       shown += 1;
-       if (shown === cards.length) {
-        window.setTimeout(function() {
-         root.classList.remove('is-armed');
-        }, 1200);
-       }
-      });
-     });
-    });
-   }, {
-    threshold: 0.15
-   });
-   Array.prototype.forEach.call(cards, function(card) {
-    observer.observe(card);
-   });
-  })();
-  (function() {
-   var root = document.getElementById('ixir-packages');
    if (!root) {
     return;
    }
@@ -211,12 +145,15 @@
    if (cards.length < 2) {
     return;
    }
-   var mq = window.matchMedia('(max-width: 767px)');
+   var mq = window.matchMedia('(max-width: 768px)');
    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+   var AUTOPLAY_MS = 3000;
    var dots = [];
    var active = 0;
    var programmatic = false;
    var programmaticTimer = 0;
+   var autoTimer = 0;
+   var holding = false;
 
    function setActive(index) {
     if (index < 0) {
@@ -269,6 +206,60 @@
      behavior: reduce ? 'auto' : 'smooth'
     });
     setActive(index);
+    if (autoTimer) {
+     startAuto();
+    }
+   }
+
+   function stopAuto() {
+    window.clearInterval(autoTimer);
+    autoTimer = 0;
+   }
+
+   function isVisible() {
+    var r = grid.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    return r.bottom > 0 && r.top < vh;
+   }
+
+   function startAuto() {
+    stopAuto();
+    if (!mq.matches || holding || document.hidden) {
+     return;
+    }
+    autoTimer = window.setInterval(function() {
+     if (!isVisible()) {
+      return;
+     }
+     goTo(active >= cards.length - 1 ? 0 : active + 1);
+    }, AUTOPLAY_MS);
+   }
+
+   function hold() {
+    holding = true;
+    stopAuto();
+   }
+
+   function release() {
+    holding = false;
+    startAuto();
+   }
+
+   grid.addEventListener('touchstart', hold, { passive: true });
+   grid.addEventListener('touchend', release, { passive: true });
+   grid.addEventListener('touchcancel', release, { passive: true });
+   root.addEventListener('focusin', function(e) {
+    if (e.target.matches && e.target.matches(':focus-visible')) {
+     hold();
+    }
+   });
+   root.addEventListener('focusout', release);
+
+   document.addEventListener('visibilitychange', startAuto);
+   if (mq.addEventListener) {
+    mq.addEventListener('change', startAuto);
+   } else if (mq.addListener) {
+    mq.addListener(startAuto);
    }
 
    Array.prototype.forEach.call(cards, function(card, i) {
@@ -331,6 +322,8 @@
      setActive(index);
     });
    }, { passive: true });
+
+   startAuto();
   })();
  {/literal}
 </script>
