@@ -52,19 +52,19 @@
     <div class="ixir-promo-grid">
      <div class="ixir-promo-copy">
       <span class="ixir-promo-badge">60 Saniyede Kurulum</span>
-      <h2>Yüksek Performanslı Bulut Server</h2>
-      <p>60 Saniye'de Bulut Sunucunuz Hazır!</p>
+      <h2>Yüksek Performanslı Cloud Server</h2>
+      <p>60 Saniye'de Cloud Sunucunuz Hazır!</p>
       <ul>
        <li><i class="fas fa-check" aria-hidden="true"></i>Otomatik Kurulum</li>
        <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz Trafik</li>
        <li><i class="fas fa-check" aria-hidden="true"></i>SSD Disk Depolama</li>
        <li><i class="fas fa-check" aria-hidden="true"></i>Ücretsiz Kontrol Paneli</li>
       </ul>
-      <a href="{$WEB_ROOT}/bulut-server" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"
+      <a href="{$WEB_ROOT}/cloud-server" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"
         aria-hidden="true"></i></a>
      </div>
      <div class="ixir-promo-visual">
-      <img src="{$WEB_ROOT}/templates/{$template}/img/slide/cloud-server.webp" alt="Bulut Server" width="887"
+      <img src="{$WEB_ROOT}/templates/{$template}/img/slide/cloud-server.webp" alt="Cloud Server" width="887"
        height="623">
      </div>
     </div>

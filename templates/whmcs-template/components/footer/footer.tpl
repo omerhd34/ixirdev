@@ -18,7 +18,7 @@
       <li><a href="{$WEB_ROOT}/wordpress-hosting" title="Wordpress Hosting">Wordpress Hosting</a></li>
       <li><a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">Kurumsal Mail Hosting</a></li>
       <li><a href="{$WEB_ROOT}/developer-hosting" title="Developer Hosting">Developer Hosting</a></li>
-      <li><a href="{$WEB_ROOT}/cloud-drive" title="Bulut Depolama">Cloud Drive</a></li>
+      <li><a href="{$WEB_ROOT}/cloud-drive" title="Cloud Drive">Cloud Drive</a></li>
       <li><a href="{$WEB_ROOT}/linux-reseller-hosting" title="Linux Reseller Hosting">Linux Reseller Hosting</a></li>
       <li><a href="{$WEB_ROOT}/windows-reseller-hosting" title="Windows Reseller Hosting">Windows Reseller Hosting</a>
       </li>
@@ -29,7 +29,7 @@
     <div class="ixir-footer-box">
      <h3>Server</h3>
      <ul>
-      <li><a href="{$WEB_ROOT}/bulut-server" title="Bulut Server">Bulut Server</a></li>
+      <li><a href="{$WEB_ROOT}/cloud-server" title="Cloud Server">Cloud Server</a></li>
       <li><a href="{$WEB_ROOT}/kiralik-server" title="Kiralık Server">Kiralık Server</a></li>
       <li><a href="{$WEB_ROOT}/ek-servisler" title="Server Servisleri">Server Servisleri</a></li>
       <li><a href="{$WEB_ROOT}/colocation" title="Co-Location">Co-Location</a></li>

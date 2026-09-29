@@ -83,7 +83,7 @@
     </div>
     <header class="ixir-package-copy">
      <span class="ixir-package-kicker"><i class="far fa-cloud" aria-hidden="true"></i>Server</span>
-     <h2 class="ixir-package-title">Bulut Server</h2>
+     <h2 class="ixir-package-title">Cloud Server</h2>
      <p class="ixir-package-desc">Saniyeler içinde kurulan, panelden yönetilen sunucu</p>
     </header>
     <ul class="ixir-package-features">
@@ -110,7 +110,7 @@
       </div>
      </div>
      <div class="ixir-package-order">
-      <a href="{$WEB_ROOT}/bulut-server" class="btn btn-primary">İncele <i class="fas fa-arrow-right"
+      <a href="{$WEB_ROOT}/cloud-server" class="btn btn-primary">İncele <i class="fas fa-arrow-right"
         aria-hidden="true"></i></a>
      </div>
     </footer>

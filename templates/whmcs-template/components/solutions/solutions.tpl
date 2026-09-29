@@ -22,13 +22,13 @@
    <article class="ixir-solutions-card">
     <div class="ixir-solutions-top">
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-cloud"></i></span>
-     <h3>Bulut Server &amp; Kiralık Server</h3>
+     <h3>Cloud Server &amp; Kiralık Server</h3>
     </div>
     <p>İstanbul merkezli Tier III+ veri merkezimizde Intel Xeon işlemciler ve SSD depolama ile tam kontrol sizde. 60
      saniyede kurulan bulut server'larımız; Windows &amp; Linux desteği, 3 operatör yedekli bağlantı ve otomatik
      yedekleme seçenekleriyle kurumsal altyapınızın güvencesidir.</p>
     <div class="ixir-solutions-links">
-     <a href="{$WEB_ROOT}/bulut-server">Bulut Server <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+     <a href="{$WEB_ROOT}/cloud-server">Cloud Server <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
      <a href="{$WEB_ROOT}/kiralik-server">Kiralık Server <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
     </div>
    </article>

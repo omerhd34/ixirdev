@@ -94,7 +94,7 @@
           ],
           [
             "href" => "/cloud-drive",
-            "title" => "Bulut Depolama",
+            "title" => "Cloud Drive",
             "icon" => "fas fa-cloud-upload-alt",
             "label" => "Cloud Drive",
             "desc" => "Yüksek kotalı cloud drive ile dosyalarınızı bulutta barındırın."
@@ -131,11 +131,11 @@
        "width" => "col-md-4",
        "items" => [
          [
-           "href" => "/bulut-server",
-           "title" => "Bulut Server",
+           "href" => "/cloud-server",
+           "title" => "Cloud Server",
            "icon" => "far fa-cloud",
-           "label" => "Bulut Server",
-           "desc" => "Uygun fiyatlı ve yüksek performanslı 60 saniyede kurulan bulut server çözümleri "
+           "label" => "Cloud Server",
+           "desc" => "Uygun fiyatlı ve yüksek performanslı 60 saniyede kurulan cloud server çözümleri "
          ],
          [
            "href" => "/pci-tarama",

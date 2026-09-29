@@ -94,8 +94,8 @@
        </a>
       </li>
       <li>
-       <a href="{$WEB_ROOT}/bulut-server" title="Bulut Server">
-        <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Bulut Server</span>
+       <a href="{$WEB_ROOT}/cloud-server" title="Cloud Server">
+        <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Cloud Server</span>
        </a>
       </li>
       <li>

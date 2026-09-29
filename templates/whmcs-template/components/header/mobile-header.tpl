@@ -244,10 +244,10 @@
     </button>
     <div class="ixir-mobile-sub">
      <div class="ixir-mobile-sub-inner">
-      <a href="{$WEB_ROOT}/bulut-server">
+      <a href="{$WEB_ROOT}/cloud-server">
        <i class="far fa-cloud"></i>
        <span>
-        Bulut Server
+        Cloud Server
         <small>60 saniyede kurulan cloud server</small>
        </span>
       </a>

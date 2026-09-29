@@ -9,7 +9,7 @@
 {elseif $ixirPageSlug == 'cloud-drive'}
  {include file="$template/components/hosting/cloud-drive/cloud-drive.tpl"}
 {elseif $ixirPageSlug == 'kurumsal-mail-hosting'}
- {include file="$template/components/hosting/kurumsal-mail-hosting/kurumsal-mail-hosting.tpl"}
+ {include file="$template/components/hosting/kurumsal-mail/kurumsal-mail-hosting.tpl"}
 {elseif $ixirPageSlug == 'linux-reseller-hosting'}
  {include file="$template/components/hosting/linux-reseller/linux-reseller.tpl"}
 {elseif $ixirPageSlug == 'windows-reseller-hosting'}

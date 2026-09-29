@@ -61,7 +61,7 @@
   mülkiyeti kendisine
   ait
   fiziksel server servisini ifade etmektedir.</p>
- <p><strong>3.6.</strong> Bulut Server, MÜŞTERİ'nin, <strong>İXİRHOST</strong> internet ve donanım
+ <p><strong>3.6.</strong> Cloud Server, MÜŞTERİ'nin, <strong>İXİRHOST</strong> internet ve donanım
   altyapısında
   kiralayacağı sanal özel
   dedike server servisini ifade etmektedir.</p>
@@ -74,7 +74,7 @@
  <p><strong>3.8.</strong> PCI Tarama, MÜŞTERİnin sitesinin, server'ının uluslararası kabul görmüş standartlarda güvenlik
   testlerinin
   yapılması ve raporlaması servisini ifade etmektedir.</p>
- <p><strong>3.9.</strong> Cloud Drive (Bulut Depolama), MÜŞTERİ'nin erişimine açık, internet tabanlı tek merkezli veri
+ <p><strong>3.9.</strong> Cloud Drive, MÜŞTERİ'nin erişimine açık, internet tabanlı tek merkezli veri
   depolama, farklı
   cihazlardan erişim ve kullanma servislerini ifade etmektedir.</p>
  <p><strong>3.10.</strong> <strong>İxirhost</strong>, .TR uzantılı alan adları tescil ve yönetiminde TRABİS onaylı kayıt
@@ -244,7 +244,7 @@
   <li>Sosyal medya abone, takipçi, otomasyon ile beğeni, yorum vb. scriptleri</li>
  </ul>
 
- <h4>b) Kiralık Server , Server Barındırma (Co-Location), Bulut Server ve sanal özel
+ <h4>b) Kiralık Server , Co-Location, Cloud Server ve sanal özel
   server hizmetinde kabul edilmeyecek materyallar;</h4>
  <ul>
   <li>Adult, Pornografi ve Escort bilgileri içeren siteler</li>
