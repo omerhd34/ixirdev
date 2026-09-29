@@ -1457,7 +1457,7 @@
 
 #order-standard_cart .ixir-wh-faq {
   padding: 56px 0 48px;
-  background: #1c2433;
+  background: #0b2545;
 }
 
 #order-standard_cart .ixir-wh-faq .ixir-wh-plans-head {
@@ -1570,7 +1570,7 @@
 }
 
 #order-standard_cart .ixir-wh-faq-a strong {
-  color: #242935;
+  color: #0b2545;
   font-weight: 700;
 }
 
@@ -1716,7 +1716,7 @@
   }
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
   #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-wrap {
     position: relative;
   }
@@ -2099,7 +2099,7 @@
 }
 
 .ixir-xfer-notes {
-  background: #1c2433;
+  background: #0b2545;
 }
 
 .ixir-xfer-steps {
@@ -2357,7 +2357,7 @@
     grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ixir-domain-feature-grid,
   .ixir-domain-transfer-grid,
   .ixir-xfer-step-list,
@@ -2384,7 +2384,7 @@
 }
 
 #order-standard_cart.ixir-transfer-page .ixir-domain-features {
-  background: #1c2433;
+  background: #0b2545;
 }
 
 #order-standard_cart.ixir-transfer-page .ixir-domain-features h2,
@@ -2432,7 +2432,7 @@ body.ixir-domain-search-page .ixir-help {
     .ixir-whois-page
   )
   .ixir-domain-transfer {
-  background: #1c2433;
+  background: #0b2545;
 }
 
 #order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(
@@ -2500,7 +2500,7 @@ body.ixir-domain-search-page .ixir-help {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ixir-spotlights .spotlight-tlds-container,
   #order-standard_cart.ixir-domain-page .spotlight-tlds-container {
     grid-template-columns: minmax(0, 1fr);

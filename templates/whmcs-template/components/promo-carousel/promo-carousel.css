@@ -4,7 +4,7 @@
   margin: 0;
   max-width: 100%;
   color: #fff;
-  background: #1c2433;
+  background: #0b2545;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -355,7 +355,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .ixir-promo-grid {
     grid-template-columns: minmax(0, 1fr);
     padding: 20px 0 40px;
