@@ -47,17 +47,17 @@
          <tr>
           <td>1 Yıllık</td>
           <td>85,57 TL</td>
-          <td>1.026,80 TL</td>
+          <td>1026,80 TL</td>
          </tr>
          <tr>
           <td>2 Yıllık</td>
           <td>77,25 TL</td>
-          <td>1.853 TL</td>
+          <td>1853 TL</td>
          </tr>
          <tr class="is-best">
           <td>3 Yıllık</td>
           <td>70,47 TL</td>
-          <td>2.537 TL</td>
+          <td>2537 TL</td>
          </tr>
         </tbody>
        </table>
@@ -116,17 +116,17 @@
          <tr>
           <td>1 Yıllık</td>
           <td>147,17 TL</td>
-          <td>1.765 TL</td>
+          <td>1765 TL</td>
          </tr>
          <tr>
           <td>2 Yıllık</td>
           <td>132,99 TL</td>
-          <td>3.192 TL</td>
+          <td>3192 TL</td>
          </tr>
          <tr class="is-best">
           <td>3 Yıllık</td>
           <td>122,00 TL</td>
-          <td>4.392 TL</td>
+          <td>4392 TL</td>
          </tr>
         </tbody>
        </table>
