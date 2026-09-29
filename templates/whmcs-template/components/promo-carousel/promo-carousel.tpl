@@ -103,7 +103,7 @@
       <ul>
        <li><i class="fas fa-check" aria-hidden="true"></i>10 Kata Kadar Daha Hızlı</li>
        <li><i class="fas fa-check" aria-hidden="true"></i>Intel Xeon Gold İşlemciler</li>
-       <li><i class="fas fa-check" aria-hidden="true"></i>%100 NVME</li>
+       <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz NVMe</li>
        <li><i class="fas fa-check" aria-hidden="true"></i>LsCache Destekli</li>
        <li><i class="fas fa-check" aria-hidden="true"></i>AccelerateWP Destekli</li>
        <li><i class="fas fa-check" aria-hidden="true"></i>Ücretsiz Tek Tıkla Kurulum</li>

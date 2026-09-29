@@ -26,9 +26,9 @@
          aria-label="Intel Gold açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
          class="ixir-wh-tip-box" role="tooltip">En yeni
          nesil Intel Xeon Gold işlemcilerle 5 katına kadar daha fazla performans.</span></span></li>
-      <li><span class="ixir-wh-why-check" aria-hidden="true"><i class="fas fa-check"></i></span>Enterprise NVME
+      <li><span class="ixir-wh-why-check" aria-hidden="true"><i class="fas fa-check"></i></span>Enterprise NVMe
        Storage<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
-         aria-label="NVME Storage açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
+         aria-label="NVMe Storage açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
          class="ixir-wh-tip-box" role="tooltip">Geleneksel depolama birimlerine göre 40 kat daha fazla hız ve daha
          yüksek
          I/O kapasitesi.</span></span></li>

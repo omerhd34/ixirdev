@@ -146,7 +146,7 @@
 
       <li><span>NVMe disk boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button"
           class="ixir-wh-tip-btn" aria-label="NVMe açıklaması"><i class="fas fa-info-circle"
-           aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Enterprise NVME ile geleneksel
+           aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Enterprise NVMe ile geleneksel
           depolama birimlerine göre 40 kat daha fazla hız, daha fazla I/O sağlıyoruz, hosting planınızda
           limitlendirilmemiş depolama alanı sunuyoruz. Ancak adil kullanım politikaları geçerlidir.</span></span></b>
       </li>

@@ -19,7 +19,7 @@
     <h3>Yüksek Performans</h3>
     <ul>
      <li>WHM/cPanel Yönetim Paneli</li>
-     <li>Limitsiz NVME Disk</li>
+     <li>Limitsiz NVMe Disk</li>
      <li>Limitsiz E-posta</li>
      <li>Limitsiz Trafik</li>
      <li>Ücretsiz Yedekleme</li>
@@ -29,7 +29,7 @@
    <li>
     <h3>Veri Merkezi Özellikleri</h3>
     <ul>
-     <li>NVME Storage</li>
+     <li>NVMe Storage</li>
      <li>Netscaler İçerik Sıkıştırma</li>
      <li>Cluster Yapı</li>
      <li>ISO 9001 / 27001 / 10002 Kalite Belgeleri</li>

@@ -28,11 +28,11 @@
     <div class="ixir-wh-story-copy">
      <div class="ixir-wh-story-heading">
       <span class="ixir-wh-story-badge" aria-hidden="true"><i class="fas fa-hdd"></i></span>
-      <h3 class="ixir-wh-story-title">Limitsiz NVME Disk</h3>
+      <h3 class="ixir-wh-story-title">Limitsiz NVMe Disk</h3>
      </div>
-     <p>NVME diskler, normal disklere göre 40 kat daha yüksek okuma, yazma hızına ve daha yüksek IOPS değerine sahiptir.
+     <p>NVMe diskler, normal disklere göre 40 kat daha yüksek okuma, yazma hızına ve daha yüksek IOPS değerine sahiptir.
      </p>
-     <p>Tamamen NVME disk altyapısına sahip Reseller Hosting hizmeti ile sizin ve müşterilerinizin internet siteleri
+     <p>Tamamen NVMe disk altyapısına sahip Reseller Hosting hizmeti ile sizin ve müşterilerinizin internet siteleri
       daha hızlı çalışır. Paketlerimizin limitsiz disk özelliği ile de Reseller Hosting hizmetinizi hiçbir sınırlama
       yaşamadan özgürce kullanırsınız.
      </p>

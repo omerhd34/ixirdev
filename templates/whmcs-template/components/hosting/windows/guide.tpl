@@ -44,7 +44,7 @@
       veritabanı
       oluşturma, <strong>SSL sertifikası</strong> kurulumu, <strong>DNS yönetimi</strong> ve dosya düzenleme gibi tüm
       işlemler tek ekrandan, birkaç
-      tıklamayla gerçekleştirilebilir. Sunuculardaki <strong>%100 NVMe SSD</strong> altyapısı, geleneksel disklere
+      tıklamayla gerçekleştirilebilir. Sunuculardaki <strong>Sınırsız NVMe SSD</strong> altyapısı, geleneksel disklere
       kıyasla
       <strong>40 kata kadar</strong>
       daha yüksek okuma-yazma hızı sağlayarak web sitenizin hem kullanıcılar hem de arama motorları tarafından daha

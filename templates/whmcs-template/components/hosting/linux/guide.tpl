@@ -16,7 +16,8 @@
     <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-server"></i></span>
     <h2>Linux Hosting Altyapısı Neden Bu Kadar Önemlidir?</h2>
     <p>Web sitenizin yükleme hızı yalnızca kodunuza ya da tasarımınıza değil, barındırıldığı server'ın altyapısına
-     doğrudan bağlıdır. Geleneksel HDD disk sistemlerine kıyasla %100 NVMe SSD altyapısı, dosya okuma ve yazma hızını 40
+     doğrudan bağlıdır. Geleneksel HDD disk sistemlerine kıyasla Sınırsız NVMe SSD altyapısı, dosya okuma ve yazma
+     hızını 40
      kata kadar artırarak veritabanı sorgularını anlık tamamlar, sayfa yükleme sürelerini minimuma indirir. ixirhost web
      hosting paketlerinde kullanılan <strong>LiteSpeed web server'u</strong> ise Apache'ye göre 10 kat daha yüksek
      performans sunar, özellikle WordPress, WooCommerce ve OpenCart gibi içerik yönetim sistemlerinde bu fark ziyaretçi

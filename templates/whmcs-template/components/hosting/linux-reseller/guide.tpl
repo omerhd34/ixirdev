@@ -19,7 +19,7 @@
      müşterilerine profesyonel hosting hizmeti sunabilmesi için tasarlanmış çok kullanıcılı bir hosting çözümüdür.
      WHM/cPanel altyapısı sayesinde satın aldığınız kaynakları dilediğiniz gibi bölerek müşterilerinize ayrı cPanel
      hesabı açabilir; disk alanı, e-posta ve trafik limitlerini kendiniz belirleyebilirsiniz. IxirHost Linux Reseller
-     Hosting paketleri, CloudLinux işletim sistemi üzerinde çalışan LiteSpeed web sunucusu ve Enterprise NVME disk
+     Hosting paketleri, CloudLinux işletim sistemi üzerinde çalışan LiteSpeed web sunucusu ve Enterprise NVMe disk
      altyapısıyla hem sizin hem de müşterilerinizin internet sitelerinin maksimum hızda çalışmasını sağlar. 10 siteden
      100 siteye kadar farklı ihtiyaçlara uygun 4 paket seçeneğiyle, büyümenize paralel olarak kolayca bir üst pakete
      geçebilirsiniz.</p>

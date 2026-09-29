@@ -20,7 +20,7 @@
      hosting çözümüdür. Linux tabanlı alternatiflerin aksine IIS, .NET Framework ve MSSQL Server gibi Microsoft
      ekosisteminin temel bileşenlerini doğrudan destekleyen bu yapı; ERP entegrasyonları, kurumsal intranet uygulamaları
      ve klasik ASP projelerinin sorunsuz çalışmasını sağlar. IxirHost'un Windows Reseller Hosting altyapısı, Enterprise
-     NVME SSD disk, cluster yedekli mimari ve İstanbul Tier III+ veri merkezi üzerinde çalışarak hem sizin hem de
+     NVMe SSD disk, cluster yedekli mimari ve İstanbul Tier III+ veri merkezi üzerinde çalışarak hem sizin hem de
      müşterilerinizin sitelerine yüksek erişilebilirlik garantisi sunar.</p>
     <p>Plesk yönetim paneli, Windows bayi hosting hizmetinin en güçlü avantajlarından biridir. Plesk ile her müşteri
      için ayrı disk, e-posta, CPU ve veritabanı limitleri belirleyebilir, ihtiyaçlara göre kaynakları anlık olarak

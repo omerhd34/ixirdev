@@ -21,7 +21,7 @@
       İxir Hosting bünyesindeki WordPress Hosting hizmetleri, Türkiye'de İstanbul merkezli Tier III+ veri merkezinden
       sunulmakta ve LiteSpeed web server'ı, AccelerateWP ile PHP X-RAY gibi WordPress'e özel optimize teknolojilerle
       desteklenmektedir. </p>
-     <p>%100 Enterprise NVME disk altyapımız sayesinde WordPress siteniz çok daha hızlı yüklenirken Imunify360 WAF
+     <p>%100 Enterprise NVMe disk altyapımız sayesinde WordPress siteniz çok daha hızlı yüklenirken Imunify360 WAF
       güvenlik duvarı kötü amaçlı yazılım, virüs ve bot saldırılarına karşı sitenizi 7/24 korur. Haftalık JetBackup
       yedekleme ile verileriniz güvende kalır; cPanel kontrol paneli aracılığıyla tek tıklamayla WordPress kurulumu
       yapabilir, PHP sürümünüzü dilediğiniz zaman değiştirebilirsiniz.

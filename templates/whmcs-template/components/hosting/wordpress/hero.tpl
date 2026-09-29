@@ -14,7 +14,7 @@
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
      <h1>WordPress Hosting</h1>
-     <p>NVME, Litespeed Cache, AccelerateWP ile Wordpress Sitenizi Hızlandırın!</p>
+     <p>NVMe, Litespeed Cache, AccelerateWP ile Wordpress Sitenizi Hızlandırın!</p>
     </div>
     <div class="ixir-hero-actions">
      <a href="#ixir-wh-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-wh-plans-btn">
@@ -25,7 +25,7 @@
     <ul class="ixir-hero-points" aria-label="Özellikler">
      <li>
       <i class="fas fa-hdd" aria-hidden="true"></i>
-      <span>%100 NVMe SSD Disk</span>
+      <span>Limitsiz NVMe SSD Disk</span>
      </li>
      <li>
       <i class="fas fa-desktop" aria-hidden="true"></i>

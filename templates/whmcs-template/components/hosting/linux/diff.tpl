@@ -35,8 +35,9 @@
    <li>
     <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-hdd"></i></span>
     <div>
-     <h3>%100 NVMe Disk</h3>
-     <p>%100 NVMe disk üzerinde çalışan hosting paketleri sayesinde çok daha hızlı ve yüksek performanslı sitelere sahip
+     <h3>Limitsiz NVMe Disk</h3>
+     <p>Limitsiz NVMe disk üzerinde çalışan hosting paketleri sayesinde çok daha hızlı ve yüksek performanslı sitelere
+      sahip
       olun.</p>
     </div>
    </li>

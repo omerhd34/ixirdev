@@ -20,16 +20,16 @@
     <li>
      <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-infinity"></i></span>
      <div>
-      <h3>Sınırsız Kaynaklar</h3>
-      <p>Sınırsız NVME disk alanı, sınırsız trafik sunan WordPress hosting paketlerinde kaynak problemi yaşamadan web
+      <h3>Limitsiz Kaynaklar</h3>
+      <p>Limitsiz NVMe disk alanı, sınırsız trafik sunan WordPress hosting paketlerinde kaynak problemi yaşamadan web
        sitenizi yayında tutun.</p>
      </div>
     </li>
     <li>
      <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-hdd"></i></span>
      <div>
-      <h3>%100 NVME Disk</h3>
-      <p>%100 NVME disk üzerinde çalışan WordPress siteleri sayesinde çok daha hızlı ve yüksek performanslı web
+      <h3>Limitsiz NVMe Disk</h3>
+      <p>Limitsiz NVMe disk üzerinde çalışan WordPress siteleri sayesinde çok daha hızlı ve yüksek performanslı web
        sitelerine sahip olun.</p>
      </div>
     </li>

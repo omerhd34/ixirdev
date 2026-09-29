@@ -72,12 +72,12 @@
     <div class="ixir-wh-story-copy">
      <div class="ixir-wh-story-heading">
       <span class="ixir-wh-story-badge" aria-hidden="true"><i class="fas fa-hdd"></i></span>
-      <h3 class="ixir-wh-story-title">%100 NVME SSD</h3>
+      <h3 class="ixir-wh-story-title">Limitsiz NVMe SSD</h3>
      </div>
      <p><strong>Nvme diskler</strong>, normal hard disklere (HDD) göre <strong>40 kata kadar daha hızlı</strong> okuma &
       yazma ve IOPS değerine sahiptir.
-      IxirHost Windows Hosting paketlerinin tamamında <strong>NVME SSD</strong> disk <strong>standart özellik</strong>
-      olarak yer almaktadır. NVME SSD
+      IxirHost Windows Hosting paketlerinin tamamında <strong>NVMe SSD</strong> disk <strong>standart özellik</strong>
+      olarak yer almaktadır. NVMe SSD
       disklerin sahip olduğu <strong>yüksek okuma, yazma ve IOPS</strong> değerleri ile Windows Hosting server'ında
       çalışan internet
       siteleriniz yüksek performansla çalışır. Siz de sitenizin ziyaretçilerine hızlı ve unutulmaz bir deneyim

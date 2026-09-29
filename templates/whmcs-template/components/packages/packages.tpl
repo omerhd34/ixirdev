@@ -12,7 +12,7 @@
     </header>
     <ul class="ixir-package-features">
      <li><i class="fas fa-globe" aria-hidden="true"></i>1 adet web sitesi</li>
-     <li><i class="fas fa-hdd" aria-hidden="true"></i>1 GB NVME disk alanı</li>
+     <li><i class="fas fa-hdd" aria-hidden="true"></i>1 GB NVMe disk alanı</li>
      <li><i class="fas fa-microchip" aria-hidden="true"></i>1 Core Intel Gold CPU</li>
      <li><i class="fab fa-linux" aria-hidden="true"></i>Cloud Linux OS</li>
      <li><i class="fas fa-bolt" aria-hidden="true"></i>Litespeed web server</li>
@@ -50,7 +50,7 @@
     </header>
     <ul class="ixir-package-features">
      <li><i class="fab fa-wordpress" aria-hidden="true"></i>1 adet Wordpress</li>
-     <li><i class="fas fa-hdd" aria-hidden="true"></i>1 GB NVME disk alanı</li>
+     <li><i class="fas fa-hdd" aria-hidden="true"></i>1 GB NVMe disk alanı</li>
      <li><i class="fas fa-microchip" aria-hidden="true"></i>1 Core Intel Gold CPU</li>
      <li><i class="fab fa-linux" aria-hidden="true"></i>Cloud Linux OS</li>
      <li><i class="fas fa-bolt" aria-hidden="true"></i>Litespeed web server</li>
