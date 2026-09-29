@@ -19,8 +19,8 @@
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/news-bar/news-bar.css?v={$versionHash}-r12" rel="stylesheet">
 {/if}
-{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting'))}
- <link href="{$WEB_ROOT}/templates/{$template}/components/homepage-hero/homepage-hero.css?v={$versionHash}-r54"
+{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting'))}
+ <link href="{$WEB_ROOT}/templates/{$template}/components/homepage-hero/homepage-hero.css?v={$versionHash}-r57"
   rel="stylesheet">
 {/if}
 {if $ixirDomainSearchPage || $ixirDomainTransferPage || $templatefile == 'whois-sorgulama'}
@@ -51,7 +51,7 @@
  <link href="{$WEB_ROOT}/templates/{$template}/components/kurumsal/kurumsal.css?v={$versionHash}-r33" rel="stylesheet">
 {/if}
 {if $templatefile == 'product-landing'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/hosting/hosting.css?v={$versionHash}-r69" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/hosting/hosting.css?v={$versionHash}-r99" rel="stylesheet">
  <script src="{$WEB_ROOT}/templates/{$template}/components/hosting/plans-slider.js?v={$versionHash}-r1" defer></script>
 {/if}
 
