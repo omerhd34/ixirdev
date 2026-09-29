@@ -289,7 +289,7 @@
   padding-top: 28px !important;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .ixir-package {
     padding: 22px;
   }
@@ -338,7 +338,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .ixir-packages,
   .ixir-packages > .container {
     min-width: 0;
@@ -450,7 +450,7 @@
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .ixir-package-copy {
     padding-right: clamp(160px, 28cqi, 240px);
   }
@@ -583,7 +583,7 @@
   transform: translate3d(0, 0, 0);
   pointer-events: auto;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .ixir-packages.is-armed {
     overflow-x: visible;
   }
