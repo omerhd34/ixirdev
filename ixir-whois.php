@@ -51,7 +51,7 @@ if ($input !== '') {
 }
 
 $ca->assign('displayTitle', 'WHOIS Sorgulama');
-$ca->assign('tagline', 'Domain'in sahiplik bilgilerini ücretsiz ve anında sorgulayın');
+$ca->assign('tagline', "Domain'in sahiplik bilgilerini ücretsiz ve anında sorgulayın");
 $ca->assign('ixirWhoisDomain', $domain);
 $ca->assign('ixirWhoisResult', $whois);
 $ca->assign('ixirWhoisParsed', $whois !== '' ? ixir_whois_parse($whois, $domain) : null);
