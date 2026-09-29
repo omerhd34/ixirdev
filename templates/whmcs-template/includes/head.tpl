@@ -40,7 +40,7 @@
 {if !$ixirIsAuthPage && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $filename != 'ixir-hesabim' && $filename != 'register'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/help/help.css?v={$versionHash}-r17" rel="stylesheet">
 {/if}
-<link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}-r42" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}-r43" rel="stylesheet">
 {if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'logout' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim'}
  <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r65" rel="stylesheet">
 {/if}
@@ -51,7 +51,7 @@
  <link href="{$WEB_ROOT}/templates/{$template}/components/kurumsal/kurumsal.css?v={$versionHash}-r33" rel="stylesheet">
 {/if}
 {if $templatefile == 'product-landing'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/hosting/hosting.css?v={$versionHash}-r64" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/hosting/hosting.css?v={$versionHash}-r69" rel="stylesheet">
  <script src="{$WEB_ROOT}/templates/{$template}/components/hosting/plans-slider.js?v={$versionHash}-r1" defer></script>
 {/if}
 
