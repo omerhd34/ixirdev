@@ -1,0 +1,9 @@
+{include file="$template/components/hosting/windows-reseller/hero.tpl"}
+{include file="$template/components/hosting/windows-reseller/plans.tpl"}
+{include file="$template/components/hosting/windows-reseller/story.tpl"}
+{include file="$template/components/hosting/windows-reseller/manage.tpl"}
+{include file="$template/components/hosting/windows-reseller/diff.tpl"}
+{include file="$template/components/hosting/windows-reseller/features.tpl"}
+{include file="$template/components/hosting/windows-reseller/compare.tpl"}
+{include file="$template/components/hosting/windows-reseller/faq.tpl"}
+{include file="$template/components/hosting/windows-reseller/guide.tpl"}
