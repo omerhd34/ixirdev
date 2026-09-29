@@ -511,19 +511,15 @@
     <div class="ixir-wh-table-foot">
      <div></div>
      <div>
-      <s>111,24 TL</s><b>70,47 TL</b><small>/ay</small>
       <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
      </div>
      <div>
-      <s>191,21 TL</s><b>122,00 TL</b><small>/ay</small>
       <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
      </div>
      <div class="is-best">
-      <s>268,45 TL</s><b>173,42 TL</b><small>/ay</small>
       <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
      </div>
      <div>
-      <s>389,24 TL</s><b>250,33 TL</b><small>/ay</small>
       <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
      </div>
     </div>
