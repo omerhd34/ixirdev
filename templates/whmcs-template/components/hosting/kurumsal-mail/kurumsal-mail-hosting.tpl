@@ -1,0 +1,13 @@
+{include file="$template/components/hosting/kurumsal-mail/hero.tpl"}
+{include file="$template/components/hosting/kurumsal-mail/plans.tpl"}
+{include file="$template/components/hosting/kurumsal-mail/price-compare.tpl"}
+{include file="$template/components/hosting/kurumsal-mail/turkey.tpl"}
+{include file="$template/components/hosting/kurumsal-mail/story.tpl"}
+{include file="$template/components/hosting/kurumsal-mail/diff.tpl"}
+{include file="$template/components/hosting/kurumsal-mail/suite.tpl"}
+{include file="$template/components/hosting/kurumsal-mail/outlook.tpl"}
+{include file="$template/components/hosting/kurumsal-mail/teamwork.tpl"}
+{include file="$template/components/hosting/kurumsal-mail/reviews.tpl"}
+{include file="$template/components/hosting/kurumsal-mail/compare.tpl"}
+{include file="$template/components/hosting/kurumsal-mail/faq.tpl"}
+{include file="$template/components/hosting/kurumsal-mail/scripts.tpl"}
