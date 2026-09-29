@@ -21,8 +21,8 @@ if ($slug === '' || !isset($pages[$slug])) {
     exit;
 }
 
-$page = $pages[$slug];
-$group = ixir_find_product_group($slug, $page);
+$title = $pages[$slug];
+$group = ixir_find_product_group($slug, $title);
 $customLanding = in_array($slug, ['linux-hosting', 'windows-hosting', 'wordpress-hosting'], true);
 if ($group && !empty($group->id) && !$customLanding) {
     $root = function_exists('ixir_web_root') ? ixir_web_root() : '';
@@ -31,13 +31,11 @@ if ($group && !empty($group->id) && !$customLanding) {
 }
 
 $ca = new ClientArea();
-$ca->setPageTitle($page['title']);
+$ca->setPageTitle($title);
 $ca->addToBreadCrumb('index.php', Lang::trans('globalsystemname'));
-$ca->addToBreadCrumb($slug, $page['title']);
+$ca->addToBreadCrumb($slug, $title);
 $ca->initPage();
-$ca->assign('displayTitle', $page['title']);
-$ca->assign('tagline', $page['tagline']);
-$ca->assign('ixirPage', $page);
+$ca->assign('displayTitle', $title);
 $ca->assign('ixirPageSlug', $slug);
 $ca->setTemplate('product-landing');
 $ca->output();
