@@ -2681,15 +2681,18 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+.ixir-wh-slider-nav {
+  display: none;
+}
 @media (max-width: 767px) {
   .ixir-wh-plans.ixir-slide.is-slide-in {
     transform: none;
   }
   .ixir-wh-grid {
     display: flex;
-    gap: 12px;
+    gap: 16px;
     margin: 0 calc(-1 * var(--ixir-gutter, 16px));
-    padding: 14px var(--ixir-gutter, 16px) 20px;
+    padding: 14px var(--ixir-gutter, 16px) 16px;
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
@@ -2701,9 +2704,71 @@
     display: none;
   }
   .ixir-wh-grid > .ixir-wh-plan {
-    flex: 0 0 84%;
-    max-width: 340px;
+    flex: 0 0 100%;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  .ixir-wh-slider-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  .ixir-wh-slider-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #e6e8ee;
+    border-radius: 50%;
+    background: #fff;
+    color: #0b2545;
+    font-size: 14px;
+    box-shadow: 0 6px 16px rgba(36, 41, 53, 0.08);
+    cursor: pointer;
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      opacity 0.2s ease;
+  }
+  .ixir-wh-slider-btn:not(:disabled):hover,
+  .ixir-wh-slider-btn:not(:disabled):focus-visible {
+    background: #0b2545;
+    color: #fbd746;
+  }
+  .ixir-wh-slider-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+    box-shadow: none;
+  }
+  .ixir-wh-slider-dots {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .ixir-wh-slider-dot {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: #cfd4dc;
+    cursor: pointer;
+    transition:
+      width 0.25s ease,
+      background 0.25s ease;
+  }
+  .ixir-wh-slider-dot::before {
+    content: "";
+    position: absolute;
+    inset: -10px -4px;
+  }
+  .ixir-wh-slider-dot.is-active {
+    width: 24px;
+    background: #0b2545;
   }
   .ixir-wh-billing-pop {
     position: fixed;
