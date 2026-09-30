@@ -8,6 +8,5 @@
 {include file="$template/components/hosting/kurumsal-mail/outlook.tpl"}
 {include file="$template/components/hosting/kurumsal-mail/teamwork.tpl"}
 {include file="$template/components/hosting/kurumsal-mail/reviews.tpl"}
-{include file="$template/components/hosting/kurumsal-mail/compare.tpl"}
 {include file="$template/components/hosting/kurumsal-mail/faq.tpl"}
 {include file="$template/components/hosting/kurumsal-mail/scripts.tpl"}
