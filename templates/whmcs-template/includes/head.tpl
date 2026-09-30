@@ -14,7 +14,7 @@
 {assetExists file="base.css"}
 <link href="{$__assetPath__}?v={$versionHash}-r21" rel="stylesheet">
 {/assetExists}
-<link href="{$WEB_ROOT}/templates/{$template}/components/common/common.css?v={$versionHash}-r1" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/css/common.css?v={$versionHash}-r1" rel="stylesheet">
 <link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r37" rel="stylesheet">
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/news-bar/news-bar.css?v={$versionHash}-r12"
