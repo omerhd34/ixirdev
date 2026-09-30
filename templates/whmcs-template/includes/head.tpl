@@ -25,7 +25,13 @@
   rel="stylesheet">
 {/if}
 {if $ixirDomainSearchPage || $ixirDomainTransferPage || $templatefile == 'whois-sorgulama'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/domain/domain.css?v={$versionHash}-r105" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/domain/domain.css?v={$versionHash}-r106" rel="stylesheet">
+ {if $ixirDomainSearchPage}
+  <link href="{$WEB_ROOT}/templates/{$template}/components/domain/sorgu/sorgu.css?v={$versionHash}-r1" rel="stylesheet">
+ {elseif $ixirDomainTransferPage}
+  <link href="{$WEB_ROOT}/templates/{$template}/components/domain/transfer/transfer.css?v={$versionHash}-r1"
+   rel="stylesheet">
+ {/if}
 {/if}
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/packages/packages.css?v={$versionHash}-r18"
@@ -52,7 +58,7 @@
  <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r65" rel="stylesheet">
 {/if}
 {if $templatefile == 'whois-sorgulama'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/domain/whois/whois.css?v={$versionHash}-r19" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/domain/whois/whois.css?v={$versionHash}-r20" rel="stylesheet">
 {/if}
 {if $ixirCorporate || $templatefile == 'kurumsal' || $templatefile == 'contact'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/kurumsal/kurumsal.css?v={$versionHash}-r33" rel="stylesheet">
