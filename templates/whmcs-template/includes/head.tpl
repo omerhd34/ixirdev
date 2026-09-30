@@ -64,7 +64,22 @@
  <link href="{$WEB_ROOT}/templates/{$template}/components/kurumsal/kurumsal.css?v={$versionHash}-r33" rel="stylesheet">
 {/if}
 {if $templatefile == 'product-landing'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/hosting/hosting.css?v={$versionHash}-r107" rel="stylesheet">
+ {assign var=ixirHostingPageCss value=''}
+ {if $ixirPageSlug == 'linux-hosting'}{assign var=ixirHostingPageCss value='linux/linux'}
+ {elseif $ixirPageSlug == 'windows-hosting'}{assign var=ixirHostingPageCss value='windows/windows'}
+ {elseif $ixirPageSlug == 'wordpress-hosting'}{assign var=ixirHostingPageCss value='wordpress/wordpress'}
+ {elseif $ixirPageSlug == 'developer-hosting'}{assign var=ixirHostingPageCss value='developer/developer'}
+ {elseif $ixirPageSlug == 'cloud-drive'}{assign var=ixirHostingPageCss value='cloud-drive/cloud-drive'}
+ {elseif $ixirPageSlug == 'kurumsal-mail-hosting'}{assign var=ixirHostingPageCss value='kurumsal-mail/kurumsal-mail'}
+ {/if}
+ <link href="{$WEB_ROOT}/templates/{$template}/components/hosting/hosting.css?v={$versionHash}-r109" rel="stylesheet">
+ {if $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting'}
+  <link href="{$WEB_ROOT}/templates/{$template}/components/hosting/reseller.css?v={$versionHash}-r1" rel="stylesheet">
+ {/if}
+ {if $ixirHostingPageCss}
+  <link href="{$WEB_ROOT}/templates/{$template}/components/hosting/{$ixirHostingPageCss}.css?v={$versionHash}-r1"
+   rel="stylesheet">
+ {/if}
  <script src="{$WEB_ROOT}/templates/{$template}/components/hosting/plans-slider.js?v={$versionHash}-r7" defer></script>
 {/if}
 

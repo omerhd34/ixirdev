@@ -1,0 +1,7 @@
+.ixir-wh-page--cloud-drive .ixir-wh-price {
+  margin-bottom: 16px;
+}
+
+body:has(.ixir-wh-page--cloud-drive) .ixir-help {
+  margin-top: 0;
+}
