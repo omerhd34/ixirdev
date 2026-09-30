@@ -1,10 +1,10 @@
-{include file="$template/components/homepage-hero/homepage-hero.tpl"}
-{include file="$template/components/packages/packages.tpl"}
-{include file="$template/components/promo-carousel/promo-carousel.tpl"}
-{include file="$template/components/trust/trust.tpl"}
-{include file="$template/components/turkey-stats/turkey-stats.tpl"}
-{include file="$template/components/testimonials/testimonials.tpl"}
-{include file="$template/components/solutions/solutions.tpl"}
+{include file="$template/components/home/homepage-hero/homepage-hero.tpl"}
+{include file="$template/components/home/packages/packages.tpl"}
+{include file="$template/components/home/promo-carousel/promo-carousel.tpl"}
+{include file="$template/components/home/trust/trust.tpl"}
+{include file="$template/components/home/turkey-stats/turkey-stats.tpl"}
+{include file="$template/components/home/testimonials/testimonials.tpl"}
+{include file="$template/components/home/solutions/solutions.tpl"}
 
 {if $twitterusername || $announcements}
  <section id="main-body">

@@ -307,7 +307,7 @@
  <div class="ixir-header-spacer" aria-hidden="true"></div>
 
  {if $templatefile == 'homepage'}
-  {include file="$template/components/news-bar/news-bar.tpl"}
+  {include file="$template/components/home/news-bar/news-bar.tpl"}
  {/if}
  {include file="$template/components/header/header-scripts.tpl"}
  {if $templatefile != 'clientregister'}

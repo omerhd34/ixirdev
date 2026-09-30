@@ -12,7 +12,7 @@
 {/if}
 
 {if $templatefile == 'homepage'}
- {include file="$template/components/ixir-next.tpl"}
+ {include file="$template/components/home/ixir-next/ixir-next.tpl"}
 {/if}
 
 {if !$ixirIsAuthPage && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $filename != 'ixir-hesabim' && $filename != 'register'}
