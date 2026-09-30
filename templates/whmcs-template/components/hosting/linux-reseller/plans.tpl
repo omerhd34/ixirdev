@@ -281,7 +281,7 @@
         type="button" class="ixir-wh-tip-btn" aria-label="Accelerate WP açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">AccelerateWP, AccelerateWP
         LitespeedCache yerine kullanabileceğiniz wordpress hızlandırma platformudur, sayfa yükleme sürelerini optimize
-        eder.</span></span>
+        eder.</span></span></li>
      <li><i class="fas fa-shield-alt" aria-hidden="true"></i>Imunify360 WAF<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Imunify360 açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Web sitelerinizi malware, virüs ve
@@ -295,7 +295,6 @@
         class="ixir-wh-tip-btn" aria-label="SSL açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Tüm siteleriniz için Let's Encrypt
         SSL sertifikanız otomatik kurulur ve ömür boyu ücretsizdir.</span></span></li>
-     </li>
      <li><i class="fas fa-th-large" aria-hidden="true"></i>cPanel kontrol paneli</li>
     </ul>
    </div>
