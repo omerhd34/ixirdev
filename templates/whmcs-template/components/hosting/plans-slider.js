@@ -156,7 +156,7 @@
  });
 
  Array.prototype.forEach.call(
-  document.querySelectorAll(".ixir-wh-plans .ixir-wh-shared:not([data-visible])"),
+  document.querySelectorAll(".ixir-wh-plans .ixir-wh-shared"),
   function (list) {
    var items = Array.prototype.slice.call(list.children);
    if (items.length < 2) return;

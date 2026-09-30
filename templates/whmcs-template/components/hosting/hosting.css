@@ -3671,6 +3671,14 @@
     scroll-snap-stop: always;
   }
 
+  .ixir-wh-shared.ixir-wh-shared--slider[data-visible] > li:nth-child(n) {
+    display: grid;
+  }
+
+  .ixir-wh-shared--slider ~ .ixir-wh-shared-more {
+    display: none;
+  }
+
   .ixir-wh-slider-nav--shared {
     display: flex;
     align-items: center;
