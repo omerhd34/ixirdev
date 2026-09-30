@@ -1,0 +1,185 @@
+.ixir-next {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 72px 0 64px;
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+.ixir-next .container {
+  min-width: 0;
+}
+.ixir-next-panel {
+  position: relative;
+  margin: 0;
+  padding: 0 12px;
+  overflow: hidden;
+  color: #1a1f2e;
+  text-align: center;
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+.ixir-next-panel h4 {
+  margin: 0 0 14px;
+  color: #1a1f2e;
+  font-family: "Space Grotesk", sans-serif !important;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.28;
+}
+.ixir-next-panel h4::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 16px auto 0;
+  border-radius: 99px;
+  background: #386ce0;
+}
+.ixir-next-panel h4 .fa-heart {
+  display: inline-block;
+  margin-right: 8px;
+  color: #386ce0;
+  font-size: 0.78em;
+  vertical-align: 0.05em;
+  animation: ixir-next-pulse 1.8s ease-in-out infinite;
+}
+@keyframes ixir-next-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+}
+.ixir-next-panel p {
+  max-width: 1320px;
+  margin: 0 auto 12px;
+  color: #6d7588;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  text-align: left;
+}
+.ixir-next-panel p:last-of-type {
+  margin-bottom: 0;
+}
+.ixir-next-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 28px 0 0;
+  padding: 0 28px;
+  height: 46px;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-decoration: none !important;
+  background: #386ce0;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(56, 108, 224, 0.22);
+  transition:
+    background-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+.ixir-next-cta:hover,
+.ixir-next-cta:focus {
+  color: #fff !important;
+  background: #1e4bb8;
+  box-shadow: 0 8px 16px rgba(30, 75, 184, 0.28);
+  outline: none;
+}
+.ixir-next-cta:focus-visible {
+  box-shadow:
+    0 8px 16px rgba(30, 75, 184, 0.28),
+    0 0 0 3px rgba(56, 108, 224, 0.28);
+}
+@media (hover: hover) and (pointer: fine) {
+  .ixir-next-cta:hover,
+  .ixir-next-cta:focus {
+    transform: translateY(-1px);
+  }
+}
+.ixir-next.is-armed .ixir-next-panel h4,
+.ixir-next.is-armed .ixir-next-panel p,
+.ixir-next.is-armed .ixir-next-cta {
+  opacity: 0;
+  transform: translate3d(-112px, 0, 0);
+  pointer-events: none;
+  transition:
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms),
+    opacity 0.56s ease var(--ixir-enter-delay, 0ms);
+}
+.ixir-next.is-armed .ixir-next-panel h4 {
+  --ixir-enter-delay: 0ms;
+}
+.ixir-next.is-armed .ixir-next-panel p {
+  --ixir-enter-delay: 80ms;
+}
+.ixir-next.is-armed .ixir-next-cta {
+  --ixir-enter-delay: 160ms;
+}
+.ixir-next.is-armed.is-in .ixir-next-panel h4,
+.ixir-next.is-armed.is-in .ixir-next-panel p,
+.ixir-next.is-armed.is-in .ixir-next-cta {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ixir-next-panel h4 .fa-heart {
+    animation: none;
+  }
+  .ixir-next-cta {
+    transition: none;
+  }
+  .ixir-next.is-armed .ixir-next-panel h4,
+  .ixir-next.is-armed .ixir-next-panel p,
+  .ixir-next.is-armed .ixir-next-cta,
+  .ixir-next.is-armed.is-in .ixir-next-panel h4,
+  .ixir-next.is-armed.is-in .ixir-next-panel p,
+  .ixir-next.is-armed.is-in .ixir-next-cta {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .ixir-next {
+    padding: 56px 0 48px;
+  }
+  .ixir-next-panel {
+    padding: 0 12px;
+  }
+  .ixir-next-panel h4 {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ixir-next {
+    padding: 44px 0 36px;
+  }
+  .ixir-next-panel {
+    padding: 0 12px;
+  }
+  .ixir-next-panel h4 {
+    font-size: 23px;
+    letter-spacing: -0.02em;
+  }
+  .ixir-next-panel p {
+    font-size: 14.5px;
+  }
+  .ixir-next-cta {
+    margin-top: 24px;
+  }
+}

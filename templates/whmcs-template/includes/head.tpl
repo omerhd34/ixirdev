@@ -43,7 +43,11 @@
 {if !$ixirIsAuthPage && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $filename != 'ixir-hesabim' && $filename != 'register'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/help/help.css?v={$versionHash}-r17" rel="stylesheet">
 {/if}
-<link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}-r43" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}-r44" rel="stylesheet">
+{if $templatefile == 'homepage'}
+ <link href="{$WEB_ROOT}/templates/{$template}/components/home/ixir-next/ixir-next.css?v={$versionHash}-r1"
+  rel="stylesheet">
+{/if}
 {if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'logout' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim'}
  <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r65" rel="stylesheet">
 {/if}
