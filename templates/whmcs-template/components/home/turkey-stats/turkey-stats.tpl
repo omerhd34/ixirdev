@@ -29,6 +29,10 @@
      <strong data-to="99.9" data-prefix="%" data-decimals="1">%99.9</strong>
      <span>Müşteri Memnuniyeti</span>
     </li>
+    <li>
+     <strong data-to="20" data-suffix="+">20+</strong>
+     <span>Yıllık Tecrübe</span>
+    </li>
    </ul>
   </div>
  </div>

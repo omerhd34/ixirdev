@@ -39,7 +39,7 @@
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/promo-carousel/promo-carousel.css?v={$versionHash}-r12"
   rel="stylesheet">
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/trust/trust.css?v={$versionHash}-r11" rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/home/turkey-stats/turkey-stats.css?v={$versionHash}-r22"
+ <link href="{$WEB_ROOT}/templates/{$template}/components/home/turkey-stats/turkey-stats.css?v={$versionHash}-r24"
   rel="stylesheet">
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/testimonials/testimonials.css?v={$versionHash}-r12"
   rel="stylesheet">
