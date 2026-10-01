@@ -20,7 +20,7 @@
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/news-bar/news-bar.css?v={$versionHash}-r12"
   rel="stylesheet">
 {/if}
-{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting'))}
+{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'dedicated-server'))}
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/homepage-hero/homepage-hero.css?v={$versionHash}-r57"
   rel="stylesheet">
 {/if}
@@ -78,6 +78,15 @@
  {/if}
  {if $ixirHostingPageCss}
   <link href="{$WEB_ROOT}/templates/{$template}/components/hosting/{$ixirHostingPageCss}.css?v={$versionHash}-r1"
+   rel="stylesheet">
+ {/if}
+ {if $ixirPageSlug == 'cloud-server'}
+  <link href="{$WEB_ROOT}/templates/{$template}/components/server/cloud-server/cloud-server.css?v={$versionHash}-r16"
+   rel="stylesheet">
+ {/if}
+ {if $ixirPageSlug == 'dedicated-server'}
+  <link
+   href="{$WEB_ROOT}/templates/{$template}/components/server/dedicated-server/dedicated-server.css?v={$versionHash}-r10"
    rel="stylesheet">
  {/if}
  <script src="{$WEB_ROOT}/templates/{$template}/components/hosting/plans-slider.js?v={$versionHash}-r7" defer></script>
