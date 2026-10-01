@@ -29,11 +29,23 @@
     </li>
     <li>
      <i class="fas fa-address-book" aria-hidden="true"></i>
-     <span>Kişiler, Takvimler, Notlar</span>
+     <span>Kişiler</span>
+    </li>
+    <li>
+     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+     <span>Takvimler</span>
+    </li>
+    <li>
+     <i class="fas fa-sticky-note" aria-hidden="true"></i>
+     <span>Notlar</span>
     </li>
     <li>
      <i class="fas fa-video" aria-hidden="true"></i>
-     <span>Video Konferans, Anlık Mesajlaşma</span>
+     <span>Video Konferans</span>
+    </li>
+    <li>
+     <i class="fas fa-comments" aria-hidden="true"></i>
+     <span>Anlık Mesajlaşma</span>
     </li>
     <li>
      <i class="fas fa-user-shield" aria-hidden="true"></i>
@@ -41,7 +53,7 @@
     </li>
     <li>
      <i class="fas fa-robot" aria-hidden="true"></i>
-     <span>Yapay Zeka Destekli Anti-Spam</span>
+     <span>AI Destekli Anti-Spam</span>
     </li>
    </ul>
    <div class="ixir-domain-links-wrap" role="region" aria-label="Bazı hizmetler">
@@ -122,15 +134,18 @@
   <div class="ixir-hero-strip-track" id="ixirHeroStripTrack">
    <span>Bulut E-posta Yapısı</span>
    <span>Tüm Cihazlardan Erişim</span>
-   <span>Kişiler, Takvimler, Notlar</span>
-   <span>Video Konferans, Anlık Mesajlaşma</span>
+   <span>Video Konferans</span>
+   <span>Anlık Mesajlaşma</span>
    <span>%100 KVKK Uyumlu</span>
-   <span>Yapay Zeka Destekli Anti-Spam</span>
+   <span>AI Destekli Anti-Spam</span>
    <span>Gelişmiş Paylaşımlı Takvim</span>
    <span>Ekip Yönetim Uygulamaları</span>
    <span>Ekip içi Mesajlaşma</span>
    <span>Gelişmiş Antivirüs</span>
    <span>%100 Exchange Uyumlu</span>
+   <span>Kişiler</span>
+   <span>Takvimler</span>
+   <span>Notlar</span>
   </div>
  </div>
 </section>
