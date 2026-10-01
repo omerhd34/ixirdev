@@ -16,7 +16,7 @@
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
     <h2>Cloud Drive Nedir?</h2>
     <p>Cloud Drive hizmeti, Microsoft'un Onedrive, Google'ın Drive veya Apple'ın iCloud hizmetine benzer bir hizmettir.
-     Dosyalarınız bulut bir sunucuda güvenle saklanır. Dünyanın her yerinden internet üzerinden erişebilirsiniz. Güvenli
+     Dosyalarınız Cloud Drive'da güvenle saklanır. Dünyanın her yerinden internet üzerinden erişebilirsiniz. Güvenli
      ve hızlı bağlantı sayesinde dosyalarınız kötü niyetli kişilerin eline geçmez. Mobil ve masaüstü senkronizasyonu
      sayesinde tüm dosyalarınıza tüm cihazlardan erişebilirsiniz.</p>
     <a class="ixir-wh-story-cta" href="#ixir-wh-plans">Hemen Satın Al</a>

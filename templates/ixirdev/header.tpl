@@ -69,7 +69,7 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <meta name="robots" content="noindex, nofollow">
- <title>{$companyname} | Hosting, Domain, Cloud, Kiralık Server</title>
+ <title>{$companyname} | Hosting, Domain, Cloud, Dedicated Server</title>
  {include file="$template/includes/head.tpl"}
  {$headoutput}
  {if $templatefile == 'homepage'}
@@ -314,7 +314,7 @@
   {include file="$template/includes/verifyemail.tpl"}
  {/if}
 
- {if $templatefile != 'homepage' && $templatefile != 'whois-sorgulama' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage && !($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting'))}
+ {if $templatefile != 'homepage' && $templatefile != 'whois-sorgulama' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage && !($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'dedicated-server'))}
 
   <section id="main-body">
    <div class="container{if $skipMainBodyContainer}-fluid without-padding{/if}">

@@ -2,7 +2,8 @@
  <span class="ixir-about-hero-kicker">İstanbul / Levent</span>
  <h2>Yüksek Erişilebilirlik İçin Güçlü Altyapı</h2>
  <p>ixirhost altyapısı; kesintisizlik, performans, güvenlik ve sürdürülebilirlik prensipleriyle tasarlanmıştır. Hosting,
-  kiralık server, cloud ve kritik internet servisleri için oluşturduğumuz altyapı mimarisi; yedekli internet erişimi,
+  Dedicated Server, Cloud Server ve kritik internet servisleri için oluşturduğumuz altyapı mimarisi; yedekli internet
+  erişimi,
   yüksek kapasiteli enerji sistemleri, gelişmiş ağ omurgası ve profesyonel veri merkezi operasyonları üzerine kuruludur.
  </p>
  <div class="ixir-infra-location">

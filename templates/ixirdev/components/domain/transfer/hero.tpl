@@ -106,8 +106,8 @@
         </a>
        </li>
        <li>
-        <a href="{$WEB_ROOT}/kiralik-server" title="Kiralık Server">
-         <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Kiralık Server</span>
+        <a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">
+         <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Dedicated Server</span>
         </a>
        </li>
       </ul>

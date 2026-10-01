@@ -251,10 +251,10 @@
         <small>60 saniyede kurulan cloud server</small>
        </span>
       </a>
-      <a href="{$WEB_ROOT}/kiralik-server">
+      <a href="{$WEB_ROOT}/dedicated-server">
        <i class="fas fa-server"></i>
        <span>
-        Kiralık Server
+        Dedicated Server
         <small>İstanbul merkezli, operatör yedekli</small>
        </span>
       </a>

@@ -51,7 +51,7 @@
   server'larında
   bulundurulması servisidir.
  </p>
- <p><strong>3.4.</strong> Kiralık Server , MÜŞTERİ'nin, <strong>İXİRHOST</strong>'dan kiraladığı
+ <p><strong>3.4.</strong> Dedicated Server , MÜŞTERİ'nin, <strong>İXİRHOST</strong>'dan kiraladığı
   mülkiyeti
   <strong>İXİRHOST</strong>'a ait olan fiziksel
   server servisini ifade etmektedir.
@@ -110,7 +110,7 @@
   <strong>İxirhost</strong>
   server'larında
   barındırılarak internet ağı üzerinden yayınlanmasıdır. MÜŞTERİ sözleşme kapsamında web hosting, bayi/reseller
-  hosting,server kiralama, co-location (server barındırma), bulut server, cloud drive, ssl ve domain tescili servisini
+  hosting,server kiralama, co-location (server barındırma), Cloud Server, cloud drive, ssl ve domain tescili servisini
   birlikte
   veya tek tek alabilir.
  </p>
@@ -145,7 +145,7 @@
  <p><strong>4.5.</strong> Hosting/server taşıma servisleri her site/server için verilemeyebilir, aktarım/taşıma hizmeti
   sadece dataların
   eski hizmet alınan firmadaki servis/hizmet üzerinden alınıp firmamız bünyesindeki hizmetinize (hosting/cloud
-  server/kiralık server/ co-location vb.) aktarılmasını kapsamaktadır, aktarım sırasında veya sonrasında oluşan veya
+  server/dedicated server/ co-location vb.) aktarılmasını kapsamaktadır, aktarım sırasında veya sonrasında oluşan veya
   oluşabilecek data bütünlüğü ve doğruluğu bununla birlikte, site yazılımından/yazılımdan doğacak arıza, ayar, bakım,
   güncelleme müşteriyi bağlar. <strong>İXİRHOST</strong> hızlı internet bağlantı kapasitesini ve alanını kullanarak
   verilerin
@@ -244,7 +244,7 @@
   <li>Sosyal medya abone, takipçi, otomasyon ile beğeni, yorum vb. scriptleri</li>
  </ul>
 
- <h4>b) Kiralık Server , Co-Location, Cloud Server ve sanal özel
+ <h4>b) Dedicated Server , Co-Location, Cloud Server ve sanal özel
   server hizmetinde kabul edilmeyecek materyallar;</h4>
  <ul>
   <li>Adult, Pornografi ve Escort bilgileri içeren siteler</li>
@@ -324,7 +324,7 @@
   birlikte bu
   yedekleme MÜŞTERİ kullanımı için değil, teknik arıza veya felaket durumlarında veri kaybı yaşanmaması için
   yapılmakta olup MÜŞTERİ kendi verisini yedeklemekle yükümlüdür.</p>
- <p><strong>6.8.</strong> <strong>İXİRHOST</strong>, Kiralık server , Server Barındırma (Co-Location),
+ <p><strong>6.8.</strong> <strong>İXİRHOST</strong>, Dedicated Server , Server Barındırma (Co-Location),
   VDS Server,
   Cloud Server, Sanal
   Özel Server hizmetlerinde verilerin yedeklenmesi, sistemdeki hataların giderilmesi, panel hatalarının giderilmesi vb.

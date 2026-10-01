@@ -150,10 +150,10 @@
        "width" => "col-md-4",
        "items" => [
          [
-           "href" => "/kiralik-server",
-           "title" => "Kiralık Server",
+           "href" => "/dedicated-server",
+           "title" => "Dedicated Server",
            "icon" => "fas fa-server",
-           "label" => "Kiralık Server",
+           "label" => "Dedicated Server",
            "desc" => "Yüksek performanslı, İstanbul Merkezli ve Operatör Yedekli Altyapı ile server'ınızı şimdi kiralayın!"
          ],
          [
