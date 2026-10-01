@@ -49,7 +49,7 @@ templates/
 ├── orderforms/                    # Sipariş formu şablonları
 ├── six/                           # Varsayılan WHMCS teması (kullanılmıyor)
 ├── twenty-one/                    # Varsayılan WHMCS teması (kullanılmıyor)
-└── whmcs-template/                # ⭐ Üzerinde çalışılan proje (aktif tema)
+└── ixirdev/                       # ⭐ Üzerinde çalışılan proje (aktif tema)
     ├── components/                 # Bileşen (component) dosyaları
     ├── css/                        # Stil dosyaları
     ├── error/                      # Hata sayfaları
