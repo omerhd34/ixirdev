@@ -14,4 +14,8 @@
  {include file="$template/components/hosting/linux-reseller/linux-reseller.tpl"}
 {elseif $ixirPageSlug == 'windows-reseller-hosting'}
  {include file="$template/components/hosting/windows-reseller/windows-reseller.tpl"}
+{elseif $ixirPageSlug == 'cloud-server'}
+ {include file="$template/components/server/cloud-server/cloud-server.tpl"}
+{elseif $ixirPageSlug == 'dedicated-server'}
+ {include file="$template/components/server/dedicated-server/dedicated-server.tpl"}
 {/if}

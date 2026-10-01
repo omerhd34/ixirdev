@@ -1,0 +1,9 @@
+{include file="$template/components/server/cloud-server/hero.tpl"}
+{include file="$template/components/server/cloud-server/plans.tpl"}
+{include file="$template/components/server/cloud-server/plans2.tpl"}
+{include file="$template/components/server/cloud-server/cta.tpl"}
+{include file="$template/components/server/cloud-server/story.tpl"}
+{include file="$template/components/server/cloud-server/diff.tpl"}
+{include file="$template/components/server/cloud-server/usage.tpl"}
+{include file="$template/components/server/cloud-server/faq.tpl"}
+{include file="$template/components/server/cloud-server/scripts.tpl"}
