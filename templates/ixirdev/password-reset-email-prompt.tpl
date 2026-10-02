@@ -25,11 +25,7 @@
  <button type="submit" class="btn ixir-split-btn">
   Şifre Sıfırlama Bağlantısı Gönder
  </button>
- <div class="ixir-reset-switch-row">
-  <button type="button" class="ixir-split-switch-link" data-ixir-auth-goto="login">Giriş Yap'a dön</button>
-  <button type="button" class="ixir-split-switch-link ixir-auth-mobile-inline" data-ixir-auth-goto="register">Kayıt
-   Ol</button>
- </div>
+
 </form>
 <script>
  jQuery(function() {

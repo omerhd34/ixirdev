@@ -1285,17 +1285,6 @@ a.ixir-split-btn {
   text-align: center;
 }
 
-.ixir-reset-switch-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 8px 16px;
-  width: 100%;
-  margin-top: 14px;
-  text-align: center;
-}
-
 .ixir-auth-tabs,
 .ixir-auth-mobile-links,
 .ixir-auth-mobile-inline {
@@ -1491,8 +1480,7 @@ a.ixir-split-btn {
     display: inline;
   }
 
-  .ixir-auth-mobile-links .ixir-split-switch-link,
-  .ixir-reset-switch-row .ixir-split-switch-link {
+  .ixir-auth-mobile-links .ixir-split-switch-link {
     color: #396cdf;
     font-size: 14px;
     font-weight: 700;
