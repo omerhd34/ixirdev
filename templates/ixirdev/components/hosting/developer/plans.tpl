@@ -70,7 +70,7 @@
          aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
          class="ixir-wh-tip-box" role="tooltip">Başlangıç planında yalnızca 1 domain
          barındırabilirsiniz.</span></span></b></li>
-     <li><span>NVMe disk boyutu</span><b>1 GB<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
+     <li><span>NVMe disk boyutu(GB)</span><b>1<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="NVMe açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
          class="ixir-wh-tip-box" role="tooltip">Enterprise NVMe ile geleneksel depolama birimlerine göre 40 kat daha
          fazla hız, daha fazla I/O sağlıyoruz.</span></span></b></li>
@@ -83,8 +83,10 @@
          performans.</span></span></b></li>
      <li><span>Process Limiti</span><b>200<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="İşlemci açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-         class="ixir-wh-tip-box" role="tooltip">Hesabınızın aynı anda çalıştırabileceği maksimum işlem sayısıdır. Daha
-         fazla eş zamanlı istek, worker ve arka plan görevi çalıştırmanıza olanak tanır.</span></span></b></li>
+         class="ixir-wh-tip-box" role="tooltip">Hesabınızın aynı anda çalıştırabileceği
+         maksimum işlem sayısıdır. Daha
+         fazla eş zamanlı istek, worker ve arka plan görevi çalıştırmanıza olanak
+         tanır.</span></span></b></li>
      <li><span>RAM boyutu(MB)</span><b>512</b></li>
     </ul>
     <a class="ixir-wh-more" href="#ixir-wh-compare">Diğer Özellikleri Gör <i class="fas fa-chevron-down"
@@ -141,14 +143,16 @@
     <ul class="ixir-wh-specs">
      <li><span>Web sitesi adeti</span><b>3<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-         class="ixir-wh-tip-box" role="tooltip">3 adet web sitesi, hosting planınızda ana domain ile birlikte toplamda
+         class="ixir-wh-tip-box" role="tooltip">3 adet web sitesi, hosting planınızda ana
+         domain ile birlikte toplamda
          3
          adet domain barındırabilmenizi sağlar.</span></span></b></li>
      <li><span>NVMe disk boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="NVMe açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
          class="ixir-wh-tip-box" role="tooltip">Enterprise NVMe ile geleneksel
          depolama birimlerine göre 40 kat daha
-         fazla hız, daha fazla I/O sağlıyoruz. Hosting planınızda limitlendirilmemiş depolama alanı sunuyoruz. Ancak
+         fazla hız, daha fazla I/O sağlıyoruz. Hosting planınızda limitlendirilmemiş depolama
+         alanı sunuyoruz. Ancak
          adil kullanım politikaları geçerlidir.</span></span></b></li>
      <li><span>Trafik boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="Trafik açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -156,8 +160,10 @@
          Ancak adil kullanım politikaları geçerlidir.</span></span></b></li>
      <li><span>E-posta adeti</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="E-posta açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-         class="ixir-wh-tip-box" role="tooltip">Limitsiz e-posta, hosting planınızda limitlendirilmemiş posta kutusu
-         sayısını ifade eder. Ancak adil kullanım politikaları geçerlidir.</span></span></b></li>
+         class="ixir-wh-tip-box" role="tooltip">Limitsiz e-posta, hosting planınızda
+         limitlendirilmemiş posta kutusu
+         sayısını ifade eder. Ancak adil kullanım politikaları geçerlidir.</span></span></b>
+     </li>
      <li><span>İşlemci</span><b>1 Core Intel Gold CPU<span class="ixir-wh-tip"><button type="button"
          class="ixir-wh-tip-btn" aria-label="İşlemci açıklaması"><i class="fas fa-info-circle"
           aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">En yeni nesil Intel Xeon Gold
@@ -165,8 +171,10 @@
          performans.</span></span></b></li>
      <li><span>Process Limiti</span><b>250<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="İşlemci açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-         class="ixir-wh-tip-box" role="tooltip">Hesabınızın aynı anda çalıştırabileceği maksimum işlem sayısıdır. Daha
-         fazla eş zamanlı istek, worker ve arka plan görevi çalıştırmanıza olanak tanır.</span></span></b></li>
+         class="ixir-wh-tip-box" role="tooltip">Hesabınızın aynı anda çalıştırabileceği
+         maksimum işlem sayısıdır. Daha
+         fazla eş zamanlı istek, worker ve arka plan görevi çalıştırmanıza olanak
+         tanır.</span></span></b></li>
      <li><span>RAM boyutu(MB)</span><b>1024</b></li>
     </ul>
     <a class="ixir-wh-more" href="#ixir-wh-compare">Diğer Özellikleri Gör <i class="fas fa-chevron-down"
@@ -224,13 +232,15 @@
     <ul class="ixir-wh-specs">
      <li><span>Web sitesi adeti</span><b>10<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-         class="ixir-wh-tip-box" role="tooltip">10 adet web sitesi, hosting planınızda ana domain ile birlikte toplamda
+         class="ixir-wh-tip-box" role="tooltip">10 adet web sitesi, hosting planınızda ana
+         domain ile birlikte toplamda
          10 adet alt domain barındırabilmenizi sağlar.</span></span></b></li>
      <li><span>NVMe disk boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="NVMe açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
          class="ixir-wh-tip-box" role="tooltip">Enterprise NVMe ile geleneksel
          depolama birimlerine göre 40 kat daha
-         fazla hız, daha fazla I/O sağlıyoruz. Hosting planınızda limitlendirilmemiş depolama alanı sunuyoruz. Ancak
+         fazla hız, daha fazla I/O sağlıyoruz. Hosting planınızda limitlendirilmemiş depolama
+         alanı sunuyoruz. Ancak
          adil kullanım politikaları geçerlidir.</span></span></b></li>
      <li><span>Trafik boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="Trafik açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -238,8 +248,10 @@
          Ancak adil kullanım politikaları geçerlidir.</span></span></b></li>
      <li><span>E-posta adeti</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="E-posta açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-         class="ixir-wh-tip-box" role="tooltip">Limitsiz e-posta, hosting planınızda limitlendirilmemiş posta kutusu
-         sayısını ifade eder. Ancak adil kullanım politikaları geçerlidir.</span></span></b></li>
+         class="ixir-wh-tip-box" role="tooltip">Limitsiz e-posta, hosting planınızda
+         limitlendirilmemiş posta kutusu
+         sayısını ifade eder. Ancak adil kullanım politikaları geçerlidir.</span></span></b>
+     </li>
      <li><span>İşlemci</span><b>2 Core Intel Gold CPU<span class="ixir-wh-tip"><button type="button"
          class="ixir-wh-tip-btn" aria-label="İşlemci açıklaması"><i class="fas fa-info-circle"
           aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">En yeni nesil Intel Xeon Gold
@@ -247,8 +259,10 @@
          performans.</span></span></b></li>
      <li><span>Process Limiti</span><b>300<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="İşlemci açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-         class="ixir-wh-tip-box" role="tooltip">Hesabınızın aynı anda çalıştırabileceği maksimum işlem sayısıdır. Daha
-         fazla eş zamanlı istek, worker ve arka plan görevi çalıştırmanıza olanak tanır.</span></span></b></li>
+         class="ixir-wh-tip-box" role="tooltip">Hesabınızın aynı anda çalıştırabileceği
+         maksimum işlem sayısıdır. Daha
+         fazla eş zamanlı istek, worker ve arka plan görevi çalıştırmanıza olanak
+         tanır.</span></span></b></li>
      <li><span>RAM boyutu(MB)</span><b>2048</b></li>
     </ul>
     <a class="ixir-wh-more" href="#ixir-wh-compare">Diğer Özellikleri Gör <i class="fas fa-chevron-down"
@@ -307,13 +321,15 @@
          aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
          class="ixir-wh-tip-box" role="tooltip">Limitsiz web sitesi, hosting
          planınızda limitlendirilmemiş
-         barındırabileceğiniz alt domain sayısını ifade eder. Ancak adil kullanım politikaları
+         barındırabileceğiniz alt domain sayısını ifade eder. Ancak adil kullanım
+         politikaları
          geçerlidir.</span></span></b></li>
      <li><span>NVMe disk boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="NVMe açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
          class="ixir-wh-tip-box" role="tooltip">Enterprise NVMe ile geleneksel
          depolama birimlerine göre 40 kat daha
-         fazla hız, daha fazla I/O sağlıyoruz. Hosting planınızda limitlendirilmemiş depolama alanı sunuyoruz. Ancak
+         fazla hız, daha fazla I/O sağlıyoruz. Hosting planınızda limitlendirilmemiş depolama
+         alanı sunuyoruz. Ancak
          adil kullanım politikaları geçerlidir.</span></span></b></li>
      <li><span>Trafik boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="Trafik açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -321,8 +337,10 @@
          Ancak adil kullanım politikaları geçerlidir.</span></span></b></li>
      <li><span>E-posta adeti</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="E-posta açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-         class="ixir-wh-tip-box" role="tooltip">Limitsiz e-posta, hosting planınızda limitlendirilmemiş posta kutusu
-         sayısını ifade eder. Ancak adil kullanım politikaları geçerlidir.</span></span></b></li>
+         class="ixir-wh-tip-box" role="tooltip">Limitsiz e-posta, hosting planınızda
+         limitlendirilmemiş posta kutusu
+         sayısını ifade eder. Ancak adil kullanım politikaları geçerlidir.</span></span></b>
+     </li>
      <li><span>İşlemci</span><b>2 Core Intel Gold CPU<span class="ixir-wh-tip"><button type="button"
          class="ixir-wh-tip-btn" aria-label="İşlemci açıklaması"><i class="fas fa-info-circle"
           aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">En yeni nesil Intel Xeon Gold
@@ -330,8 +348,10 @@
          performans.</span></span></b></li>
      <li><span>Process Limiti</span><b>350<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="İşlemci açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-         class="ixir-wh-tip-box" role="tooltip">Hesabınızın aynı anda çalıştırabileceği maksimum işlem sayısıdır. Daha
-         fazla eş zamanlı istek, worker ve arka plan görevi çalıştırmanıza olanak tanır.</span></span></b></li>
+         class="ixir-wh-tip-box" role="tooltip">Hesabınızın aynı anda çalıştırabileceği
+         maksimum işlem sayısıdır. Daha
+         fazla eş zamanlı istek, worker ve arka plan görevi çalıştırmanıza olanak
+         tanır.</span></span></b></li>
      <li><span>RAM boyutu(MB)</span><b>4096</b></li>
     </ul>
     <a class="ixir-wh-more" href="#ixir-wh-compare">Diğer Özellikleri Gör <i class="fas fa-chevron-down"
@@ -347,16 +367,19 @@
     <li><i class="fab fa-node-js" aria-hidden="true"></i>Node.Js / Nest.js vb.<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">v16,v18,v20,v22,v24
-       sürümleri desteklenmektedir. cPanel Node.js Selector aracıyla her uygulama için bağımsız versiyon
+       sürümleri desteklenmektedir. cPanel Node.js Selector aracıyla her uygulama için bağımsız
+       versiyon
        seçebilirsiniz.</span></span></li>
     <li><i class="fab fa-python" aria-hidden="true"></i>Python / Django vb.<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">v3.9 · v3.10 · v3.11 · v3.12 ·
-       v3.13 sürümleri desteklenmektedir. cPanel Python Selector aracıyla her uygulama için bağımsız versiyon
+       v3.13 sürümleri desteklenmektedir. cPanel Python Selector aracıyla her uygulama için
+       bağımsız versiyon
        seçebilirsiniz.</span></span></li>
     <li><i class="fas fa-rocket" aria-hidden="true"></i>Litespeed Web Server<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
-        aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Geleneksel Apache web server'una
+        aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Geleneksel
+       Apache web server'una
        göre 10 kat daha fazla performans sağlar.
       </span></span></li>
     <li><i class="fas fa-bolt" aria-hidden="true"></i>Litespeed Cache<span class="ixir-wh-tip"><button type="button"
@@ -366,8 +389,10 @@
       </span></span></li>
     <li><i class="fas fa-history" aria-hidden="true"></i>JetBackup Yedekleme<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
-        aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Adil kullanım politikasına uygun
-       hesabınız haftalık olarak ücretsiz yedeklenir ve ücretsiz olarak panelinizden isterseniz tüm yedek, isterseniz
+        aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Adil
+       kullanım politikasına uygun
+       hesabınız haftalık olarak ücretsiz yedeklenir ve ücretsiz olarak panelinizden isterseniz tüm
+       yedek, isterseniz
        dosya, mail, veritabanı bazlı yedeklerden geri dönebilirsiniz.</span></span></li>
     <li><i class="fas fa-lock" aria-hidden="true"></i>Ücretsiz SSL<span class="ixir-wh-tip"><button type="button"
        class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"

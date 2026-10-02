@@ -70,7 +70,7 @@
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
           class="ixir-wh-tip-box" role="tooltip">Başlangıç planında yalnızca 1 domain
           barındırabilirsiniz.</span></span></b></li>
-      <li><span>NVMe disk boyutu</span><b>1 GB<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
+      <li><span>NVMe disk boyutu(GB)</span><b>1<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="NVMe açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
           class="ixir-wh-tip-box" role="tooltip">Enterprise NVMe ile geleneksel depolama birimlerine göre 40 kat daha
           fazla hız, daha fazla I/O sağlıyoruz.</span></span></b></li>

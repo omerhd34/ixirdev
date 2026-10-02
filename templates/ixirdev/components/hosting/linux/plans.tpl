@@ -70,7 +70,7 @@
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
           class="ixir-wh-tip-box" role="tooltip">Başlangıç planında yalnızca 1 domain
           barındırabilirsiniz.</span></span></b></li>
-      <li><span>NVMe disk boyutu</span><b>1 GB<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
+      <li><span>NVMe disk boyutu(GB)</span><b>1<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="NVMe açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
           class="ixir-wh-tip-box" role="tooltip">Enterprise NVMe ile geleneksel depolama birimlerine göre 40 kat daha
           fazla hız, daha fazla I/O sağlıyoruz.</span></span></b></li>
@@ -137,23 +137,28 @@
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>3<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-          class="ixir-wh-tip-box" role="tooltip">3 adet web sitesi, hosting planınızda ana domain ile birlikte toplamda
+          class="ixir-wh-tip-box" role="tooltip">3 adet web sitesi, hosting planınızda ana
+          domain ile birlikte toplamda
           3
           adet domain barındırabilmenizi sağlar.</span></span></b></li>
       <li><span>NVMe disk boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button"
           class="ixir-wh-tip-btn" aria-label="NVMe açıklaması"><i class="fas fa-info-circle"
            aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Enterprise NVMe ile geleneksel
           depolama birimlerine göre 40 kat daha
-          fazla hız, daha fazla I/O sağlıyoruz. Hosting planınızda limitlendirilmemiş depolama alanı sunuyoruz. Ancak
+          fazla hız, daha fazla I/O sağlıyoruz. Hosting planınızda limitlendirilmemiş
+          depolama alanı sunuyoruz. Ancak
           adil kullanım politikaları geçerlidir.</span></span></b></li>
       <li><span>Trafik boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Trafik açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-          class="ixir-wh-tip-box" role="tooltip">Limitsiz trafik, hosting planınızda limitlendirilmemiş trafik sağlar.
+          class="ixir-wh-tip-box" role="tooltip">Limitsiz trafik, hosting planınızda
+          limitlendirilmemiş trafik sağlar.
           Ancak adil kullanım politikaları geçerlidir.</span></span></b></li>
       <li><span>E-posta adeti</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="E-posta açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-          class="ixir-wh-tip-box" role="tooltip">Limitsiz e-posta, hosting planınızda limitlendirilmemiş posta kutusu
-          sayısını ifade eder. Ancak adil kullanım politikaları geçerlidir.</span></span></b></li>
+          class="ixir-wh-tip-box" role="tooltip">Limitsiz e-posta, hosting planınızda
+          limitlendirilmemiş posta kutusu
+          sayısını ifade eder. Ancak adil kullanım politikaları geçerlidir.</span></span></b>
+      </li>
       <li><span>İşlemci</span><b>1 Core Intel Gold CPU<span class="ixir-wh-tip"><button type="button"
           class="ixir-wh-tip-btn" aria-label="İşlemci açıklaması"><i class="fas fa-info-circle"
            aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">En yeni nesil Intel Xeon Gold
@@ -217,22 +222,27 @@
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>10<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-          class="ixir-wh-tip-box" role="tooltip">10 adet web sitesi, hosting planınızda ana domain ile birlikte toplamda
+          class="ixir-wh-tip-box" role="tooltip">10 adet web sitesi, hosting planınızda ana
+          domain ile birlikte toplamda
           10 adet alt domain barındırabilmenizi sağlar.</span></span></b></li>
       <li><span>NVMe disk boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button"
           class="ixir-wh-tip-btn" aria-label="NVMe açıklaması"><i class="fas fa-info-circle"
            aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Enterprise NVMe ile geleneksel
           depolama birimlerine göre 40 kat daha
-          fazla hız, daha fazla I/O sağlıyoruz. Hosting planınızda limitlendirilmemiş depolama alanı sunuyoruz. Ancak
+          fazla hız, daha fazla I/O sağlıyoruz. Hosting planınızda limitlendirilmemiş
+          depolama alanı sunuyoruz. Ancak
           adil kullanım politikaları geçerlidir.</span></span></b></li>
       <li><span>Trafik boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Trafik açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-          class="ixir-wh-tip-box" role="tooltip">Limitsiz trafik, hosting planınızda limitlendirilmemiş trafik sağlar.
+          class="ixir-wh-tip-box" role="tooltip">Limitsiz trafik, hosting planınızda
+          limitlendirilmemiş trafik sağlar.
           Ancak adil kullanım politikaları geçerlidir.</span></span></b></li>
       <li><span>E-posta adeti</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="E-posta açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-          class="ixir-wh-tip-box" role="tooltip">Limitsiz e-posta, hosting planınızda limitlendirilmemiş posta kutusu
-          sayısını ifade eder. Ancak adil kullanım politikaları geçerlidir.</span></span></b></li>
+          class="ixir-wh-tip-box" role="tooltip">Limitsiz e-posta, hosting planınızda
+          limitlendirilmemiş posta kutusu
+          sayısını ifade eder. Ancak adil kullanım politikaları geçerlidir.</span></span></b>
+      </li>
       <li><span>İşlemci</span><b>2 Core Intel Gold CPU<span class="ixir-wh-tip"><button type="button"
           class="ixir-wh-tip-btn" aria-label="İşlemci açıklaması"><i class="fas fa-info-circle"
            aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">En yeni nesil Intel Xeon Gold
@@ -296,22 +306,27 @@
           class="ixir-wh-tip-btn" aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle"
            aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Limitsiz web sitesi, hosting
           planınızda limitlendirilmemiş
-          barındırabileceğiniz alt domain sayısını ifade eder. Ancak adil kullanım politikaları
+          barındırabileceğiniz alt domain sayısını ifade eder. Ancak adil kullanım
+          politikaları
           geçerlidir.</span></span></b></li>
       <li><span>NVMe disk boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button"
           class="ixir-wh-tip-btn" aria-label="NVMe açıklaması"><i class="fas fa-info-circle"
            aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Enterprise NVMe ile geleneksel
           depolama birimlerine göre 40 kat daha
-          fazla hız, daha fazla I/O sağlıyoruz. Hosting planınızda limitlendirilmemiş depolama alanı sunuyoruz. Ancak
+          fazla hız, daha fazla I/O sağlıyoruz. Hosting planınızda limitlendirilmemiş
+          depolama alanı sunuyoruz. Ancak
           adil kullanım politikaları geçerlidir.</span></span></b></li>
       <li><span>Trafik boyutu</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Trafik açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-          class="ixir-wh-tip-box" role="tooltip">Limitsiz trafik, hosting planınızda limitlendirilmemiş trafik sağlar.
+          class="ixir-wh-tip-box" role="tooltip">Limitsiz trafik, hosting planınızda
+          limitlendirilmemiş trafik sağlar.
           Ancak adil kullanım politikaları geçerlidir.</span></span></b></li>
       <li><span>E-posta adeti</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="E-posta açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
-          class="ixir-wh-tip-box" role="tooltip">Limitsiz e-posta, hosting planınızda limitlendirilmemiş posta kutusu
-          sayısını ifade eder. Ancak adil kullanım politikaları geçerlidir.</span></span></b></li>
+          class="ixir-wh-tip-box" role="tooltip">Limitsiz e-posta, hosting planınızda
+          limitlendirilmemiş posta kutusu
+          sayısını ifade eder. Ancak adil kullanım politikaları geçerlidir.</span></span></b>
+      </li>
       <li><span>İşlemci</span><b>2 Core Intel Gold CPU<span class="ixir-wh-tip"><button type="button"
           class="ixir-wh-tip-btn" aria-label="İşlemci açıklaması"><i class="fas fa-info-circle"
            aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">En yeni nesil Intel Xeon Gold
@@ -331,17 +346,21 @@
     <ul class="ixir-wh-shared">
      <li><i class="fas fa-globe" aria-hidden="true"></i>Ücretsiz COM.TR domain<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
-         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Yalnızca yeni siparişte ve 1 yıl
-        geçerlidir, yeni sipariş verirken sepete ekleyebilirsiniz, sonradan bu hak kullanılamaz.</span></span></li>
+         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Yalnızca
+        yeni siparişte ve 1 yıl
+        geçerlidir, yeni sipariş verirken sepete ekleyebilirsiniz, sonradan bu hak
+        kullanılamaz.</span></span></li>
      <li><i class="fas fa-rocket" aria-hidden="true"></i>LiteSpeed Web Server<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="LiteSpeed açıklaması"><i class="fas fa-info-circle"
-         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Geleneksel Apache web server'ına
+         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Geleneksel
+        Apache web server'ına
         göre 10 kat daha fazla performans sağlar.</span></span></li>
      <li><i class="fas fa-bolt" aria-hidden="true"></i>LiteSpeed Cache<span class="ixir-wh-tip"><button type="button"
         class="ixir-wh-tip-btn" aria-label="LiteSpeed Cache açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">LiteSpeed Cache önbellekleme ile
         web
-        sitenizin performansını artırabilirsiniz, özellikle WordPress siteler ile uyumludur.</span></span></li>
+        sitenizin performansını artırabilirsiniz, özellikle WordPress siteler ile
+        uyumludur.</span></span></li>
      <li><i class="fas fa-search" aria-hidden="true"></i>PHP X-RAY<span class="ixir-wh-tip"><button type="button"
         class="ixir-wh-tip-btn" aria-label="PHP X-RAY açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">PHP X-Ray ile web sitenizin hız ve
@@ -350,7 +369,8 @@
         type="button" class="ixir-wh-tip-btn" aria-label="Accelerate WP açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">AccelerateWP, LiteSpeed Cache
         yerine
-        kullanabileceğiniz WordPress hızlandırma platformudur, sayfa yükleme sürelerini optimize eder.</span></span>
+        kullanabileceğiniz WordPress hızlandırma platformudur, sayfa yükleme sürelerini optimize
+        eder.</span></span>
      </li>
      <li><i class="fas fa-shield-alt" aria-hidden="true"></i>Imunify360 WAF<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Imunify360 açıklaması"><i class="fas fa-info-circle"
@@ -358,8 +378,10 @@
         DDoS saldırılarından koruyan gelişmiş bir çözümdür.</span></span></li>
      <li><i class="fas fa-history" aria-hidden="true"></i>JetBackup yedekleme<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="JetBackup açıklaması"><i class="fas fa-info-circle"
-         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Adil kullanım politikasına uygun
-        hesabınız haftalık olarak ücretsiz yedeklenir. Panelinizden isterseniz tüm yedeği, isterseniz dosya, mail veya
+         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Adil
+        kullanım politikasına uygun
+        hesabınız haftalık olarak ücretsiz yedeklenir. Panelinizden isterseniz tüm yedeği,
+        isterseniz dosya, mail veya
         veritabanı bazlı yedeklerden geri dönebilirsiniz.</span></span></li>
      <li><i class="fas fa-lock" aria-hidden="true"></i>Ücretsiz SSL<span class="ixir-wh-tip"><button type="button"
         class="ixir-wh-tip-btn" aria-label="SSL açıklaması"><i class="fas fa-info-circle"
