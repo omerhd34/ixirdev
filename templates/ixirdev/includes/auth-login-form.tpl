@@ -15,8 +15,13 @@
 
  <div class="ixir-field">
   <label for="inputPassword">Parola:</label>
-  <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Parola"
-   autocomplete="current-password" data-ixir-validate="1" data-ixir-required="Parola gerekli.">
+  <div class="ixir-password-group">
+   <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Parola"
+    autocomplete="current-password" data-ixir-validate="1" data-ixir-required="Parola gerekli.">
+   <button type="button" class="ixir-toggle-password" tabindex="-1">
+    <i class="far fa-eye" aria-hidden="true"></i>
+   </button>
+  </div>
  </div>
 
  <div class="ixir-split-meta">
@@ -122,6 +127,20 @@
     return false;
    }
    window.ixirCaptchaMessage($current.find(".ixir-captcha-wrap")[0], "");
+  });
+
+  jQuery(document).off("click", ".ixir-toggle-password").on("click", ".ixir-toggle-password", function(e) {
+   e.preventDefault();
+   var $btn = jQuery(this);
+   var input = $btn.siblings("input")[0];
+   var $icon = $btn.find("i");
+   if (input && input.type === "password") {
+    input.type = "text";
+    $icon.removeClass("fa-eye").addClass("fa-eye-slash");
+   } else if (input) {
+    input.type = "password";
+    $icon.removeClass("fa-eye-slash").addClass("fa-eye");
+   }
   });
  });
 </script>

@@ -349,6 +349,20 @@
     }
    });
   });
+
+  jQuery(document).off("click", ".ixir-toggle-password").on("click", ".ixir-toggle-password", function(e) {
+   e.preventDefault();
+   var $btn = jQuery(this);
+   var input = $btn.siblings("input")[0];
+   var $icon = $btn.find("i");
+   if (input && input.type === "password") {
+    input.type = "text";
+    $icon.removeClass("fa-eye").addClass("fa-eye-slash");
+   } else if (input) {
+    input.type = "password";
+    $icon.removeClass("fa-eye-slash").addClass("fa-eye");
+   }
+  });
  });
 </script>
 
@@ -431,8 +445,13 @@
   <div class="ixir-field-row ixir-pw-row">
    <div class="ixir-field ixir-pw-field">
     <label for="inputNewPassword1">Şifre:</label>
-    <input type="password" name="password" id="inputNewPassword1" class="form-control" placeholder="Şifre"
-     autocomplete="new-password" minlength="6" {if $remote_auth_prelinked} value="{$password}" {/if}>
+    <div class="ixir-password-group">
+     <input type="password" name="password" id="inputNewPassword1" class="form-control" placeholder="Şifre"
+      autocomplete="new-password" minlength="6" {if $remote_auth_prelinked} value="{$password}" {/if}>
+     <button type="button" class="ixir-toggle-password" tabindex="-1">
+      <i class="far fa-eye" aria-hidden="true"></i>
+     </button>
+    </div>
     <div class="ixir-pw-meter" id="ixirPwHints" data-strength="empty" aria-live="polite">
      <div class="ixir-pw-meter-top">
       <span class="ixir-pw-strength-label" id="ixirPwStrengthLabel"></span>
@@ -444,8 +463,13 @@
    </div>
    <div class="ixir-field ixir-pw-confirm-field">
     <label for="inputNewPassword2">Şifre Tekrarı:</label>
-    <input type="password" name="password2" id="inputNewPassword2" class="form-control" placeholder="Şifre Tekrarı"
-     autocomplete="new-password" minlength="6">
+    <div class="ixir-password-group">
+     <input type="password" name="password2" id="inputNewPassword2" class="form-control" placeholder="Şifre Tekrarı"
+      autocomplete="new-password" minlength="6">
+     <button type="button" class="ixir-toggle-password" tabindex="-1">
+      <i class="far fa-eye" aria-hidden="true"></i>
+     </button>
+    </div>
    </div>
   </div>
 
