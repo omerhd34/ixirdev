@@ -41,9 +41,10 @@
    var token = jQuery.trim($form.find("[name='g-recaptcha-response']").val() || "");
    if (!token) {
     e.preventDefault();
-    $wrap.addClass("is-invalid");
+    window.ixirCaptchaMessage($wrap[0], "Devam etmek için lütfen \"Ben robot değilim\" kutusunu işaretleyin.");
     return false;
    }
+   window.ixirCaptchaMessage($wrap[0], "");
   });
  });
 </script>

@@ -246,11 +246,12 @@
     }
     if (!jQuery.trim(recaptchaToken || "")) {
      e.preventDefault();
-     $form.find(".ixir-captcha-wrap").addClass("is-invalid");
+     window.ixirCaptchaMessage($form.find(".ixir-captcha-wrap")[0],
+      "Devam etmek için lütfen \"Ben robot değilim\" kutusunu işaretleyin.");
      return false;
     }
    }
-   $form.find(".ixir-captcha-wrap").removeClass("is-invalid");
+   window.ixirCaptchaMessage($form.find(".ixir-captcha-wrap")[0], "");
 
    $box.removeClass("is-invalid is-warn");
   });
@@ -521,7 +522,8 @@
      <input type="checkbox" name="accepttos" class="accepttos" data-ixir-validate="1"
       data-ixir-required="Sözleşmeyi onaylamanız gerekli.">
      <span><a href="{if $tosurl}{$tosurl}{else}{$WEB_ROOT}/hizmetsozlesmesi{/if}" target="_blank" rel="noopener">Hizmet
-       Sözleşmesi</a>'ni ve <a href="{$WEB_ROOT}/kvkkaydinlatmametni" target="_blank" rel="noopener">KVKK Metni</a>'ni
+       Sözleşmesi</a>'ni ve <a href="{$WEB_ROOT}/kvkkaydinlatmametni" target="_blank" rel="noopener">KVKK
+     Metni</a>'ni
       okudum, onaylıyorum.</span>
     </label>
    {else}
@@ -529,7 +531,8 @@
      <input type="checkbox" name="ixir_accept_terms" value="1" data-ixir-validate="1"
       data-ixir-required="Sözleşmeyi onaylamanız gerekli.">
      <span><a href="{$WEB_ROOT}/hizmetsozlesmesi" target="_blank" rel="noopener">Hizmet Sözleşmesi</a>'ni ve <a
-     href="{$WEB_ROOT}/kvkkaydinlatmametni" target="_blank" rel="noopener">KVKK Metni</a>'ni okudum, onaylıyorum.</span>
+     href="{$WEB_ROOT}/kvkkaydinlatmametni" target="_blank" rel="noopener">KVKK Metni</a>'ni okudum,
+      onaylıyorum.</span>
     </label>
    {/if}
    <label class="ixir-check">

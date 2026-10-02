@@ -55,7 +55,7 @@
   rel="stylesheet">
 {/if}
 {if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'logout' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim'}
- <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r65" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r67" rel="stylesheet">
 {/if}
 {if $templatefile == 'whois-sorgulama'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/domain/whois/whois.css?v={$versionHash}-r20" rel="stylesheet">
@@ -108,6 +108,45 @@
 <script src="{assetPath file='scripts.min.js'}?v={$versionHash}-r1"></script>
 {if $ixirLoadRecaptcha}
  <script>
+  window.ixirCaptchaMessage = function(wrap, text) {
+   if (!wrap) return;
+   var box = wrap.querySelector(".ixir-captcha-msg");
+   if (!box) return;
+   var label = box.querySelector(".ixir-captcha-msg-text");
+   if (text) {
+    label.textContent = text;
+    box.hidden = false;
+    wrap.classList.add("is-invalid");
+    wrap.classList.remove("is-shake");
+    void wrap.offsetWidth;
+    wrap.classList.add("is-shake");
+   } else {
+    box.hidden = true;
+    wrap.classList.remove("is-invalid", "is-shake");
+   }
+  };
+  window.ixirFitRecaptcha = function(box) {
+   if (!box) return;
+   var g = box.querySelector(".ixir-g-recaptcha");
+   var w = box.clientWidth;
+   if (!g || !w) return;
+   var MAX_SCALE = 1;
+   var scale = Math.min(w / 304, MAX_SCALE);
+   g.style.transformOrigin = "0 0";
+   g.style.transform = "scale(" + scale + ")";
+   box.style.height = Math.round(78 * scale) + "px";
+  };
+  window.ixirFitAllRecaptcha = function() {
+   document.querySelectorAll(".ixir-recaptcha-box").forEach(function(box) {
+    window.ixirFitRecaptcha(box);
+    if (box.getAttribute("data-fit") || typeof ResizeObserver === "undefined") return;
+    box.setAttribute("data-fit", "1");
+    new ResizeObserver(function() {
+     window.ixirFitRecaptcha(box);
+    }).observe(box);
+   });
+  };
+  window.addEventListener("resize", window.ixirFitAllRecaptcha);
   window.ixirMarkRecaptchaBroken = function(wrap) {
    if (!wrap || wrap.classList.contains("is-broken")) return;
    wrap.classList.add("is-broken");
@@ -143,15 +182,27 @@
     if (!key) return;
     if (el.offsetParent === null) return;
     var wrap = el.closest(".ixir-captcha-wrap");
+    var id;
     try {
-     var id = grecaptcha.render(el, {
+     id = grecaptcha.render(el, {
       sitekey: key,
       theme: "light",
+      callback: function() {
+       window.ixirCaptchaMessage(wrap, "");
+      },
+      "expired-callback": function() {
+       try {
+        grecaptcha.reset(id);
+       } catch (e) {}
+       window.ixirCaptchaMessage(wrap,
+        "Doğrulamanın süresi doldu. Lütfen \"Ben robot değilim\" kutusunu tekrar işaretleyin.");
+      },
       "error-callback": function() {
        window.ixirMarkRecaptchaBroken(wrap);
       }
      });
      el.setAttribute("data-widget-id", String(id));
+     window.ixirFitAllRecaptcha();
     } catch (err) {
      window.ixirMarkRecaptchaBroken(wrap);
     }

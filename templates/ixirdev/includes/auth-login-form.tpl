@@ -117,10 +117,11 @@
    }
    if (!recaptchaOk($current)) {
     e.preventDefault();
-    $current.find(".ixir-captcha-wrap").addClass("is-invalid");
+    window.ixirCaptchaMessage($current.find(".ixir-captcha-wrap")[0],
+     "Devam etmek için lütfen \"Ben robot değilim\" kutusunu işaretleyin.");
     return false;
    }
-   $current.find(".ixir-captcha-wrap").removeClass("is-invalid");
+   window.ixirCaptchaMessage($current.find(".ixir-captcha-wrap")[0], "");
   });
  });
 </script>
