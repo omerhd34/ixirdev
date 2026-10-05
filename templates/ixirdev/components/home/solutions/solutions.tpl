@@ -1,4 +1,4 @@
-<section class="ixir-solutions ixir-slide ixir-slide--left is-slide-on" id="ixir-solutions"
+<section class="ixir-solutions ixir-slide ixir-slide--right is-slide-on" id="ixir-solutions"
  aria-label="Web hosting ve altyapı çözümleri">
  <div class="container">
   <header class="ixir-solutions-head">
@@ -12,7 +12,8 @@
      <h3>Linux Hosting &amp; WordPress Hosting</h3>
     </div>
     <p>Litespeed Web Server, NVMe SSD diskler ve Imunify360 WAF güvenliğiyle donatılmış hosting altyapımız; kişisel
-     bloglardan kurumsal sitelere kadar her ölçekte hız ve güvenlik sunar. AccelerateWP ve Litespeed Cache desteğiyle
+     bloglardan kurumsal sitelere kadar her ölçekte hız ve güvenlik sunar. AccelerateWP ve Litespeed Cache
+     desteğiyle
      WordPress siteniz 10 kata kadar daha hızlı çalışır.</p>
     <div class="ixir-solutions-links">
      <a href="{$WEB_ROOT}/linux-hosting">Linux Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
@@ -38,7 +39,8 @@
      <h3>Kurumsal E-posta &amp; AntiSpam</h3>
     </div>
     <p>KVKK uyumlu server'larda barındırılan kurumsal e-posta çözümlerimiz; makine öğrenimi destekli %99.8 spam
-     engelleme ve antivirüs koruması sunar. Tüm cihazlardan erişim, güvenli e-posta yönetimi ve giden mail saygınlığı
+     engelleme ve antivirüs koruması sunar. Tüm cihazlardan erişim, güvenli e-posta yönetimi ve giden mail
+     saygınlığı
      hizmetleriyle iş iletişiminizi kesintisiz sürdürün.</p>
     <div class="ixir-solutions-links">
      <a href="{$WEB_ROOT}/kurumsal-mail-hosting">Kurumsal E-posta <i class="fas fa-arrow-right"
@@ -63,8 +65,10 @@
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-lock"></i></span>
      <h3>SSL Sertifikası &amp; Web Güvenliği</h3>
     </div>
-    <p>Standart, Wildcard ve EV SSL sertifika seçenekleriyle web sitenizi ve ziyaretçilerinizi koruyun. Tarayıcı adres
-     çubuğundaki yeşil kilit güvencesiyle ziyaretçi güvenini artırın; PCI DSS tarama hizmetiyle e-ticaret altyapınızı
+    <p>Standart, Wildcard ve EV SSL sertifika seçenekleriyle web sitenizi ve ziyaretçilerinizi koruyun. Tarayıcı
+     adres
+     çubuğundaki yeşil kilit güvencesiyle ziyaretçi güvenini artırın; PCI DSS tarama hizmetiyle e-ticaret
+     altyapınızı
      uyumlu ve güvende tutun.</p>
     <div class="ixir-solutions-links">
      <a href="{$WEB_ROOT}/ssl-sertifikalari">SSL Sertifikaları <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
@@ -75,7 +79,8 @@
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-code"></i></span>
      <h3>Developer Hosting</h3>
     </div>
-    <p>Laravel, Node.js, Python, Ruby ve Git desteğiyle geliştiricilere özel hosting altyapısı. SSH terminal erişimi,
+    <p>Laravel, Node.js, Python, Ruby ve Git desteğiyle geliştiricilere özel hosting altyapısı. SSH terminal
+     erişimi,
      çoklu PHP sürümü ve cPanel kontrol paneli ile hem geliştirme hem de yönetim süreçlerinizi tek platformda
      birleştirin; üretkenliğinizi en üst düzeye taşıyın.</p>
     <div class="ixir-solutions-links">
