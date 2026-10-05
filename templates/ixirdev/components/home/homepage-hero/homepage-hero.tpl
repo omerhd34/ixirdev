@@ -9,14 +9,6 @@
     <h1>İXİRHOST ile Güvenilir Hosting</h1>
     <p>Hızlı altyapı, 7/24 destek ve uygun fiyatlarla sitenizi hemen yayına alın.</p>
    </div>
-   <div class="ixir-hero-actions">
-    <a href="#ixir-packages" class="ixir-hero-btn ixir-hero-btn--primary">
-     Hosting Paketlerini İncele <i class="fas fa-arrow-down" aria-hidden="true"></i>
-    </a>
-    <a href="{$WEB_ROOT}/kurumsal-mail-hosting" class="ixir-hero-btn ixir-hero-btn--secondary">
-     E-posta Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i>
-    </a>
-   </div>
    <p class="ixir-hero-label" aria-hidden="true">Avantajlar</p>
    <ul class="ixir-hero-points" aria-label="Avantajlar">
     <li>
@@ -81,7 +73,8 @@
      </li>
      <li>
       <a href="{$WEB_ROOT}/wordpress-hosting" title="WordPress Hosting">
-       <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress Hosting</span>
+       <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress
+        Hosting</span>
       </a>
      </li>
      <li>
@@ -145,7 +138,8 @@
     }
 
     function apply() {
-     var offsetY = Math.max(0, Math.round(hero.getBoundingClientRect().top + (window.pageYOffset || window.scrollY ||
+     var offsetY = Math.max(0, Math.round(hero.getBoundingClientRect().top + (window
+      .pageYOffset || window.scrollY ||
       0)));
      hero.style.setProperty('--ixir-hero-offset', offsetY + 'px');
     }
@@ -176,7 +170,8 @@
        continue;
       }
       var style = window.getComputedStyle(el);
-      if (style.display === 'none' || style.visibility === 'hidden' || style.position !== 'fixed') {
+      if (style.display === 'none' || style.visibility === 'hidden' || style.position !==
+       'fixed') {
        continue;
       }
       var rect = el.getBoundingClientRect();
@@ -216,7 +211,8 @@
      if (target.focus) {
       target.focus({ preventScroll: true });
      }
-     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+     var reduce = window.matchMedia && window.matchMedia(
+      '(prefers-reduced-motion: reduce)').matches;
      var start = window.pageYOffset || document.documentElement.scrollTop || 0;
      var dest = destination();
      if (window.history && window.history.pushState) {
@@ -265,7 +261,8 @@
     var lastX = 0;
     var velocity = 0;
     var resumeTimer = null;
-    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)')
+     .matches;
     var speed = reduceMotion ? 0 : 0.45;
 
     function build() {
