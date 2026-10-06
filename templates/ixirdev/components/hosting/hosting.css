@@ -2425,3 +2425,51 @@
   .ixir-wh-faq-item:nth-child(even):not(.is-in) {
   transform: translate3d(112px, 0, 0);
 }
+
+.ixir-wh-shared--click > li {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ixir-wh-shared.ixir-wh-shared--click li:hover .ixir-wh-tip .ixir-wh-tip-box,
+.ixir-wh-shared.ixir-wh-shared--click
+  li:focus-within
+  .ixir-wh-tip
+  .ixir-wh-tip-box {
+  max-height: 0;
+  margin-top: 0;
+  padding: 0 12px;
+  opacity: 0;
+  transition:
+    max-height 0.3s ease,
+    margin-top 0.3s ease,
+    padding 0.3s ease,
+    opacity 0.2s ease;
+}
+
+.ixir-wh-shared.ixir-wh-shared--click li.is-open .ixir-wh-tip .ixir-wh-tip-box {
+  max-height: 240px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  opacity: 1;
+  transition:
+    max-height 0.5s ease,
+    margin-top 0.4s ease,
+    padding 0.4s ease,
+    opacity 0.4s ease 0.05s;
+}
+
+.ixir-wh-shared.ixir-wh-shared--click li:focus-within .ixir-wh-tip-btn {
+  color: #9aa3b2;
+}
+
+.ixir-wh-shared.ixir-wh-shared--click li:hover .ixir-wh-tip-btn,
+.ixir-wh-shared.ixir-wh-shared--click li.is-open .ixir-wh-tip-btn {
+  color: #1a56c4;
+}
+
+.ixir-wh-shared--click > li.is-open {
+  border-color: #9fbaf0;
+  box-shadow: 0 10px 24px rgba(26, 86, 196, 0.1);
+}

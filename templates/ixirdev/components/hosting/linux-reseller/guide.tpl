@@ -466,5 +466,43 @@
     observer.observe(node);
    });
   })();
+  (function() {
+   var list = document.querySelector('.ixir-wh-shared--click');
+   if (!list) return;
+
+   function setOpen(li, open) {
+    var tipBtn = li.querySelector('.ixir-wh-tip-btn');
+    li.classList.toggle('is-open', open);
+    if (tipBtn) tipBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+   }
+
+   function closeAll(except) {
+    Array.prototype.forEach.call(list.querySelectorAll('li.is-open'), function(li) {
+     if (li !== except) setOpen(li, false);
+    });
+   }
+
+   Array.prototype.forEach.call(list.children, function(li) {
+    var tipBtn = li.querySelector('.ixir-wh-tip-btn');
+    if (tipBtn) tipBtn.setAttribute('aria-expanded', 'false');
+    li.addEventListener('click', function(event) {
+     event.stopPropagation();
+     if (event.target.closest && event.target.closest('.ixir-wh-tip-box')) return;
+     var open = !li.classList.contains('is-open');
+     closeAll(li);
+     setOpen(li, open);
+    });
+   });
+
+   list.addEventListener('ixir:collapse', function() {
+    closeAll(null);
+   });
+   document.addEventListener('click', function() {
+    closeAll(null);
+   });
+   document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') closeAll(null);
+   });
+  })();
  {/literal}
 </script>

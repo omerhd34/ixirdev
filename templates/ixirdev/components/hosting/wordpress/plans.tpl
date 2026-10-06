@@ -253,7 +253,7 @@
      <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
      <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
     </div>
-    <ul class="ixir-wh-shared">
+    <ul class="ixir-wh-shared ixir-wh-shared--click">
      <li><i class="fas fa-rocket" aria-hidden="true"></i>Litespeed Web Server<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Litespeed Web Server açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Geleneksel Apache web server'ına

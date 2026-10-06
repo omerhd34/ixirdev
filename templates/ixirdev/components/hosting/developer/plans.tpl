@@ -363,7 +363,7 @@
     <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
     <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
    </div>
-   <ul class="ixir-wh-shared">
+   <ul class="ixir-wh-shared ixir-wh-shared--click">
     <li><i class="fab fa-node-js" aria-hidden="true"></i>Node.Js / Nest.js vb.<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">v16,v18,v20,v22,v24
@@ -372,8 +372,8 @@
        seçebilirsiniz.</span></span></li>
     <li><i class="fab fa-python" aria-hidden="true"></i>Python / Django vb.<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
-        aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">v3.9 · v3.10 · v3.11 · v3.12 ·
-       v3.13 sürümleri desteklenmektedir. cPanel Python Selector aracıyla her uygulama için
+        aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">v3.9, v3.10, v3.11, v3.12 ve v3.13
+       sürümleri desteklenmektedir. cPanel Python Selector aracıyla her uygulama için
        bağımsız versiyon
        seçebilirsiniz.</span></span></li>
     <li><i class="fas fa-rocket" aria-hidden="true"></i>Litespeed Web Server<span class="ixir-wh-tip"><button
