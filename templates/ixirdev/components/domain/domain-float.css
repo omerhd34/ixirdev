@@ -1,0 +1,79 @@
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-input.ixir-dc-float {
+ position: relative;
+}
+
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-input.ixir-dc-float input {
+ height: 66px;
+ padding: 14px 8px 14px 4px;
+ font-size: 17px;
+ line-height: 1.2;
+}
+
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-input.ixir-dc-float input::placeholder {
+ color: transparent;
+ -webkit-text-fill-color: transparent;
+}
+
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float .ixir-dc-label {
+ position: absolute;
+ left: 32px;
+ right: 8px;
+ top: 50%;
+ margin: 0;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+ color: #8b93a3;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 1.5;
+ cursor: text;
+ pointer-events: none;
+ transform: translateY(-50%);
+ transform-origin: left center;
+ transition:
+  top 0.2s ease,
+  transform 0.2s ease,
+  font-size 0.2s ease,
+  color 0.2s ease;
+}
+
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input:focus~.ixir-dc-label,
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input:not(:placeholder-shown)~.ixir-dc-label {
+ top: 0px;
+ font-size: 11px;
+ font-weight: 600;
+ line-height: 1.4;
+ letter-spacing: 0.04em;
+ text-transform: uppercase;
+ transform: none;
+}
+
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input:focus~.ixir-dc-label {
+ color: #386ce0;
+}
+
+#order-standard_cart.ixir-domain-page form.ixir-dc-invalid .ixir-dc-float .ixir-dc-label,
+#order-standard_cart.ixir-domain-page .ixir-domain-checker.is-invalid .ixir-dc-float .ixir-dc-label {
+ color: #e74c3c;
+ font-weight: 600;
+}
+
+@media (max-width: 767px) {
+ #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-input.ixir-dc-float input {
+  height: 62px;
+  padding: 14px 8px 12px 4px;
+  font-size: 16px;
+ }
+
+ #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float .ixir-dc-label {
+  font-size: 15px;
+ }
+
+ #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input:focus~.ixir-dc-label,
+ #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input:not(:placeholder-shown)~.ixir-dc-label {
+  top: 6px;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+ }
+}
