@@ -3,10 +3,29 @@
 }
 
 #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-input.ixir-dc-float input {
- height: 66px;
- padding: 14px 8px 14px 4px;
- font-size: 17px;
- line-height: 1.2;
+ height: 52px;
+ padding: 0 8px 0 6px;
+ font-size: 16px;
+ line-height: normal;
+}
+
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-icon {
+ height: 52px;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-icon i {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ line-height: 1;
+}
+
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-button .btn,
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-button .btn.btn-block {
+ height: 52px;
 }
 
 #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-input.ixir-dc-float input::placeholder {
@@ -16,7 +35,7 @@
 
 #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float .ixir-dc-label {
  position: absolute;
- left: 32px;
+ left: 34px;
  right: 8px;
  top: 50%;
  margin: 0;
@@ -24,9 +43,9 @@
  text-overflow: ellipsis;
  white-space: nowrap;
  color: #8b93a3;
- font-size: 16px;
+ font-size: 15.5px;
  font-weight: 400;
- line-height: 1.5;
+ line-height: 1.2;
  cursor: text;
  pointer-events: none;
  transform: translateY(-50%);
@@ -40,8 +59,8 @@
 
 #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input:focus~.ixir-dc-label,
 #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input:not(:placeholder-shown)~.ixir-dc-label {
- top: 0px;
- font-size: 11px;
+ top: -5px;
+ font-size: 10.5px;
  font-weight: 600;
  line-height: 1.4;
  letter-spacing: 0.04em;
@@ -49,31 +68,76 @@
  transform: none;
 }
 
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float .ixir-dc-label .ixir-dc-domain-sample,
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float .ixir-dc-label [data-nocaps] {
+ text-transform: lowercase !important;
+}
+
 #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input:focus~.ixir-dc-label {
  color: #386ce0;
 }
 
 #order-standard_cart.ixir-domain-page form.ixir-dc-invalid .ixir-dc-float .ixir-dc-label,
-#order-standard_cart.ixir-domain-page .ixir-domain-checker.is-invalid .ixir-dc-float .ixir-dc-label {
- color: #e74c3c;
- font-weight: 600;
+#order-standard_cart.ixir-domain-page .ixir-domain-checker.is-invalid .ixir-dc-float .ixir-dc-label,
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input[aria-invalid="true"]~.ixir-dc-label {
+ top: -5px !important;
+ font-size: 10.5px !important;
+ font-weight: 600 !important;
+ line-height: 1.4 !important;
+ letter-spacing: 0.04em !important;
+ text-transform: uppercase !important;
+ transform: none !important;
+ color: #e74c3c !important;
+}
+
+#order-standard_cart.ixir-domain-page form.ixir-dc-invalid .ixir-dc-float input::placeholder,
+#order-standard_cart.ixir-domain-page .ixir-domain-checker.is-invalid .ixir-dc-float input::placeholder,
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input[aria-invalid="true"]::placeholder {
+ color: #e74c3c !important;
+ -webkit-text-fill-color: #e74c3c !important;
+ opacity: 1 !important;
+ font-size: 15.5px !important;
+ font-weight: 400 !important;
 }
 
 @media (max-width: 767px) {
  #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-input.ixir-dc-float input {
-  height: 62px;
-  padding: 14px 8px 12px 4px;
-  font-size: 16px;
+  height: 48px;
+  padding: 0 8px 0 6px;
+  font-size: 15px;
+  line-height: normal;
+ }
+
+ #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-icon {
+  height: 48px;
+ }
+
+ #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-button .btn,
+ #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-button .btn.btn-block {
+  height: 48px;
  }
 
  #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float .ixir-dc-label {
-  font-size: 15px;
+  font-size: 14.5px;
  }
 
  #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input:focus~.ixir-dc-label,
  #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input:not(:placeholder-shown)~.ixir-dc-label {
-  top: 6px;
-  font-size: 10px;
+  top: -4px;
+  font-size: 9.5px;
   letter-spacing: 0.02em;
+ }
+
+ #order-standard_cart.ixir-domain-page form.ixir-dc-invalid .ixir-dc-float .ixir-dc-label,
+ #order-standard_cart.ixir-domain-page .ixir-domain-checker.is-invalid .ixir-dc-float .ixir-dc-label,
+ #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input[aria-invalid="true"]~.ixir-dc-label {
+  top: -4px !important;
+  font-size: 9.5px !important;
+ }
+
+ #order-standard_cart.ixir-domain-page form.ixir-dc-invalid .ixir-dc-float input::placeholder,
+ #order-standard_cart.ixir-domain-page .ixir-domain-checker.is-invalid .ixir-dc-float input::placeholder,
+ #order-standard_cart.ixir-domain-page .ixir-hero .ixir-dc-float input[aria-invalid="true"]::placeholder {
+  font-size: 14.5px !important;
  }
 }

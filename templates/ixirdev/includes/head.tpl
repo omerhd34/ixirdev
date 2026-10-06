@@ -27,7 +27,7 @@
 
 {if $ixirDomainSearchPage || $ixirDomainTransferPage || $templatefile == 'whois-sorgulama'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/domain/domain.css?v={$versionHash}-r106" rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/domain/domain-float.css?v={$versionHash}-r2" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/domain/domain-float.css?v={$versionHash}-r6" rel="stylesheet">
  {if $ixirDomainSearchPage}
   <link href="{$WEB_ROOT}/templates/{$template}/components/domain/sorgu/sorgu.css?v={$versionHash}-r2" rel="stylesheet">
  {elseif $ixirDomainTransferPage}
