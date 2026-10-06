@@ -16,10 +16,12 @@
        <div class="ixir-dc-input ixir-dc-float">
         <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-globe"></i></span>
         <input type="text" name="domain" class="form-control no-icheck" placeholder=" " value="{$lookupTerm}"
-         id="inputDomain" data-placeholder="Örneğin ixirhost.com" data-placeholder-sm="ixirhost.com"
+         id="inputDomain" data-placeholder="Sorgulamak istediğiniz domain'i yazınız. Örneğin: ixirhost.com"
+         data-placeholder-sm="Sorgulamak istediğiniz domain'i yazınız."
          data-placeholder-error="Lütfen bir domain girin." autocapitalize="none" autocomplete="off" inputmode="none"
          readonly />
-        <label for="inputDomain" class="ixir-dc-label">Örneğin ixirhost.com</label>
+        <label for="inputDomain" class="ixir-dc-label">Sorgulamak istediğiniz <span lang="en">domain</span>'i
+         yazınız. Örneğin: <span class="ixir-dc-domain-sample">ixirhost.com</span></label>
         <script>
          (function() {
           var input = document.getElementById('inputDomain');
@@ -65,6 +67,7 @@
       </div>
      </form>
      {include file="$template/components/domain/no-autofocus.tpl"}
+     {include file="$template/components/domain/float-label.tpl"}
      <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
       <p class="ixir-hero-label">Diğer Hizmetler</p>
       <ul class="ixir-domain-links">

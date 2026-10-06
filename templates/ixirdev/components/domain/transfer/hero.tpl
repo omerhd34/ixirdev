@@ -15,11 +15,12 @@
        <div class="ixir-dc-input ixir-dc-float">
         <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-globe"></i></span>
         <input type="text" name="domain" class="form-control no-icheck ixir-transfer-input" id="inputTransferDomain"
-         value="{$lookupTerm}" placeholder=" " data-placeholder="Transfer etmek istediğiniz domain'i yazınız."
+         value="{$lookupTerm}" placeholder=" "
+         data-placeholder="Transfer etmek istediğiniz domain'i yazınız. Örneğin: ixirhost.com"
          data-placeholder-error="Lütfen bir domain girin." autocapitalize="none" autocomplete="off" spellcheck="false"
          inputmode="none" readonly>
         <label for="inputTransferDomain" class="ixir-dc-label">Transfer etmek istediğiniz <span
-          lang="en">domain</span>'i yazınız.</label>
+          lang="en">domain</span>'i yazınız. Örneğin: <span class="ixir-dc-domain-sample">ixirhost.com</span></label>
        </div>
       </div>
       <div class="ixir-domain-checker">

@@ -19,7 +19,7 @@
         placeholder=" " data-placeholder="Bir domain yazınız (örn: ixirhost.com)"
         data-placeholder-error="Lütfen bir domain girin." autocapitalize="none" autocomplete="off" spellcheck="false" />
        <label for="ixir-whois-domain" class="ixir-dc-label">Bir <span lang="en">domain</span> yazınız (örn:
-        ixirhost.com)</label>
+        <span class="ixir-dc-domain-sample">ixirhost.com</span>)</label>
       </div>
       <div class="ixir-dc-button">
        <button type="submit" class="btn btn-primary btn-block search">
