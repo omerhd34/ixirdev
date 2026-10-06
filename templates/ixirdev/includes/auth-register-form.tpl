@@ -127,6 +127,7 @@
     return;
    }
    $field.removeClass("has-error");
+   $el.closest(".ixir-domain-checker").removeClass("is-invalid has-error is-shake");
   }
 
   function setFieldError($el) {
@@ -144,6 +145,13 @@
     $el.closest(".ixir-select").addClass("has-error");
    }
    $field.addClass("has-error");
+   var $box = $el.closest(".ixir-domain-checker");
+   $box.addClass("is-invalid has-error");
+   $box.removeClass("is-shake");
+   if ($box[0]) {
+    void $box[0].offsetWidth;
+    $box.addClass("is-shake");
+   }
   }
 
   function isEmail(value) {
@@ -408,49 +416,77 @@
   </div>
 
   <div class="ixir-field ixir-company-field">
-   <label for="inputCompanyName">Firma Adı(Opsiyonel):<span class="ixir-optional"></span></label>
-   <input type="text" name="companyname" id="inputCompanyName" class="form-control" placeholder="Firma Adı"
-    value="{$clientcompanyname}">
-  </div>
-
-  <div class="ixir-field-row">
-   <div class="ixir-field">
-    <label for="inputFirstName">İsim:</label>
-    <input type="text" name="firstname" id="inputFirstName" class="form-control" placeholder="İsim"
-     value="{$clientfirstname}" data-ixir-required="İsim gerekli."
-     {if !in_array('firstname', $optionalFields)}data-ixir-validate="1" {/if}>
-   </div>
-   <div class="ixir-field">
-    <label for="inputLastName">Soyisim:</label>
-    <input type="text" name="lastname" id="inputLastName" class="form-control" placeholder="Soyisim"
-     value="{$clientlastname}" data-ixir-required="Soyisim gerekli."
-     {if !in_array('lastname', $optionalFields)}data-ixir-validate="1" {/if}>
+   <div class="ixir-domain-checker">
+    <div class="ixir-dc-input ixir-dc-float">
+     <span class="ixir-dc-icon" aria-hidden="true"><i class="far fa-building"></i></span>
+     <input type="text" name="companyname" id="inputCompanyName" class="form-control" placeholder=" "
+      value="{$clientcompanyname}">
+     <label for="inputCompanyName" class="ixir-dc-label">Firma Adı (Opsiyonel)</label>
+    </div>
    </div>
   </div>
 
   <div class="ixir-field-row">
    <div class="ixir-field">
-    <label for="inputPhone">Telefon Numarası:</label>
-    <input type="tel" name="phonenumber" id="inputPhone" class="form-control ixir-plain-phone"
-     placeholder="Telefon Numarası" value="{$clientphonenumber}" autocomplete="tel" data-no-country-code="1"
-     data-ixir-validate="1" data-ixir-required="Telefon numarası gerekli.">
+    <div class="ixir-domain-checker">
+     <div class="ixir-dc-input ixir-dc-float">
+      <span class="ixir-dc-icon" aria-hidden="true"><i class="far fa-user"></i></span>
+      <input type="text" name="firstname" id="inputFirstName" class="form-control" placeholder=" "
+       value="{$clientfirstname}" data-ixir-required="İsim gerekli."
+       {if !in_array('firstname', $optionalFields)}data-ixir-validate="1" {/if}>
+      <label for="inputFirstName" class="ixir-dc-label">İsim</label>
+     </div>
+    </div>
    </div>
    <div class="ixir-field">
-    <label for="inputEmailReg">E-posta Adresi:</label>
-    <input type="email" name="email" id="inputEmailReg" class="form-control" placeholder="E-posta Adresi"
-     value="{$clientemail}" data-ixir-validate="1" data-ixir-required="E-posta adresi gerekli." data-ixir-type="email">
+    <div class="ixir-domain-checker">
+     <div class="ixir-dc-input ixir-dc-float">
+      <span class="ixir-dc-icon" aria-hidden="true"><i class="far fa-user"></i></span>
+      <input type="text" name="lastname" id="inputLastName" class="form-control" placeholder=" "
+       value="{$clientlastname}" data-ixir-required="Soyisim gerekli."
+       {if !in_array('lastname', $optionalFields)}data-ixir-validate="1" {/if}>
+      <label for="inputLastName" class="ixir-dc-label">Soyisim</label>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <div class="ixir-field-row">
+   <div class="ixir-field">
+    <div class="ixir-domain-checker">
+     <div class="ixir-dc-input ixir-dc-float">
+      <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-phone"></i></span>
+      <input type="tel" name="phonenumber" id="inputPhone" class="form-control ixir-plain-phone" placeholder=" "
+       value="{$clientphonenumber}" autocomplete="tel" data-no-country-code="1" data-ixir-validate="1"
+       data-ixir-required="Telefon numarası gerekli.">
+      <label for="inputPhone" class="ixir-dc-label">Telefon Numarası</label>
+     </div>
+    </div>
+   </div>
+   <div class="ixir-field">
+    <div class="ixir-domain-checker">
+     <div class="ixir-dc-input ixir-dc-float">
+      <span class="ixir-dc-icon" aria-hidden="true"><i class="far fa-envelope"></i></span>
+      <input type="email" name="email" id="inputEmailReg" class="form-control" placeholder=" " value="{$clientemail}"
+       data-ixir-validate="1" data-ixir-required="E-posta adresi gerekli." data-ixir-type="email">
+      <label for="inputEmailReg" class="ixir-dc-label">E-posta Adresi</label>
+     </div>
+    </div>
    </div>
   </div>
 
   <div class="ixir-field-row ixir-pw-row">
    <div class="ixir-field ixir-pw-field">
-    <label for="inputNewPassword1">Şifre:</label>
-    <div class="ixir-password-group">
-     <input type="password" name="password" id="inputNewPassword1" class="form-control" placeholder="Şifre"
-      autocomplete="new-password" minlength="6" {if $remote_auth_prelinked} value="{$password}" {/if}>
-     <button type="button" class="ixir-toggle-password" tabindex="-1">
-      <i class="far fa-eye" aria-hidden="true"></i>
-     </button>
+    <div class="ixir-domain-checker">
+     <div class="ixir-dc-input ixir-dc-float ixir-password-wrap">
+      <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-lock"></i></span>
+      <input type="password" name="password" id="inputNewPassword1" class="form-control" placeholder=" "
+       autocomplete="new-password" minlength="6" {if $remote_auth_prelinked} value="{$password}" {/if}>
+      <label for="inputNewPassword1" class="ixir-dc-label">Şifre</label>
+      <button type="button" class="ixir-toggle-password" tabindex="-1" aria-label="Şifreyi göster/gizle">
+       <i class="far fa-eye" aria-hidden="true"></i>
+      </button>
+     </div>
     </div>
     <div class="ixir-pw-meter" id="ixirPwHints" data-strength="empty" aria-live="polite">
      <div class="ixir-pw-meter-top">
@@ -462,20 +498,22 @@
     </div>
    </div>
    <div class="ixir-field ixir-pw-confirm-field">
-    <label for="inputNewPassword2">Şifre Tekrarı:</label>
-    <div class="ixir-password-group">
-     <input type="password" name="password2" id="inputNewPassword2" class="form-control" placeholder="Şifre Tekrarı"
-      autocomplete="new-password" minlength="6">
-     <button type="button" class="ixir-toggle-password" tabindex="-1">
-      <i class="far fa-eye" aria-hidden="true"></i>
-     </button>
+    <div class="ixir-domain-checker">
+     <div class="ixir-dc-input ixir-dc-float ixir-password-wrap">
+      <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-lock"></i></span>
+      <input type="password" name="password2" id="inputNewPassword2" class="form-control" placeholder=" "
+       autocomplete="new-password" minlength="6">
+      <label for="inputNewPassword2" class="ixir-dc-label">Şifre Tekrarı</label>
+      <button type="button" class="ixir-toggle-password" tabindex="-1" aria-label="Şifreyi göster/gizle">
+       <i class="far fa-eye" aria-hidden="true"></i>
+      </button>
+     </div>
     </div>
    </div>
   </div>
 
   <div class="ixir-field-row">
    <div class="ixir-field ixir-select-field">
-    <label for="inputSecurityQId">Güvenlik Sorusu:</label>
     <div class="ixir-select" data-ixir-select>
      <select name="securityqid" id="inputSecurityQId" class="ixir-select-native" data-ixir-validate="1"
       data-ixir-required="Güvenlik sorusu seçin." data-ixir-silent="1">
@@ -485,7 +523,11 @@
       {/foreach}
      </select>
      <button type="button" class="ixir-select-trigger" aria-haspopup="listbox" aria-expanded="false">
-      <span class="ixir-select-label">Bir güvenlik sorusu seçin.</span>
+      <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
+      <span class="ixir-select-content">
+       <span class="ixir-select-sublabel">Güvenlik Sorusu</span>
+       <span class="ixir-select-label">Bir güvenlik sorusu seçin.</span>
+      </span>
       <i class="fas fa-chevron-down ixir-select-caret" aria-hidden="true"></i>
      </button>
      <ul class="ixir-select-menu" role="listbox" hidden>
@@ -497,10 +539,14 @@
     </div>
    </div>
    <div class="ixir-field">
-    <label for="inputSecurityQAns">Güvenlik Sorunuzun Cevabı:</label>
-    <input type="text" name="securityqans" id="inputSecurityQAns" class="form-control"
-     placeholder="Lütfen bir yanıt girin." autocomplete="off" data-ixir-validate="1"
-     data-ixir-required="Güvenlik cevabı gerekli." data-ixir-silent="1">
+    <div class="ixir-domain-checker">
+     <div class="ixir-dc-input ixir-dc-float">
+      <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-key"></i></span>
+      <input type="text" name="securityqans" id="inputSecurityQAns" class="form-control" placeholder=" "
+       autocomplete="off" data-ixir-validate="1" data-ixir-required="Güvenlik cevabı gerekli." data-ixir-silent="1">
+      <label for="inputSecurityQAns" class="ixir-dc-label">Güvenlik Sorunuzun Cevabı</label>
+     </div>
+    </div>
    </div>
   </div>
 

@@ -8,19 +8,27 @@
  </div>
 
  <div class="ixir-field">
-  <label for="inputEmail">E-posta Adresiniz:</label>
-  <input type="email" name="username" class="form-control" id="inputEmail" placeholder="E-posta" autofocus
-   autocomplete="username" data-ixir-validate="1" data-ixir-required="E-posta adresi gerekli." data-ixir-type="email">
+  <div class="ixir-domain-checker">
+   <div class="ixir-dc-input ixir-dc-float">
+    <span class="ixir-dc-icon" aria-hidden="true"><i class="far fa-envelope"></i></span>
+    <input type="email" name="username" class="form-control" id="inputEmail" placeholder=" " autofocus
+     autocomplete="username" data-ixir-validate="1" data-ixir-required="E-posta adresi gerekli." data-ixir-type="email">
+    <label for="inputEmail" class="ixir-dc-label">E-posta Adresiniz</label>
+   </div>
+  </div>
  </div>
 
  <div class="ixir-field">
-  <label for="inputPassword">Parola:</label>
-  <div class="ixir-password-group">
-   <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Parola"
-    autocomplete="current-password" data-ixir-validate="1" data-ixir-required="Parola gerekli.">
-   <button type="button" class="ixir-toggle-password" tabindex="-1">
-    <i class="far fa-eye" aria-hidden="true"></i>
-   </button>
+  <div class="ixir-domain-checker">
+   <div class="ixir-dc-input ixir-dc-float ixir-password-wrap">
+    <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-lock"></i></span>
+    <input type="password" name="password" class="form-control" id="inputPassword" placeholder=" "
+     autocomplete="current-password" data-ixir-validate="1" data-ixir-required="Parola gerekli.">
+    <label for="inputPassword" class="ixir-dc-label">Parola</label>
+    <button type="button" class="ixir-toggle-password" tabindex="-1" aria-label="Parolayı göster/gizle">
+     <i class="far fa-eye" aria-hidden="true"></i>
+    </button>
+   </div>
   </div>
  </div>
 
@@ -62,12 +70,20 @@
    var $field = $el.closest(".ixir-field");
    $el.removeClass("is-invalid");
    $field.removeClass("has-error");
+   $el.closest(".ixir-domain-checker").removeClass("is-invalid has-error is-shake");
   }
 
   function setFieldError($el) {
    clearFieldError($el);
    $el.addClass("is-invalid");
    $el.closest(".ixir-field").addClass("has-error");
+   var $box = $el.closest(".ixir-domain-checker");
+   $box.addClass("is-invalid has-error");
+   $box.removeClass("is-shake");
+   if ($box[0]) {
+    void $box[0].offsetWidth;
+    $box.addClass("is-shake");
+   }
   }
 
   function isEmail(value) {
