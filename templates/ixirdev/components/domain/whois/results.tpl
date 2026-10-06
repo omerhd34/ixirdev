@@ -275,7 +275,7 @@
 
   function hide() {
    form.classList.remove('ixir-dc-invalid', 'ixir-dc-shake');
-   input.setAttribute('placeholder', placeholder);
+   input.setAttribute('placeholder', ' ');
    input.removeAttribute('aria-invalid');
    if (hint) {
     hint.hidden = true;

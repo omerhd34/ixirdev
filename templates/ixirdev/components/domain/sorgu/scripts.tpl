@@ -456,8 +456,9 @@
      hide: function() {}
     };
    }
-   var placeholderFull = input.getAttribute('data-placeholder') || input.getAttribute('placeholder');
-   var placeholderSm = input.getAttribute('data-placeholder-sm') || 'ixirhost.com';
+   var placeholderFull = input.getAttribute('data-placeholder') || input.getAttribute('placeholder') ||
+    'Sorgulamak istediğiniz domain\'i yazınız.';
+   var placeholderSm = input.getAttribute('data-placeholder-sm') || 'Sorgulamak istediğiniz domain\'i yazınız.';
    var placeholderError = input.getAttribute('data-placeholder-error') || 'Lütfen bir domain girin.';
 
    function isSm() {
@@ -466,18 +467,25 @@
 
    var floatLabel = form.querySelector('.ixir-dc-label');
 
+   function formatLabelText(text) {
+    if (!text) return '';
+    var out = text.indexOf('lang="en"') !== -1 ? text : text.replace(/\b(domain)\b/gi, '<span lang="en">$1</span>');
+    if (out.indexOf('ixir-dc-domain-sample') === -1) {
+     out = out.replace(/\b(ixirhost\.com)\b/gi, '<span class="ixir-dc-domain-sample">$1</span>');
+    }
+    return out;
+   }
+
    function applyPlaceholder() {
-    var text;
-    if (form.classList.contains('ixir-dc-invalid')) {
-     text = placeholderError;
-    } else {
-     text = isSm() ? placeholderSm : placeholderFull;
-    }
+    var labelText = isSm() ? placeholderSm : placeholderFull;
     if (floatLabel) {
-     floatLabel.textContent = text;
-     return;
+     floatLabel.innerHTML = formatLabelText(labelText);
     }
-    input.setAttribute('placeholder', text);
+    if (form.classList.contains('ixir-dc-invalid')) {
+     input.setAttribute('placeholder', placeholderError);
+    } else {
+     input.setAttribute('placeholder', ' ');
+    }
    }
 
    function show() {
@@ -485,6 +493,7 @@
     void form.offsetWidth;
     form.classList.add('ixir-dc-invalid', 'ixir-dc-shake');
     input.setAttribute('aria-invalid', 'true');
+    input.value = '';
     applyPlaceholder();
     if (window.ixirArmDomainInput) {
      window.ixirArmDomainInput();

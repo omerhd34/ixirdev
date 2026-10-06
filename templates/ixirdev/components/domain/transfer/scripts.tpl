@@ -57,12 +57,13 @@
       box.classList.remove('is-shake');
       void box.offsetWidth;
       box.classList.add('is-invalid', 'is-shake');
-      input.setAttribute('placeholder', error);
       input.setAttribute('aria-invalid', 'true');
+      input.value = '';
+      input.setAttribute('placeholder', error);
      } else {
       box.classList.remove('is-invalid', 'is-shake');
-      input.setAttribute('placeholder', normal);
       input.removeAttribute('aria-invalid');
+      input.setAttribute('placeholder', ' ');
      }
     }
 
