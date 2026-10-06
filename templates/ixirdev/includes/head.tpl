@@ -58,7 +58,7 @@
   rel="stylesheet">
 {/if}
 {if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'logout' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim'}
- <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r67" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r72" rel="stylesheet">
 {/if}
 {if $templatefile == 'whois-sorgulama'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/domain/whois/whois.css?v={$versionHash}-r20" rel="stylesheet">
