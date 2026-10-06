@@ -44,8 +44,8 @@
       <span>15 Gün Para İade Garantisi</span>
      </li>
     </ul>
-    <div class="ixir-domain-links-wrap" role="region" aria-label="Bazı hizmetler">
-     <p class="ixir-hero-label">Bazı Hizmetler</p>
+    <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer hizmetler">
+     <p class="ixir-hero-label">Diğer Hizmetler</p>
      <ul class="ixir-domain-links">
       <li>
        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">

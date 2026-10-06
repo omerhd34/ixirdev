@@ -32,7 +32,7 @@
      </p>
     </form>
     <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
-     <p class="ixir-hero-label">Bazı Hizmetler</p>
+     <p class="ixir-hero-label">Diğer Hizmetler</p>
      <ul class="ixir-domain-links">
       <li>
        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
