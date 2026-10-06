@@ -9,9 +9,14 @@
  {/if}
 
  <div class="ixir-field">
-  <label for="inputAnswer">{$securityQuestion}</label>
-  <input type="text" name="answer" class="form-control" id="inputAnswer" placeholder="Yanıtınız" autofocus
-   autocomplete="off" required>
+  <div class="ixir-domain-checker">
+   <div class="ixir-dc-input ixir-dc-float">
+    <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-key"></i></span>
+    <input type="text" name="answer" class="form-control" id="inputAnswer" placeholder=" " autofocus autocomplete="off"
+     required>
+    <label for="inputAnswer" class="ixir-dc-label">{$securityQuestion}</label>
+   </div>
+  </div>
  </div>
 
  <button type="submit" class="btn ixir-split-btn">

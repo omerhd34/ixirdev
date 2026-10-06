@@ -62,6 +62,7 @@
     {include file="$template/includes/auth-reset-form.tpl"}
    </div>
   </div>
+  {include file="$template/components/domain/float-label.tpl"}
 
   <div class="ixir-auth-overlay">
    <div class="ixir-auth-overlay-bg"></div>
@@ -244,5 +245,13 @@
    placeCaptcha();
    setTimeout(renderVisibleRecaptcha, 60);
   }
+
+  root.addEventListener("click", function(e) {
+   var box = e.target.closest(".ixir-domain-checker");
+   if (!box) return;
+   if (e.target.closest("button, a, input, select, label")) return;
+   var input = box.querySelector("input, select");
+   if (input) input.focus();
+  });
  })();
 </script>

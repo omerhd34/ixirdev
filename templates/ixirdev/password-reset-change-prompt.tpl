@@ -11,15 +11,31 @@
  {/if}
 
  <div class="ixir-field" id="newPassword1">
-  <label for="inputNewPassword1">Yeni Şifre:</label>
-  <input type="password" name="newpw" id="inputNewPassword1" class="form-control" placeholder="Yeni Şifre"
-   autocomplete="off" required>
+  <div class="ixir-domain-checker">
+   <div class="ixir-dc-input ixir-dc-float ixir-password-wrap">
+    <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-lock"></i></span>
+    <input type="password" name="newpw" id="inputNewPassword1" class="form-control" placeholder=" "
+     autocomplete="new-password" required>
+    <label for="inputNewPassword1" class="ixir-dc-label">Yeni Şifre</label>
+    <button type="button" class="ixir-toggle-password" tabindex="-1" aria-label="Şifreyi göster/gizle">
+     <i class="far fa-eye" aria-hidden="true"></i>
+    </button>
+   </div>
+  </div>
  </div>
 
  <div class="ixir-field" id="newPassword2">
-  <label for="inputNewPassword2">Yeni Şifre (Tekrar):</label>
-  <input type="password" name="confirmpw" id="inputNewPassword2" class="form-control" placeholder="Yeni Şifre Tekrar"
-   autocomplete="off" required>
+  <div class="ixir-domain-checker">
+   <div class="ixir-dc-input ixir-dc-float ixir-password-wrap">
+    <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-lock"></i></span>
+    <input type="password" name="confirmpw" id="inputNewPassword2" class="form-control" placeholder=" "
+     autocomplete="new-password" required>
+    <label for="inputNewPassword2" class="ixir-dc-label">Yeni Şifre (Tekrar)</label>
+    <button type="button" class="ixir-toggle-password" tabindex="-1" aria-label="Şifreyi göster/gizle">
+     <i class="far fa-eye" aria-hidden="true"></i>
+    </button>
+   </div>
+  </div>
   <div id="inputNewPassword2Msg"></div>
  </div>
 

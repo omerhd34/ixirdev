@@ -12,8 +12,14 @@
  {/if}
 
  <div class="ixir-field">
-  <label for="inputResetEmail">E-posta Adresiniz:</label>
-  <input type="email" name="email" class="form-control" id="inputResetEmail" placeholder="E-posta" autofocus>
+  <div class="ixir-domain-checker">
+   <div class="ixir-dc-input ixir-dc-float">
+    <span class="ixir-dc-icon" aria-hidden="true"><i class="far fa-envelope"></i></span>
+    <input type="email" name="email" class="form-control" id="inputResetEmail" placeholder=" " autofocus
+     autocomplete="email">
+    <label for="inputResetEmail" class="ixir-dc-label">E-posta Adresiniz</label>
+   </div>
+  </div>
  </div>
 
  {if $captcha}
