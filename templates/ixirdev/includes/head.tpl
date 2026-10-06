@@ -24,15 +24,18 @@
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/homepage-hero/homepage-hero.css?v={$versionHash}-r57"
   rel="stylesheet">
 {/if}
+
 {if $ixirDomainSearchPage || $ixirDomainTransferPage || $templatefile == 'whois-sorgulama'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/domain/domain.css?v={$versionHash}-r106" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/domain/domain-float.css?v={$versionHash}-r2" rel="stylesheet">
  {if $ixirDomainSearchPage}
-  <link href="{$WEB_ROOT}/templates/{$template}/components/domain/sorgu/sorgu.css?v={$versionHash}-r1" rel="stylesheet">
+  <link href="{$WEB_ROOT}/templates/{$template}/components/domain/sorgu/sorgu.css?v={$versionHash}-r2" rel="stylesheet">
  {elseif $ixirDomainTransferPage}
   <link href="{$WEB_ROOT}/templates/{$template}/components/domain/transfer/transfer.css?v={$versionHash}-r1"
    rel="stylesheet">
  {/if}
 {/if}
+
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/packages/packages.css?v={$versionHash}-r18"
   rel="stylesheet">

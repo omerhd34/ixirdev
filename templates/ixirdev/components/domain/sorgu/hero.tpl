@@ -13,20 +13,20 @@
       <input type="hidden" name="a" value="checkDomain" class="no-icheck">
       <input type="hidden" name="token" value="{$token}" class="no-icheck">
       <div class="ixir-domain-checker">
-       <div class="ixir-dc-input">
+       <div class="ixir-dc-input ixir-dc-float">
         <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-globe"></i></span>
-        <label for="inputDomain" class="sr-only">Domain sorgula</label>
-        <input type="text" name="domain" class="form-control no-icheck" placeholder="Örneğin ixirhost.com"
-         value="{$lookupTerm}" id="inputDomain" data-placeholder="Örneğin ixirhost.com"
-         data-placeholder-sm="ixirhost.com" data-placeholder-error="Lütfen bir domain girin." autocapitalize="none"
-         autocomplete="off" inputmode="none" readonly />
+        <input type="text" name="domain" class="form-control no-icheck" placeholder=" " value="{$lookupTerm}"
+         id="inputDomain" data-placeholder="Örneğin ixirhost.com" data-placeholder-sm="ixirhost.com"
+         data-placeholder-error="Lütfen bir domain girin." autocapitalize="none" autocomplete="off" inputmode="none"
+         readonly />
+        <label for="inputDomain" class="ixir-dc-label">Örneğin ixirhost.com</label>
         <script>
          (function() {
           var input = document.getElementById('inputDomain');
           if (!input) {
            return;
           }
-          var phone = window.matchMedia('(max-width: 991px)').matches ||
+          var phone = window.matchMedia('(max-width: 992px)').matches ||
            window.matchMedia('(pointer: coarse)').matches ||
            window.matchMedia('(hover: none)').matches;
           if (!phone) {
@@ -64,8 +64,9 @@
        </div>
       </div>
      </form>
-     <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
-      <p class="ixir-hero-label">Bazı Hizmetler</p>
+     {include file="$template/components/domain/no-autofocus.tpl"}
+     <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
+      <p class="ixir-hero-label">Diğer Hizmetler</p>
       <ul class="ixir-domain-links">
        <li>
         <a href="{$WEB_ROOT}/domain-transfer" title="Domain Transfer">
@@ -101,7 +102,8 @@
        </li>
        <li>
         <a href="{$WEB_ROOT}/wordpress-hosting" title="WordPress Hosting">
-         <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress Hosting</span>
+         <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress
+          Hosting</span>
         </a>
        </li>
        <li>

@@ -13,12 +13,13 @@
      class="ixir-whois-form{if $ixirWhoisInvalid} ixir-dc-invalid{/if}" id="frmWhoisChecker" novalidate>
      <input type="hidden" name="token" value="{$token}" />
      <div class="ixir-domain-checker">
-      <div class="ixir-dc-input">
+      <div class="ixir-dc-input ixir-dc-float">
        <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-globe"></i></span>
-       <label for="ixir-whois-domain" class="sr-only">Domain</label>
        <input type="text" id="ixir-whois-domain" class="form-control" name="domain" value="{$ixirWhoisDomain|escape}"
-        placeholder="Bir domain yazınız (örn: ixirhost.com)" data-placeholder="Bir domain yazınız (örn: ixirhost.com)"
+        placeholder=" " data-placeholder="Bir domain yazınız (örn: ixirhost.com)"
         data-placeholder-error="Lütfen bir domain girin." autocapitalize="none" autocomplete="off" spellcheck="false" />
+       <label for="ixir-whois-domain" class="ixir-dc-label">Bir <span lang="en">domain</span> yazınız (örn:
+        ixirhost.com)</label>
       </div>
       <div class="ixir-dc-button">
        <button type="submit" class="btn btn-primary btn-block search">
@@ -31,6 +32,7 @@
       <span>Lütfen geçerli bir domain girin. Örneğin: <b>ixirhost.com</b></span>
      </p>
     </form>
+    {include file="$template/components/domain/float-label.tpl"}
     <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
      <ul class="ixir-domain-links">
@@ -68,7 +70,8 @@
       </li>
       <li>
        <a href="{$WEB_ROOT}/wordpress-hosting" title="WordPress Hosting">
-        <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress Hosting</span>
+        <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress
+         Hosting</span>
        </a>
       </li>
       <li>

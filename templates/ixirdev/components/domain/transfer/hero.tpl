@@ -12,24 +12,24 @@
      <form method="post" action="{$WEB_ROOT}/cart.php" id="frmDomainTransfer">
       <input type="hidden" name="a" value="addDomainTransfer" class="no-icheck">
       <div class="ixir-domain-checker ixir-domain-checker--solo">
-       <div class="ixir-dc-input">
+       <div class="ixir-dc-input ixir-dc-float">
         <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-globe"></i></span>
-        <label for="inputTransferDomain" class="sr-only">Transfer edilecek domain</label>
         <input type="text" name="domain" class="form-control no-icheck ixir-transfer-input" id="inputTransferDomain"
-         value="{$lookupTerm}" placeholder="Transfer etmek istediğiniz domain'i yazınız."
-         data-placeholder="Transfer etmek istediğiniz domain'i yazınız."
+         value="{$lookupTerm}" placeholder=" " data-placeholder="Transfer etmek istediğiniz domain'i yazınız."
          data-placeholder-error="Lütfen bir domain girin." autocapitalize="none" autocomplete="off" spellcheck="false"
          inputmode="none" readonly>
+        <label for="inputTransferDomain" class="ixir-dc-label">Transfer etmek istediğiniz <span
+          lang="en">domain</span>'i yazınız.</label>
        </div>
       </div>
       <div class="ixir-domain-checker">
-       <div class="ixir-dc-input">
+       <div class="ixir-dc-input ixir-dc-float">
         <span class="ixir-dc-icon" aria-hidden="true"><i class="fas fa-key"></i></span>
-        <label for="inputAuthCode" class="sr-only">{lang key='orderForm.authCode'}</label>
         <input type="text" name="epp" class="form-control no-icheck ixir-transfer-input" id="inputAuthCode"
-         placeholder="Epp Code / Auth Code" data-placeholder="Epp Code / Auth Code"
+         placeholder=" " data-placeholder="Epp Code / Auth Code"
          data-placeholder-error="Lütfen EPP / Auth kodunu girin." autocapitalize="none" autocomplete="off"
          spellcheck="false" inputmode="none" readonly>
+        <label for="inputAuthCode" class="ixir-dc-label">Epp Code / Auth Code</label>
        </div>
        <div class="ixir-dc-button">
         <button type="submit" id="btnTransferDomain" class="btn btn-primary btn-block">
@@ -43,6 +43,8 @@
       <div id="transferUnavailable" class="ixir-transfer-alert alert alert-warning slim-alert text-center w-hidden">
       </div>
      </form>
+     {include file="$template/components/domain/no-autofocus.tpl"}
+     {include file="$template/components/domain/float-label.tpl"}
      <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
       <p class="ixir-hero-label">Diğer Hizmetler</p>
       <ul class="ixir-domain-links">

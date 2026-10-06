@@ -464,12 +464,20 @@
     return window.innerWidth <= 767;
    }
 
+   var floatLabel = form.querySelector('.ixir-dc-label');
+
    function applyPlaceholder() {
+    var text;
     if (form.classList.contains('ixir-dc-invalid')) {
-     input.setAttribute('placeholder', placeholderError);
+     text = placeholderError;
     } else {
-     input.setAttribute('placeholder', isSm() ? placeholderSm : placeholderFull);
+     text = isSm() ? placeholderSm : placeholderFull;
     }
+    if (floatLabel) {
+     floatLabel.textContent = text;
+     return;
+    }
+    input.setAttribute('placeholder', text);
    }
 
    function show() {
