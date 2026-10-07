@@ -309,9 +309,12 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  transform: translate(2px, -2px) rotate(-45deg);
 }
 
+.ixir-hero-label {
+ animation: ixirHeroIn 0.7s ease 0.17s both;
+}
+
 .ixir-hero-main>.ixir-hero-label {
  margin: 48px 0 0;
- animation: ixirHeroIn 0.7s ease 0.22s both;
 }
 
 .ixir-hero-points {
@@ -370,6 +373,7 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  margin: 0 0 10px 0;
  width: 100%;
  text-align: left;
+ animation: none;
 }
 
 .ixir-hero ul.ixir-domain-links {
@@ -535,7 +539,7 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
 
  .ixir-hero-copy,
  .ixir-hero-actions,
- .ixir-hero-main>.ixir-hero-label,
+ .ixir-hero-label,
  .ixir-hero-points,
  .ixir-domain-links-wrap {
   animation: none;
