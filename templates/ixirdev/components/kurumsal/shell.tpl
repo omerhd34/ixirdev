@@ -19,22 +19,57 @@
 <section class="ixir-corp-shell">
  <div class="container">
   <div class="ixir-corp-grid">
+   {assign var="ixirNavIcons" value=[
+    'kurumsal' => 'fa-building',
+    'altyapi' => 'fa-server',
+    'kayitkurulusu' => 'fa-globe',
+    'bankahesaplari' => 'fa-university',
+    'gizlilikpolitikasi' => 'fa-user-shield',
+    'hizmetsozlesmesi' => 'fa-file-contract',
+    'kvkkaydinlatmametni' => 'fa-shield-alt',
+    'iletisim' => 'fa-envelope'
+   ]}
+   {assign var="ixirNavGroups" value=[
+    'kurumsal' => 'Şirket',
+    'altyapi' => 'Şirket',
+    'kayitkurulusu' => 'Şirket',
+    'bankahesaplari' => 'Şirket',
+    'gizlilikpolitikasi' => 'Yasal',
+    'hizmetsozlesmesi' => 'Yasal',
+    'kvkkaydinlatmametni' => 'Yasal',
+    'iletisim' => 'İletişim'
+   ]}
    <aside class="ixir-corp-nav" aria-label="Kurumsal menü">
-    <h2 class="ixir-corp-nav-title">Kurumsal</h2>
+    <div class="ixir-corp-nav-head">
+     <span class="ixir-corp-nav-head-icon" aria-hidden="true"><i class="fas fa-building"></i></span>
+     <div class="ixir-corp-nav-head-text">
+      <h2 class="ixir-corp-nav-title">Kurumsal</h2>
+      <span class="ixir-corp-nav-sub">Şirket bilgileri ve politikalar</span>
+     </div>
+    </div>
     <div class="ixir-corp-nav-track">
      <div class="ixir-corp-nav-scroller">
       <ul>
+       {assign var="lastGroup" value=""}
        {foreach $ixirCorpNav as $item}
+        {assign var="grp" value=$ixirNavGroups[$item.slug]|default:""}
+        {if $grp != $lastGroup}
+         <li class="ixir-corp-nav-group" role="presentation">{$grp}</li>
+         {assign var="lastGroup" value=$grp}
+        {/if}
         <li class="ixir-corp-nav-item{if $ixirCorpSlug == $item.slug} is-active{/if}">
          <a href="{$item.href}" {if $ixirCorpSlug == $item.slug} aria-current="page" {/if}>
-          <span class="ixir-corp-nav-radio" aria-hidden="true"></span>
+          <span class="ixir-corp-nav-icon" aria-hidden="true"><i
+            class="fas {$ixirNavIcons[$item.slug]|default:'fa-circle'}"></i></span>
           <span class="ixir-corp-nav-label">{$item.label}</span>
+          <i class="fas fa-chevron-right ixir-corp-nav-arrow" aria-hidden="true"></i>
          </a>
         </li>
        {/foreach}
       </ul>
      </div>
     </div>
+
    </aside>
    <div class="ixir-corp-content">
     {include file="$template/components/kurumsal/`$ixirCorpPage.content`.tpl"}
