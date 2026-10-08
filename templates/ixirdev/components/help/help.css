@@ -1,306 +1,347 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
 
 .ixir-help {
-  position: relative;
-  z-index: 1;
-  min-height: 420px;
-  margin: 8px 0 0;
-  padding: 0;
-  overflow: hidden;
-  background: #12141c;
-  -webkit-font-smoothing: antialiased;
+ position: relative;
+ z-index: 1;
+ min-height: 420px;
+ margin: 0px 0 0;
+ padding: 0;
+ overflow: hidden;
+ background: #12141c;
+ -webkit-font-smoothing: antialiased;
 }
+
 .ixir-help::after {
-  content: "";
-  position: absolute;
-  inset: 0 36% 0 0;
-  z-index: 1;
-  pointer-events: none;
-  background: linear-gradient(
-    90deg,
-    #12141c 0%,
-    #12141c 72%,
-    rgba(18, 20, 28, 0.72) 88%,
-    rgba(18, 20, 28, 0.18) 96%,
-    transparent 100%
-  );
+ content: "";
+ position: absolute;
+ inset: 0 36% 0 0;
+ z-index: 1;
+ pointer-events: none;
+ background: linear-gradient(90deg,
+   #12141c 0%,
+   #12141c 72%,
+   rgba(18, 20, 28, 0.72) 88%,
+   rgba(18, 20, 28, 0.18) 96%,
+   transparent 100%);
 }
+
 .ixir-help .container {
-  position: relative;
-  z-index: 2;
-  min-width: 0;
+ position: relative;
+ z-index: 2;
+ min-width: 0;
 }
+
 .ixir-help-stage {
-  display: flex;
-  align-items: center;
-  min-height: 420px;
+ display: flex;
+ align-items: center;
+ min-height: 420px;
 }
+
 .ixir-help-visual {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  display: block;
-  width: auto;
-  height: 420px;
-  max-width: none;
-  pointer-events: none;
-  user-select: none;
+ position: absolute;
+ right: 0;
+ bottom: 0;
+ z-index: 1;
+ display: block;
+ width: auto;
+ height: 420px;
+ max-width: none;
+ pointer-events: none;
+ user-select: none;
 }
+
 .ixir-help-copy {
-  width: 100%;
-  max-width: 680px;
-  min-width: 0;
-  padding: 64px 0;
-  text-align: center;
+ width: 100%;
+ max-width: 680px;
+ min-width: 0;
+ padding: 64px 0;
+ text-align: center;
 }
+
 .ixir-help-copy h2 {
-  margin: 0 0 10px;
-  color: #fff;
-  font-family: "Space Grotesk", sans-serif !important;
-  font-size: 34px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.22;
+ margin: 0 0 10px;
+ color: #fff;
+ font-family: "Space Grotesk", sans-serif !important;
+ font-size: 34px;
+ font-weight: 700;
+ letter-spacing: -0.03em;
+ line-height: 1.22;
 }
+
 .ixir-help-copy h2::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  margin: 14px auto 0;
-  border-radius: 99px;
-  background: #386ce0;
+ content: "";
+ display: block;
+ width: 100px;
+ height: 3px;
+ margin: 14px auto 0;
+ border-radius: 99px;
+ background: #386ce0;
 }
+
 .ixir-help-copy p {
-  margin: 16px 0 28px;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 1.5;
+ margin: 16px 0 28px;
+ color: rgba(255, 255, 255, 0.82);
+ font-size: 17px;
+ font-weight: 400;
+ line-height: 1.5;
 }
+
 .ixir-help-cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  width: 100%;
+ display: grid;
+ grid-template-columns: repeat(3, minmax(0, 1fr));
+ gap: 16px;
+ width: 100%;
 }
+
 .ixir-help-card {
-  display: block;
-  min-width: 0;
-  margin: 0;
-  padding: 22px 12px 20px;
-  color: #fff !important;
-  text-align: center;
-  text-decoration: none !important;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  box-sizing: border-box;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  transition:
-    background 0.22s ease,
-    color 0.22s ease,
-    border-color 0.22s ease,
-    transform 0.22s ease,
-    box-shadow 0.22s ease;
+ display: block;
+ min-width: 0;
+ margin: 0;
+ padding: 22px 12px 20px;
+ color: #fff !important;
+ text-align: center;
+ text-decoration: none !important;
+ background: rgba(255, 255, 255, 0.1);
+ border: 1px solid rgba(255, 255, 255, 0.08);
+ border-radius: 10px;
+ box-sizing: border-box;
+ backdrop-filter: blur(8px);
+ -webkit-backdrop-filter: blur(8px);
+ transition:
+  background 0.22s ease,
+  color 0.22s ease,
+  border-color 0.22s ease,
+  transform 0.22s ease,
+  box-shadow 0.22s ease;
 }
+
 .ixir-help-card:hover,
 .ixir-help-card:focus {
-  color: #1c68d2 !important;
-  background: #fff;
-  border-color: #fff;
-  outline: none;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+ color: #1c68d2 !important;
+ background: #fff;
+ border-color: #fff;
+ outline: none;
+ box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
+
 .ixir-help-card:focus-visible {
-  box-shadow: 0 0 0 3px rgba(56, 108, 224, 0.45);
+ box-shadow: 0 0 0 3px rgba(56, 108, 224, 0.45);
 }
-.ixir-help-card > i {
-  display: block;
-  margin: 0 auto 8px;
-  font-size: 42px;
-  line-height: 1;
+
+.ixir-help-card>i {
+ display: block;
+ margin: 0 auto 8px;
+ font-size: 42px;
+ line-height: 1;
 }
-.ixir-help-card > span {
-  display: block;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.01em;
+
+.ixir-help-card>span {
+ display: block;
+ font-size: 16px;
+ font-weight: 700;
+ line-height: 1.25;
+ letter-spacing: -0.01em;
 }
-.ixir-help-card > small {
-  display: block;
-  margin-top: 4px;
-  font-size: 14px;
-  line-height: 1.3;
-  opacity: 0.78;
-  overflow-wrap: anywhere;
+
+.ixir-help-card>small {
+ display: block;
+ margin-top: 4px;
+ font-size: 14px;
+ line-height: 1.3;
+ opacity: 0.78;
+ overflow-wrap: anywhere;
 }
-.ixir-help-card:hover > small,
-.ixir-help-card:focus > small {
-  opacity: 1;
+
+.ixir-help-card:hover>small,
+.ixir-help-card:focus>small {
+ opacity: 1;
 }
-.ixir-help ~ #main-body {
-  padding-top: 40px !important;
+
+.ixir-help~#main-body {
+ padding-top: 40px !important;
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .ixir-help-card:hover,
-  .ixir-help-card:focus {
-    transform: translateY(-3px);
-  }
+
+ .ixir-help-card:hover,
+ .ixir-help-card:focus {
+  transform: translateY(-3px);
+ }
 }
 
 @media only screen and (max-width: 1535px) {
-  .ixir-help-copy {
-    max-width: 560px;
-  }
+ .ixir-help-copy {
+  max-width: 560px;
+ }
 }
 
 @media only screen and (max-width: 1279px) {
-  .ixir-help-copy {
-    max-width: 500px;
-  }
-  .ixir-help::after {
-    inset: 0 30% 0 0;
-  }
+ .ixir-help-copy {
+  max-width: 500px;
+ }
+
+ .ixir-help::after {
+  inset: 0 30% 0 0;
+ }
 }
 
 @media only screen and (max-width: 1023px) {
-  .ixir-help,
-  .ixir-help-stage {
-    min-height: 0;
-  }
-  .ixir-help-stage {
-    justify-content: center;
-  }
-  .ixir-help::after {
-    inset: 0;
-    background: linear-gradient(
-      90deg,
-      #12141c 0%,
-      #12141c 58%,
-      rgba(18, 20, 28, 0.86) 100%
-    );
-  }
-  .ixir-help-visual {
-    right: -280px;
-    height: 380px;
-    opacity: 0.42;
-  }
-  .ixir-help-copy {
-    max-width: 640px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 56px 0;
-  }
-  .ixir-help-copy h2 {
-    font-size: 28px;
-  }
-  .ixir-help-copy p {
-    margin-bottom: 24px;
-    font-size: 16px;
-  }
-  .ixir-help-card {
-    padding: 20px 12px 18px;
-  }
-  .ixir-help-card > i {
-    font-size: 36px;
-  }
+
+ .ixir-help,
+ .ixir-help-stage {
+  min-height: 0;
+ }
+
+ .ixir-help-stage {
+  justify-content: center;
+ }
+
+ .ixir-help::after {
+  inset: 0;
+  background: linear-gradient(90deg,
+    #12141c 0%,
+    #12141c 58%,
+    rgba(18, 20, 28, 0.86) 100%);
+ }
+
+ .ixir-help-visual {
+  right: -280px;
+  height: 380px;
+  opacity: 0.42;
+ }
+
+ .ixir-help-copy {
+  max-width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 56px 0;
+ }
+
+ .ixir-help-copy h2 {
+  font-size: 28px;
+ }
+
+ .ixir-help-copy p {
+  margin-bottom: 24px;
+  font-size: 16px;
+ }
+
+ .ixir-help-card {
+  padding: 20px 12px 18px;
+ }
+
+ .ixir-help-card>i {
+  font-size: 36px;
+ }
 }
 
 @media only screen and (max-width: 768px) {
-  .ixir-help {
-    min-height: 0;
-    margin-top: 0;
-  }
-  .ixir-help-visual {
-    right: -420px;
-    height: 320px;
-    opacity: 0.26;
-  }
-  .ixir-help-copy {
-    max-width: 100%;
-    padding: 48px 0;
-  }
-  .ixir-help-copy h2 {
-    font-size: 24px;
-  }
-  .ixir-help-copy h2::after {
-    margin-top: 12px;
-  }
-  .ixir-help-copy p {
-    margin: 14px 0 22px;
-    font-size: 15px;
-  }
-  .ixir-help-cards {
-    grid-template-columns: minmax(0, 1fr);
-    justify-items: stretch;
-    gap: 12px;
-    width: 100%;
-  }
-  .ixir-help-card {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    justify-self: stretch;
-    padding: 16px 18px;
-    text-align: center;
-  }
-  .ixir-help-card > i {
-    margin: 0 auto 8px;
-    font-size: 26px;
-  }
+ .ixir-help {
+  min-height: 0;
+  margin-top: 0;
+ }
+
+ .ixir-help-visual {
+  right: -420px;
+  height: 320px;
+  opacity: 0.26;
+ }
+
+ .ixir-help-copy {
+  max-width: 100%;
+  padding: 48px 0;
+ }
+
+ .ixir-help-copy h2 {
+  font-size: 24px;
+ }
+
+ .ixir-help-copy h2::after {
+  margin-top: 12px;
+ }
+
+ .ixir-help-copy p {
+  margin: 14px 0 22px;
+  font-size: 15px;
+ }
+
+ .ixir-help-cards {
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: stretch;
+  gap: 12px;
+  width: 100%;
+ }
+
+ .ixir-help-card {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  justify-self: stretch;
+  padding: 16px 18px;
+  text-align: center;
+ }
+
+ .ixir-help-card>i {
+  margin: 0 auto 8px;
+  font-size: 26px;
+ }
 }
 
 .ixir-help.is-armed .ixir-help-visual,
 .ixir-help.is-armed .ixir-help-copy h2,
-.ixir-help.is-armed .ixir-help-copy > p,
+.ixir-help.is-armed .ixir-help-copy>p,
 .ixir-help.is-armed .ixir-help-card {
-  opacity: 0;
-  transform: translate3d(112px, 0, 0);
-  transition:
-    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms),
-    opacity 0.56s ease var(--ixir-enter-delay, 0ms);
+ opacity: 0;
+ transform: translate3d(112px, 0, 0);
+ transition:
+  transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms),
+  opacity 0.56s ease var(--ixir-enter-delay, 0ms);
 }
+
 .ixir-help.is-armed .ixir-help-visual {
-  --ixir-enter-delay: 0ms;
+ --ixir-enter-delay: 0ms;
 }
+
 .ixir-help.is-armed .ixir-help-copy h2 {
-  --ixir-enter-delay: 40ms;
+ --ixir-enter-delay: 40ms;
 }
-.ixir-help.is-armed .ixir-help-copy > p {
-  --ixir-enter-delay: 100ms;
+
+.ixir-help.is-armed .ixir-help-copy>p {
+ --ixir-enter-delay: 100ms;
 }
+
 .ixir-help.is-armed .ixir-help-card:nth-child(1) {
-  --ixir-enter-delay: 220ms;
+ --ixir-enter-delay: 220ms;
 }
+
 .ixir-help.is-armed .ixir-help-card:nth-child(2) {
-  --ixir-enter-delay: 140ms;
+ --ixir-enter-delay: 140ms;
 }
+
 .ixir-help.is-armed .ixir-help-card:nth-child(3) {
-  --ixir-enter-delay: 60ms;
+ --ixir-enter-delay: 60ms;
 }
+
 .ixir-help.is-armed.is-in .ixir-help-visual,
 .ixir-help.is-armed.is-in .ixir-help-copy h2,
-.ixir-help.is-armed.is-in .ixir-help-copy > p,
+.ixir-help.is-armed.is-in .ixir-help-copy>p,
 .ixir-help.is-armed.is-in .ixir-help-card {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
+ opacity: 1;
+ transform: translate3d(0, 0, 0);
 }
+
 @media (prefers-reduced-motion: reduce) {
-  .ixir-help.is-armed .ixir-help-visual,
-  .ixir-help.is-armed .ixir-help-copy h2,
-  .ixir-help.is-armed .ixir-help-copy > p,
-  .ixir-help.is-armed .ixir-help-card,
-  .ixir-help.is-armed.is-in .ixir-help-visual,
-  .ixir-help.is-armed.is-in .ixir-help-copy h2,
-  .ixir-help.is-armed.is-in .ixir-help-copy > p,
-  .ixir-help.is-armed.is-in .ixir-help-card {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
+
+ .ixir-help.is-armed .ixir-help-visual,
+ .ixir-help.is-armed .ixir-help-copy h2,
+ .ixir-help.is-armed .ixir-help-copy>p,
+ .ixir-help.is-armed .ixir-help-card,
+ .ixir-help.is-armed.is-in .ixir-help-visual,
+ .ixir-help.is-armed.is-in .ixir-help-copy h2,
+ .ixir-help.is-armed.is-in .ixir-help-copy>p,
+ .ixir-help.is-armed.is-in .ixir-help-card {
+  opacity: 1;
+  transform: none;
+  transition: none;
+ }
 }

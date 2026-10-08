@@ -5,7 +5,7 @@
     if (!inputs.length) {
      return;
     }
-    var phone = window.matchMedia('(max-width: 991px)').matches ||
+    var phone = window.matchMedia('(max-width: 992px)').matches ||
      window.matchMedia('(pointer: coarse)').matches ||
      window.matchMedia('(hover: none)').matches;
 
