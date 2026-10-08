@@ -1,2 +1,9 @@
 {include file="$template/components/server/dedicated-server/hero.tpl"}
 {include file="$template/components/server/dedicated-server/servers.tpl"}
+{include file="$template/components/server/dedicated-server/showcase.tpl"}
+{include file="$template/components/server/dedicated-server/features.tpl"}
+{include file="$template/components/server/dedicated-server/datacenter.tpl"}
+{include file="$template/components/server/dedicated-server/network.tpl"}
+{include file="$template/components/server/dedicated-server/solutions.tpl"}
+{include file="$template/components/server/dedicated-server/about.tpl"}
+{include file="$template/components/server/dedicated-server/faq.tpl"}

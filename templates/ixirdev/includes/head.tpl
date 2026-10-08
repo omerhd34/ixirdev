@@ -89,7 +89,7 @@
  {/if}
  {if $ixirPageSlug == 'dedicated-server'}
   <link
-   href="{$WEB_ROOT}/templates/{$template}/components/server/dedicated-server/dedicated-server.css?v={$versionHash}-r10"
+   href="{$WEB_ROOT}/templates/{$template}/components/server/dedicated-server/dedicated-server.css?v={$versionHash}-r18"
    rel="stylesheet">
  {/if}
  <script src="{$WEB_ROOT}/templates/{$template}/components/hosting/plans-slider.js?v={$versionHash}-r7" defer></script>

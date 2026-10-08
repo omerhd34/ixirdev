@@ -23,7 +23,7 @@ if ($slug === '' || !isset($pages[$slug])) {
 
 $title = $pages[$slug];
 $group = ixir_find_product_group($slug, $title);
-$customLanding = in_array($slug, ['linux-hosting', 'windows-hosting', 'wordpress-hosting', 'cloud-drive',"developer-hosting","kurumsal-mail-hosting","linux-reseller-hosting","windows-reseller-hosting","cloud-server"], true);
+$customLanding = in_array($slug, ['linux-hosting', 'windows-hosting', 'wordpress-hosting', 'cloud-drive', 'developer-hosting', 'kurumsal-mail-hosting', 'linux-reseller-hosting', 'windows-reseller-hosting', 'cloud-server', 'dedicated-server'], true);
 if ($group && !empty($group->id) && !$customLanding) {
     $root = function_exists('ixir_web_root') ? ixir_web_root() : '';
     header('Location: ' . $root . '/sepet?gid=' . (int) $group->id, true, 302);
