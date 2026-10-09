@@ -263,7 +263,7 @@ body.ixir-auth-page .ixir-help {
   }
 }
 
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 1280px) {
   .ixir-footer-grid {
     grid-template-columns: repeat(6, max-content);
     justify-content: space-between;
@@ -334,7 +334,7 @@ body.ixir-auth-page .ixir-help {
   }
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 468px) {
   .ixir-footer {
     padding-top: 32px;
   }
