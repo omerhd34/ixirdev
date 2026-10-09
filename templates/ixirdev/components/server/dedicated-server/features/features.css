@@ -1,0 +1,88 @@
+.ixir-ds-features-section {
+  background: #ffffff;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #f0f2f5;
+}
+.ixir-ds-features-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(59, 120, 231, 0.03) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+.ixir-ds-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+.ixir-ds-feature-card {
+  background: #f8f9fb;
+  border: 1px solid #eef0f4;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ixir-ds-feature-card:hover {
+  background: #ffffff;
+  border-color: #d1d9e6;
+  box-shadow: 0 15px 35px rgba(11, 37, 69, 0.08);
+  transform: translateY(-5px);
+}
+.ixir-ds-feature-icon {
+  width: 64px;
+  height: 64px;
+  background: #eef2fa;
+  color: #3b78e7;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+.ixir-ds-feature-card:hover .ixir-ds-feature-icon {
+  background: #3b78e7;
+  color: #ffffff;
+}
+.ixir-ds-feature-card h3 {
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.ixir-ds-feature-card p {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .ixir-ds-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .ixir-ds-features-section {
+    padding: 60px 0;
+  }
+  .ixir-ds-features-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

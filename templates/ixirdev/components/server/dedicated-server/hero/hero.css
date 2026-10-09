@@ -1,0 +1,14 @@
+@media (min-width: 1024px) {
+  section#home-banner.ixir-hero--dedicated-server .ixir-hero-photo img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    min-width: 122%;
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+    transform: translateX(18%);
+  }
+}

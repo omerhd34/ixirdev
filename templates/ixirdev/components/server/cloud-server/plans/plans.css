@@ -1,0 +1,39 @@
+.ixir-wh-plans.ixir-cs-pro {
+  padding: 56px 0;
+  background: radial-gradient( ellipse 70% 42% at 50% -8%, rgba(59, 120, 231, 0.22), transparent 62% ), #0b2545;
+}
+.ixir-cs-pro .ixir-wh-plans-head {
+  max-width: 860px;
+  margin-bottom: 20px;
+}
+.ixir-cs-pro .ixir-wh-plans-head h2 {
+  color: #fff;
+}
+.ixir-cs-pro .ixir-wh-plans-head p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15.5px;
+}
+
+@media (max-width: 768px) {
+  .ixir-wh-plans.ixir-cs-pro {
+    padding: 40px 0;
+  }
+}
+
+.ixir-cs-pro .ixir-wh-plan {
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+}
+.ixir-cs-pro .ixir-wh-plan--best {
+  border-color: #fbd746;
+  box-shadow: 0 0 0 1px #fbd746, 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+.ixir-cs-pro .ixir-wh-shared-box {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.ixir-cs-pro .ixir-wh-grid + .ixir-wh-slider-nav .ixir-wh-slider-dot {
+  background: rgba(255, 255, 255, 0.3);
+}
+.ixir-cs-pro .ixir-wh-grid + .ixir-wh-slider-nav .ixir-wh-slider-dot.is-active {
+  background: #fbd746;
+}

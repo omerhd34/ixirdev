@@ -1,0 +1,20 @@
+.ds-about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.ds-about-content p {
+  color: #64748b;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify;
+}
+.ds-about-content p b {
+  color: #334155;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .ds-about-content p {
+    text-align: left;
+  }
+}

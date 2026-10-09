@@ -1,0 +1,14 @@
+.ixir-wh-diff.ixir-cs-usage {
+  padding: 56px 0;
+  background: #fff;
+}
+.ixir-cs-usage .ixir-wh-diff-grid li {
+  background: #f8fafd;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .ixir-wh-diff.ixir-cs-usage {
+    padding: 40px 0;
+  }
+}

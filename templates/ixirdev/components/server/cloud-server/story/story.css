@@ -1,0 +1,12 @@
+.ixir-wh-story.ixir-cs-story {
+  padding: 56px 0;
+}
+.ixir-cs-story .ixir-wh-story-intro {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .ixir-wh-story.ixir-cs-story {
+    padding: 40px 0;
+  }
+}

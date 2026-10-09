@@ -1,0 +1,182 @@
+.ixir-cs-cta {
+  position: relative;
+  padding: 56px 0;
+  overflow: hidden;
+  background: radial-gradient( circle at 12% 20%, rgba(255, 255, 255, 0.14) 0%, transparent 38% ), radial-gradient( circle at 88% 90%, rgba(255, 255, 255, 0.1) 0%, transparent 42% ), linear-gradient(120deg, #1a56c4 0%, #386ce0 100%);
+  color: #fff;
+}
+.ixir-cs-cta::before, .ixir-cs-cta::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.ixir-cs-cta::before {
+  top: -120px;
+  left: -80px;
+  width: 320px;
+  height: 320px;
+}
+.ixir-cs-cta::after {
+  right: -100px;
+  bottom: -160px;
+  width: 400px;
+  height: 400px;
+}
+.ixir-cs-cta-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.ixir-cs-cta-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.ixir-cs-cta-icon {
+  display: inline-flex;
+  flex: 0 0 52px;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 24px rgba(11, 37, 69, 0.2);
+  font-size: 22px;
+}
+.ixir-cs-cta h2 {
+  margin: 0;
+  text-align: left;
+  color: #fff;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  font-size: clamp(24px, 2.2vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.ixir-cs-cta-inner > p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+.ixir-cs-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 26px;
+}
+.ixir-cs-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 52px;
+  padding: 0 26px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.ixir-cs-cta-btn i {
+  font-size: 17px;
+}
+.ixir-cs-cta-btn--primary {
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(11, 37, 69, 0.25);
+  color: #1a56c4;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  letter-spacing: 0.01em;
+}
+.ixir-cs-cta-btn--primary:hover, .ixir-cs-cta-btn--primary:focus {
+  background: #fbd746;
+  color: #0b2545;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+.ixir-cs-cta-btn--ghost {
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+.ixir-cs-cta-btn--ghost:hover, .ixir-cs-cta-btn--ghost:focus {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+.ixir-cs-cta-inner > .ixir-cs-cta-hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 28px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+.ixir-cs-cta-hours::before {
+  content: "";
+  display: block;
+  flex: 0 0 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.6);
+  animation: ixirCsCtaPulse 2s ease-out infinite;
+}
+
+@keyframes ixirCsCtaPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.6);
+  }
+
+  70% {
+    box-shadow: 0 0 0 8px rgba(74, 222, 128, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ixir-cs-cta-hours::before {
+    animation: none;
+  }
+  .ixir-cs-cta-btn:hover, .ixir-cs-cta-btn:focus {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .ixir-cs-cta {
+    padding: 40px 0;
+  }
+  .ixir-cs-cta-title {
+    gap: 12px;
+  }
+  .ixir-cs-cta-icon {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+  .ixir-cs-cta-btn {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+}

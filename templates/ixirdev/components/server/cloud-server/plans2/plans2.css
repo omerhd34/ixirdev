@@ -1,0 +1,32 @@
+.ixir-cs-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.ixir-cs-title .ixir-wh-story-icon {
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  border-radius: 15px;
+  font-size: 22px;
+}
+.ixir-cs-title h2 {
+  margin: 0;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .ixir-cs-title {
+    gap: 12px;
+  }
+  .ixir-cs-title .ixir-wh-story-icon {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+}
