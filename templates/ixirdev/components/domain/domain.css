@@ -620,12 +620,6 @@
  width: 22%;
 }
 
-.ixir-domain-prices-table th:first-child .ixir-dp-sort {
- float: right;
- margin-left: 0;
- margin-top: 2px;
-}
-
 .ixir-domain-prices-table th:nth-child(n + 3),
 .ixir-domain-prices-table td:nth-child(n + 3) {
  text-align: center;
@@ -982,11 +976,6 @@ body.ixir-domain-search-page .ixir-help {
  .ixir-domain-prices-table th:first-child {
   width: auto;
   white-space: nowrap;
- }
-
- .ixir-domain-prices-table th:first-child .ixir-dp-sort {
-  float: none;
-  margin-left: 6px;
  }
 
  #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-tlds {
