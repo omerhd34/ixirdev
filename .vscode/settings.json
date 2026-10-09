@@ -1,9 +1,0 @@
-{
- "editor.tabSize": 1,
- "editor.insertSpaces": true,
- "editor.detectIndentation": false,
- "files.associations": {
-  "*.tpl": "smarty"
- },
-  "gitlens.codeLens.enabled": false
-}

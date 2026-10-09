@@ -58,3 +58,8 @@ assets/webfonts/
 /.htaccess
 /.hintrc
 /.editorconfig
+
+# Kök dizin ayarları ve çekirdek PHP dosyaları
+/.agents/
+/.vscode/
+/*.php
