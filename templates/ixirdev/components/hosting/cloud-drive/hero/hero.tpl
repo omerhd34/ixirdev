@@ -1,42 +1,32 @@
- <section id="home-banner" class="ixir-hero ixir-hero--windows" aria-label="Windows Hosting">
-  <style>
-   @media (min-width: 993px) {
-    section#home-banner.ixir-hero--windows .ixir-hero-photo img {
-     object-position: 50% center !important;
-    }
-   }
-  </style>
+ <section id="home-banner" class="ixir-hero ixir-hero--wordpress" aria-label="WordPress Hosting">
   <picture class="ixir-hero-photo">
-   <img src="{$WEB_ROOT}/templates/{$template}/img/bg37.webp?v=r2" alt="">
+   <source srcset="{$WEB_ROOT}/templates/{$template}/img/hosting/bg15.webp" type="image/webp">
+   <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/bg15.webp" alt="" width="1920" height="1080">
   </picture>
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
-     <h1>Windows Hosting</h1>
-     <p>ASP.NET, .NET Core ve MSSQL ile oluşturulmuş projeleriniz için Windows Hosting hizmeti. Windows yerine Linux
-      tercih ediyorsanız planlarımıza göz atabilirsiniz.</p>
+     <h1>Cloud Drive</h1>
+     <p>Dosyalarınızı yurt içindeki sunucularda barındırın, dünyanın her yerinden ulaşın.</p>
     </div>
     <div class="ixir-hero-actions">
      <a href="#ixir-wh-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-wh-plans-btn">
-      Windows Hosting Paketleri <i class="fas fa-arrow-down" aria-hidden="true"></i>
-     </a>
-     <a href="{$WEB_ROOT}/linux-hosting" class="ixir-hero-btn ixir-hero-btn--secondary">
-      Linux Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      Cloud Drive Paketleri <i class="fas fa-arrow-down" aria-hidden="true"></i>
      </a>
     </div>
     <p class="ixir-hero-label" aria-hidden="true">Özellikler</p>
     <ul class="ixir-hero-points" aria-label="Özellikler">
      <li>
       <i class="fas fa-hdd" aria-hidden="true"></i>
-      <span>Limitsiz NVMe SSD Disk</span>
+      <span>Sınırsız Trafik</span>
      </li>
      <li>
       <i class="fas fa-desktop" aria-hidden="true"></i>
-      <span>Plesk Kontrol Paneli</span>
+      <span>Otomatik Senkronizasyon</span>
      </li>
      <li>
       <i class="fas fa-lock" aria-hidden="true"></i>
-      <span>Ücretsiz SSL Sertifikası</span>
+      <span>Her Yerden Erişim</span>
      </li>
     </ul>
     <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer hizmetler">
@@ -75,8 +65,8 @@
        </a>
       </li>
       <li>
-       <a href="{$WEB_ROOT}/wordpress-hosting" title="WordPress Hosting">
-        <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress Hosting</span>
+       <a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting">
+        <i class="fab fa-windows fa-fw" aria-hidden="true"></i><span>Windows Hosting</span>
        </a>
       </li>
       <li>
@@ -112,13 +102,15 @@
   </div>
   <div class="ixir-hero-strip" aria-hidden="true">
    <div class="ixir-hero-strip-track" id="ixirHeroStripTrack">
-    <span>Limitsiz NVMe SSD Disk </span>
-    <span>Plesk Kontrol Paneli</span>
-    <span>Ücretsiz SSL Sertifikası</span>
-    <span>Windows Server</span>
-    <span>ASP.Net Core 10</span>
-    <span>ASP.Net 4.8</span>
-    <span>IIS 10</span>
+    <span>Sınırsız Trafik</span>
+    <span>Otomatik Senkronizasyon</span>
+    <span>Her Yerden Erişim</span>
+    <span>Mobil Senkronizasyon</span>
+    <span>Desktop Senkronizasyon</span>
+    <span>Dosya Paylaşımı</span>
+    <span>Yüksek Bağlantı Hızı</span>
+    <span>Yüksek Kota</span>
+    <span>Yedekleme</span>
    </div>
   </div>
  </section>

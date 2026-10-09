@@ -1,0 +1,3 @@
+.ixir-wh-page--wp .ixir-wh-guide.is-armed .ixir-wh-guide-item:nth-child(even):not(.is-in) {
+  transform: translate3d(112px, 0, 0);
+}

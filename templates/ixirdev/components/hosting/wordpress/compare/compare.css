@@ -1,0 +1,3 @@
+.ixir-wh-table--3 .ixir-wh-table-plans, .ixir-wh-table--3 .ixir-wh-table-prices, .ixir-wh-table--3 .ixir-wh-table-row, .ixir-wh-table--3 .ixir-wh-table-foot {
+  grid-template-columns: minmax(210px, 1.35fr) repeat(3, minmax(140px, 1fr));
+}

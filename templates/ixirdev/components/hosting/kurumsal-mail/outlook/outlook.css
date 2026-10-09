@@ -1,0 +1,94 @@
+.ixir-km-outlook {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+  background: radial-gradient( circle at 12% 20%, rgba(255, 255, 255, 0.12) 0%, transparent 40% ), radial-gradient( circle at 90% 85%, rgba(255, 255, 255, 0.1) 0%, transparent 45% ), linear-gradient(225deg, #1b93ee 0%, #1461a1 100%);
+  color: #fff;
+}
+.ixir-km-outlook-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 56px;
+}
+.ixir-km-outlook-shot {
+  margin: 0;
+  overflow: hidden;
+  border: 6px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 30px 70px rgba(6, 30, 70, 0.4);
+}
+.ixir-km-outlook-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ixir-km-outlook-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.ixir-km-outlook-copy h2 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: clamp(26px, 2.4vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.18;
+}
+.ixir-km-outlook-copy p {
+  margin: 0 0 12px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+.ixir-km-outlook-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.ixir-km-outlook-points li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.ixir-km-outlook-points li i {
+  color: #bfe0ff;
+  font-size: 13px;
+}
+
+@media (max-width: 992px) {
+  .ixir-km-outlook {
+    padding: 56px 0;
+  }
+  .ixir-km-outlook-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+  .ixir-km-outlook-shot {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

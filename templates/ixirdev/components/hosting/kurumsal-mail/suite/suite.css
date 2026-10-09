@@ -1,0 +1,218 @@
+.ixir-km-suite {
+  padding: 72px 0;
+  background: #fff;
+}
+.ixir-km-suite-head {
+  max-width: 880px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+.ixir-km-suite-head h2 {
+  margin: 0 0 12px;
+  color: #0b2545;
+  font-size: clamp(26px, 2.4vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.18;
+}
+.ixir-km-suite-head p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+.ixir-km-suite-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 40px;
+  padding: 6px;
+  overflow-x: auto;
+  border: 1px solid #e6ebf5;
+  border-radius: 16px;
+  background: #f4f7fd;
+  scrollbar-width: none;
+}
+.ixir-km-suite-tabs::-webkit-scrollbar {
+  display: none;
+}
+.ixir-km-suite-tab {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: #5b6474;
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.ixir-km-suite-tab i {
+  color: #9aa3b2;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+.ixir-km-suite-tab:hover {
+  color: #0b2545;
+}
+.ixir-km-suite-tab:hover i {
+  color: #1a56c4;
+}
+.ixir-km-suite-tab:focus-visible {
+  outline: 2px solid #1a56c4;
+  outline-offset: 2px;
+}
+.ixir-km-suite-tab.is-active {
+  background: #fff;
+  color: #1a56c4;
+  box-shadow: 0 6px 18px rgba(26, 86, 196, 0.14);
+}
+.ixir-km-suite-tab.is-active i {
+  color: #1a56c4;
+}
+.ixir-km-suite-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 56px;
+}
+.ixir-km-suite-panel[hidden] {
+  display: none;
+}
+.ixir-km-suite-panel.is-active {
+  animation: ixirKmSuiteIn 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.ixir-km-suite-shot {
+  position: relative;
+  justify-self: center;
+  width: 100%;
+  max-width: 480px;
+  margin: 0;
+  padding-top: 34px;
+  overflow: hidden;
+  border: 1px solid #e3e8f2;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(11, 37, 69, 0.12), 0 4px 12px rgba(11, 37, 69, 0.05);
+}
+.ixir-km-suite-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 14px;
+  border-bottom: 1px solid #eef1f6;
+  background: #f7f8fb;
+}
+.ixir-km-suite-bar i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5f57;
+}
+.ixir-km-suite-bar i:nth-child(2) {
+  background: #febc2e;
+}
+.ixir-km-suite-bar i:nth-child(3) {
+  background: #28c840;
+}
+.ixir-km-suite-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ixir-km-suite-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.ixir-km-suite-copy .ixir-km-suite-title h3 {
+  margin: 0;
+}
+.ixir-km-suite-icon {
+  display: inline-flex;
+  flex: 0 0 48px;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #386ce0 0%, #1a56c4 100%);
+  box-shadow: 0 10px 22px rgba(56, 108, 224, 0.3);
+  color: #fff;
+  font-size: 19px;
+}
+.ixir-km-suite-copy h3 {
+  margin: 0 0 14px;
+  color: #0b2545;
+  font-size: clamp(22px, 1.9vw, 28px);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+.ixir-km-suite-copy p {
+  margin: 0 0 12px;
+  color: #4b5160;
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+.ixir-km-suite-copy p:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes ixirKmSuiteIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ixir-km-suite-panel.is-active {
+    animation: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .ixir-km-suite {
+    padding: 52px 0;
+  }
+  .ixir-km-suite-tabs {
+    justify-content: flex-start;
+    margin-bottom: 28px;
+  }
+  .ixir-km-suite-panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  .ixir-km-suite-shot {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .ixir-km-suite-tab {
+    padding: 11px 14px;
+    font-size: 13.5px;
+  }
+}

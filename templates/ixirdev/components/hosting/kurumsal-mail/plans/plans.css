@@ -1,0 +1,185 @@
+.ixir-wh-quota {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0 0 16px;
+}
+.ixir-wh-quota > div {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  row-gap: 3px;
+  align-items: center;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid #c9d8f5;
+  border-radius: 8px;
+  background: #f5f8ff;
+  text-align: left;
+}
+.ixir-wh-quota > div > i {
+  grid-row: 1 / span 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dbe5f8;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a56c4;
+  font-size: 14px;
+}
+.ixir-wh-quota span {
+  align-self: end;
+  color: #3d4a63;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.ixir-wh-quota b {
+  align-self: start;
+  color: #0b2545;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.ixir-wh-quota:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1280px) {
+  .ixir-wh-shared--5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .ixir-wh-shared--5 li {
+    grid-template-columns: 32px minmax(0, 1fr) auto;
+    column-gap: 10px;
+    padding: 12px;
+    font-size: 13.5px;
+  }
+  .ixir-wh-shared.ixir-wh-shared--5 > li > i {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+}
+
+.ixir-wh-shared--click > li {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.ixir-wh-shared.ixir-wh-shared--click li:hover .ixir-wh-tip .ixir-wh-tip-box, .ixir-wh-shared.ixir-wh-shared--click li:focus-within .ixir-wh-tip .ixir-wh-tip-box {
+  max-height: 0;
+  margin-top: 0;
+  padding: 0 12px;
+  opacity: 0;
+  transition: max-height 0.3s ease, margin-top 0.3s ease, padding 0.3s ease, opacity 0.2s ease;
+}
+.ixir-wh-shared.ixir-wh-shared--click li.is-open .ixir-wh-tip .ixir-wh-tip-box {
+  max-height: 240px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  opacity: 1;
+  transition: max-height 0.5s ease, margin-top 0.4s ease, padding 0.4s ease, opacity 0.4s ease 0.05s;
+}
+.ixir-wh-shared.ixir-wh-shared--click li:focus-within .ixir-wh-tip-btn {
+  color: #9aa3b2;
+}
+.ixir-wh-shared.ixir-wh-shared--click li:hover .ixir-wh-tip-btn, .ixir-wh-shared.ixir-wh-shared--click li.is-open .ixir-wh-tip-btn {
+  color: #1a56c4;
+}
+.ixir-wh-shared--click > li.is-open {
+  border-color: #9fbaf0;
+  box-shadow: 0 10px 24px rgba(26, 86, 196, 0.1);
+}
+.ixir-wh-shared > li.is-revealed {
+  animation: ixirSharedIn 0.45s ease both;
+}
+
+@keyframes ixirSharedIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.ixir-wh-shared-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+.ixir-wh-shared-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px 10px 20px;
+  border: 1px solid #c9d8f5;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(26, 86, 196, 0.08);
+  color: #1a56c4;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.ixir-wh-shared-more-btn:hover, .ixir-wh-shared-more-btn:focus-visible {
+  border-color: #1a56c4;
+  background: #1a56c4;
+  box-shadow: 0 10px 22px rgba(26, 86, 196, 0.22);
+  color: #fff;
+  outline: none;
+}
+.ixir-wh-shared-more-count {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #eaf1ff;
+  color: #1a56c4;
+  font-size: 12px;
+}
+.ixir-wh-shared-more-count:empty {
+  display: none;
+}
+.ixir-wh-shared-more-btn i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #eaf1ff;
+  font-size: 11px;
+  transition: transform 0.25s ease, background-color 0.2s ease;
+}
+.ixir-wh-shared-more-btn:hover i, .ixir-wh-shared-more-btn:focus-visible i {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(2px);
+}
+.ixir-wh-shared-more-btn[aria-expanded="true"] i {
+  transform: rotate(180deg);
+}
+.ixir-wh-shared-more-btn[aria-expanded="true"]:hover i, .ixir-wh-shared-more-btn[aria-expanded="true"]:focus-visible i {
+  transform: rotate(180deg) translateY(2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ixir-wh-shared > li.is-revealed {
+    animation: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ixir-wh-shared--slider ~ .ixir-wh-shared-more {
+    display: none;
+  }
+}

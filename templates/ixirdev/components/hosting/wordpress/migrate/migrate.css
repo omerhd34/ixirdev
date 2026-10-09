@@ -1,0 +1,284 @@
+.ixir-wh-migrate {
+  position: relative;
+  padding: 64px 0 72px;
+  overflow: hidden;
+  background: radial-gradient( ellipse 55% 70% at 12% 45%, rgba(59, 120, 231, 0.1), transparent 68% ), radial-gradient( ellipse 48% 60% at 88% 30%, rgba(163, 212, 58, 0.08), transparent 70% ), linear-gradient(180deg, #f8fafc 0%, #ffffff 48%, #f4f7fb 100%);
+}
+.ixir-wh-migrate.is-armed {
+  overflow-x: clip;
+}
+.ixir-wh-migrate.is-armed .ixir-wh-migrate-visual, .ixir-wh-migrate.is-armed .ixir-wh-migrate-copy {
+  opacity: 0;
+  transform: translate3d(72px, 0, 0);
+  pointer-events: none;
+  transition: transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms), opacity 0.56s ease var(--ixir-enter-delay, 0ms);
+}
+.ixir-wh-migrate.is-armed .ixir-wh-migrate-visual {
+  --ixir-enter-delay: 0ms;
+}
+.ixir-wh-migrate.is-armed .ixir-wh-migrate-copy {
+  --ixir-enter-delay: 90ms;
+}
+.ixir-wh-migrate.is-armed .ixir-wh-migrate-visual.is-in, .ixir-wh-migrate.is-armed .ixir-wh-migrate-copy.is-in, .ixir-wh-migrate.is-settled .ixir-wh-migrate-visual, .ixir-wh-migrate.is-settled .ixir-wh-migrate-copy {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+.ixir-wh-migrate.is-settled .ixir-wh-migrate-visual, .ixir-wh-migrate.is-settled .ixir-wh-migrate-copy {
+  transition: none;
+}
+.ixir-wh-migrate-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+.ixir-wh-migrate-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+}
+.ixir-wh-migrate-visual::before {
+  content: "";
+  position: absolute;
+  width: 72%;
+  height: 68%;
+  border-radius: 50%;
+  background: radial-gradient( circle, rgba(59, 120, 231, 0.22) 0%, rgba(163, 212, 58, 0.12) 42%, transparent 72% );
+  pointer-events: none;
+}
+.ixir-wh-migrate-art {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(100%, 420px);
+  max-width: 100%;
+  margin: 0 auto;
+  --ixir-migrate-shadow-core: rgba(28, 36, 51, 0.26);
+  --ixir-migrate-shadow-mid: rgba(28, 36, 51, 0.1);
+  --ixir-migrate-shadow-glow: rgba(59, 120, 231, 0.18);
+}
+.ixir-wh-migrate-art::before, .ixir-wh-migrate-art::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.55s ease;
+}
+.ixir-wh-migrate-art::before {
+  bottom: -2%;
+  width: 92%;
+  height: 12%;
+  background: radial-gradient( closest-side, var(--ixir-migrate-shadow-glow) 0%, transparent 100% );
+  filter: blur(6px);
+}
+.ixir-wh-migrate-art::after {
+  bottom: 1.5%;
+  width: 68%;
+  height: 5.5%;
+  background: radial-gradient( closest-side, var(--ixir-migrate-shadow-core) 0%, var(--ixir-migrate-shadow-mid) 55%, transparent 100% );
+  filter: blur(2px);
+}
+.ixir-wh-migrate-visual img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  clip-path: inset(-10% -10% 5.8% -10%);
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.ixir-wh-migrate-visual:hover img {
+  transform: translateY(-6px) scale(1.02) rotate(-1deg);
+}
+.ixir-wh-migrate-visual:hover .ixir-wh-migrate-art::after {
+  opacity: 0.75;
+  transform: translateX(-50%) scaleX(0.88);
+}
+.ixir-wh-migrate-visual:hover .ixir-wh-migrate-art::before {
+  opacity: 0.8;
+  transform: translateX(-50%) scaleX(0.92);
+}
+.ixir-wh-migrate-copy {
+  max-width: 540px;
+}
+.ixir-wh-migrate-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  padding: 7px 12px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #eef4ff 0%, #e4edff 100%);
+  color: #2f66cc;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+.ixir-wh-migrate-copy h2 {
+  margin: 0 0 12px;
+  color: #0b2545;
+  font-size: clamp(28px, 3.4vw, 42px);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+}
+.ixir-wh-migrate-copy .ixir-wh-migrate-lead {
+  margin: 0 0 10px;
+  color: #2a3344;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.ixir-wh-migrate-copy p {
+  margin: 0;
+  color: #5b6472;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.ixir-wh-migrate-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+  padding: 13px 22px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #4f86f0 0%, #3b78e7 100%);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 10px 22px rgba(59, 120, 231, 0.28);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ixir-wh-migrate-cta:hover, .ixir-wh-migrate-cta:focus {
+  background: linear-gradient(180deg, #3f7aeb 0%, #2f66cc 100%);
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 26px rgba(59, 120, 231, 0.34);
+}
+.ixir-wh-migrate-cta:focus-visible {
+  outline: 2px solid #0b2545;
+  outline-offset: 3px;
+}
+
+@media (min-width: 768px) {
+  .ixir-wh-migrate-grid {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .ixir-wh-migrate-copy .ixir-wh-migrate-lead {
+    font-size: 17px;
+  }
+  .ixir-wh-migrate-copy p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+}
+
+@media (min-width: 992px) {
+  .ixir-wh-migrate-grid {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 48px;
+  }
+  .ixir-wh-migrate-visual {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ixir-wh-migrate-grid {
+    gap: 20px;
+  }
+  .ixir-wh-migrate-visual {
+    min-height: 0;
+  }
+  .ixir-wh-migrate-art {
+    width: min(72%, 300px);
+  }
+  .ixir-wh-migrate-copy {
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .ixir-wh-migrate-copy .ixir-wh-migrate-lead {
+    font-size: 17px;
+  }
+  .ixir-wh-migrate-copy p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 479px) {
+  .ixir-wh-migrate-art {
+    width: min(80%, 260px);
+  }
+  .ixir-wh-migrate-copy h2 {
+    font-size: 24px;
+  }
+  .ixir-wh-migrate-cta {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ixir-wh-migrate {
+    padding: 40px 0 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ixir-wh-migrate-visual:hover img, .ixir-wh-migrate-cta:hover, .ixir-wh-migrate-cta:focus, .ixir-wh-why-card:hover {
+    transform: none;
+  }
+  .ixir-wh-migrate-visual:hover .ixir-wh-migrate-art::before, .ixir-wh-migrate-visual:hover .ixir-wh-migrate-art::after {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1024px), (prefers-reduced-motion: reduce) {
+  .ixir-wh-migrate.is-armed {
+    overflow-x: visible;
+  }
+  .ixir-wh-migrate.is-armed .ixir-wh-migrate-visual, .ixir-wh-migrate.is-armed .ixir-wh-migrate-copy, .ixir-wh-migrate.is-armed .ixir-wh-migrate-visual.is-in, .ixir-wh-migrate.is-armed .ixir-wh-migrate-copy.is-in {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
+  }
+}
+
+.ixir-wh-page--wp .ixir-wh-migrate {
+  color: #fff;
+  background: radial-gradient( ellipse 50% 55% at 18% 20%, rgba(59, 120, 231, 0.18), transparent 68% ), radial-gradient( ellipse 42% 48% at 88% 78%, rgba(163, 212, 58, 0.1), transparent 70% ), linear-gradient(165deg, #0b2545 0%, #0b2545 52%, #1a202c 100%);
+}
+.ixir-wh-page--wp .ixir-wh-migrate-art {
+  --ixir-migrate-shadow-core: rgba(2, 8, 20, 0.7);
+  --ixir-migrate-shadow-mid: rgba(2, 8, 20, 0.32);
+  --ixir-migrate-shadow-glow: rgba(79, 134, 240, 0.32);
+}
+.ixir-wh-page--wp .ixir-wh-migrate-eyebrow {
+  background: rgba(255, 255, 255, 0.1);
+  color: #9ec0ff;
+}
+.ixir-wh-page--wp .ixir-wh-migrate-copy h2, .ixir-wh-page--wp .ixir-wh-migrate-copy .ixir-wh-migrate-lead {
+  color: #fff;
+}
+.ixir-wh-page--wp .ixir-wh-migrate-copy p {
+  color: rgba(255, 255, 255, 0.72);
+}
+.ixir-wh-page--wp .ixir-wh-migrate.is-armed .ixir-wh-migrate-visual:not(.is-in) {
+  transform: translate3d(-72px, 0, 0);
+}

@@ -1,0 +1,5 @@
+@media (min-width: 993px) {
+  section#home-banner.ixir-hero--wordpress .ixir-hero-photo img {
+    object-position: 50% center !important;
+  }
+}

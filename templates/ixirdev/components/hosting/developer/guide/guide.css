@@ -1,0 +1,26 @@
+.ixir-wh-guide--dark {
+  background: radial-gradient( ellipse 70% 42% at 50% -8%, rgba(59, 120, 231, 0.22), transparent 62% ), #0b2545;
+}
+.ixir-wh-guide--dark .ixir-wh-guide-item {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: none;
+}
+.ixir-wh-guide--dark .ixir-wh-guide-icon {
+  background: #fbd746;
+  color: #0b2545;
+}
+.ixir-wh-guide--dark .ixir-wh-guide-item h2, .ixir-wh-guide--dark .ixir-wh-guide-item strong {
+  color: #fff;
+}
+.ixir-wh-guide--dark .ixir-wh-guide-item p {
+  color: rgba(255, 255, 255, 0.72);
+}
+.ixir-wh-guide--dark .ixir-wh-guide-item a {
+  color: #8fb4ff;
+  border-bottom-color: rgba(143, 180, 255, 0.35);
+}
+.ixir-wh-guide--dark .ixir-wh-guide-item a:hover, .ixir-wh-guide--dark .ixir-wh-guide-item a:focus {
+  color: #fff;
+  border-bottom-color: currentColor;
+}

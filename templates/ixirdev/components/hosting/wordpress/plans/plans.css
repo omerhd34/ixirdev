@@ -1,0 +1,18 @@
+.ixir-wh-why .ixir-wh-tip {
+  margin-left: auto;
+}
+.ixir-wh-why .ixir-wh-tip-btn {
+  color: rgba(255, 255, 255, 0.55);
+}
+.ixir-wh-why .ixir-wh-tip-btn:hover, .ixir-wh-why .ixir-wh-tip-btn:focus {
+  color: #fff;
+}
+.ixir-wh-page--wp .ixir-wh-why .ixir-wh-tip-btn {
+  color: rgba(36, 41, 53, 0.45);
+}
+.ixir-wh-page--wp .ixir-wh-why .ixir-wh-tip-btn:hover, .ixir-wh-page--wp .ixir-wh-why .ixir-wh-tip-btn:focus {
+  color: #0b2545;
+}
+.ixir-wh-page--wp .ixir-wh-compare.is-armed .ixir-wh-table-scroll:not(.is-in) {
+  transform: translate3d(-112px, 0, 0);
+}

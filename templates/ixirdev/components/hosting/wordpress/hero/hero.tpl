@@ -1,11 +1,4 @@
  <section id="home-banner" class="ixir-hero ixir-hero--wordpress" aria-label="WordPress Hosting">
-  <style>
-   @media (min-width: 993px) {
-    section#home-banner.ixir-hero--wordpress .ixir-hero-photo img {
-     object-position: 50% center !important;
-    }
-   }
-  </style>
   <picture class="ixir-hero-photo">
    <source srcset="{$WEB_ROOT}/templates/{$template}/img/wordpress-hero.webp?v=r2" type="image/webp">
    <img src="{$WEB_ROOT}/templates/{$template}/img/wordpress-hero.jpg?v=r2" alt="" width="1920" height="1080">

@@ -1,0 +1,237 @@
+.ixir-wh-why {
+  position: relative;
+  padding: 64px 0 72px;
+  color: #fff;
+  background: radial-gradient( ellipse 50% 55% at 18% 20%, rgba(59, 120, 231, 0.18), transparent 68% ), radial-gradient( ellipse 42% 48% at 88% 78%, rgba(163, 212, 58, 0.1), transparent 70% ), linear-gradient(165deg, #0b2545 0%, #0b2545 52%, #1a202c 100%);
+  overflow: hidden;
+}
+.ixir-wh-why.is-armed {
+  overflow-x: clip;
+}
+.ixir-wh-why.is-armed .ixir-wh-why-card {
+  opacity: 0;
+  transform: translate3d(72px, 0, 0);
+  pointer-events: none;
+  transition: transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms), opacity 0.56s ease var(--ixir-enter-delay, 0ms);
+}
+.ixir-wh-why.is-armed .ixir-wh-why-card:nth-child(1) {
+  --ixir-enter-delay: 0ms;
+}
+.ixir-wh-why.is-armed .ixir-wh-why-card:nth-child(2) {
+  --ixir-enter-delay: 100ms;
+}
+.ixir-wh-why.is-armed .ixir-wh-why-card.is-in, .ixir-wh-why.is-settled .ixir-wh-why-card {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+.ixir-wh-why.is-settled .ixir-wh-why-card {
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+.ixir-wh-why-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+.ixir-wh-why-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 32px 30px 28px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.06) 0%, transparent 42%), rgba(255, 255, 255, 0.035);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+.ixir-wh-why-card::after {
+  position: absolute;
+  right: -48px;
+  bottom: -64px;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-size: 240px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.035);
+  content: "";
+  pointer-events: none;
+}
+.ixir-wh-why-card--easy::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  color: rgba(255, 255, 255, 0.03);
+}
+.ixir-wh-why-card:hover {
+  border-color: rgba(255, 255, 255, 0.14);
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.08) 0%, transparent 42%), rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+.ixir-wh-why-head {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 0 0 22px;
+}
+.ixir-wh-why-icon {
+  display: inline-flex;
+  flex: 0 0 44px;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 17px;
+}
+.ixir-wh-why-card--fast .ixir-wh-why-icon {
+  background: linear-gradient(180deg, #5b95f5 0%, #3b78e7 100%);
+  box-shadow: 0 10px 18px rgba(59, 120, 231, 0.35);
+}
+.ixir-wh-why-card--easy .ixir-wh-why-icon {
+  background: linear-gradient(180deg, #9fd65c 0%, #7bc43a 100%);
+  box-shadow: 0 10px 18px rgba(123, 196, 58, 0.32);
+}
+.ixir-wh-why-head h2 {
+  margin: 0 0 6px;
+  color: #fff;
+  font-size: clamp(22px, 2.5vw, 28px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+.ixir-wh-why-head p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 14px;
+  line-height: 1.45;
+}
+.ixir-wh-why ul {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ixir-wh-why li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  transition: background 0.2s ease;
+}
+.ixir-wh-why li:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+.ixir-wh-why-check {
+  display: inline-flex;
+  flex: 0 0 26px;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 11px;
+}
+.ixir-wh-why-card--fast .ixir-wh-why-check {
+  background: rgba(59, 120, 231, 0.28);
+}
+.ixir-wh-why-card--easy .ixir-wh-why-check {
+  background: rgba(123, 196, 58, 0.28);
+}
+
+@media (min-width: 992px) {
+  .ixir-wh-why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+  }
+  .ixir-wh-why-card {
+    padding: 36px 34px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ixir-wh-why {
+    padding: 48px 0 56px;
+  }
+  .ixir-wh-why-card {
+    padding: 26px 22px 22px;
+    border-radius: 18px;
+  }
+  .ixir-wh-why li {
+    padding: 11px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px), (prefers-reduced-motion: reduce) {
+  .ixir-wh-why.is-armed {
+    overflow-x: visible;
+  }
+  .ixir-wh-why.is-armed .ixir-wh-why-card, .ixir-wh-why.is-armed .ixir-wh-why-card.is-in {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
+  }
+}
+
+.ixir-wh-page--wp .ixir-wh-why {
+  color: #0b2545;
+  background: radial-gradient( ellipse 55% 50% at 80% 0%, rgba(59, 120, 231, 0.08), transparent 65% ), #f6f7f9;
+}
+.ixir-wh-page--wp .ixir-wh-why-card {
+  border: 1px solid rgba(36, 41, 53, 0.08);
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 14px 32px rgba(28, 36, 51, 0.08);
+}
+.ixir-wh-page--wp .ixir-wh-why-card:hover {
+  border-color: rgba(36, 41, 53, 0.14);
+  background: linear-gradient(180deg, #ffffff 0%, #f3f6fb 100%);
+}
+.ixir-wh-page--wp .ixir-wh-why-card::after {
+  color: rgba(36, 41, 53, 0.04);
+}
+.ixir-wh-page--wp .ixir-wh-why-card--easy::after {
+  color: rgba(36, 41, 53, 0.035);
+}
+.ixir-wh-page--wp .ixir-wh-why-head h2 {
+  color: #0b2545;
+}
+.ixir-wh-page--wp .ixir-wh-why-head p {
+  color: #6b7280;
+}
+.ixir-wh-page--wp .ixir-wh-why li {
+  background: rgba(36, 41, 53, 0.03);
+  color: #0b2545;
+}
+.ixir-wh-page--wp .ixir-wh-why li:hover {
+  background: rgba(36, 41, 53, 0.055);
+}
+.ixir-wh-page--wp .ixir-wh-why-card--fast .ixir-wh-why-check {
+  background: rgba(59, 120, 231, 0.14);
+  color: #2f66cc;
+}
+.ixir-wh-page--wp .ixir-wh-why-card--easy .ixir-wh-why-check {
+  background: rgba(123, 196, 58, 0.16);
+  color: #5a9a24;
+}
+.ixir-wh-page--wp .ixir-wh-why.is-armed .ixir-wh-why-card:nth-child(1):not(.is-in) {
+  transform: translate3d(-72px, 0, 0);
+}
