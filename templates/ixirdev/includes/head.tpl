@@ -39,7 +39,7 @@
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/packages/packages.css?v={$versionHash}-r18"
   rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/home/promo-carousel/promo-carousel.css?v={$versionHash}-r12"
+ <link href="{$WEB_ROOT}/templates/{$template}/components/home/promo-carousel/promo-carousel.css?v={$versionHash}-r13"
   rel="stylesheet">
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/trust/trust.css?v={$versionHash}-r11" rel="stylesheet">
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/turkey-stats/turkey-stats.css?v={$versionHash}-r24"

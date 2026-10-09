@@ -108,6 +108,7 @@
   align-items: flex-start;
   justify-content: center;
   color: #fff;
+  padding-left: 60px;
 }
 
 .ixir-promo-copy h2,
@@ -358,10 +359,6 @@
   background: #fff;
 }
 
-.ixir-promo ~ #main-body {
-  padding-top: 28px !important;
-}
-
 @media (prefers-reduced-motion: reduce) {
   .ixir-promo-slide {
     transition: none;
@@ -369,6 +366,10 @@
 }
 
 @media only screen and (min-width: 1536px) {
+  .ixir-promo-copy {
+    padding-left: 68px;
+  }
+
   .ixir-promo-prev {
     left: 28px;
   }
@@ -383,6 +384,10 @@
     min-height: 340px;
     padding: 24px 0 40px;
     gap: 12px 20px;
+  }
+
+  .ixir-promo-copy {
+    padding-left: 56px;
   }
 
   .ixir-promo-visual {
@@ -405,13 +410,14 @@
 @media only screen and (max-width: 768px) {
   .ixir-promo-grid {
     grid-template-columns: minmax(0, 1fr);
-    padding: 20px 0 40px;
+    padding: 20px 24px 40px;
     text-align: center;
   }
 
   .ixir-promo-copy {
     align-items: center;
     order: 2;
+    padding-left: 0;
   }
 
   .ixir-promo .ixir-promo-btn,
@@ -430,6 +436,10 @@
     max-height: 200px;
     object-position: center;
     margin: 0 auto;
+  }
+
+   .ixir-promo-slide {
+    align-items: flex-start;
   }
 
   .ixir-promo-copy ul,
@@ -455,19 +465,17 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .ixir-promo-slide {
-    align-items: flex-start;
-  }
-}
-
 @media only screen and (max-width: 479px) {
   .ixir-promo {
     margin-top: 0;
   }
 
   .ixir-promo-grid {
-    padding: 16px 0 38px;
+    padding: 16px 20px 38px;
+  }
+
+  .ixir-promo-copy {
+    padding-left: 0;
   }
 
   .ixir-promo-copy ul {
