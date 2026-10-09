@@ -22,24 +22,22 @@
 }
 @media (min-width: 1024px) {
   :root {
+    --ixir-gutter: 20px;
+  }
+}
+@media (min-width: 1140px) {
+  :root {
+    --ixir-gutter: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
     --ixir-gutter: 32px;
   }
 }
 @media (min-width: 1280px) {
   :root {
     --ixir-gutter: 40px;
-    --ixir-max: 1200px;
-  }
-}
-@media (min-width: 1536px) {
-  :root {
-    --ixir-gutter: 64px;
-    --ixir-max: 1500px;
-  }
-}
-@media (min-width: 1920px) {
-  :root {
-    --ixir-gutter: 80px;
     --ixir-max: 1920px;
   }
 }
@@ -65,12 +63,17 @@ body {
   max-width: 100%;
   overscroll-behavior-x: none;
 }
+
 html {
+  --ixir-scroll-size: 18px;
+  --ixir-scroll-track: #101624;
   overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: auto;
+  scrollbar-color: #4d7ef0 var(--ixir-scroll-track);
 }
-body {
-  overflow-x: clip;
-}
+
+
 body {
   background-color: #fff !important;
   margin-right: 0px !important;
@@ -104,13 +107,7 @@ body {
   background: #4d7ef0;
   color: white;
 }
-html {
-  --ixir-scroll-size: 18px;
-  --ixir-scroll-track: #101624;
-  overflow-y: scroll;
-  scrollbar-width: auto;
-  scrollbar-color: #4d7ef0 var(--ixir-scroll-track);
-}
+
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   width: var(--ixir-scroll-size);
