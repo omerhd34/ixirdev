@@ -4,5 +4,6 @@
  "editor.detectIndentation": false,
  "files.associations": {
   "*.tpl": "smarty"
- }
+ },
+  "gitlens.codeLens.enabled": false
 }
