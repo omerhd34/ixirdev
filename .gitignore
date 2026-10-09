@@ -35,3 +35,26 @@ assets/img/marketconnect/
 assets/webfonts/
 # admin/
 # modules/
+
+# WHMCS Çekirdek ve Kullanılmayan Şablonlar
+/admin/
+/assets/
+/attachments/
+/crons/
+/downloads/
+/feeds/
+/includes/
+/install/
+/lang/
+/modules/
+/oauth/
+/resources/
+/status/
+/templates_c/
+/templates/six/
+/templates/twenty-one/
+/templates/orderforms/
+/templates/index.php
+/.htaccess
+/.hintrc
+/.editorconfig
