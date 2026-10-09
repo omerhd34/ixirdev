@@ -1,6 +1,8 @@
 # ixirdev
 
-**ixirdev**, [İksir İnternet Hizmetleri A.Ş.](https://www.ixirhost.com) bünyesindeki **ixirHost** markasının müşteri paneli / hizmet yönetim yazılımıdır. Domain, web hosting, bulut/kiralık sunucu, kurumsal e-posta ve SSL sertifikası gibi hizmetlerin satışı, sipariş süreci, faturalandırma ve müşteri desteğinin yönetildiği web tabanlı yönetim sistemidir.
+**ixirdev**, [İksir İnternet Hizmetleri A.Ş.](https://www.ixirhost.com) bünyesindeki **ixirHost** markası için özel olarak geliştirilmiş modern, modüler ve responsive **WHMCS müşteri paneli temasıdır**.
+
+Domain, web hosting, bulut/kiralık sunucu, kurumsal e-posta ve SSL sertifikası gibi hizmetlerin sergilendiği, müşteri paneli arayüzünün ve sipariş adımlarının modern web standartlarıyla yeniden tasarlandığı arayüz projesidir.
 
 🔗 Canlı adres: [ixirdev.com.tr](https://ixirdev.com.tr/)
 
@@ -16,80 +18,63 @@
 
 ## Özellikler
 
-- 🌐 **Alan Adı (Domain) Yönetimi** — Domain sorgulama, tescil, transfer ve whois işlemleri
-- 🖥️ **Hosting & Sunucu Yönetimi** — Web hosting, WordPress hosting, bulut sunucu ve kiralık sunucu siparişleri
-- 📧 **Kurumsal E-posta Hizmetleri** — Mail hosting, antispam ve mail gateway yönetimi
-- 🔒 **SSL Sertifikası** işlemleri
-- 🧾 **Sipariş, Fatura ve Ödeme** süreçlerinin yönetimi
-- 🎫 **Destek Talebi (Ticket)** sistemi ve dosya eki desteği
-- 🛠️ **Yönetim Paneli (Admin)** üzerinden kapsamlı sistem kontrolü
-- ⏱️ **Zamanlanmış Görevler (Cron)** ile otomatik işlemler
-- 🔑 **OAuth** ile üçüncü parti giriş entegrasyonları
-- 🌍 **Çoklu Dil Desteği** (lang modülü)
-- 🧩 **Modüler Mimari** — hizmet/ödeme sağlayıcılarının modül olarak eklenebilmesi
-- 📡 **Feed** desteği (RSS/XML)
+- 📱 **Tam Responsive Tasarım** — Masaüstü, tablet ve mobil cihazlarla %100 uyumlu modern kullanıcı arayüzü
+- 🧩 **Modüler Bileşen Mimarisi** — Sayfa bölümlerinin (hero, paketler, promo karusel, sunucu tabloları vb.) bağımsız `components/` klasöründe yönetimi
+- ⚡ **Optimize Edilmiş Stil Mimarisi** — Sayfa bazlı yüklenen dinamik CSS sistemi ve hafif asset yapısı
+- 🌐 **Özel Alan Adı (Domain) Arayüzü** — Hızlı WHOIS sorgulama, domain tescil ve fiyatlandırma tabloları
+- 🖥️ **Sunucu & Hosting Şablonları** — Dedicated, cloud ve web hosting paketleri için özel kartlar ve sipariş akışları
+- 🔒 **Gelişmiş Müşteri Paneli Sayfaları** — Fatura görüntüleme, bilet (ticket) sistemi, hesap güvenliği ve SSL yönetim şablonları
+- 🎨 **WHMCS Ekosistemi ile Uyumlu** — WHMCS standart şablon yapısıyla tam entegre Smarty şablonları
 
 ## Kullanılan Teknolojiler
 
-| Teknoloji | Kullanım Oranı |
-|---|---|
-| PHP | %82 |
-| JavaScript | %11.4 |
-| Smarty | %3.6 |
-| CSS | %2.9 |
-| Go Template | %0.1 |
-| SCSS | %0 |
-
-Şablonlama katmanında **Smarty** kullanılmaktadır.
+- **Smarty 3** — Şablonlama ve dinamik içerik render motoru
+- **CSS3 (Flexbox & Grid)** — Özel modüler stil mimarisi ve responsive düzenler
+- **JavaScript (ES6+ & jQuery)** — İnteraktif bileşenler, karuseller ve animasyonlar
+- **Bootstrap 3.4 & FontAwesome 5** — WHMCS çekirdek bağımlılıkları ve ikon kütüphanesi
+- **WebP & SVG** — Optimize edilmiş görsel ve vektörel varlıklar
 
 ## Proje Yapısı
 
 ```
 templates/
-├── orderforms/                    # Sipariş formu şablonları
-├── six/                           # Varsayılan WHMCS teması (kullanılmıyor)
-├── twenty-one/                    # Varsayılan WHMCS teması (kullanılmıyor)
-└── ixirdev/                       # ⭐ Üzerinde çalışılan proje (aktif tema)
-    ├── components/                 # Bileşen (component) dosyaları
+└── ixirdev/                        # ⭐ Aktif tema klasörü
+    ├── components/                 # Modüler bileşenler (header, footer, home, hosting, server, domain...)
     ├── css/                        # Stil dosyaları
     ├── error/                      # Hata sayfaları
     ├── fonts/                      # Font dosyaları
     ├── images/                     # Görseller
     ├── img/                        # Görseller (ikincil klasör)
-    ├── includes/                   # Ortak/parçalı şablon dosyaları
+    ├── includes/                   # Ortak/parçalı şablon dosyaları (head, navbar vb.)
     ├── js/                         # JavaScript dosyaları
     ├── oauth/                      # OAuth giriş şablonları
     ├── payment/                    # Ödeme sayfası şablonları
     ├── store/                      # Mağaza/ürün sayfası şablonları
-    ├── index.php
+    ├── index.php                   # Dizin güvenliği dosyası
     ├── theme.yaml                  # Tema yapılandırma dosyası
     └── *.tpl                       # 90+ Smarty şablon dosyası, başlıca:
-        ├── clientarea*.tpl          # Müşteri paneli: ana sayfa, domainler, faturalar, ürünler...
-        ├── account-*.tpl            # Hesap/kullanıcı yönetimi sayfaları
-        ├── supportticket*.tpl       # Destek talebi oluşturma/listeleme
+        ├── clientarea*.tpl         # Müşteri paneli: ana sayfa, domainler, faturalar, ürünler...
+        ├── account-*.tpl           # Hesap/kullanıcı yönetimi sayfaları
+        ├── supportticket*.tpl      # Destek talebi oluşturma/listeleme
         ├── domain-pricing.tpl, whois*.tpl, bulkdomainmanagement.tpl  # Domain işlemleri
         ├── configuressl-*.tpl, managessl.tpl  # SSL yapılandırma
         ├── password-reset-*.tpl, two-factor-*.tpl  # Kimlik doğrulama & güvenlik
         ├── invoice*.tpl, quotepdf.tpl, masspay.tpl  # Fatura & teklif işlemleri
-        ├── knowledgebase*.tpl                # Bilgi bankası
+        ├── knowledgebase*.tpl      # Bilgi bankası
         ├── login.tpl, logout.tpl, clientregister.tpl  # Giriş/kayıt
-        ├── header.tpl, footer.tpl, homepage.tpl        # Genel sayfa yapısı
+        ├── header.tpl, footer.tpl, homepage.tpl       # Genel sayfa yapısı
         └── ... (announcements, affiliates, upgrade, serverstatus, kurumsal, vb.)
 ```
 
 ## Kurulum
 
-> ⚠️ Bu proje ixirHost altyapısına özel geliştirilmiş kapalı kaynak bir sistemdir. Aşağıdaki adımlar genel kurulum akışını özetler.
-
-1. Depoyu sunucunuza klonlayın:
+1. Depoyu WHMCS kurulu sisteminizdeki `templates/ixirdev` dizinine klonlayın:
    ```bash
-   git clone https://github.com/omerhd34/ixirdev.git
+   git clone https://github.com/omerhd34/ixirdev.git templates/ixirdev
    ```
-2. Gerekli PHP bağımlılıklarını kurun (varsa `composer install`).
-3. Bir veritabanı oluşturun ve bağlantı bilgilerini yapılandırın.
-4. `install/` klasöründeki kurulum sihirbazını çalıştırarak sistemi başlatın.
-5. Kurulum tamamlandıktan sonra güvenlik için `install/` klasörünü kaldırın veya erişime kapatın.
-6. `crons/` altındaki zamanlanmış görevleri sunucu crontab'ınıza tanımlayın.
+2. WHMCS Yönetici Paneline giriş yapın.
+3. **Kurulum > Genel Ayarlar** (Setup > General Settings) sayfasına gidin.
+4. **Şablon (Template)** açılır menüsünden `ixirdev` seçeneğini seçip kaydedin.
 
 ## Katkıda Bulunma
 
