@@ -1,0 +1,33 @@
+.ixir-wh-diff--wp {
+  padding: 48px 0 56px;
+}
+.ixir-wh-diff--wp .ixir-wh-diff-grid {
+  gap: 28px 36px;
+}
+
+@media (max-width: 768px) {
+  .ixir-wh-diff--wp .ixir-wh-diff-grid {
+    gap: 14px;
+  }
+}
+
+.ixir-wh-diff--dark {
+  background: radial-gradient( ellipse 55% 50% at 20% 0%, rgba(59, 120, 231, 0.16), transparent 65% ), #0b2545;
+}
+.ixir-wh-diff--dark .ixir-wh-diff-head h2 {
+  color: #fff;
+}
+.ixir-wh-diff--dark .ixir-wh-diff-head p {
+  color: rgba(255, 255, 255, 0.62);
+}
+.ixir-wh-diff--dark .ixir-wh-diff-grid li {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: none;
+}
+.ixir-wh-diff--dark .ixir-wh-diff-grid h3 {
+  color: #fff;
+}
+.ixir-wh-diff--dark .ixir-wh-diff-grid p {
+  color: rgba(255, 255, 255, 0.66);
+}

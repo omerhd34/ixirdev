@@ -1,0 +1,174 @@
+.ixir-wh-compare--dark {
+  background: radial-gradient( ellipse 70% 42% at 50% -8%, rgba(59, 120, 231, 0.22), transparent 62% ), #0b2545;
+}
+.ixir-wh-compare--dark .ixir-wh-plans-head h2 {
+  color: #fff;
+}
+.ixir-wh-compare--dark .ixir-wh-plans-head p {
+  color: rgba(255, 255, 255, 0.72);
+}
+.ixir-wh-compare--dark .ixir-wh-table {
+  border-color: transparent;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+.ixir-wh-table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.ixir-wh-table {
+  min-width: 860px;
+  overflow: hidden;
+  border: 1px solid #e6e8ee;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(36, 41, 53, 0.05);
+}
+.ixir-wh-table-plans, .ixir-wh-table-prices, .ixir-wh-table-row, .ixir-wh-table-foot {
+  display: grid;
+  grid-template-columns: minmax(210px, 1.35fr) repeat(4, minmax(140px, 1fr));
+}
+.ixir-wh-table-plans > div, .ixir-wh-table-prices > div, .ixir-wh-table-row > div, .ixir-wh-table-foot > div {
+  min-width: 0;
+  padding: 14px 12px;
+  text-align: center;
+}
+.ixir-wh-table-plans > div:first-child, .ixir-wh-table-prices > div:first-child, .ixir-wh-table-row > div:first-child, .ixir-wh-table-foot > div:first-child {
+  text-align: left;
+}
+.ixir-wh-table-plans {
+  background: #fff;
+}
+.ixir-wh-table-plans > div {
+  position: relative;
+  padding-top: 22px;
+  padding-bottom: 4px;
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.ixir-wh-table-plans > div.is-best {
+  z-index: 2;
+}
+.ixir-wh-table-plans > div.is-best, .ixir-wh-table-prices > div.is-best, .ixir-wh-table-row > div.is-best, .ixir-wh-table-foot > div.is-best {
+  background: #fffdf4;
+}
+.ixir-wh-table-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 118px;
+  height: 118px;
+  overflow: hidden;
+  pointer-events: none;
+}
+.ixir-wh-table-ribbon span {
+  position: absolute;
+  top: 34px;
+  right: -40px;
+  display: block;
+  width: 168px;
+  margin: 0;
+  padding: 6px 0;
+  background: #f58220;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: rotate(45deg);
+}
+.ixir-wh-table-prices > div, .ixir-wh-table-foot > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding-bottom: 16px;
+}
+.ixir-wh-table-prices > div:first-child, .ixir-wh-table-foot > div:first-child {
+  align-items: flex-start;
+}
+.ixir-wh-table-prices s, .ixir-wh-table-foot s {
+  color: #c45353;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+.ixir-wh-table-prices b, .ixir-wh-table-foot b {
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+.ixir-wh-table-prices small, .ixir-wh-table-foot small {
+  color: #8b919c;
+  font-size: 12px;
+  font-weight: 600;
+}
+.ixir-wh-table-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 13px 16px;
+  border: 0;
+  border-top: 1px solid #eef0f4;
+  background: #f7f8fb;
+  color: #0b2545;
+  font-family: "Roboto", sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+.ixir-wh-table-toggle i {
+  color: #6b7280;
+  font-size: 12px;
+}
+.ixir-wh-table-row > div {
+  border-top: 1px solid #eef0f4;
+  color: #374151;
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+.ixir-wh-table-row > div:first-child {
+  color: #0b2545;
+  font-weight: 600;
+}
+.ixir-wh-table-row .fa-check {
+  color: #3b78e7;
+  font-size: 15px;
+}
+.ixir-wh-table-row .fa-times {
+  color: #e23b3b;
+  font-size: 15px;
+}
+.ixir-wh-table-foot {
+  border-top: 1px solid #eef0f4;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.ixir-wh-table-foot .ixir-wh-buy {
+  width: calc(100% - 8px);
+  max-width: 160px;
+  margin: 10px 0 4px;
+}
+.ixir-wh-table-foot .is-best .ixir-wh-buy {
+  background: #fbd746;
+  color: #0b2545;
+}
+.ixir-wh-table-foot .is-best .ixir-wh-buy:hover, .ixir-wh-table-foot .is-best .ixir-wh-buy:focus {
+  background: #0b2545;
+  color: #fbd746;
+}

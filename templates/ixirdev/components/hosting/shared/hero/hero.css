@@ -1,0 +1,5 @@
+@media only screen and (min-width: 993px) {
+  section#home-banner.ixir-hero--webhosting .ixir-hero-photo img, section#home-banner.ixir-hero--windows .ixir-hero-photo img, section#home-banner.ixir-hero--wordpress .ixir-hero-photo img {
+    object-position: 50% center;
+  }
+}

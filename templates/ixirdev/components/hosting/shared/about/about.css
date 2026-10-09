@@ -1,0 +1,28 @@
+.ixir-wh-about {
+  padding: 64px 0 72px;
+  background: #f6f7f9;
+}
+.ixir-wh-about.is-armed {
+  overflow-x: clip;
+}
+.ixir-wh-about.is-armed .ixir-wh-about-anim {
+  opacity: 0;
+  transform: translate3d(112px, 0, 0);
+  pointer-events: none;
+  transition: transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms), opacity 0.56s ease var(--ixir-enter-delay, 0ms);
+}
+.ixir-wh-about.is-armed .ixir-wh-about-anim.is-in, .ixir-wh-about.is-settled .ixir-wh-about-anim {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+.ixir-wh-about.is-settled .ixir-wh-about-anim {
+  transform: none;
+  transition: none;
+}
+
+@media (max-width: 640px) {
+  .ixir-wh-about {
+    padding: 40px 0 48px;
+  }
+}

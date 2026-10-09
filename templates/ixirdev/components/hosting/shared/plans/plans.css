@@ -1,0 +1,151 @@
+.ixir-wh-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.ixir-wh-billing {
+  position: relative;
+  margin: 6px 0 8px;
+}
+.ixir-wh-billing-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #1a56c4;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: calc(100% - 18px) 1px;
+  cursor: pointer;
+}
+.ixir-wh-billing-btn::after {
+  content: "";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  font-size: 12px;
+}
+.ixir-wh-billing-btn:hover, .ixir-wh-billing-btn:focus {
+  color: #123e8a;
+}
+.ixir-wh-billing-pop {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 8px);
+  left: 0;
+  width: min(360px, calc(100vw - 32px));
+  padding: 14px 14px 12px;
+  border: 1px solid #e6e8ee;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(36, 41, 53, 0.16);
+}
+.ixir-wh-billing.is-open .ixir-wh-billing-pop {
+  display: block;
+}
+.ixir-wh-billing-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.ixir-wh-billing-top strong {
+  color: #0b2545;
+  font-size: 16px;
+}
+.ixir-wh-billing-close {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: #f3f4f6;
+  color: #4b5160;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.ixir-wh-billing-pop table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.ixir-wh-billing-pop th {
+  padding: 9px 8px;
+  background: #f6f7f9;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.ixir-wh-billing-pop td {
+  padding: 11px 8px;
+  border-top: 1px solid #eef0f4;
+  color: #0b2545;
+}
+.ixir-wh-billing-pop tr.is-best td {
+  background: #fff8d6;
+  font-weight: 700;
+}
+.ixir-wh-billing-pop tr.is-best td:first-child::after {
+  content: " *";
+  color: #8a6a00;
+}
+.ixir-wh-billing-pop p {
+  margin: 8px 0 0;
+  color: #8a6a00;
+  font-size: 12px;
+  font-weight: 600;
+}
+.ixir-wh-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 14px;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+}
+.ixir-wh-more i {
+  font-size: 10px;
+  transition: transform 0.2s ease;
+}
+.ixir-wh-more:hover, .ixir-wh-more:focus {
+  color: #0b2545;
+  text-decoration: none;
+}
+.ixir-wh-more:hover i, .ixir-wh-more:focus i {
+  transform: translateY(2px);
+}
+
+@media (max-width: 1024px) {
+  .ixir-wh-billing-pop {
+    position: fixed;
+    z-index: 1050;
+    top: 50%;
+    left: 50%;
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.ixir-wh-shared--click > li {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.ixir-wh-shared--click > li.is-open {
+  border-color: #9fbaf0;
+  box-shadow: 0 10px 24px rgba(26, 86, 196, 0.1);
+}

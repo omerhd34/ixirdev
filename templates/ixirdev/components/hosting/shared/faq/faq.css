@@ -1,0 +1,161 @@
+.ixir-wh-faq {
+  padding: 56px 0 48px;
+  background: #0b2545;
+}
+.ixir-wh-faq .ixir-wh-plans-head h2 {
+  color: #fff;
+}
+.ixir-wh-faq .ixir-wh-plans-head p {
+  color: rgba(255, 255, 255, 0.72);
+}
+.ixir-wh-faq.is-armed {
+  overflow-x: clip;
+}
+.ixir-wh-faq.is-armed .ixir-wh-plans-head, .ixir-wh-faq.is-armed .ixir-wh-faq-item {
+  opacity: 0;
+  transform: translate3d(-112px, 0, 0);
+  pointer-events: none;
+  transition: transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms), opacity 0.56s ease var(--ixir-enter-delay, 0ms);
+}
+.ixir-wh-faq.is-armed .ixir-wh-plans-head {
+  --ixir-enter-delay: 0ms;
+  transform: translate3d(-64px, 0, 0);
+}
+.ixir-wh-faq.is-armed .ixir-wh-faq-item:nth-child(1) {
+  --ixir-enter-delay: 70ms;
+}
+.ixir-wh-faq.is-armed .ixir-wh-faq-item:nth-child(2) {
+  --ixir-enter-delay: 120ms;
+}
+.ixir-wh-faq.is-armed .ixir-wh-faq-item:nth-child(3) {
+  --ixir-enter-delay: 170ms;
+}
+.ixir-wh-faq.is-armed .ixir-wh-faq-item:nth-child(4) {
+  --ixir-enter-delay: 220ms;
+}
+.ixir-wh-faq.is-armed .ixir-wh-faq-item:nth-child(5) {
+  --ixir-enter-delay: 270ms;
+}
+.ixir-wh-faq.is-armed .ixir-wh-faq-item:nth-child(6) {
+  --ixir-enter-delay: 320ms;
+}
+.ixir-wh-faq.is-armed .ixir-wh-faq-item:nth-child(7) {
+  --ixir-enter-delay: 370ms;
+}
+.ixir-wh-faq.is-armed .ixir-wh-faq-item:nth-child(8) {
+  --ixir-enter-delay: 420ms;
+}
+.ixir-wh-faq.is-armed .ixir-wh-plans-head.is-in, .ixir-wh-faq.is-armed .ixir-wh-faq-item.is-in, .ixir-wh-faq.is-settled .ixir-wh-plans-head, .ixir-wh-faq.is-settled .ixir-wh-faq-item {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+.ixir-wh-faq.is-settled .ixir-wh-plans-head, .ixir-wh-faq.is-settled .ixir-wh-faq-item {
+  transform: none;
+  transition: none;
+}
+.ixir-wh-faq.ixir-slide--right.is-armed .ixir-wh-plans-head {
+  transform: translate3d(64px, 0, 0);
+}
+.ixir-wh-faq.ixir-slide--right.is-armed .ixir-wh-faq-item {
+  transform: translate3d(112px, 0, 0);
+}
+.ixir-wh-faq.ixir-slide--right.is-armed .ixir-wh-plans-head.is-in, .ixir-wh-faq.ixir-slide--right.is-armed .ixir-wh-faq-item.is-in {
+  transform: translate3d(0, 0, 0);
+}
+.ixir-wh-faq--light {
+  background: #f6f7f9;
+}
+.ixir-wh-faq--light .ixir-wh-plans-head h2 {
+  color: #0b2545;
+}
+.ixir-wh-faq--light .ixir-wh-plans-head p {
+  color: #6b7280;
+}
+.ixir-wh-faq .ixir-wh-plans-head {
+  margin-bottom: 28px;
+}
+.ixir-wh-faq-list {
+  display: grid;
+  gap: 12px;
+}
+.ixir-wh-faq-item {
+  border: 1px solid #e4e7ee;
+  border-radius: 6px;
+  background: #fff;
+}
+.ixir-wh-faq-q {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  background: transparent;
+  color: #3d4453;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: left;
+  cursor: pointer;
+}
+.ixir-wh-faq-q i {
+  flex-shrink: 0;
+  width: 14px;
+  color: #9aa1ab;
+  font-size: 12px;
+  text-align: center;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+.ixir-wh-faq-item.is-open .ixir-wh-faq-q {
+  color: #2a6fdb;
+  font-weight: 700;
+}
+.ixir-wh-faq-item.is-open .ixir-wh-faq-q i {
+  color: #2a6fdb;
+  transform: rotate(-90deg);
+}
+.ixir-wh-faq-a {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease;
+}
+.ixir-wh-faq-item.is-open .ixir-wh-faq-a {
+  grid-template-rows: 1fr;
+}
+.ixir-wh-faq-a p {
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 16px 0 40px;
+  color: #5c6573;
+  font-size: 14.5px;
+  line-height: 1.65;
+  transition: padding-bottom 0.4s ease;
+}
+.ixir-wh-faq-item.is-open .ixir-wh-faq-a p {
+  padding-bottom: 16px;
+}
+.ixir-wh-faq-a strong {
+  color: #0b2545;
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ixir-wh-faq-a, .ixir-wh-faq-q i {
+    transition: none;
+  }
+}
+
+@media (max-width: 1024px), (prefers-reduced-motion: reduce) {
+  .ixir-wh-faq.is-armed {
+    overflow-x: visible;
+  }
+  .ixir-wh-faq.is-armed .ixir-wh-plans-head, .ixir-wh-faq.is-armed .ixir-wh-faq-item, .ixir-wh-faq.is-armed .ixir-wh-plans-head.is-in, .ixir-wh-faq.is-armed .ixir-wh-faq-item.is-in {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
+  }
+}
