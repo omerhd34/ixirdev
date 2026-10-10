@@ -29,6 +29,10 @@
   align-items: stretch;
   padding-top: 12px;
 }
+.ixir-wh-grid.ixir-wh-grid--3,
+.ixir-wh-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .ixir-wh-plan {
   position: relative;
   display: flex;
@@ -185,6 +189,14 @@
   color: #0b2545;
   font-weight: 700;
   text-align: right;
+}
+.ixir-wh-specs .fa-check {
+  color: #3b78e7;
+  font-size: 15px;
+}
+.ixir-wh-specs .fa-times {
+  color: #e23b3b;
+  font-size: 15px;
 }
 .ixir-wh-story-icon {
   display: inline-flex;
@@ -692,6 +704,10 @@
   .ixir-wh-grid, .ixir-wh-assurances {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .ixir-wh-grid.ixir-wh-grid--3,
+  .ixir-wh-grid--3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .ixir-wh-shared {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -969,13 +985,37 @@
 }
 
 .ixir-wh-page--wp .ixir-wh-story--intro {
-  padding: 56px 0 64px;
+  padding: 56px 0 36px;
   background: radial-gradient( ellipse 70% 42% at 50% -8%, rgba(59, 120, 231, 0.22), transparent 62% ), #0b2545;
+  color: #fff;
+}
+.ixir-wh-page--wp .ixir-wh-story--intro .ixir-wh-story-intro {
+  margin-bottom: 0;
 }
 .ixir-wh-page--wp .ixir-wh-story--features {
-  padding: 56px 0 64px;
-  color: #0b2545;
-  background: radial-gradient( ellipse 60% 40% at 50% 0%, rgba(59, 120, 231, 0.08), transparent 65% ), #f6f7f9;
+  padding: 36px 0 64px;
+  background: radial-gradient( ellipse 70% 42% at 50% -8%, rgba(59, 120, 231, 0.22), transparent 62% ), #0b2545;
+  color: #fff;
+}
+.ixir-wh-story-features-head {
+  max-width: 680px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+.ixir-wh-story-features-head h2 {
+  margin: 0 0 10px;
+  color: #fff;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  font-size: clamp(26px, 2.4vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.ixir-wh-story-features-head p {
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15.5px;
+  line-height: 1.6;
 }
 .ixir-wh-page--wp .ixir-wh-diff {
   background: radial-gradient( ellipse 55% 50% at 20% 0%, rgba(59, 120, 231, 0.16), transparent 65% ), #0b2545;
@@ -1001,8 +1041,20 @@
 .ixir-wh-page--wp .ixir-wh-plans.is-armed .ixir-wh-plans-head:not(.is-in) {
   transform: translate3d(-64px, 0, 0);
 }
-.ixir-wh-page--wp .ixir-wh-plans.is-armed .ixir-wh-plan:nth-child(odd):not(.is-in) {
-  transform: translate3d(-112px, 0, 0);
+.ixir-wh-page--wp .ixir-wh-plans.is-armed .ixir-wh-plan:not(.is-in),
+.ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:not(.is-in) {
+  transform: translate3d(112px, 0, 0);
+}
+@media (min-width: 1024px) {
+  .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:nth-child(3) {
+    --ixir-enter-delay: 80ms;
+  }
+  .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:nth-child(2) {
+    --ixir-enter-delay: 180ms;
+  }
+  .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:nth-child(1) {
+    --ixir-enter-delay: 280ms;
+  }
 }
 .ixir-wh-page--wp .ixir-wh-plans.is-armed .ixir-wh-shared-box:not(.is-in) {
   transform: translate3d(72px, 0, 0);

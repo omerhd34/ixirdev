@@ -1,0 +1,26 @@
+.ixir-wh-compare.ixir-wh-compare--dark,
+.ixir-wh-compare--dark {
+  padding: 56px 0 64px;
+  background: radial-gradient( ellipse 70% 42% at 50% -8%, rgba(59, 120, 231, 0.22), transparent 62% ), #0b2545;
+}
+.ixir-wh-compare.ixir-wh-compare--dark .ixir-wh-plans-head h2,
+.ixir-wh-compare--dark .ixir-wh-plans-head h2 {
+  color: #fff;
+}
+.ixir-wh-compare.ixir-wh-compare--dark .ixir-wh-plans-head p,
+.ixir-wh-compare--dark .ixir-wh-plans-head p {
+  color: rgba(255, 255, 255, 0.72);
+}
+.ixir-wh-compare.ixir-wh-compare--dark .ixir-wh-table,
+.ixir-wh-compare--dark .ixir-wh-table {
+  border-color: transparent;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+
+@media (max-width: 768px) {
+  .ixir-wh-compare.ixir-wh-compare--dark,
+  .ixir-wh-compare--dark {
+    padding: 40px 0 48px;
+  }
+}
+

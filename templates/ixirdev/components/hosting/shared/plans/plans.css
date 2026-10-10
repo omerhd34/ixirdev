@@ -1,5 +1,23 @@
+.ixir-wh-grid.ixir-wh-grid--3,
 .ixir-wh-grid--3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:not(.is-in),
+.ixir-wh-page--wp .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:not(.is-in) {
+  transform: translate3d(112px, 0, 0);
+}
+
+@media (min-width: 1024px) {
+  .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:nth-child(3) {
+    --ixir-enter-delay: 80ms;
+  }
+  .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:nth-child(2) {
+    --ixir-enter-delay: 180ms;
+  }
+  .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:nth-child(1) {
+    --ixir-enter-delay: 280ms;
+  }
 }
 .ixir-wh-billing {
   position: relative;

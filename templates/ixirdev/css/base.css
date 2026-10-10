@@ -38,7 +38,7 @@
 @media (min-width: 1280px) {
   :root {
     --ixir-gutter: 40px;
-    --ixir-max: 1920px;
+    --ixir-max: 1600px;
   }
 }
 
