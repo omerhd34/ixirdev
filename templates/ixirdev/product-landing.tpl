@@ -18,4 +18,6 @@
  {include file="$template/components/server/cloud-server/cloud-server.tpl"}
 {elseif $ixirPageSlug == 'dedicated-server'}
  {include file="$template/components/server/dedicated-server/dedicated-server.tpl"}
+{elseif $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri'}
+ {include file="$template/components/server/server-servisleri/server-servisleri.tpl"}
 {/if}

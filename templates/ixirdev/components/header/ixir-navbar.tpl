@@ -169,7 +169,7 @@
        "width" => "col-md-4 last",
        "items" => [
          [
-           "href" => "/ek-servisler",
+           "href" => "/server-servisleri",
            "title" => "Server Yönetim Servisleri",
            "icon" => "far fa-life-ring",
            "label" => "Server Servisleri",

@@ -265,7 +265,7 @@
         <small>Tier III veri merkezinde barındırma</small>
        </span>
       </a>
-      <a href="{$WEB_ROOT}/ek-servisler">
+      <a href="{$WEB_ROOT}/server-servisleri">
        <i class="far fa-life-ring"></i>
        <span>
         Server Servisleri

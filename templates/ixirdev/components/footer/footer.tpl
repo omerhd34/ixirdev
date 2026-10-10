@@ -31,7 +31,7 @@
      <ul>
       <li><a href="{$WEB_ROOT}/cloud-server" title="Cloud Server">Cloud Server</a></li>
       <li><a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">Dedicated Server</a></li>
-      <li><a href="{$WEB_ROOT}/ek-servisler" title="Server Servisleri">Server Servisleri</a></li>
+      <li><a href="{$WEB_ROOT}/server-servisleri" title="Server Servisleri">Server Servisleri</a></li>
       <li><a href="{$WEB_ROOT}/colocation" title="Co-Location">Co-Location</a></li>
       <li><a href="{$WEB_ROOT}/pci-tarama" title="PCI-DSS">PCI-DSS</a></li>
      </ul>
