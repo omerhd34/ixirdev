@@ -10,7 +10,7 @@
     root.classList.add('is-armed');
    })();
   {/literal}
- </script>
+ </script> 
  <div class="container">
   <header class="ixir-wh-plans-head">
    <h2 id="ixir-wh-plans-title">Standart Cloud Server Paketleri</h2>

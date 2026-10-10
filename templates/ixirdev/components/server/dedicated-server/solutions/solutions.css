@@ -19,13 +19,18 @@
   z-index: 2;
 }
 .ds-solutions-title-wrapper {
+  margin-left: auto !important;
+  margin-right: auto !important;
   margin-bottom: 3rem;
+  text-align: center;
 }
 .ds-solutions-title-wrapper h2 {
   color: #fff !important;
+  text-align: center;
 }
 .ds-solutions-title-wrapper p {
   color: #cbd5e1 !important;
+  text-align: center;
 }
 .ds-solutions-title-wrapper p b {
   color: #f8fafc !important;

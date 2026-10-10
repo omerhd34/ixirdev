@@ -305,7 +305,7 @@
           <b>1 Gbit Port | Limitsiz Trafik</b>
           <span class="ixir-ds-tip" tabindex="0">
            <i class="far fa-info-circle" aria-hidden="true"></i>
-           <span class="ixir-ds-tip-text" role="tooltip">1 Gbit Port üzerinden Limitledirilmemiş Trafik (Sürekli ve yoğun kullanımlarda port veya trafik limiti uygulanabilir.)</span>
+           <span class="ixir-ds-tip-text" role="tooltip">Sürekli ve yoğun kullanımlarda port veya trafik limiti uygulanabilir.</span>
           </span>
          </div>
         </div>

@@ -17,6 +17,18 @@
   pointer-events: none;
   z-index: 0;
 }
+.ixir-ds-features-section .ixir-ds-head {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.ixir-ds-features-section .ixir-ds-head h2 {
+  text-align: center;
+}
+.ixir-ds-features-section .ixir-ds-head p {
+  text-align: center;
+}
 .ixir-ds-features-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

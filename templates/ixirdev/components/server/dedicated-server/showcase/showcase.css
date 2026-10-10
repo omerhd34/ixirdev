@@ -20,14 +20,19 @@
 .ds-showcase-title-wrapper {
   position: relative;
   z-index: 2;
+  margin-left: auto !important;
+  margin-right: auto !important;
   margin-bottom: 4rem;
+  text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 .ds-showcase-title-wrapper h2 {
   color: #ffffff !important;
+  text-align: center;
 }
 .ds-showcase-title-wrapper p {
   color: #e2e8f0 !important;
+  text-align: center;
 }
 .ds-showcase-visual {
   position: relative;

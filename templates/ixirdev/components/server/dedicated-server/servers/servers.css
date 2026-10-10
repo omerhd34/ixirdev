@@ -654,24 +654,35 @@
   padding: 56px 0 64px;
   background: #f6f8fb;
 }
-.ixir-ds-head {
+.ixir-ds-head,
+.ixir-wh-plans-head {
   max-width: 840px;
+  margin-left: auto !important;
+  margin-right: auto !important;
   margin-bottom: 24px;
+  text-align: center;
 }
-.ixir-ds-head h2 {
+.ixir-ds-head h2,
+.ixir-wh-plans-head h2 {
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 800;
   color: #0b2545;
   letter-spacing: -0.02em;
   margin-bottom: 10px;
+  text-align: center;
 }
-.ixir-ds-head p {
+.ixir-ds-head p,
+.ixir-wh-plans-head p {
   color: #4b5563;
   font-size: 15px;
   line-height: 1.65;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-.ixir-ds-head p b {
+.ixir-ds-head p b,
+.ixir-wh-plans-head p b {
   color: #0b2545;
 }
 .ixir-ds-stats {
