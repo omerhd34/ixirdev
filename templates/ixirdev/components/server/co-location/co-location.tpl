@@ -1,0 +1,8 @@
+{include file="$template/components/server/co-location/hero/hero.tpl"}
+{include file="$template/components/server/co-location/story/story.tpl"}
+{include file="$template/components/server/co-location/details/details.tpl"}
+{include file="$template/components/server/co-location/network/network.tpl"}
+{include file="$template/components/server/co-location/story2/story2.tpl"}
+{include file="$template/components/server/co-location/software/software.tpl"}
+{include file="$template/components/server/co-location/faq/faq.tpl"}
+{include file="$template/components/server/co-location/scripts/scripts.tpl"}
