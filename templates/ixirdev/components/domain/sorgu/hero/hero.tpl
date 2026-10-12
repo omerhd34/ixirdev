@@ -66,8 +66,8 @@
        </div>
       </div>
      </form>
-     {include file="$template/components/domain/no-autofocus.tpl"}
-     {include file="$template/components/domain/float-label.tpl"}
+     {include file="$template/components/domain/no-autofocus/no-autofocus.tpl"}
+     {include file="$template/components/domain/float-label/float-label.tpl"}
      <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
       <p class="ixir-hero-label">Diğer Hizmetler</p>
       <ul class="ixir-domain-links">

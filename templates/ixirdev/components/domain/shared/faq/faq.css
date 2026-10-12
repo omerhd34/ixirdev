@@ -1,0 +1,106 @@
+#order-standard_cart .ixir-wh-faq {
+  padding: 56px 0 48px;
+  background: #0b2545;
+}
+#order-standard_cart .ixir-wh-faq .ixir-wh-plans-head {
+  max-width: 640px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+#order-standard_cart .ixir-wh-faq .ixir-wh-plans-head h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: clamp(26px, 2.2vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+#order-standard_cart .ixir-wh-faq .ixir-wh-plans-head p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 15px;
+  line-height: 1.5;
+}
+#order-standard_cart .ixir-wh-faq-list {
+  display: grid;
+  gap: 12px;
+}
+#order-standard_cart .ixir-wh-faq-item {
+  border: 1px solid #e4e7ee;
+  border-radius: 6px;
+  background: #fff;
+}
+#order-standard_cart .ixir-wh-faq-q {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+  padding: 14px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  box-shadow: none;
+  color: #3d4453;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+#order-standard_cart .ixir-wh-faq-q:hover, #order-standard_cart .ixir-wh-faq-q:focus {
+  background: transparent;
+  color: #3d4453;
+  outline: none;
+  box-shadow: none;
+}
+#order-standard_cart .ixir-wh-faq-q i {
+  flex-shrink: 0;
+  width: 14px;
+  color: #9aa1ab;
+  font-size: 12px;
+  text-align: center;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+#order-standard_cart .ixir-wh-faq-item.is-open .ixir-wh-faq-q {
+  color: #2a6fdb;
+  font-weight: 700;
+}
+#order-standard_cart .ixir-wh-faq-item.is-open .ixir-wh-faq-q i {
+  color: #2a6fdb;
+  transform: rotate(-90deg);
+}
+#order-standard_cart .ixir-wh-faq-a {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease;
+}
+#order-standard_cart .ixir-wh-faq-item.is-open .ixir-wh-faq-a {
+  grid-template-rows: 1fr;
+}
+#order-standard_cart .ixir-wh-faq-a p {
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 16px 0 40px;
+  color: #5c6573;
+  font-size: 14.5px;
+  line-height: 1.65;
+  transition: padding-bottom 0.4s ease;
+}
+#order-standard_cart .ixir-wh-faq-item.is-open .ixir-wh-faq-a p {
+  padding-bottom: 16px;
+}
+#order-standard_cart .ixir-wh-faq-a strong {
+  color: #0b2545;
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #order-standard_cart .ixir-wh-faq-a, #order-standard_cart .ixir-wh-faq-q i {
+    transition: none;
+  }
+}

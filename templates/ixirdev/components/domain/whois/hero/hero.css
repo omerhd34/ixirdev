@@ -1,0 +1,62 @@
+#order-standard_cart.ixir-domain-page .ixir-hero form.ixir-whois-form {
+  width: 100%;
+  max-width: 780px;
+  margin: 26px auto 0;
+  animation: ixirHeroIn 0.7s ease 0.12s both;
+}
+#order-standard_cart.ixir-domain-page form.ixir-whois-form.ixir-dc-invalid .ixir-domain-checker, #order-standard_cart.ixir-domain-page form.ixir-whois-form.ixir-dc-invalid .ixir-domain-checker:focus-within {
+  border-color: #e74c3c;
+  background-color: #fff5f5;
+  box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.28), 0 14px 36px rgba(15, 23, 42, 0.2);
+}
+#order-standard_cart.ixir-domain-page form.ixir-whois-form.ixir-dc-invalid .ixir-dc-icon, #order-standard_cart.ixir-domain-page form.ixir-whois-form.ixir-dc-invalid .ixir-domain-checker:focus-within .ixir-dc-icon {
+  color: #e74c3c;
+}
+#order-standard_cart.ixir-domain-page form.ixir-whois-form.ixir-dc-invalid .ixir-dc-input .form-control, #order-standard_cart.ixir-domain-page form.ixir-whois-form.ixir-dc-invalid .ixir-dc-input input, #order-standard_cart.ixir-domain-page form.ixir-whois-form.ixir-dc-invalid .ixir-dc-input .form-control::placeholder, #order-standard_cart.ixir-domain-page form.ixir-whois-form.ixir-dc-invalid .ixir-dc-input input::placeholder {
+  color: #e74c3c;
+  -webkit-text-fill-color: #e74c3c;
+  font-weight: 500;
+}
+#order-standard_cart.ixir-domain-page form.ixir-whois-form.ixir-dc-shake .ixir-domain-checker {
+  animation: ixirDcShake 0.4s ease;
+}
+.ixir-whois-form .ixir-whois-field-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin: 12px auto 0;
+  padding: 11px 16px;
+  border: 1px solid rgba(231, 76, 60, 0.28);
+  border-radius: 12px;
+  background: #fff;
+  color: #c0392b;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.22);
+}
+.ixir-whois-form .ixir-whois-field-error[hidden] {
+  display: none;
+}
+.ixir-whois-form .ixir-whois-field-error i {
+  flex-shrink: 0;
+  font-size: 15px;
+}
+.ixir-whois-form .ixir-whois-field-error b {
+  font-weight: 800;
+}
+
+@media (min-width: 1024px) {
+  #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-wrap {
+    --ixir-links-row-gap: 10px;
+    row-gap: var(--ixir-links-row-gap);
+    --ixir-links-gap: 168px;
+    column-gap: var(--ixir-links-gap);
+  }
+  #order-standard_cart.ixir-whois-page .ixir-hero ul.ixir-domain-links {
+    gap: 8px;
+  }
+}

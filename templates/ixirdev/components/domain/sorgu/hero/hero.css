@@ -1,0 +1,53 @@
+.ixir-spot-action .btn {
+  flex: 1 1 auto;
+}
+.ixir-spot-action .btn.w-hidden {
+  display: none !important;
+}
+.ixir-spotlights .spotlight-tld .btn, #order-standard_cart.ixir-domain-page .spotlight-tld .btn:not(.domain-contact-support):not(.unavailable):not(.invalid) {
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100%;
+  height: 36px !important;
+  margin: 0 !important;
+  padding: 0 8px !important;
+  border: 0;
+  border-radius: 8px;
+  background: #37b24d !important;
+  color: #fff !important;
+  font-size: 13px !important;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: background 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+.ixir-spotlights .spotlight-tld .btn.unavailable, .ixir-spotlights .spotlight-tld .btn.invalid, #order-standard_cart.ixir-domain-page .spotlight-tld .btn.unavailable, #order-standard_cart.ixir-domain-page .spotlight-tld .btn.invalid {
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100%;
+  height: 36px !important;
+  margin: 0 !important;
+  padding: 0 8px !important;
+  border: 0;
+  border-radius: 8px;
+  background: #e03131 !important;
+  color: #fff !important;
+  font-size: 13px !important;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 1 !important;
+  cursor: default;
+}
+.ixir-spotlights .spotlight-tld .btn span, #order-standard_cart.ixir-domain-page .spotlight-tld .btn span {
+  padding: 0 !important;
+}

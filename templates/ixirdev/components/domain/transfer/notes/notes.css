@@ -1,0 +1,145 @@
+.ixir-xfer-notes {
+  background: #0b2545;
+}
+.ixir-xfer-uses {
+  padding: 56px 0;
+}
+.ixir-xfer-steps h2, .ixir-xfer-notes h2, .ixir-xfer-uses h2 {
+  margin: 0 0 8px;
+  color: #2c3345;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+.ixir-xfer-notes {
+  padding: 56px 0;
+}
+.ixir-xfer-notes h2 {
+  color: #fff;
+}
+.ixir-xfer-notes-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(220px, 360px);
+  gap: 24px 40px;
+  align-items: center;
+}
+.ixir-xfer-notes h2 {
+  margin-bottom: 18px;
+  text-align: left;
+  font-size: 24px;
+}
+.ixir-xfer-notes ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ixir-xfer-notes li {
+  position: relative;
+  margin: 0 0 12px;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.ixir-xfer-notes li:last-child {
+  margin-bottom: 0;
+}
+.ixir-xfer-notes li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #386ce0;
+}
+.ixir-xfer-notes a {
+  color: #9ec0ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+#order-standard_cart.ixir-transfer-page .ixir-xfer-notes a:hover, #order-standard_cart.ixir-transfer-page .ixir-xfer-notes a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+.ixir-xfer-notes-art {
+  display: flex;
+  justify-content: center;
+}
+.ixir-xfer-notes-art img {
+  display: block;
+  width: min(100%, 280px);
+  height: auto;
+}
+.ixir-xfer-uses {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background: #fff;
+}
+.ixir-xfer-uses h2 {
+  margin-bottom: 28px;
+}
+.ixir-xfer-use-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.ixir-xfer-use-grid article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 22px 24px;
+  background: #fff;
+  border: 1px solid #e8edf4;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(31, 45, 74, 0.05);
+}
+.ixir-xfer-use-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.ixir-xfer-use-art img {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
+.ixir-xfer-use-grid h3 {
+  margin: 0 0 8px;
+  color: #2c3345;
+  font-size: 18px;
+  font-weight: 700;
+}
+.ixir-xfer-use-grid p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1023px) {
+  .ixir-xfer-use-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .ixir-xfer-notes-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
+  }
+}
+
+@media (max-width: 768px) {
+  .ixir-xfer-step-list, .ixir-xfer-use-grid, .ixir-xfer-notes-grid {
+    grid-template-columns: 1fr;
+  }
+  .ixir-xfer-notes h2 {
+    text-align: center;
+  }
+  .ixir-xfer-notes-art {
+    display: none;
+  }
+}

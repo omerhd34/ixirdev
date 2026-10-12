@@ -1,98 +1,8 @@
-#order-standard_cart.ixir-domain-page .ixir-hero form.ixir-whois-form {
-  width: 100%;
-  max-width: 780px;
-  margin: 26px auto 0;
-  animation: ixirHeroIn 0.7s ease 0.12s both;
-}
-
-#order-standard_cart.ixir-domain-page
-  form.ixir-whois-form.ixir-dc-invalid
-  .ixir-domain-checker,
-#order-standard_cart.ixir-domain-page
-  form.ixir-whois-form.ixir-dc-invalid
-  .ixir-domain-checker:focus-within {
-  border-color: #e74c3c;
-  background-color: #fff5f5;
-  box-shadow:
-    0 0 0 4px rgba(231, 76, 60, 0.28),
-    0 14px 36px rgba(15, 23, 42, 0.2);
-}
-
-#order-standard_cart.ixir-domain-page
-  form.ixir-whois-form.ixir-dc-invalid
-  .ixir-dc-icon,
-#order-standard_cart.ixir-domain-page
-  form.ixir-whois-form.ixir-dc-invalid
-  .ixir-domain-checker:focus-within
-  .ixir-dc-icon {
-  color: #e74c3c;
-}
-
-#order-standard_cart.ixir-domain-page
-  form.ixir-whois-form.ixir-dc-invalid
-  .ixir-dc-input
-  .form-control,
-#order-standard_cart.ixir-domain-page
-  form.ixir-whois-form.ixir-dc-invalid
-  .ixir-dc-input
-  input,
-#order-standard_cart.ixir-domain-page
-  form.ixir-whois-form.ixir-dc-invalid
-  .ixir-dc-input
-  .form-control::placeholder,
-#order-standard_cart.ixir-domain-page
-  form.ixir-whois-form.ixir-dc-invalid
-  .ixir-dc-input
-  input::placeholder {
-  color: #e74c3c;
-  -webkit-text-fill-color: #e74c3c;
-  font-weight: 500;
-}
-
-#order-standard_cart.ixir-domain-page
-  form.ixir-whois-form.ixir-dc-shake
-  .ixir-domain-checker {
-  animation: ixirDcShake 0.4s ease;
-}
-
-.ixir-whois-form .ixir-whois-field-error {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 100%;
-  margin: 12px auto 0;
-  padding: 11px 16px;
-  border: 1px solid rgba(231, 76, 60, 0.28);
-  border-radius: 12px;
-  background: #fff;
-  color: #c0392b;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.4;
-  text-align: center;
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.22);
-}
-
-.ixir-whois-form .ixir-whois-field-error[hidden] {
-  display: none;
-}
-
-.ixir-whois-form .ixir-whois-field-error i {
-  flex-shrink: 0;
-  font-size: 15px;
-}
-
-.ixir-whois-form .ixir-whois-field-error b {
-  font-weight: 800;
-}
-
 .ixir-whois-page {
   background: #f4f6f9;
   padding: 80px 0 96px;
   overflow-x: clip;
 }
-
 .ixir-whois-alert {
   max-width: 1040px;
   margin: 0 auto 28px;
@@ -101,29 +11,24 @@
   font-size: 15px;
   line-height: 1.5;
 }
-
 .ixir-whois-alert--error {
   background: #fef2f2;
   color: #991b1b;
 }
-
 .ixir-whois-alert--ok {
   background: #ecfdf3;
   color: #166534;
 }
-
 .ixir-whois-alert--taken {
   background: #fff7ed;
   color: #9a3412;
 }
-
 .ixir-whois-alert a {
   margin-left: 6px;
   font-weight: 700;
   color: inherit;
   text-decoration: underline;
 }
-
 .ixir-whois-result {
   max-width: 1040px;
   margin: 0 auto 36px;
@@ -132,14 +37,12 @@
   box-shadow: 0 12px 40px rgba(36, 41, 53, 0.08);
   padding: 20px 22px;
 }
-
 .ixir-whois-result h2 {
   margin: 0 0 12px;
   font-size: 18px;
   font-weight: 800;
   color: #0b2545;
 }
-
 .ixir-whois-result pre {
   margin: 0;
   white-space: pre-wrap;
@@ -151,7 +54,6 @@
   border-radius: 10px;
   padding: 14px 16px;
 }
-
 .ixir-whois-card {
   max-width: 1040px;
   margin: 0 auto 40px;
@@ -161,7 +63,6 @@
   border-radius: 20px;
   box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
 }
-
 .ixir-whois-card-head {
   display: flex;
   align-items: center;
@@ -170,14 +71,12 @@
   padding-bottom: 22px;
   border-bottom: 1px solid #eef1f5;
 }
-
 .ixir-whois-card-ident {
   display: flex;
   align-items: center;
   gap: 14px;
   min-width: 0;
 }
-
 .ixir-whois-card-mark {
   display: inline-flex;
   align-items: center;
@@ -190,7 +89,6 @@
   color: #386ce0;
   font-size: 18px;
 }
-
 .ixir-whois-card-kicker {
   margin: 0 0 2px;
   color: #7b8798;
@@ -199,7 +97,6 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
 .ixir-whois-card-ident h2 {
   margin: 0;
   color: #1a2332;
@@ -209,7 +106,6 @@
   line-height: 1.2;
   word-break: break-word;
 }
-
 .ixir-whois-badge {
   display: inline-flex;
   align-items: center;
@@ -220,31 +116,26 @@
   font-weight: 700;
   flex-shrink: 0;
 }
-
 .ixir-whois-badge--taken {
   background: #fff1e8;
   color: #c2410c;
 }
-
 .ixir-whois-badge--free {
   background: #e8f8ee;
   color: #15803d;
 }
-
 .ixir-whois-stats {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 12px;
   margin: 22px 0 8px;
 }
-
 .ixir-whois-stat {
   min-width: 0;
   padding: 14px 16px;
   border-radius: 14px;
   background: #f6f8fb;
 }
-
 .ixir-whois-stat span {
   display: block;
   margin-bottom: 4px;
@@ -253,7 +144,6 @@
   font-weight: 700;
   letter-spacing: 0.02em;
 }
-
 .ixir-whois-stat strong {
   display: block;
   color: #1a2332;
@@ -262,7 +152,6 @@
   line-height: 1.35;
   word-break: break-word;
 }
-
 .ixir-whois-stat em {
   display: block;
   margin-top: 4px;
@@ -271,18 +160,15 @@
   font-style: normal;
   font-weight: 700;
 }
-
 .ixir-whois-block {
   margin-top: 18px;
 }
-
 .ixir-whois-block h3 {
   margin: 0 0 10px;
   color: #1a2332;
   font-size: 14px;
   font-weight: 700;
 }
-
 .ixir-whois-chips {
   display: flex;
   flex-wrap: wrap;
@@ -291,7 +177,6 @@
   padding: 0;
   list-style: none;
 }
-
 .ixir-whois-chips li {
   padding: 7px 12px;
   border-radius: 999px;
@@ -301,33 +186,28 @@
   font-weight: 600;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
-
 .ixir-whois-chips--status li {
   background: #eef3ff;
   color: #1e4bb8;
   font-family: "Roboto", sans-serif;
 }
-
 .ixir-whois-meta {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 14px 24px;
   margin: 22px 0 0;
 }
-
 .ixir-whois-meta div {
   min-width: 0;
   padding-top: 14px;
   border-top: 1px solid #eef1f5;
 }
-
 .ixir-whois-meta dt {
   margin: 0 0 4px;
   color: #7b8798;
   font-size: 12px;
   font-weight: 700;
 }
-
 .ixir-whois-meta dd {
   margin: 0;
   color: #1a2332;
@@ -336,17 +216,13 @@
   line-height: 1.45;
   word-break: break-word;
 }
-
 .ixir-whois-meta a {
   color: #386ce0;
   text-decoration: none;
 }
-
-.ixir-whois-meta a:hover,
-.ixir-whois-meta a:focus {
+.ixir-whois-meta a:hover, .ixir-whois-meta a:focus {
   text-decoration: underline;
 }
-
 .ixir-whois-privacy {
   display: flex;
   align-items: center;
@@ -356,17 +232,14 @@
   font-size: 14px;
   font-weight: 600;
 }
-
 .ixir-whois-privacy i {
   color: #0f8a5f;
 }
-
 .ixir-whois-card-actions {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
 }
-
 .ixir-whois-action {
   display: inline-flex;
   align-items: center;
@@ -380,30 +253,23 @@
   font-weight: 700;
   text-decoration: none;
 }
-
-.ixir-whois-action:hover,
-.ixir-whois-action:focus {
+.ixir-whois-action:hover, .ixir-whois-action:focus {
   background: #e2eaff;
   color: #1e4bb8;
   text-decoration: none;
 }
-
 .ixir-whois-action--primary {
   background: #386ce0;
   color: #fff;
 }
-
-.ixir-whois-action--primary:hover,
-.ixir-whois-action--primary:focus {
+.ixir-whois-action--primary:hover, .ixir-whois-action--primary:focus {
   background: #1e4bb8;
   color: #fff;
 }
-
 .ixir-whois-raw {
   margin: 18px -28px 0;
   border-top: 1px solid #eef1f5;
 }
-
 .ixir-whois-raw summary {
   display: flex;
   align-items: center;
@@ -415,13 +281,10 @@
   cursor: pointer;
   list-style: none;
 }
-
-.ixir-whois-raw summary::-webkit-details-marker,
-.ixir-whois-raw summary::marker {
+.ixir-whois-raw summary::-webkit-details-marker, .ixir-whois-raw summary::marker {
   display: none;
   content: none;
 }
-
 .ixir-whois-raw summary::before {
   content: "";
   width: 7px;
@@ -432,11 +295,9 @@
   transform: rotate(-45deg);
   transition: transform 0.2s ease;
 }
-
 .ixir-whois-raw[open] summary::before {
   transform: rotate(45deg);
 }
-
 .ixir-whois-raw pre {
   margin: 0 28px 20px;
   padding: 14px 16px;
@@ -448,13 +309,11 @@
   white-space: pre-wrap;
   word-break: break-word;
 }
-
 .ixir-whois-intro {
   max-width: 640px;
   margin: 0 auto 36px;
   text-align: center;
 }
-
 .ixir-whois-intro h2 {
   margin: 0 0 12px;
   color: #1a2332;
@@ -463,20 +322,17 @@
   letter-spacing: -0.03em;
   line-height: 1.2;
 }
-
 .ixir-whois-intro p {
   margin: 0;
   color: #5c6778;
   font-size: 16px;
   line-height: 1.65;
 }
-
 .ixir-whois-cols {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 20px;
 }
-
 .ixir-whois-col {
   margin: 0;
   padding: 28px 28px 24px;
@@ -485,14 +341,12 @@
   border-radius: 18px;
   box-shadow: 0 10px 28px rgba(15, 23, 42, 0.045);
 }
-
 .ixir-whois-col-head {
   display: flex;
   align-items: center;
   gap: 14px;
   margin-bottom: 12px;
 }
-
 .ixir-whois-col-icon {
   display: inline-flex;
   align-items: center;
@@ -505,12 +359,10 @@
   color: #386ce0;
   font-size: 17px;
 }
-
 .ixir-whois-col-icon--lock {
   background: #eef8f3;
   color: #0f8a5f;
 }
-
 .ixir-whois-col h3 {
   margin: 0;
   color: #1a2332;
@@ -519,21 +371,18 @@
   letter-spacing: -0.02em;
   line-height: 1.35;
 }
-
 .ixir-whois-col p {
   margin: 0;
   color: #5c6778;
   font-size: 15px;
   line-height: 1.65;
 }
-
 .ixir-whois-points {
   margin: 16px 0 0;
   padding: 16px 0 0;
   list-style: none;
   border-top: 1px solid #eef1f5;
 }
-
 .ixir-whois-points li {
   position: relative;
   margin: 0 0 10px;
@@ -542,11 +391,9 @@
   font-size: 15px;
   line-height: 1.5;
 }
-
 .ixir-whois-points li:last-child {
   margin-bottom: 0;
 }
-
 .ixir-whois-points li::before {
   content: "";
   position: absolute;
@@ -557,45 +404,32 @@
   border-radius: 50%;
   background: #386ce0;
 }
-
 .ixir-whois-col:has(.ixir-whois-col-icon--lock) .ixir-whois-points li::before {
   background: #0f8a5f;
 }
-
-.ixir-whois-guide.is-armed .ixir-whois-intro,
-.ixir-whois-guide.is-armed .ixir-whois-col {
+.ixir-whois-guide.is-armed .ixir-whois-intro, .ixir-whois-guide.is-armed .ixir-whois-col {
   opacity: 0;
   transform: translate3d(-112px, 0, 0);
   pointer-events: none;
-  transition:
-    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms),
-    opacity 0.56s ease var(--ixir-enter-delay, 0ms);
+  transition: transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms), opacity 0.56s ease var(--ixir-enter-delay, 0ms);
 }
-
 .ixir-whois-guide.is-armed .ixir-whois-intro {
   --ixir-enter-delay: 0ms;
 }
-
 .ixir-whois-guide.is-armed .ixir-whois-col:nth-child(1) {
   --ixir-enter-delay: 90ms;
 }
-
 .ixir-whois-guide.is-armed .ixir-whois-col:nth-child(2) {
   --ixir-enter-delay: 180ms;
 }
-
-.ixir-whois-guide.is-armed.is-in .ixir-whois-intro,
-.ixir-whois-guide.is-armed.is-in .ixir-whois-col {
+.ixir-whois-guide.is-armed.is-in .ixir-whois-intro, .ixir-whois-guide.is-armed.is-in .ixir-whois-col {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   pointer-events: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ixir-whois-guide.is-armed .ixir-whois-intro,
-  .ixir-whois-guide.is-armed .ixir-whois-col,
-  .ixir-whois-guide.is-armed.is-in .ixir-whois-intro,
-  .ixir-whois-guide.is-armed.is-in .ixir-whois-col {
+  .ixir-whois-guide.is-armed .ixir-whois-intro, .ixir-whois-guide.is-armed .ixir-whois-col, .ixir-whois-guide.is-armed.is-in .ixir-whois-intro, .ixir-whois-guide.is-armed.is-in .ixir-whois-col {
     opacity: 1;
     transform: none;
     pointer-events: auto;
@@ -607,65 +441,40 @@
   .ixir-whois-page {
     padding: 48px 0 64px;
   }
-
   .ixir-whois-intro h2 {
     font-size: 26px;
   }
-
   .ixir-whois-cols {
     gap: 14px;
   }
-
   .ixir-whois-col {
     padding: 22px 20px 20px;
   }
-
   .ixir-whois-card {
     padding: 20px 16px 4px;
   }
-
   .ixir-whois-card-ident h2 {
     font-size: 20px;
   }
-
-  .ixir-whois-stats,
-  .ixir-whois-meta {
+  .ixir-whois-stats, .ixir-whois-meta {
     grid-template-columns: minmax(0, 1fr);
   }
-
   .ixir-whois-raw {
     margin-left: -16px;
     margin-right: -16px;
   }
-
   .ixir-whois-raw summary {
     padding-left: 16px;
     padding-right: 16px;
   }
-
   .ixir-whois-raw pre {
     margin-left: 16px;
     margin-right: 16px;
   }
 }
 
-@media (min-width: 1024px) {
-  #order-standard_cart.ixir-whois-page .ixir-hero .ixir-domain-links-wrap {
-    --ixir-links-row-gap: 10px;
-    row-gap: var(--ixir-links-row-gap);
-    --ixir-links-gap: 168px;
-    column-gap: var(--ixir-links-gap);
-  }
-
-  #order-standard_cart.ixir-whois-page .ixir-hero ul.ixir-domain-links {
-    gap: 8px;
-  }
-}
-
 @media (min-width: 768px) {
-  .ixir-whois-cols,
-  .ixir-whois-meta,
-  .ixir-whois-stats {
+  .ixir-whois-cols, .ixir-whois-meta, .ixir-whois-stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

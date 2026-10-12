@@ -1,0 +1,82 @@
+#order-standard_cart.ixir-transfer-page section#home-banner.ixir-hero {
+  min-height: calc(100vh - var(--ixir-hero-offset, 113px)) !important;
+  min-height: calc(100dvh - var(--ixir-hero-offset, 113px)) !important;
+}
+#order-standard_cart.ixir-domain-page .ixir-domain-checker.is-shake {
+  animation: ixirDcShake 0.4s ease;
+}
+#order-standard_cart.ixir-transfer-page .ixir-hero form#frmDomainTransfer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#order-standard_cart.ixir-transfer-page .ixir-hero .ixir-domain-checker--solo {
+  padding-right: 18px;
+}
+#order-standard_cart.ixir-transfer-page .ixir-hero .ixir-dc-button {
+  width: 188px;
+  flex: 0 0 188px;
+}
+
+@media (max-width: 479px) {
+  #order-standard_cart.ixir-transfer-page .ixir-hero form#frmDomainTransfer .ixir-domain-checker {
+    flex-wrap: nowrap;
+  }
+  #order-standard_cart.ixir-transfer-page .ixir-hero .ixir-dc-button {
+    width: auto;
+    flex: 0 0 auto;
+  }
+  #order-standard_cart.ixir-transfer-page .ixir-hero .ixir-dc-button .btn.btn-block {
+    width: auto;
+    padding: 0 12px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-transfer-submit, #order-standard_cart.ixir-transfer-page .ixir-transfer-submit.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 0 0 176px;
+  width: 176px;
+  height: 50px;
+  margin: 0;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 12px;
+  background: #3cbf4f !important;
+  color: #fff !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: 0 8px 18px rgba(47, 168, 68, 0.28);
+  transform: translateY(0);
+  transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+}
+#order-standard_cart.ixir-transfer-page .ixir-transfer-submit:hover, #order-standard_cart.ixir-transfer-page .ixir-transfer-submit:focus, #order-standard_cart.ixir-transfer-page .ixir-transfer-submit.btn:hover, #order-standard_cart.ixir-transfer-page .ixir-transfer-submit.btn:focus {
+  background: #2ea83d !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(36, 140, 52, 0.38);
+}
+#order-standard_cart.ixir-transfer-page .ixir-transfer-alert {
+  margin: 12px 0 0;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 12px;
+  background: rgba(255, 214, 102, 0.96);
+  color: #3a2a00;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #order-standard_cart.ixir-transfer-page .ixir-transfer-submit, #order-standard_cart.ixir-transfer-page .ixir-transfer-submit.btn {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,52 @@
+.ixir-domain-features {
+  padding: 56px 0 40px;
+  background: #fff;
+}
+.ixir-domain-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 32px;
+}
+.ixir-domain-feature-grid article {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.ixir-domain-feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  color: #3b82f6;
+  font-size: 36px;
+}
+.ixir-domain-feature-grid h3 {
+  margin: 0 0 6px;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+}
+.ixir-domain-feature-grid p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.55;
+}
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(.ixir-whois-page) .ixir-domain-features {
+  background: #f7f9fc;
+  padding: 56px 0;
+}
+
+@media (max-width: 1023px) {
+  .ixir-domain-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .ixir-domain-feature-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,97 @@
+.ixir-domain-transfer {
+  padding: 8px 0 0;
+  background: #f7f9fc;
+  overflow: hidden;
+}
+.ixir-domain-transfer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 520px);
+  gap: 16px 8px;
+  align-items: end;
+}
+.ixir-domain-transfer-copy {
+  padding: 48px 0 56px;
+}
+.ixir-domain-transfer-copy h2 {
+  margin: 0 0 14px;
+  color: #2c3345;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left;
+}
+.ixir-domain-transfer-copy p {
+  margin: 0 0 22px;
+  max-width: 560px;
+  color: #5b6475;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.ixir-domain-transfer-btn, #order-standard_cart.ixir-domain-page .ixir-domain-transfer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  height: 44px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 8px;
+  background: #386ce0 !important;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none !important;
+  box-shadow: 0 8px 18px rgba(56, 108, 224, 0.28);
+  transform: translateY(0);
+  transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+}
+.ixir-domain-transfer-btn:hover, .ixir-domain-transfer-btn:focus, #order-standard_cart.ixir-domain-page .ixir-domain-transfer-btn:hover, #order-standard_cart.ixir-domain-page .ixir-domain-transfer-btn:focus {
+  background: #1e4bb8 !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(30, 75, 184, 0.38);
+}
+.ixir-domain-transfer-art {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.ixir-domain-transfer-art img {
+  display: block;
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+}
+
+@media (max-width: 1023px) {
+  .ixir-domain-transfer-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(200px, 280px);
+  }
+  .ixir-domain-transfer-copy {
+    padding: 36px 0 8px;
+  }
+  .ixir-domain-transfer-copy h2, .ixir-domain-transfer-copy p {
+    text-align: left;
+  }
+  .ixir-domain-transfer-art {
+    justify-content: center;
+  }
+  .ixir-domain-transfer-art img {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ixir-domain-transfer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(.ixir-whois-page) .ixir-domain-transfer {
+  background: #0b2545;
+}
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(.ixir-whois-page) .ixir-domain-transfer-copy h2 {
+  color: #fff;
+}
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(.ixir-whois-page) .ixir-domain-transfer-copy p {
+  color: rgba(255, 255, 255, 0.78);
+}

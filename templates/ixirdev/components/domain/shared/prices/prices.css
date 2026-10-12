@@ -1,0 +1,142 @@
+.ixir-domain-prices {
+  padding: 48px 0 24px;
+  background: #fff;
+}
+.ixir-domain-prices-search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1;
+}
+.ixir-domain-prices-search label {
+  margin: 0;
+  padding: 0;
+  line-height: 34px;
+  font-weight: 400;
+}
+.ixir-domain-prices-search input {
+  width: 220px;
+  height: 34px;
+  margin: 0;
+  padding: 0 10px;
+  border: 1px solid #d9dee7;
+  border-radius: 6px;
+  box-sizing: border-box;
+  line-height: 32px;
+  vertical-align: middle;
+}
+.ixir-domain-prices-table-wrap {
+  overflow-x: auto;
+}
+.ixir-domain-prices-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ixir-domain-prices-table th, .ixir-domain-prices-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #edf0f4;
+  text-align: left;
+  color: #334155;
+  font-size: 14px;
+}
+.ixir-domain-prices-table th {
+  color: #1f2937;
+  font-weight: 700;
+  white-space: nowrap;
+  user-select: none;
+}
+.ixir-domain-prices-table th[data-sort] {
+  cursor: pointer;
+}
+.ixir-domain-prices-table th:first-child {
+  width: 22%;
+}
+.ixir-domain-prices-table th:nth-child(n + 3), .ixir-domain-prices-table td:nth-child(n + 3) {
+  text-align: center;
+}
+.ixir-dp-sort {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 14px;
+  margin-left: 6px;
+  vertical-align: -2px;
+  color: #c5cbd6;
+}
+.ixir-dp-sort::before, .ixir-dp-sort::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+.ixir-dp-sort::before {
+  top: 0;
+  border-bottom: 5px solid currentColor;
+}
+.ixir-dp-sort::after {
+  bottom: 0;
+  border-top: 5px solid currentColor;
+}
+.ixir-domain-prices-table th.is-sorted .ixir-dp-sort {
+  color: #64748b;
+}
+.ixir-domain-prices-table th.is-sorted:not(.is-desc) .ixir-dp-sort::after, .ixir-domain-prices-table th.is-desc .ixir-dp-sort::before {
+  opacity: 0.35;
+}
+.ixir-dp-tld {
+  color: #386ce0;
+  font-weight: 700;
+}
+.ixir-domain-prices-pager {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 16px 0 0;
+}
+.ixir-domain-prices-pager button {
+  min-width: 36px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #d9dee7;
+  border-radius: 6px;
+  background: #fff;
+  color: #334155;
+  font-size: 13px;
+}
+.ixir-domain-prices-pager button.is-active {
+  background: #386ce0;
+  border-color: #386ce0;
+  color: #fff;
+}
+.ixir-domain-prices-pager button:disabled {
+  color: #94a3b8;
+  cursor: default;
+}
+#order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(.ixir-whois-page) .ixir-domain-prices {
+  background: #fff;
+  padding: 56px 0;
+}
+
+@media (max-width: 768px) {
+  .ixir-domain-prices-search {
+    justify-content: stretch;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .ixir-domain-prices-search input {
+    width: 100%;
+  }
+  .ixir-domain-prices-table {
+    min-width: 720px;
+  }
+  .ixir-domain-prices-table th:first-child {
+    width: auto;
+    white-space: nowrap;
+  }
+}

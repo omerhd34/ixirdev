@@ -32,7 +32,7 @@
       <span>Lütfen geçerli bir domain girin. Örneğin: <b>ixirhost.com</b></span>
      </p>
     </form>
-    {include file="$template/components/domain/float-label.tpl"}
+    {include file="$template/components/domain/float-label/float-label.tpl"}
     <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
      <ul class="ixir-domain-links">
