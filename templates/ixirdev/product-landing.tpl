@@ -18,6 +18,10 @@
  {include file="$template/components/server/cloud-server/cloud-server.tpl"}
 {elseif $ixirPageSlug == 'dedicated-server'}
  {include file="$template/components/server/dedicated-server/dedicated-server.tpl"}
+{elseif $ixirPageSlug == 'colocation'}
+ {include file="$template/components/server/co-location/co-location.tpl"}
+{elseif $ixirPageSlug == 'pci-tarama'}
+ {include file="$template/components/server/pci-tarama/pci-tarama.tpl"}
 {elseif $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri'}
  {include file="$template/components/server/server-servisleri/server-servisleri.tpl"}
 {/if}
