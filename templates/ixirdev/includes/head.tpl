@@ -20,26 +20,62 @@
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/news-bar/news-bar.css?v={$versionHash}-r12"
   rel="stylesheet">
 {/if}
-{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'colocation' || $ixirPageSlug == 'pci-tarama' || $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri'))}
+{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'colocation' || $ixirPageSlug == 'co-location' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri'))}
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/homepage-hero/homepage-hero.css?v={$versionHash}-r57"
   rel="stylesheet">
 {/if}
 
 {if $ixirDomainSearchPage || $ixirDomainTransferPage || $templatefile == 'whois-sorgulama'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/domain/domain.css?v={$versionHash}-r106" rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/domain/domain-float.css?v={$versionHash}-r6" rel="stylesheet">
  {if $ixirDomainSearchPage}
-  <link href="{$WEB_ROOT}/templates/{$template}/components/domain/sorgu/sorgu.css?v={$versionHash}-r2" rel="stylesheet">
+  {assign var=ixirDomainCss value=[
+   'domain/float-label/float-label',
+   'domain/shared/hero/hero',
+   'domain/shared/common/common',
+   'domain/shared/features/features',
+   'domain/shared/prices/prices',
+   'domain/shared/faq/faq',
+   'domain/sorgu/results/results',
+   'domain/sorgu/prices/prices',
+   'domain/sorgu/hero/hero',
+   'domain/sorgu/faq/faq',
+   'domain/sorgu/transfer-cta/transfer-cta'
+  ]}
  {elseif $ixirDomainTransferPage}
-  <link href="{$WEB_ROOT}/templates/{$template}/components/domain/transfer/transfer.css?v={$versionHash}-r1"
-   rel="stylesheet">
+  {assign var=ixirDomainCss value=[
+   'domain/float-label/float-label',
+   'domain/shared/hero/hero',
+   'domain/shared/common/common',
+   'domain/shared/features/features',
+   'domain/shared/prices/prices',
+   'domain/shared/faq/faq',
+   'domain/transfer/transfer',
+   'domain/transfer/hero/hero',
+   'domain/transfer/faq/faq',
+   'domain/transfer/steps/steps',
+   'domain/transfer/notes/notes',
+   'domain/transfer/features/features',
+   'domain/transfer/prices/prices'
+  ]}
+ {else}
+  {assign var=ixirDomainCss value=[
+   'domain/float-label/float-label',
+   'domain/shared/hero/hero',
+   'domain/shared/common/common',
+   'domain/shared/faq/faq',
+   'domain/whois/hero/hero',
+   'domain/whois/results/results'
+  ]}
  {/if}
+ {foreach from=$ixirDomainCss item=ixirCss}
+  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r110"
+   rel="stylesheet">
+ {/foreach}
 {/if}
 
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/packages/packages.css?v={$versionHash}-r18"
   rel="stylesheet">
- <link href="{$WEB_ROOT}/templates/{$template}/components/home/promo-carousel/promo-carousel.css?v={$versionHash}-r13"
+ <link href="{$WEB_ROOT}/templates/{$template}/components/home/promo-carousel/promo-carousel.css?v={$versionHash}-r14"
   rel="stylesheet">
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/trust/trust.css?v={$versionHash}-r11" rel="stylesheet">
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/turkey-stats/turkey-stats.css?v={$versionHash}-r24"
@@ -58,10 +94,7 @@
   rel="stylesheet">
 {/if}
 {if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'logout' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim'}
- <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r72" rel="stylesheet">
-{/if}
-{if $templatefile == 'whois-sorgulama'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/domain/whois/whois.css?v={$versionHash}-r20" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r73" rel="stylesheet">
 {/if}
 {if $ixirCorporate || $templatefile == 'kurumsal' || $templatefile == 'contact'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/kurumsal/kurumsal.css?v={$versionHash}-r33" rel="stylesheet">
@@ -92,11 +125,11 @@
   ]}
  {elseif $ixirPageSlug == 'wordpress-hosting'}
   {assign var=ixirPageCss value=[
-   'hosting/shared/common/common',
    'hosting/shared/plans/plans',
    'hosting/shared/story/story',
    'hosting/shared/diff/diff',
    'hosting/shared/compare/compare',
+   'hosting/shared/common/common',
    'hosting/shared/faq/faq',
    'hosting/shared/guide/guide',
    'hosting/shared/hero/hero',
@@ -118,15 +151,14 @@
    'hosting/shared/about/about',
    'hosting/shared/hero/hero',
    'hosting/developer/guide/guide',
-   'hosting/developer/about/about',
-   'hosting/developer/compare/compare'
+   'hosting/developer/about/about'
   ]}
  {elseif $ixirPageSlug == 'cloud-drive'}
   {assign var=ixirPageCss value=[
-   'hosting/shared/common/common',
    'hosting/shared/plans/plans',
    'hosting/shared/story/story',
    'hosting/shared/diff/diff',
+   'hosting/shared/common/common',
    'hosting/shared/faq/faq',
    'hosting/shared/hero/hero',
    'hosting/cloud-drive/plans/plans',
@@ -180,37 +212,33 @@
   ]}
  {elseif $ixirPageSlug == 'cloud-server'}
   {assign var=ixirPageCss value=[
-   'hosting/shared/plans/plans',
-   'hosting/shared/story/story',
-   'hosting/shared/diff/diff',
    'hosting/shared/common/common',
    'hosting/shared/faq/faq',
-   'hosting/shared/hero/hero',
    'server/cloud-server/hero/hero',
    'server/cloud-server/plans/plans',
    'server/cloud-server/plans2/plans2',
    'server/cloud-server/story/story',
    'server/cloud-server/diff/diff',
-   'server/cloud-server/cta/cta',
-   'server/cloud-server/cloud-server'
+   'server/cloud-server/cloud-server',
+   'server/cloud-server/cta/cta'
   ]}
  {elseif $ixirPageSlug == 'dedicated-server'}
   {assign var=ixirPageCss value=[
+   'hosting/shared/common/common',
+   'hosting/shared/faq/faq',
    'server/dedicated-server/hero/hero',
    'server/dedicated-server/servers/servers',
    'server/dedicated-server/showcase/showcase',
    'server/dedicated-server/features/features',
    'server/dedicated-server/datacenter/datacenter',
    'server/dedicated-server/solutions/solutions',
-   'server/dedicated-server/about/about',
-   'hosting/shared/faq/faq'
+   'server/dedicated-server/about/about'
   ]}
- {elseif $ixirPageSlug == 'colocation'}
+ {elseif $ixirPageSlug == 'colocation' || $ixirPageSlug == 'co-location'}
   {assign var=ixirPageCss value=[
    'hosting/shared/common/common',
    'hosting/shared/story/story',
    'hosting/shared/faq/faq',
-   'hosting/shared/hero/hero',
    'server/co-location/hero/hero',
    'server/co-location/story/story',
    'server/co-location/details/details',
@@ -222,25 +250,17 @@
    'hosting/shared/common/common',
    'hosting/shared/plans/plans',
    'hosting/shared/story/story',
-   'hosting/shared/diff/diff',
-   'hosting/shared/compare/compare',
    'hosting/shared/faq/faq',
-   'hosting/shared/guide/guide',
-   'hosting/shared/hero/hero',
    'server/server-servisleri/hero/hero',
-   'server/server-servisleri/why/why',
-   'server/server-servisleri/migrate/migrate',
    'server/server-servisleri/plans/plans',
-   'server/server-servisleri/details/details',
-   'server/server-servisleri/compare/compare',
-   'server/server-servisleri/guide/guide'
+   'server/server-servisleri/details/details'
   ]}
  {/if}
  {foreach from=$ixirPageCss item=ixirCss}
-  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r170"
+  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r111"
    rel="stylesheet">
  {/foreach}
- <script src="{$WEB_ROOT}/templates/{$template}/components/hosting/plans-slider.js?v={$versionHash}-r8" defer></script>
+ <script src="{$WEB_ROOT}/templates/{$template}/components/hosting/plans-slider.js?v={$versionHash}-r7" defer></script>
 {/if}
 
 
