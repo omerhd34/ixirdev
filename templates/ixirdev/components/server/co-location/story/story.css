@@ -2,32 +2,22 @@
   padding: 64px 0;
   position: relative;
   overflow: visible;
+  background: #f8fafc !important;
+  color: #0f172a;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
 }
 
-.ixir-cs-story-layout {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 48px;
-  max-width: 1160px;
-  margin: 0 auto;
-}
-
-/* ========================================================
-   Sol Taraf: Yazı Sola Hizalı ve Genişliği Ayarlandı
-   ======================================================== */
 .ixir-cs-story .ixir-wh-story-intro {
-  margin: 0;
-  max-width: 580px;
-  width: 100%;
-  text-align: left;
-  flex: 1 1 auto;
+  margin: 0 auto;
+  max-width: 860px;
+  text-align: center;
 }
 
 .ixir-cs-story .ixir-cs-title {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 16px;
   margin-bottom: 18px;
 }
@@ -44,535 +34,49 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 18px rgba(59, 120, 231, 0.3);
+  box-shadow: 0 8px 18px rgba(59, 120, 231, 0.25);
 }
 
+.ixir-cs-story .ixir-wh-story-intro h2,
 .ixir-cs-story .ixir-cs-title h2 {
   margin: 0;
   text-align: left;
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: clamp(24px, 2.2vw, 32px);
   font-weight: 700;
-  color: #ffffff;
+  color: #0b2545;
   letter-spacing: -0.02em;
   line-height: 1.2;
 }
 
 .ixir-cs-story .ixir-wh-story-intro p {
-  margin: 0;
-  max-width: 560px;
-  text-align: left;
-  color: rgba(255, 255, 255, 0.88);
+  margin: 0 auto;
+  max-width: 820px;
+  text-align: center;
+  color: #475569;
   font-size: 15.5px;
   line-height: 1.75;
 }
 
-/* ========================================================
-   Sağ Taraf: Form Kartı
-   ======================================================== */
-.ixir-cs-story-form-card {
-  position: relative;
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 32px 28px;
-  width: 100%;
-  max-width: 500px;
-  flex: 0 0 500px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
-  z-index: 5;
-}
-
-.ixir-cs-story-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.ixir-cs-form-group {
-  margin: 0;
-  position: relative;
-}
-
-.ixir-cs-story-form .form-control {
-  display: block;
-  width: 100%;
-  height: 44px;
-  padding: 10px 14px;
-  background: #ffffff;
-  border: 1px solid #dcdfe4;
-  border-radius: 4px;
-  font-size: 14.5px;
-  color: #212529;
-  box-shadow: none !important;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
-}
-
-.ixir-cs-story-form .form-control::placeholder {
-  color: #8c93a0;
-  opacity: 1;
-  transition: color 0.15s ease;
-}
-
-.ixir-cs-story-form .form-control:hover {
-  border-color: #cbd5e1;
-}
-
-.ixir-cs-story-form .form-control:focus {
-  border-color: #3b78e7 !important;
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(59, 120, 231, 0.15) !important;
-}
-
-.ixir-cs-story-form textarea.form-control {
-  height: auto;
-  min-height: 90px;
-  resize: vertical;
-  line-height: 1.5;
-}
-
-/* ========================================================
-   Placeholder Hata Stilleri (Hatalar Placeholder İçinde Kırmızı)
-   ======================================================== */
-.ixir-cs-story-form .form-control.is-invalid,
-.ixir-cs-story-form .form-control.is-invalid:focus,
-.ixir-cs-story-form input.is-invalid,
-.ixir-cs-story-form input.is-invalid:focus,
-.ixir-cs-story-form textarea.is-invalid,
-.ixir-cs-story-form textarea.is-invalid:focus {
-  border-color: #ef4444 !important;
-  background-color: #fff5f5 !important;
-  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2) !important;
-}
-
-.ixir-cs-story-form .form-control.is-invalid::placeholder,
-.ixir-cs-story-form input.is-invalid::placeholder,
-.ixir-cs-story-form textarea.is-invalid::placeholder {
-  color: #ef4444 !important;
-  opacity: 1 !important;
-  font-weight: 500 !important;
-}
-
-.ixir-cs-story-form .form-control.is-invalid::-webkit-input-placeholder,
-.ixir-cs-story-form input.is-invalid::-webkit-input-placeholder,
-.ixir-cs-story-form textarea.is-invalid::-webkit-input-placeholder {
-  color: #ef4444 !important;
-  font-weight: 500 !important;
-}
-
-.ixir-cs-story-form .form-control.is-invalid::-moz-placeholder,
-.ixir-cs-story-form input.is-invalid::-moz-placeholder,
-.ixir-cs-story-form textarea.is-invalid::-moz-placeholder {
-  color: #ef4444 !important;
-  font-weight: 500 !important;
-}
-
-/* Captcha Satırı & Hata Durumu (Altta Mesaj Yazmaz) */
-.ixir-cs-captcha-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 4px 0 2px;
-}
-
-.ixir-cs-captcha-math {
-  font-size: 15px;
-  font-weight: 600;
-  color: #1e293b;
-  user-select: none;
-}
-
-.ixir-cs-story-form .ixir-cs-captcha-input {
-  width: 48px;
-  height: 38px;
-  padding: 4px 6px;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 600;
-  border: 1px solid #dcdfe4;
-  border-radius: 4px;
-  background: #ffffff;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
-}
-
-.ixir-cs-story-form .ixir-cs-captcha-input.is-invalid {
-  border-color: #ef4444 !important;
-  background-color: #fff5f5 !important;
-  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15) !important;
-}
-
-/* Gönder Butonu */
-.ixir-cs-submit-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 44px;
-  padding: 0 16px;
-  background: #2f66ee;
-  color: #ffffff;
-  font-size: 15.5px;
-  font-weight: 600;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: 0 4px 12px rgba(47, 102, 238, 0.25);
-}
-
-.ixir-cs-submit-btn:hover {
-  background: #1f54d6;
-  color: #ffffff;
-  box-shadow: 0 6px 16px rgba(47, 102, 238, 0.35);
-}
-
-.ixir-cs-submit-btn:active {
-  transform: translateY(1px);
-}
-
-.ixir-cs-submit-btn:disabled {
-  opacity: 0.75;
-  cursor: not-allowed;
-}
-
-/* ========================================================
-   Başarı Kartı (Success State)
-   ======================================================== */
-.ixir-cs-success-card {
-  display: none;
-  text-align: center;
-  padding: 36px 16px;
-  animation: ixirSuccessFade 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-@keyframes ixirSuccessFade {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.ixir-cs-success-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #dcfce7;
-  color: #16a34a;
-  font-size: 28px;
-  margin-bottom: 16px;
-  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.15);
-}
-
-.ixir-cs-success-card h3 {
-  font-size: 21px;
-  font-weight: 800;
+.ixir-cs-story .ixir-wh-story-intro p strong {
   color: #0f172a;
-  margin: 0 0 8px;
-  letter-spacing: -0.01em;
-}
-
-.ixir-cs-success-card p {
-  font-size: 15px;
-  color: #475569;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* ========================================================
-   intl-tel-input: Bayrak & Rakam Üst Üste Gelmesini Engelleyen Stil
-   ======================================================== */
-.intl-tel-input {
-  display: block !important;
-  width: 100% !important;
-  position: relative !important;
-}
-
-.intl-tel-input .flag-container {
-  position: absolute !important;
-  top: 0 !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  padding: 0 !important;
-  z-index: 5 !important;
-  width: auto !important;
-}
-
-/* Bayrak Kutusu: inline-flex düzeni, asla üst üste binmez */
-.ixir-cs-story-form .intl-tel-input .selected-flag,
-.intl-tel-input.separate-dial-code .selected-flag,
-.intl-tel-input.allow-dropdown .selected-flag,
-.intl-tel-input .selected-flag {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  position: relative !important;
-  width: auto !important;
-  min-width: 0 !important;
-  height: 100% !important;
-  padding: 0 8px 0 10px !important;
-  gap: 8px !important;
-  background-color: #f8fafc !important;
-  border-right: 1.5px solid #dcdfe4 !important;
-  border-radius: 4px 0 0 4px !important;
-  cursor: pointer !important;
-  box-sizing: border-box !important;
-}
-
-.ixir-cs-story-form .intl-tel-input .selected-flag:hover,
-.intl-tel-input .selected-flag:hover {
-  background-color: #f1f5f9 !important;
-}
-
-/* Bayrak ikonu: normal akışta flex elemanı */
-.ixir-cs-story-form .intl-tel-input .selected-flag .iti-flag,
-.intl-tel-input .selected-flag .iti-flag {
-  position: static !important;
-  display: inline-block !important;
-  flex: 0 0 20px !important;
-  width: 20px !important;
-  height: 14px !important;
-  margin: 0 !important;
-  transform: none !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15) !important;
-  z-index: 2 !important;
-}
-
-/* Alan Kodu (+90): normal akışta flex elemanı, sıfır padding */
-.ixir-cs-story-form .intl-tel-input .selected-dial-code,
-.intl-tel-input.separate-dial-code .selected-dial-code,
-.intl-tel-input .selected-dial-code {
-  position: static !important;
-  display: inline-block !important;
-  flex: 0 0 auto !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  line-height: normal !important;
-  color: #1e293b !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  white-space: nowrap !important;
-}
-
-/* Aşağı Açılır Ok İkonu: normal akışta flex elemanı */
-.ixir-cs-story-form .intl-tel-input .selected-flag .iti-arrow,
-.intl-tel-input .selected-flag .iti-arrow {
-  position: static !important;
-  display: inline-block !important;
-  flex: 0 0 auto !important;
-  margin: 0 0 0 2px !important;
-  width: 0 !important;
-  height: 0 !important;
-  border-left: 3.5px solid transparent !important;
-  border-right: 3.5px solid transparent !important;
-  border-top: 4px solid #64748b !important;
-  border-bottom: none !important;
-}
-
-.ixir-cs-story-form .intl-tel-input .selected-flag .iti-arrow.up,
-.intl-tel-input .selected-flag .iti-arrow.up {
-  border-top: none !important;
-  border-bottom: 4px solid #64748b !important;
-}
-
-/* Telefon Giriş Kutusu - Bayrağı örtmeyecek başlangıç padding */
-.ixir-cs-story-form .intl-tel-input input.form-control,
-.ixir-cs-story-form .intl-tel-input input[type="tel"],
-.intl-tel-input input[type="tel"] {
-  width: 100% !important;
-  height: 44px !important;
-  padding-left: 92px !important;
-}
-
-/* Açılır Menü (Dropdown) Tasarımı */
-.ixir-cs-story-form .country-list,
-.ixir-cs-story-form .intl-tel-input .country-list,
-.country-list,
-.intl-tel-input .country-list,
-.iti-container .country-list {
-  position: absolute !important;
-  z-index: 1050 !important;
-  top: calc(100% + 4px) !important;
-  left: 0 !important;
-  width: 100% !important;
-  min-width: 330px !important;
-  max-height: 240px !important;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-  background-color: #ffffff !important;
-  color: #1e293b !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 10px !important;
-  box-shadow: 0 16px 36px -4px rgba(15, 23, 42, 0.18) !important;
-  padding: 6px 0 !important;
-  margin: 0 !important;
-  list-style: none !important;
-  scrollbar-width: thin !important;
-  scrollbar-color: #cbd5e1 #f8fafc !important;
-}
-
-/* Modern İnce Scrollbar ve Mavi Ok Butonlarının Gizlenmesi */
-.ixir-cs-story-form .country-list::-webkit-scrollbar,
-.ixir-cs-story-form .intl-tel-input .country-list::-webkit-scrollbar,
-.country-list::-webkit-scrollbar,
-.intl-tel-input .country-list::-webkit-scrollbar,
-.iti-container .country-list::-webkit-scrollbar {
-  width: 6px !important;
-  display: block !important;
-}
-
-.ixir-cs-story-form .country-list::-webkit-scrollbar-button,
-.ixir-cs-story-form .intl-tel-input .country-list::-webkit-scrollbar-button,
-.ixir-cs-story-form .country-list::-webkit-scrollbar:horizontal,
-.country-list::-webkit-scrollbar-button,
-.intl-tel-input .country-list::-webkit-scrollbar-button,
-.iti-container .country-list::-webkit-scrollbar-button,
-.country-list::-webkit-scrollbar:horizontal,
-.intl-tel-input .country-list::-webkit-scrollbar:horizontal,
-.iti-container .country-list::-webkit-scrollbar:horizontal {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
-}
-
-.ixir-cs-story-form .country-list::-webkit-scrollbar-track,
-.ixir-cs-story-form .intl-tel-input .country-list::-webkit-scrollbar-track,
-.country-list::-webkit-scrollbar-track,
-.intl-tel-input .country-list::-webkit-scrollbar-track,
-.iti-container .country-list::-webkit-scrollbar-track {
-  background: #f8fafc !important;
-}
-
-.ixir-cs-story-form .country-list::-webkit-scrollbar-thumb,
-.ixir-cs-story-form .intl-tel-input .country-list::-webkit-scrollbar-thumb,
-.country-list::-webkit-scrollbar-thumb,
-.intl-tel-input .country-list::-webkit-scrollbar-thumb,
-.iti-container .country-list::-webkit-scrollbar-thumb {
-  background: #cbd5e1 !important;
-  border-radius: 4px !important;
-}
-
-.ixir-cs-story-form .country-list::-webkit-scrollbar-thumb:hover,
-.ixir-cs-story-form .intl-tel-input .country-list::-webkit-scrollbar-thumb:hover,
-.country-list::-webkit-scrollbar-thumb:hover,
-.intl-tel-input .country-list::-webkit-scrollbar-thumb:hover,
-.iti-container .country-list::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8 !important;
-}
-
-/* Ülke Listesi Elemanları */
-.ixir-cs-story-form .country-list .country,
-.intl-tel-input .country-list .country,
-.country-list .country {
-  display: flex !important;
-  align-items: center !important;
-  padding: 8px 12px !important;
-  font-size: 13.5px !important;
-  color: #1e293b !important;
-  cursor: pointer !important;
-}
-
-.ixir-cs-story-form .country-list .country:hover,
-.ixir-cs-story-form .country-list .country.highlight,
-.intl-tel-input .country-list .country:hover,
-.intl-tel-input .country-list .country.highlight,
-.country-list .country:hover,
-.country-list .country.highlight {
-  background-color: #f1f5f9 !important;
-  color: #0f172a !important;
-}
-
-.ixir-cs-story-form .country-list .country.active,
-.intl-tel-input .country-list .country.active,
-.country-list .country.active {
-  background-color: #eff6ff !important;
-  color: #1d4ed8 !important;
-}
-
-/* Ülke İsmi Metni (Siyah/Okunaklı) */
-.ixir-cs-story-form .country-list .country-name,
-.intl-tel-input .country-list .country-name,
-.country-list .country-name {
-  flex: 1 1 auto !important;
-  color: #1e293b !important;
-  font-size: 13.5px !important;
-  font-weight: 500 !important;
-  white-space: normal !important;
-  padding-right: 8px !important;
-  margin-left: 8px !important;
-  margin-right: auto !important;
-}
-
-/* Alan Kodu */
-.ixir-cs-story-form .country-list .dial-code,
-.intl-tel-input .country-list .dial-code,
-.country-list .dial-code {
-  flex: 0 0 auto !important;
-  color: #64748b !important;
-  font-weight: 600 !important;
-  font-size: 12.5px !important;
-  margin-left: auto !important;
-}
-
-/* Ayırıcı */
-.ixir-cs-story-form .country-list .divider,
-.intl-tel-input .country-list .divider,
-.country-list .divider {
-  height: 1px !important;
-  margin: 6px 0 !important;
-  background-color: #e2e8f0 !important;
-  padding: 0 !important;
-}
-
-/* ========================================================
-   Animasyon & Scroll Reveal
-   ======================================================== */
-.ixir-wh-story.is-armed .ixir-cs-story-form-card {
-  opacity: 0;
-  transform: translate3d(60px, 0, 0);
-  transition: transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) 0.15s, opacity 0.56s ease 0.15s;
-}
-
-.ixir-wh-story.is-armed .ixir-wh-story-intro.is-in + .ixir-cs-story-form-card,
-.ixir-wh-story.is-settled .ixir-cs-story-form-card,
-.ixir-wh-story:not(.is-armed) .ixir-cs-story-form-card {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-/* ========================================================
-   Duyarlı (Responsive) Tasarım
-   ======================================================== */
-@media (max-width: 991px) {
-  .ixir-cs-story-layout {
-    flex-direction: column;
-    gap: 36px;
-  }
-
-  .ixir-cs-story .ixir-wh-story-intro {
-    max-width: 520px;
-    margin: 0 auto;
-  }
-
-  .ixir-cs-story-form-card {
-    max-width: 520px;
-    flex: 0 0 auto;
-    margin: 0 auto;
-  }
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
   .ixir-wh-story.ixir-cs-story {
-    padding: 40px 0;
+    padding: 44px 0;
   }
 
-  .ixir-cs-story-form-card {
-    padding: 22px 18px;
+  .ixir-cs-story .ixir-cs-title {
+    gap: 12px;
+  }
+
+  .ixir-cs-story .ixir-wh-story-icon {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 18px;
   }
 }
-

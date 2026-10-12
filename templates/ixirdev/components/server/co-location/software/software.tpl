@@ -1,5 +1,4 @@
-<link href="{$WEB_ROOT}/templates/{$template}/components/server/co-location/software/software.css?v={$versionHash}-r160" rel="stylesheet">
-<section class="ixir-wh-software ixir-slide ixir-slide--right is-slide-on" aria-label="Sunucu Yazılımları">
+<section class="ixir-wh-software ixir-slide ixir-slide--left is-slide-on" aria-label="Sunucu Yazılımları">
  <script>
   {literal}
    (function() {

@@ -1,8 +1,8 @@
- <section class="ixir-wh-story ixir-slide ixir-slide--left is-slide-on" aria-label="Web hosting özellikleri">
+ <section class="ixir-wh-story ixir-cs-story2 ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting özellikleri">
   <script>
    {literal}
     (function() {
-     var root = document.querySelector('.ixir-wh-story');
+     var root = document.querySelector('.ixir-cs-story2');
      if (!root || !window.IntersectionObserver) return;
      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
      if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;

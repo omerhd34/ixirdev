@@ -1,4 +1,4 @@
-<section class="ixir-wh-faq ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-wh-faq-title">
+<section class="ixir-wh-faq ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-wh-faq-title">
  <script>
   {literal}
    (function() {
@@ -13,7 +13,7 @@
  <div class="container">
   <header class="ixir-wh-plans-head">
    <h2 id="ixir-wh-faq-title">Sıkça Sorulan Sorular</h2>
-   <p>Cloud Server paketlerimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
+   <p>Co-Location hizmetimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
   </header>
 
   <div class="ixir-wh-faq-list">

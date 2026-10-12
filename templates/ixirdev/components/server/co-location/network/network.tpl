@@ -1,5 +1,5 @@
-<section class="ixir-ds-network-section ixir-slide ixir-slide--right is-slide-on"
- style="background: #f8fafc; padding: 5rem 0;">
+<section class="ixir-ds-network-section ixir-slide ixir-slide--left is-slide-on"
+ style="background: #ffffff; padding: 5rem 0;">
  <div class="container text-center">
   <header class="ixir-wh-plans-head ixir-ds-head" style="max-width: 100%; margin-bottom: 4rem;">
    <h2>Güçlü ve Yedekli Network Altyapımız</h2>
