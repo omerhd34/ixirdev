@@ -11,8 +11,9 @@
   }
 }
 
+.ixir-wh-diff.ixir-wh-diff--dark,
 .ixir-wh-diff--dark {
-  background: radial-gradient( ellipse 55% 50% at 20% 0%, rgba(59, 120, 231, 0.16), transparent 65% ), #0b2545;
+  background: radial-gradient(ellipse 70% 42% at 50% -8%, rgba(59, 120, 231, 0.22), transparent 62%), #0b2545;
 }
 .ixir-wh-diff--dark .ixir-wh-diff-head h2 {
   color: #fff;
@@ -30,4 +31,32 @@
 }
 .ixir-wh-diff--dark .ixir-wh-diff-grid p {
   color: rgba(255, 255, 255, 0.66);
+}
+
+.ixir-wh-diff--light,
+.ixir-wh-page--wp .ixir-wh-diff--light {
+  background: #f6f7f9;
+}
+.ixir-wh-diff--light .ixir-wh-diff-head h2,
+.ixir-wh-page--wp .ixir-wh-diff--light .ixir-wh-diff-head h2 {
+  color: #0b2545;
+}
+.ixir-wh-diff--light .ixir-wh-diff-head p,
+.ixir-wh-page--wp .ixir-wh-diff--light .ixir-wh-diff-head p {
+  color: #6b7280;
+}
+.ixir-wh-diff--light .ixir-wh-diff-grid li,
+.ixir-wh-page--wp .ixir-wh-diff--light .ixir-wh-diff-grid li,
+.ixir-wh-page--wp .ixir-wh-diff--light.ixir-wh-diff--wp .ixir-wh-diff-grid li {
+  border: 1px solid #e6e8ee;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(36, 41, 53, 0.05);
+}
+.ixir-wh-diff--light .ixir-wh-diff-grid h3,
+.ixir-wh-page--wp .ixir-wh-diff--light .ixir-wh-diff-grid h3 {
+  color: #0b2545;
+}
+.ixir-wh-diff--light .ixir-wh-diff-grid p,
+.ixir-wh-page--wp .ixir-wh-diff--light .ixir-wh-diff-grid p {
+  color: #6b7280;
 }

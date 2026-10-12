@@ -1,3 +1,31 @@
 body:has(.ixir-wh-page--cloud-drive) .ixir-help {
   margin-top: 0;
 }
+
+.ixir-wh-page--cloud-drive .ixir-wh-diff,
+.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff {
+  background: #f6f7f9;
+}
+.ixir-wh-page--cloud-drive .ixir-wh-diff-head h2,
+.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-head h2 {
+  color: #0b2545;
+}
+.ixir-wh-page--cloud-drive .ixir-wh-diff-head p,
+.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-head p {
+  color: #6b7280;
+}
+.ixir-wh-page--cloud-drive .ixir-wh-diff-grid li,
+.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-grid li,
+.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff--wp .ixir-wh-diff-grid li {
+  border: 1px solid #e6e8ee;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(36, 41, 53, 0.05);
+}
+.ixir-wh-page--cloud-drive .ixir-wh-diff-grid h3,
+.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-grid h3 {
+  color: #0b2545;
+}
+.ixir-wh-page--cloud-drive .ixir-wh-diff-grid p,
+.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-grid p {
+  color: #6b7280;
+}

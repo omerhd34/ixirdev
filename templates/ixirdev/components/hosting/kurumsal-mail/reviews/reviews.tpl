@@ -51,8 +51,7 @@
    </figure>
   </div>
   <div class="ixir-km-reviews-rating">
-   <img src="{$WEB_ROOT}/templates/{$template}/img/google.png" alt="Google Yorumları" width="306" height="100"
-    loading="lazy">
+   <i class="fab fa-google" aria-hidden="true"></i>
    <b>4.9</b>
    <span class="ixir-km-review-stars" role="img" aria-label="5 üzerinden 4.9 puan"><i class="fas fa-star"></i><i
      class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>

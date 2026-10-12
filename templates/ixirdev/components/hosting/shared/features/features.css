@@ -134,3 +134,26 @@
     padding: 20px;
   }
 }
+
+.ixir-wh-features.ixir-wh-features--dark,
+.ixir-wh-features--dark {
+  background: radial-gradient(ellipse 70% 42% at 50% -8%, rgba(59, 120, 231, 0.22), transparent 62%), #0b2545;
+}
+.ixir-wh-features--dark .ixir-wh-features-head h2 {
+  color: #fff;
+}
+.ixir-wh-features--dark .ixir-wh-features-grid > li {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: none;
+}
+.ixir-wh-features--dark .ixir-wh-features-grid > li:hover {
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+}
+.ixir-wh-features--dark .ixir-wh-features-grid h3 {
+  color: #fff;
+}
+.ixir-wh-features--dark .ixir-wh-features-grid ul li {
+  color: rgba(255, 255, 255, 0.72);
+}
+

@@ -1,4 +1,4 @@
-<section class="ixir-wh-diff ixir-wh-diff--2col ixir-wh-diff--dark ixir-slide ixir-slide--right is-slide-on"
+<section class="ixir-wh-diff ixir-wh-diff--2col ixir-wh-diff--light ixir-slide ixir-slide--right is-slide-on"
  aria-labelledby="ixir-wh-diff-title">
  <script>
   {literal}

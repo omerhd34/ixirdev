@@ -135,6 +135,15 @@
   width: auto;
   height: 24px;
 }
+.ixir-km-reviews-rating .fa-google {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Font Awesome 5 Brands", "FontAwesome", sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  color: #4285f4;
+}
 .ixir-km-reviews-rating b {
   color: #0b2545;
   font-family: "Space Grotesk", "Roboto", sans-serif;

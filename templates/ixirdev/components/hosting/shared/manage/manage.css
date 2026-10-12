@@ -1,6 +1,6 @@
 .ixir-wh-manage {
   padding: 56px 0 60px;
-  background: #fff;
+  background: radial-gradient(ellipse 70% 42% at 50% -8%, rgba(59, 120, 231, 0.22), transparent 62%), #0b2545;
 }
 .ixir-wh-manage.is-armed {
   overflow-x: clip;
@@ -36,7 +36,7 @@
 }
 .ixir-wh-manage-head h2 {
   margin: 0 0 10px;
-  color: #0b2545;
+  color: #fff;
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: clamp(24px, 2.1vw, 32px);
   font-weight: 700;
@@ -45,7 +45,7 @@
 }
 .ixir-wh-manage-head p {
   margin: 0;
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.72);
   font-size: 16px;
   line-height: 1.5;
 }
@@ -86,7 +86,7 @@
 }
 .ixir-wh-manage-grid h3 {
   margin: 0 0 10px;
-  color: #0b2545;
+  color: #fff;
   font-size: 17px;
   font-weight: 700;
   letter-spacing: -0.015em;
@@ -95,7 +95,7 @@
 .ixir-wh-manage-grid p {
   max-width: 320px;
   margin: 0;
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.68);
   font-size: 14px;
   line-height: 1.7;
 }

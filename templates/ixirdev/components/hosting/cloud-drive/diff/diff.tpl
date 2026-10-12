@@ -1,4 +1,4 @@
- <section class="ixir-wh-diff ixir-wh-diff--wp ixir-slide ixir-slide--left is-slide-on"
+<section class="ixir-wh-diff ixir-wh-diff--wp ixir-wh-diff--light ixir-slide ixir-slide--left is-slide-on"
   aria-labelledby="ixir-wh-diff-title">
   <script>
    {literal}
