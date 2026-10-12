@@ -62,7 +62,7 @@
  margin: 0 0 10px;
  color: #fff;
  font-family: "Space Grotesk", sans-serif !important;
- font-size: 34px;
+ font-size: 32px;
  font-weight: 700;
  letter-spacing: -0.03em;
  line-height: 1.22;
@@ -253,7 +253,7 @@
  }
 
  .ixir-help-copy h2 {
-  font-size: 24px;
+  font-size: 26px;
  }
 
  .ixir-help-copy h2::after {

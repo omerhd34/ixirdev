@@ -33,7 +33,7 @@
       <span class="ixir-wh-story-badge" aria-hidden="true"><i class="fas fa-th-large"></i></span>
       <h3 class="ixir-wh-story-title">cPanel Kontrol Paneli</h3>
      </div>
-     <p>Aşina olduğunuz dünyanın en popüler web hosting kontrol panellleri olan <strong>cPanel</strong> ve
+     <p>Aşina olduğunuz dünyanın en popüler web hosting kontrol panelleri olan <strong>cPanel</strong> ve
       <strong>Plesk</strong> ile web hosting
       hizmetinizi kolay ve zahmetsizce yönetebilirsiniz. <strong>Disk alanı yönetimi</strong>, <strong>e-mail hesap
        oluşturma</strong>, <strong>kota belirleme</strong>, <strong>web
