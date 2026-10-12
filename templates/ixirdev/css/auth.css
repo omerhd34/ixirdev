@@ -640,34 +640,20 @@ body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body .col-xs-12 {
  transform: translateY(-50%);
  transform-origin: left center;
  transition:
-  top 0.2s ease,
-  transform 0.2s ease,
-  font-size 0.2s ease,
+  opacity 0.15s ease,
+  visibility 0.15s ease,
   color 0.2s ease;
 }
 
-.ixir-auth-page .ixir-dc-float input:focus~.ixir-dc-label,
 .ixir-auth-page .ixir-dc-float input:not(:placeholder-shown)~.ixir-dc-label,
 .ixir-auth-page .ixir-dc-float input:-webkit-autofill~.ixir-dc-label,
-.ixir-split-form .ixir-dc-float input:focus~.ixir-dc-label,
+.ixir-auth-page .ixir-dc-float input.is-filled~.ixir-dc-label,
 .ixir-split-form .ixir-dc-float input:not(:placeholder-shown)~.ixir-dc-label,
-.ixir-split-form .ixir-dc-float input:-webkit-autofill~.ixir-dc-label {
- top: 0px;
- font-size: 10.5px;
- font-weight: 600;
- line-height: 1.4;
- letter-spacing: 0.04em;
- text-transform: uppercase;
- transform: none;
- color: #8b93a3;
- width: max-content;
- max-width: calc(100% - 36px);
- z-index: 2;
-}
-
-.ixir-auth-page .ixir-dc-float input:focus~.ixir-dc-label,
-.ixir-split-form .ixir-dc-float input:focus~.ixir-dc-label {
- color: #386ce0;
+.ixir-split-form .ixir-dc-float input:-webkit-autofill~.ixir-dc-label,
+.ixir-split-form .ixir-dc-float input.is-filled~.ixir-dc-label {
+ opacity: 0 !important;
+ visibility: hidden !important;
+ pointer-events: none !important;
 }
 
 .ixir-auth-page .ixir-dc-float input:-webkit-autofill,
@@ -1832,11 +1818,12 @@ a.ixir-split-btn {
   font-size: 14px;
  }
 
- .ixir-dc-float input:focus~.ixir-dc-label,
  .ixir-dc-float input:not(:placeholder-shown)~.ixir-dc-label,
- .ixir-dc-float input:-webkit-autofill~.ixir-dc-label {
-  top: -5px;
-  font-size: 9.5px;
+ .ixir-dc-float input:-webkit-autofill~.ixir-dc-label,
+ .ixir-dc-float input.is-filled~.ixir-dc-label {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
  }
 
  .ixir-select-trigger {

@@ -62,7 +62,7 @@
     {include file="$template/includes/auth-reset-form.tpl"}
    </div>
   </div>
-  {include file="$template/components/domain/float-label.tpl"}
+  {include file="$template/components/domain/float-label/float-label.tpl"}
 
   <div class="ixir-auth-overlay">
    <div class="ixir-auth-overlay-bg"></div>
@@ -253,5 +253,31 @@
    var input = box.querySelector("input, select");
    if (input) input.focus();
   });
+
+  function syncFilledState() {
+   var inputs = root.querySelectorAll(".ixir-dc-float input");
+   for (var i = 0; i < inputs.length; i++) {
+    var hasVal = (inputs[i].value || "").trim().length > 0;
+    inputs[i].classList.toggle("is-filled", hasVal);
+   }
+  }
+
+  root.addEventListener("input", function(e) {
+   if (e.target && e.target.matches && e.target.matches(".ixir-dc-float input")) {
+    var hasVal = (e.target.value || "").trim().length > 0;
+    e.target.classList.toggle("is-filled", hasVal);
+   }
+  });
+
+  root.addEventListener("change", function(e) {
+   if (e.target && e.target.matches && e.target.matches(".ixir-dc-float input")) {
+    var hasVal = (e.target.value || "").trim().length > 0;
+    e.target.classList.toggle("is-filled", hasVal);
+   }
+  });
+
+  syncFilledState();
+  setTimeout(syncFilledState, 100);
+  setTimeout(syncFilledState, 400);
  })();
 </script>
