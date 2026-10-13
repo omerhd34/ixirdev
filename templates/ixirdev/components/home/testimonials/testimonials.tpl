@@ -1,7 +1,7 @@
 <section class="ixir-reviews ixir-slide ixir-slide--left is-slide-on" id="ixirReviews" aria-label="Müşteri yorumları">
  <div class="container">
   <header class="ixir-reviews-head">
-   <h2>Gerçek Deneyimler, Mutlu Müşteriler!</h2>
+   {include file="$template/components/Heading.tpl" title="Gerçek Deneyimler, Mutlu Müşteriler!"}
    <p>Siz de üstün hizmet kalitemizi deneyimleyin.</p>
   </header>
  </div>

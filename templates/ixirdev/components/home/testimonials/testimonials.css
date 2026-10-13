@@ -21,19 +21,6 @@
   margin: 0;
   color: #1a1f2e;
   font-family: "Space Grotesk", sans-serif !important;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.28;
-}
-.ixir-reviews-head h2::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  margin: 16px auto 0;
-  border-radius: 99px;
-  background: #386ce0;
 }
 .ixir-reviews-head p {
   margin: 14px 0 0;
@@ -223,12 +210,6 @@
   }
   .ixir-reviews-head {
     margin-bottom: 20px;
-  }
-  .ixir-reviews-head h2 {
-    font-size: 24px;
-  }
-  .ixir-reviews-head h2::after {
-    margin-top: 12px;
   }
   .ixir-reviews-head p {
     font-size: 15px;

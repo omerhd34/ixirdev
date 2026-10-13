@@ -7,11 +7,7 @@
     <img src="{$WEB_ROOT}/templates/{$template}/img/turkey-stats/turkey-map.jpg" alt="ixirhost Türkiye" width="3600"
      height="1500" decoding="async">
    </picture>
-   <h2>
-    <span class="ixir-stats-heading">
-     Türkiye Bizi Tercih Ediyor!
-    </span>
-   </h2>
+   {include file="$template/components/Heading.tpl" title="Türkiye Bizi Tercih Ediyor!" class="ixir-stats-heading"}
    <ul class="ixir-stats-grid">
     <li>
      <strong data-to="22000" data-suffix="+">22.000+</strong>

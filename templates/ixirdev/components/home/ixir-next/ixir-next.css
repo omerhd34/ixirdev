@@ -25,19 +25,6 @@
   margin: 0 0 14px;
   color: #1a1f2e;
   font-family: "Space Grotesk", sans-serif !important;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.28;
-}
-.ixir-next-panel h4::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  margin: 16px auto 0;
-  border-radius: 99px;
-  background: #386ce0;
 }
 .ixir-next-panel h4 .fa-heart {
   display: inline-block;
@@ -160,9 +147,6 @@
   .ixir-next-panel {
     padding: 0 12px;
   }
-  .ixir-next-panel h4 {
-    font-size: 26px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -171,10 +155,6 @@
   }
   .ixir-next-panel {
     padding: 0 12px;
-  }
-  .ixir-next-panel h4 {
-    font-size: 23px;
-    letter-spacing: -0.02em;
   }
   .ixir-next-panel p {
     font-size: 14.5px;

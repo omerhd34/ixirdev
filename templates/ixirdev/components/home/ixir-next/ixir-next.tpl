@@ -1,7 +1,7 @@
 <section class="ixir-next ixir-slide ixir-slide--left is-slide-on" id="ixir-next" aria-labelledby="ixir-next-title">
  <div class="container">
   <div class="ixir-next-panel">
-   <h4 id="ixir-next-title">İxirNext ile Geleceğe Dokunuyoruz!</h4>
+   {include file="$template/components/Heading.tpl" title="İxirNext ile Geleceğe Dokunuyoruz!" id="ixir-next-title"}
    <p><strong>İxirhost</strong> olarak 2005 yılından bu yana internet teknolojileri üretiyoruz. Bugün ise bu
     yolculuğun
     bir parçasını, internetin geleceğini inşa edecek çocuklara ve gençlere armağan ediyoruz.</p>

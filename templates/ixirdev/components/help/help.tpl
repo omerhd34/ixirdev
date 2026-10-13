@@ -6,7 +6,7 @@
  <div class="container">
   <div class="ixir-help-stage">
    <div class="ixir-help-copy">
-    <h2>Sizler İçin Buradayız!</h2>
+    {include file="$template/components/Heading.tpl" title="Sizler İçin Buradayız!"}
     <p>Desteğe ihtiyacınız olduğu her anda bize ulaşın.</p>
     <div class="ixir-help-cards">
      <a href="tel:+908503027111" class="ixir-help-card" title="ixirhost çağrı merkezi">

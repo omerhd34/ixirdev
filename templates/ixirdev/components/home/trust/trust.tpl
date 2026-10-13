@@ -1,7 +1,7 @@
 <section class="ixir-trust ixir-slide ixir-slide--right is-slide-on" id="ixir-trust">
  <div class="container">
   <header class="ixir-trust-head">
-   <h2>Yalnızca Hizmet Değil, 20 Yıldır Güven Barındırıyoruz!</h2>
+   {include file="$template/components/Heading.tpl" title="Yalnızca Hizmet Değil, 20 Yıldır Güven Barındırıyoruz!" tag="h2" }
    <p>Sektörün en tecrübeli ve yetkin hosting servis sağlayıcısına bugün geçiş yapın.</p>
   </header>
   <div class="ixir-trust-grid">

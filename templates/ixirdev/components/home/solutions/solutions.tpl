@@ -2,7 +2,7 @@
  aria-label="Web hosting ve altyapı çözümleri">
  <div class="container">
   <header class="ixir-solutions-head">
-   <h2>Türkiye'nin Güvenilir Web Hosting ve Altyapı Çözümleri</h2>
+  {include file="$template/components/Heading.tpl" title="Türkiye'nin Güvenilir Web Hosting ve Altyapı Çözümleri"}
    <p>2005'ten bu yana 22.000'den fazla müşteriye kesintisiz hizmet sunuyoruz.</p>
   </header>
   <div class="ixir-solutions-grid">
@@ -25,9 +25,7 @@
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-cloud"></i></span>
      <h3>Cloud Server &amp; Dedicated Server</h3>
     </div>
-    <p>İstanbul merkezli Tier III+ veri merkezimizde Intel Xeon işlemciler ve SSD depolama ile tam kontrol sizde. 60
-     saniyede kurulan Cloud Server'larımız; Windows &amp; Linux desteği, 3 operatör yedekli bağlantı ve otomatik
-     yedekleme seçenekleriyle kurumsal altyapınızın güvencesidir.</p>
+    <p>İstanbul merkezli Tier III+ veri merkezimizde Intel Xeon işlemciler ve SSD depolama ile tam kontrol sizde. 60 saniyede kurulan Cloud Server'larımız; Windows &amp; Linux desteği, 3 operatör yedekli bağlantı ve otomatik yedekleme seçenekleriyle kurumsal altyapınızın güvencesidir.</p>
     <div class="ixir-solutions-links">
      <a href="{$WEB_ROOT}/cloud-server">Cloud Server <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
      <a href="{$WEB_ROOT}/dedicated-server">Dedicated Server <i class="fas fa-arrow-right" aria-hidden="true"></i></a>

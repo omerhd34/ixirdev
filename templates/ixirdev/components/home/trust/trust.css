@@ -19,22 +19,9 @@
 }
 .ixir-trust-head h2 {
   font-family: "Space Grotesk", sans-serif !important;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.28;
   color: #1a1f2e;
   margin: 0;
   overflow-wrap: break-word;
-}
-.ixir-trust-head h2::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  margin: 16px auto 0;
-  border-radius: 99px;
-  background: #386ce0;
 }
 .ixir-trust-head p {
   margin: 14px 0 0;
@@ -130,9 +117,6 @@
   .ixir-trust-head {
     margin-bottom: 40px;
   }
-  .ixir-trust-head h2 {
-    font-size: 32px;
-  }
   .ixir-trust-head p {
     font-size: 16px;
   }
@@ -202,13 +186,6 @@
   }
   .ixir-trust-head {
     margin-bottom: 32px;
-  }
-  .ixir-trust-head h2 {
-    font-size: 23px;
-    letter-spacing: -0.02em;
-  }
-  .ixir-trust-head h2::after {
-    margin-top: 12px;
   }
   .ixir-trust-head p {
     font-size: 15px;

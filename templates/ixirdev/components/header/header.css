@@ -1743,7 +1743,7 @@ body.ixir-mobile-menu-open {
   }
 }
 
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 1280px) {
   .ixir-header .ixir-nav {
     gap: 4px;
   }
@@ -1768,7 +1768,7 @@ body.ixir-mobile-menu-open {
   }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   .ixir-header {
     display: none;
   }

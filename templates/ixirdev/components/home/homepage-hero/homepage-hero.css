@@ -573,7 +573,7 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
  .ixir-hero-photo img {
   object-position: 72% center;
  }
@@ -730,7 +730,7 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
  .ixir-hero-main {
   max-width: 720px;
  }
@@ -911,7 +911,7 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
  section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-points {
   column-gap: 32px;
   row-gap: 12px;
