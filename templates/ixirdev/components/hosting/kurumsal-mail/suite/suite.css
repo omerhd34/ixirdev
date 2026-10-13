@@ -10,10 +10,6 @@
 .ixir-km-suite-head h2 {
   margin: 0 0 12px;
   color: #0b2545;
-  font-size: clamp(26px, 2.4vw, 36px);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.18;
 }
 .ixir-km-suite-head p {
   margin: 0;

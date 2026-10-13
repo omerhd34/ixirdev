@@ -5,7 +5,7 @@
      var root = document.querySelector('.ixir-wh-story');
      if (!root || !window.IntersectionObserver) return;
      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-     if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
      root.classList.add('is-armed');
     })();
    {/literal}
@@ -13,7 +13,7 @@
   <div class="container">
    <div class="ixir-wh-story-intro">
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
-    <h2>Windows Hosting Nedir?</h2>
+    {include file="$template/components/Heading.tpl" title="Windows Hosting Nedir?"}
     <p>Web hosting hizmetinin bir kolu olan <strong>Windows Hosting</strong>, <strong>ASP.NET</strong>, <strong>.NET
       Core</strong>, <strong>MVC</strong> gibi yazılım dilleri ve
      frameworkleri ile yaratılmış yazılımlar için ideal bir barındırma çözümüdür. İşletim sistemi olarak <strong>Windows

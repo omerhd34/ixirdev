@@ -6,7 +6,7 @@
      var root = document.querySelector('.ixir-wh-story--intro');
      if (!root || !window.IntersectionObserver) return;
      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-     if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
      root.classList.add('is-armed');
     })();
    {/literal}
@@ -14,7 +14,7 @@
   <div class="container">
    <div class="ixir-wh-story-intro">
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
-    <h2>WordPress Hosting Nedir?</h2>
+    {include file="$template/components/Heading.tpl" title="WordPress Hosting Nedir?"}
     <p>WordPress Hosting, WordPress web siteleri için özel olarak tasarlanmış server ve ağ altyapısında sunulan; tek
      tıkla kurulum, yüksek CPU ve RAM kaynakları ile WordPress’e özel optimizasyonlar içeren bir hosting çözümüdür.
      LiteSpeed web server'ı, AccelerateWP ve PHP X-RAY gibi araçlarla desteklenen bu hizmette disk, bant genişliği,

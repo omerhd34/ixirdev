@@ -8,7 +8,7 @@
    </figure>
    <div class="ixir-km-outlook-copy">
     <span class="ixir-km-outlook-eyebrow"><i class="fab fa-microsoft" aria-hidden="true"></i>Microsoft Outlook</span>
-    <h2 id="ixir-km-outlook-title">MAPI ile Tam Outlook Desteği</h2>
+    {include file="$template/components/Heading.tpl" title="MAPI ile Tam Outlook Desteği" id="ixir-km-outlook-title"}
     <p>Standart POP3/IMAP iletişimi yerine Outlook üzerinde MAPI ile tüm önemli bilgilerinizi tam senkronize
      edebilirsiniz.</p>
     <p>MAPI tam bir Exchange sunucu deneyimi sağlar. Hesaplarınızı saniyeler içerisinde Outlook üzerine kurabilir, tüm

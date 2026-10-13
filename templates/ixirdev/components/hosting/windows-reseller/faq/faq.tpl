@@ -5,14 +5,14 @@
     var root = document.querySelector('.ixir-wh-faq');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+    if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
     root.classList.add('is-armed');
    })();
   {/literal}
  </script>
  <div class="container">
   <header class="ixir-wh-plans-head">
-   <h2 id="ixir-wh-faq-title">Sıkça Sorulan Sorular</h2>
+   {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-wh-faq-title"}
    <p>Windows Reseller Hosting paketlerimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
   </header>
   <div class="ixir-wh-faq-list">

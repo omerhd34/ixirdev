@@ -5,7 +5,7 @@
     var root = document.querySelector('.ixir-wh-guide');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+    if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
     root.classList.add('is-armed');
    })();
   {/literal}

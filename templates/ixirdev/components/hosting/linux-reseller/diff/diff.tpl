@@ -6,14 +6,14 @@
     var root = document.querySelector('.ixir-wh-diff');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+    if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
     root.classList.add('is-armed');
    })();
   {/literal}
  </script>
  <div class="container">
   <header class="ixir-wh-diff-head">
-   <h2 id="ixir-wh-diff-title">Linux Reseller Hosting Hizmeti Kimler İçin Uygundur?</h2>
+   {include file="$template/components/Heading.tpl" title="Linux Reseller Hosting Hizmeti Kimler İçin Uygundur?" id="ixir-wh-diff-title"}
   </header>
   <ul class="ixir-wh-diff-grid">
    <li>

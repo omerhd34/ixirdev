@@ -1,7 +1,7 @@
 <section class="ixir-km-suite" id="ixir-km-suite" aria-labelledby="ixir-km-suite-title">
  <div class="container">
   <header class="ixir-km-suite-head">
-   <h2 id="ixir-km-suite-title">Yalnızca E-Posta Hizmeti Değil, Bütünleşik Bir Çözüm Sunuyoruz</h2>
+   {include file="$template/components/Heading.tpl" title="Yalnızca E-Posta Hizmeti Değil, Bütünleşik Bir Çözüm Sunuyoruz" id="ixir-km-suite-title"}
    <p>Normal bir web hosting üzerindeki mail alışverişi gibi değil; takvimler, kişiler, notlar, video konferans, anlık
     mesajlaşma ve dosya paylaşımı gibi işinizi kolaylaştıracak fonksiyonlarla birlikte.</p>
   </header>

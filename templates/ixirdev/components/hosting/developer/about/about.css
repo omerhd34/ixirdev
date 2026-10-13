@@ -32,11 +32,6 @@
 .ixir-wh-about-head h2 {
   margin: 0 0 16px;
   color: #0b2545;
-  font-family: "Space Grotesk", "Roboto", sans-serif;
-  font-size: clamp(26px, 2.2vw, 34px);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
 }
 .ixir-wh-about-lead {
   margin: 0;
@@ -236,9 +231,6 @@
   .ixir-wh-about-head {
     margin-bottom: 28px;
     text-align: left;
-  }
-  .ixir-wh-about-head h2 {
-    font-size: 22px;
   }
   .ixir-wh-about-lead, .ixir-wh-about-copy p, .ixir-wh-about-card p {
     font-size: 15px;

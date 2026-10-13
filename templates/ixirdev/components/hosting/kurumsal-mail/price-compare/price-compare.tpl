@@ -3,7 +3,7 @@
  <div class="container">
   <header class="ixir-km-cmp-head">
    <span class="ixir-km-cmp-eyebrow"><i class="fas fa-balance-scale" aria-hidden="true"></i>Fiyat Karşılaştırması</span>
-   <h2 id="ixir-km-cmp-title">Kurumsal E-Posta Hosting İçin Neden Daha Fazla Ödeyeceksiniz?</h2>
+   {include file="$template/components/Heading.tpl" title="Kurumsal E-Posta Hosting İçin Neden Daha Fazla Ödeyeceksiniz?" id="ixir-km-cmp-title"}
    <p>İXİRHOST'ta sabit TL fiyatı ödersiniz. Kullanıcı sayısı arttıkça fark katlanır.</p>
   </header>
 

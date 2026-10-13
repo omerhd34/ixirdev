@@ -6,7 +6,7 @@
      var root = document.querySelector('.ixir-wh-story--intro');
      if (!root || !window.IntersectionObserver) return;
      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-     if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
      root.classList.add('is-armed');
     })();
    {/literal}
@@ -14,7 +14,7 @@
   <div class="container">
    <div class="ixir-wh-story-intro">
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
-    <h2>Cloud Drive Nedir?</h2>
+    {include file="$template/components/Heading.tpl" title="Cloud Drive Nedir?"}
     <p>Cloud Drive hizmeti, Microsoft'un Onedrive, Google'ın Drive veya Apple'ın iCloud hizmetine benzer bir hizmettir.
      Dosyalarınız Cloud Drive'da güvenle saklanır. Dünyanın her yerinden internet üzerinden erişebilirsiniz. Güvenli
      ve hızlı bağlantı sayesinde dosyalarınız kötü niyetli kişilerin eline geçmez. Mobil ve masaüstü senkronizasyonu

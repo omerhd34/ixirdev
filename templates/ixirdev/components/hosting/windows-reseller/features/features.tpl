@@ -5,14 +5,14 @@
     var root = document.querySelector('.ixir-wh-features');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+    if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
     root.classList.add('is-armed');
    })();
   {/literal}
  </script>
  <div class="container">
   <header class="ixir-wh-features-head">
-   <h2 id="ixir-wh-features-title">Windows Reseller Hosting Özellikleri</h2>
+   {include file="$template/components/Heading.tpl" title="Windows Reseller Hosting Özellikleri" id="ixir-wh-features-title"}
   </header>
   <ul class="ixir-wh-features-grid">
    <li>

@@ -42,10 +42,6 @@
 .ixir-km-outlook-copy h2 {
   margin: 0 0 16px;
   color: #fff;
-  font-size: clamp(26px, 2.4vw, 36px);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.18;
 }
 .ixir-km-outlook-copy p {
   margin: 0 0 12px;

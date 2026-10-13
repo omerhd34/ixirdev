@@ -1,7 +1,7 @@
 <section class="ixir-km-team" aria-labelledby="ixir-km-team-title">
  <div class="container">
   <header class="ixir-km-team-head">
-   <h2 id="ixir-km-team-title">Takım Çalışma Alanları</h2>
+   {include file="$template/components/Heading.tpl" title="Takım Çalışma Alanları" id="ixir-km-team-title"}
    <p>Takım çalışma alanları, metin sohbetine katılabilecek kişi sayısında herhangi bir sınırlama olmaksızın 9 kişiye
     kadar sesli ve/veya görüntülü konferans sunar. İster kurumsal toplantılar, ister şirket dışı çalışanlar,
     yükleniciler

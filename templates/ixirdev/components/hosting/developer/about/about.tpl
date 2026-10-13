@@ -5,7 +5,7 @@
     var root = document.querySelector('.ixir-wh-about');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+    if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
     root.classList.add('is-armed');
    })();
   {/literal}
@@ -14,7 +14,7 @@
   <div class="ixir-wh-about-body">
    <header class="ixir-wh-about-head ixir-wh-about-anim">
     <span class="ixir-wh-about-eyebrow"><i class="fas fa-code" aria-hidden="true"></i> Geliştirici Ortamı</span>
-    <h2 id="ixir-wh-about-title">ixirhost Developer Hosting: Yazılımcıya Özel, Gerçek Bir Geliştirici Ortamı</h2>
+    {include file="$template/components/Heading.tpl" title="ixirhost Developer Hosting: Yazılımcıya Özel, Gerçek Bir Geliştirici Ortamı" id="ixir-wh-about-title"}
     <p class="ixir-wh-about-lead">IxirHost Developer Hosting, yazılım geliştiricilerin modern uygulama geliştirme ve
      yayınlama süreçleri için ihtiyaç duydukları tüm araçları tek bir paylaşımlı hosting ortamında sunan, Türkiye'nin
      bu alanda öncü hizmetidir. <strong>SSH/terminal erişimi</strong>, <strong>Git</strong> entegrasyonu,

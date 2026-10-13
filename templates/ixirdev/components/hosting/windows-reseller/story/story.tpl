@@ -5,7 +5,7 @@
      var root = document.querySelector('.ixir-wh-story');
      if (!root || !window.IntersectionObserver) return;
      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-     if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
      root.classList.add('is-armed');
     })();
    {/literal}
@@ -13,7 +13,7 @@
   <div class="container">
    <div class="ixir-wh-story-intro">
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
-    <h2>Windows Reseller Hosting Nedir?</h2>
+    {include file="$template/components/Heading.tpl" title="Windows Reseller Hosting Nedir?"}
     <p>Windows Reseller Hosting hizmeti, site tasarımı yapan kişi ve ajanslar için oluşturulmuş uygun fiyatlı ve yüksek
      performanslı bir hosting hizmetidir. Windows Reseller Hosting hizmeti ile müşterilerinizi ve hosting paketlerini
      yönetebilir, belirlediğiniz kriterler üzerinden kullanım hakkı sağlayabilir ve müşterilerinizin kendine özel

@@ -5,7 +5,7 @@
      var root = document.querySelector('.ixir-wh-story');
      if (!root || !window.IntersectionObserver) return;
      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-     if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
      root.classList.add('is-armed');
     })();
    {/literal}
@@ -13,7 +13,7 @@
   <div class="container">
    <div class="ixir-wh-story-intro">
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
-    <h2>Linux Hosting Nedir?</h2>
+    {include file="$template/components/Heading.tpl" title="Linux Hosting Nedir?"}
     <p><strong>Web hosting hizmeti</strong>, web sitenizi veya uygulamalarınızı web üzerine yayınlayabilmenizi sağlayan
      bir hizmettir.
      Hosting hizmetini üzerine bina inşa edeceğiniz <strong>arsa</strong> gibi düşünebilirsiniz. Dijital bu arsayı web

@@ -1,7 +1,7 @@
 <section class="ixir-km-reviews" aria-labelledby="ixir-km-reviews-title">
  <div class="container">
   <header class="ixir-km-reviews-head">
-   <h2 id="ixir-km-reviews-title">Müşterilerimiz Ne Diyor?</h2>
+   {include file="$template/components/Heading.tpl" title="Müşterilerimiz Ne Diyor?" id="ixir-km-reviews-title"}
    <p>Farklı sektörlerden kurumsal e-posta müşterilerimizin deneyimleri</p>
   </header>
   <div class="ixir-km-reviews-grid">

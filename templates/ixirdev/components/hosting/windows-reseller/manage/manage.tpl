@@ -5,14 +5,14 @@
     var root = document.querySelector('.ixir-wh-manage');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+    if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
     root.classList.add('is-armed');
    })();
   {/literal}
  </script>
  <div class="container">
   <header class="ixir-wh-manage-head">
-   <h2 id="ixir-wh-manage-title">Hosting Firmanızı Profesyonelce Yönetin!</h2>
+   {include file="$template/components/Heading.tpl" title="Hosting Firmanızı Profesyonelce Yönetin!" id="ixir-wh-manage-title"}
    <p>Plesk Yönetim Paneli ile Tüm Kontrol Sizde! Müşterilerinizi Dilediğiniz Gibi Yönetin.</p>
   </header>
   <ul class="ixir-wh-manage-grid">

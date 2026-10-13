@@ -6,14 +6,14 @@
     var root = document.getElementById('ixir-wh-compare');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+    if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
     root.classList.add('is-armed');
    })();
   {/literal}
  </script>
  <div class="container">
   <header class="ixir-wh-plans-head">
-   <h2 id="ixir-wh-compare-title">Özellik Karşılaştırma Tablosu</h2>
+   {include file="$template/components/Heading.tpl" title="Özellik Karşılaştırma Tablosu" id="ixir-wh-compare-title"}
    <p>Developer Hosting paketlerimiz arasından size en uygun olan seçimi yapın</p>
   </header>
   <div class="ixir-wh-table-scroll">

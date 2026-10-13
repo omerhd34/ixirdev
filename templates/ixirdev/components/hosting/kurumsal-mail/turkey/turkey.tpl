@@ -8,7 +8,7 @@
    </div>
    <div class="ixir-km-tr-copy">
     <span class="ixir-km-tr-eyebrow"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Yerli Altyapı</span>
-    <h2 id="ixir-km-tr-title">Kurumsal E-mail ile<br> Tüm Verileriniz Türkiye'de</h2>
+    {include file="$template/components/Heading.tpl" title="Kurumsal E-mail ile<br> Tüm Verileriniz Türkiye'de" id="ixir-km-tr-title"}
     <p>Yalnızca e-posta sunucularımız ve verileriniz değil; gelen ve giden antispam, outbound filtreleme
      sunucularımız da Türkiye'de. Dolayısıyla KVKK 6698'e tam uyumlu, yerli iletişim ve yerli operatörler ile yerel
      e-posta sağlıyoruz.</p>
