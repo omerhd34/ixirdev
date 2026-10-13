@@ -1,4 +1,4 @@
-<section class="ixir-wh-story ixir-cs-story ixir-slide ixir-slide--left is-slide-on"
+<section class="ixir-wh-story ixir-cs-story ixir-slide ixir-slide--right is-slide-on"
  aria-labelledby="ixir-cs-story-title">
  <script>
   {literal}

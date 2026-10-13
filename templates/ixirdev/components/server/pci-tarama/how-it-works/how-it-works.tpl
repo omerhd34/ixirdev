@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/how-it-works/how-it-works.css?v={$versionHash}-r1">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/how-it-works/how-it-works.css?v={$versionHash}-r3">
 
-<section class="ixir-pci-how ixir-slide ixir-slide--left is-slide-on" id="ixir-pci-how" aria-labelledby="ixir-pci-how-title">
+<section class="ixir-pci-how ixir-slide ixir-slide--right is-slide-on" id="ixir-pci-how" aria-labelledby="ixir-pci-how-title">
   <script>
     {literal}
       (function() {

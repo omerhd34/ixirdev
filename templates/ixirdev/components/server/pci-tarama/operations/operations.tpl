@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/operations/operations.css?v={$versionHash}-r1">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/operations/operations.css?v={$versionHash}-r3">
 
-<section class="ixir-pci-ops ixir-slide ixir-slide--right is-slide-on" id="ixir-pci-ops" aria-labelledby="ixir-pci-ops-title">
+<section class="ixir-pci-ops ixir-slide ixir-slide--left is-slide-on" id="ixir-pci-ops" aria-labelledby="ixir-pci-ops-title">
   <script>
     {literal}
       (function() {

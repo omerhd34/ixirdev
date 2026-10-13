@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/advantages/advantages.css?v={$versionHash}-r1">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/advantages/advantages.css?v={$versionHash}-r3">
 
-<section class="ixir-pci-advantages" aria-labelledby="ixir-pci-advantages-title">
+<section class="ixir-pci-advantages ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-pci-advantages-title">
   <div class="container">
     <div class="pci-adv-header">
       <span class="pci-adv-badge">
