@@ -1,8 +1,7 @@
 <div align="center">
 
 <a href="https://www.ixirhost.com">
-  <img src="./templates/ixirdev/img/logo-color.webp" alt="ixirHost Logo" width="240">
-  
+  <img src="./templates/ixirdev/img/logo.webp" alt="ixirHost Logo" width="240">
 </a>
 
 # ixirdev
@@ -170,6 +169,6 @@ Bu proje **İksir İnternet Hizmetleri A.Ş.**'ye aittir ve **tüm hakları sakl
 
 © İksir İnternet Hizmetleri A.Ş. — Tüm hakları saklıdır.
 
-<a href="https://www.ixirhost.com"><img src="./templates/ixirdev/img/logo-color.webp" alt="ixirHost" width="120"></a>
+<a href="https://www.ixirhost.com"><img src="./templates/ixirdev/img/logo.webp" alt="ixirHost" width="120"></a>
 
 </div>
