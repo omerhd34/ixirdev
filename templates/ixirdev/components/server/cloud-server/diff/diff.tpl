@@ -5,14 +5,14 @@
     var root = document.querySelector('.ixir-wh-diff');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+    if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
     root.classList.add('is-armed');
    })();
   {/literal}
  </script>
  <div class="container">
   <header class="ixir-wh-diff-head">
-   <h2 id="ixir-wh-diff-title">Neden İXİRHOST?</h2>
+   {include file="$template/components/Heading.tpl" title="Neden İXİRHOST?" id="ixir-wh-diff-title"}
    <p>20 yıllık deneyimimizle kurumsal altyapı, güvenilir destek ve kesintisiz hizmet sunuyoruz.</p>
   </header>
   <ul class="ixir-wh-diff-grid">

@@ -5,7 +5,7 @@
     var root = document.querySelector('.ixir-wh-software');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+    if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
     root.classList.add('is-armed');
    })();
   {/literal}
@@ -16,7 +16,7 @@
     <header class="ixir-wh-software-head">
      <span class="ixir-wh-software-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
      <div>
-      <h2>Fiziksel Sunucunuz İçin Kiralayabileceğiniz Yazılımlar</h2>
+      {include file="$template/components/Heading.tpl" title="Fiziksel Sunucunuz İçin Kiralayabileceğiniz Yazılımlar"}
       <p>İxirhost, bir çok yazılım firmasıyla işbirliği yapmakta ve size avantajlı lisans kiralama modelleri sunabilmektedir.</p>
      </div>
     </header>

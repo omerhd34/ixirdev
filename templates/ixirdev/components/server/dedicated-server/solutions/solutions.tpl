@@ -1,7 +1,7 @@
 <section class="ds-solutions-section ixir-slide ixir-slide--left is-slide-on">
  <div class="container text-center">
   <header class="ixir-wh-plans-head ixir-ds-head ds-solutions-title-wrapper" style="max-width: 1000px;">
-   <h2>Farklı Altyapı Çözümleri</h2>
+   {include file="$template/components/Heading.tpl" title="Farklı Altyapı Çözümleri"}
    <p>Dedicated server servislerinize ek olarak altyapımızda yedekli olarak bulunan <b>Citrix® Netscaler®</b> cihazları
     ile Web Sitelerinize güç katıyoruz. Dedicated Server, Kiralık Sunucu'da yalnızca hizmet sağlamıyor, tam kapsamlı
     sunucu kiralama çözümleri üretiyoruz. Saldırılardan koruyabiliyor, yük dengeleme yapabiliyor, içeriğinizi

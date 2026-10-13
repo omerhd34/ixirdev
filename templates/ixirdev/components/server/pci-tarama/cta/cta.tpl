@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/cta/cta.css?v={$versionHash}-r6">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/cta/cta.css?v={$versionHash}-r7">
 
 <section class="ixir-pci-cta" aria-labelledby="ixir-pci-cta-title">
   <div class="container">

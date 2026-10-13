@@ -16,7 +16,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .ixir-ds-port {
     background: #f0fdf4 !important;
     border-color: #dcfce7 !important;
@@ -29,9 +29,6 @@
 @media (max-width: 768px) {
   .ixir-ds {
     padding: 36px 0 44px;
-  }
-  .ixir-ds-head h2 {
-    font-size: 24px;
   }
   .ixir-ds-head p {
     font-size: 13.5px;
@@ -662,13 +659,16 @@
   margin-bottom: 24px;
   text-align: center;
 }
-.ixir-ds-head h2,
+.ixir-ds-head h2 {
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  color: #0b2545;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 .ixir-wh-plans-head h2 {
   font-family: "Space Grotesk", "Roboto", sans-serif;
-  font-size: 32px;
-  font-weight: 800;
   color: #0b2545;
-  letter-spacing: -0.02em;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -742,13 +742,13 @@
   width: 100% !important;
 }
 
-@media (min-width: 1026px) {
+@media (min-width: 1024px) {
   .ixir-ds-filters-content {
     flex-wrap: nowrap !important;
   }
 }
 
-@media (min-width: 1026px) and (max-width: 1400px) {
+@media (min-width: 1024px) and (max-width: 1400px) {
   .ixir-ds-filters {
     padding: 8px clamp(8px, 0.9vw, 16px) !important;
   }
@@ -807,7 +807,7 @@
   }
 }
 
-@media (min-width: 1026px) and (max-width: 1120px) {
+@media (min-width: 1024px) and (max-width: 1120px) {
   .ixir-ds-filters {
     padding: 8px 10px !important;
   }
@@ -1060,7 +1060,7 @@
   transform: translateY(0) scale(1) !important;
 }
 
-@media (min-width: 1026px) {
+@media (min-width: 1024px) {
   #ixir-ds-brand-dropdown .ixir-ds-dropdown-menu {
     min-width: 130px !important;
   }
@@ -1511,7 +1511,7 @@
   text-align: left !important;
 }
 
-@media (min-width: 1026px) {
+@media (min-width: 1024px) {
   .ixir-ds-cell-icon {
     display: none !important;
   }
@@ -1755,7 +1755,7 @@
   background: #0b2545;
 }
 
-@media (min-width: 1026px) and (max-width: 1400px) {
+@media (min-width: 1024px) and (max-width: 1400px) {
   .ixir-ds-thead, .ixir-ds-row {
     grid-template-columns: minmax(130px, 1.15fr) minmax(145px, 1.35fr) minmax(60px, 0.55fr) minmax(120px, 1.05fr) minmax(140px, 1.25fr) minmax(130px, 1.15fr) !important;
     gap: clamp(8px, 1vw, 14px) !important;
@@ -1813,7 +1813,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .ixir-ds {
     padding: 38px 0 48px !important;
   }
@@ -2308,9 +2308,6 @@
 @media (max-width: 767.98px) {
   .ixir-ds {
     padding: 36px 0 44px;
-  }
-  .ixir-ds-head h2 {
-    font-size: 24px;
   }
   .ixir-ds-head p {
     font-size: 13.5px;

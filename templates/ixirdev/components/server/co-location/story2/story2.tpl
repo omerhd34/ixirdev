@@ -5,7 +5,7 @@
      var root = document.querySelector('.ixir-cs-story2');
      if (!root || !window.IntersectionObserver) return;
      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-     if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
      root.classList.add('is-armed');
     })();
    {/literal}
@@ -13,7 +13,7 @@
   <div class="container">
    <div class="ixir-wh-story-intro">
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
-    <h2>Neden Sunucunuzu İxirHost'ta Barındırmalısınız?</h2>
+    {include file="$template/components/Heading.tpl" title="Neden Sunucunuzu İxirHost'ta Barındırmalısınız?"}
    </div>
    <article class="ixir-wh-story-row ixir-wh-story-row--cpanel">
     <div class="ixir-wh-story-visual" aria-hidden="true">

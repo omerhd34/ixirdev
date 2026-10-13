@@ -16,37 +16,33 @@
 
 .ixir-cs-story .ixir-cs-title {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 18px;
+  gap: 0;
+  margin-bottom: 0;
 }
 
 .ixir-cs-story .ixir-wh-story-icon {
-  flex: 0 0 48px;
-  width: 48px;
-  height: 48px;
-  margin: 0;
-  border-radius: 14px;
-  font-size: 20px;
-  background: #3b78e7;
-  color: #fff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 18px rgba(59, 120, 231, 0.25);
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 18px;
+  font-size: 26px;
+  background: #3b78e7;
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(59, 120, 231, 0.28);
 }
 
 .ixir-cs-story .ixir-wh-story-intro h2,
 .ixir-cs-story .ixir-cs-title h2 {
-  margin: 0;
-  text-align: left;
+  margin: 0 0 20px;
+  text-align: center;
   font-family: "Space Grotesk", "Roboto", sans-serif;
-  font-size: clamp(24px, 2.2vw, 32px);
-  font-weight: 700;
   color: #0b2545;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
 }
 
 .ixir-cs-story .ixir-wh-story-intro p {
@@ -69,14 +65,14 @@
   }
 
   .ixir-cs-story .ixir-cs-title {
-    gap: 12px;
+    gap: 0;
   }
 
   .ixir-cs-story .ixir-wh-story-icon {
-    flex-basis: 42px;
-    width: 42px;
-    height: 42px;
-    border-radius: 12px;
-    font-size: 18px;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    font-size: 20px;
+    margin-bottom: 12px;
   }
 }

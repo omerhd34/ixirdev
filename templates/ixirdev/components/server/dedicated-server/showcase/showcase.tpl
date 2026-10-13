@@ -8,7 +8,7 @@
   </style>
 
   <header class="ixir-wh-plans-head ixir-ds-head ds-showcase-title-wrapper">
-   <h2>Yüksek Performans, Yüksek Uptime — Dedicated Server ile İşinize Odaklanın.</h2>
+   {include file="$template/components/Heading.tpl" title="Yüksek Performans, Yüksek Uptime — Dedicated Server ile İşinize Odaklanın."}
    <p>Yalnızca hizmet değil, 20 yıllık deneyimimizle birlikte size katma değerli servisler
     sunuyoruz.</p>
   </header>

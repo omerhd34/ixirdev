@@ -3,7 +3,7 @@
   <div class="ixir-cs-cta-inner">
    <div class="ixir-cs-cta-title">
     <span class="ixir-cs-cta-icon" aria-hidden="true"><i class="far fa-headset"></i></span>
-    <h2 id="ixir-cs-cta-title">Hangi Paketi Seçeceğinize Karar Veremediniz mi?</h2>
+    {include file="$template/components/Heading.tpl" title="Hangi Paketi Seçeceğinize Karar Veremediniz mi?" id="ixir-cs-cta-title"}
    </div>
    <p>Satış ekibimiz ihtiyaçlarınızı dinleyip size en uygun planı belirler.</p>
    <div class="ixir-cs-cta-actions">

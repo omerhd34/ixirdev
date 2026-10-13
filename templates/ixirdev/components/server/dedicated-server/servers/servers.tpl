@@ -37,7 +37,7 @@
 <section class="ixir-ds ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-plans" aria-labelledby="ixir-ds-title">
  <div class="container">
   <header class="ixir-wh-plans-head ixir-ds-head">
-   <h2 id="ixir-ds-title">Dedicated Server Kiralama</h2>
+   {include file="$template/components/Heading.tpl" title="Dedicated Server Kiralama" id="ixir-ds-title"}
    <p>Türkiye'nin en geniş dedicated server seçenekleri, güvenilir, <b>yedekli ve çeşitli operatör bağlantıları</b> ile
     birlikte, 150'den fazla peering bağlantısıyla, <b>İstanbul</b>'un merkezinden 20 yıllık deneyimle kiralık sunucu
     ihtiyaçlarınıza en uygun çözümleri sunuyoruz.</p>
@@ -435,11 +435,11 @@
   }
 
   function isSliderActive() {
-    return window.innerWidth <= 1025 && currentViewMode === 'slider';
+    return window.innerWidth <= 1024 && currentViewMode === 'slider';
   }
 
   function getPerView() {
-    if (window.innerWidth >= 768 && window.innerWidth <= 1025) return 2;
+    if (window.innerWidth >= 768 && window.innerWidth <= 1024) return 2;
     return 1;
   }
 
@@ -990,7 +990,7 @@
       for (var t = 0; t < activeTips.length; t++) activeTips[t].classList.remove('is-active');
       return;
     }
-    if (window.innerWidth <= 1025) {
+    if (window.innerWidth <= 1024) {
       var wasActive = tip.classList.contains('is-active');
       var allTips = root.querySelectorAll('.ixir-ds-tip.is-active');
       for (var at = 0; at < allTips.length; at++) allTips[at].classList.remove('is-active');

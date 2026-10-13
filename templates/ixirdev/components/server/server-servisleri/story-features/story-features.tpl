@@ -6,14 +6,14 @@
      var root = document.querySelector('.ixir-wh-story--features');
      if (!root || !window.IntersectionObserver) return;
      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-     if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
      root.classList.add('is-armed');
     })();
    {/literal}
   </script>
   <div class="container">
    <header class="ixir-wh-plans-head ixir-wh-story-features-head" style="margin-bottom: 36px;">
-    <h2 id="ixir-wh-story-features-title">Server Destek Hizmetinin Faydaları</h2>
+    {include file="$template/components/Heading.tpl" title="Server Destek Hizmetinin Faydaları" id="ixir-wh-story-features-title"}
     <p>Profesyonel sunucu yönetimi ile maksimum verim, kesintisiz performans ve maliyet avantajı sağlayın.</p>
    </header>
    <article class="ixir-wh-story-row ixir-wh-story-row--cpanel">

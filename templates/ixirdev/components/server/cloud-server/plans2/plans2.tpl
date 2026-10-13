@@ -6,7 +6,7 @@
     var root = document.getElementById('ixir-cs-pro-plans');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    if (window.matchMedia && window.matchMedia('(max-width: 1023px)').matches) return;
+    if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
     root.classList.add('is-armed');
    })();
   {/literal}
@@ -15,7 +15,7 @@
   <header class="ixir-wh-plans-head">
    <div class="ixir-cs-title">
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-rocket"></i></span>
-    <h2 id="ixir-cs-pro-plans-title">Daha Güçlü Cloud Server mı Arıyorsunuz?</h2>
+    {include file="$template/components/Heading.tpl" title="Daha Güçlü Cloud Server mı Arıyorsunuz?" id="ixir-cs-pro-plans-title"}
    </div>
    <p>Kurumsal uygulamalar, yüksek trafik ve kritik sistemler için tasarlanan Pro Cloud Server paketlerini
     inceleyin.</p>

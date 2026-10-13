@@ -34,10 +34,7 @@
 }
 .ixir-ss-details-head h2 {
   font-family: "Space Grotesk", "Roboto", sans-serif;
-  font-size: clamp(26px, 2.5vw, 36px);
-  font-weight: 800;
   color: #ffffff;
-  letter-spacing: -0.02em;
   margin: 0;
   text-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
 }

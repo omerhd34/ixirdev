@@ -1,7 +1,7 @@
 <section class="ds-about-section ixir-slide ixir-slide--right is-slide-on" style="background: #ffffff; padding: 6rem 0;">
  <div class="container">
   <header class="ixir-wh-plans-head ixir-ds-head" style="max-width: 1000px; margin-bottom: 0;">
-   <h2>Türkiye'de Dedicated Server Kiralama Hakkında</h2>
+   {include file="$template/components/Heading.tpl" title="Türkiye'de Dedicated Server Kiralama Hakkında"}
    <p>
     İstanbul merkezli TIER III+ veri merkezimizde <b>kiralık sunucu</b> hizmeti sunan ixirhost, Dell, HP ve Intel
     markalı 40'tan fazla fiziksel sunucu modeliyle Türkiye'nin en geniş <b>dedicated server</b> kataloğunu sunmaktadır.

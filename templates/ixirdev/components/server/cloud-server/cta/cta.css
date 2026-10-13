@@ -56,10 +56,6 @@
   text-align: left;
   color: #fff;
   font-family: "Space Grotesk", "Roboto", sans-serif;
-  font-size: clamp(24px, 2.2vw, 32px);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
 }
 .ixir-cs-cta-inner > p {
   margin: 0;
