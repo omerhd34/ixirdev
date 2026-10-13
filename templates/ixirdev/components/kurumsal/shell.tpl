@@ -86,7 +86,7 @@
    if (!track || !scroller) return;
 
    function isSlider() {
-    return window.matchMedia("(max-width: 1023px)").matches;
+    return window.matchMedia("(max-width: 1024px)").matches;
    }
 
    function updateFades() {

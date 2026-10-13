@@ -1,6 +1,6 @@
 <div class="ixir-privacy-hero">
  <span class="ixir-about-hero-kicker">Bilgi güvenliği</span>
- <h2>Gizlilik ve Bilgi Güvenliği Politikamız</h2>
+ {include file="$template/components/Heading.tpl" title="Gizlilik ve Bilgi Güvenliği Politikamız"}
  <p><strong>İKSİR İNTERNET HİZMETLERİ ANONİM ŞİRKETİ (“İXİRHOST”)</strong>, 20 yılı aşkın sektör tecrübesiyle;
   müşterilerine ait verilerin, sistemlerin ve dijital varlıkların güvenliğini en üst seviyede korumayı temel
   sorumluluklarından biri olarak görmektedir.</p>

@@ -655,8 +655,6 @@ body.ixir-corporate-page {
 .ixir-bank-hero h2 {
  margin: 0 0 18px;
  color: #fff !important;
- font-size: 34px;
- font-weight: 800;
 }
 
 .ixir-about-hero p,
@@ -1035,9 +1033,14 @@ body.ixir-corporate-page {
 }
 
 .ixir-final-kicker,
-.ixir-final h3,
 .ixir-final p {
  position: relative;
+ z-index: 1;
+}
+
+.ixir-final h2 {
+ margin: 0 0 14px;
+ color: #fff !important;
  z-index: 1;
 }
 
@@ -1055,11 +1058,9 @@ body.ixir-corporate-page {
  text-transform: uppercase;
 }
 
-.ixir-final h3 {
+.ixir-final h2 {
  margin: 0 0 14px;
  color: #fff !important;
- font-size: 28px;
- letter-spacing: -0.03em;
 }
 
 .ixir-final p {
@@ -1802,7 +1803,7 @@ body.ixir-corporate-page {
  cursor: pointer;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
 
  .ixir-about-stats,
  .ixir-infra-stats,
@@ -1813,7 +1814,7 @@ body.ixir-corporate-page {
  }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
  .ixir-corp-hero {
   min-height: 180px;
   padding: 44px 0 36px;
@@ -2056,7 +2057,6 @@ body.ixir-corporate-page {
  .ixir-kvkk-hero h2,
  .ixir-registrar-hero h2,
  .ixir-bank-hero h2 {
-  font-size: clamp(22px, 6.4vw, 26px);
   max-width: 100%;
  }
 
@@ -2075,7 +2075,6 @@ body.ixir-corporate-page {
  }
 
  .ixir-box h3,
- .ixir-final h3,
  .ixir-registrar-box h3,
  .ixir-kvkk-section h3 {
   font-size: 20px;

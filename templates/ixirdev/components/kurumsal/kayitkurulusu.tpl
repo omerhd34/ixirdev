@@ -1,5 +1,5 @@
 <div class="ixir-registrar-hero">
- <h2>Kayıt Kuruluşu Bilgilendirmesi</h2>
+ {include file="$template/components/Heading.tpl" title="Kayıt Kuruluşu Bilgilendirmesi"}
  <p>5809 sayılı Elektronik Haberleşme Kanunu ve Bilgi Teknolojileri ve İletişim Kurumu (BTK) düzenlemeleri gereğince,
   .TR domain tescil hizmeti sunan işletmecilerin, hizmetin teknik altyapısında görev alan Kayıt Kuruluşu bilgilerini
   müşterilerine şeffaf biçimde bildirmesi gerekmektedir.</p>

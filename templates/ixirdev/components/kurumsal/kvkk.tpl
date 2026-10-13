@@ -1,6 +1,5 @@
 <div class="ixir-kvkk-hero">
- <h2>6698 Sayılı Kişisel Verilerin Korunması Kanunu<br>(“KVKK”) Aydınlatma Metni <span class="ixir-kvkk-ve">ve</span>
-  Çerez Politikası</h2>
+ {include file="$template/components/Heading.tpl" title='6698 Sayılı Kişisel Verilerin Korunması Kanunu<br>(“KVKK”) Aydınlatma Metni <span class="ixir-kvkk-ve">ve</span> Çerez Politikası'}
  <p><strong>İKSİR İNTERNET HİZMETLERİ ANONİM ŞİRKETİ (“İXİRHOST”)</strong> olarak; 20 yılı aşkın sektör tecrübemiz ile
   müşterilerimizin, ziyaretçilerimizin ve iş ortaklarımızın kişisel verilerinin gizliliğine ve güvenliğine büyük önem
   vermekteyiz.</p>

@@ -1,6 +1,6 @@
 <div class="ixir-about-hero">
  <span class="ixir-about-hero-kicker">2005'ten beri</span>
- <h2>20 Yıldır Güven Barındırıyoruz.</h2>
+ {include file="$template/components/Heading.tpl" title="20 Yıldır Güven Barındırıyoruz."}
  <p><strong>İksir İnternet Hizmetleri A.Ş.</strong> olarak 20 yılı aşkın süredir; hosting, server, domain, e-posta,
   SSL, güvenlik ve
   veri merkezi hizmetlerinde binlerce bireysel ve kurumsal müşteriye güvenilir teknoloji altyapısı sunuyoruz.
@@ -156,7 +156,7 @@
 
 <div class="ixir-final">
  <span class="ixir-final-kicker">Birlikte büyüyelim</span>
- <h3>Bugünün Altyapısı, Yarının Güveni</h3>
+ {include file="$template/components/Heading.tpl" title="Bugünün Altyapısı, Yarının Güveni"}
  <p>Web sitenizi yayına almak, e-posta altyapınızı güçlendirmek, server ihtiyaçlarınızı karşılamak veya mevcut
   sistemlerinizi daha güvenli ve kesintisiz hale getirmek için İXİRHOST yanınızda. 20 yılı aşkın deneyimimizle,
   müşterilerimizin dijital dünyadaki güvenilir teknoloji partneri olmaya devam ediyoruz.</p>

@@ -1,6 +1,6 @@
 <div class="ixir-privacy-hero">
  <span class="ixir-about-hero-kicker">IKSIRAS-HS-REV06</span>
- <h2>Hizmet Sözleşmesi</h2>
+ {include file="$template/components/Heading.tpl" title="Hizmet Sözleşmesi"}
  <p>Bu sözleşme; <strong>İXİRHOST</strong> ile site üzerinden üye olan gerçek veya tüzel kişi arasında yapılmış olup
   aşağıdaki şartlar
   dahilinde kabul edilmiştir.</p>
