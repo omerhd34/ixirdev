@@ -1,0 +1,5 @@
+@media (min-width: 992px) {
+  section#home-banner.ixir-hero--cloud-server .ixir-hero-photo img {
+    object-position: 55% center;
+  }
+}

@@ -1,0 +1,388 @@
+.ixir-pci-audience {
+  position: relative;
+  padding: 90px 0 100px;
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(circle at 15% 10%, rgba(59, 130, 246, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 85% 90%, rgba(37, 99, 235, 0.04) 0%, transparent 45%),
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 50%, #f8fafc 100%);
+  border-top: 1px solid #eef2f6;
+  border-bottom: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.pci-aud-bg-glow {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 960px;
+  height: 520px;
+  background: radial-gradient(ellipse at center, rgba(37, 99, 235, 0.07) 0%, rgba(248, 250, 252, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ixir-pci-audience .container {
+  position: relative;
+  z-index: 1;
+}
+
+.pci-aud-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 52px;
+}
+
+.pci-aud-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+}
+
+.pci-aud-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  display: inline-block;
+}
+
+.pci-aud-badge i {
+  font-size: 13px;
+  color: #3b82f6;
+}
+
+.pci-aud-header .site-heading {
+  margin-bottom: 16px;
+  color: #0b2545;
+}
+
+.pci-aud-subhead {
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 660px;
+}
+
+.pci-aud-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.pci-aud-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 24px;
+  padding: 34px 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.pci-aud-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #2563eb, #60a5fa, transparent);
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.pci-aud-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(59, 130, 246, 0.35);
+  box-shadow: 0 20px 38px -8px rgba(37, 99, 235, 0.12), 0 6px 16px -2px rgba(15, 23, 42, 0.04);
+}
+
+.pci-aud-card:hover::before {
+  left: 6%;
+  right: 6%;
+  opacity: 1;
+}
+
+.pci-aud-icon-wrap {
+  width: 68px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 60%, #1e40af 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 22px -4px rgba(37, 99, 235, 0.38), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.pci-aud-card:hover .pci-aud-icon-wrap {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 16px 28px -4px rgba(37, 99, 235, 0.48), inset 0 1px 1px rgba(255, 255, 255, 0.55);
+}
+
+.pci-aud-svg {
+  width: 38px;
+  height: 38px;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+}
+
+.pci-aud-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pci-aud-meta {
+  margin-bottom: 8px;
+}
+
+.pci-aud-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 6px;
+}
+
+.pci-aud-title {
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 19.5px;
+  font-weight: 700;
+  color: #0b2545;
+  margin: 0 0 10px;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  transition: color 0.25s ease;
+}
+
+.pci-aud-card:hover .pci-aud-title {
+  color: #1d4ed8;
+}
+
+.pci-aud-desc {
+  font-size: 14.5px;
+  color: #475569;
+  line-height: 1.65;
+  margin: 0 0 16px;
+}
+
+.pci-aud-feature {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #1e293b;
+  background: #f8fafc;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.25s ease;
+}
+
+.pci-aud-feature i {
+  color: #10b981;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.pci-aud-card:hover .pci-aud-feature {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+  color: #166534;
+}
+
+.pci-aud-footer-bar {
+  margin-top: 44px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.03);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.pci-aud-footer-bar:hover {
+  box-shadow: 0 10px 28px -4px rgba(37, 99, 235, 0.08);
+  border-color: #cbd5e1;
+}
+
+.pci-aud-footer-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(180deg, #2563eb, #60a5fa);
+}
+
+.pci-aud-footer-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.pci-aud-footer-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.08);
+}
+
+.pci-aud-footer-title {
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #0b2545;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+
+.pci-aud-footer-desc {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.pci-aud-footer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 26px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border-radius: 12px;
+  text-decoration: none !important;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.28);
+  transition: all 0.25s ease;
+}
+
+.pci-aud-footer-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.38);
+  color: #ffffff !important;
+}
+
+.pci-aud-footer-btn i {
+  transition: transform 0.25s ease;
+}
+
+.pci-aud-footer-btn:hover i {
+  transform: translateX(4px);
+}
+
+@media (max-width: 992px) {
+  .pci-aud-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .pci-aud-footer-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 22px;
+    gap: 18px;
+  }
+  .pci-aud-footer-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .ixir-pci-audience {
+    padding: 60px 0 70px;
+  }
+  .pci-aud-header {
+    margin-bottom: 36px;
+  }
+  .pci-aud-card {
+    padding: 22px 18px;
+    gap: 16px;
+    border-radius: 18px;
+  }
+  .pci-aud-icon-wrap {
+    width: 54px;
+    height: 54px;
+    border-radius: 15px;
+  }
+  .pci-aud-svg {
+    width: 28px;
+    height: 28px;
+  }
+  .pci-aud-title {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  .pci-aud-desc {
+    font-size: 13.5px;
+    margin-bottom: 12px;
+  }
+  .pci-aud-feature {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .pci-aud-footer-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .pci-aud-footer-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+  .pci-aud-footer-title {
+    font-size: 15.5px;
+  }
+  .pci-aud-footer-desc {
+    font-size: 13px;
+  }
+}

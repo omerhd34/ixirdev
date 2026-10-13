@@ -20,7 +20,7 @@
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/news-bar/news-bar.css?v={$versionHash}-r12"
   rel="stylesheet">
 {/if}
-{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'colocation' || $ixirPageSlug == 'co-location' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri'))}
+{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'colocation' || $ixirPageSlug == 'co-location' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'pci-tarama' || $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri'))}
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/homepage-hero/homepage-hero.css?v={$versionHash}-r57"
   rel="stylesheet">
 {/if}
@@ -244,6 +244,20 @@
    'server/co-location/details/details',
    'server/co-location/software/software',
    'server/co-location/co-location'
+  ]}
+ {elseif $ixirPageSlug == 'pci-tarama'}
+  {assign var=ixirPageCss value=[
+   'hosting/shared/common/common',
+   'hosting/shared/story/story',
+   'hosting/shared/faq/faq',
+   'server/pci-tarama/hero/hero',
+   'server/pci-tarama/story/story',
+   'server/pci-tarama/cta/cta',
+   'server/pci-tarama/advantages/advantages',
+   'server/pci-tarama/audience/audience',
+   'server/pci-tarama/how-it-works/how-it-works',
+   'server/pci-tarama/operations/operations',
+   'server/pci-tarama/pci-tarama'
   ]}
  {elseif $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri'}
   {assign var=ixirPageCss value=[

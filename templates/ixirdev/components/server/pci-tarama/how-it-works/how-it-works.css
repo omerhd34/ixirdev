@@ -1,0 +1,430 @@
+.ixir-pci-how {
+  position: relative;
+  padding: 95px 0 105px;
+  background-color: #ffffff;
+  border-top: 1px solid #eef2f6;
+  border-bottom: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.pci-how-bg-glow {
+  position: absolute;
+  top: -120px;
+  right: -80px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle at center, rgba(59, 130, 246, 0.07) 0%, rgba(255, 255, 255, 0) 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ixir-pci-how .container {
+  position: relative;
+  z-index: 1;
+}
+
+.pci-how-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.pci-how-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.pci-how-header {
+  margin-bottom: 38px;
+}
+
+.pci-how-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 999px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+}
+
+.pci-how-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  display: inline-block;
+}
+
+.pci-how-badge i {
+  font-size: 13px;
+  color: #3b82f6;
+}
+
+.pci-how-header .site-heading {
+  margin-bottom: 16px;
+  color: #0b2545;
+}
+
+.pci-how-subhead {
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 580px;
+}
+
+.pci-how-steps {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pci-how-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+.pci-how-step-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.pci-how-step-num {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 8px 18px -3px rgba(37, 99, 235, 0.38), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  z-index: 2;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pci-how-step.is-last .pci-how-step-num {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 8px 18px -3px rgba(16, 185, 129, 0.42), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.pci-how-step.is-last .pci-how-step-num i {
+  font-size: 16px;
+}
+
+.pci-how-step:hover .pci-how-step-num {
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px -3px rgba(37, 99, 235, 0.5);
+}
+
+.pci-how-step.is-last:hover .pci-how-step-num {
+  box-shadow: 0 12px 24px -3px rgba(16, 185, 129, 0.5);
+}
+
+.pci-how-step-line {
+  width: 2px;
+  flex-grow: 1;
+  min-height: 38px;
+  background: linear-gradient(180deg, #93c5fd 0%, #dbeafe 100%);
+  margin: 6px 0;
+  border-radius: 2px;
+}
+
+.pci-how-step.is-last .pci-how-step-line {
+  display: none;
+}
+
+.pci-how-step-card {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 18px;
+  padding: 18px 24px 20px;
+  margin-bottom: 18px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.02);
+}
+
+.pci-how-step:hover .pci-how-step-card {
+  background: #fbfdff;
+  border-color: #dbeafe;
+  transform: translateX(6px);
+  box-shadow: 0 10px 24px -4px rgba(37, 99, 235, 0.08), 0 2px 6px rgba(15, 23, 42, 0.03);
+}
+
+.pci-how-step-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.pci-how-step-title {
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #0b2545;
+  margin: 0;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+  transition: color 0.25s ease;
+}
+
+.pci-how-step:hover .pci-how-step-title {
+  color: #1d4ed8;
+}
+
+.pci-how-step-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.pci-how-step-pill.is-success {
+  color: #059669;
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+}
+
+.pci-how-step-pill i {
+  font-size: 11px;
+}
+
+.pci-how-step-desc {
+  font-size: 14.5px;
+  color: #475569;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.pci-how-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pci-how-visual-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pci-how-visual-aura {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115%;
+  height: 115%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.14) 0%, rgba(16, 185, 129, 0.07) 45%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pci-how-photo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  animation: pciHowFloat 6s ease-in-out infinite;
+}
+
+.pci-how-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 20px 32px rgba(15, 23, 42, 0.09));
+  transition: transform 0.4s ease;
+}
+
+.pci-how-visual-wrapper:hover .pci-how-img {
+  transform: scale(1.02);
+}
+
+@keyframes pciHowFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+.pci-how-floating-badge {
+  position: absolute;
+  bottom: 8%;
+  left: -12px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(219, 234, 254, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 14px 34px -4px rgba(15, 23, 42, 0.12), 0 2px 6px rgba(15, 23, 42, 0.04);
+  transition: all 0.3s ease;
+  animation: pciFloatReverse 5.5s ease-in-out infinite;
+}
+
+.pci-how-floating-badge:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px -4px rgba(37, 99, 235, 0.2);
+}
+
+.pci-how-floating-badge--secondary {
+  bottom: auto;
+  top: 6%;
+  left: auto;
+  right: -10px;
+  animation: pciHowFloat 7s ease-in-out infinite 0.5s;
+}
+
+@keyframes pciFloatReverse {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+}
+
+.pci-how-floating-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+  box-shadow: 0 6px 14px -2px rgba(37, 99, 235, 0.38);
+}
+
+.pci-how-floating-icon--green {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 6px 14px -2px rgba(16, 185, 129, 0.38);
+}
+
+.pci-how-floating-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.pci-how-floating-text strong {
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #0b2545;
+  line-height: 1.25;
+}
+
+.pci-how-floating-text span {
+  font-size: 11.5px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+  .pci-how-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .pci-how-right {
+    order: -1;
+  }
+  .pci-how-visual-wrapper {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  .pci-how-header {
+    text-align: center;
+  }
+  .pci-how-header .site-heading {
+    text-align: center !important;
+  }
+  .pci-how-header .site-heading::after {
+    margin: 16px auto 0 !important;
+  }
+  .pci-how-subhead {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .ixir-pci-how {
+    padding: 60px 0 70px;
+  }
+  .pci-how-step {
+    gap: 14px;
+  }
+  .pci-how-step-num {
+    width: 38px;
+    height: 38px;
+    font-size: 13px;
+    border-radius: 11px;
+  }
+  .pci-how-step-card {
+    padding: 16px 16px 18px;
+    border-radius: 15px;
+    margin-bottom: 14px;
+  }
+  .pci-how-step-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .pci-how-step-title {
+    font-size: 15.5px;
+  }
+  .pci-how-step-desc {
+    font-size: 13.5px;
+  }
+  .pci-how-floating-badge {
+    position: static;
+    margin-top: 14px;
+    width: 100%;
+    animation: none;
+  }
+  .pci-how-floating-badge--secondary {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+{include file="$template/components/server/pci-tarama/hero/hero.tpl"}
+{include file="$template/components/server/pci-tarama/story/story.tpl"}
+{include file="$template/components/server/pci-tarama/cta/cta.tpl"}
+{include file="$template/components/server/pci-tarama/advantages/advantages.tpl"}
+{include file="$template/components/server/pci-tarama/audience/audience.tpl"}
+{include file="$template/components/server/pci-tarama/how-it-works/how-it-works.tpl"}
+{include file="$template/components/server/pci-tarama/operations/operations.tpl"}
+{include file="$template/components/server/pci-tarama/faq/faq.tpl"}
+{include file="$template/components/server/pci-tarama/scripts/scripts.tpl"}

@@ -1,0 +1,78 @@
+.ixir-wh-story.ixir-cs-story {
+  padding: 64px 0;
+  position: relative;
+  overflow: visible;
+  background: #f8fafc !important;
+  color: #0f172a;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ixir-cs-story .ixir-wh-story-intro {
+  margin: 0 auto;
+  max-width: 860px;
+  text-align: center;
+}
+
+.ixir-cs-story .ixir-cs-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 0;
+}
+
+.ixir-cs-story .ixir-wh-story-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 18px;
+  font-size: 26px;
+  background: #3b78e7;
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(59, 120, 231, 0.28);
+}
+
+.ixir-cs-story .ixir-wh-story-intro h2,
+.ixir-cs-story .ixir-cs-title h2 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  color: #0b2545;
+}
+
+.ixir-cs-story .ixir-wh-story-intro p {
+  margin: 0 auto;
+  max-width: 820px;
+  text-align: center;
+  color: #475569;
+  font-size: 15.5px;
+  line-height: 1.75;
+}
+
+.ixir-cs-story .ixir-wh-story-intro p strong {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .ixir-wh-story.ixir-cs-story {
+    padding: 44px 0;
+  }
+
+  .ixir-cs-story .ixir-cs-title {
+    gap: 0;
+  }
+
+  .ixir-cs-story .ixir-wh-story-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+}

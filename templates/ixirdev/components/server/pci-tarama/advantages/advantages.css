@@ -1,0 +1,233 @@
+.ixir-pci-advantages {
+  position: relative;
+  padding: 85px 0 95px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.ixir-pci-advantages::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 480px;
+  background: radial-gradient(ellipse at center, rgba(59, 120, 231, 0.07) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ixir-pci-advantages .container {
+  position: relative;
+  z-index: 1;
+}
+
+.pci-adv-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 52px;
+}
+
+.pci-adv-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+}
+
+.pci-adv-badge i {
+  font-size: 13px;
+  color: #3b82f6;
+}
+
+.pci-adv-header .site-heading {
+  margin-bottom: 16px;
+  color: #0b2545;
+}
+
+.pci-adv-subhead {
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 620px;
+}
+
+.pci-adv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.pci-adv-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 24px;
+  padding: 44px 32px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.pci-adv-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.pci-adv-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(59, 120, 231, 0.35);
+  box-shadow: 0 22px 42px -10px rgba(59, 120, 231, 0.15), 0 10px 20px -6px rgba(15, 23, 42, 0.05);
+}
+
+.pci-adv-card:hover::before {
+  left: 10%;
+  right: 10%;
+  opacity: 1;
+}
+
+.pci-adv-icon-wrap {
+  width: 88px;
+  height: 88px;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #ffffff 0%, #f0f6ff 100%);
+  border: 1.5px solid #dbeafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  position: relative;
+  box-shadow: 0 10px 24px -6px rgba(59, 130, 246, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pci-adv-icon-wrap svg {
+  width: 48px;
+  height: 48px;
+  display: block;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pci-adv-card:hover .pci-adv-icon-wrap {
+  transform: translateY(-3px) scale(1.08);
+  border-color: #93c5fd;
+  box-shadow: 0 16px 32px -6px rgba(59, 130, 246, 0.28);
+}
+
+.pci-adv-card-title {
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #0b2545;
+  margin: 0 0 14px;
+  letter-spacing: -0.02em;
+  transition: color 0.25s ease;
+}
+
+.pci-adv-card:hover .pci-adv-card-title {
+  color: #2563eb;
+}
+
+.pci-adv-card-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #64748b;
+  margin: 0 0 24px;
+  flex-grow: 1;
+}
+
+.pci-adv-card-desc strong {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.pci-adv-card-footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pci-adv-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #3b82f6;
+  transition: all 0.25s ease;
+}
+
+.pci-adv-tag i {
+  font-size: 12px;
+}
+
+.pci-adv-card:hover .pci-adv-tag {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
+@media (max-width: 1024px) {
+  .pci-adv-grid {
+    gap: 20px;
+  }
+  .pci-adv-card {
+    padding: 36px 24px 30px;
+  }
+  .pci-adv-icon-wrap {
+    width: 78px;
+    height: 78px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .pci-adv-icon-wrap svg {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 860px) {
+  .ixir-pci-advantages {
+    padding: 60px 0 70px;
+  }
+  .pci-adv-header {
+    margin-bottom: 38px;
+  }
+  .pci-adv-grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+}
+
