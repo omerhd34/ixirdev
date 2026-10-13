@@ -6,6 +6,7 @@
     {assign var="isHeadingStyleLoaded" value=true}
     <style>
         .site-heading {
+            margin-top: 0;
             font-weight: 700;
             letter-spacing: -0.03em;
             line-height: 1.28;
