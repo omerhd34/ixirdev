@@ -15,9 +15,11 @@
 .ixir-domain-transfer-copy h2 {
   margin: 0 0 14px;
   color: #2c3345;
-  font-size: 26px;
-  font-weight: 700;
   text-align: left;
+}
+.ixir-domain-transfer-copy .site-heading::after {
+  margin-left: 0;
+  margin-right: auto;
 }
 .ixir-domain-transfer-copy p {
   margin: 0 0 22px;
@@ -62,7 +64,7 @@
   height: auto;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .ixir-domain-transfer-grid {
     grid-template-columns: minmax(0, 1fr) minmax(200px, 280px);
   }

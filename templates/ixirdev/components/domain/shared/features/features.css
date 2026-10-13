@@ -12,6 +12,10 @@
   gap: 14px;
   align-items: flex-start;
 }
+.ixir-domain-feature-grid article > div {
+  flex: 1;
+  min-width: 0;
+}
 .ixir-domain-feature-icon {
   display: inline-flex;
   align-items: center;
@@ -39,7 +43,7 @@
   padding: 56px 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .ixir-domain-feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

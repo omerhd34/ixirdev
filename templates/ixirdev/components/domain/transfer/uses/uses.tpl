@@ -1,6 +1,6 @@
    <section class="ixir-xfer-uses ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixirXferUsesTitle">
     <div class="container">
-     <h2 id="ixirXferUsesTitle">Domain'iniz ile Ne Yapacaksınız?</h2>
+     {include file="$template/components/Heading.tpl" title="Domain'iniz ile Ne Yapacaksınız?" id="ixirXferUsesTitle"}
      <div class="ixir-xfer-use-grid">
       <article>
        <div class="ixir-xfer-use-art">

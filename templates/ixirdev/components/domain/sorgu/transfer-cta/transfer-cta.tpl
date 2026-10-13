@@ -2,7 +2,7 @@
    <div class="container">
     <div class="ixir-domain-transfer-grid">
      <div class="ixir-domain-transfer-copy">
-      <h2>Alan adlarınızı transfer mi etmek istiyorsunuz?</h2>
+      {include file="$template/components/Heading.tpl" title="Alan adlarınızı transfer mi etmek istiyorsunuz?" }
       <p>Alan adlarınızı İxirhost’a transfer ederek yıl boyu en iyi domain fiyatlarına, mükemmel bir domain yönetim
        paneli ve kusursuz destek hizmetine sahip olun. Üstelik domain transferi sonrası 1 yıl otomatik yenileme!</p>
       <a class="btn ixir-domain-transfer-btn" href="{$WEB_ROOT}/domain-transfer">Transfer Et</a>

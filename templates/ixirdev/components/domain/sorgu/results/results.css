@@ -387,13 +387,13 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .ixir-spotlights .spotlight-tlds-container, #order-standard_cart.ixir-domain-page .spotlight-tlds-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .ixir-spotlights .spotlight-tlds-container, #order-standard_cart.ixir-domain-page .spotlight-tlds-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

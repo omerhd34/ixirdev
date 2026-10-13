@@ -42,11 +42,14 @@
   margin: 0 !important;
   padding: 0 !important;
 }
-.ixir-domain-features h2, .ixir-domain-prices h2 {
+.ixir-domain-prices h2 {
   margin: 0 0 8px;
   color: #2c3345;
-  font-size: 28px;
-  font-weight: 700;
+  text-align: center;
+}
+.ixir-domain-features h2 {
+  margin: 0 0 8px;
+  color: #2c3345;
   text-align: center;
 }
 .ixir-domain-features-lead, .ixir-domain-prices-lead {

@@ -145,7 +145,7 @@
 
   <div class="ixir-whois-guide ixir-slide ixir-slide--right is-slide-on" id="ixir-whois-guide">
    <div class="ixir-whois-intro">
-    <h2>Ücretsiz Whois Sorgulama</h2>
+    {include file="$template/components/Heading.tpl" title="Ücretsiz Whois Sorgulama"}
     <p>Domain'inin sahibini merak ediyor veya sahibi ile iletişime geçmek istiyorsanız, hemen bir domain
      sorgulayabilir ve sonuçlara göz atabilirsiniz.</p>
    </div>

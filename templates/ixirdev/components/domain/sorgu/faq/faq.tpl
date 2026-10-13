@@ -1,7 +1,7 @@
   <section class="ixir-wh-faq ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-domain-faq-title">
    <div class="container">
     <header class="ixir-wh-plans-head">
-     <h2 id="ixir-domain-faq-title">Sıkça Sorulan Sorular</h2>
+     {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-domain-faq-title"}
      <p>Domain tescil ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
     </header>
     <div class="ixir-wh-faq-list">

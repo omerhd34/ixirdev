@@ -7,8 +7,9 @@
 #order-standard_cart.ixir-transfer-page .ixir-domain-features-lead, #order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid p {
   color: rgba(255, 255, 255, 0.72);
 }
-#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid p {
-  max-width: 34ch;
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid article > div {
+  flex: 1;
+  min-width: 0;
 }
 #order-standard_cart.ixir-transfer-page .ixir-domain-features, #order-standard_cart.ixir-transfer-page .ixir-domain-prices {
   padding-top: 56px;

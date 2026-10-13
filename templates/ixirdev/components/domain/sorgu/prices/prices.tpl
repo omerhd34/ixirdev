@@ -1,6 +1,6 @@
   <section class="ixir-domain-prices ixir-slide ixir-slide--left is-slide-on" id="ixirDomainPrices">
    <div class="container">
-    <h2>Domain Fiyatları</h2>
+    {include file="$template/components/Heading.tpl" title="Domain Fiyatları"}
     <p class="ixir-domain-prices-lead">Yıl boyu ekonomik domain fiyatlaması ile yatırım ve yenileme maliyetlerinizi
      düşürün.</p>
     <div class="ixir-domain-prices-search">

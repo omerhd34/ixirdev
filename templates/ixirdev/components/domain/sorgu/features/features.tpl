@@ -1,7 +1,7 @@
   <section class="ixir-domain-features ixir-slide ixir-slide--left is-slide-on">
    <div class="container">
-    <h2>Kolay ve Pratik Domain Yönetimi</h2>
-    <p class="ixir-domain-features-lead">Domain'inizi gelişmiş domain paneli ile zahmetsizce yönetin</p>
+    {include file="$template/components/Heading.tpl" title="Kolay ve Pratik Domain Yönetimi" }
+    <p class="ixir-domain-features-lead">Domain'inizi gelişmiş domain paneli ile zahmetsizce yönetin.</p>
     <div class="ixir-domain-feature-grid">
      <article>
       <span class="ixir-domain-feature-icon" aria-hidden="true"><i class="fas fa-cog"></i></span>

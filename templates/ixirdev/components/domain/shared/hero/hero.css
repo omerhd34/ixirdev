@@ -384,7 +384,7 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   #order-standard_cart.ixir-domain-page .ixir-hero h1 {
     font-size: 34px;
   }
@@ -393,7 +393,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   #order-standard_cart.ixir-domain-page .ixir-hero h1 {
     font-size: 32px;
     margin-bottom: 16px;
@@ -430,7 +430,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   #order-standard_cart.ixir-domain-page .ixir-hero .ixir-domain-links-wrap {
     grid-template-columns: repeat(2, max-content);
     justify-content: start;

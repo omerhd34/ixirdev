@@ -317,10 +317,6 @@
 .ixir-whois-intro h2 {
   margin: 0 0 12px;
   color: #1a2332;
-  font-size: 32px;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.2;
 }
 .ixir-whois-intro p {
   margin: 0;
@@ -440,9 +436,6 @@
 @media (max-width: 768px) {
   .ixir-whois-page {
     padding: 48px 0 64px;
-  }
-  .ixir-whois-intro h2 {
-    font-size: 26px;
   }
   .ixir-whois-cols {
     gap: 14px;
