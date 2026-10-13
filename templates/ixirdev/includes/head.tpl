@@ -241,6 +241,7 @@
    'hosting/shared/faq/faq',
    'server/co-location/hero/hero',
    'server/co-location/story/story',
+   'server/co-location/cta/cta',
    'server/co-location/details/details',
    'server/co-location/software/software',
    'server/co-location/co-location'
