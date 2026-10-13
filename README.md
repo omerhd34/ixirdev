@@ -2,7 +2,6 @@
 
 <a href="https://www.ixirhost.com">
   <img src="./templates/ixirdev/img/logo.webp" alt="ixirHost Logo" width="240">
-  <img src="./assets/logo.webp" alt="ixirHost Logo" width="240">
 </a>
 
 # ixirdev
@@ -15,18 +14,19 @@
 </p>
 
 <p>
-  <img alt="WHMCS" src="https://img.shields.io/badge/WHMCS-Theme-2C3E50?logo=whmcs&logoColor=white">
-  <img alt="Smarty" src="https://img.shields.io/badge/Smarty-3-F5C518">
-  <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-3.4-7952B3?logo=bootstrap&logoColor=white">
-  <img alt="FontAwesome" src="https://img.shields.io/badge/FontAwesome-5-339AF0?logo=fontawesome&logoColor=white">
-  <img alt="Responsive" src="https://img.shields.io/badge/Responsive-%E2%9C%94-2ECC71">
-  <img alt="Lisans" src="https://img.shields.io/badge/Lisans-Tescilli-red">
+  <kbd>WHMCS Theme</kbd>
+  <kbd>Smarty</kbd>
+  <kbd>Bootstrap</kbd>
+  <kbd>FontAwesome</kbd>
+  <kbd>Responsive: ✔</kbd>
+  <kbd>Lisans: Tescilli</kbd>
 </p>
 
-[Özellikler](#-özellikler) •
-[Teknolojiler](#-kullanılan-teknolojiler) •
-[Proje Yapısı](#-proje-yapısı) •
-[Kurulum](#-kurulum) •
+[Özellikler](#-özellikler) -
+[Teknolojiler](#-kullanılan-teknolojiler) -
+[Proje Yapısı](#-proje-yapısı) -
+[Kurulum](#-kurulum) -
+[Geliştirici](#-geliştirici) -
 [İletişim](#-i̇letişim)
 
 </div>
@@ -39,27 +39,56 @@
 
 Domain, web hosting, bulut/kiralık sunucu, kurumsal e-posta ve SSL sertifikası gibi hizmetlerin sergilendiği müşteri paneli arayüzü ve sipariş adımları, modern web standartlarıyla yeniden tasarlanmıştır.
 
-> 🔗 **Canlı adres:** [ixirdev.com.tr](https://ixirdev.com.tr/)
-
-<!--
-📸 Ekran görüntüsü eklemek için:
-1. Görseli assets/ klasörüne yükleyin (ör. assets/preview.webp)
-2. Aşağıdaki satırın yorumunu kaldırın
-
-<p align="center"><img src="./assets/preview.webp" alt="ixirdev önizleme" width="90%"></p>
--->
+Proje, bir **mühendis** ve **full stack developer** tarafından tasarlanıp geliştirilmektedir.
 
 ## ✨ Özellikler
 
-| | Özellik | Açıklama |
-|---|---|---|
-| 📱 | **Tam Responsive Tasarım** | Masaüstü, tablet ve mobil cihazlarla uyumlu modern arayüz |
-| 🧩 | **Modüler Bileşen Mimarisi** | Hero, paketler, promo karusel, sunucu tabloları gibi bölümler bağımsız `components/` klasöründe yönetilir |
-| ⚡ | **Optimize Stil Mimarisi** | Sayfa bazlı yüklenen dinamik CSS sistemi ve hafif asset yapısı |
-| 🌐 | **Domain Arayüzü** | Hızlı WHOIS sorgulama, domain tescil ve fiyatlandırma tabloları |
-| 🖥️ | **Sunucu & Hosting Şablonları** | Dedicated, cloud ve web hosting paketleri için özel kartlar ve sipariş akışları |
-| 🔒 | **Gelişmiş Müşteri Paneli** | Fatura görüntüleme, destek bileti sistemi, hesap güvenliği ve SSL yönetim şablonları |
-| 🎨 | **WHMCS Uyumlu** | WHMCS standart şablon yapısıyla tam entegre Smarty şablonları |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="6%"></th>
+      <th width="34%">Özellik</th>
+      <th width="60%">Açıklama</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">📱</td>
+      <td><b>Tam Responsive Tasarım</b></td>
+      <td>Masaüstü, tablet ve mobil cihazlarla uyumlu modern arayüz</td>
+    </tr>
+    <tr>
+      <td align="center">🧩</td>
+      <td><b>Modüler Bileşen Mimarisi</b></td>
+      <td>Hero, paketler, promo karusel, sunucu tabloları gibi bölümler bağımsız <code>components/</code> klasöründe yönetilir</td>
+    </tr>
+    <tr>
+      <td align="center">⚡</td>
+      <td><b>Optimize Stil Mimarisi</b></td>
+      <td>Sayfa bazlı yüklenen dinamik CSS sistemi ve hafif asset yapısı</td>
+    </tr>
+    <tr>
+      <td align="center">🌐</td>
+      <td><b>Domain Arayüzü</b></td>
+      <td>Hızlı WHOIS sorgulama, domain tescil ve fiyatlandırma tabloları</td>
+    </tr>
+    <tr>
+      <td align="center">🖥️</td>
+      <td><b>Sunucu &amp; Hosting Şablonları</b></td>
+      <td>Dedicated, cloud ve web hosting paketleri için özel kartlar ve sipariş akışları</td>
+    </tr>
+    <tr>
+      <td align="center">🔒</td>
+      <td><b>Gelişmiş Müşteri Paneli</b></td>
+      <td>Fatura görüntüleme, destek bileti sistemi, hesap güvenliği ve SSL yönetim şablonları</td>
+    </tr>
+    <tr>
+      <td align="center">🎨</td>
+      <td><b>WHMCS Uyumlu</b></td>
+      <td>WHMCS standart şablon yapısıyla tam entegre Smarty şablonları</td>
+    </tr>
+  </tbody>
+</table>
 
 ## 🛠️ Kullanılan Teknolojiler
 
@@ -155,6 +184,16 @@ Bu depo şu an için **İksir İnternet Hizmetleri A.Ş.** bünyesinde özel ola
 ## 📜 Lisans
 
 Bu proje **İksir İnternet Hizmetleri A.Ş.**'ye aittir ve **tüm hakları saklıdır**. İzinsiz kopyalanamaz, dağıtılamaz veya ticari amaçla kullanılamaz.
+
+## 👨‍💻 Geliştirici
+
+**ixirdev**, bir **Mühendis & Full Stack Developer** tarafından uçtan uca geliştirilmektedir. Tasarımdan Smarty şablonlarına, front-end bileşenlerinden WHMCS entegrasyonuna kadar tüm süreç tek elden yürütülür.
+
+| | |
+|---|---|
+| 👤 **Geliştirici** | [Ömer Halis Demir](https://github.com/omerhd34) |
+| 🎓 **Unvan** | Mühendis & Full Stack Developer |
+| 🏢 **Kurum** | İksir İnternet Hizmetleri A.Ş. |
 
 ## 📬 İletişim
 
