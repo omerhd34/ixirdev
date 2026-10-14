@@ -41,8 +41,8 @@
     </article>
 
     <article class="ixir-wh-plan ixir-wh-plan--best">
-     <header class="ixir-wh-plan-head ">
-      <span class="ixir-wh-badge">En İyi Tercih</span>
+     <span class="ixir-wh-badge">En İyi Tercih</span>
+     <header class="ixir-wh-plan-head">
       <h3>Ekonomik</h3>
      </header>
      <div class="ixir-wh-price">
