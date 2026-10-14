@@ -1,17 +1,29 @@
 .ds-solutions-section {
   padding: 7rem 0;
   position: relative;
+  background: #091322;
   color: #fff;
   overflow: hidden;
 }
 .ds-solutions-section::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(15, 23, 42, 0.85);
+  inset: 0;
+  background: 
+    radial-gradient(circle at 75% 25%, rgba(59, 130, 246, 0.16), transparent 45%),
+    radial-gradient(circle at 25% 75%, rgba(37, 99, 235, 0.14), transparent 45%);
+  pointer-events: none;
+  z-index: 1;
+}
+.ds-solutions-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  pointer-events: none;
   z-index: 1;
 }
 .ds-solutions-section .container {
@@ -21,22 +33,25 @@
 .ds-solutions-title-wrapper {
   margin-left: auto !important;
   margin-right: auto !important;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   text-align: center;
 }
 .ds-solutions-title-wrapper h2 {
   color: #fff !important;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   text-align: center;
 }
 .ds-solutions-title-wrapper p {
-  color: #cbd5e1 !important;
+  color: #94a3b8 !important;
   text-align: center;
+  font-size: 15.5px;
+  line-height: 1.7;
 }
 .ds-solutions-title-wrapper p b {
   color: #f8fafc !important;
 }
 .ds-solutions-device {
-  margin: 4rem 0 2rem 0;
+  margin: 3.5rem 0 2rem 0;
   position: relative;
 }
 .ds-solutions-device::after {
@@ -46,14 +61,14 @@
   left: 50%;
   width: 1px;
   height: 2.1rem;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.15);
   transform: translateX(-50%);
 }
 .ds-solutions-device img {
   max-width: 100%;
   width: 600px;
   height: auto;
-  filter: drop-shadow(0 25px 40px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0 25px 40px rgba(0, 0, 0, 0.7));
   transition: transform 0.4s ease;
 }
 .ds-solutions-device:hover img {
@@ -63,7 +78,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
   max-width: 1100px;
   margin: 0 auto;
   position: relative;
@@ -76,7 +91,7 @@
   left: calc(8.3333% - 0.8333rem);
   right: calc(8.3333% - 0.8333rem);
   height: 1px;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.12);
 }
 .ds-sol-feat {
   flex: 1;
@@ -91,44 +106,51 @@
   left: 50%;
   width: 1px;
   height: 4.1rem;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.12);
   transform: translateX(-50%);
 }
 .ds-sol-icon {
-  width: 70px;
-  height: 70px;
-  margin: 2rem auto 1.5rem auto;
-  border-radius: 50%;
-  background: rgba(15, 23, 42, 0.6);
+  width: 68px;
+  height: 68px;
+  margin: 2rem auto 1.25rem auto;
+  border-radius: 20px;
+  background: rgba(13, 27, 49, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
-  box-shadow: inset 0 2px 10px rgba(255, 255, 255, 0.05);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 .ds-sol-feat i {
-  font-size: 1.75rem;
-  color: #e2e8f0;
-  transition: all 0.3s ease;
+  font-size: 1.6rem;
+  color: #60a5fa;
+  transition: all 0.35s ease;
 }
 .ds-sol-feat:hover .ds-sol-icon {
-  background: #3b82f6;
-  border-color: #3b82f6;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border-color: #60a5fa;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.4);
 }
 .ds-sol-feat:hover i {
   color: #fff;
+  transform: scale(1.1);
 }
 .ds-sol-feat span {
   display: block;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
-  color: #cbd5e1;
-  letter-spacing: 1px;
+  color: #94a3b8;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   line-height: 1.4;
+  transition: color 0.25s ease;
+}
+.ds-sol-feat:hover span {
+  color: #f8fafc;
 }
 
 @media (max-width: 768px) {

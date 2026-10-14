@@ -1,7 +1,7 @@
 .ds-hero-showcase {
   padding: 6rem 2rem;
   border-radius: 0;
-  background: radial-gradient(circle at center, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.9) 100%);
+  background: #091322;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -9,13 +9,23 @@
 .ds-hero-showcase::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("/templates/ixirdev/img/server/bg18.webp") center/cover no-repeat;
-  opacity: 0.35;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.18), transparent 45%),
+    radial-gradient(circle at 80% 80%, rgba(37, 99, 235, 0.16), transparent 45%);
   pointer-events: none;
+  z-index: 1;
+}
+.ds-hero-showcase::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  pointer-events: none;
+  z-index: 1;
 }
 .ds-showcase-title-wrapper {
   position: relative;
@@ -24,21 +34,22 @@
   margin-right: auto !important;
   margin-bottom: 4rem;
   text-align: center;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 .ds-showcase-title-wrapper h2 {
   color: #ffffff !important;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   text-align: center;
 }
 .ds-showcase-title-wrapper p {
-  color: #e2e8f0 !important;
+  color: #94a3b8 !important;
   text-align: center;
+  font-size: 16px;
 }
 .ds-showcase-visual {
   position: relative;
   z-index: 2;
   display: inline-block;
-  margin-bottom: 5rem;
+  margin-bottom: 4.5rem;
   perspective: 1000px;
 }
 .ds-rack-stack {
@@ -47,7 +58,7 @@
   gap: 3px;
   transform: rotateX(5deg);
   transition: transform 0.5s ease;
-  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.7));
 }
 .ds-rack-stack:hover {
   transform: rotateX(0deg) scale(1.02);
@@ -91,7 +102,7 @@
 .ds-showcase-stats {
   display: flex;
   justify-content: center;
-  gap: 8rem;
+  gap: 6rem;
   margin-bottom: 5rem;
   position: relative;
   z-index: 2;
@@ -103,28 +114,27 @@
 .ds-stat:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: -4rem;
+  right: -3rem;
   top: 50%;
   transform: translateY(-50%);
   height: 50px;
   width: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
 }
 .ds-stat-val {
-  font-size: 4rem;
-  font-weight: 900;
+  font-size: 3.8rem;
+  font-weight: 800;
   line-height: 1;
   margin-bottom: 0.75rem;
-  background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #60a5fa 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
   display: block;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
 }
 .ds-stat-lbl {
-  font-size: 1.15rem;
-  color: #cbd5e1;
+  font-size: 1.05rem;
+  color: #94a3b8;
   font-weight: 600;
   line-height: 1.4;
   display: block;
@@ -133,37 +143,54 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
   text-align: left;
   position: relative;
   z-index: 2;
 }
 .ds-feat-col {
-  background: rgba(15, 23, 42, 0.6);
+  position: relative;
+  background: rgba(13, 27, 49, 0.75);
   padding: 2.5rem;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+.ds-feat-col::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2563eb, #60a5fa, transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
 }
 .ds-feat-col:hover {
-  transform: translateY(-5px);
-  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-6px);
+  border-color: rgba(96, 165, 250, 0.35);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(37, 99, 235, 0.15);
+}
+.ds-feat-col:hover::before {
+  opacity: 1;
 }
 .ds-feat-col h5 {
-  font-size: 1.75rem;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: 0.85rem;
 }
 .ds-feat-col h5 i {
-  color: #3b82f6;
-  font-size: 2.25rem;
+  color: #60a5fa;
+  font-size: 1.75rem;
 }
 .ds-feat-col ul {
   list-style: none;
@@ -171,27 +198,27 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.1rem;
 }
 .ds-feat-col ul li {
-  font-size: 1rem;
-  color: #e2e8f0;
+  font-size: 0.95rem;
+  color: #cbd5e1;
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.85rem;
   line-height: 1.5;
 }
 .ds-feat-col ul li i {
-  color: #3b82f6;
-  background: rgba(59, 130, 246, 0.1);
+  color: #60a5fa;
+  background: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(96, 165, 250, 0.25);
   width: 24px;
   height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 8px;
   font-size: 0.75rem;
-  margin-top: 0.125rem;
   flex-shrink: 0;
 }
 
@@ -203,21 +230,18 @@
     right: -1rem;
   }
   .ds-stat-val {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 
 @media (max-width: 768px) {
-  .ds-showcase-title {
-    font-size: 1.5rem;
-  }
   .ds-showcase-stats {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
   }
   .ds-stat {
-    width: 40%;
+    width: 42%;
   }
   .ds-stat:not(:last-child)::after {
     display: none;

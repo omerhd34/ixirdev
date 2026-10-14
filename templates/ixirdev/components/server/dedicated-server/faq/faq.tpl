@@ -6,8 +6,8 @@
   </header>
 
   <div class="ixir-wh-faq-list">
-   <div class="ixir-wh-faq-item">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-right"
+   <div class="ixir-wh-faq-item is-open">
+    <button type="button" class="ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Hangi Dedicated Server Benim İçin Uygun?</button>
     <div class="ixir-wh-faq-a">
      <p>İhtiyacınızı ve kaynak tüketimini bilmeniz seçimde yararlı olur, çok disk okuma yazması varsa SSD veya Nvme
@@ -17,7 +17,7 @@
    </div>
 
    <div class="ixir-wh-faq-item">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-right"
+    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Sanallaştırarak Kullanabilir miyim?</button>
     <div class="ixir-wh-faq-a">
      <p>Elbette dedicated server üzerinde ister VMware VSphere (ESXi) veya Citrix veya Proxmox, OpenVZ, KVM gibi
@@ -26,7 +26,7 @@
    </div>
 
    <div class="ixir-wh-faq-item">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-right"
+    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Yedekli İnternet Erişimi Mevcut mu? 1 Gbit Port & Limitsiz Trafik Nedir?</button>
     <div class="ixir-wh-faq-a">
      <p>Elbette, ağımıza <b>3 operatör</b> bağlı ve yedekli internet erişimi tüm sunucularımızda varsayılan olarak
@@ -41,7 +41,7 @@
    </div>
 
    <div class="ixir-wh-faq-item">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-right"
+    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Disk Kısmında 2x olarak görünen sunucuların Raid yapılandırması nedir?</button>
     <div class="ixir-wh-faq-a">
      <p>2x veya daha yüksek görünen disk sayısı, Raid olduğu anlamındadır, biz sunucularımızda varsayılan olarak
@@ -56,7 +56,7 @@
    </div>
 
    <div class="ixir-wh-faq-item">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-right"
+    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Donanım Garantisi Sunuyor musunuz?</button>
     <div class="ixir-wh-faq-a">
      <p>Kiraladığınız tüm sunucularda donanım garantisi firmamıza aittir, olası bir arızada birebir değişim veya daha
@@ -65,7 +65,7 @@
    </div>
 
    <div class="ixir-wh-faq-item">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-right"
+    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Sunucu Yönetim ve Yedekleme Hizmeti Mevcut mu?</button>
     <div class="ixir-wh-faq-a">
      <p>Sunucu yönetimi KVKK, veri gizliliği ve güvenliği sebebiyle sunucu kiralama servisinden <b>bağımsız ayrı bir
@@ -78,7 +78,7 @@
    </div>
 
    <div class="ixir-wh-faq-item">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-right"
+    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Saldırı Koruması Mevcut mu?</button>
     <div class="ixir-wh-faq-a">
      <p>1Tbit+ kapasiteli saldırı korumamız mevcuttur, sunucu siparişiniz esnasında 2 ip için ddos koruması
@@ -88,7 +88,7 @@
    </div>
 
    <div class="ixir-wh-faq-item">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-right"
+    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Ön Sipariş Olarak görünen sunucular ne zaman teslim edilir?</button>
     <div class="ixir-wh-faq-a">
      <p>Ön sipariş olarak görünen bir sunucuyu sipariş verdiğinizde, ortalama <b>5 iş gününde</b> size teslim edeceğiz
@@ -98,7 +98,7 @@
    </div>
 
    <div class="ixir-wh-faq-item">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-right"
+    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Farklı kapasite de sunucuya ihtiyacım var, sağlayabilir misiniz?</button>
     <div class="ixir-wh-faq-a">
      <p>Tabiki, farklı ihtiyaçlarınızı değerlendirmekten memnuniyet duyacağız, ihtiyaçlarınızı bize ilettiğiniz taktirde
@@ -107,7 +107,7 @@
    </div>
 
    <div class="ixir-wh-faq-item">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-right"
+    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Neden sizi tercih etmeliyim?</button>
     <div class="ixir-wh-faq-a">
      <p>2026 itibariyle sektörde <b>20. yılımızı</b> dolduruyoruz, tecrübemize güvenebilirsiniz, her bir sunucuyu, her
@@ -120,7 +120,7 @@
    </div>
 
    <div class="ixir-wh-faq-item">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-right"
+    <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Dedicated Sunucularda Ücret İadesi Mevcut mu?</button>
     <div class="ixir-wh-faq-a">
      <p>Dedicated server hizmetlerimizde ücret iadesi bulunmamaktadır.</p>

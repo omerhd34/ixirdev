@@ -3,17 +3,17 @@
   padding: 80px 0;
   position: relative;
   overflow: hidden;
-  border-top: 1px solid #f0f2f5;
+  border-top: 1px solid #eef2f6;
 }
 .ixir-ds-features-section::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1000px;
-  height: 1000px;
-  background: radial-gradient(circle, rgba(59, 120, 231, 0.03) 0%, transparent 60%);
+  transform: translateX(-50%);
+  width: 900px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.05) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -24,10 +24,13 @@
   text-align: center;
 }
 .ixir-ds-features-section .ixir-ds-head h2 {
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   text-align: center;
 }
 .ixir-ds-features-section .ixir-ds-head p {
   text-align: center;
+  color: #64748b;
+  font-size: 15px;
 }
 .ixir-ds-features-grid {
   display: grid;
@@ -37,50 +40,70 @@
   z-index: 1;
 }
 .ixir-ds-feature-card {
-  background: #f8f9fb;
-  border: 1px solid #eef0f4;
-  border-radius: 20px;
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 24px;
   padding: 40px 30px;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+}
+.ixir-ds-feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2563eb, #60a5fa, transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
 }
 .ixir-ds-feature-card:hover {
-  background: #ffffff;
-  border-color: #d1d9e6;
-  box-shadow: 0 15px 35px rgba(11, 37, 69, 0.08);
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  border-color: #bfdbfe;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08), 0 0 24px rgba(37, 99, 235, 0.06);
+}
+.ixir-ds-feature-card:hover::before {
+  opacity: 1;
 }
 .ixir-ds-feature-icon {
-  width: 64px;
-  height: 64px;
-  background: #eef2fa;
-  color: #3b78e7;
-  border-radius: 16px;
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #ffffff 0%, #f0f6ff 100%);
+  border: 1.5px solid #dbeafe;
+  color: #2563eb;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
-  margin-bottom: 12px;
-  transition: all 0.3s ease;
+  font-size: 26px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.08);
+  transition: all 0.35s ease;
 }
 .ixir-ds-feature-card:hover .ixir-ds-feature-icon {
-  background: #3b78e7;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border-color: #2563eb;
   color: #ffffff;
+  transform: scale(1.08) rotate(-3deg);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.25);
 }
 .ixir-ds-feature-card h3 {
   color: #0b2545;
-  font-family: "Space Grotesk", "Roboto", sans-serif;
-  font-size: 18px;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 19px;
   font-weight: 700;
   margin-bottom: 12px;
+  line-height: 1.35;
 }
 .ixir-ds-feature-card p {
-  color: #6b7280;
-  font-size: 14px;
-  line-height: 1.6;
+  color: #64748b;
+  font-size: 14.5px;
+  line-height: 1.65;
   margin: 0;
 }
 

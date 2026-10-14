@@ -2926,3 +2926,72 @@
   border-radius: 4px !important;
   color: #475569 !important;
 }
+
+/* ========================================================
+   PCI-TARAMA DESIGN SYSTEM HARMONIZATION
+   ======================================================== */
+.ixir-ds-stats {
+  background: radial-gradient(ellipse 70% 150% at 50% 0%, rgba(59, 130, 246, 0.22), transparent 70%), #091322 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+}
+.ixir-ds-stats i {
+  color: #60a5fa !important;
+}
+.ixir-ds-stats b {
+  color: #ffffff !important;
+}
+.ixir-ds-buy {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3) !important;
+  border: none !important;
+}
+.ixir-ds-buy:hover {
+  background: #091322 !important;
+  color: #ffffff !important;
+  box-shadow: 0 8px 24px rgba(9, 19, 34, 0.35) !important;
+  transform: translateY(-2px) !important;
+}
+.ixir-ds-buy:hover i {
+  color: #60a5fa !important;
+  transform: translateX(4px) !important;
+}
+.ixir-ds-row:hover {
+  border-color: #93c5fd !important;
+  box-shadow: 0 16px 36px -4px rgba(15, 23, 42, 0.08), 0 0 20px rgba(37, 99, 235, 0.05) !important;
+}
+.ixir-ds-row--popular {
+  border-color: #60a5fa !important;
+}
+.ixir-ds-ribbon {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3) !important;
+}
+.ixir-ds-ribbon--new {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3) !important;
+}
+.ixir-ds-cycle button[aria-checked="true"] {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25) !important;
+}
+.ixir-ds-view-btn.is-active {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+}
+.ixir-ds-slider-dot.is-active {
+  background: #2563eb !important;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.5) !important;
+}
+.ixir-ds-all .ixir-ds-more {
+  color: #2563eb !important;
+}
+.ixir-ds-all .ixir-ds-more:hover {
+  background: #f0f6ff !important;
+}
+

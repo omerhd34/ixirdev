@@ -1,56 +1,30 @@
-.ixir-ds-datacenter-content b {
-  color: #ffffff;
-  font-weight: 700;
-}
-.ixir-ds-datacenter-content h2 {
-  color: #ffffff;
-  font-family: "Space Grotesk", "Roboto", sans-serif;
-  margin-bottom: 6px;
-  text-align: center;
-}
-.ixir-ds-datacenter-content h3 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #60a5fa;
-  margin-bottom: 24px;
-  font-family: "Space Grotesk", "Roboto", sans-serif;
-  text-align: center;
-}
-.ixir-ds-datacenter-content p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #cbd5e1;
-  margin: 0 auto;
-  max-width: 1100px;
-  text-align: center;
-}
 .ixir-ds-datacenter {
   position: relative;
-  background: #0b1120;
+  background: #091322;
   padding: 100px 0;
   overflow: hidden;
   color: #fff;
-  border-top: 1px solid #1f2937;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 .ixir-ds-datacenter::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 80% 20%, rgba(59, 120, 231, 0.15) 0%, transparent 40%), radial-gradient(circle at 20% 80%, rgba(59, 120, 231, 0.1) 0%, transparent 40%);
+  inset: 0;
+  background: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18), transparent 45%),
+    radial-gradient(circle at 82% 75%, rgba(37, 99, 235, 0.16), transparent 45%);
+  pointer-events: none;
   z-index: 0;
 }
 .ixir-ds-datacenter::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: 40px 40px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  inset: 0;
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  pointer-events: none;
   z-index: 0;
 }
 .ixir-ds-datacenter .container {
@@ -58,13 +32,51 @@
   z-index: 1;
 }
 .ixir-ds-datacenter-content {
-  padding: 40px 50px;
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 24px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding: 50px 60px;
+  background: rgba(13, 27, 49, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
   text-align: center;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+.ixir-ds-datacenter-content::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2563eb, #60a5fa, transparent);
+  opacity: 0.8;
+}
+.ixir-ds-datacenter-content h2 {
+  color: #ffffff;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.ixir-ds-datacenter-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #60a5fa;
+  margin-bottom: 24px;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+.ixir-ds-datacenter-content p {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #94a3b8;
+  margin: 0 auto;
+  max-width: 1060px;
+  text-align: center;
+}
+.ixir-ds-datacenter-content b {
+  color: #f8fafc;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -72,12 +84,13 @@
     padding: 60px 0;
   }
   .ixir-ds-datacenter-content {
-    padding: 30px 24px;
+    padding: 32px 20px;
+    border-radius: 20px;
   }
   .ixir-ds-datacenter-content h3 {
     font-size: 18px;
   }
   .ixir-ds-datacenter-content p {
-    font-size: 15px;
+    font-size: 14.5px;
   }
 }
