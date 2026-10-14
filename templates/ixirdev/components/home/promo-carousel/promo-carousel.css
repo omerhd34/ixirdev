@@ -1,12 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&display=swap");
+
 .ixir-promo {
   position: relative;
   z-index: 1;
   margin: 0;
   max-width: 100%;
   color: #fff;
-  background: #0b2545;
+  background-color: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   user-select: none;
   -webkit-user-select: none;
+  overflow: hidden;
+}
+
+.ixir-promo::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: 8%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ixir-promo::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: 5%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .ixir-promo-viewport {
@@ -14,6 +47,7 @@
   overflow: clip;
   contain: paint;
   touch-action: pan-y;
+  z-index: 1;
 }
 
 .ixir-promo-slide {
@@ -24,7 +58,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  background: #111722;
+  background: transparent;
   transform: translate3d(0, 0, 0);
   transition:
     transform 0.9s cubic-bezier(0.22, 0.61, 0.36, 1),
@@ -38,7 +72,7 @@
   pointer-events: auto;
   z-index: 2;
   transform: translate3d(0, 0, 0);
-  min-height: 380px;
+  min-height: 420px;
 }
 
 .ixir-promo-slide.is-animating {
@@ -72,33 +106,13 @@
   opacity: 0;
 }
 
-.ixir-promo-slide[data-theme="developer"] {
-  background: #111722;
-}
-
-.ixir-promo-slide[data-theme="antispam"] {
-  background: #021736;
-}
-
-.ixir-promo-slide[data-theme="cloud"] {
-  background: #003071;
-}
-
-.ixir-promo-slide[data-theme="mail"] {
-  background: #141419;
-}
-
-.ixir-promo-slide[data-theme="wordpress"] {
-  background: #1f212d;
-}
-
 .ixir-promo-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 16px 28px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 24px 36px;
   align-items: center;
-  min-height: 380px;
-  padding: 32px 8px 48px 0;
+  min-height: 420px;
+  padding: 44px 0 52px;
 }
 
 .ixir-promo-copy {
@@ -108,72 +122,97 @@
   align-items: flex-start;
   justify-content: center;
   color: #fff;
-  padding-left: 60px;
-}
-
-.ixir-promo-copy h2,
-.ixir-promo-copy p,
-.ixir-promo-copy ul {
-  width: 100%;
+  padding-left: 20px;
 }
 
 .ixir-promo-badge {
   display: inline-flex;
   align-items: center;
-  width: auto;
-  max-width: 100%;
-  margin: 0 0 10px;
-  padding: 3px 8px;
-  border-radius: 4px;
-  background: #dc3545;
-  color: #fff;
-  font-size: 11px;
+  gap: 8px;
+  padding: 7px 18px;
+  font-size: 13px;
   font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #60a5fa !important;
+  background: #08111e !important;
+  border: 1px solid rgba(59, 130, 246, 0.38) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.pci-cta-pulse-dot {
+  width: 8px;
+  height: 8px;
+  background: #38bdf8;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7);
+  animation: pciCtaPulse 2s infinite;
+  display: inline-block;
+}
+
+@keyframes pciCtaPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(56, 189, 248, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+  }
 }
 
 .ixir-promo-copy h2 {
-  margin: 0 0 8px;
-  color: #fff;
-  font-size: clamp(20px, 2vw, 24px);
-  font-weight: 700;
-  line-height: 1.25;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: clamp(26px, 2.6vw, 36px);
+  font-weight: 800;
+  line-height: 1.22;
+  letter-spacing: -0.025em;
 }
 
 .ixir-promo-copy p {
-  margin: 0 0 16px;
-  color: rgba(255, 255, 255, 0.92);
-  font-size: clamp(15px, 1.5vw, 18px);
-  line-height: 1.4;
+  margin: 0 0 22px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(15.5px, 1.4vw, 17.5px);
+  line-height: 1.6;
 }
 
 .ixir-promo-copy ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 7px 16px;
-  margin: 0 0 22px;
+  gap: 12px 20px;
+  margin: 0 0 28px;
   padding: 0;
   list-style: none;
+  width: 100%;
+  max-width: 580px;
 }
 
 .ixir-promo-copy li {
   display: flex;
-  align-items: flex-start;
-  gap: 8px;
+  align-items: center;
+  gap: 10px;
   min-width: 0;
-  color: #fff;
+  color: #e2e8f0;
   font-size: 14.5px;
   line-height: 1.4;
 }
 
 .ixir-promo-copy li i {
-  margin-top: 0.22em;
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 11px;
-  width: 1em;
-  flex: 0 0 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+  font-size: 12px;
+  flex-shrink: 0;
 }
 
 .ixir-promo .ixir-promo-btn,
@@ -181,80 +220,50 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  align-self: flex-start;
-  gap: 8px;
-  box-sizing: border-box;
-  width: auto !important;
-  max-width: 100%;
-  height: 42px;
-  min-width: 0;
-  padding: 0 22px;
-  border: 0;
-  border-radius: 8px;
-  background: #386ce0 !important;
-  color: #fff !important;
+  gap: 10px;
+  height: 48px;
+  padding: 0 26px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 12px;
+  color: #ffffff !important;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: 15px;
-  font-weight: 600;
-  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.01em;
   text-decoration: none !important;
-  box-shadow: none;
+  box-shadow: 0 10px 25px -4px rgba(37, 99, 235, 0.5);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   white-space: nowrap;
-  transition:
-    background-color 0.18s ease,
-    color 0.18s ease,
-    transform 0.18s ease;
 }
 
 .ixir-promo .ixir-promo-btn i {
-  font-size: 12px;
-  transition: transform 0.18s ease;
+  font-size: 14px;
+  transition: transform 0.25s ease;
 }
 
 .ixir-promo .ixir-promo-btn:hover,
 .ixir-promo .ixir-promo-btn:focus {
-  background: #2f5dca !important;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+  box-shadow: 0 14px 30px -4px rgba(37, 99, 235, 0.65);
   color: #fff !important;
-  border-color: transparent !important;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .ixir-promo .ixir-promo-btn:hover i,
 .ixir-promo .ixir-promo-btn:focus i {
-  transform: translateX(2px);
-}
-
-.ixir-promo-slide[data-theme="antispam"] .ixir-promo-btn,
-.ixir-promo-slide[data-theme="antispam"] .ixir-promo-btn:visited {
-  background: #3a4150 !important;
-  color: #fff !important;
-}
-
-.ixir-promo-slide[data-theme="antispam"] .ixir-promo-btn:hover,
-.ixir-promo-slide[data-theme="antispam"] .ixir-promo-btn:focus {
-  background: #2c3340 !important;
-}
-
-.ixir-promo-slide[data-theme="cloud"] .ixir-promo-btn,
-.ixir-promo-slide[data-theme="cloud"] .ixir-promo-btn:visited {
-  background: #fff !important;
-  color: #1a2744 !important;
-}
-
-.ixir-promo-slide[data-theme="cloud"] .ixir-promo-btn:hover,
-.ixir-promo-slide[data-theme="cloud"] .ixir-promo-btn:focus {
-  background: #eef3ff !important;
-  color: #1a2744 !important;
+  transform: translateX(3px);
 }
 
 .ixir-promo-visual {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   align-self: stretch;
   min-width: 0;
   min-height: 340px;
-  overflow: hidden;
-  pointer-events: none;
+  overflow: visible;
+  position: relative;
 }
 
 .ixir-promo-visual img {
@@ -262,85 +271,85 @@
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 320px;
+  max-height: 330px;
   object-fit: contain;
-  object-position: center right;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+  transition: transform 0.4s ease;
+}
+
+.ixir-promo-slide:hover .ixir-promo-visual img {
+  transform: scale(1.02);
 }
 
 .ixir-promo-slide[data-theme="developer"] .ixir-promo-visual img,
 .ixir-promo-slide[data-theme="cloud"] .ixir-promo-visual img {
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
 }
 
 .ixir-promo-nav {
   position: absolute;
   top: 50%;
   z-index: 3;
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  border: 1px solid rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(59, 130, 246, 0.35);
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.16) !important;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18) !important;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  color: #fff !important;
-  font-size: 14px;
+  background: rgba(13, 27, 49, 0.75) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #60a5fa !important;
+  font-size: 15px;
   line-height: 1;
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
   transform: translateY(-50%);
-  transition:
-    background 0.18s ease,
-    border-color 0.18s ease,
-    transform 0.18s ease;
+  transition: all 0.22s ease;
 }
 
 .ixir-promo-nav:hover,
 .ixir-promo-nav:focus {
-  color: #fff !important;
-  background: rgba(255, 255, 255, 0.3) !important;
-  border-color: rgba(255, 255, 255, 0.7);
+  color: #ffffff !important;
+  background: #2563eb !important;
+  border-color: #3b82f6;
   outline: none;
-  transform: translateY(-50%) scale(1.06);
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 10px 28px rgba(37, 99, 235, 0.5) !important;
 }
 
 .ixir-promo-prev {
-  left: 18px;
+  left: 20px;
 }
 
 .ixir-promo-next {
-  right: 18px;
+  right: 20px;
 }
 
 .ixir-promo-dots {
   position: absolute;
   left: 50%;
-  bottom: 14px;
+  bottom: 16px;
   z-index: 3;
   display: flex;
   justify-content: center;
-  gap: 4px;
+  gap: 8px;
   transform: translateX(-50%);
 }
 
 .ixir-promo-dots button {
   position: relative;
-  width: 28px;
-  height: 18px;
+  width: 24px;
+  height: 12px;
   padding: 0;
   border: 0;
-  border-radius: 0;
   background: transparent !important;
   box-shadow: none !important;
   cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
 }
 
 .ixir-promo-dots button::after {
@@ -349,14 +358,18 @@
   left: 2px;
   right: 2px;
   top: 50%;
-  height: 3px;
-  border-radius: 2px;
-  background: rgba(255, 255, 255, 0.38);
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
   transform: translateY(-50%);
+  transition: all 0.25s ease;
 }
 
 .ixir-promo-dots button.is-active::after {
-  background: #fff;
+  background: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+  left: 0;
+  right: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -365,158 +378,55 @@
   }
 }
 
-@media only screen and (min-width: 1536px) {
-  .ixir-promo-copy {
-    padding-left: 68px;
-  }
-
-  .ixir-promo-prev {
-    left: 28px;
-  }
-
-  .ixir-promo-next {
-    right: 28px;
-  }
-}
-
 @media only screen and (max-width: 1280px) {
   .ixir-promo-grid {
-    min-height: 340px;
-    padding: 24px 0 40px;
-    gap: 12px 20px;
+    padding: 36px 0 44px;
   }
-
   .ixir-promo-copy {
-    padding-left: 56px;
-  }
-
-  .ixir-promo-visual {
-    min-height: 220px;
-  }
-
-  .ixir-promo-visual img {
-    max-height: 260px;
-  }
-
-  .ixir-promo-copy li {
-    font-size: 14px;
-  }
-
-  .ixir-promo-slide[data-theme="wordpress"] .ixir-promo-copy ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-left: 10px;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .ixir-promo-grid {
     grid-template-columns: minmax(0, 1fr);
-    padding: 20px 24px 40px;
+    padding: 28px 24px 44px;
     text-align: center;
   }
-
   .ixir-promo-copy {
     align-items: center;
     order: 2;
     padding-left: 0;
   }
-
-  .ixir-promo .ixir-promo-btn,
-  .ixir-promo .ixir-promo-btn:visited {
-    align-self: center;
-  }
-
   .ixir-promo-visual {
     order: 1;
-    justify-content: center;
     min-height: 0;
-    max-height: 220px;
+    max-height: 240px;
   }
-
   .ixir-promo-visual img {
-    max-height: 200px;
-    object-position: center;
+    max-height: 220px;
     margin: 0 auto;
   }
-
-   .ixir-promo-slide {
-    align-items: flex-start;
-  }
-
-  .ixir-promo-copy ul,
-  .ixir-promo-slide[data-theme="wordpress"] .ixir-promo-copy ul {
-    grid-template-columns: minmax(0, 1fr);
-    max-width: 420px;
+  .ixir-promo-copy ul {
+    max-width: 440px;
     text-align: left;
   }
+}
 
+@media only screen and (max-width: 640px) {
+  .ixir-promo-copy ul {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
   .ixir-promo-nav {
-    top: 50%;
     width: 36px;
     height: 36px;
     font-size: 13px;
   }
-
   .ixir-promo-prev {
-    left: 14px;
+    left: 8px;
   }
-
   .ixir-promo-next {
-    right: 14px;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  .ixir-promo {
-    margin-top: 0;
-  }
-
-  .ixir-promo-grid {
-    padding: 16px 20px 38px;
-  }
-
-  .ixir-promo-copy {
-    padding-left: 0;
-  }
-
-  .ixir-promo-copy ul {
-    grid-template-columns: minmax(0, 1fr);
-    max-width: 260px;
-    gap: 8px;
-  }
-
-  .ixir-promo-slide[data-theme="wordpress"] .ixir-promo-copy ul {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .ixir-promo-visual {
-    max-height: 170px;
-  }
-
-  .ixir-promo-visual img {
-    max-height: 160px;
-  }
-
-  .ixir-promo-nav {
-    top: 50%;
-    width: 34px;
-    height: 34px;
-    font-size: 12px;
-  }
-
-  .ixir-promo-prev {
-    left: 12px;
-  }
-
-  .ixir-promo-next {
-    left: auto;
-    right: 12px;
-  }
-
-  .ixir-promo-copy h2 {
-    font-size: 20px;
-  }
-
-  .ixir-promo-copy p {
-    font-size: 15px;
+    right: 8px;
   }
 }

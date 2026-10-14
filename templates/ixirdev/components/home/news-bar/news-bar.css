@@ -1,5 +1,3 @@
-/* Duyuru şeridi */
-
 body.ixir-auth-page .news-bar,
 body.ixir-auth-page #ixirNewsBar,
 .news-bar.is-hidden {
@@ -7,7 +5,7 @@ body.ixir-auth-page #ixirNewsBar,
 }
 
 .news-bar {
-  font-family: "Roboto", sans-serif;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
   position: fixed;
   top: 113px;
   left: 0;
@@ -19,28 +17,29 @@ body.ixir-auth-page #ixirNewsBar,
   padding: 8px 0;
   background: linear-gradient(
     90deg,
-    #efb51a 0%,
-    #ffd85a 42%,
-    #ffe27a 50%,
-    #ffd85a 58%,
-    #efb51a 100%
+    #070e1a 0%,
+    #0d1d36 35%,
+    #112546 50%,
+    #0d1d36 65%,
+    #070e1a 100%
   );
   z-index: 9999;
-  border: 0;
-  box-shadow: none;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
+
 .news-bar::before {
   content: "";
   position: absolute;
   inset: 0;
   background: repeating-linear-gradient(
     -55deg,
-    rgba(255, 255, 255, 0.14) 0 8px,
+    rgba(59, 130, 246, 0.05) 0 8px,
     transparent 8px 16px
   );
   pointer-events: none;
-  opacity: 0.45;
 }
+
 .news-bar-fx {
   position: absolute;
   inset: 0;
@@ -50,14 +49,15 @@ body.ixir-auth-page #ixirNewsBar,
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.38),
+    rgba(56, 189, 248, 0.2),
     transparent
   );
   background-repeat: no-repeat;
-  background-size: 28% 100%;
+  background-size: 30% 100%;
   background-position: -40% 0;
   animation: newsBarShine 6s ease-in-out infinite;
 }
+
 @keyframes newsBarShine {
   0% {
     background-position: -40% 0;
@@ -67,15 +67,18 @@ body.ixir-auth-page #ixirNewsBar,
     background-position: 140% 0;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .news-bar-fx {
     display: none;
   }
 }
+
 .news-bar .container {
   position: relative;
   z-index: 1;
 }
+
 .news-bar .news-content {
   position: relative;
   z-index: 1;
@@ -87,6 +90,7 @@ body.ixir-auth-page #ixirNewsBar,
   padding-right: 40px;
   min-height: 32px;
 }
+
 .news-bar .news-badge {
   display: inline-flex;
   align-items: center;
@@ -94,86 +98,106 @@ body.ixir-auth-page #ixirNewsBar,
   flex-shrink: 0;
   width: 28px;
   height: 28px;
-  border-radius: 50%;
-  background: #0b2545;
-  color: #ffd54f;
+  border-radius: 8px;
+  background: rgba(59, 130, 246, 0.2);
+  color: #38bdf8;
+  border: 1px solid rgba(59, 130, 246, 0.35);
   line-height: 1;
-  box-shadow: 0 2px 6px rgba(36, 41, 53, 0.22);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
+
 .news-bar .news-badge i {
   font-size: 13px;
 }
+
 .news-bar .news-content p {
   margin: 0;
   font-size: 14px;
   font-weight: 500;
-  color: #1a1e29;
+  color: #e2e8f0;
   line-height: 1.35;
   letter-spacing: 0.01em;
   white-space: nowrap;
 }
+
 .news-bar .news-content p i {
   margin-right: 6px;
 }
+
 .news-bar .news-content strong {
   font-weight: 700;
+  color: #38bdf8;
   white-space: nowrap;
 }
+
 .news-bar .news-cta {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   flex-shrink: 0;
   height: 30px;
-  margin-left: 4px;
-  padding: 0 14px;
-  background: #0b2545;
+  margin-left: 6px;
+  padding: 0 16px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   color: #fff !important;
-  font-size: 12px;
+  font-size: 12.5px;
   font-weight: 700;
   letter-spacing: 0.02em;
   border-radius: 999px;
   white-space: nowrap;
   line-height: 30px;
-  box-shadow: 0 3px 8px rgba(36, 41, 53, 0.2);
-  transition:
-    background 0.2s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.4);
+  transition: all 0.2s ease;
+  text-decoration: none !important;
 }
+
 .news-bar .news-cta i {
   font-size: 11px;
   transition: transform 0.2s ease;
 }
+
 .news-bar .news-cta:hover {
-  background: #1a1e29;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
   color: #fff !important;
   transform: translateY(-1px);
-  box-shadow: 0 6px 14px rgba(36, 41, 53, 0.28);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.6);
 }
+
 .news-bar .news-cta:hover i {
   transform: translateX(3px);
 }
+
 .news-bar .newsClose {
   position: absolute;
   top: 50%;
   right: max(var(--ixir-gutter), calc((100% - var(--ixir-container)) / 2));
   z-index: 4;
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   margin: 0;
   transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.news-bar .newsClose:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transform: translateY(-50%) scale(1.08);
 }
 
 @media only screen and (max-width: 1024px) {
   .news-bar {
     top: 96px;
     padding: 7px 0;
-  }
-  .news-bar .newsClose {
-    right: max(var(--ixir-gutter), calc((100% - var(--ixir-container)) / 2));
-    width: 24px;
-    height: 24px;
   }
   .news-bar .news-content {
     padding-right: 36px;
@@ -223,7 +247,8 @@ body.ixir-auth-page #ixirNewsBar,
     display: none;
   }
 }
-@media (max-width: 479px) {
+
+@media (max-width: 480px) {
   .news-bar .newsClose {
     width: 22px;
     height: 22px;

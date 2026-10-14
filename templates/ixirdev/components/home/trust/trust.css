@@ -1,146 +1,262 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&display=swap");
 
 .ixir-trust {
   position: relative;
   z-index: 1;
-  padding: 72px 0 64px;
-  background: #fff;
-  overflow-x: hidden;
+  padding: 85px 0 95px;
+  background: #ffffff;
+  border-top: 1px solid #eef2f6;
+  border-bottom: 1px solid #e2e8f0;
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
 }
+
+.ixir-trust::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 480px;
+  background: radial-gradient(ellipse at center, rgba(59, 120, 231, 0.07) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .ixir-trust .container {
+  position: relative;
+  z-index: 1;
   min-width: 0;
 }
+
+.pci-adv-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+}
+
+.pci-adv-badge i {
+  font-size: 13px;
+  color: #3b82f6;
+}
+
 .ixir-trust-head {
-  max-width: 920px;
-  margin: 0 auto 40px;
-  padding: 0 12px;
+  max-width: 760px;
+  margin: 0 auto 52px;
   text-align: center;
 }
-.ixir-trust-head h2 {
-  font-family: "Space Grotesk", sans-serif !important;
-  color: #1a1f2e;
-  margin: 0;
-  overflow-wrap: break-word;
+
+.ixir-trust-head h2,
+.ixir-trust-head .site-heading {
+  margin-top: 0 !important;
+  margin-bottom: 16px;
+  font-family: "Space Grotesk", "Roboto", sans-serif !important;
+  color: #0b2545;
+  letter-spacing: -0.02em;
 }
+
 .ixir-trust-head p {
-  margin: 14px 0 0;
+  color: #64748b;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #6d7588;
-  overflow-wrap: break-word;
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 620px;
 }
+
 .ixir-trust-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 28px 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
   width: 100%;
-  max-width: 1040px;
   margin: 0 auto;
-  min-width: 0;
 }
+
 .ixir-trust-item {
-  min-width: 0;
-  max-width: 340px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 8px 10px 4px;
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 24px;
+  padding: 40px 30px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  box-sizing: border-box;
-  border-radius: 20px;
-  transition: transform 0.22s ease;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
 }
+
+.ixir-trust-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.ixir-trust-item:hover {
+  transform: translateY(-8px);
+  border-color: rgba(59, 120, 231, 0.35);
+  box-shadow: 0 22px 42px -10px rgba(59, 120, 231, 0.15), 0 10px 20px -6px rgba(15, 23, 42, 0.05);
+}
+
+.ixir-trust-item:hover::before {
+  left: 10%;
+  right: 10%;
+  opacity: 1;
+}
+
 .ixir-trust-icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #ffffff 0%, #f0f6ff 100%);
+  border: 1.5px solid #dbeafe;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 96px;
-  height: 96px;
-  margin: 0 auto 14px;
-  border-radius: 50%;
-  background: #f4f7fd;
-  box-shadow: inset 0 0 0 1px rgba(56, 108, 224, 0.06);
-  transition:
-    background 0.22s ease,
-    box-shadow 0.22s ease,
-    transform 0.22s ease;
+  margin: 0 auto 22px;
+  box-shadow: 0 10px 24px -6px rgba(59, 130, 246, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .ixir-trust-icon img {
   display: block;
-  width: 68px;
-  height: 68px;
+  width: 46px;
+  height: 46px;
   object-fit: contain;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+.ixir-trust-item:hover .ixir-trust-icon {
+  transform: translateY(-3px) scale(1.08);
+  border-color: #93c5fd;
+  box-shadow: 0 16px 32px -6px rgba(59, 130, 246, 0.28);
+}
+
+.ixir-trust-item:hover .ixir-trust-icon img {
+  transform: scale(1.06);
+}
+
 .ixir-trust-item h3 {
-  margin: 0 0 8px;
-  font-size: 17px;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  font-size: 20px;
   font-weight: 700;
-  letter-spacing: -0.01em;
-  line-height: 1.3;
-  color: #1a1f2e;
+  color: #0b2545;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+  transition: color 0.25s ease;
 }
+
+.ixir-trust-item:hover h3 {
+  color: #2563eb;
+}
+
 .ixir-trust-item p {
-  margin: 0 auto;
-  max-width: 34ch;
   font-size: 14.5px;
-  line-height: 1.6;
-  color: #6d7588;
-  overflow-wrap: break-word;
+  line-height: 1.65;
+  color: #64748b;
+  margin: 0 0 22px;
+  flex-grow: 1;
 }
+
+.ixir-trust-footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pci-adv-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #3b82f6;
+  transition: all 0.25s ease;
+}
+
+.pci-adv-tag i {
+  font-size: 12px;
+}
+
+.ixir-trust-item:hover .pci-adv-tag {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
 .ixir-trust ~ #main-body {
   padding-top: 28px !important;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .ixir-trust-item:hover {
-    transform: translateY(-3px);
-  }
-  .ixir-trust-item:hover .ixir-trust-icon {
-    background: #eaf0ff;
-    box-shadow: inset 0 0 0 1px rgba(56, 108, 224, 0.12);
-    transform: translateY(-1px);
-  }
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .ixir-trust-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 40px 36px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .ixir-trust {
-    padding: 72px 0 64px;
-  }
-  .ixir-trust-head {
-    margin-bottom: 40px;
-  }
-  .ixir-trust-head p {
-    font-size: 16px;
-  }
-  .ixir-trust-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 48px 44px;
+    gap: 24px;
   }
   .ixir-trust-item {
-    max-width: 300px;
-  }
-  .ixir-trust-item p {
-    min-height: 4.8em;
+    padding: 34px 24px 28px;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .ixir-trust {
+    padding: 60px 0 70px;
+  }
+  .ixir-trust-head {
+    margin-bottom: 38px;
+  }
+  .ixir-trust-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    gap: 20px;
+  }
+  .ixir-trust-icon {
+    width: 74px;
+    height: 74px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+  }
+  .ixir-trust-icon img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Animations */
 .ixir-trust.is-armed .ixir-trust-head,
 .ixir-trust.is-armed .ixir-trust-item {
   opacity: 0;
-  transform: translate3d(-112px, 0, 0);
+  transform: translate3d(-60px, 0, 0);
   pointer-events: none;
   transition:
     transform 0.72s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms),
     opacity 0.56s ease var(--ixir-enter-delay, 0ms);
 }
+
 .ixir-trust.is-armed .ixir-trust-head {
   --ixir-enter-delay: 0ms;
 }
@@ -162,12 +278,14 @@
 .ixir-trust.is-armed .ixir-trust-item:nth-child(6) {
   --ixir-enter-delay: 360ms;
 }
+
 .ixir-trust.is-armed.is-in .ixir-trust-head,
 .ixir-trust.is-armed.is-in .ixir-trust-item {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   pointer-events: auto;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .ixir-trust.is-armed .ixir-trust-head,
   .ixir-trust.is-armed .ixir-trust-item,
@@ -177,29 +295,5 @@
     transform: none;
     pointer-events: auto;
     transition: none;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .ixir-trust {
-    padding: 44px 0 36px;
-  }
-  .ixir-trust-head {
-    margin-bottom: 32px;
-  }
-  .ixir-trust-head p {
-    font-size: 15px;
-  }
-  .ixir-trust-grid {
-    gap: 28px 16px;
-  }
-  .ixir-trust-icon {
-    width: 84px;
-    height: 84px;
-    margin-bottom: 14px;
-  }
-  .ixir-trust-icon img {
-    width: 52px;
-    height: 52px;
   }
 }

@@ -1,6 +1,7 @@
 <section class="ixir-next ixir-slide ixir-slide--left is-slide-on" id="ixir-next" aria-labelledby="ixir-next-title">
  <div class="container">
   <div class="ixir-next-panel">
+   <div class="pci-adv-badge"><i class="fas fa-heart text-danger"></i> SOSYAL SORUMLULUK &amp; EĞİTİM DESTEĞİ</div>
    {include file="$template/components/Heading.tpl" title="İxirNext ile Geleceğe Dokunuyoruz!" id="ixir-next-title"}
    <p><strong>İxirhost</strong> olarak 2005 yılından bu yana internet teknolojileri üretiyoruz. Bugün ise bu
     yolculuğun
@@ -19,7 +20,7 @@
     kütüphane desteği talep etmek istiyorsanız, başvurunuzu birkaç dakika içinde iletebilirsiniz. Tüm
     başvurular
     gizlilik içinde değerlendirilir; hiçbir karşılık veya yükümlülük beklenmez.</p>
-   <a class="ixir-next-cta" href="https://ixirnext.tr" target="_blank" rel="noopener">Başvuru</a>
+   <a class="ixir-next-cta" href="https://ixirnext.tr" target="_blank" rel="noopener">Başvuru Yap <i class="fas fa-arrow-right"></i></a>
   </div>
  </div>
 </section>

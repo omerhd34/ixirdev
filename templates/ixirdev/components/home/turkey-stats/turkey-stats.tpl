@@ -2,30 +2,36 @@
  aria-label="Türkiye tercih istatistikleri">
  <div class="container">
   <div class="ixir-stats-stage">
+   <div class="pci-aud-badge"><span class="pci-aud-badge-dot"></span> 20 YILLIK TECRÜBE &amp; LİDER PERFORMANS</div>
+   {include file="$template/components/Heading.tpl" title="Türkiye Bizi Tercih Ediyor!" class="ixir-stats-heading"}
    <picture class="ixir-stats-map">
     <source srcset="{$WEB_ROOT}/templates/{$template}/img/turkey-stats/turkey-map.webp" type="image/webp">
     <img src="{$WEB_ROOT}/templates/{$template}/img/turkey-stats/turkey-map.jpg" alt="ixirhost Türkiye" width="3600"
      height="1500" decoding="async">
    </picture>
-   {include file="$template/components/Heading.tpl" title="Türkiye Bizi Tercih Ediyor!" class="ixir-stats-heading"}
    <ul class="ixir-stats-grid">
-    <li>
+    <li class="ixir-stat-card">
+     <div class="ixir-stat-icon-wrap"><i class="fas fa-users"></i></div>
      <strong data-to="22000" data-suffix="+">22.000+</strong>
      <span>Müşteri</span>
     </li>
-    <li>
+    <li class="ixir-stat-card">
+     <div class="ixir-stat-icon-wrap"><i class="fas fa-globe"></i></div>
      <strong data-to="10000" data-suffix="+">10.000+</strong>
      <span>Web Sitesi</span>
     </li>
-    <li>
+    <li class="ixir-stat-card">
+     <div class="ixir-stat-icon-wrap"><i class="fas fa-layer-group"></i></div>
      <strong data-to="20000" data-suffix="+">20.000+</strong>
      <span>Domain</span>
     </li>
-    <li>
+    <li class="ixir-stat-card">
+     <div class="ixir-stat-icon-wrap"><i class="fas fa-smile-beam"></i></div>
      <strong data-to="99.9" data-prefix="%" data-decimals="1">%99.9</strong>
      <span>Müşteri Memnuniyeti</span>
     </li>
-    <li>
+    <li class="ixir-stat-card">
+     <div class="ixir-stat-icon-wrap"><i class="fas fa-award"></i></div>
      <strong data-to="20" data-suffix="+">20+</strong>
      <span>Yıllık Tecrübe</span>
     </li>

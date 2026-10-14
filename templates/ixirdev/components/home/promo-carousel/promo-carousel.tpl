@@ -5,7 +5,7 @@
       <div class="container">
         <div class="ixir-promo-grid">
           <div class="ixir-promo-copy">
-            <span class="ixir-promo-badge">Yeni</span>
+            <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> Yeni Nesil Altyapı</span>
             <h2>Developer Hosting</h2>
             <p>Laravel, Node.Js, Python, Ruby, Git ile geliştirin ve yönetin!</p>
             <ul>
@@ -28,14 +28,14 @@
       <div class="container">
         <div class="ixir-promo-grid">
           <div class="ixir-promo-copy">
-            <span class="ixir-promo-badge">Makine Öğrenimi</span>
+            <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> Makine Öğrenimi Koruması</span>
             <h2>AntiSpam &amp; Anti-Virüs Filtreleme</h2>
             <p>E-postalarınız için Gelişmiş AntiSpam ve Antivirüs Koruması</p>
             <ul>
               <li><i class="fas fa-check" aria-hidden="true"></i>%99.8 Spam Engelleme</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>AntiVirüs</li>
+              <li><i class="fas fa-check" aria-hidden="true"></i>AntiVirüs Koruması</li>
               <li><i class="fas fa-check" aria-hidden="true"></i>Makine Öğrenimi</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Zararlı Yazılım Koruması</li>
+              <li><i class="fas fa-check" aria-hidden="true"></i>Zararlı Yazılım Filtresi</li>
             </ul>
             <a href="{$WEB_ROOT}/antispam" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"
                 aria-hidden="true"></i></a>
@@ -51,13 +51,13 @@
       <div class="container">
         <div class="ixir-promo-grid">
           <div class="ixir-promo-copy">
-            <span class="ixir-promo-badge">60 Saniyede Kurulum</span>
+            <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> 60 Saniyede Kurulum</span>
             <h2>Yüksek Performanslı Cloud Server</h2>
             <p>60 Saniye'de Cloud Sunucunuz Hazır!</p>
             <ul>
               <li><i class="fas fa-check" aria-hidden="true"></i>Otomatik Kurulum</li>
               <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz Trafik</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>SSD Disk Depolama</li>
+              <li><i class="fas fa-check" aria-hidden="true"></i>NVMe SSD Depolama</li>
               <li><i class="fas fa-check" aria-hidden="true"></i>Ücretsiz Kontrol Paneli</li>
             </ul>
             <a href="{$WEB_ROOT}/cloud-server" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"
@@ -74,7 +74,7 @@
       <div class="container">
         <div class="ixir-promo-grid">
           <div class="ixir-promo-copy">
-            <span class="ixir-promo-badge">KVKK Uyumlu</span>
+            <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> KVKK Uyumlu Altyapı</span>
             <h2>Kurumsal E-posta</h2>
             <p>KVKK Uyumlu Sunucularda Kurumsal E-posta Hizmeti</p>
             <ul>
@@ -97,16 +97,14 @@
       <div class="container">
         <div class="ixir-promo-grid">
           <div class="ixir-promo-copy">
-            <span class="ixir-promo-badge">10x Daha Hızlı</span>
+            <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> 10x Daha Hızlı</span>
             <h2>Jet Hızında Wordpress Hosting</h2>
             <p>Çok Daha Hızlı Web Siteleri İçin</p>
             <ul>
               <li><i class="fas fa-check" aria-hidden="true"></i>10 Kata Kadar Daha Hızlı</li>
               <li><i class="fas fa-check" aria-hidden="true"></i>Intel Xeon Gold İşlemciler</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz NVMe</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>LsCache Destekli</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>AccelerateWP Destekli</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Ücretsiz Tek Tıkla Kurulum</li>
+              <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz NVMe Disk</li>
+              <li><i class="fas fa-check" aria-hidden="true"></i>LsCache &amp; AccelerateWP</li>
             </ul>
             <a href="{$WEB_ROOT}/wordpress-hosting" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"
                 aria-hidden="true"></i></a>
@@ -122,7 +120,7 @@
       <div class="container">
         <div class="ixir-promo-grid">
           <div class="ixir-promo-copy">
-            <span class="ixir-promo-badge">%100 Donanım Gücü</span>
+            <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> %100 Donanım Gücü</span>
             <h2>Yüksek Performanslı Dedicated Server</h2>
             <p>İstanbul Merkezli, Operatör Yedekli ve Size Özel Fiziksel Sunucular</p>
             <ul>

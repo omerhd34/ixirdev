@@ -1,58 +1,108 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&display=swap");
 
 .ixir-reviews {
   position: relative;
   z-index: 1;
-  padding: 52px 0 40px;
-  background: #f7f9fc;
+  padding: 85px 0 95px;
+  background: #ffffff;
+  border-top: 1px solid #eef2f6;
+  border-bottom: 1px solid #e2e8f0;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
 }
+
+.ixir-reviews::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 480px;
+  background: radial-gradient(ellipse at center, rgba(59, 120, 231, 0.07) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .ixir-reviews .container {
+  position: relative;
+  z-index: 1;
   min-width: 0;
 }
+
 .ixir-reviews-head {
-  max-width: 920px;
-  margin: 0 auto 32px;
+  max-width: 760px;
+  margin: 0 auto 48px;
   padding: 0 12px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
-.ixir-reviews-head h2 {
-  margin: 0;
-  color: #1a1f2e;
-  font-family: "Space Grotesk", sans-serif !important;
+
+.ixir-reviews-head .pci-adv-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
 }
+
+.ixir-reviews-head .pci-adv-badge i {
+  font-size: 13px;
+}
+
+.ixir-reviews-head h2,
+.ixir-reviews-head .site-heading {
+  margin: 0 0 14px;
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", sans-serif !important;
+  letter-spacing: -0.02em;
+}
+
 .ixir-reviews-head p {
-  margin: 14px 0 0;
-  color: #6d7588;
+  margin: 0 auto;
+  color: #64748b;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.65;
+  max-width: 620px;
 }
+
 .ixir-reviews-board {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
   mask-image: linear-gradient(
     90deg,
     transparent,
-    #000 48px,
-    #000 calc(100% - 48px),
+    #000 60px,
+    #000 calc(100% - 60px),
     transparent
   );
   -webkit-mask-image: linear-gradient(
     90deg,
     transparent,
-    #000 48px,
-    #000 calc(100% - 48px),
+    #000 60px,
+    #000 calc(100% - 60px),
     transparent
   );
 }
+
 .ixir-reviews-viewport {
   position: relative;
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 4px 0 8px;
+  padding: 12px 0 24px;
   cursor: grab;
   user-select: none;
   -webkit-user-select: none;
@@ -60,183 +110,161 @@
   overscroll-behavior-x: contain;
   -webkit-overflow-scrolling: touch;
 }
+
 .ixir-reviews-viewport::-webkit-scrollbar {
   display: none;
   height: 0;
 }
-.ixir-reviews-viewport,
-.ixir-reviews-viewport * {
-  cursor: grab;
-}
+
 .ixir-reviews-viewport.is-dragging,
 .ixir-reviews-viewport.is-dragging * {
   cursor: grabbing;
 }
+
 .ixir-reviews-track {
   display: flex;
   align-items: stretch;
-  gap: 16px;
+  gap: 24px;
   width: max-content;
 }
+
 .ixir-reviews-group {
   display: flex;
   align-items: stretch;
-  gap: 16px;
+  gap: 24px;
   flex: 0 0 auto;
 }
+
 .ixir-reviews-card {
   position: relative;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  flex: 0 0 340px;
-  width: 340px;
-  min-height: 228px;
-  padding: 22px 22px 18px;
+  flex: 0 0 360px;
+  width: 360px;
+  min-height: 240px;
+  padding: 32px 28px 24px;
   overflow: hidden;
-  background: #fff;
-  border: 1px solid #e8edf4;
-  border-radius: 18px;
-  box-shadow:
-    0 1px 1px rgba(44, 50, 66, 0.04),
-    0 12px 28px rgba(44, 50, 66, 0.06);
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
   text-align: left;
-  -webkit-user-drag: none;
-  transition:
-    box-shadow 0.28s ease,
-    border-color 0.28s ease;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .ixir-reviews-card::before {
-  content: "“";
+  content: "";
   position: absolute;
-  top: 4px;
-  right: 16px;
-  color: #386ce0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 1;
-  opacity: 0.12;
-  pointer-events: none;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  transition: all 0.35s ease;
 }
+
 .ixir-reviews-card:hover {
-  border-color: #d5def0;
-  box-shadow:
-    0 1px 1px rgba(44, 50, 66, 0.04),
-    0 16px 32px rgba(44, 50, 66, 0.1);
+  transform: translateY(-6px);
+  border-color: rgba(59, 120, 231, 0.35);
+  box-shadow: 0 20px 40px -10px rgba(59, 120, 231, 0.15), 0 10px 20px -6px rgba(15, 23, 42, 0.05);
 }
+
+.ixir-reviews-card:hover::before {
+  left: 10%;
+  right: 10%;
+  opacity: 1;
+}
+
 .ixir-reviews-stars {
   display: flex;
-  justify-content: flex-start;
-  gap: 3px;
-  margin: 0 0 12px;
-  color: #f5b400;
+  gap: 4px;
+  margin: 0 0 14px;
+  color: #f59e0b;
   font-size: 13px;
-  line-height: 1;
 }
+
 .ixir-reviews-card p {
-  position: relative;
-  z-index: 1;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #475569;
+  margin: 0 0 22px;
   flex: 1 1 auto;
-  margin: 0 0 18px;
-  color: #3a4154;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.55;
 }
+
 .ixir-reviews-person {
-  position: relative;
-  z-index: 1;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   margin-top: auto;
-  padding-top: 14px;
-  border-top: 1px solid #eef2f8;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
 }
+
 .ixir-reviews-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 40px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #eaf0ff;
-  color: #386ce0;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.02em;
-  line-height: 1;
+  box-shadow: 0 6px 14px -2px rgba(37, 99, 235, 0.35);
+  flex-shrink: 0;
 }
+
+.ixir-reviews-card:nth-child(2n) .ixir-reviews-avatar {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 6px 14px -2px rgba(16, 185, 129, 0.35);
+}
+
+.ixir-reviews-card:nth-child(3n) .ixir-reviews-avatar {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 6px 14px -2px rgba(245, 158, 11, 0.35);
+}
+
+.ixir-reviews-card:nth-child(4n) .ixir-reviews-avatar {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  box-shadow: 0 6px 14px -2px rgba(139, 92, 246, 0.35);
+}
+
 .ixir-reviews-who {
   display: flex;
-  min-width: 0;
   flex-direction: column;
   gap: 2px;
 }
+
 .ixir-reviews-who strong {
-  color: #1a1f2e;
-  font-size: 14px;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  font-size: 14.5px;
   font-weight: 700;
-  line-height: 1.25;
+  color: #0b2545;
 }
+
 .ixir-reviews-who span {
-  color: #6d7588;
   font-size: 12.5px;
-  font-weight: 500;
-  line-height: 1.25;
+  color: #64748b;
 }
-.ixir-reviews-card:nth-child(2n) .ixir-reviews-avatar {
-  background: #e8f6ef;
-  color: #1f8a5b;
-}
-.ixir-reviews-card:nth-child(3n) .ixir-reviews-avatar {
-  background: #fff3e0;
-  color: #c67a12;
-}
-.ixir-reviews-card:nth-child(4n) .ixir-reviews-avatar {
-  background: #f3e8ff;
-  color: #7a3fd4;
-}
+
 .ixir-reviews ~ #main-body {
   padding-top: 32px !important;
 }
 
 @media only screen and (max-width: 768px) {
   .ixir-reviews {
-    padding: 36px 0 28px;
+    padding: 60px 0 70px;
   }
   .ixir-reviews-head {
-    margin-bottom: 20px;
-  }
-  .ixir-reviews-head p {
-    font-size: 15px;
-  }
-  .ixir-reviews-board {
-    mask-image: linear-gradient(
-      90deg,
-      transparent,
-      #000 20px,
-      #000 calc(100% - 20px),
-      transparent
-    );
-    -webkit-mask-image: linear-gradient(
-      90deg,
-      transparent,
-      #000 20px,
-      #000 calc(100% - 20px),
-      transparent
-    );
+    margin-bottom: 32px;
   }
   .ixir-reviews-card {
-    flex-basis: 280px;
-    width: 280px;
-    min-height: 214px;
-    padding: 18px 16px 16px;
-  }
-  .ixir-reviews-card p {
-    font-size: 14px;
+    flex-basis: 300px;
+    width: 300px;
+    padding: 24px 20px 20px;
   }
 }

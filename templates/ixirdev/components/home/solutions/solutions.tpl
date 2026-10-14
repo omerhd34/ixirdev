@@ -2,6 +2,7 @@
  aria-label="Web hosting ve altyapı çözümleri">
  <div class="container">
   <header class="ixir-solutions-head">
+   <div class="pci-aud-badge"><span class="pci-aud-badge-dot"></span> BÜTÜNLEŞİK ÇÖZÜMLER</div>
   {include file="$template/components/Heading.tpl" title="Türkiye'nin Güvenilir Web Hosting ve Altyapı Çözümleri"}
    <p>2005'ten bu yana 22.000'den fazla müşteriye kesintisiz hizmet sunuyoruz.</p>
   </header>

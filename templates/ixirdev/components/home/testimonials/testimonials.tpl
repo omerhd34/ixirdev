@@ -1,6 +1,7 @@
 <section class="ixir-reviews ixir-slide ixir-slide--left is-slide-on" id="ixirReviews" aria-label="Müşteri yorumları">
  <div class="container">
   <header class="ixir-reviews-head">
+   <div class="pci-adv-badge"><i class="fas fa-heart text-danger"></i> %99.9 MÜŞTERİ MEMNUNİYETİ</div>
    {include file="$template/components/Heading.tpl" title="Gerçek Deneyimler, Mutlu Müşteriler!"}
    <p>Siz de üstün hizmet kalitemizi deneyimleyin.</p>
   </header>
