@@ -98,7 +98,7 @@
 <body
  {if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim'}
  class="ixir-auth-page" data-phone-cc-input="" {else}
-  class="{if $ixirCorporate}ixir-corporate-page{/if}{if $ixirDomainSearchPage} ixir-domain-search-page{/if}{if $ixirDomainTransferPage} ixir-domain-transfer-page{/if}"
+  class="{if $templatefile}page-{$templatefile}{/if}{if $ixirPageSlug} page-{$ixirPageSlug}{/if}{if $ixirCorporate} ixir-corporate-page{/if}{if $ixirDomainSearchPage} ixir-domain-search-page{/if}{if $ixirDomainTransferPage} ixir-domain-transfer-page{/if}"
  data-phone-cc-input="{$phoneNumberInputStyle}" {/if}>
  {if $ixirLoadRecaptcha && $captcha && ($templatefile != 'clientregister' || !$loggedin)}{$captcha->getMarkup()}{/if}
  {$headeroutput}

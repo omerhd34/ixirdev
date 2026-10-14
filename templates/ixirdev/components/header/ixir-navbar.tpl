@@ -205,7 +205,7 @@
             "title" => "Kurumsal Mail Server",
             "icon" => "fas fa-server",
             "label" => "Kurumsal Mail Server",
-            "badge" => ["class" => "menu-yeni blink", "style" => "color: #fff;", "text" => "YENİ"],
+            "badge" => ["class" => "menu-yeni blink", "style" => "color: #fff;"],
             "desc" => "İşletmenize özel yapılandırılmış profesyonel, güvenli performanslı mail altyapısı"
           ]
         ]
@@ -283,10 +283,6 @@
                <span class="mega-menu-body">
                 <span class="mega-menu-title">
                  {$item.label}
-                 {if isset($item.badge)}
-                  <span class="{$item.badge.class}" {if isset($item.badge.style)} style="{$item.badge.style}"
-                   {/if}>{$item.badge.text}</span>
-                 {/if}
                 </span>
                 <span class="mega-menu-desc">{$item.desc}</span>
                </span>
