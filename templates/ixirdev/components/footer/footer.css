@@ -5,20 +5,13 @@
   z-index: 1;
   width: 100%;
   clear: both;
-  padding: 64px 0 0;
+  padding: 68px 0 0;
   color: #c5cad6;
-  background:
-    radial-gradient(
-      1200px 280px at 12% -40%,
-      rgba(56, 108, 224, 0.16),
-      transparent 70%
-    ),
-    radial-gradient(
-      900px 240px at 92% 8%,
-      rgba(224, 36, 94, 0.08),
-      transparent 62%
-    ),
-    #1c1f2a;
+  background-color: #070e1a;
+  background-image: 
+    radial-gradient(circle at 18% 0%, rgba(59, 130, 246, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 82% 0%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+    linear-gradient(180deg, #091322 0%, #070e1a 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   -webkit-font-smoothing: antialiased;
 }
