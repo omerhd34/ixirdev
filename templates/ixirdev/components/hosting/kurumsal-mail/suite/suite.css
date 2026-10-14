@@ -1,35 +1,43 @@
 .ixir-km-suite {
   padding: 72px 0;
-  background: #fff;
+  background-color: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .ixir-km-suite-head {
-  max-width: 880px;
-  margin: 0 auto 32px;
+  max-width: 992px;
+  margin: 0 auto 36px;
   text-align: center;
 }
 .ixir-km-suite-head h2 {
   margin: 0 0 12px;
-  color: #0b2545;
+  color: #ffffff !important;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
 }
 .ixir-km-suite-head p {
   margin: 0;
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.78) !important;
   font-size: 15.5px;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 .ixir-km-suite-tabs {
   display: flex;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
   width: fit-content;
   max-width: 100%;
-  margin: 0 auto 40px;
+  margin: 0 auto 44px;
   padding: 6px;
   overflow-x: auto;
-  border: 1px solid #e6ebf5;
-  border-radius: 16px;
-  background: #f4f7fd;
+  border: 1px solid #eef2f6;
+  border-radius: 18px;
+  background: #f8fafc;
   scrollbar-width: none;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.03);
 }
 .ixir-km-suite-tabs::-webkit-scrollbar {
   display: none;
@@ -38,21 +46,22 @@
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 9px;
-  padding: 12px 18px;
+  gap: 8px;
+  padding: 11px 20px;
   border: 0;
-  border-radius: 12px;
+  border-radius: 14px;
   background: transparent;
-  color: #5b6474;
-  font-size: 14.5px;
-  font-weight: 600;
+  color: #64748b;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .ixir-km-suite-tab i {
-  color: #9aa3b2;
+  color: #94a3b8;
   font-size: 15px;
   transition: color 0.2s ease;
 }
@@ -60,19 +69,19 @@
   color: #0b2545;
 }
 .ixir-km-suite-tab:hover i {
-  color: #1a56c4;
+  color: #2563eb;
 }
 .ixir-km-suite-tab:focus-visible {
-  outline: 2px solid #1a56c4;
+  outline: 2px solid #2563eb;
   outline-offset: 2px;
 }
 .ixir-km-suite-tab.is-active {
-  background: #fff;
-  color: #1a56c4;
-  box-shadow: 0 6px 18px rgba(26, 86, 196, 0.14);
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
 }
 .ixir-km-suite-tab.is-active i {
-  color: #1a56c4;
+  color: #ffffff;
 }
 .ixir-km-suite-panel {
   display: grid;
@@ -94,10 +103,10 @@
   margin: 0;
   padding-top: 34px;
   overflow: hidden;
-  border: 1px solid #e3e8f2;
-  border-radius: 16px;
+  border: 1px solid #eef2f6;
+  border-radius: 24px;
   background: #fff;
-  box-shadow: 0 24px 60px rgba(11, 37, 69, 0.12), 0 4px 12px rgba(11, 37, 69, 0.05);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08), 0 4px 12px rgba(15, 23, 42, 0.03);
 }
 .ixir-km-suite-bar {
   position: absolute;
@@ -108,9 +117,9 @@
   align-items: center;
   gap: 6px;
   height: 34px;
-  padding: 0 14px;
-  border-bottom: 1px solid #eef1f6;
-  background: #f7f8fb;
+  padding: 0 16px;
+  border-bottom: 1px solid #eef2f6;
+  background: #f8fafc;
 }
 .ixir-km-suite-bar i {
   width: 10px;
@@ -132,36 +141,37 @@
 .ixir-km-suite-title {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 16px;
+  gap: 16px;
+  margin-bottom: 18px;
 }
 .ixir-km-suite-copy .ixir-km-suite-title h3 {
   margin: 0;
 }
 .ixir-km-suite-icon {
   display: inline-flex;
-  flex: 0 0 48px;
+  flex: 0 0 54px;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #386ce0 0%, #1a56c4 100%);
-  box-shadow: 0 10px 22px rgba(56, 108, 224, 0.3);
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
   color: #fff;
-  font-size: 19px;
+  font-size: 20px;
 }
 .ixir-km-suite-copy h3 {
   margin: 0 0 14px;
   color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   font-size: clamp(22px, 1.9vw, 28px);
   font-weight: 700;
   letter-spacing: -0.015em;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 .ixir-km-suite-copy p {
-  margin: 0 0 12px;
-  color: #4b5160;
+  margin: 0 0 14px;
+  color: #64748b;
   font-size: 15.5px;
   line-height: 1.7;
 }
@@ -208,7 +218,41 @@
 
 @media (max-width: 576px) {
   .ixir-km-suite-tab {
-    padding: 11px 14px;
+    padding: 10px 14px;
     font-size: 13.5px;
   }
+}
+
+/* Dark theme overrides for suite */
+.ixir-km-suite-tabs {
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  background: rgba(13, 27, 49, 0.75);
+}
+.ixir-km-suite-tab {
+  color: #94a3b8;
+}
+.ixir-km-suite-tab:hover {
+  color: #ffffff;
+}
+.ixir-km-suite-tab.is-active {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+}
+.ixir-km-suite-card {
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  background: rgba(13, 27, 49, 0.75);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.ixir-km-suite-card h3 {
+  color: #ffffff;
+}
+.ixir-km-suite-card p {
+  color: rgba(255, 255, 255, 0.78);
+}
+.ixir-km-suite-shot {
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  background: rgba(13, 27, 49, 0.75);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }

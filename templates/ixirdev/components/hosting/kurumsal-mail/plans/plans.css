@@ -183,3 +183,14 @@
     display: none;
   }
 }
+
+.ixir-wh-plan,
+.ixir-wh-plan--best {
+  overflow: visible !important;
+}
+
+.ixir-wh-plan:has(.ixir-wh-billing.is-open),
+.ixir-wh-plan.is-billing-open {
+  z-index: 100 !important;
+  overflow: visible !important;
+}

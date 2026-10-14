@@ -1,9 +1,12 @@
 .ixir-km-outlook {
   position: relative;
-  padding: 80px 0;
+  padding: 85px 0;
   overflow: hidden;
-  background: radial-gradient( circle at 12% 20%, rgba(255, 255, 255, 0.12) 0%, transparent 40% ), radial-gradient( circle at 90% 85%, rgba(255, 255, 255, 0.1) 0%, transparent 45% ), linear-gradient(225deg, #1b93ee 0%, #1461a1 100%);
-  color: #fff;
+  background-color: #f0f6ff !important;
+  background-image: none !important;
+  color: #0b1e36;
+  border-top: 1px solid rgba(59, 130, 246, 0.12);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.12);
 }
 .ixir-km-outlook-inner {
   display: grid;
@@ -14,10 +17,10 @@
 .ixir-km-outlook-shot {
   margin: 0;
   overflow: hidden;
-  border: 6px solid rgba(255, 255, 255, 0.18);
-  border-radius: 18px;
-  background: #fff;
-  box-shadow: 0 30px 70px rgba(6, 30, 70, 0.4);
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.1);
 }
 .ixir-km-outlook-shot img {
   display: block;
@@ -28,32 +31,34 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 14px;
-  padding: 6px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 16px;
+  padding: 6px 16px;
+  border: 1px solid #dbeafe;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  color: #fff;
+  background: #eff6ff;
+  color: #2563eb;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   font-size: 12.5px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 .ixir-km-outlook-copy h2 {
   margin: 0 0 16px;
-  color: #fff;
+  color: #0b1e36 !important;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
 }
 .ixir-km-outlook-copy p {
-  margin: 0 0 12px;
-  color: rgba(255, 255, 255, 0.86);
+  margin: 0 0 14px;
+  color: #475569 !important;
   font-size: 15.5px;
   line-height: 1.7;
 }
 .ixir-km-outlook-points {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 22px 0 0;
+  gap: 12px;
+  margin: 24px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -61,16 +66,23 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 9px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  font-size: 13.5px;
+  padding: 10px 16px;
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0b1e36;
+  font-size: 14px;
   font-weight: 600;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+  transition: all 0.25s ease;
+}
+.ixir-km-outlook-points li:hover {
+  border-color: rgba(59, 130, 246, 0.45);
+  transform: translateY(-2px);
+  color: #2563eb;
 }
 .ixir-km-outlook-points li i {
-  color: #bfe0ff;
+  color: #2563eb;
   font-size: 13px;
 }
 
