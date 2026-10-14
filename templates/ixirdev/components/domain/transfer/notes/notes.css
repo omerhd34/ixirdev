@@ -1,26 +1,33 @@
 .ixir-xfer-notes {
-  background: #0b2545;
+  background: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 64px 0;
+  color: #fff;
 }
 .ixir-xfer-uses {
-  padding: 56px 0;
+  padding: 64px 0;
 }
 .ixir-xfer-uses h2 {
   margin: 0 0 8px;
-  color: #2c3345;
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .ixir-xfer-steps h2 {
   text-align: center;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
 }
 
-.ixir-xfer-notes {
-  padding: 56px 0;
-}
 .ixir-xfer-notes h2 {
   color: #fff;
-  margin-bottom: 18px;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  margin-bottom: 20px;
   text-align: left;
 }
 .ixir-xfer-notes .site-heading::after,
@@ -41,11 +48,11 @@
 }
 .ixir-xfer-notes li {
   position: relative;
-  margin: 0 0 12px;
-  padding-left: 18px;
-  color: rgba(255, 255, 255, 0.78);
+  margin: 0 0 14px;
+  padding-left: 22px;
+  color: #94a3b8;
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 .ixir-xfer-notes li:last-child {
   margin-bottom: 0;
@@ -54,14 +61,15 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 0.65em;
-  width: 6px;
-  height: 6px;
+  top: 0.6em;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
-  background: #386ce0;
+  background: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.6);
 }
 .ixir-xfer-notes a {
-  color: #9ec0ff;
+  color: #60a5fa;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.15s ease;
@@ -78,51 +86,77 @@
   display: block;
   width: min(100%, 280px);
   height: auto;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.4));
 }
 .ixir-xfer-uses {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   background: #fff;
 }
 .ixir-xfer-use-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
+  gap: 24px;
 }
 .ixir-xfer-use-grid article {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 28px 22px 24px;
+  padding: 32px 24px 28px;
   background: #fff;
-  border: 1px solid #e8edf4;
-  border-radius: 16px;
+  border: 1px solid #eef2f6;
+  border-radius: 24px;
   text-align: center;
-  box-shadow: 0 12px 28px rgba(31, 45, 74, 0.05);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+.ixir-xfer-use-grid article::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2563eb, #60a5fa, transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.ixir-xfer-use-grid article:hover {
+  transform: translateY(-5px);
+  border-color: #bfdbfe;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08), 0 0 24px rgba(37, 99, 235, 0.06);
+}
+.ixir-xfer-use-grid article:hover::before {
+  opacity: 1;
 }
 .ixir-xfer-use-art {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 .ixir-xfer-use-art img {
   display: block;
   width: 100%;
-  max-width: 280px;
+  max-width: 260px;
   height: auto;
+  transition: transform 0.35s ease;
+}
+.ixir-xfer-use-grid article:hover .ixir-xfer-use-art img {
+  transform: scale(1.04);
 }
 .ixir-xfer-use-grid h3 {
   margin: 0 0 8px;
-  color: #2c3345;
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
 .ixir-xfer-use-grid p {
   margin: 0;
   color: #64748b;
-  font-size: 14px;
+  font-size: 14.5px;
   line-height: 1.6;
 }
 

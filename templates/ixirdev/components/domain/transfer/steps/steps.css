@@ -1,19 +1,19 @@
 .ixir-xfer-steps {
-  background: #f7f9fc;
-}
-.ixir-xfer-steps {
-  padding: 56px 0;
+  background: #f8fafc;
+  padding: 64px 0;
+  border-top: 1px solid #eef2f6;
+  border-bottom: 1px solid #eef2f6;
 }
 .ixir-xfer-lead {
   margin: 0 0 36px;
-  color: #8b93a3;
+  color: #64748b;
   font-size: 16px;
   text-align: center;
 }
 .ixir-xfer-step-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 40px;
+  gap: 32px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -21,19 +21,38 @@
 }
 .ixir-xfer-step-list li {
   position: relative;
-  padding: 28px 18px 22px;
+  padding: 32px 22px 26px;
   background: #fff;
-  border: 1px solid #e6eaf1;
-  border-radius: 16px;
+  border: 1px solid #eef2f6;
+  border-radius: 24px;
   text-align: center;
-  box-shadow: 0 10px 24px rgba(31, 45, 74, 0.04);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+.ixir-xfer-step-list li::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2563eb, #60a5fa, transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.ixir-xfer-step-list li:hover {
+  transform: translateY(-5px);
+  border-color: #bfdbfe;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08), 0 0 24px rgba(37, 99, 235, 0.06);
+}
+.ixir-xfer-step-list li:hover::before {
+  opacity: 1;
 }
 .ixir-xfer-step-arrow {
   position: absolute;
   top: 50%;
-  left: calc(100% + 20px);
+  left: calc(100% + 16px);
   z-index: 2;
-  color: #386ce0;
+  color: #2563eb;
   font-size: 20px;
   line-height: 1;
   transform: translate(-50%, -50%);
@@ -42,21 +61,29 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
-  margin-bottom: 14px;
-  border: 2px solid #386ce0;
-  border-radius: 50%;
-  color: #386ce0;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 14px;
+  color: #fff;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  background: #fff;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+  transition: transform 0.25s ease;
+}
+.ixir-xfer-step-list li:hover .ixir-xfer-step-no {
+  transform: scale(1.1);
 }
 .ixir-xfer-step-list h3 {
   margin: 0 0 8px;
-  color: #2c3345;
-  font-size: 16px;
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 17px;
   font-weight: 700;
+  line-height: 1.35;
 }
 .ixir-xfer-step-list p {
   margin: 0;
@@ -68,6 +95,7 @@
 @media (max-width: 1280px) {
   .ixir-xfer-step-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
   }
   .ixir-xfer-step-arrow {
     display: none;
@@ -76,7 +104,8 @@
 
 @media (max-width: 768px) {
   .ixir-xfer-step-list {
-    gap: 14px;
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
   .ixir-xfer-step-arrow {
     display: none;

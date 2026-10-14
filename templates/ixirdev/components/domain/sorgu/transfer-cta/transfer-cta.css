@@ -14,7 +14,8 @@
 }
 .ixir-domain-transfer-copy h2 {
   margin: 0 0 14px;
-  color: #2c3345;
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   text-align: left;
 }
 .ixir-domain-transfer-copy .site-heading::after {
@@ -22,10 +23,10 @@
   margin-right: auto;
 }
 .ixir-domain-transfer-copy p {
-  margin: 0 0 22px;
+  margin: 0 0 24px;
   max-width: 560px;
-  color: #5b6475;
-  font-size: 15px;
+  color: #64748b;
+  font-size: 15.5px;
   line-height: 1.65;
 }
 .ixir-domain-transfer-btn, #order-standard_cart.ixir-domain-page .ixir-domain-transfer-btn {
@@ -33,24 +34,25 @@
   align-items: center;
   justify-content: center;
   min-width: 140px;
-  height: 44px;
-  padding: 0 22px;
+  height: 46px;
+  padding: 0 24px;
   border: 0;
-  border-radius: 8px;
-  background: #386ce0 !important;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
   color: #fff !important;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none !important;
-  box-shadow: 0 8px 18px rgba(56, 108, 224, 0.28);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
   transform: translateY(0);
-  transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .ixir-domain-transfer-btn:hover, .ixir-domain-transfer-btn:focus, #order-standard_cart.ixir-domain-page .ixir-domain-transfer-btn:hover, #order-standard_cart.ixir-domain-page .ixir-domain-transfer-btn:focus {
-  background: #1e4bb8 !important;
+  background: #091322 !important;
   color: #fff !important;
-  transform: translateY(-1px);
-  box-shadow: 0 10px 22px rgba(30, 75, 184, 0.38);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(9, 19, 34, 0.35);
 }
 .ixir-domain-transfer-art {
   display: flex;
@@ -62,6 +64,7 @@
   width: 100%;
   max-width: 540px;
   height: auto;
+  filter: drop-shadow(0 20px 40px rgba(11, 37, 69, 0.15));
 }
 
 @media (max-width: 1024px) {
@@ -89,11 +92,15 @@
 }
 
 #order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(.ixir-whois-page) .ixir-domain-transfer {
-  background: #0b2545;
+  background: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 #order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(.ixir-whois-page) .ixir-domain-transfer-copy h2 {
   color: #fff;
 }
 #order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(.ixir-whois-page) .ixir-domain-transfer-copy p {
-  color: rgba(255, 255, 255, 0.78);
+  color: #94a3b8;
 }

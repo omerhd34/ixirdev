@@ -5,8 +5,8 @@
      <p>Domain tescil ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
     </header>
     <div class="ixir-wh-faq-list">
-     <div class="ixir-wh-faq-item">
-      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+     <div class="ixir-wh-faq-item is-open">
+      <button type="button" class="ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
         aria-hidden="true"></i>Domain tescili hemen gerçekleşiyor mu?</button>
       <div class="ixir-wh-faq-a">
        <p>Domain'iniz ödemenizin ardından <strong>anında tescil</strong> edilecektir.</p>

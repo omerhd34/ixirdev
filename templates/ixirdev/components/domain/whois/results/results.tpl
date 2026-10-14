@@ -145,34 +145,73 @@
 
   <div class="ixir-whois-guide ixir-slide ixir-slide--right is-slide-on" id="ixir-whois-guide">
    <div class="ixir-whois-intro">
+    <div class="ixir-whois-badge">
+     <span class="ixir-whois-badge-dot"></span>
+     <span>ALAN ADI REHBERİ</span>
+    </div>
     {include file="$template/components/Heading.tpl" title="Ücretsiz Whois Sorgulama"}
-    <p>Domain'inin sahibini merak ediyor veya sahibi ile iletişime geçmek istiyorsanız, hemen bir domain
-     sorgulayabilir ve sonuçlara göz atabilirsiniz.</p>
+    <p>Bir alan adının sahibini merak ediyor veya iletişime geçmek istiyorsanız, hemen Whois sorgulaması yaparak güncel ve detaylı sahiplik bilgilerine anında ulaşabilirsiniz.</p>
    </div>
+
    <div class="ixir-whois-cols">
-    <article class="ixir-whois-col">
-     <div class="ixir-whois-col-head">
-      <span class="ixir-whois-col-icon" aria-hidden="true"><i class="far fa-eye"></i></span>
+    <article class="ixir-whois-col ixir-whois-col--lookup">
+     <div class="ixir-whois-col-header">
+      <div class="ixir-whois-col-icon-wrap">
+       <span class="ixir-whois-col-icon" aria-hidden="true"><i class="fas fa-search-location"></i></span>
+      </div>
+      <span class="ixir-whois-col-tag"><i class="fas fa-info-circle" aria-hidden="true"></i> Sahiplik &amp; Kayıt</span>
+     </div>
+     <div class="ixir-whois-col-body">
       <h3>Whois Sorgulama Neden Yapılır?</h3>
+      <p>Whois, tescil edilmiş bir alan adının kime ait olduğunu, tescil ve bitiş tarihlerini listeleyen resmi kayıt dizinidir.</p>
+      <ul class="ixir-whois-points">
+       <li>
+        <span class="ixir-whois-point-check" aria-hidden="true"><i class="fas fa-check"></i></span>
+        <span>Alan adının kime ve hangi kuruluşa ait olduğunu anında görüntüleyin.</span>
+       </li>
+       <li>
+        <span class="ixir-whois-point-check" aria-hidden="true"><i class="fas fa-check"></i></span>
+        <span>Yönetici, teknik veya idari iletişim kanallarıyla güvenle irtibat kurun.</span>
+       </li>
+       <li>
+        <span class="ixir-whois-point-check" aria-hidden="true"><i class="fas fa-check"></i></span>
+        <span>Kayıt firmasını (registrar), DNS sunucularını ve bitiş tarihlerini öğrenin.</span>
+       </li>
+      </ul>
      </div>
-     <p>Whois, kayıtlı bir domain'inin sahiplik kaydıdır. Sorgulama ile bu kayda bakılır.</p>
-     <ul class="ixir-whois-points">
-      <li>Domain'inin kime ait olduğu görülür.</li>
-      <li>Sahibiyle iletişime geçilebilir.</li>
-      <li>Kaydı yapan firma (registrar) öğrenilir.</li>
-     </ul>
+     <div class="ixir-whois-col-footer">
+      <span class="ixir-whois-col-pill"><i class="fas fa-bolt" aria-hidden="true"></i> Anlık ve Güncel ICANN Verileri</span>
+     </div>
     </article>
-    <article class="ixir-whois-col">
-     <div class="ixir-whois-col-head">
-      <span class="ixir-whois-col-icon ixir-whois-col-icon--lock" aria-hidden="true"><i class="fas fa-lock"></i></span>
-      <h3>Whois Gizleme Neden Gereklidir?</h3>
+
+    <article class="ixir-whois-col ixir-whois-col--privacy">
+     <div class="ixir-whois-col-header">
+      <div class="ixir-whois-col-icon-wrap">
+       <span class="ixir-whois-col-icon ixir-whois-col-icon--lock" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
+      </div>
+      <span class="ixir-whois-col-tag"><i class="fas fa-lock" aria-hidden="true"></i> Gizlilik &amp; Koruma</span>
      </div>
-     <p>Sahiplik bilgilerinizin herkese açık görünmesini istemiyorsanız gizlemeyi açabilirsiniz.</p>
-     <ul class="ixir-whois-points">
-      <li>Ad, e-posta ve telefon bilgileri gizlenir.</li>
-      <li>Spam ve dolandırıcılık amaçlı iletiler azalır.</li>
-      <li>Müşteri panelinden anında açılıp kapatılır.</li>
-     </ul>
+     <div class="ixir-whois-col-body">
+      <h3>Whois Gizleme Neden Gereklidir?</h3>
+      <p>Kişisel ve kurumsal iletişim bilgilerinizin herkese açık görünmesini engelleyerek tam veri güvenliği sağlayın.</p>
+      <ul class="ixir-whois-points">
+       <li>
+        <span class="ixir-whois-point-check" aria-hidden="true"><i class="fas fa-check"></i></span>
+        <span>Ad, soyad, telefon ve adres gibi kişisel verilerinizi gizleyin.</span>
+       </li>
+       <li>
+        <span class="ixir-whois-point-check" aria-hidden="true"><i class="fas fa-check"></i></span>
+        <span>İstenmeyen spam e-postaları, sahte aramaları ve dolandırıcılığı önleyin.</span>
+       </li>
+       <li>
+        <span class="ixir-whois-point-check" aria-hidden="true"><i class="fas fa-check"></i></span>
+        <span>İxirhost müşteri panelinizden dilediğiniz an tek tıkla açıp kapatın.</span>
+       </li>
+      </ul>
+     </div>
+     <div class="ixir-whois-col-footer">
+      <span class="ixir-whois-col-pill"><i class="fas fa-check-circle" aria-hidden="true"></i> Tüm Alan Adlarında %100 Ücretsiz</span>
+     </div>
     </article>
    </div>
   </div>
