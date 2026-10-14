@@ -1,39 +1,139 @@
 .ixir-wh-plans.ixir-cs-pro {
-  padding: 56px 0;
-  background: radial-gradient( ellipse 70% 42% at 50% -8%, rgba(59, 120, 231, 0.22), transparent 62% ), #0b2545;
+  position: relative;
+  padding: 85px 0 95px;
+  background-color: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
 }
+
+.ixir-wh-plans.ixir-cs-pro::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 960px;
+  height: 520px;
+  background: radial-gradient(ellipse at center, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ixir-cs-pro .container {
+  position: relative;
+  z-index: 1;
+}
+
 .ixir-cs-pro .ixir-wh-plans-head {
   max-width: 860px;
-  margin-bottom: 20px;
+  margin: 0 auto 36px;
+  position: relative;
+  z-index: 1;
 }
-.ixir-cs-pro .ixir-wh-plans-head h2 {
-  color: #fff;
+
+.ixir-cs-pro .ixir-wh-plans-head h2,
+.ixir-cs-pro .ixir-wh-plans-head .site-heading {
+  color: #fff !important;
+  font-family: "Space Grotesk", "Roboto", sans-serif !important;
+  letter-spacing: -0.02em;
 }
+
 .ixir-cs-pro .ixir-wh-plans-head p {
   color: rgba(255, 255, 255, 0.78);
-  font-size: 15.5px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ixir-cs-pro .ixir-wh-plan {
+  border-color: rgba(59, 130, 246, 0.22);
+  background: rgba(13, 27, 49, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  overflow: visible !important;
+}
+
+.ixir-cs-pro .ixir-wh-plan--best {
+  overflow: visible !important;
+}
+
+.ixir-cs-pro .ixir-wh-badge {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.5), 0 0 12px rgba(59, 130, 246, 0.35);
+}
+
+.ixir-cs-pro .ixir-wh-plan-head h3 {
+  color: #ffffff;
+}
+
+.ixir-cs-pro .ixir-wh-plan-head p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ixir-cs-pro .ixir-wh-amount {
+  color: #ffffff;
+}
+
+.ixir-cs-pro .ixir-wh-amount b {
+  color: #ffffff;
+}
+
+.ixir-cs-pro .ixir-wh-amount small {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.ixir-cs-pro .ixir-wh-specs li {
+  border-top-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.ixir-cs-pro .ixir-wh-specs b {
+  color: #ffffff;
+}
+
+.ixir-cs-pro .ixir-wh-plan:hover {
+  border-color: rgba(59, 130, 246, 0.45);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5), 0 0 25px rgba(59, 130, 246, 0.15);
+  background: rgba(15, 31, 56, 0.88);
+}
+
+.ixir-cs-pro .ixir-wh-plan--best {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 1px #3b82f6, 0 20px 45px rgba(0, 0, 0, 0.5), 0 0 30px rgba(59, 130, 246, 0.25);
+}
+
+.ixir-cs-pro .ixir-wh-shared-box {
+  border-color: rgba(59, 130, 246, 0.22);
+  background: rgba(13, 27, 49, 0.75);
+}
+
+.ixir-cs-pro .ixir-wh-shared-label {
+  color: #ffffff;
+}
+
+.ixir-cs-pro .ixir-wh-shared li {
+  background: rgba(15, 31, 56, 0.8);
+  border-color: rgba(59, 130, 246, 0.2);
+  color: #ffffff;
+}
+
+.ixir-cs-pro .ixir-wh-grid + .ixir-wh-slider-nav .ixir-wh-slider-dot {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ixir-cs-pro .ixir-wh-grid + .ixir-wh-slider-nav .ixir-wh-slider-dot.is-active {
+  background: #38bdf8;
 }
 
 @media (max-width: 768px) {
   .ixir-wh-plans.ixir-cs-pro {
-    padding: 40px 0;
+    padding: 60px 0 70px;
   }
-}
-
-.ixir-cs-pro .ixir-wh-plan {
-  border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
-}
-.ixir-cs-pro .ixir-wh-plan--best {
-  border-color: #fbd746;
-  box-shadow: 0 0 0 1px #fbd746, 0 18px 40px rgba(0, 0, 0, 0.3);
-}
-.ixir-cs-pro .ixir-wh-shared-box {
-  border-color: rgba(255, 255, 255, 0.1);
-}
-.ixir-cs-pro .ixir-wh-grid + .ixir-wh-slider-nav .ixir-wh-slider-dot {
-  background: rgba(255, 255, 255, 0.3);
-}
-.ixir-cs-pro .ixir-wh-grid + .ixir-wh-slider-nav .ixir-wh-slider-dot.is-active {
-  background: #fbd746;
 }

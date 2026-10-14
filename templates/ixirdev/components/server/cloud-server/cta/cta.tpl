@@ -1,9 +1,11 @@
 <section class="ixir-cs-cta ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-cs-cta-title">
  <div class="container">
   <div class="ixir-cs-cta-inner">
-   <div class="ixir-cs-cta-title">
+   <div class="ixir-cs-cta-icon-wrap">
     <span class="ixir-cs-cta-icon" aria-hidden="true"><i class="far fa-headset"></i></span>
-    {include file="$template/components/Heading.tpl" title="Hangi Paketi Seçeceğinize Karar Veremediniz mi?" id="ixir-cs-cta-title"}
+   </div>
+   <div class="ixir-cs-cta-title">
+    {include file="$template/components/Heading.tpl" title="Hangi Paketi Seçeceğinize Karar Veremediniz mi?" id="ixir-cs-cta-title" align="center"}
    </div>
    <p>Satış ekibimiz ihtiyaçlarınızı dinleyip size en uygun planı belirler.</p>
    <div class="ixir-cs-cta-actions">

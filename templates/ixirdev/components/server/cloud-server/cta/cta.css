@@ -1,127 +1,209 @@
 .ixir-cs-cta {
   position: relative;
-  padding: 56px 0;
+  scroll-margin-top: 130px;
+  padding: 85px 0;
+  background-color: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  color: #ffffff !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
-  background: radial-gradient( circle at 12% 20%, rgba(255, 255, 255, 0.14) 0%, transparent 38% ), radial-gradient( circle at 88% 90%, rgba(255, 255, 255, 0.1) 0%, transparent 42% ), linear-gradient(120deg, #1a56c4 0%, #386ce0 100%);
-  color: #fff;
 }
-.ixir-cs-cta::before, .ixir-cs-cta::after {
+
+.ixir-cs-cta::before {
   content: "";
   position: absolute;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 50%;
-  pointer-events: none;
-}
-.ixir-cs-cta::before {
   top: -120px;
-  left: -80px;
-  width: 320px;
-  height: 320px;
+  right: 10%;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
 }
+
 .ixir-cs-cta::after {
-  right: -100px;
-  bottom: -160px;
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: 5%;
   width: 400px;
   height: 400px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
 }
+
+.ixir-cs-cta .container {
+  position: relative;
+  z-index: 1;
+}
+
 .ixir-cs-cta-inner {
   position: relative;
   z-index: 1;
-  max-width: 900px;
+  max-width: 1080px;
   margin: 0 auto;
   text-align: center;
+  background: rgba(13, 27, 49, 0.75);
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  border-radius: 26px;
+  padding: 48px 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
-.ixir-cs-cta-title {
+
+.ixir-cs-cta-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #2563eb, #60a5fa, transparent);
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.ixir-cs-cta-inner:hover {
+  border-color: rgba(59, 130, 246, 0.45);
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.2);
+}
+
+.ixir-cs-cta-inner:hover::before {
+  left: 8%;
+  right: 8%;
+  opacity: 1;
+}
+
+.ixir-cs-cta-icon-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
 }
+
 .ixir-cs-cta-icon {
   display: inline-flex;
-  flex: 0 0 52px;
   align-items: center;
   justify-content: center;
-  width: 52px;
-  height: 52px;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.14);
-  box-shadow: 0 10px 24px rgba(11, 37, 69, 0.2);
-  font-size: 22px;
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #fff;
+  box-shadow: 0 10px 24px -4px rgba(37, 99, 235, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  font-size: 24px;
 }
-.ixir-cs-cta h2 {
-  margin: 0;
-  text-align: left;
+
+.ixir-cs-cta-title {
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.ixir-cs-cta h2,
+.ixir-cs-cta .site-heading {
+  margin: 0 auto;
+  text-align: center;
   color: #fff;
   font-family: "Space Grotesk", "Roboto", sans-serif;
+  font-size: clamp(22px, 2.4vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
+
+.ixir-cs-cta-title .site-heading::after {
+  margin: 16px auto 0;
+}
+
 .ixir-cs-cta-inner > p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 15.5px;
-  line-height: 1.6;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 16px;
+  line-height: 1.65;
+  max-width: 680px;
+  margin-inline: auto;
 }
+
 .ixir-cs-cta-actions {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
-  margin-top: 26px;
+  gap: 14px;
+  margin-top: 30px;
 }
+
 .ixir-cs-cta-btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  height: 52px;
-  padding: 0 26px;
-  border: 1px solid transparent;
+  height: 50px;
+  padding: 0 28px;
   border-radius: 12px;
-  font-size: 16px;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  font-size: 15.5px;
   font-weight: 700;
   line-height: 1;
-  text-decoration: none;
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  text-decoration: none !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .ixir-cs-cta-btn i {
-  font-size: 17px;
+  font-size: 16px;
+  transition: transform 0.25s ease;
 }
+
 .ixir-cs-cta-btn--primary {
-  background: #fff;
-  box-shadow: 0 12px 28px rgba(11, 37, 69, 0.25);
-  color: #1a56c4;
-  font-family: "Space Grotesk", "Roboto", sans-serif;
-  letter-spacing: 0.01em;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 25px -4px rgba(37, 99, 235, 0.5);
+  color: #fff !important;
 }
-.ixir-cs-cta-btn--primary:hover, .ixir-cs-cta-btn--primary:focus {
-  background: #fbd746;
-  color: #0b2545;
-  text-decoration: none;
+
+.ixir-cs-cta-btn--primary:hover,
+.ixir-cs-cta-btn--primary:focus {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  box-shadow: 0 14px 30px -4px rgba(37, 99, 235, 0.65);
+  color: #fff !important;
   transform: translateY(-2px);
 }
+
+.ixir-cs-cta-btn--primary:hover i {
+  transform: translateX(3px);
+}
+
 .ixir-cs-cta-btn--ghost {
-  border-color: rgba(255, 255, 255, 0.45);
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  background: rgba(59, 130, 246, 0.12);
+  color: #60a5fa !important;
 }
-.ixir-cs-cta-btn--ghost:hover, .ixir-cs-cta-btn--ghost:focus {
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.18);
-  color: #fff;
-  text-decoration: none;
+
+.ixir-cs-cta-btn--ghost:hover,
+.ixir-cs-cta-btn--ghost:focus {
+  border-color: rgba(59, 130, 246, 0.6);
+  background: rgba(59, 130, 246, 0.22);
+  color: #93c5fd !important;
   transform: translateY(-2px);
 }
+
 .ixir-cs-cta-inner > .ixir-cs-cta-hours {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 28px;
-  color: rgba(255, 255, 255, 0.8);
+  margin-top: 26px;
+  color: rgba(255, 255, 255, 0.72);
   font-size: 13.5px;
   line-height: 1.4;
 }
+
 .ixir-cs-cta-hours::before {
   content: "";
   display: block;
@@ -129,50 +211,33 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #4ade80;
-  box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.6);
-  animation: ixirCsCtaPulse 2s ease-out infinite;
-}
-
-@keyframes ixirCsCtaPulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.6);
-  }
-
-  70% {
-    box-shadow: 0 0 0 8px rgba(74, 222, 128, 0);
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .ixir-cs-cta-hours::before {
-    animation: none;
-  }
-  .ixir-cs-cta-btn:hover, .ixir-cs-cta-btn:focus {
-    transform: none;
-  }
+  background: #38bdf8;
+  box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7);
+  animation: pciCtaPulse 2s infinite;
 }
 
 @media (max-width: 768px) {
   .ixir-cs-cta {
-    padding: 40px 0;
+    padding: 60px 0;
+  }
+  .ixir-cs-cta-inner {
+    padding: 32px 20px;
+    border-radius: 20px;
+  }
+  .ixir-cs-cta-icon-wrap {
+    margin-bottom: 18px;
   }
   .ixir-cs-cta-title {
-    gap: 12px;
+    margin-bottom: 18px;
+    text-align: center;
   }
-  .ixir-cs-cta-icon {
-    flex-basis: 42px;
-    width: 42px;
-    height: 42px;
-    border-radius: 12px;
-    font-size: 18px;
+  .ixir-cs-cta h2,
+  .ixir-cs-cta .site-heading {
+    text-align: center;
+    font-size: 22px;
   }
   .ixir-cs-cta-btn {
-    flex: 1 1 100%;
+    width: 100%;
     justify-content: center;
   }
 }
