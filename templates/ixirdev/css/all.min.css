@@ -8453,7 +8453,7 @@ button.close {
   box-shadow: 0 0 1px 0 #888;
   background-image: url(../img/flags.png);
   background-repeat: no-repeat;
-  background-color: #dbdbdb;
+  background-color: transparent;
   background-position: 20px 0;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
