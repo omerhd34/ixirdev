@@ -1,6 +1,8 @@
 .ixir-wh-about {
   padding: 64px 0 72px;
-  background: #f6f7f9;
+  background-color: #f0f6ff !important;
+  border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
 }
 .ixir-wh-about.is-armed {
   overflow-x: clip;
