@@ -53,5 +53,47 @@
    reveal('.ixir-wh-software', '.ixir-wh-software-card', 1100, 0.15);
    reveal('.ixir-wh-faq', '.ixir-wh-plans-head, .ixir-wh-faq-item', 1300, 0.15);
   })();
+
+  (function() {
+    function scrollToCta(e) {
+      var href = this.getAttribute('href');
+      var isTarget = (href && (href === '#ixir-pci-cta-title' || href === '#ixir-pci-cta' || href.indexOf('#ixir-pci-cta') !== -1)) || this.classList.contains('pci-aud-footer-btn');
+      if (!isTarget) return;
+
+      var targetSection = document.getElementById('ixir-pci-cta') || document.querySelector('.ixir-pci-cta');
+      if (!targetSection) return;
+
+      e.preventDefault();
+
+      var navSpacer = document.querySelector('.ixir-header-spacer') || document.querySelector('.ixir-header');
+      var navHeight = navSpacer ? navSpacer.offsetHeight : 113;
+      var visibleHeight = window.innerHeight - navHeight;
+      var rect = targetSection.getBoundingClientRect();
+      var sectionHeight = rect.height || targetSection.offsetHeight;
+
+      var topOffset;
+      if (sectionHeight < visibleHeight) {
+        topOffset = navHeight + ((visibleHeight - sectionHeight) / 2);
+      } else {
+        topOffset = navHeight + 20;
+      }
+
+      var targetY = window.pageYOffset + rect.top - topOffset;
+
+      window.scrollTo({
+        top: Math.max(0, Math.round(targetY)),
+        behavior: 'smooth'
+      });
+
+      if (window.history && window.history.pushState) {
+        window.history.pushState(null, '', href || '#ixir-pci-cta-title');
+      }
+    }
+
+    var links = document.querySelectorAll('a[href*="#ixir-pci-cta"], .pci-aud-footer-btn');
+    Array.prototype.forEach.call(links, function(link) {
+      link.addEventListener('click', scrollToCta);
+    });
+  })();
  {/literal}
 </script>

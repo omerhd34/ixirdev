@@ -1,5 +1,7 @@
-.ixir-pci-cta {
+.ixir-pci-cta,
+#ixir-pci-cta {
   position: relative;
+  scroll-margin-top: 130px;
   padding: 80px 0;
   background-color: #091322 !important;
   background-image: radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
@@ -89,7 +91,8 @@
   }
 }
 
-.pci-cta-title {
+.pci-cta-title,
+#ixir-pci-cta-title {
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: 38px;
   font-weight: 800;
@@ -97,6 +100,7 @@
   color: #ffffff;
   margin: 0 0 20px;
   letter-spacing: -0.025em;
+  scroll-margin-top: 260px;
 }
 
 .pci-cta-title-highlight {
@@ -215,10 +219,29 @@
   flex-direction: column;
 }
 
+#pciGroupName {
+  z-index: 5;
+}
+
+#pciGroupPhone,
+.pci-input-group--phone {
+  position: relative;
+  z-index: 50 !important;
+}
+
+#pciGroupPhone:focus-within,
+.pci-input-group--phone:focus-within {
+  z-index: 120 !important;
+}
+
+#pciGroupEmail {
+  z-index: 3;
+}
+
 .pci-input-icon {
   position: absolute;
   left: 18px;
-  top: 50%;
+  top: 26px;
   transform: translateY(-50%);
   color: rgba(255, 255, 255, 0.4);
   font-size: 15px;
@@ -352,7 +375,97 @@
   margin: 0;
 }
 
+/* Error Alert Box */
+.pci-form-alert.pci-form-alert--error {
+  background: rgba(239, 68, 68, 0.15) !important;
+  border-color: rgba(239, 68, 68, 0.35) !important;
+}
+
+.pci-form-alert-icon.pci-form-alert-icon--error {
+  background: rgba(239, 68, 68, 0.2) !important;
+  color: #f87171 !important;
+}
+
+.pci-alert-retry-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 8px 18px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pci-alert-retry-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-1px);
+}
+
+.pci-input-group.has-error .pci-form-input {
+  border-color: rgba(248, 113, 113, 0.85) !important;
+  background: rgba(30, 16, 26, 0.85) !important;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+}
+
+.pci-input-group.has-error .pci-form-input::placeholder,
+.pci-input-group.has-error .pci-form-input::-webkit-input-placeholder,
+.pci-input-group.has-error .pci-form-input::-moz-placeholder,
+.pci-input-group.has-error .pci-form-input:-ms-input-placeholder {
+  color: #f87171 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+}
+
+.pci-input-group.has-error .pci-form-input:focus {
+  border-color: #3b82f6 !important;
+  background: rgba(10, 18, 32, 0.95) !important;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.22) !important;
+}
+
+.pci-input-group.has-error .pci-input-icon {
+  color: #f87171 !important;
+}
+
+.pci-input-group.has-error .intl-tel-input .selected-flag {
+  border-right-color: rgba(248, 113, 113, 0.45) !important;
+}
+
+.pci-input-group.is-shaking .pci-form-input,
+.pci-input-group.is-shaking .intl-tel-input {
+  animation: pciFieldShake 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes pciFieldShake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  15%, 45%, 75% {
+    transform: translateX(-5px);
+  }
+  30%, 60%, 90% {
+    transform: translateX(5px);
+  }
+}
+
+
+
 @media (max-width: 1024px) {
+  .ixir-pci-cta,
+  #ixir-pci-cta {
+    scroll-margin-top: 110px;
+  }
+  .pci-cta-title,
+  #ixir-pci-cta-title {
+    scroll-margin-top: 220px;
+  }
   .pci-cta-grid {
     gap: 36px;
   }
@@ -365,6 +478,14 @@
 }
 
 @media (max-width: 860px) {
+  .ixir-pci-cta,
+  #ixir-pci-cta {
+    scroll-margin-top: 90px;
+  }
+  .pci-cta-title,
+  #ixir-pci-cta-title {
+    scroll-margin-top: 180px;
+  }
   .ixir-pci-cta {
     padding: 60px 0;
   }
@@ -396,12 +517,22 @@
 /* intl-tel-input styling inside pci-cta */
 .pci-input-group--phone {
   position: relative;
+  z-index: 50 !important;
+}
+
+.pci-input-group--phone:focus-within {
+  z-index: 120 !important;
 }
 
 .ixir-pci-cta .intl-tel-input {
   width: 100% !important;
   display: block !important;
   position: relative !important;
+  z-index: 50 !important;
+}
+
+.ixir-pci-cta .intl-tel-input:focus-within {
+  z-index: 120 !important;
 }
 
 .ixir-pci-cta .intl-tel-input .flag-container {
@@ -437,8 +568,8 @@
   transform: translateY(-50%) !important;
   margin: 0 !important;
   width: 20px !important;
-  height: 14px !important;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5) !important;
+  background-color: transparent !important;
 }
 
 .ixir-pci-cta .intl-tel-input .selected-flag .selected-dial-code {
@@ -492,7 +623,7 @@
   z-index: 9999 !important;
   padding: 8px 0 !important;
   margin-top: 6px !important;
-  width: 340px !important;
+  width: 360px !important;
   max-width: 95vw !important;
   text-align: left !important;
 }
@@ -514,7 +645,7 @@
   align-items: center !important;
   justify-content: center !important;
   width: 20px !important;
-  height: 14px !important;
+  height: 15px !important;
   min-width: 20px !important;
   flex-shrink: 0 !important;
   margin: 0 !important;
@@ -532,22 +663,28 @@
   transform: none !important;
   display: block !important;
   width: 20px !important;
-  height: 14px !important;
   margin: 0 !important;
   flex-shrink: 0 !important;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5) !important;
+  background-color: transparent !important;
 }
 
 .ixir-pci-cta .intl-tel-input .country-list .country .country-name {
   color: #ffffff !important;
   font-weight: 500 !important;
   margin-right: 6px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
 }
 
 .ixir-pci-cta .intl-tel-input .country-list .country .dial-code {
   color: #60a5fa !important;
   font-weight: 600 !important;
   margin-left: auto !important;
+  flex-shrink: 0 !important;
 }
 
 .ixir-pci-cta .intl-tel-input .country-list .country:hover,
