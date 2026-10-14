@@ -16,6 +16,7 @@
    <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
    {include file="$template/components/Heading.tpl" title="PCI - DSS Tarama Nedir?" id="ixir-cs-story-title"}
    <p>Online alışverişin her geçen gün giderek arttığı günümüzde, <strong>PCI - DSS Tarama</strong> işlemi giderek önemli ve gerekli bir hale gelmiştir. Bu hizmet, sanal pos sağlanan internet sitelerinin sunucu ve yazılım güvenliğini kontrol eden, gerekli düzenlemelerin yapılmasını şart koyan bir güvenlik standartıdır. Burada amaç kullanıcının veri güvenliğinin sağlanmasıdır. Bu standart <strong>VISA, Mastercard, American Express, Discover Financial Services</strong> gibi kuruluşlar tarafından belirlenmiştir. Ülkemizde de çeşitli banka ve finans kuruluşları bu standartın sağlanmasını talep etmektelerdir.</p>
+   <a class="ixir-wh-story-cta" href="#ixir-pci-cta">Hemen Satın Al</a>
   </div>
  </div>
 </section>
