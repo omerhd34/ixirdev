@@ -179,8 +179,8 @@
        aria-hidden="true"></i></a>
     </article>
     <article class="ixir-wh-plan ixir-wh-plan--best">
+     <span class="ixir-wh-badge">Büyük Ölçekli</span>
      <header class="ixir-wh-plan-head">
-      <span class="ixir-wh-badge">Büyük Ölçekli</span>
       <h3>Expert</h3>
       <p>Kurumsal & Geniş Portföylü Ajanslar</p>
      </header>

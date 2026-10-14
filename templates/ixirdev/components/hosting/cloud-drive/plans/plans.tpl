@@ -37,8 +37,8 @@
     </ul>
    </article>
    <article class="ixir-wh-plan ixir-wh-plan--best">
+    <span class="ixir-wh-badge">En İyi Tercih</span>
     <header class="ixir-wh-plan-head">
-     <span class="ixir-wh-badge">En İyi Tercih</span>
      <h3>Thunderstrom</h3>
      <p>100 GB disk alanı ve sınırsız trafik.</p>
     </header>

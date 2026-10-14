@@ -1,4 +1,4 @@
-<section class="ixir-wh-guide ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting rehberi">
+<section class="ixir-wh-guide ixir-wh-guide--dark bg-koyu-mavi ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting rehberi">
  <script>
   {literal}
    (function() {
@@ -79,6 +79,8 @@
     Array.prototype.forEach.call(items, function(item) {
      if (item === except) return;
      item.classList.remove('is-open');
+     var plan = item.closest ? item.closest('.ixir-wh-plan') : null;
+     if (plan) plan.classList.remove('is-billing-open');
      var btn = item.querySelector('.ixir-wh-billing-btn');
      if (btn) btn.setAttribute('aria-expanded', 'false');
     });
@@ -88,18 +90,22 @@
     var btn = item.querySelector('.ixir-wh-billing-btn');
     var closeBtn = item.querySelector('.ixir-wh-billing-close');
     var pop = item.querySelector('.ixir-wh-billing-pop');
+    var plan = item.closest ? item.closest('.ixir-wh-plan') : null;
     if (!btn) return;
     btn.addEventListener('click', function(event) {
      event.stopPropagation();
      var open = item.classList.contains('is-open');
      closeAll(open ? null : item);
-     item.classList.toggle('is-open', !open);
-     btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+     var willOpen = !open;
+     item.classList.toggle('is-open', willOpen);
+     if (plan) plan.classList.toggle('is-billing-open', willOpen);
+     btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
     });
     if (closeBtn) {
      closeBtn.addEventListener('click', function(event) {
       event.stopPropagation();
       item.classList.remove('is-open');
+      if (plan) plan.classList.remove('is-billing-open');
       btn.setAttribute('aria-expanded', 'false');
       btn.focus();
      });

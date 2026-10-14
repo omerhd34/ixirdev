@@ -1,4 +1,4 @@
- <section class="ixir-wh-compare ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-compare"
+ <section class="ixir-wh-compare ixir-wh-compare--dark bg-koyu-mavi ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-compare"
   aria-labelledby="ixir-wh-compare-title">
   <script>
    {literal}

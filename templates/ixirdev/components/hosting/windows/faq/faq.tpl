@@ -1,23 +1,12 @@
- <section class="ixir-wh-faq ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-wh-faq-title">
-  <script>
-   {literal}
-    (function() {
-     var root = document.querySelector('.ixir-wh-faq');
-     if (!root || !window.IntersectionObserver) return;
-     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
-     root.classList.add('is-armed');
-    })();
-   {/literal}
-  </script>
+ <section class="ixir-wh-faq ixir-wh-faq--light bg-acik-mavi ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-wh-faq-title">
   <div class="container">
    <header class="ixir-wh-plans-head">
     {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-wh-faq-title"}
     <p>Windows Hosting paketlerimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
    </header>
    <div class="ixir-wh-faq-list">
-    <div class="ixir-wh-faq-item">
-     <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+    <div class="ixir-wh-faq-item is-open">
+     <button type="button" class="ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
        aria-hidden="true"></i>Windows Hosting ile Linux Hosting arasındaki temel fark nedir?</button>
      <div class="ixir-wh-faq-a">
       <p><strong>Windows Hosting</strong>, Microsoft teknolojileriyle geliştirilmiş projeleri barındırmak için
