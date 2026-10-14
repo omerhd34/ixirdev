@@ -1,0 +1,249 @@
+<section class="ixir-wh-plans ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-plans"
+ aria-labelledby="ixir-wh-plans-title">
+ <script>
+  {literal}
+   (function() {
+    var root = document.getElementById('ixir-wh-plans');
+    if (!root || !window.IntersectionObserver) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
+    root.classList.add('is-armed');
+   })();
+  {/literal}
+ </script>
+ <div class="container">
+  <header class="ixir-wh-plans-head">
+   {include file="$template/components/Heading.tpl" title="Kurumsal Mail Server Paketleri" id="ixir-wh-plans-title"}
+   <p>İhtiyacınıza uygun paketi seçin.</p>
+  </header>
+  <div class="ixir-wh-grid">
+   <article class="ixir-wh-plan">
+    <header class="ixir-wh-plan-head">
+     <h3>Budget MailServer</h3>
+    </header>
+    <div class="ixir-wh-price">
+     <s>2541 TL</s>
+     <div class="ixir-wh-amount"><b>1777</b><span>,98</span><small>TL<small>/ay</small></small></div>
+     <span class="ixir-wh-save">%30 tasarruf</span>
+    </div>
+    <div class="ixir-wh-billing">
+     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-budget">Ödeme
+      Planları</button>
+     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-budget" role="dialog" aria-label="Budget Plan ödeme planı">
+      <div class="ixir-wh-billing-top">
+       <strong>Budget MailServer</strong>
+       <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
+      </div>
+      <table>
+       <thead>
+        <tr>
+         <th>Periyot</th>
+         <th>Aylık</th>
+         <th>Toplam</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>1 Aylık</td>
+         <td>2310,10 TL</td>
+         <td>27721,20 TL</td>
+        </tr>
+        <tr class="is-best">
+         <td>1 Yıllık</td>
+         <td>1777,98 TL</td>
+         <td>21335,80 TL</td>
+        </tr>
+       </tbody>
+      </table>
+      <p>* En avantajlı fiyat</p>
+     </div>
+    </div>
+    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <div class="ixir-wh-quota">
+     <div><i class="fas fa-hdd" aria-hidden="true"></i><span>CPU</span><b>2 Core</b></div>
+     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>RAM(GB)</span><b>4</b></div>
+     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>Disk Alanı(GB)</span><b>200</b></div>
+    </div>
+   </article>
+   <article class="ixir-wh-plan ixir-wh-plan--best">
+    <span class="ixir-wh-badge">En İyi Tercih</span>
+    <header class="ixir-wh-plan-head">
+     <h3>Economy MailServer</h3>
+    </header>
+    <div class="ixir-wh-price">
+     <s>3085 TL</s>
+     <div class="ixir-wh-amount"><b>2158</b><span>,98</span><small>TL<small>/ay</small></small></div>
+     <span class="ixir-wh-save">%30 tasarruf</span>
+    </div>
+    <div class="ixir-wh-billing">
+     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
+      aria-controls="ixir-wh-bill-essential">Ödeme
+      Planları</button>
+     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-essential" role="dialog" aria-label="Economy MailServer ödeme planı">
+      <div class="ixir-wh-billing-top">
+       <strong>Economy MailServer</strong>
+       <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
+      </div>
+      <table>
+       <thead>
+        <tr>
+         <th>Periyot</th>
+         <th>Aylık</th>
+         <th>Toplam</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>1 Aylık</td>
+         <td>2508,40 TL</td>
+         <td>33664,80 TL</td>
+        </tr>
+        <tr class="is-best">
+         <td>1 Yıllık</td>
+         <td>2158,98 TL</td>
+         <td>25907,80 TL</td>
+        </tr>
+       </tbody>
+      </table>
+      <p>* En avantajlı fiyat</p>
+     </div>
+    </div>
+    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <div class="ixir-wh-quota">
+     <div><i class="fas fa-hdd" aria-hidden="true"></i><span>CPU</span><b>4 Core</b></div>
+     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>RAM(GB)</span><b>6</b></div>
+          <div><i class="fas fa-envelope" aria-hidden="true"></i><span>Disk Alanı(GB)</span><b>400</b></div>
+
+    </div>
+   </article>
+   <article class="ixir-wh-plan">
+    <header class="ixir-wh-plan-head">
+     <h3>Professional MailServer</h3>
+    </header>
+    <div class="ixir-wh-price">
+     <s>4902 TL</s>
+     <div class="ixir-wh-amount"><b>3428</b><span>,98</span><small>TL<small>/ay</small></small></div>
+     <span class="ixir-wh-save">%30 tasarruf</span>
+    </div>
+    <div class="ixir-wh-billing">
+     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-economy">Ödeme
+      Planları</button>
+     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-economy" role="dialog" aria-label="Professional MailServer ödeme planı">
+      <div class="ixir-wh-billing-top">
+       <strong>Professional MailServer</strong>
+       <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
+      </div>
+      <table>
+       <thead>
+        <tr>
+         <th>Periyot</th>
+         <th>Aylık</th>
+         <th>Toplam</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>1 Aylık</td>
+         <td>4456,40 TL</td>
+         <td>53476,80 TL</td>
+        </tr>
+        <tr class="is-best">
+         <td>1 Yıllık</td>
+         <td>3428,98 TL</td>
+         <td>41147,80 TL</td>
+        </tr>
+       </tbody>
+      </table>
+      <p>* En avantajlı fiyat</p>
+     </div>
+    </div>
+    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <div class="ixir-wh-quota">
+     <div><i class="fas fa-hdd" aria-hidden="true"></i><span>CPU</span><b>6 Core</b></div>
+     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>RAM(GB)</span><b>8</b></div>
+     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>Disk Alanı(GB)</span><b>600</b></div>
+    </div>
+   </article>
+   <article class="ixir-wh-plan">
+    <header class="ixir-wh-plan-head">
+     <h3>Expert MailServer</h3>
+    </header>
+    <div class="ixir-wh-price">
+     <s>9079,07 TL</s>
+     <div class="ixir-wh-amount"><b>6349</b><span>,98</span><small>TL<small>/ay</small></small></div>
+     <span class="ixir-wh-save">%30 tasarruf</span>
+    </div>
+    <div class="ixir-wh-billing">
+     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
+      aria-controls="ixir-wh-bill-professional">Ödeme
+      Planları</button>
+     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-professional" role="dialog"
+      aria-label="Expert MailServer ödeme planı">
+      <div class="ixir-wh-billing-top">
+       <strong>Expert MailServer</strong>
+       <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
+      </div>
+      <table>
+       <thead>
+        <tr>
+         <th>Periyot</th>
+         <th>Aylık</th>
+         <th>Toplam</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>1 Aylık</td>
+         <td>8253,70 TL</td>
+         <td>99044,40 TL</td>
+        </tr>
+        <tr class="is-best">
+         <td>1 Yıllık</td>
+         <td>6349,98 TL</td>
+         <td>76199,80 TL</td>
+        </tr>
+       </tbody>
+      </table>
+      <p>* En avantajlı fiyat</p>
+     </div>
+    </div>
+    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <div class="ixir-wh-quota">
+     <div><i class="fas fa-hdd" aria-hidden="true"></i><span>CPU</span><b>8 Core</b></div>
+     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>RAM(GB)</span><b>16</b></div>
+     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>Disk Alanı(GB)</span><b>1000</b></div>
+    </div>
+   </article>
+  </div>
+  <div class="ixir-wh-shared-box">
+   <div class="ixir-wh-shared-head">
+    <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+    <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
+   </div>
+   <ul class="ixir-wh-shared ixir-wh-shared--5 ixir-wh-shared--click" id="ixir-km-shared" data-visible="10">
+    <li><i class="fab fa-linux" aria-hidden="true"></i>Sınırsız Domain Barındırma<span class="ixir-wh-tip"><button
+       type="button" class="ixir-wh-tip-btn" aria-label="Sınırsız Domain Barındırma açıklaması"><i class="fas fa-info-circle"
+        aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">İstediğiniz kadar domain ile mail oluşturun.</span></span></li>
+    <li><i class="fab fa-linux" aria-hidden="true"></i>%100 KVKK Uyumlu<span class="ixir-wh-tip"><button
+       type="button" class="ixir-wh-tip-btn" aria-label="%100 KVKK Uyumlu açıklaması"><i class="fas fa-info-circle"
+        aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Tüm yasal mevzuata tam uyumluluk</span></span></li>
+    <li><i class="fab fa-linux" aria-hidden="true"></i>Paylaşımlı Takvim<span class="ixir-wh-tip"><button
+       type="button" class="ixir-wh-tip-btn" aria-label="Paylaşımlı Takvim açıklaması"><i class="fas fa-info-circle"
+        aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Ekip iş birliği ve randevu yönetimi</span></span></li>
+    <li><i class="fab fa-linux" aria-hidden="true"></i>Gelişmiş Güvenlik<span class="ixir-wh-tip"><button
+       type="button" class="ixir-wh-tip-btn" aria-label="Gelişmiş Güvenlik açıklaması"><i class="fas fa-info-circle"
+        aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Anti-Spam ve Anti-Virüs koruması</span></span></li>
+    <li><i class="fab fa-linux" aria-hidden="true"></i>Dedicated IP<span class="ixir-wh-tip"><button
+       type="button" class="ixir-wh-tip-btn" aria-label="Dedicated IP açıklaması"><i class="fas fa-info-circle"
+        aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Size özel IP — mail itibarınız güvende</span></span></li>
+    <li><i class="fab fa-linux" aria-hidden="true"></i>DKIM / SPF / DMARC<span class="ixir-wh-tip"><button
+       type="button" class="ixir-wh-tip-btn" aria-label="DKIM / SPF / DMARC açıklaması"><i
+        class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">E-posta kimlik doğrulama kurulum dahil</span></span></li>
+     <li><i class="fab fa-linux" aria-hidden="true"></i>Sınırsız E-Posta Hesabı</li>
+    <li><i class="fab fa-linux" aria-hidden="true"></i>Sınırsız Gönderim Kotası</li>
+    <li><i class="fab fa-linux" aria-hidden="true"></i>POP/IMAP/SMTP</li>
+    <li><i class="fab fa-linux" aria-hidden="true"></i>Ücretsiz SSL Sertifikası</li>
+   </ul>
+  </div>
+ </div>
+</section>

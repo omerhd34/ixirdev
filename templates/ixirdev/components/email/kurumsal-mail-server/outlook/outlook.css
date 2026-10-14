@@ -1,0 +1,105 @@
+.ixir-km-outlook {
+  position: relative;
+  padding: 85px 0;
+  overflow: hidden;
+  background: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%) !important;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.ixir-km-outlook-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 56px;
+}
+.ixir-km-outlook-shot {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  background: rgba(13, 27, 49, 0.75);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+.ixir-km-outlook-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ixir-km-outlook-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 6px 16px;
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.15);
+  color: #60a5fa;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.ixir-km-outlook-copy h2 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+}
+.ixir-km-outlook-copy p {
+  margin: 0 0 14px;
+  color: #94a3b8;
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+.ixir-km-outlook-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.ixir-km-outlook-points li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: rgba(13, 27, 49, 0.75);
+  backdrop-filter: blur(10px);
+  color: #e2e8f0;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+.ixir-km-outlook-points li:hover {
+  border-color: rgba(96, 165, 250, 0.35);
+  transform: translateY(-2px);
+  color: #fff;
+}
+.ixir-km-outlook-points li i {
+  color: #60a5fa;
+  font-size: 13px;
+}
+
+@media (max-width: 992px) {
+  .ixir-km-outlook {
+    padding: 56px 0;
+  }
+  .ixir-km-outlook-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+  .ixir-km-outlook-shot {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
