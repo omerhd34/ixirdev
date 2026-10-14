@@ -7,20 +7,21 @@
     <style>
         .site-heading {
             margin-top: 0;
+            font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif !important;
             font-weight: 700;
-            letter-spacing: -0.03em;
-            line-height: 1.28;
-            font-size: 23px; 
+            letter-spacing: -0.025em;
+            line-height: 1.25;
+            font-size: 24px; 
         }
 
         .site-heading:not(.site-heading--no-line)::after {
             content: "";
             display: block;
-            width: 100px;
-            height: 3px;
+            width: 64px;
+            height: 3.5px;
             margin: 16px auto 0;
             border-radius: 99px;
-            background: #386ce0;
+            background: linear-gradient(90deg, #2563eb, #60a5fa);
         }
 
         .site-heading.site-heading--no-line::after {
