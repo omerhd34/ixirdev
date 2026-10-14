@@ -1,5 +1,9 @@
+{assign var="helpIsLight" value=false}
+{if $templatefile == 'homepage' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'dedicated-server' || $ixirDomainSearchPage || $ixirDomainTransferPage}
+ {assign var="helpIsLight" value=true}
+{/if}
 <section
- class="ixir-help{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || $ixirCorporate || $templatefile == 'kurumsal' || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri'))} ixir-slide ixir-slide--right is-slide-on{/if}"
+ class="ixir-help{if $helpIsLight} ixir-help--light bg-acik-mavi{else} bg-koyu-mavi{/if}{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || $ixirCorporate || $templatefile == 'kurumsal' || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri'))} ixir-slide ixir-slide--right is-slide-on{/if}"
  id="ixir-help" aria-label="Destek kanalları">
  <img class="ixir-help-visual" src="{$WEB_ROOT}/templates/{$template}/img/help/bg4.webp" alt="" width="1154"
   height="420" decoding="async" aria-hidden="true">

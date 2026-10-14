@@ -2569,3 +2569,109 @@ body.ixir-corporate-page {
   transition: none !important;
  }
 }
+
+.ixir-box {
+  border: 1px solid #eef2f6 !important;
+  border-radius: 24px !important;
+  background: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04) !important;
+}
+.ixir-box h3 {
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif !important;
+  color: #0b2545 !important;
+}
+.ixir-card {
+  position: relative !important;
+  overflow: hidden !important;
+  border: 1px solid #eef2f6 !important;
+  border-radius: 20px !important;
+  background: #ffffff !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.ixir-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2563eb, #60a5fa, transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.ixir-card:hover {
+  transform: translateY(-4px) !important;
+  border-color: #bfdbfe !important;
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08), 0 0 20px rgba(37, 99, 235, 0.05) !important;
+}
+.ixir-card:hover::before {
+  opacity: 1;
+}
+.ixir-card-icon {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 14px !important;
+  background: linear-gradient(145deg, #ffffff 0%, #f0f6ff 100%) !important;
+  border: 1.5px solid #dbeafe !important;
+  color: #2563eb !important;
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.08) !important;
+  transition: all 0.25s ease !important;
+}
+.ixir-card:hover .ixir-card-icon {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+}
+.ixir-about-stat {
+  position: relative !important;
+  overflow: hidden !important;
+  border: 1px solid #eef2f6 !important;
+  border-radius: 24px !important;
+  background: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.ixir-about-stat::before {
+  background: linear-gradient(90deg, #2563eb, #60a5fa) !important;
+  height: 2px !important;
+  border-radius: 0 !important;
+}
+.ixir-about-stat:hover {
+  transform: translateY(-5px) !important;
+  border-color: #bfdbfe !important;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08), 0 0 24px rgba(37, 99, 235, 0.06) !important;
+}
+.ixir-about-stat strong {
+  color: #2563eb !important;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif !important;
+}
+.ixir-about-stat-icon {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 16px !important;
+  background: linear-gradient(145deg, #ffffff 0%, #f0f6ff 100%) !important;
+  border: 1.5px solid #dbeafe !important;
+  color: #2563eb !important;
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.08) !important;
+}
+.ixir-about-stat:hover .ixir-about-stat-icon {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+}
+.ixir-corp-nav-item.is-active a,
+.ixir-corp-nav-item a[aria-current="page"] {
+  color: #2563eb !important;
+  background: #eff6ff !important;
+}
+.ixir-corp-nav-item.is-active .ixir-corp-nav-radio,
+.ixir-corp-nav-item a[aria-current="page"] .ixir-corp-nav-radio {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+}
+.ixir-corp-nav-item.is-active .ixir-corp-nav-radio::after,
+.ixir-corp-nav-item a[aria-current="page"] .ixir-corp-nav-radio::after {
+  background: #2563eb !important;
+}
+.ixir-corp-nav-item a:hover {
+  color: #2563eb !important;
+}
