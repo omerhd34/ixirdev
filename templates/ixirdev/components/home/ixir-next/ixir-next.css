@@ -1,118 +1,322 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&display=swap");
 
 .ixir-next {
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 85px 0 95px;
-  background: #ffffff;
-  border-top: 1px solid #eef2f6;
-  border-bottom: 1px solid #e2e8f0;
-  overflow-x: hidden;
+  padding: 95px 0 105px;
+  background-color: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.14) 0%, transparent 50%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  color: #ffffff !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
 .ixir-next::before {
   content: "";
   position: absolute;
-  top: -60px;
+  top: -100px;
   left: 50%;
   transform: translateX(-50%);
-  width: 900px;
-  height: 480px;
-  background: radial-gradient(ellipse at center, rgba(59, 120, 231, 0.07) 0%, rgba(255, 255, 255, 0) 70%);
+  width: 1000px;
+  height: 520px;
+  background: radial-gradient(ellipse at center, rgba(37, 99, 235, 0.14) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
 
 .ixir-next .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   min-width: 0;
 }
 
-.ixir-next-panel {
-  position: relative;
-  margin: 0 auto;
-  max-width: 1060px;
-  padding: 56px 52px;
-  background: #ffffff;
-  border: 1px solid #eef2f6;
-  border-radius: 28px;
-  box-shadow: 0 4px 24px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
-  color: #1a1f2e;
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.ixir-next-header {
   text-align: center;
+  max-width: 840px;
+  margin: 0 auto 52px;
+  padding: 0 12px;
+}
+
+.ixir-next-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #60a5fa !important;
+  background: #08111e !important;
+  border: 1px solid rgba(59, 130, 246, 0.38) !important;
+  border-radius: 999px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+.ixir-next-badge i {
+  font-size: 13px;
+  color: #f43f5e !important;
+  filter: drop-shadow(0 0 6px rgba(244, 63, 94, 0.5));
+}
+
+.ixir-next-badge span {
+  font-weight: 700;
+}
+
+.ixir-next-header .site-heading,
+.ixir-next-header h2 {
+  margin-top: 0 !important;
+  margin-bottom: 18px;
+  color: #ffffff !important;
+}
+
+.ixir-next-header .site-heading::after {
+  background: linear-gradient(90deg, #2563eb, #60a5fa) !important;
+}
+
+.ixir-next-lead {
+  font-size: 16.5px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0 auto;
+  max-width: 740px;
+}
+
+.ixir-next-lead strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   4-Pillar Grid
+   ========================================================================== */
+.ixir-next-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.ixir-next-card {
+  position: relative;
+  background: rgba(13, 27, 49, 0.75) !important;
+  border: 1px solid rgba(59, 130, 246, 0.22) !important;
+  border-radius: 22px;
+  padding: 34px 26px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   overflow: hidden;
 }
 
-.ixir-next-panel::before {
+.ixir-next-card::before {
   content: "";
   position: absolute;
   top: 0;
   left: 20%;
   right: 20%;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+  background: linear-gradient(90deg, transparent, #2563eb, #60a5fa, transparent);
   border-radius: 0 0 3px 3px;
   opacity: 0;
   transition: all 0.35s ease;
 }
 
-.ixir-next-panel:hover {
-  border-color: rgba(59, 120, 231, 0.35);
-  box-shadow: 0 22px 42px -10px rgba(59, 120, 231, 0.12);
-  transform: translateY(-4px);
+.ixir-next-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(59, 130, 246, 0.48) !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5), 0 0 25px rgba(59, 130, 246, 0.15);
+  background: rgba(15, 31, 56, 0.9) !important;
 }
 
-.ixir-next-panel:hover::before {
-  left: 10%;
-  right: 10%;
+.ixir-next-card:hover::before {
+  left: 8%;
+  right: 8%;
   opacity: 1;
 }
 
-.ixir-next-panel .pci-adv-badge {
+.ixir-next-icon-wrap {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 60%, #1e40af 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 22px -4px rgba(37, 99, 235, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  margin-bottom: 22px;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ixir-next-icon-wrap i {
+  font-size: 24px;
+  color: #ffffff;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.ixir-next-card:hover .ixir-next-icon-wrap {
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 14px 28px -4px rgba(37, 99, 235, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+.ixir-next-card-title {
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  transition: color 0.25s ease;
+}
+
+.ixir-next-card:hover .ixir-next-card-title {
+  color: #38bdf8;
+}
+
+.ixir-next-card-desc {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.65;
+  margin: 0 0 22px;
+  flex-grow: 1;
+}
+
+.ixir-next-card-desc strong {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+}
+
+.ixir-next-card-footer {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+}
+
+.ixir-next-tag {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 6px 16px;
-  font-size: 13px;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.25s ease;
+}
+
+.ixir-next-tag i {
+  color: #34d399;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.ixir-next-card:hover .ixir-next-tag {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #6ee7b7;
+}
+
+/* ==========================================================================
+   Banner / Reassurance & Action Bar
+   ========================================================================== */
+.ixir-next-banner {
+  background: rgba(13, 27, 49, 0.85);
+  border: 1px solid rgba(59, 130, 246, 0.28);
+  border-radius: 20px;
+  padding: 28px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: all 0.3s ease;
+}
+
+.ixir-next-banner:hover {
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.55), 0 0 25px rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.45);
+}
+
+.ixir-next-banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(180deg, #2563eb, #60a5fa);
+}
+
+.ixir-next-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex: 1;
+  min-width: 0;
+}
+
+.ixir-next-banner-icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: rgba(59, 130, 246, 0.18);
+  color: #60a5fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.ixir-next-banner-text h4 {
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 17.5px;
   font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #2563eb;
-  background: #eff6ff;
-  border: 1px solid #dbeafe;
-  border-radius: 999px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+  color: #ffffff;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
 }
 
-.ixir-next-panel h2,
-.ixir-next-panel .site-heading {
-  margin: 0 0 24px;
-  color: #0b2545;
-  font-family: "Space Grotesk", "Roboto", sans-serif !important;
-  letter-spacing: -0.02em;
+.ixir-next-banner-text p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.74);
+  margin: 0;
+  line-height: 1.6;
 }
 
-.ixir-next-panel p {
-  max-width: 860px;
-  margin: 0 auto 16px;
-  color: #475569;
-  font-size: 15.5px;
-  font-weight: 400;
-  line-height: 1.8;
-  text-align: left;
+.ixir-next-banner-text p strong {
+  color: #ffffff;
+  font-weight: 600;
 }
 
-.ixir-next-panel p strong {
-  color: #0f172a;
-  font-weight: 700;
-}
-
-.ixir-next-panel p:last-of-type {
-  margin-bottom: 0;
+.ixir-next-banner-action {
+  flex-shrink: 0;
 }
 
 .ixir-next-cta {
@@ -120,31 +324,32 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin: 32px 0 0;
-  padding: 0 32px;
-  height: 52px;
-  color: #fff !important;
+  padding: 0 30px;
+  height: 50px;
+  color: #ffffff !important;
   font-family: "Space Grotesk", "Roboto", sans-serif;
-  font-size: 15.5px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   text-decoration: none !important;
   background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-  border-radius: 14px;
-  box-shadow: 0 10px 25px -4px rgba(37, 99, 235, 0.5);
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 8px 24px -4px rgba(37, 99, 235, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .ixir-next-cta i {
-  font-size: 14px;
+  font-size: 13px;
   transition: transform 0.25s ease;
 }
 
 .ixir-next-cta:hover,
 .ixir-next-cta:focus {
-  color: #fff !important;
+  color: #ffffff !important;
   background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  box-shadow: 0 14px 30px -4px rgba(37, 99, 235, 0.65);
+  box-shadow: 0 12px 28px -4px rgba(37, 99, 235, 0.65);
   transform: translateY(-2px);
   outline: none;
 }
@@ -153,53 +358,78 @@
   transform: translateX(3px);
 }
 
-@media only screen and (max-width: 1024px) {
-  .ixir-next {
-    padding: 60px 0 70px;
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .ixir-next-card {
+    padding: 28px 20px 24px;
   }
-  .ixir-next-panel {
-    padding: 40px 28px;
+  .ixir-next-banner {
+    padding: 24px 28px;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .ixir-next-panel {
-    padding: 32px 20px;
-    border-radius: 20px;
+@media (max-width: 992px) {
+  .ixir-next {
+    padding: 75px 0 85px;
   }
-  .ixir-next-panel p {
-    font-size: 14.5px;
-    line-height: 1.7;
+  .ixir-next-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .ixir-next-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    padding: 24px 24px;
+  }
+  .ixir-next-banner-action {
+    width: 100%;
   }
   .ixir-next-cta {
     width: 100%;
-    max-width: 320px;
-    height: 48px;
   }
 }
 
-/* Slide in animation */
-.ixir-next.is-armed .ixir-next-panel {
-  opacity: 0;
-  transform: translate3d(-60px, 0, 0);
-  pointer-events: none;
-  transition:
-    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 0.56s ease;
-}
-
-.ixir-next.is-armed.is-in .ixir-next-panel {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  pointer-events: auto;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .ixir-next.is-armed .ixir-next-panel,
-  .ixir-next.is-armed.is-in .ixir-next-panel {
-    opacity: 1;
-    transform: none;
-    pointer-events: auto;
-    transition: none;
+@media (max-width: 640px) {
+  .ixir-next {
+    padding: 60px 0 70px;
   }
+  .ixir-next-header {
+    margin-bottom: 38px;
+  }
+  .ixir-next-lead {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .ixir-next-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .ixir-next-card {
+    padding: 26px 20px 22px;
+  }
+  .ixir-next-banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .ixir-next-banner-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+  .ixir-next-banner-text h4 {
+    font-size: 16px;
+  }
+  .ixir-next-banner-text p {
+    font-size: 13.5px;
+  }
+}
+
+/* Slide animation guarantee */
+.ixir-next.ixir-slide {
+  opacity: 1 !important;
+  transform: none !important;
 }

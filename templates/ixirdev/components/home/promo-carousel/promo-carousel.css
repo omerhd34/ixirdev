@@ -72,7 +72,7 @@
   pointer-events: auto;
   z-index: 2;
   transform: translate3d(0, 0, 0);
-  min-height: 420px;
+  min-height: 520px;
 }
 
 .ixir-promo-slide.is-animating {
@@ -109,10 +109,10 @@
 .ixir-promo-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: 24px 36px;
+  gap: 28px 40px;
   align-items: center;
-  min-height: 420px;
-  padding: 44px 0 52px;
+  min-height: 520px;
+  padding: 64px 0 72px;
 }
 
 .ixir-promo-copy {
@@ -261,7 +261,7 @@
   justify-content: center;
   align-self: stretch;
   min-width: 0;
-  min-height: 340px;
+  min-height: 420px;
   overflow: visible;
   position: relative;
 }
@@ -271,7 +271,7 @@
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 330px;
+  max-height: 400px;
   object-fit: contain;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
   transition: transform 0.4s ease;
@@ -333,23 +333,28 @@
 .ixir-promo-dots {
   position: absolute;
   left: 50%;
-  bottom: 16px;
+  bottom: 22px;
   z-index: 3;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  align-items: center;
+  gap: 6px;
+  max-width: 90%;
   transform: translateX(-50%);
 }
 
 .ixir-promo-dots button {
   position: relative;
-  width: 24px;
+  width: 16px;
   height: 12px;
   padding: 0;
   border: 0;
   background: transparent !important;
   box-shadow: none !important;
   cursor: pointer;
+  flex-shrink: 0;
+  transition: width 0.25s ease;
 }
 
 .ixir-promo-dots button::after {
@@ -363,6 +368,10 @@
   background: rgba(255, 255, 255, 0.25);
   transform: translateY(-50%);
   transition: all 0.25s ease;
+}
+
+.ixir-promo-dots button.is-active {
+  width: 28px;
 }
 
 .ixir-promo-dots button.is-active::after {
@@ -380,7 +389,8 @@
 
 @media only screen and (max-width: 1280px) {
   .ixir-promo-grid {
-    padding: 36px 0 44px;
+    padding: 52px 0 60px;
+    min-height: 480px;
   }
   .ixir-promo-copy {
     padding-left: 10px;
@@ -428,5 +438,17 @@
   }
   .ixir-promo-next {
     right: 8px;
+  }
+  .ixir-promo-dots {
+    bottom: 10px;
+    gap: 4px;
+    max-width: 92%;
+  }
+  .ixir-promo-dots button {
+    width: 11px;
+    height: 10px;
+  }
+  .ixir-promo-dots button.is-active {
+    width: 20px;
   }
 }

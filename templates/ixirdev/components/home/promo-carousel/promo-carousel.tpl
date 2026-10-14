@@ -1,144 +1,336 @@
+{assign var="promoSlides" value=[
+  [
+    "theme" => "linux-hosting",
+    "badge" => "cPanel & NVMe SSD",
+    "title" => "Yüksek Performanslı Linux Hosting",
+    "desc" => "NVMe SSD altyapısı, LiteSpeed web sunucusu, ücretsiz SSL ve cPanel kolaylığıyla web sitelerinize üstün hız ve kesintisiz performans kazandırın.",
+    "features" => [
+      "Sınırsız NVMe SSD Disk",
+      "LiteSpeed Web Sunucusu",
+      "cPanel Kontrol Paneli",
+      "Ücretsiz SSL Sertifikası",
+      "%99.9 Uptime Garantisi",
+      "JetBackup ile Yedekleme"
+    ],
+    "link" => "/linux-hosting",
+    "image" => "img/promo/linux-hosting.jpg"
+  ],
+  [
+    "theme" => "windows-hosting",
+    "badge" => "Windows Server 2022 & Plesk",
+    "title" => "Yüksek Performanslı Windows Hosting",
+    "desc" => "Windows Server 2022, ASP.NET Core 9 ve SQL Server 2022 desteğiyle kurumsal Microsoft teknolojilerinizi Plesk panel konforunda güvenle çalıştırın.",
+    "features" => [
+      "Limitsiz NVMe SSD Disk",
+      "Plesk Kontrol Paneli",
+      "Windows Server 2022",
+      "Ücretsiz SSL Sertifikası",
+      "ASP.net",
+      "MSSQL Server 2022"
+    ],
+    "link" => "/windows-hosting",
+    "image" => "img/promo/windows-hosting.jpg"
+  ],
+  [
+    "theme" => "wordpress",
+    "badge" => "LiteSpeed & LSCache & 10x Hız",
+    "title" => "Yüksek Performanslı WordPress Hosting",
+    "desc" => "WordPress sitelerinize özel optimize edilmiş LiteSpeed Cache, AccelerateWP ve PHP X-Ray teknolojileriyle 10 kata kadar daha hızlı sayfa açılışları sağlayın.",
+    "features" => [
+      "Limitsiz NVMe SSD Disk",
+      "LiteSpeed & LSCache",
+      "AccelerateWP",
+      "Cpanel Kontrol Paneli",
+      "PHP X-RAY",
+      "Ücretsiz SSL Sertifikası"
+    ],
+    "link" => "/wordpress-hosting",
+    "image" => "img/promo/wordpress-hosting.jpg"
+  ],
+  [
+    "theme" => "mail",
+    "badge" => "Büyük Posta Kutusu & KVKK",
+    "title" => "Gelişmiş Kurumsal Mail Hosting",
+    "desc" => "Yüksek kotalı posta kutuları, görüntülü ve sesli konferans, ortak takvim ve tüm cihazlarla anlık senkronizasyon sunan hepsi bir arada kurumsal iletişim altyapısı.",
+    "features" => [
+      "Büyük Posta Kutusu Kapasitesi",
+      "Görüntülü & Sesli Konferans",
+      "Anlık Mesajlaşma",
+      "Ortak Takvim & Kişi Yönetimi",
+      "Tüm Cihazlardan Erişim",
+      "AI Destekli Anti-Spam"
+    ],
+    "link" => "/kurumsal-mail-hosting",
+    "image" => "img/promo/kurumsal-mail-hosting.jpg"
+  ],
+  [
+    "theme" => "developer",
+    "badge" => "Node.js & Python & Terminal",
+    "title" => "Gelişmiş Developer Hosting",
+    "desc" => "Laravel, Node.js, Python, Ruby ve Git desteği ile SSH terminal erişimine sahip, yazılımcı ve ajanslar için özel yapılandırılmış modern geliştirici altyapısı.",
+    "features" => [
+      "Geniş Uygulama Desteği",
+      "SSH ile Terminal Erişimi",
+      "Geliştirici Dostu Altyapı",
+      "cPanel Kontrol Paneli",
+      "Composer, npm, pip Desteği",
+      "Git ve Framework Desteği"
+    ],
+    "link" => "/developer-hosting",
+    "image" => "img/promo/developer-hosting.jpg"
+  ],
+  [
+    "theme" => "cloud-drive",
+    "badge" => "Güvenli Bulut Depolama",
+    "title" => "Güvenli Kurumsal Cloud Drive",
+    "desc" => "Yüksek kotalı ve şifrelenmiş bulut depolama alanıyla şirket belgelerinizi, projelerinizi ve verilerinizi tüm cihazlarınızdan güvenle yedekleyin ve paylaşın.",
+    "features" => [
+      "Sınırsız Trafik",
+      "Otomatik Senkronizasyon",
+      "Her Yerden Erişim",
+      "Yedekleme",
+      "Yüksek Bağlantı Hızı",
+      "Yüksek Kota"
+    ],
+    "link" => "/cloud-drive",
+    "image" => "img/promo/cloud-drive.jpg"
+  ],
+  [
+    "theme" => "linux-reseller",
+    "badge" => "WHM & cPanel Bayi Yönetimi",
+    "title" => "Yüksek Kapasiteli Linux Reseller Hosting",
+    "desc" => "Sınırsız site barındırma, WHM/cPanel bayi yönetimi ve bağımsız kaynak izolasyonuyla kendi hosting markanızı ve müşterilerinizi kolayca yönetin.",
+    "features" => [
+      "WHM & cPanel Bayi Yönetimi",
+      "Limitsiz NVMe Disk",
+      "Ücretsiz Site Taşıma",
+      "%99.9 Uptime Garantisi",
+      "15 Gün Para İade Garantisi",
+      "cPanel Kontrol Paneli"
+    ],
+    "link" => "/linux-reseller-hosting",
+    "image" => "img/promo/linux-reseller-hosting.jpg"
+  ],
+  [
+    "theme" => "windows-reseller",
+    "badge" => "Plesk Bayi & ASP.NET Core",
+    "title" => "Yüksek Kapasiteli Windows Reseller Hosting",
+    "desc" => "Plesk kontrol paneli, MSSQL ve ASP.NET Core desteğiyle Windows odaklı web projeleri ve müşteri portföyünüz için esnek reseller altyapısı.",
+    "features" => [
+      "Limitsiz NVMe SSD Disk",
+      "MSSQL & MySQL Veritabanı",
+      "Ücretsiz Site Taşıma",
+      "Plesk Kontrol Paneli",
+      "ASP.net Desteği",
+      "Windows Server 2022"
+    ],
+    "link" => "/windows-reseller-hosting",
+    "image" => "img/promo/windows-reseller-hosting.jpg"
+  ],
+  [
+    "theme" => "cloud",
+    "badge" => "60 Saniyede Otomatik Kurulum",
+    "title" => "Yüksek Performanslı Cloud Server",
+    "desc" => "60 saniyede otomatik hazırlanan, 1 Gbps port hızına ve limitsiz trafiğe sahip NVMe SSD destekli yüksek performanslı bulut sunucu çözümleri.",
+    "features" => [
+      "60 Saniyede Otomatik Kurulum",
+      "Limitsiz Trafik",
+      "SSD Depolama",
+      "Ücretsiz Yönetim Paneli",
+      "Tier III+ Veri Merkezi",
+      "1 adet IP Adresi"
+    ],
+    "link" => "/cloud-server",
+    "image" => "img/promo/cloud-server.jpg"
+  ],
+  [
+    "theme" => "dedicated",
+    "badge" => "Tier III+ & %100 Donanım Gücü",
+    "title" => "Yüksek Performanslı Dedicated Server",
+    "desc" => "Intel Xeon ve AMD EPYC işlemcili, İstanbul merkezli Tier III+ veri merkezinde operatör yedekli altyapı ve 7/24 KVM erişimli size özel fiziksel sunucular.",
+    "features" => [
+      "Intel® Xeon® İşlemciler",
+      "Operatör Yedekli İnternet Erişimi",
+      "Tier III+ İstanbul Veri Merkezi",
+      "%99.9 Uptime",
+      "Ücretsiz Yönetim Paneli",
+      "7/24/365 Yardım Masası Desteği"
+    ],
+    "link" => "/dedicated-server",
+    "image" => "img/promo/dedicated-server.jpg"
+  ],
+  [
+    "theme" => "server-servisleri",
+    "badge" => "7/24 Uzman Mühendis Desteği",
+    "title" => "Profesyonel Server Yönetim Servisleri",
+    "desc" => "7/24 kesintisiz sistem izleme, güvenlik optimizasyonu, felaket kurtarma ve proaktif müdahale sağlayan SLA garantili sunucu yönetim desteği.",
+    "features" => [
+      "Sunucu Bakımı & Yönetimi",
+      "Optimizasyon",
+      "Sunucu / Servis İzleme",
+      "Kontrol Panel Desteği",
+      "7/24 Uzman Teknik Destek",
+      "Spam / AntiSpam Ayarları"
+    ],
+    "link" => "/server-servisleri",
+    "image" => "img/promo/server-servisleri.jpg"
+  ],
+  [
+    "theme" => "pci-tarama",
+    "badge" => "ASV Onaylı Güvenlik Denetimi",
+    "title" => "Kapsamlı PCI-DSS Tarama Hizmeti",
+    "desc" => "Sanal POS altyapınızı, web portallarınızı ve sunucu güvenlik standartlarınızı ASV onaylı resmi denetimlerle BDDK ve banka gereksinimlerine tam uyumlu hale getirin.",
+    "features" => [
+      "Global Koruma",
+      "Müşteri Güveni",
+      "Sıfır Ceza & Kesintisiz",
+      "Sunucu Güvenliği Sağlanır",
+      "Sanal Pos Gereklilikleri Sağlanır",
+      "Verilerin Çalınması Engellenir"
+    ],
+    "link" => "/pci-tarama",
+    "image" => "img/promo/pci-tarama.webp"
+  ],
+  [
+    "theme" => "colocation",
+    "badge" => "Tier III+ İstanbul Veri Merkezi",
+    "title" => "Güvenli Co-Location Sunucu Barındırma",
+    "desc" => "Fiziksel sunucularınızı 3 operatör yedekli internet, N+1 enerji ve iklimlendirme altyapısına sahip Tier III+ standartlarındaki veri merkezimizde güvenle barındırın.",
+    "features" => [
+      "TIER III Veri Merkezi",
+      "Sunucu Monitörleme",
+      "%99.99 Uptime",
+      "DDoS Koruma",
+      "Firewall, Load Balancer Servisi",
+      "Tüm Sunucu Boyutları İçin Barındırma"
+    ],
+    "link" => "/colocation",
+    "image" => "img/promo/colocation.jpg"
+  ],
+  [
+    "theme" => "mail-server",
+    "badge" => "İzole Sunucu & Yüksek İtibar",
+    "title" => "Profesyonel Kurumsal Mail Server",
+    "desc" => "İşletmenize özel tahsis edilen bağımsız sunucu mimarisi, temiz IP itibar puanı ve gelişmiş spam korumasıyla e-postalarınızın doğrudan gelen kutusuna ulaşmasını sağlayın.",
+    "features" => [
+      "İşletmenize Özel İzole Sunucu",
+      "Yüksek Gönderim / Alım Kotaları",
+      "Gelişmiş Spam & Virüs Filtresi",
+      "Özel IP & Yüksek İtibar (Reputation)",
+      "Tüm Cihazlarla Anlık Senkronizasyon",
+      "7/24 Kesintisiz E-posta Erişimi"
+    ],
+    "link" => "/kurumsal-mail-server",
+    "image" => "img/promo/kurumsal-mail-server.png"
+  ],
+  [
+    "theme" => "antispam",
+    "badge" => "Yapay Zeka & %99.8 Filtreleme",
+    "title" => "Gelişmiş AntiSpam & Anti-Virüs Filtreleme",
+    "desc" => "Domaininiz nerede barınırsa barınsın, gelen e-postalarınızı yapay zeka ve makine öğrenimi destekli filtreleme ile zararlı yazılım ve oltalama saldırılarına karşı koruyun.",
+    "features" => [
+      "%99.8 Spam Engelleme Garantisi",
+      "Gelişmiş AntiVirüs Koruması",
+      "Makine Öğrenimi & Yapay Zeka",
+      "Zararlı Yazılım & Oltalama Filtresi",
+      "Tüm E-posta Sunucularıyla Uyumlu",
+      "Detaylı Güvenlik & Karantina Paneli"
+    ],
+    "link" => "/antispam",
+    "image" => "img/promo/antispam.jpg"
+  ],
+  [
+    "theme" => "outbound-mail",
+    "badge" => "SmartHost & Inbox Garantisi",
+    "title" => "Güvenilir Outbound Mail Gateway",
+    "desc" => "SmartHost e-posta iletim altyapısı sayesinde yüksek SenderScore ve temiz IP güvencesiyle kurumsal gönderilerinizde teslimat oranını zirveye taşıyın.",
+    "features" => [
+      "Yüksek SenderScore ve İtibar Puanı",
+      "Gelen Kutusu (Inbox) Garantisi",
+      "Otomatik IP Karaliste Koruması",
+      "Detaylı E-posta İletim Raporları",
+      "Hızlı ve Kolay DNS Entegrasyonu",
+      "KVKK Uyumlu Güvenli İletim"
+    ],
+    "link" => "/outbound-mail-gateway",
+    "image" => "img/promo/outbound-mail-gateway.webp"
+  ],
+  [
+    "theme" => "kurumsal-eposta",
+    "badge" => "KVKK Uyumlu Güvenli İletişim",
+    "title" => "Kapsamlı Kurumsal E-posta Çözümleri",
+    "desc" => "Türkiye lokasyonlu KVKK uyumlu sunucularda çalışan bulut webmail ve mobil senkronizasyon ile şirket içi ve şirket dışı iletişiminizi kurumsallaştırın.",
+    "features" => [
+      "Türkiye Lokasyonlu Bulut E-posta",
+      "Tüm Cihazlardan Güvenli Erişim",
+      "Gelişmiş Türkçe Webmail Arayüzü",
+      "Şirketinize Özel Alan Adı Uzantısı",
+      "Ortak Adres Defteri & Takvim",
+      "Kesintisiz Yedekli Mail Altyapısı"
+    ],
+    "link" => "/kurumsal-mail-hosting",
+    "image" => "img/promo/kurumsal-eposta.webp"
+  ],
+  [
+    "theme" => "site-pratik",
+    "badge" => "Yapay Zeka Destekli Tasarım",
+    "title" => "Modern Site Pratik Web Sitesi Oluşturucu",
+    "desc" => "Yapay zeka asistanı, modern hazır şablonlar ve sürükle-bırak kolaylığı ile kodlama bilmeden dakikalar içinde profesyonel ve mobil uyumlu web sitenizi oluşturun.",
+    "features" => [
+      "Yapay Zeka ile İçerik Üretimi",
+      "Yüzlerce Hazır Modern Şablon",
+      "Sürükle & Bırak Kolay Tasarım",
+      "Mobil, Tablet & SEO Uyumlu",
+      "E-Ticaret & Form Entegrasyonu",
+      "Tek Tıkla Yayına Alma Kolaylığı"
+    ],
+    "link" => "/site-pratik",
+    "image" => "img/promo/site-pratik.webp"
+  ],
+  [
+    "theme" => "ssl",
+    "badge" => "256-Bit Şifreleme & Google SEO",
+    "title" => "Maksimum Güvenlikli SSL Sertifikaları",
+    "desc" => "Web sitenizi ve kullanıcı verilerinizi 256-bit güçlü şifreleme ile koruyun, Google arama sonuçlarında prestij ve sıralama avantajı elde edin.",
+    "features" => [
+      "256-Bit Güçlü SSL Şifreleme",
+      "Google SEO Sıralama Avantajı",
+      "Comodo, RapidSSL, GeoTrust Markaları",
+      "%99.9 Tarayıcı ve Mobil Uyumluluk",
+      "Ücretsiz Kurulum ve Teknik Destek",
+      "Yeşil Güvenlik Kilidi Güvencesi"
+    ],
+    "link" => "/ssl-sertifikalari",
+    "image" => "img/promo/ssl.webp"
+  ]
+]}
+
 <section class="ixir-promo ixir-slide ixir-slide--left is-slide-on" id="ixirPromo" aria-roledescription="carousel"
   aria-label="Öne çıkan hizmetler">
   <div class="ixir-promo-viewport">
-    <article class="ixir-promo-slide is-active" data-theme="developer" aria-hidden="false">
-      <div class="container">
-        <div class="ixir-promo-grid">
-          <div class="ixir-promo-copy">
-            <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> Yeni Nesil Altyapı</span>
-            <h2>Developer Hosting</h2>
-            <p>Laravel, Node.Js, Python, Ruby, Git ile geliştirin ve yönetin!</p>
-            <ul>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Geniş Uygulama Desteği</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>SSH ile Terminal Erişimi</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Geliştirici Dostu</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>cPanel Kontrol Paneli</li>
-            </ul>
-            <a href="{$WEB_ROOT}/developer-hosting" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"
-                aria-hidden="true"></i></a>
-          </div>
-          <div class="ixir-promo-visual">
-            <img src="{$WEB_ROOT}/templates/{$template}/img/slide/developer.webp" alt="Developer Hosting" width="800"
-              height="418">
-          </div>
-        </div>
-      </div>
-    </article>
-    <article class="ixir-promo-slide" data-theme="antispam" aria-hidden="true">
-      <div class="container">
-        <div class="ixir-promo-grid">
-          <div class="ixir-promo-copy">
-            <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> Makine Öğrenimi Koruması</span>
-            <h2>AntiSpam &amp; Anti-Virüs Filtreleme</h2>
-            <p>E-postalarınız için Gelişmiş AntiSpam ve Antivirüs Koruması</p>
-            <ul>
-              <li><i class="fas fa-check" aria-hidden="true"></i>%99.8 Spam Engelleme</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>AntiVirüs Koruması</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Makine Öğrenimi</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Zararlı Yazılım Filtresi</li>
-            </ul>
-            <a href="{$WEB_ROOT}/antispam" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"
-                aria-hidden="true"></i></a>
-          </div>
-          <div class="ixir-promo-visual">
-            <img src="{$WEB_ROOT}/templates/{$template}/img/slide/antispam.webp" alt="AntiSpam ve antivirüs koruması"
-              width="630" height="340">
+    {foreach $promoSlides as $slide}
+      <article class="ixir-promo-slide{if $slide@first} is-active{/if}" data-theme="{$slide.theme}" aria-hidden="{if $slide@first}false{else}true{/if}">
+        <div class="container">
+          <div class="ixir-promo-grid">
+            <div class="ixir-promo-copy">
+              <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> {$slide.badge}</span>
+              <h2>{$slide.title}</h2>
+              <p>{$slide.desc}</p>
+              <ul>
+                {foreach $slide.features as $feature}
+                  <li><i class="fas fa-check" aria-hidden="true"></i>{$feature}</li>
+                {/foreach}
+              </ul>
+              <a href="{$WEB_ROOT}{$slide.link}" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"
+                  aria-hidden="true"></i></a>
+            </div>
+            <div class="ixir-promo-visual">
+              <img src="{$WEB_ROOT}/templates/{$template}/{$slide.image}" alt="{$slide.title}">
+            </div>
           </div>
         </div>
-      </div>
-    </article>
-    <article class="ixir-promo-slide" data-theme="cloud" aria-hidden="true">
-      <div class="container">
-        <div class="ixir-promo-grid">
-          <div class="ixir-promo-copy">
-            <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> 60 Saniyede Kurulum</span>
-            <h2>Yüksek Performanslı Cloud Server</h2>
-            <p>60 Saniye'de Cloud Sunucunuz Hazır!</p>
-            <ul>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Otomatik Kurulum</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz Trafik</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>NVMe SSD Depolama</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Ücretsiz Kontrol Paneli</li>
-            </ul>
-            <a href="{$WEB_ROOT}/cloud-server" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"
-                aria-hidden="true"></i></a>
-          </div>
-          <div class="ixir-promo-visual">
-            <img src="{$WEB_ROOT}/templates/{$template}/img/slide/cloud-server.webp" alt="Cloud Server" width="887"
-              height="623">
-          </div>
-        </div>
-      </div>
-    </article>
-    <article class="ixir-promo-slide" data-theme="mail" aria-hidden="true">
-      <div class="container">
-        <div class="ixir-promo-grid">
-          <div class="ixir-promo-copy">
-            <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> KVKK Uyumlu Altyapı</span>
-            <h2>Kurumsal E-posta</h2>
-            <p>KVKK Uyumlu Sunucularda Kurumsal E-posta Hizmeti</p>
-            <ul>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Bulut E-posta Yapısı</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Tüm Cihazlardan Erişim</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Güvenli E-posta Yönetimi</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>İhtiyaçlarınız İçin Tek Platform</li>
-            </ul>
-            <a href="{$WEB_ROOT}/kurumsal-mail-hosting" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"
-                aria-hidden="true"></i></a>
-          </div>
-          <div class="ixir-promo-visual">
-            <img src="{$WEB_ROOT}/templates/{$template}/img/slide/desktop-mobile-mail.webp"
-              alt="Kurumsal e-posta hizmeti" width="887" height="529">
-          </div>
-        </div>
-      </div>
-    </article>
-    <article class="ixir-promo-slide" data-theme="wordpress" aria-hidden="true">
-      <div class="container">
-        <div class="ixir-promo-grid">
-          <div class="ixir-promo-copy">
-            <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> 10x Daha Hızlı</span>
-            <h2>Jet Hızında Wordpress Hosting</h2>
-            <p>Çok Daha Hızlı Web Siteleri İçin</p>
-            <ul>
-              <li><i class="fas fa-check" aria-hidden="true"></i>10 Kata Kadar Daha Hızlı</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Intel Xeon Gold İşlemciler</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Limitsiz NVMe Disk</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>LsCache &amp; AccelerateWP</li>
-            </ul>
-            <a href="{$WEB_ROOT}/wordpress-hosting" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"
-                aria-hidden="true"></i></a>
-          </div>
-          <div class="ixir-promo-visual">
-            <img src="{$WEB_ROOT}/templates/{$template}/img/slide/wordpress.webp" alt="WordPress Hosting" width="637"
-              height="293">
-          </div>
-        </div>
-      </div>
-    </article>
-    <article class="ixir-promo-slide" data-theme="dedicated" aria-hidden="true">
-      <div class="container">
-        <div class="ixir-promo-grid">
-          <div class="ixir-promo-copy">
-            <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> %100 Donanım Gücü</span>
-            <h2>Yüksek Performanslı Dedicated Server</h2>
-            <p>İstanbul Merkezli, Operatör Yedekli ve Size Özel Fiziksel Sunucular</p>
-            <ul>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Intel® Xeon® &amp; AMD EPYC</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>1 Gbps Port &amp; Limitsiz Trafik</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>Tier III+ İstanbul Veri Merkezi</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i>7/24 KVM &amp; Donanım Desteği</li>
-            </ul>
-            <a href="{$WEB_ROOT}/dedicated-server" class="ixir-promo-btn">İncele <i class="fas fa-arrow-right"
-                aria-hidden="true"></i></a>
-          </div>
-          <div class="ixir-promo-visual">
-            <img src="{$WEB_ROOT}/templates/{$template}/img/slide/dedicated-server.webp" alt="Dedicated Server"
-              width="720" height="380">
-          </div>
-        </div>
-      </div>
-    </article>
+      </article>
+    {/foreach}
   </div>
   <button type="button" class="ixir-promo-nav ixir-promo-prev" aria-label="Önceki slayt">
     <i class="fas fa-chevron-left" aria-hidden="true"></i>
@@ -394,11 +586,11 @@
       viewport.querySelectorAll('img').forEach(function(img) {
         if (!img.complete) {
           img.addEventListener('load', scheduleSlideHeight);
-          }
-        });
+        }
+      });
 
-        restart();
-      })();
-    });
+      restart();
+    })();
+  });
   {/literal}
 </script>

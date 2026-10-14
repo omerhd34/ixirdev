@@ -1,59 +1,88 @@
 <section class="ixir-next ixir-slide ixir-slide--left is-slide-on" id="ixir-next" aria-labelledby="ixir-next-title">
  <div class="container">
-  <div class="ixir-next-panel">
-   <div class="pci-adv-badge"><i class="fas fa-heart text-danger"></i> SOSYAL SORUMLULUK &amp; EĞİTİM DESTEĞİ</div>
-   {include file="$template/components/Heading.tpl" title="İxirNext ile Geleceğe Dokunuyoruz!" id="ixir-next-title"}
-   <p><strong>İxirhost</strong> olarak 2005 yılından bu yana internet teknolojileri üretiyoruz. Bugün ise bu
-    yolculuğun
-    bir parçasını, internetin geleceğini inşa edecek çocuklara ve gençlere armağan ediyoruz.</p>
-   <p><strong>İxirNext</strong> kapsamında hiçbir karşılık beklemeden üniversite öğrencilerine eğitim bursu
-    sağlıyor;
-    köy okulları başta olmak üzere ihtiyaç duyan okullara bilgisayar ve bilişim laboratuvarları kuruyor,
-    robotik kodlama
-    ve Arduino eğitim kitleri ulaştırıyor, okul kütüphanelerine kitap desteği veriyoruz.</p>
-   <p>Bütün bunlar, yıllardır bize güvenen müşterilerimizin desteği sayesinde mümkün oluyor. Siz yalnızca bir
-    hosting
-    hizmeti satın almıyorsunuz; aynı zamanda daha fazla gencin teknolojiyle tanışmasına ve eğitimine katkı
-    sağlayan bu
-    yolculuğun da bir parçası oluyorsunuz.</p>
-   <p>Eğer üniversite öğrencisiyseniz ve burs desteğine ihtiyaç duyuyorsanız veya okulunuz için teknoloji ya da
-    kütüphane desteği talep etmek istiyorsanız, başvurunuzu birkaç dakika içinde iletebilirsiniz. Tüm
-    başvurular
-    gizlilik içinde değerlendirilir; hiçbir karşılık veya yükümlülük beklenmez.</p>
-   <a class="ixir-next-cta" href="https://ixirnext.tr" target="_blank" rel="noopener">Başvuru Yap <i class="fas fa-arrow-right"></i></a>
+  <div class="ixir-next-header">
+   <div class="ixir-next-badge">
+    <i class="fas fa-heart text-danger" aria-hidden="true"></i>
+    <span>SOSYAL SORUMLULUK &amp; EĞİTİM DESTEĞİ</span>
+   </div>
+   {include file="$template/components/Heading.tpl" title="İxirNext ile Geleceğe Dokunuyoruz!" id="ixir-next-title" align="center"}
+   <p class="ixir-next-lead">
+    <strong>İxirhost</strong> olarak 2005 yılından bu yana internet teknolojileri üretiyoruz. Bugün bu yolculuğun bir parçasını, internetin geleceğini inşa edecek çocuklara ve gençlere armağan ediyoruz.
+   </p>
+  </div>
+
+  <div class="ixir-next-grid">
+   <div class="ixir-next-card">
+    <div class="ixir-next-icon-wrap" aria-hidden="true">
+     <i class="fas fa-graduation-cap"></i>
+    </div>
+    <h3 class="ixir-next-card-title">Üniversite Eğitim Bursu</h3>
+    <p class="ixir-next-card-desc">
+     Üniversite öğrencilerine hiçbir karşılık beklemeden <strong>eğitim bursu</strong> sağlıyor, kariyer yolculuklarında mentorluk ile yanlarında oluyoruz.
+    </p>
+    <div class="ixir-next-card-footer">
+     <span class="ixir-next-tag"><i class="fas fa-check-circle" aria-hidden="true"></i> Karşılıksız Burs</span>
+    </div>
+   </div>
+
+   <div class="ixir-next-card">
+    <div class="ixir-next-icon-wrap" aria-hidden="true">
+     <i class="fas fa-laptop-code"></i>
+    </div>
+    <h3 class="ixir-next-card-title">Bilişim Laboratuvarları</h3>
+    <p class="ixir-next-card-desc">
+     Köy okulları başta olmak üzere ihtiyaç duyan okullara <strong>bilgisayar ve bilişim laboratuvarları</strong> kurarak teknolojiyi öğrencilere ulaştırıyoruz.
+    </p>
+    <div class="ixir-next-card-footer">
+     <span class="ixir-next-tag"><i class="fas fa-school" aria-hidden="true"></i> Köy Okulları</span>
+    </div>
+   </div>
+
+   <div class="ixir-next-card">
+    <div class="ixir-next-icon-wrap" aria-hidden="true">
+     <i class="fas fa-microchip"></i>
+    </div>
+    <h3 class="ixir-next-card-title">Robotik &amp; Kodlama</h3>
+    <p class="ixir-next-card-desc">
+     Gençlerimizin teknoloji tüketicisi değil üreticisi olması için <strong>Arduino ve robotik kodlama eğitim kitleri</strong> hediye ediyoruz.
+    </p>
+    <div class="ixir-next-card-footer">
+     <span class="ixir-next-tag"><i class="fas fa-robot" aria-hidden="true"></i> Eğitim Kitleri</span>
+    </div>
+   </div>
+
+   <div class="ixir-next-card">
+    <div class="ixir-next-icon-wrap" aria-hidden="true">
+     <i class="fas fa-book-reader"></i>
+    </div>
+    <h3 class="ixir-next-card-title">Kütüphane Desteği</h3>
+    <p class="ixir-next-card-desc">
+     Okul kütüphanelerine <strong>zengin kitap bağışı</strong> yaparak çocukların bilgiye erişimini kolaylaştırıyor, okuma alışkanlığını destekliyoruz.
+    </p>
+    <div class="ixir-next-card-footer">
+     <span class="ixir-next-tag"><i class="fas fa-book-open" aria-hidden="true"></i> Kitap Desteği</span>
+    </div>
+   </div>
+  </div>
+
+  <div class="ixir-next-banner">
+   <div class="ixir-next-banner-content">
+    <div class="ixir-next-banner-icon" aria-hidden="true">
+     <i class="fas fa-hands-helping"></i>
+    </div>
+    <div class="ixir-next-banner-text">
+     <h4>Birlikte Büyüyen Etki &amp; Başvuru Bilgisi</h4>
+     <p>
+      Siz yalnızca bir hosting hizmeti satın almıyorsunuz; gençlerin eğitimine katkı sağlayan bu yolculuğun da bir parçası oluyorsunuz. Üniversite öğrencisiyseniz veya okulunuz için destek talep etmek istiyorsanız başvurunuzu hemen iletebilirsiniz. <strong>Tüm başvurular gizlilik içinde değerlendirilir; hiçbir karşılık veya yükümlülük beklenmez.</strong>
+     </p>
+    </div>
+   </div>
+   <div class="ixir-next-banner-action">
+    <a class="ixir-next-cta" href="https://ixirnext.tr" target="_blank" rel="noopener">
+     <span>Başvuru Yap</span>
+     <i class="fas fa-arrow-right" aria-hidden="true"></i>
+    </a>
+   </div>
   </div>
  </div>
 </section>
-<script>
- {literal}
-  (function() {
-   var root = document.getElementById('ixir-next');
-   if (!root || !window.IntersectionObserver) {
-    return;
-   }
-   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    return;
-   }
-   root.classList.add('is-armed');
-   var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-     if (!entry.isIntersecting) {
-      return;
-     }
-     observer.disconnect();
-     window.requestAnimationFrame(function() {
-      window.requestAnimationFrame(function() {
-       root.classList.add('is-in');
-       window.setTimeout(function() {
-        root.classList.remove('is-armed');
-       }, 1400);
-      });
-     });
-    });
-   }, {
-    threshold: 0
-   });
-   observer.observe(root);
-  })();
- {/literal}
-</script>
