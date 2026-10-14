@@ -6,21 +6,22 @@
  <div class="container">
   <div class="ixir-help-stage">
    <div class="ixir-help-copy">
+    <div class="pci-cta-badge"><span class="pci-cta-pulse-dot"></span> 7/24 KESİNTİSİZ DESTEK</div>
     {include file="$template/components/Heading.tpl" title="Sizler İçin Buradayız!"}
     <p>Desteğe ihtiyacınız olduğu her anda bize ulaşın.</p>
     <div class="ixir-help-cards">
      <a href="tel:+908503027111" class="ixir-help-card" title="ixirhost çağrı merkezi">
-      <i class="far fa-phone-volume" aria-hidden="true"></i>
+      <div class="ixir-help-icon-wrap"><i class="fas fa-phone-volume" aria-hidden="true"></i></div>
       <span>Telefon Destek</span>
       <small>0850 302 7 111</small>
      </a>
      <a href="mailto:destek@ixirhost.com" class="ixir-help-card" title="ixirhost destek e-posta adresi">
-      <i class="far fa-paper-plane" aria-hidden="true"></i>
+      <div class="ixir-help-icon-wrap"><i class="fas fa-paper-plane" aria-hidden="true"></i></div>
       <span>E-posta Destek</span>
       <small>destek@ixirhost.com</small>
      </a>
      <a href="{$WEB_ROOT}/destek/yeni" class="ixir-help-card" data-ixir-chat title="Online Destek">
-      <i class="far fa-comments" aria-hidden="true"></i>
+      <div class="ixir-help-icon-wrap"><i class="fas fa-comments" aria-hidden="true"></i></div>
       <span>Online Destek</span>
       <small>Çevrimiçi</small>
      </a>
