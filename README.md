@@ -4,8 +4,6 @@
   <img src="./templates/ixirdev/img/logo.webp" alt="ixirHost Logo" width="240">
 </a>
 
-# ixirdev
-
 **ixirHost için geliştirilmiş modern, modüler ve responsive WHMCS müşteri paneli teması**
 
 <p>
