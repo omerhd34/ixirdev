@@ -118,7 +118,7 @@ body.ixir-corporate-page {
 .ixir-corp-shell {
  position: relative;
  padding: 56px 0 80px;
- background: #fff;
+ background: #f8fafc !important;
 }
 
 .ixir-corp-grid {
@@ -2160,7 +2160,7 @@ body.ixir-corporate-page {
  }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
  .ixir-corp-nav-item a {
   font-size: 12px;
   padding: 8px 12px;
@@ -2205,9 +2205,6 @@ body.ixir-corporate-page {
  }
 }
 
-/* Kurumsal sidebar v2 - kurumsal.css'ten SONRA yüklenir, onu ezer */
-
-/* Mobil/tablet: yeni elemanlar gizli, mevcut hap menü aynen çalışır */
 .ixir-corp-nav-head-icon,
 .ixir-corp-nav-sub,
 .ixir-corp-nav-icon,
@@ -2238,7 +2235,6 @@ body.ixir-corporate-page {
    0 18px 44px rgba(24, 39, 75, 0.08);
  }
 
- /* ---------- Üst başlık ---------- */
  .ixir-corp-grid .ixir-corp-nav-head {
   display: flex;
   align-items: center;
@@ -2289,7 +2285,6 @@ body.ixir-corporate-page {
   line-height: 1.3;
  }
 
- /* ---------- Menü ---------- */
  .ixir-corp-grid .ixir-corp-nav-track {
   padding: 8px 12px 6px;
  }
@@ -2375,7 +2370,6 @@ body.ixir-corporate-page {
    transform 0.2s ease;
  }
 
- /* hover / focus */
  .ixir-corp-grid .ixir-corp-nav-item a:hover,
  .ixir-corp-grid .ixir-corp-nav-item a:focus {
   background: #f5f8ff;
@@ -2402,7 +2396,6 @@ body.ixir-corporate-page {
   outline-offset: 2px;
  }
 
- /* aktif */
  .ixir-corp-grid .ixir-corp-nav-item.is-active a,
  .ixir-corp-grid .ixir-corp-nav-item a[aria-current="page"] {
   background: linear-gradient(90deg, #e8f0ff 0%, #f3f7ff 100%);
@@ -2439,7 +2432,6 @@ body.ixir-corporate-page {
   transform: translateX(0);
  }
 
- /* ---------- Destek kartı ---------- */
  .ixir-corp-grid .ixir-corp-nav-help {
   position: relative;
   isolation: isolate;
@@ -2610,7 +2602,7 @@ body.ixir-corporate-page {
   width: 48px !important;
   height: 48px !important;
   border-radius: 14px !important;
-  background: linear-gradient(145deg, #ffffff 0%, #f0f6ff 100%) !important;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%) !important;
   border: 1.5px solid #dbeafe !important;
   color: #2563eb !important;
   box-shadow: 0 6px 14px rgba(37, 99, 235, 0.08) !important;
@@ -2648,7 +2640,7 @@ body.ixir-corporate-page {
   width: 52px !important;
   height: 52px !important;
   border-radius: 16px !important;
-  background: linear-gradient(145deg, #ffffff 0%, #f0f6ff 100%) !important;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%) !important;
   border: 1.5px solid #dbeafe !important;
   color: #2563eb !important;
   box-shadow: 0 8px 16px rgba(37, 99, 235, 0.08) !important;

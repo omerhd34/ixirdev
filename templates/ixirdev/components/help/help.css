@@ -57,13 +57,16 @@
 
 .ixir-help-visual {
   position: absolute;
+  top: 0;
   right: 0;
   bottom: 0;
   z-index: 1;
   display: block;
   width: auto;
-  height: 420px;
+  height: 100%;
   max-width: none;
+  object-fit: cover;
+  object-position: right bottom;
   pointer-events: none;
   user-select: none;
   opacity: 0.85;
@@ -73,7 +76,7 @@
   width: 100%;
   max-width: 680px;
   min-width: 0;
-  padding: 64px 0;
+  padding: 44px 0;
   text-align: center;
 }
 
@@ -214,34 +217,32 @@
   padding-top: 40px !important;
 }
 
-/* ==========================================================================
-   Açık Mavi Theme for ixir-help
-   ========================================================================== */
+
 .ixir-help.ixir-help--light,
-.ixir-help.bg-acik-mavi {
-  background-color: #f0f6ff !important;
+.ixir-help.bg-light-blue {
+  background-color: #f8fafc !important;
   background-image: none !important;
   border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
   border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
 }
 
 .ixir-help.ixir-help--light::before,
-.ixir-help.bg-acik-mavi::before {
+.ixir-help.bg-light-blue::before {
   background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
 }
 
 .ixir-help.ixir-help--light::after,
-.ixir-help.bg-acik-mavi::after {
+.ixir-help.bg-light-blue::after {
   background: linear-gradient(90deg,
-    #f0f6ff 0%,
-    #f0f6ff 72%,
-    rgba(240, 246, 255, 0.85) 88%,
-    rgba(240, 246, 255, 0.3) 96%,
+    #f8fafc 0%,
+    #f8fafc 72%,
+    rgba(248, 250, 252, 0.85) 88%,
+    rgba(248, 250, 252, 0.3) 96%,
     transparent 100%) !important;
 }
 
 .ixir-help.ixir-help--light .pci-cta-badge,
-.ixir-help.bg-acik-mavi .pci-cta-badge {
+.ixir-help.bg-light-blue .pci-cta-badge {
   color: #2563eb !important;
   background: #eff6ff !important;
   border: 1px solid #dbeafe !important;
@@ -250,18 +251,18 @@
 
 .ixir-help.ixir-help--light .ixir-help-copy h2,
 .ixir-help.ixir-help--light .ixir-help-copy .site-heading,
-.ixir-help.bg-acik-mavi .ixir-help-copy h2,
-.ixir-help.bg-acik-mavi .ixir-help-copy .site-heading {
+.ixir-help.bg-light-blue .ixir-help-copy h2,
+.ixir-help.bg-light-blue .ixir-help-copy .site-heading {
   color: #0b1e36 !important;
 }
 
 .ixir-help.ixir-help--light .ixir-help-copy p,
-.ixir-help.bg-acik-mavi .ixir-help-copy p {
+.ixir-help.bg-light-blue .ixir-help-copy p {
   color: #64748b !important;
 }
 
 .ixir-help.ixir-help--light .ixir-help-card,
-.ixir-help.bg-acik-mavi .ixir-help-card {
+.ixir-help.bg-light-blue .ixir-help-card {
   color: #0b1e36 !important;
   background: #ffffff !important;
   border: 1px solid rgba(59, 130, 246, 0.18) !important;
@@ -269,7 +270,7 @@
 }
 
 .ixir-help.ixir-help--light .ixir-help-card:hover,
-.ixir-help.bg-acik-mavi .ixir-help-card:hover {
+.ixir-help.bg-light-blue .ixir-help-card:hover {
   transform: translateY(-6px);
   border-color: rgba(59, 130, 246, 0.45) !important;
   box-shadow: 0 18px 36px -4px rgba(59, 130, 246, 0.16) !important;
@@ -277,27 +278,27 @@
 }
 
 .ixir-help.ixir-help--light .ixir-help-card > span,
-.ixir-help.bg-acik-mavi .ixir-help-card > span {
+.ixir-help.bg-light-blue .ixir-help-card > span {
   color: #0b1e36 !important;
 }
 
 .ixir-help.ixir-help--light .ixir-help-card:hover > span,
-.ixir-help.bg-acik-mavi .ixir-help-card:hover > span {
+.ixir-help.bg-light-blue .ixir-help-card:hover > span {
   color: #2563eb !important;
 }
 
 .ixir-help.ixir-help--light .ixir-help-card > small,
-.ixir-help.bg-acik-mavi .ixir-help-card > small {
+.ixir-help.bg-light-blue .ixir-help-card > small {
   color: #2563eb !important;
 }
 
 @media only screen and (max-width: 1024px) {
   .ixir-help.ixir-help--light::after,
-  .ixir-help.bg-acik-mavi::after {
+  .ixir-help.bg-light-blue::after {
     background: linear-gradient(90deg,
-      #f0f6ff 0%,
-      #f0f6ff 60%,
-      rgba(240, 246, 255, 0.92) 100%) !important;
+      #f8fafc 0%,
+      #f8fafc 60%,
+      rgba(248, 250, 252, 0.92) 100%) !important;
   }
 }
 
@@ -333,13 +334,13 @@
   }
   .ixir-help-visual {
     right: -280px;
-    height: 380px;
+    height: 100%;
     opacity: 0.35;
   }
   .ixir-help-copy {
     max-width: 640px;
     margin: 0 auto;
-    padding: 56px 0;
+    padding: 44px 0;
   }
 }
 
@@ -350,12 +351,12 @@
   }
   .ixir-help-visual {
     right: -420px;
-    height: 320px;
+    height: 100%;
     opacity: 0.22;
   }
   .ixir-help-copy {
     max-width: 100%;
-    padding: 48px 0;
+    padding: 40px 0;
   }
   .ixir-help-cards {
     grid-template-columns: minmax(0, 1fr);
@@ -374,7 +375,6 @@
   }
 }
 
-/* Slide in animations */
 .ixir-help.is-armed .ixir-help-visual,
 .ixir-help.is-armed .ixir-help-copy h2,
 .ixir-help.is-armed .ixir-help-copy > p,
