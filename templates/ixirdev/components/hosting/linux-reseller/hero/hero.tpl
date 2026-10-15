@@ -19,15 +19,15 @@
     <p class="ixir-hero-label" aria-hidden="true">Özellikler</p>
     <ul class="ixir-hero-points" aria-label="Özellikler">
      <li>
-      <i class="fas fa-hdd" aria-hidden="true"></i>
+      <i class="fab fa-cpanel" aria-hidden="true"></i>
       <span>WHM/cPanel</span>
      </li>
      <li>
-      <i class="fas fa-bolt" aria-hidden="true"></i>
+      <i class="fas fa-hdd" aria-hidden="true"></i>
       <span>Limitsiz NVMe Disk</span>
      </li>
      <li>
-      <i class="fab fa-cpanel" aria-hidden="true"></i>
+      <i class="fas fa-truck" aria-hidden="true"></i>
       <span>Ücretsiz Site Taşıma</span>
      </li>
      <li>
