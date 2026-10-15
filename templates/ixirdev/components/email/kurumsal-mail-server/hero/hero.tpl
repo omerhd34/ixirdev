@@ -1,17 +1,16 @@
-<section id="home-banner" class="ixir-hero ixir-hero--webhosting" aria-label="Kurumsal Mail Server">
+<section id="home-banner" class="ixir-hero ixir-hero--kurumsal-mail-server" aria-label="Kurumsal Mail Server">
  <picture class="ixir-hero-photo ixir-hero-photo--mail">
-  <img src="{$WEB_ROOT}/templates/{$template}/img/email/bg17.webp" alt="">
+  <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/bg17.jpg" alt="">
  </picture>
  <div class="container">
   <div class="ixir-hero-main">
    <div class="ixir-hero-copy">
     <h2 class="ixir-hero-eyebrow">
      <i class="fas fa-layer-group" aria-hidden="true"></i>
-     <span>AAAAAAAAAAAAA</span>
+     <span>İşletmenize Özel Altyapı</span>
     </h2>
-    <h1>İşletmenize Özel Kurumsal Mail Server</h1>
-    <p>Türkiye lokasyonlu, KVKK uyumlu ve yüksek performanslı kurumsal e-posta sunucu altyapısı</p>
-    <p>Şirketinizin büyümesine ayak uyduran esnek kaynaklar ve tam kontrol sağlayan kurumsal mail server çözümleri ile e-posta iletişiminizi güvence altına alın.</p>
+    <h1>Kurumsal Mail Server</h1>
+    <p>Türkiye lokasyonlu, KVKK uyumlu, esnek ve yüksek performanslı kurumsal e-posta sunucu altyapısı.</p>
    </div>
    <div class="ixir-hero-actions">
     <a href="#ixir-wh-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-wh-plans-btn">
@@ -21,45 +20,58 @@
    <p class="ixir-hero-label" aria-hidden="true">Özellikler</p>
    <ul class="ixir-hero-points" aria-label="Özellikler">
     <li>
-     <i class="fas fa-cloud" aria-hidden="true"></i>
+     <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
      <span>Sınırsız E-posta Hesabı</span>
     </li>
     <li>
-     <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-     <span>Dedicated IP + DKIM/SPF/DMARC Kurulum</span>
+     <i class="fas fa-network-wired" aria-hidden="true"></i>
+     <span>Dedicated IP Kurulum</span>
     </li>
     <li>
-     <i class="fas fa-address-book" aria-hidden="true"></i>
+     <i class="fas fa-certificate" aria-hidden="true"></i>
+     <span>DKIM/SPF/DMARC Kurulum</span>
+    </li>
+    <li>
+     <i class="fas fa-shield-check" aria-hidden="true"></i>
      <span>Gelişmiş Antivirüs & Antispam</span>
     </li>
     <li>
-     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+     <i class="fas fa-globe" aria-hidden="true"></i>
      <span>Sınırsız Domain Barındırma</span>
     </li>
     <li>
-     <i class="fas fa-sticky-note" aria-hidden="true"></i>
+     <i class="fas fa-paper-plane" aria-hidden="true"></i>
      <span>Sınırsız Gönderim Kotası</span>
     </li>
     <li>
-     <i class="fas fa-video" aria-hidden="true"></i>
+     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
      <span>Paylaşımlı Takvim</span>
     </li>
     <li>
-     <i class="fas fa-comments" aria-hidden="true"></i>
+     <i class="fas fa-user-shield" aria-hidden="true"></i>
      <span>Gelişmiş Güvenlik</span>
     </li>
     <li>
-     <i class="fas fa-user-shield" aria-hidden="true"></i>
+     <i class="fas fa-shield-alt" aria-hidden="true"></i>
      <span>%100 KVKK Uyumlu</span>
     </li>
     <li>
-     <i class="fas fa-robot" aria-hidden="true"></i>
-     <span>Dedicated IP</span>
+     <i class="fas fa-truck" aria-hidden="true"></i>
+     <span>Ücretsiz Taşıma</span>
     </li>
+    <li>
+     <i class="fas fa-clock" aria-hidden="true"></i>
+     <span>%99.9 Uptime Garantisi</span>
+    </li>
+    <li>
+     <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+     <span>Türkiye Lokasyonu</span>
+    </li>
+    
    </ul>
-   <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer hizmetler">
+   <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer hizmetler">
     <p class="ixir-hero-label">Diğer Hizmetler</p>
-    <ul class="ixir-domain-links">
+    <ul class="ixir-hero-links">
      <li>
       <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
@@ -81,7 +93,7 @@
       </a>
      </li>
     </ul>
-    <ul class="ixir-domain-links">
+    <ul class="ixir-hero-links">
      <li>
       <a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting">
        <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Linux Hosting</span>
@@ -103,7 +115,7 @@
       </a>
      </li>
     </ul>
-    <ul class="ixir-domain-links">
+    <ul class="ixir-hero-links">
      <li>
       <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
        <i class="fas fa-mail-bulk fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
@@ -116,7 +128,7 @@
      </li>
      <li>
       <a href="{$WEB_ROOT}/cloud-drive" title="Cloud Drive">
-       <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Cloud Drive</span>
+       <i class="fas fa-cloud-upload-alt fa-fw" aria-hidden="true"></i><span>Cloud Drive</span>
       </a>
      </li>
      <li>
@@ -127,23 +139,22 @@
     </ul>
    </div>
   </div>
-  <div class="ixir-hero-mockup" aria-hidden="true">
-   <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/bg22.webp" alt="" width="1674" height="1000">
-  </div>
  </div>
  <div class="ixir-hero-strip" aria-hidden="true">
   <div class="ixir-hero-strip-track" id="ixirHeroStripTrack">
    <span>Sınırsız E-posta Hesabı</span>
-   <span>Dedicated IP + DKIM/SPF/DMARC Kurulum Dahil</span>
+   <span>DKIM/SPF/DMARC Kurulum</span>
+   <span>Dedicated IP Kurulum</span>
    <span>Gelişmiş Antivirüs & Antispam</span>
    <span>Sınırsız Domain Barındırma</span>
    <span>%100 KVKK Uyumlu</span>
+   <span>Ücretsiz Taşıma</span>
+   <span>Türkiye Lokasyonu</span>
    <span>Sınırsız Gönderim Kotası</span>
    <span>Paylaşımlı Takvim</span>
    <span>Gelişmiş Güvenlik</span>
    <span>POP/IMAP/SMTP</span>
    <span>Ücretsiz SSL Sertifikası</span>
-   <span>Dedicated IP</span>
    <span>DKIM / SPF / DMARC</span>
    <span>%99.9 Uptime Garantisi</span>
    <span>7/24 Teknik Destek</span>

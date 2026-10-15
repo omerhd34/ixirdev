@@ -13,9 +13,9 @@
  <div class="container">
   <div class="ixir-wh-story-intro">
    <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
-   {include file="$template/components/Heading.tpl" title="Kurumsal Mail Hosting Nedir?"}
-   <p>Farklı bir program veya herhangi bir meeting room yazılımına ihtiyaç olmaksızın, web tabanlı mail arabirimimize erişerek görüntülü ve sesli toplantılar, ekran paylaşımı yapabilir, yüksek kotalı güvenli e-posta kutularınızla tüm iletişim süreçlerinizi ve vaktinizi daha verimli kullanabilirsiniz.</p>
-   <a class="ixir-wh-story-cta" href="#ixir-wh-plans">Hemen Satın Al</a>
+   {include file="$template/components/Heading.tpl" title="Kurumsal Mail Server Nedir?"}
+   <p>Kurumsal Mail Server, işletmelerin profesyonel iletişim ihtiyaçlarına özel tasarlanmış, kurumsal düzeyde güvenlik ve yüksek performans sunan özel e-posta altyapısıdır. Gelişmiş antivirüs, antispam koruma, dedicated IP adresi ve DKIM/SPF/DMARC kimlik doğrulama desteği ile tamamen size ait bir sunucuda e-postalarınızı güvenle yönetebilir, işletmenizin dijital iletişiminde tam kontrolü elinizde bulundurabilirsiniz.</p>
+   <a class="ixir-wh-story-cta" href="#ixir-wh-plans">Hemen Paket Seç</a>
   </div>
  </div>
 </section>

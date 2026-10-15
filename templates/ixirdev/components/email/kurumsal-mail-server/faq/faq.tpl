@@ -1,153 +1,90 @@
-<section class="ixir-wh-faq ixir-slide ixir-slide--right is-slide-on"
+<section class="ixir-wh-faq ixir-wh-faq--light bg-light-blue ixir-slide ixir-slide--right is-slide-on"
  aria-labelledby="ixir-wh-faq-title">
  <div class="container">
   <header class="ixir-wh-plans-head">
    {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-wh-faq-title"}
-   <p>Kurumsal e-posta hizmetimizle ilgili merak ettiklerinizi yanıtlıyoruz.</p>
+   <p>Kurumsal mail server hizmetimiz hakkında merak ettiğiniz tüm sorular</p>
   </header>
   <div class="ixir-wh-faq-list">
    <div class="ixir-wh-faq-item is-open">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="true">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-     Kurumsal e-posta hizmeti nedir?
+     Sunucu Lokasyonu KVKK Gereksinimlerini Karşılıyor mu?
     </button>
     <div class="ixir-wh-faq-a">
-     <p>
-      Kurumsal e-posta hizmetimiz; yüksek depolama kapasiteli, güçlü ve kullanımı kolay bir e-posta çözümüdür.
-      İçerisinde <strong>süreç ve iletişim yönetimi, ekip çalışması</strong> gibi katma değerli bileşenler bulunur.
-      Exchange ve Google Workspace gibi bilinen servislere göre <strong>daha uygun fiyatlı, yerli ve KVKK
-       uyumludur.</strong>
-     </p>
+     <p>Sunucularımız Türkiye/İstanbul lokasyonlu olduğundan KVKK uyumludur, bu sayede verileriniz güvendedir.</p>
     </div>
    </div>
-
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-     Hosting üzerinde kullandığım e-postadan farkı var mı?
+     Farklı bir servis sağlayıcıdan ücretsiz taşıma yapıyor musunuz?
     </button>
     <div class="ixir-wh-faq-a">
-     <p>
-      Evet. Öncelikle e-posta kutunuz, standart hosting paketlerindeki e-posta limitlerinden
-      <strong>çok daha büyük</strong> olur. Yalnızca POP3/IMAP değil, <strong>Exchange benzeri MAPI</strong> ile
-      kişi ve adres defteri senkronizasyonu sunulur. Bunun yanında <strong>autodiscovery ile otomatik kurulum</strong>,
-      takım çalışması, görüntülü konferans, notlar ve dosya paylaşımı gibi kapsamlı bileşenler ile
-      <strong>antispam, antivirüs ve outbound filtreleme</strong> gibi katma değerli servisler de dahildir.
-     </p>
+     <p>IMAP ile bağlanabildiğimiz her sunucudan maillerinizi ücretsiz ve otomatik olarak taşıyabiliyoruz.</p>
     </div>
    </div>
-
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-     Posta kutusu kapasitesi ne kadar olacak?
+     Anti-Spam ve Anti-Virüs Koruması Mevcut mu?
     </button>
     <div class="ixir-wh-faq-a">
-     <p>
-      Kurumsal e-postayı standart hosting e-postasından ayıran en temel fark budur: Size
-      <strong>toplam bir depolama kapasitesi</strong> veriyoruz ve bu kapasiteyi e-posta hesaplarınız arasında
-      dilediğiniz gibi paylaştırabiliyorsunuz. Posta kutusu başına <strong>en fazla 50 GB</strong> tanımlanabilir.
-      Böylece toplam kapasitenizi verimli kullanır, atıl kapasite için ödeme yapmazsınız.
-     </p>
+     <p>Evet, gelen mailleriniz anti-spam ve anti-virüs filtrelerimizden geçerek mail sunucunuza ulaşmaktadır.</p>
     </div>
    </div>
-
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-     Diğer sağlayıcıdaki e-postalarım taşınacak mı?
+     Saatlik Gönderim Limiti Gibi Limitler Var mı?
     </button>
     <div class="ixir-wh-faq-a">
-     <p>
-      Evet. Google Workspace ve Office 365 gibi bilinen servislerin yanı sıra <strong>IMAP desteği olan tüm
-       sağlayıcılardan</strong> verilerinizi taşıyabilirsiniz. Taşıma işlemini panelinizden
-      <strong>1-2 basit adımda, dakikalar içinde</strong> kendiniz başlatabilir veya ekibimizden
-      <strong>ücretsiz destek</strong> alabilirsiniz.
-     </p>
+     <p>Hayır, herhangi bir limit uygulamamaktayız. Hizmetimiz kurumsal mail server olarak sunulmakta olup e-posta pazarlama (e-mail marketing) maksatlı kullanımlara izin verilmemektedir.</p>
     </div>
    </div>
-
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-     Outlook ve diğer cihazlarda yapılandırma nasıl olacak?
+     DKIM, SPF ve DMARC Kayıtları Kuruluyor mu?
     </button>
     <div class="ixir-wh-faq-a">
-     <p>
-      Outlook için MAPI sunduğumuzdan <strong>yalnızca e-posta adresinizi ve şifrenizi yazmanız yeterlidir;</strong>
-      diğer tüm ayarlar autodiscovery üzerinden otomatik gelir. Mobil cihazlarda hesabınızı
-      <strong>Exchange hesabı</strong> olarak, iOS cihazlarda ise <strong>CardDAV ve CalDAV</strong> hesabı olarak
-      ekleyebilirsiniz. Ayrıntılı kurulum rehberleri hizmet alımınızdan sonra sizinle paylaşılır.
-     </p>
+     <p>Evet, tüm paketlerde DKIM, SPF ve DMARC kayıtları profesyonel ekibimiz tarafından kurulur ve yapılandırılır. Bu sayede e-postalarınızın spam klasörüne düşmeden iletilmesi sağlanır.</p>
     </div>
    </div>
-
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-     Kurumsal e-posta hizmetinde DNS yapılandırması nasıl yapılır?
+     Dedicated IP Adresi Dahil mi?
     </button>
     <div class="ixir-wh-faq-a">
-     <p>
-      Bu servis için <strong>MX, A, CNAME ve SPF</strong> kayıtları gereklidir. Alan adınız veya hosting hesabınız
-      zaten bizdeyse <strong>bu kayıtları biz tanımlıyoruz.</strong> Farklı bir firmadaysa gerekli kayıtları size
-      iletiyor ve kurulum için destek veriyoruz. Ardından hesaplarınızı oluşturup taşıma işlemlerini
-      başlatabilirsiniz.
-     </p>
+     <p>Evet, tüm kurumsal mail server paketlerimizde dedicated (size özel) IP adresi standarttır. Paylaşımlı IP risklerine karşı mail itibarınız tamamen size aittir.</p>
     </div>
    </div>
-
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-     E-posta hesaplarını nasıl oluşturacağım?
+     Daha büyük kapasite veya farklı Mail Server Çözümünüz var mı?
     </button>
     <div class="ixir-wh-faq-a">
-     <p>
-      <strong>E-posta yönetim panelinize</strong> giriş yaparak yeni hesaplar oluşturabilir, hesapların
-      <strong>kotalarını değiştirebilir</strong> veya hesapları tamamen silebilirsiniz.
-     </p>
+     <p>Çözüm için size bir telefon veya bir e-posta kadar uzaktayız. Zimbra, MailEnable, IceWarp gibi farklı mail altyapılarını paketlerimizden bağımsız olarak ihtiyacınıza göre kurabiliriz.</p>
     </div>
    </div>
-
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-     Sipariş verdiğimde hizmet ne zaman aktif olur?
+     Yönetim ve Yedekleme Sağlıyor musunuz?
     </button>
     <div class="ixir-wh-faq-a">
-     <p>
-      <strong>Ödemenizin tamamlanmasının ardından hizmetiniz otomatik olarak aktif edilir.</strong>
-      DNS kayıtlarınız tanımlandıktan sonra e-posta hesaplarınızı hemen kullanmaya başlayabilirsiniz.
-     </p>
+     <p>Evet, ücretsiz yedekleme haftalık imaj bazlı yedeklemeyi kapsamaktadır. Makul bir ücret karşılığında yedekleme senaryosunu değiştirmemiz de mümkündür.</p>
     </div>
    </div>
-
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-     Paketimi daha sonra yükseltebilir miyim?
+     Gerektiğinde kapasitemizi artırabilir miyiz?
     </button>
     <div class="ixir-wh-faq-a">
-     <p>
-      Evet. Kullanıcı sayınız veya depolama ihtiyacınız arttığında <strong>destek talebi oluşturmanız
-       yeterlidir.</strong> Ekibimiz paket değişikliğini <strong>verileriniz korunarak</strong> en kısa sürede
-      gerçekleştirir.
-     </p>
-    </div>
-   </div>
-
-   <div class="ixir-wh-faq-item">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
-     <i class="fas fa-chevron-down" aria-hidden="true"></i>
-     E-posta sunucularınız nerede barındırılıyor?
-    </button>
-    <div class="ixir-wh-faq-a">
-     <p>
-      E-posta sunucularımız, tüm hizmetlerimizde olduğu gibi <strong>İstanbul'daki kendi TIER III+ veri
-       merkezimizde</strong> barındırılmaktadır. Gelen ve giden antispam ile outbound filtreleme sunucularımız da
-      Türkiye'dedir. Altyapımız <strong>ISO 27001, ISO 9001 ve ISO 10002 sertifikalarına</strong> sahiptir.
-     </p>
+     <p>Evet, kaynaklarınız yetmediğinde bir üst paket veya paketlerde olmayan CPU, disk, RAM gibi kaynaklarınızı artırabilirsiniz.</p>
     </div>
    </div>
   </div>

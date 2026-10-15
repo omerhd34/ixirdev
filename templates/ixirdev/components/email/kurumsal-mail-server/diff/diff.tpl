@@ -1,4 +1,4 @@
-<section class="ixir-wh-diff ixir-wh-diff--mail ixir-slide ixir-slide--right is-slide-on"
+<section class="ixir-wh-diff ixir-wh-diff--mail ixir-wh-diff--dark bg-dark-blue ixir-slide ixir-slide--right is-slide-on"
  aria-labelledby="ixir-wh-diff-title">
  <script>
   {literal}
@@ -13,63 +13,49 @@
  </script>
  <div class="container">
   <header class="ixir-wh-diff-head">
-   {include file="$template/components/Heading.tpl" title="Kurumsal Mail Hosting: Fark Yaratan Özellikler" id="ixir-wh-diff-title"}
+   {include file="$template/components/Heading.tpl" title="Neden Kurumsal Mail Server Seçmelisiniz?" id="ixir-wh-diff-title" class="text-white"}
   </header>
   <ul class="ixir-wh-diff-grid">
    <li>
-    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-envelope-open-text"></i></span>
+    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-server"></i></span>
     <div>
-     <h3>Kesintisiz Mail Hizmeti</h3>
-     <p>E-Postaları önemsiyoruz, altyapımızı buna göre kurguluyor ve kesintisiz iletişim sağlıyoruz.</p>
+     <h3>Size Özel Sunucu</h3>
+     <p>Tamamen sizin işletmenize özel konfigüre edilmiş, paylaşımsız mail sunucusu. Verileriniz yalnızca size ait altyapıda saklanır, üçüncü kişilerin erişimi engellenir. Kurumsal gizlilik ve veri güvenliği standartlarına tam uyum sağlar.</p>
     </div>
    </li>
    <li>
-    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-paper-plane"></i></span>
+    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-users"></i></span>
     <div>
-     <h3>Saygın E-Posta Gönderimi</h3>
-     <p>Gönderdiğiniz E-Postalara değer katıyoruz ve yüksek gelen kutusu başarısı sunuyoruz.</p>
+     <h3>Sınırsız Kullanıcı</h3>
+     <p>Ekibiniz büyüdükçe ek maliyet olmadan sınırsız e-posta hesabı oluşturun. Yeni çalışanlarınız için anında hesap açabilir, departman bazlı organizasyon yapabilirsiniz. Ölçeklenebilir altyapı ile büyümeniz hiçbir zaman kısıtlanmaz.</p>
     </div>
    </li>
    <li>
-    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-puzzle-piece"></i></span>
+    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-hdd"></i></span>
     <div>
-     <h3>Katma Değerli Servisler</h3>
-     <p>Anlık mesajlaşma, görüntülü konferans, dosya paylaşımı, notlar gibi bütünleşik iletişim çözümü sunuyoruz.</p>
+     <h3>Yüksek Kapasite</h3>
+     <p>1 TB'a varan toplam depolama alanı ile tüm e-posta geçmişinizi güvenle saklayın. Kullanıcı bazında esnek kota yönetimi yapabilir, ekiplerinizin ihtiyaçlarına göre kaynakları dağıtabilirsiniz. Arşiv endişesi olmadan kesintisiz çalışın.</p>
     </div>
    </li>
    <li>
     <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
     <div>
-     <h3>Güvenli Kurumsal E-posta</h3>
-     <p>Spam ve virüslü maillerden arındırılmış, temiz bir gelen kutusu, güvenli bir çalışma alanı sunuyoruz.</p>
+     <h3>Kurumsal Güvenlik</h3>
+     <p>Çok katmanlı güvenlik sistemi ile spam, virüs ve zararlı yazılımlardan korunun. Gelişmiş filtreleme kuralları ile kendi güvenlik politikalarınızı oluşturun. SSL/TLS şifreleme ile tüm iletişiminiz uçtan uca güvence altında.</p>
     </div>
    </li>
    <li>
-    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-mobile-alt"></i></span>
+    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-desktop"></i></span>
     <div>
-     <h3>Çoklu Cihaz Desteği</h3>
-     <p>Güncel tüm mobil cihazlar, masaüstü uygulamalar ile mail alışverişi sağlayabilirsiniz.</p>
+     <h3>Modern Yönetim Paneli</h3>
+     <p>Sezgisel ve kullanıcı dostu arayüz ile tüm mail sunucunuzu tek merkezden yönetin. Kullanıcı ekleme, kota ayarlama, yetkilendirme işlemlerini saniyeler içinde gerçekleştirin. Detaylı raporlama ve istatistiklerle tam kontrol sizde.</p>
     </div>
    </li>
    <li>
     <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-headset"></i></span>
     <div>
-     <h3>Kesintisiz Destek</h3>
-     <p>Soru ve sorunlarınızda ivedi ve öncelikli olarak destek sunuyoruz.</p>
-    </div>
-   </li>
-   <li>
-    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-robot"></i></span>
-    <div>
-     <h3>Yapay Zeka Destekli Antispam</h3>
-     <p>Algılama ve engellemede farklı metodlarla güvenliği sağlıyoruz.</p>
-    </div>
-   </li>
-   <li>
-    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-exchange-alt"></i></span>
-    <div>
-     <h3>Ücretsiz Şirket Maili Taşıma</h3>
-     <p>Birkaç basit adımda otomatik olarak tüm verilerinizi dakikalar içinde aktarıyoruz.</p>
+     <h3>7/24 Profesyonel Destek</h3>
+     <p>Uzman teknik ekibimiz günün her saati hizmetinizdedir. Mail sunucunuzda oluşabilecek her türlü sorun için anında müdahale ve çözüm. Kritik iş süreçleriniz için kesintisiz, hızlı ve güvenilir destek garantisi.</p>
     </div>
    </li>
   </ul>

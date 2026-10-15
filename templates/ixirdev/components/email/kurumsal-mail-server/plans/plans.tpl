@@ -60,9 +60,10 @@
     </div>
     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
     <div class="ixir-wh-quota">
-     <div><i class="fas fa-hdd" aria-hidden="true"></i><span>CPU</span><b>2 Core</b></div>
-     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>RAM(GB)</span><b>4</b></div>
-     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>Disk Alanı(GB)</span><b>200</b></div>
+     <div><i class="fas fa-microchip" aria-hidden="true"></i><span>CPU</span><b>2 Core</b></div>
+     <div><i class="fas fa-memory" aria-hidden="true"></i><span>RAM(GB)</span><b>4</b></div>
+     <div><i class="fas fa-hdd" aria-hidden="true"></i><span>Disk Alanı(GB)</span><b>200</b></div>
+     <div><i class="fas fa-users" aria-hidden="true"></i><span>İdeal Kullanım</span><b>~50 Hesap</b></div>
     </div>
    </article>
    <article class="ixir-wh-plan ixir-wh-plan--best">
@@ -110,10 +111,10 @@
     </div>
     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
     <div class="ixir-wh-quota">
-     <div><i class="fas fa-hdd" aria-hidden="true"></i><span>CPU</span><b>4 Core</b></div>
-     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>RAM(GB)</span><b>6</b></div>
-          <div><i class="fas fa-envelope" aria-hidden="true"></i><span>Disk Alanı(GB)</span><b>400</b></div>
-
+     <div><i class="fas fa-microchip" aria-hidden="true"></i><span>CPU</span><b>4 Core</b></div>
+     <div><i class="fas fa-memory" aria-hidden="true"></i><span>RAM(GB)</span><b>6</b></div>
+     <div><i class="fas fa-hdd" aria-hidden="true"></i><span>Disk Alanı(GB)</span><b>400</b></div>
+     <div><i class="fas fa-users" aria-hidden="true"></i><span>İdeal Kullanım</span><b>~150 Hesap</b></div>
     </div>
    </article>
    <article class="ixir-wh-plan">
@@ -159,9 +160,10 @@
     </div>
     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
     <div class="ixir-wh-quota">
-     <div><i class="fas fa-hdd" aria-hidden="true"></i><span>CPU</span><b>6 Core</b></div>
-     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>RAM(GB)</span><b>8</b></div>
-     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>Disk Alanı(GB)</span><b>600</b></div>
+     <div><i class="fas fa-microchip" aria-hidden="true"></i><span>CPU</span><b>6 Core</b></div>
+     <div><i class="fas fa-memory" aria-hidden="true"></i><span>RAM(GB)</span><b>8</b></div>
+     <div><i class="fas fa-hdd" aria-hidden="true"></i><span>Disk Alanı(GB)</span><b>600</b></div>
+     <div><i class="fas fa-users" aria-hidden="true"></i><span>İdeal Kullanım</span><b>~300 Hesap</b></div>
     </div>
    </article>
    <article class="ixir-wh-plan">
@@ -209,9 +211,10 @@
     </div>
     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
     <div class="ixir-wh-quota">
-     <div><i class="fas fa-hdd" aria-hidden="true"></i><span>CPU</span><b>8 Core</b></div>
-     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>RAM(GB)</span><b>16</b></div>
-     <div><i class="fas fa-envelope" aria-hidden="true"></i><span>Disk Alanı(GB)</span><b>1000</b></div>
+     <div><i class="fas fa-microchip" aria-hidden="true"></i><span>CPU</span><b>8 Core</b></div>
+     <div><i class="fas fa-memory" aria-hidden="true"></i><span>RAM(GB)</span><b>16</b></div>
+     <div><i class="fas fa-hdd" aria-hidden="true"></i><span>Disk Alanı(GB)</span><b>1000</b></div>
+     <div><i class="fas fa-users" aria-hidden="true"></i><span>İdeal Kullanım</span><b>~600 Hesap</b></div>
     </div>
    </article>
   </div>
@@ -221,28 +224,28 @@
     <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
    </div>
    <ul class="ixir-wh-shared ixir-wh-shared--5 ixir-wh-shared--click" id="ixir-km-shared" data-visible="10">
-    <li><i class="fab fa-linux" aria-hidden="true"></i>Sınırsız Domain Barındırma<span class="ixir-wh-tip"><button
+    <li><i class="fas fa-globe" aria-hidden="true"></i>Sınırsız Domain Barındırma<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="Sınırsız Domain Barındırma açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">İstediğiniz kadar domain ile mail oluşturun.</span></span></li>
-    <li><i class="fab fa-linux" aria-hidden="true"></i>%100 KVKK Uyumlu<span class="ixir-wh-tip"><button
+    <li><i class="fas fa-shield-alt" aria-hidden="true"></i>%100 KVKK Uyumlu<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="%100 KVKK Uyumlu açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Tüm yasal mevzuata tam uyumluluk</span></span></li>
-    <li><i class="fab fa-linux" aria-hidden="true"></i>Paylaşımlı Takvim<span class="ixir-wh-tip"><button
+    <li><i class="fas fa-calendar-alt" aria-hidden="true"></i>Paylaşımlı Takvim<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="Paylaşımlı Takvim açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Ekip iş birliği ve randevu yönetimi</span></span></li>
-    <li><i class="fab fa-linux" aria-hidden="true"></i>Gelişmiş Güvenlik<span class="ixir-wh-tip"><button
+    <li><i class="fas fa-user-shield" aria-hidden="true"></i>Gelişmiş Güvenlik<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="Gelişmiş Güvenlik açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Anti-Spam ve Anti-Virüs koruması</span></span></li>
-    <li><i class="fab fa-linux" aria-hidden="true"></i>Dedicated IP<span class="ixir-wh-tip"><button
+    <li><i class="fas fa-network-wired" aria-hidden="true"></i>Dedicated IP<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="Dedicated IP açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Size özel IP — mail itibarınız güvende</span></span></li>
-    <li><i class="fab fa-linux" aria-hidden="true"></i>DKIM / SPF / DMARC<span class="ixir-wh-tip"><button
+    <li><i class="fas fa-certificate" aria-hidden="true"></i>DKIM / SPF / DMARC<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="DKIM / SPF / DMARC açıklaması"><i
         class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">E-posta kimlik doğrulama kurulum dahil</span></span></li>
-     <li><i class="fab fa-linux" aria-hidden="true"></i>Sınırsız E-Posta Hesabı</li>
-    <li><i class="fab fa-linux" aria-hidden="true"></i>Sınırsız Gönderim Kotası</li>
-    <li><i class="fab fa-linux" aria-hidden="true"></i>POP/IMAP/SMTP</li>
-    <li><i class="fab fa-linux" aria-hidden="true"></i>Ücretsiz SSL Sertifikası</li>
+    <li><i class="fas fa-envelope-open-text" aria-hidden="true"></i>Sınırsız E-Posta Hesabı</li>
+    <li><i class="fas fa-paper-plane" aria-hidden="true"></i>Sınırsız Gönderim Kotası</li>
+    <li><i class="fas fa-sync-alt" aria-hidden="true"></i>POP/IMAP/SMTP</li>
+    <li><i class="fas fa-lock" aria-hidden="true"></i>Ücretsiz SSL Sertifikası</li>
    </ul>
   </div>
  </div>

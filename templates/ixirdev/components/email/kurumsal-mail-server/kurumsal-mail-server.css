@@ -6,3 +6,58 @@
     row-gap: 0;
   }
 }
+
+@media only screen and (min-width: 992px) {
+  section#home-banner.ixir-hero--kurumsal-mail-server > .container {
+    padding-top: clamp(28px, 3.8vh, 50px);
+    padding-bottom: clamp(28px, 3.8vh, 50px);
+  }
+
+  section#home-banner.ixir-hero--kurumsal-mail-server .ixir-hero-main > .ixir-hero-label {
+    margin-top: clamp(24px, 3vh, 40px);
+  }
+
+  section#home-banner.ixir-hero--kurumsal-mail-server .ixir-domain-links-wrap,
+  section#home-banner.ixir-hero--kurumsal-mail-server .ixir-hero-links-wrap {
+    margin-top: clamp(20px, 2.5vh, 32px);
+    padding-top: 16px;
+  }
+
+  section#home-banner.ixir-hero--kurumsal-mail-server .ixir-hero-photo img,
+  section#home-banner.ixir-hero--kurumsal-mail-server .ixir-hero-photo.ixir-hero-photo--mail img {
+    object-position: 50% center !important;
+  }
+
+  section#home-banner.ixir-hero--kurumsal-mail-server .ixir-hero-main {
+    max-width: 960px;
+  }
+
+  section#home-banner.ixir-hero--kurumsal-mail-server .ixir-hero-copy > p {
+    white-space: nowrap;
+  }
+
+  section#home-banner.ixir-hero--kurumsal-mail-server .ixir-hero-points {
+    grid-template-columns: var(--ixir-hero-cols);
+    column-gap: var(--ixir-hero-col-gap);
+  }
+
+  section#home-banner.ixir-hero--kurumsal-mail-server .ixir-hero-points li span {
+    white-space: nowrap;
+  }
+}
+
+.ixir-wh-diff .ixir-wh-diff-grid li,
+.ixir-wh-diff.is-settled .ixir-wh-diff-grid li,
+.ixir-wh-diff--dark .ixir-wh-diff-grid li,
+.ixir-wh-diff--dark.is-settled .ixir-wh-diff-grid li {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.ixir-wh-diff .ixir-wh-diff-grid li:hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.ixir-wh-diff .ixir-wh-diff-icon {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
