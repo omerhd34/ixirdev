@@ -12,8 +12,8 @@
    {/literal}
   </script>
   <div class="container">
-   <header class="ixir-wh-plans-head ixir-wh-story-features-head" style="margin-bottom: 36px;">
-    {include file="$template/components/Heading.tpl" title="Server Destek Hizmetinin Faydaları" id="ixir-wh-story-features-title"}
+   <header class="ixir-wh-story-features-head" style="margin-bottom: 36px;">
+    {include file="$template/components/Heading.tpl" title="Server Destek Hizmetinin Faydaları" id="ixir-wh-story-features-title" class="text-white"}
     <p>Profesyonel sunucu yönetimi ile maksimum verim, kesintisiz performans ve maliyet avantajı sağlayın.</p>
    </header>
    <article class="ixir-wh-story-row ixir-wh-story-row--cpanel">

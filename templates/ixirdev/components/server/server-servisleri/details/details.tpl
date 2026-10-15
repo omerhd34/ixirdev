@@ -1,4 +1,4 @@
-<section class="ixir-ss-details ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-ss-details-title">
+<section class="ixir-ss-details bg-light-blue ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-ss-details-title">
  <div class="container">
   <header class="ixir-wh-plans-head ixir-ss-details-head">
    {include file="$template/components/Heading.tpl" title="Server Destek Hizmetinin Detayları" id="ixir-ss-details-title"}

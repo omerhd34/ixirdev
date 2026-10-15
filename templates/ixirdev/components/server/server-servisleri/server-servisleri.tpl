@@ -1,4 +1,4 @@
-<div class="ixir-wh-page--wp">
+<div class="ixir-ss-page">
  {include file="$template/components/server/server-servisleri/hero/hero.tpl"}
  {include file="$template/components/server/server-servisleri/plans/plans.tpl"}
  {include file="$template/components/server/server-servisleri/story-intro/story-intro.tpl"}

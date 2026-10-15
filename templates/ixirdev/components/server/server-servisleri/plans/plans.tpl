@@ -94,19 +94,19 @@
      <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
     </div>
     <ul class="ixir-wh-shared ixir-wh-shared--click">
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>İlk Kurulum</li>
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>Yeniden Kurulum</li>
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>İşletim Sistemi Güncelleme</li>
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>Kontrol Paneli Güncelleme</li>
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>Sunucu Taşıma Desteği</li>
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>İşletim Sistemi Desteği</li>
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>Kontrol Panel Desteği</li>
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>Sunucu Servisleri Desteği</li>
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>Sunucu Servisleri Optimizasyonu</li>
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>Software Firewall Ayarları</li>
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>Spam / Anti-Spam Ayarları</li>     
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>E-Posta Problemleri</li>
-     <li><i class="fas fa-th-large" aria-hidden="true"></i>7/24 Olağanüstü Durum Desteği</li>
+     <li><i class="fas fa-server" aria-hidden="true"></i>İlk Kurulum</li>
+     <li><i class="fas fa-power-off" aria-hidden="true"></i>Yeniden Kurulum</li>
+     <li><i class="fas fa-sync-alt" aria-hidden="true"></i>İşletim Sistemi Güncelleme</li>
+     <li><i class="fas fa-sliders-h" aria-hidden="true"></i>Kontrol Paneli Güncelleme</li>
+     <li><i class="fas fa-truck" aria-hidden="true"></i>Sunucu Taşıma Desteği</li>
+     <li><i class="fas fa-terminal" aria-hidden="true"></i>İşletim Sistemi Desteği</li>
+     <li><i class="fas fa-columns" aria-hidden="true"></i>Kontrol Panel Desteği</li>
+     <li><i class="fas fa-network-wired" aria-hidden="true"></i>Sunucu Servisleri Desteği</li>
+     <li><i class="fas fa-tachometer-alt" aria-hidden="true"></i>Sunucu Servisleri Optimizasyonu</li>
+     <li><i class="fas fa-fire-alt" aria-hidden="true"></i>Software Firewall Ayarları</li>
+     <li><i class="fas fa-shield-alt" aria-hidden="true"></i>Spam / Anti-Spam Ayarları</li>     
+     <li><i class="fas fa-envelope" aria-hidden="true"></i>E-Posta Problemleri</li>
+     <li><i class="fas fa-life-ring" aria-hidden="true"></i>7/24 Olağanüstü Durum Desteği</li>
      </ul>
    </div>
   </div>

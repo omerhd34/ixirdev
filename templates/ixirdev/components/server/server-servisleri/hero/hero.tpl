@@ -1,4 +1,4 @@
- <section id="home-banner" class="ixir-hero ixir-hero--wordpress" aria-label="Server Destek Hizmeti">
+ <section id="home-banner" class="ixir-hero ixir-hero--server-servisleri" aria-label="Server Destek Hizmeti">
   <picture class="ixir-hero-photo">
    <source srcset="{$WEB_ROOT}/templates/{$template}/img/server/bg36.webp" type="image/webp">
    <img src="{$WEB_ROOT}/templates/{$template}/img/server/bg36.webp" alt="" width="1920" height="1080">
@@ -17,21 +17,21 @@
     <p class="ixir-hero-label" aria-hidden="true">Özellikler</p>
     <ul class="ixir-hero-points" aria-label="Özellikler">
      <li>
-      <i class="fas fa-hdd" aria-hidden="true"></i>
+      <i class="fas fa-wrench" aria-hidden="true"></i>
       <span>Sunucu Bakımı</span>
      </li>
      <li>
-      <i class="fas fa-desktop" aria-hidden="true"></i>
+      <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
       <span>Optimizasyon</span>
      </li>
      <li>
-      <i class="fas fa-lock" aria-hidden="true"></i>
+      <i class="fas fa-chart-line" aria-hidden="true"></i>
       <span>Sunucu / Servis İzleme</span>
      </li>
     </ul>
-    <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer hizmetler">
+    <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer hizmetler">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
@@ -53,7 +53,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
@@ -75,7 +75,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
         <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
