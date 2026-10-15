@@ -18,7 +18,8 @@
  margin-top: var(--ixir-hero-label-gap);
 }
 
-.ixir-domain-links-wrap>.ixir-hero-label {
+.ixir-domain-links-wrap>.ixir-hero-label,
+.ixir-hero-links-wrap>.ixir-hero-label {
  grid-column: 1 / -1;
  margin: 0 0 calc(var(--ixir-hero-label-gap) - var(--ixir-links-row-gap, 10px));
 }

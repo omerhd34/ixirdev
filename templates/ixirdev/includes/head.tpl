@@ -12,9 +12,9 @@
 <link href="{assetPath file='all.min.css'}?v={$versionHash}-r1" rel="stylesheet">
 <link href="{$WEB_ROOT}/assets/css/fontawesome-all.min.css" rel="stylesheet">
 {assetExists file="base.css"}
-<link href="{$__assetPath__}?v={$versionHash}-r25" rel="stylesheet">
+<link href="{$__assetPath__}?v={$versionHash}-r26" rel="stylesheet">
 {/assetExists}
-<link href="{$WEB_ROOT}/templates/{$template}/css/common.css?v={$versionHash}-r1" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/css/common.css?v={$versionHash}-r2" rel="stylesheet">
 <link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r37" rel="stylesheet">
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/news-bar/news-bar.css?v={$versionHash}-r12"
@@ -86,7 +86,7 @@
   rel="stylesheet">
 {/if}
 {if !$ixirIsAuthPage && !$showingLoginPage && $templatefile != 'login' && $templatefile != 'clientregister' && $templatefile != 'password-reset' && $filename != 'ixir-hesabim' && $filename != 'register'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/help/help.css?v={$versionHash}-r17" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/help/help.css?v={$versionHash}-r18" rel="stylesheet">
 {/if}
 <link href="{$WEB_ROOT}/templates/{$template}/components/footer/footer.css?v={$versionHash}-r44" rel="stylesheet">
 {if $templatefile == 'homepage'}
@@ -191,16 +191,10 @@
    'hosting/shared/plans/plans',
    'hosting/shared/story/story',
    'hosting/shared/diff/diff',
-   'hosting/shared/compare/compare',
    'hosting/shared/faq/faq',
    'email/kurumsal-mail-server/plans/plans',
-   'email/kurumsal-mail-server/price-compare/price-compare',
    'email/kurumsal-mail-server/kurumsal-mail-server',
-   'email/kurumsal-mail-server/turkey/turkey',
-   'email/kurumsal-mail-server/suite/suite',
-   'email/kurumsal-mail-server/outlook/outlook',
-   'email/kurumsal-mail-server/teamwork/teamwork',
-   'email/kurumsal-mail-server/reviews/reviews'
+   'email/kurumsal-mail-server/features/features'
   ]}
  {elseif $ixirPageSlug == 'linux-reseller-hosting'}
   {assign var=ixirPageCss value=[
@@ -290,7 +284,7 @@
   ]}
  {/if}
  {foreach from=$ixirPageCss item=ixirCss}
-  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r116"
+  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r120"
    rel="stylesheet">
  {/foreach}
  <script src="{$WEB_ROOT}/templates/{$template}/components/hosting/plans-slider.js?v={$versionHash}-r7" defer></script>
