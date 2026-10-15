@@ -12,6 +12,7 @@
 }
 
 .ixir-wh-diff.ixir-wh-diff--dark,
+.ixir-wh-diff.bg-dark-blue,
 .ixir-wh-diff--dark {
   background: #091322 !important;
   background-image: 
@@ -20,14 +21,28 @@
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-.ixir-wh-diff--dark .ixir-wh-diff-head h2 {
-  color: #fff;
+.ixir-wh-diff--dark .ixir-wh-diff-head h2,
+.ixir-wh-diff--dark .site-heading,
+.ixir-wh-diff.bg-dark-blue .site-heading,
+.ixir-wh-diff.bg-dark-blue .ixir-wh-diff-head h2,
+.bg-dark-blue .ixir-wh-diff-head .site-heading {
+  color: #fff !important;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
 }
 .ixir-wh-diff--dark .ixir-wh-diff-head p {
   color: #94a3b8;
 }
-.ixir-wh-diff--dark .ixir-wh-diff-grid li {
+.ixir-wh-diff--dark .ixir-wh-diff-icon {
+  background: rgba(37, 99, 235, 0.15) !important;
+  border-color: rgba(59, 130, 246, 0.35) !important;
+  box-shadow: 0 8px 18px -4px rgba(0, 0, 0, 0.4) !important;
+}
+.ixir-wh-diff--dark .ixir-wh-diff-icon i {
+  color: #60a5fa !important;
+}
+.ixir-wh-diff--dark .ixir-wh-diff-grid li,
+.ixir-wh-diff--dark.is-settled .ixir-wh-diff-grid li,
+.ixir-wh-diff.is-settled .ixir-wh-diff-grid li {
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
@@ -62,11 +77,11 @@
   color: #94a3b8;
 }
 
-.ixir-wh-diff:not(.ixir-wh-diff--dark):not(.bg-koyu-mavi),
+.ixir-wh-diff:not(.ixir-wh-diff--dark):not(.bg-dark-blue),
 .ixir-wh-diff--light,
-.ixir-wh-diff.bg-acik-mavi,
+.ixir-wh-diff.bg-light-blue,
 .ixir-wh-page--wp .ixir-wh-diff--light {
-  background-color: #f0f6ff !important;
+  background-color: #f8fafc !important;
   border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
   border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
 }

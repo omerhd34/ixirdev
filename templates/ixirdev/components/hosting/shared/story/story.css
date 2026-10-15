@@ -87,7 +87,10 @@
   transform: translateY(-2px) scale(1.05);
 }
 .ixir-wh-story-intro h2,
-.ixir-wh-story-intro .site-heading {
+.ixir-wh-story-intro .site-heading,
+.ixir-wh-story-features-head h2,
+.ixir-wh-story-features-head .site-heading,
+.ixir-wh-story:not(.bg-light-blue):not(.ixir-wh-story--light) .site-heading {
   margin: 0 0 16px !important;
   text-align: center !important;
   color: #fff !important;
@@ -95,11 +98,14 @@
   letter-spacing: -0.02em;
   font-weight: 700;
 }
-.ixir-wh-story-intro .site-heading::after {
+.ixir-wh-story-intro .site-heading::after,
+.ixir-wh-story-features-head .site-heading::after {
   background: linear-gradient(90deg, #2563eb, #60a5fa) !important;
   margin-top: 14px !important;
 }
-.ixir-wh-story-intro p {
+.ixir-wh-story-intro p,
+.ixir-wh-story-features-head p,
+.ixir-wh-story:not(.bg-light-blue):not(.ixir-wh-story--light) > .container > header p {
   margin: 0 auto 24px !important;
   max-width: 820px !important;
   color: rgba(255, 255, 255, 0.78) !important;
@@ -108,7 +114,9 @@
   text-align: center !important;
 }
 .ixir-wh-story-intro p strong,
-.ixir-wh-story-intro p b {
+.ixir-wh-story-intro p b,
+.ixir-wh-story-features-head p strong,
+.ixir-wh-story-features-head p b {
   color: #fff !important;
   font-weight: 700 !important;
 }
@@ -311,51 +319,48 @@
   }
 }
 
-/* ==========================================================================
-   Açık Mavi Theme for ixir-wh-story
-   ========================================================================== */
-.ixir-wh-story.bg-acik-mavi,
+.ixir-wh-story.bg-light-blue,
 .ixir-wh-story.ixir-wh-story--light {
-  background-color: #f0f6ff !important;
+  background-color: #f8fafc !important;
   background-image: none !important;
   border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
   border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
   color: #0b1e36 !important;
 }
 
-.ixir-wh-story.bg-acik-mavi::before,
+.ixir-wh-story.bg-light-blue::before,
 .ixir-wh-story.ixir-wh-story--light::before {
   background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
 }
 
-.ixir-wh-story.bg-acik-mavi .ixir-wh-story-intro h2,
-.ixir-wh-story.bg-acik-mavi .ixir-wh-story-intro .site-heading,
+.ixir-wh-story.bg-light-blue .ixir-wh-story-intro h2,
+.ixir-wh-story.bg-light-blue .ixir-wh-story-intro .site-heading,
 .ixir-wh-story.ixir-wh-story--light .ixir-wh-story-intro h2,
 .ixir-wh-story.ixir-wh-story--light .ixir-wh-story-intro .site-heading {
   color: #0b1e36 !important;
 }
 
-.ixir-wh-story.bg-acik-mavi .ixir-wh-story-intro p,
+.ixir-wh-story.bg-light-blue .ixir-wh-story-intro p,
 .ixir-wh-story.ixir-wh-story--light .ixir-wh-story-intro p {
   color: #475569 !important;
 }
 
-.ixir-wh-story.bg-acik-mavi .ixir-wh-story-intro p strong,
+.ixir-wh-story.bg-light-blue .ixir-wh-story-intro p strong,
 .ixir-wh-story.ixir-wh-story--light .ixir-wh-story-intro p strong {
   color: #0b1e36 !important;
 }
 
-.ixir-wh-story.bg-acik-mavi .ixir-wh-story-title,
+.ixir-wh-story.bg-light-blue .ixir-wh-story-title,
 .ixir-wh-story.ixir-wh-story--light .ixir-wh-story-title {
   color: #0b1e36 !important;
 }
 
-.ixir-wh-story.bg-acik-mavi .ixir-wh-story-copy p,
+.ixir-wh-story.bg-light-blue .ixir-wh-story-copy p,
 .ixir-wh-story.ixir-wh-story--light .ixir-wh-story-copy p {
   color: #475569 !important;
 }
 
-.ixir-wh-story.bg-acik-mavi .ixir-wh-story-copy p strong,
+.ixir-wh-story.bg-light-blue .ixir-wh-story-copy p strong,
 .ixir-wh-story.ixir-wh-story--light .ixir-wh-story-copy p strong {
   color: #0b1e36 !important;
 }

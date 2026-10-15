@@ -1,7 +1,7 @@
 .ixir-wh-plans {
   position: relative;
   padding: 85px 0 95px;
-  background-color: #f0f6ff !important;
+  background-color: #f8fafc !important;
   border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
   border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
   overflow: visible;
@@ -344,9 +344,13 @@
   transform: translate3d(0, 0, 0);
   pointer-events: auto;
 }
-.ixir-wh-diff.is-settled .ixir-wh-diff-head, .ixir-wh-diff.is-settled .ixir-wh-diff-grid li {
+.ixir-wh-diff.is-settled .ixir-wh-diff-head {
   transform: none;
   transition: none;
+}
+.ixir-wh-diff.is-settled .ixir-wh-diff-grid li {
+  transform: none;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .ixir-wh-diff-head {
   max-width: 760px;
@@ -419,7 +423,7 @@
   width: 56px;
   height: 56px;
   border-radius: 16px;
-  background: linear-gradient(145deg, #ffffff 0%, #f0f6ff 100%);
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
   border: 1.5px solid #dbeafe;
   color: #2563eb;
   box-shadow: 0 8px 18px -4px rgba(59, 130, 246, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.9);
@@ -524,15 +528,16 @@
   text-align: center;
 }
 
-/* Global Alternating Section Classes */
-.bg-acik-mavi {
-  background-color: #f0f6ff !important;
+.bg-light-blue,
+.bg-light {
+  background-color: #f8fafc !important;
   background-image: none !important;
-  border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
-  border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
+  border-top: 1px solid #eef2f6 !important;
+  border-bottom: 1px solid #eef2f6 !important;
 }
 
-.bg-koyu-mavi {
+.bg-dark-blue,
+.bg-dark {
   background-color: #091322 !important;
   background-image: 
     radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
@@ -540,6 +545,37 @@
     linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
   border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+}
+
+.bg-dark-blue .site-heading,
+.bg-dark .site-heading,
+.bg-dark-blue h1,
+.bg-dark-blue h2,
+.bg-dark-blue h3,
+.bg-dark-blue h4,
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark-blue .ixir-wh-plans-head .site-heading,
+.bg-dark-blue .ixir-wh-diff-head .site-heading,
+.bg-dark-blue .ixir-ds-head .site-heading,
+.bg-dark .ixir-wh-plans-head .site-heading,
+.bg-dark .ixir-wh-diff-head .site-heading,
+.bg-dark .ixir-ds-head .site-heading {
+  color: #ffffff !important;
+}
+
+.bg-dark-blue p,
+.bg-dark p,
+.bg-dark-blue .ixir-wh-plans-head p,
+.bg-dark-blue .ixir-wh-diff-head p,
+.bg-dark-blue .ixir-ds-head p,
+.bg-dark .ixir-wh-plans-head p,
+.bg-dark .ixir-wh-diff-head p,
+.bg-dark .ixir-ds-head p {
+  color: rgba(255, 255, 255, 0.78) !important;
 }
 .ixir-wh-apps.is-armed {
   overflow-x: clip;

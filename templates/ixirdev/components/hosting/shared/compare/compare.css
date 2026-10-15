@@ -1,5 +1,5 @@
 .ixir-wh-compare.ixir-wh-compare--dark,
-.ixir-wh-compare.bg-koyu-mavi,
+.ixir-wh-compare.bg-dark-blue,
 .ixir-wh-compare--dark {
   padding: 64px 0 72px;
   background: #091322 !important;
@@ -10,40 +10,40 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .ixir-wh-compare.ixir-wh-compare--dark .ixir-wh-plans-head h2,
-.ixir-wh-compare.bg-koyu-mavi .ixir-wh-plans-head h2,
+.ixir-wh-compare.bg-dark-blue .ixir-wh-plans-head h2,
 .ixir-wh-compare--dark .ixir-wh-plans-head h2 {
   color: #fff;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
 }
 .ixir-wh-compare.ixir-wh-compare--dark .ixir-wh-plans-head p,
-.ixir-wh-compare.bg-koyu-mavi .ixir-wh-plans-head p,
+.ixir-wh-compare.bg-dark-blue .ixir-wh-plans-head p,
 .ixir-wh-compare--dark .ixir-wh-plans-head p {
   color: #94a3b8;
 }
 .ixir-wh-compare.ixir-wh-compare--dark .ixir-wh-table,
-.ixir-wh-compare.bg-koyu-mavi .ixir-wh-table,
+.ixir-wh-compare.bg-dark-blue .ixir-wh-table,
 .ixir-wh-compare--dark .ixir-wh-table {
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
 }
 
-.ixir-wh-compare:not(.ixir-wh-compare--dark):not(.bg-koyu-mavi),
+.ixir-wh-compare:not(.ixir-wh-compare--dark):not(.bg-dark-blue),
 .ixir-wh-compare--light,
-.ixir-wh-compare.bg-acik-mavi {
+.ixir-wh-compare.bg-light-blue {
   padding: 64px 0 72px;
-  background-color: #f0f6ff !important;
+  background-color: #f8fafc !important;
   background-image: none !important;
   border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
   border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
 }
-.ixir-wh-compare:not(.ixir-wh-compare--dark):not(.bg-koyu-mavi) .ixir-wh-plans-head h2,
+.ixir-wh-compare:not(.ixir-wh-compare--dark):not(.bg-dark-blue) .ixir-wh-plans-head h2,
 .ixir-wh-compare--light .ixir-wh-plans-head h2,
-.ixir-wh-compare.bg-acik-mavi .ixir-wh-plans-head h2 {
+.ixir-wh-compare.bg-light-blue .ixir-wh-plans-head h2 {
   color: #0b1e36 !important;
 }
-.ixir-wh-compare:not(.ixir-wh-compare--dark):not(.bg-koyu-mavi) .ixir-wh-plans-head p,
+.ixir-wh-compare:not(.ixir-wh-compare--dark):not(.bg-dark-blue) .ixir-wh-plans-head p,
 .ixir-wh-compare--light .ixir-wh-plans-head p,
-.ixir-wh-compare.bg-acik-mavi .ixir-wh-plans-head p {
+.ixir-wh-compare.bg-light-blue .ixir-wh-plans-head p {
   color: #64748b !important;
 }
 

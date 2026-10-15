@@ -1,15 +1,15 @@
-.ixir-wh-guide:not(.ixir-wh-guide--dark):not(.bg-koyu-mavi),
+.ixir-wh-guide:not(.ixir-wh-guide--dark):not(.bg-dark-blue),
 .ixir-wh-guide--light,
-.ixir-wh-guide.bg-acik-mavi {
+.ixir-wh-guide.bg-light-blue {
   padding: 56px 0;
-  background-color: #f0f6ff !important;
+  background-color: #f8fafc !important;
   background-image: none !important;
   border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
   border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
 }
 
 .ixir-wh-guide.ixir-wh-guide--dark,
-.ixir-wh-guide.bg-koyu-mavi {
+.ixir-wh-guide.bg-dark-blue {
   padding: 56px 0;
   background-color: #091322 !important;
   background-image: 
@@ -21,19 +21,19 @@
 }
 
 .ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-guide-item,
-.ixir-wh-guide.bg-koyu-mavi .ixir-wh-guide-item {
+.ixir-wh-guide.bg-dark-blue .ixir-wh-guide-item {
   background: rgba(13, 27, 49, 0.75) !important;
   border-color: rgba(59, 130, 246, 0.22) !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
 }
 
 .ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-guide-item h3,
-.ixir-wh-guide.bg-koyu-mavi .ixir-wh-guide-item h3 {
+.ixir-wh-guide.bg-dark-blue .ixir-wh-guide-item h3 {
   color: #ffffff !important;
 }
 
 .ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-guide-item p,
-.ixir-wh-guide.bg-koyu-mavi .ixir-wh-guide-item p {
+.ixir-wh-guide.bg-dark-blue .ixir-wh-guide-item p {
   color: #94a3b8 !important;
 }
 .ixir-wh-guide.is-armed {

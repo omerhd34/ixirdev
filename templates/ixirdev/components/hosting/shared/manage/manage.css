@@ -148,47 +148,45 @@
   }
 }
 
-/* ==========================================================================
-   Açık Mavi Theme for ixir-wh-manage
-   ========================================================================== */
-.ixir-wh-manage.bg-acik-mavi,
+
+.ixir-wh-manage.bg-light-blue,
 .ixir-wh-manage.ixir-wh-manage--light {
-  background-color: #f0f6ff !important;
+  background-color: #f8fafc !important;
   background-image: none !important;
   border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
   border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
 }
 
-.ixir-wh-manage.bg-acik-mavi .ixir-wh-manage-head h2,
+.ixir-wh-manage.bg-light-blue .ixir-wh-manage-head h2,
 .ixir-wh-manage.ixir-wh-manage--light .ixir-wh-manage-head h2 {
   color: #0b1e36 !important;
 }
 
-.ixir-wh-manage.bg-acik-mavi .ixir-wh-manage-head p,
+.ixir-wh-manage.bg-light-blue .ixir-wh-manage-head p,
 .ixir-wh-manage.ixir-wh-manage--light .ixir-wh-manage-head p {
   color: #64748b !important;
 }
 
-.ixir-wh-manage.bg-acik-mavi .ixir-wh-manage-grid li,
+.ixir-wh-manage.bg-light-blue .ixir-wh-manage-grid li,
 .ixir-wh-manage.ixir-wh-manage--light .ixir-wh-manage-grid li {
   background: #ffffff !important;
   border: 1px solid rgba(59, 130, 246, 0.18) !important;
   box-shadow: 0 10px 25px -4px rgba(59, 130, 246, 0.08) !important;
 }
 
-.ixir-wh-manage.bg-acik-mavi .ixir-wh-manage-grid li:hover,
+.ixir-wh-manage.bg-light-blue .ixir-wh-manage-grid li:hover,
 .ixir-wh-manage.ixir-wh-manage--light .ixir-wh-manage-grid li:hover {
   border-color: rgba(59, 130, 246, 0.45) !important;
   box-shadow: 0 18px 36px -4px rgba(59, 130, 246, 0.16) !important;
   background: #ffffff !important;
 }
 
-.ixir-wh-manage.bg-acik-mavi .ixir-wh-manage-grid h3,
+.ixir-wh-manage.bg-light-blue .ixir-wh-manage-grid h3,
 .ixir-wh-manage.ixir-wh-manage--light .ixir-wh-manage-grid h3 {
   color: #0b1e36 !important;
 }
 
-.ixir-wh-manage.bg-acik-mavi .ixir-wh-manage-grid p,
+.ixir-wh-manage.bg-light-blue .ixir-wh-manage-grid p,
 .ixir-wh-manage.ixir-wh-manage--light .ixir-wh-manage-grid p {
   color: #64748b !important;
 }
