@@ -1,3 +1,20 @@
+.ixir-wh-plans.ixir-cs-pro {
+  background-color: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.ixir-wh-plans.ixir-cs-pro .ixir-wh-plans-head h2,
+.ixir-wh-plans.ixir-cs-pro .site-heading {
+  color: #ffffff !important;
+}
+.ixir-wh-plans.ixir-cs-pro .ixir-wh-plans-head p {
+  color: #94a3b8 !important;
+}
+
 .ixir-wh-plans-head .ixir-cs-title {
   display: flex;
   align-items: center;

@@ -1,4 +1,4 @@
-<section class="ixir-wh-diff ixir-wh-diff--2col ixir-cs-usage ixir-slide ixir-slide--right is-slide-on"
+<section class="ixir-wh-diff ixir-wh-diff--2col ixir-cs-usage ixir-wh-diff--dark bg-dark-blue ixir-slide ixir-slide--right is-slide-on"
  id="ixir-cs-usage" aria-labelledby="ixir-cs-usage-title">
  <script>
   {literal}
@@ -13,7 +13,7 @@
  </script>
  <div class="container">
   <header class="ixir-wh-diff-head">
-   {include file="$template/components/Heading.tpl" title="Cloud Server Kullanım Alanları" id="ixir-cs-usage-title"}
+   {include file="$template/components/Heading.tpl" title="Cloud Server Kullanım Alanları" id="ixir-cs-usage-title" class="text-white"}
   </header>
   <ul class="ixir-wh-diff-grid">
    <li>

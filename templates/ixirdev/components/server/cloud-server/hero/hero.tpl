@@ -43,9 +43,9 @@
       <span>1 adet IP Adresi</span>
      </li>
     </ul>
-    <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer hizmetler">
+    <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer hizmetler">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
@@ -67,7 +67,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
@@ -89,7 +89,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
         <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
@@ -102,7 +102,7 @@
       </li>
       <li>
        <a href="{$WEB_ROOT}/colocation" title="Co-Location">
-        <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Co-Location</span>
+        <i class="fas fa-database fa-fw" aria-hidden="true"></i><span>Co-Location</span>
        </a>
       </li>
       <li>

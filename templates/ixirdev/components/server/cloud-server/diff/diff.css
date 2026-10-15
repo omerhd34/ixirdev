@@ -7,6 +7,24 @@
   overflow: hidden;
 }
 
+.ixir-wh-diff.ixir-cs-usage.bg-dark-blue,
+.ixir-wh-diff.ixir-cs-usage.ixir-wh-diff--dark {
+  background: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.ixir-cs-usage.bg-dark-blue .site-heading,
+.ixir-cs-usage.ixir-wh-diff--dark .site-heading,
+.ixir-cs-usage .site-heading,
+.ixir-cs-usage .ixir-wh-diff-head .site-heading,
+.ixir-cs-usage h2 {
+  color: #ffffff !important;
+}
+
 .ixir-wh-diff.ixir-cs-usage::before {
   content: "";
   position: absolute;
