@@ -657,7 +657,6 @@
   }
  }
 
- /* Media queries */
 
  @media (max-width: 1024px) {
   .social-bee .hero {
@@ -713,8 +712,6 @@
   }
  }
 
- /* Accordion styles */
-
  .social-bee .faq {
   padding-bottom: 90px;
  }
@@ -744,8 +741,6 @@
   max-height: fit-content;
   padding: 16px 32px;
  }
-
- /* Visual styles */
 
  .social-bee .accordion {
   overflow: hidden;
@@ -795,8 +790,6 @@
   padding: 0.5rem 1rem;
   font-size: 0.75rem;
  }
-
- /* Table styles */
 
  .social-bee .pricing-table-container {
   width: 100%;
