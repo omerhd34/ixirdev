@@ -375,7 +375,6 @@
   margin: 0;
 }
 
-/* Error Alert Box */
 .pci-form-alert.pci-form-alert--error {
   background: rgba(239, 68, 68, 0.15) !important;
   border-color: rgba(239, 68, 68, 0.35) !important;
@@ -514,7 +513,6 @@
   }
 }
 
-/* intl-tel-input styling inside pci-cta */
 .pci-input-group--phone {
   position: relative;
   z-index: 50 !important;
