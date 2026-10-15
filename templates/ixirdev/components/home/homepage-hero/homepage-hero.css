@@ -352,7 +352,8 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  background: none;
 }
 
-.ixir-domain-links-wrap {
+.ixir-domain-links-wrap,
+.ixir-hero-links-wrap {
  display: grid;
  grid-template-columns: var(--ixir-hero-cols);
  justify-content: start;
@@ -368,7 +369,8 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  animation: ixirHeroIn 0.7s ease 0.32s both;
 }
 
-.ixir-domain-links-wrap .ixir-hero-label {
+.ixir-domain-links-wrap .ixir-hero-label,
+.ixir-hero-links-wrap .ixir-hero-label {
  grid-column: 1 / -1;
  margin: 0 0 10px 0;
  width: 100%;
@@ -376,7 +378,8 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  animation: none;
 }
 
-.ixir-hero ul.ixir-domain-links {
+.ixir-hero ul.ixir-domain-links,
+.ixir-hero ul.ixir-hero-links {
  list-style: none;
  padding: 0;
  margin: 0;
@@ -388,7 +391,8 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  width: max-content;
 }
 
-.ixir-hero ul.ixir-domain-links:not(:last-child)::after {
+.ixir-hero ul.ixir-domain-links:not(:last-child)::after,
+.ixir-hero ul.ixir-hero-links:not(:last-child)::after {
  content: "";
  display: block;
  position: absolute;
@@ -402,7 +406,8 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  pointer-events: none;
 }
 
-.ixir-hero ul.ixir-domain-links li {
+.ixir-hero ul.ixir-domain-links li,
+.ixir-hero ul.ixir-hero-links li {
  display: inline-flex;
  align-items: center;
  gap: 10px;
@@ -415,13 +420,16 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
 }
 
 .ixir-hero ul.ixir-domain-links li>i,
-.ixir-hero ul.ixir-domain-links li a>i {
+.ixir-hero ul.ixir-hero-links li>i,
+.ixir-hero ul.ixir-domain-links li a>i,
+.ixir-hero ul.ixir-hero-links li a>i {
  font-size: 13px;
  width: 1.15em;
  color: #386ce0;
 }
 
-.ixir-hero ul.ixir-domain-links li a {
+.ixir-hero ul.ixir-domain-links li a,
+.ixir-hero ul.ixir-hero-links li a {
  display: inline-flex;
  align-items: center;
  gap: 10px;
@@ -432,16 +440,21 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
 }
 
 .ixir-hero ul.ixir-domain-links li a:hover,
-.ixir-hero ul.ixir-domain-links li a:focus {
+.ixir-hero ul.ixir-hero-links li a:hover,
+.ixir-hero ul.ixir-domain-links li a:focus,
+.ixir-hero ul.ixir-hero-links li a:focus {
  color: #fbd746 !important;
 }
 
 .ixir-hero ul.ixir-domain-links li a:hover>i,
-.ixir-hero ul.ixir-domain-links li a:focus>i {
+.ixir-hero ul.ixir-hero-links li a:hover>i,
+.ixir-hero ul.ixir-domain-links li a:focus>i,
+.ixir-hero ul.ixir-hero-links li a:focus>i {
  color: #fbd746;
 }
 
-.ixir-hero ul.ixir-domain-links li b {
+.ixir-hero ul.ixir-domain-links li b,
+.ixir-hero ul.ixir-hero-links li b {
  font-weight: 700;
 }
 
@@ -539,7 +552,8 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  .ixir-hero-actions,
  .ixir-hero-label,
  .ixir-hero-points,
- .ixir-domain-links-wrap {
+ .ixir-domain-links-wrap,
+ .ixir-hero-links-wrap {
   animation: none;
  }
 
@@ -568,7 +582,8 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
   font-size: 38px;
  }
 
- .ixir-hero ul.ixir-domain-links li {
+ .ixir-hero ul.ixir-domain-links li,
+ .ixir-hero ul.ixir-hero-links li {
   font-size: 13px;
  }
 }
@@ -663,7 +678,8 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
   min-width: 0;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-domain-links-wrap {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-domain-links-wrap,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-links-wrap {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 16px;
@@ -672,29 +688,34 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
   padding-top: 12px;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-hero-links {
   display: contents;
   width: auto;
   max-width: 100%;
   min-width: 0;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links::after {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links::after,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-hero-links::after {
   display: none;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links li {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links li,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-hero-links li {
   min-width: 0;
   font-size: 14px;
   white-space: normal;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links li a {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links li a,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-hero-links li a {
   align-items: flex-start;
   min-width: 0;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links li a>i {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links li a>i,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-hero-links li a>i {
   margin-top: 3px;
   flex-shrink: 0;
  }
@@ -796,7 +817,8 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
   line-height: 1.2;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-domain-links-wrap {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-domain-links-wrap,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-links-wrap {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 24px;
   padding-top: 12px;
@@ -804,11 +826,13 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
   row-gap: 10px;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-hero-links {
   display: contents;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links li {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links li,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-hero-links li {
   font-size: 13px;
   line-height: 1.2;
  }
@@ -837,7 +861,7 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  }
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 480px) {
  section#home-banner.ixir-hero:has(.ixir-hero-points)>.container {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -889,7 +913,8 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
   margin-top: 0;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-domain-links-wrap {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-domain-links-wrap,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-links-wrap {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 24px;
   padding-top: 12px;
@@ -897,11 +922,13 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
   row-gap: 8px;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-hero-links {
   display: contents;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links li {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-domain-links li,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) ul.ixir-hero-links li {
   font-size: 12.5px;
   line-height: 1.2;
  }
@@ -917,7 +944,8 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
   row-gap: 12px;
  }
 
- section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-domain-links-wrap {
+ section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-domain-links-wrap,
+ section#home-banner.ixir-hero:has(.ixir-hero-points) .ixir-hero-links-wrap {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-content: start;
   column-gap: 32px;

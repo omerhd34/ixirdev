@@ -4,7 +4,7 @@
   position: relative;
   z-index: 1;
   padding: 85px 0 95px;
-  background-color: #f0f6ff !important;
+  background-color: #f8fafc !important;
   background-image: none !important;
   border-top: 1px solid rgba(59, 130, 246, 0.12);
   border-bottom: 1px solid rgba(59, 130, 246, 0.12);
@@ -96,7 +96,7 @@
 
 .ixir-stats-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
   width: 100%;
   max-width: 1140px;
@@ -225,7 +225,6 @@
   }
 }
 
-/* Slide in animations */
 .ixir-stats.is-armed .ixir-stats-stage h2,
 .ixir-stats.is-armed .ixir-stats-map,
 .ixir-stats.is-armed .pci-aud-badge,
