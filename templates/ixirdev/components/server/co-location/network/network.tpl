@@ -1,8 +1,8 @@
-<section class="ixir-ds-network-section ixir-slide ixir-slide--left is-slide-on"
- style="background: #ffffff; padding: 5rem 0;">
+<section class="ixir-ds-network-section bg-dark-blue ixir-slide ixir-slide--left is-slide-on"
+ style="background-color: #091322; background-image: radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%), radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%), linear-gradient(135deg, #070e1a 0%, #0c1a30 100%); color: #ffffff; border-top: 1px solid rgba(255, 255, 255, 0.08); border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding: 5rem 0;">
  <div class="container text-center">
-  <header class="ixir-wh-plans-head ixir-ds-head" style="max-width: 100%; margin-bottom: 4rem;">
-   {include file="$template/components/Heading.tpl" title="Güçlü ve Yedekli Network Altyapımız"}
+  <header class="ixir-ds-head" style="max-width: 100%; margin-bottom: 4rem;">
+   {include file="$template/components/Heading.tpl" title="Güçlü ve Yedekli Network Altyapımız" class="text-white"}
   </header>
   <img src="{$WEB_ROOT}/templates/{$template}/img/server/network-schema.webp" alt="Network Şeması"
    style="max-width: 100%; height: auto; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.05));" loading="lazy">

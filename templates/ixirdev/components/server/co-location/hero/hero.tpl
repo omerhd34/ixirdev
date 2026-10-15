@@ -1,4 +1,4 @@
- <section id="home-banner" class="ixir-hero ixir-hero--cloud-server" aria-label="Co-location">
+ <section id="home-banner" class="ixir-hero ixir-hero--colocation" aria-label="Co-location">
   <picture class="ixir-hero-photo">
    <img src="{$WEB_ROOT}/templates/{$template}/img/server/bg16.webp" alt="Co-location">
   </picture>
@@ -11,11 +11,11 @@
     <p class="ixir-hero-label" aria-hidden="true">Özellikler</p>
     <ul class="ixir-hero-points" aria-label="Özellikler">
      <li>
-      <i class="fas fa-chart-line" aria-hidden="true"></i>
+      <i class="fas fa-clock" aria-hidden="true"></i>
       <span>%99.99 Uptime</span>
      </li>
      <li>
-      <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+      <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
       <span>Sunucu Monitörleme</span>
      </li>
      <li>
@@ -23,9 +23,9 @@
       <span>TIER III Veri Merkezi</span>
      </li>
     </ul>
-    <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer hizmetler">
+    <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer hizmetler">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
@@ -47,7 +47,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
@@ -69,7 +69,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
         <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>

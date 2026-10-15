@@ -7,6 +7,60 @@
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+.ixir-ss-details.bg-light-blue {
+  background-color: #f8fafc !important;
+  background-image: none !important;
+  color: #0b1e36 !important;
+  border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
+}
+.ixir-ss-details.bg-light-blue .ixir-ss-details-head h2,
+.ixir-ss-details.bg-light-blue .site-heading {
+  color: #0b1e36 !important;
+}
+.ixir-ss-details.bg-light-blue .ixir-ss-tab-nav {
+  background: #ffffff !important;
+  border: 1px solid rgba(59, 130, 246, 0.18) !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05) !important;
+}
+.ixir-ss-details.bg-light-blue .ixir-ss-tab-btn {
+  color: #64748b !important;
+}
+.ixir-ss-details.bg-light-blue .ixir-ss-tab-btn i {
+  color: #2563eb !important;
+}
+.ixir-ss-details.bg-light-blue .ixir-ss-tab-btn:hover {
+  color: #0b1e36 !important;
+  background: #eff6ff !important;
+}
+.ixir-ss-details.bg-light-blue .ixir-ss-tab-btn.is-active {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+}
+.ixir-ss-details.bg-light-blue .ixir-ss-tab-btn.is-active i {
+  color: #ffffff !important;
+}
+.ixir-ss-details.bg-light-blue .ixir-ss-pane-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(59, 130, 246, 0.18) !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06) !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.ixir-ss-details.bg-light-blue .ixir-ss-pane-title {
+  color: #0b1e36 !important;
+}
+.ixir-ss-details.bg-light-blue .ixir-ss-pane-desc {
+  color: #64748b !important;
+}
+.ixir-ss-details.bg-light-blue .ixir-ss-pane-desc strong,
+.ixir-ss-details.bg-light-blue .ixir-ss-pane-list strong {
+  color: #0b1e36 !important;
+}
+.ixir-ss-details.bg-light-blue .ixir-ss-pane-list li {
+  color: #475569 !important;
+}
 .ixir-ss-details::before {
   content: "";
   position: absolute;
@@ -48,7 +102,6 @@
   margin: 0 auto;
 }
 
-/* Nav Tabs */
 .ixir-ss-tab-nav-wrapper {
   position: relative;
   margin-bottom: 32px;

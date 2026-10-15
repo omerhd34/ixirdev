@@ -1,10 +1,14 @@
 .ixir-wh-software {
   position: relative;
   padding: 72px 0 80px;
-  color: #0f172a;
-  background: #ffffff !important;
-  border-top: 1px solid #eef2f6;
-  border-bottom: 1px solid #eef2f6;
+  color: #fff;
+  background-color: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
 }
 .ixir-wh-software::before {
@@ -15,7 +19,7 @@
   transform: translateX(-50%);
   width: 900px;
   height: 450px;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -54,10 +58,12 @@
   max-width: 100%;
   padding: 44px 40px 38px;
   overflow: hidden;
-  border: 1px solid #eef2f6;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
-  background: #ffffff;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  background: rgba(13, 27, 49, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .ixir-wh-software-card::before {
@@ -110,14 +116,15 @@
 .ixir-wh-software-card:hover .ixir-wh-software-icon {
   transform: scale(1.08) rotate(-3deg);
 }
-.ixir-wh-software-head h2 {
+.ixir-wh-software-head h2,
+.ixir-wh-software-head .site-heading {
   margin: 0 0 8px;
-  color: #0b2545;
+  color: #ffffff !important;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
 }
 .ixir-wh-software-head p {
   margin: 0;
-  color: #64748b;
+  color: #94a3b8 !important;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -139,20 +146,21 @@
   margin: 0;
   padding: 14px 16px;
   border-radius: 14px;
-  background: #f8fafc;
-  color: #1e293b;
+  background: rgba(15, 23, 42, 0.6);
+  color: #e2e8f0;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.35;
-  border: 1px solid #eef2f6;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .ixir-wh-software li:hover {
-  background: #ffffff;
-  border-color: #bfdbfe;
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(96, 165, 250, 0.4);
+  color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.08);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
 }
 .ixir-wh-software-check {
   display: inline-flex;

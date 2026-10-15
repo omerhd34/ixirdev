@@ -1,13 +1,13 @@
-<section class="ixir-ss-details ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-ss-details-title">
+<section class="ixir-ss-details bg-light-blue ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-ss-details-title">
  <div class="container">
-  <header class="ixir-wh-plans-head ixir-ss-details-head">
+  <header class="ixir-ss-details-head">
    {include file="$template/components/Heading.tpl" title="Co-Location Teknoloji Altyapımız" id="ixir-ss-details-title"}
   </header>
 
   <div class="ixir-ss-tab-container">
    <!-- Tab Buttons -->
    <div class="ixir-ss-tab-nav-wrapper">
-    <div class="ixir-ss-tab-nav" role="tablist" aria-label="Sunucu Destek Özellikleri">
+    <div class="ixir-ss-tab-nav" role="tablist" aria-label="Co-Location Özellikleri">
      <button type="button" class="ixir-ss-tab-btn is-active" role="tab" aria-selected="true" aria-controls="ixir-ss-pane-1" id="ixir-ss-tab-1" data-tab-target="1">
       <i class="fas fa-server" aria-hidden="true"></i>
       <span>Veri Merkezi</span>

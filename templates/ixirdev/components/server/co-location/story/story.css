@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&display=swap");
 
-.ixir-wh-story.ixir-cs-story {
+.ixir-wh-story.ixir-colo-story {
   position: relative;
   padding: 85px 0 95px;
   background-color: #091322 !important;
@@ -15,7 +15,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.ixir-wh-story.ixir-cs-story::before {
+.ixir-wh-story.ixir-colo-story::before {
   content: "";
   position: absolute;
   top: -100px;
@@ -28,12 +28,12 @@
   z-index: 0;
 }
 
-.ixir-wh-story.ixir-cs-story .container {
+.ixir-wh-story.ixir-colo-story .container {
   position: relative;
   z-index: 1;
 }
 
-.ixir-cs-story .ixir-wh-story-intro {
+.ixir-colo-story .ixir-wh-story-intro {
   margin: 0 auto;
   max-width: 860px;
   text-align: center;
@@ -41,7 +41,7 @@
   transform: none !important;
 }
 
-.ixir-cs-story .ixir-wh-story-icon {
+.ixir-colo-story .ixir-wh-story-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -56,12 +56,14 @@
   transition: transform 0.3s ease;
 }
 
-.ixir-cs-story .ixir-wh-story-icon:hover {
+.ixir-colo-story .ixir-wh-story-icon:hover {
   transform: translateY(-2px) scale(1.05);
 }
 
-.ixir-cs-story .ixir-wh-story-intro h2,
-.ixir-cs-story .ixir-wh-story-intro .site-heading {
+.ixir-colo-story .ixir-wh-story-intro h2,
+.ixir-colo-story .ixir-wh-story-intro .site-heading,
+.ixir-colo-story .site-heading,
+.ixir-wh-story.ixir-colo-story .site-heading {
   margin: 0 0 16px !important;
   text-align: center !important;
   color: #fff !important;
@@ -70,12 +72,12 @@
   font-weight: 700;
 }
 
-.ixir-cs-story .ixir-wh-story-intro .site-heading::after {
+.ixir-colo-story .ixir-wh-story-intro .site-heading::after {
   background: linear-gradient(90deg, #2563eb, #60a5fa) !important;
   margin-top: 14px !important;
 }
 
-.ixir-cs-story .ixir-wh-story-intro p {
+.ixir-colo-story .ixir-wh-story-intro p {
   margin: 0 auto 24px !important;
   max-width: 820px;
   text-align: center;
@@ -84,12 +86,12 @@
   line-height: 1.7;
 }
 
-.ixir-cs-story .ixir-wh-story-intro p strong {
+.ixir-colo-story .ixir-wh-story-intro p strong {
   color: #fff !important;
   font-weight: 700;
 }
 
-.ixir-cs-story .ixir-wh-story-cta {
+.ixir-colo-story .ixir-wh-story-cta {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -108,8 +110,8 @@
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
 }
 
-.ixir-cs-story .ixir-wh-story-cta:hover,
-.ixir-cs-story .ixir-wh-story-cta:focus {
+.ixir-colo-story .ixir-wh-story-cta:hover,
+.ixir-colo-story .ixir-wh-story-cta:focus {
   background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
   box-shadow: 0 12px 28px -3px rgba(37, 99, 235, 0.6) !important;
   transform: translateY(-2px) !important;
@@ -117,21 +119,21 @@
 }
 
 @media (max-width: 768px) {
-  .ixir-wh-story.ixir-cs-story {
+  .ixir-wh-story.ixir-colo-story {
     padding: 60px 0;
   }
-  .ixir-cs-story .ixir-wh-story-icon {
+  .ixir-colo-story .ixir-wh-story-icon {
     width: 52px;
     height: 52px;
     border-radius: 14px;
     font-size: 20px;
     margin-bottom: 14px;
   }
-  .ixir-cs-story .ixir-wh-story-intro p {
+  .ixir-colo-story .ixir-wh-story-intro p {
     font-size: 14.5px;
     line-height: 1.65;
   }
-  .ixir-cs-story .ixir-wh-story-cta {
+  .ixir-colo-story .ixir-wh-story-cta {
     width: 100%;
     max-width: 260px;
   }

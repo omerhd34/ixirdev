@@ -1,8 +1,8 @@
- <section class="ixir-wh-story ixir-cs-story2 ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting özellikleri">
+ <section class="ixir-wh-story ixir-wh-story--light bg-light-blue ixir-colo-story2 ixir-slide ixir-slide--right is-slide-on" aria-label="Co-Location Sunucu Barındırma Özellikleri">
   <script>
    {literal}
     (function() {
-     var root = document.querySelector('.ixir-cs-story2');
+     var root = document.querySelector('.ixir-colo-story2');
      if (!root || !window.IntersectionObserver) return;
      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
      if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
@@ -58,7 +58,7 @@
     </div>
     <div class="ixir-wh-story-copy">
      <div class="ixir-wh-story-heading">
-      <span class="ixir-wh-story-badge" aria-hidden="true"><i class="fas fa-shield-virus"></i></span>
+      <span class="ixir-wh-story-badge" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
       <h3 class="ixir-wh-story-title">DDoS Koruma</h3>
      </div>
      <p>Günümüzde <strong>DDoS saldırıları</strong> giderek artmakta ve hedeflenen sunucular ne yazık ki devre dışı kalmaktadır. İXİRHOST veri merkezinde bulunan fiziksel sunucunuza yapılan olası bir <strong>DDoS saldırıları</strong> saldırısı anında farkedilir ve sistem tarafından anında engellenir. Sunucunuzu İXİRHOST veri merkezinde güvenle barındırabilirsiniz.</p>
