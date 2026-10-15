@@ -34,9 +34,9 @@
   "Opsiyonel Siteden Siteye IPSec VPN"
 ]}
 
-<section class="ixir-ds ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-plans" aria-labelledby="ixir-ds-title">
+<section class="ixir-ds ixir-slide ixir-slide--right is-slide-on" id="ixir-ds-plans" aria-labelledby="ixir-ds-title">
  <div class="container">
-  <header class="ixir-wh-plans-head ixir-ds-head">
+  <header class="ixir-ds-head">
    {include file="$template/components/Heading.tpl" title="Dedicated Server Kiralama" id="ixir-ds-title"}
    <p>Türkiye'nin en geniş dedicated server seçenekleri, güvenilir, <b>yedekli ve çeşitli operatör bağlantıları</b> ile
     birlikte, 150'den fazla peering bağlantısıyla, <b>İstanbul</b>'un merkezinden 20 yıllık deneyimle kiralık sunucu
@@ -400,7 +400,7 @@
 {literal}
 <script>
 (function() {
-  var root = document.getElementById('ixir-wh-plans');
+  var root = document.getElementById('ixir-ds-plans') || document.getElementById('ixir-wh-plans');
   if (!root || !root.classList.contains('ixir-ds')) return;
 
   var rows = root.querySelectorAll('.ixir-ds-row');

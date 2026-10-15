@@ -649,7 +649,7 @@
 }
 .ixir-ds {
   padding: 56px 0 64px;
-  background: #f6f8fb;
+  background: #f8fafc !important;
 }
 .ixir-ds-head,
 .ixir-wh-plans-head {
@@ -2927,9 +2927,6 @@
   color: #475569 !important;
 }
 
-/* ========================================================
-   PCI-TARAMA DESIGN SYSTEM HARMONIZATION
-   ======================================================== */
 .ixir-ds-stats {
   background: radial-gradient(ellipse 70% 150% at 50% 0%, rgba(59, 130, 246, 0.22), transparent 70%), #091322 !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
@@ -2992,6 +2989,6 @@
   color: #2563eb !important;
 }
 .ixir-ds-all .ixir-ds-more:hover {
-  background: #f0f6ff !important;
+  background: #f8fafc !important;
 }
 

@@ -12,25 +12,25 @@
     <p class="ixir-hero-label" aria-hidden="true">Özellikler</p>
     <ul class="ixir-hero-points" aria-label="Özellikler">
      <li>
-      <i class="fas fa-bolt" aria-hidden="true"></i>
+      <i class="fas fa-microchip" aria-hidden="true"></i>
       <span>Intel® Xeon® İşlemciler</span>
      </li>
      <li>
-      <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+      <i class="fas fa-network-wired" aria-hidden="true"></i>
       <span>Operatör Yedekli İnternet Erişimi</span>
      </li>
      <li>
-      <i class="fas fa-hdd" aria-hidden="true"></i>
+      <i class="fas fa-server" aria-hidden="true"></i>
       <span>TIER III+ İstanbul Veri Merkezi</span>
      </li>
      <li>
-      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+      <i class="fas fa-clock" aria-hidden="true"></i>
       <span>%99.9 Uptime</span>
      </li>
     </ul>
-    <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer hizmetler">
+    <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer hizmetler">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
@@ -52,7 +52,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
@@ -74,7 +74,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
         <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
@@ -87,7 +87,7 @@
       </li>
       <li>
        <a href="{$WEB_ROOT}/colocation" title="Co-Location">
-        <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Co-Location</span>
+        <i class="fas fa-database fa-fw" aria-hidden="true"></i><span>Co-Location</span>
        </a>
       </li>
       <li>
@@ -123,7 +123,7 @@
     window.addEventListener('resize', apply);
     window.addEventListener('load', apply);
 
-    var plansLink = document.querySelector('a.ixir-wh-plans-btn');
+    var plansLink = document.querySelector('a.ixir-ds-plans-btn, a.ixir-wh-plans-btn');
     if (plansLink) {
      var frame = 0;
 
@@ -152,7 +152,7 @@
      }
 
      plansLink.addEventListener('click', function(e) {
-      var plans = document.getElementById('ixir-wh-plans');
+      var plans = document.getElementById('ixir-ds-plans') || document.getElementById('ixir-wh-plans');
       if (!plans) return;
       if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
       e.preventDefault();
@@ -164,7 +164,7 @@
       var start = window.pageYOffset || document.documentElement.scrollTop || 0;
       var dest = destination(plans);
       if (window.history && window.history.pushState) {
-       window.history.pushState(null, '', '#ixir-wh-plans');
+       window.history.pushState(null, '', '#ixir-ds-plans');
       }
       if (reduce || Math.abs(dest - start) < 2) {
        window.scrollTo(0, dest);

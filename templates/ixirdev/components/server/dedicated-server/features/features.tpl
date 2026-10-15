@@ -1,6 +1,6 @@
 <section class="ixir-ds-features-section ixir-slide ixir-slide--right is-slide-on">
  <div class="container">
-  <header class="ixir-wh-plans-head ixir-ds-head">
+  <header class="ixir-ds-head">
    {include file="$template/components/Heading.tpl" title="Üstün Dedicated Server Teknolojisi ile Tanışın"}
    <p>Dedicated Server performansınızı mükemmel hale getirecek özellikleri keşfedin.</p>
   </header>

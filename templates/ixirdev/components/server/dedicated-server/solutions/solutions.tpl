@@ -1,6 +1,6 @@
 <section class="ds-solutions-section ixir-slide ixir-slide--left is-slide-on">
  <div class="container text-center">
-  <header class="ixir-wh-plans-head ixir-ds-head ds-solutions-title-wrapper" style="max-width: 1000px;">
+  <header class="ds-solutions-title-wrapper" style="max-width: 1000px;">
    {include file="$template/components/Heading.tpl" title="Farklı Altyapı Çözümleri"}
    <p>Dedicated server servislerinize ek olarak altyapımızda yedekli olarak bulunan <b>Citrix® Netscaler®</b> cihazları
     ile Web Sitelerinize güç katıyoruz. Dedicated Server, Kiralık Sunucu'da yalnızca hizmet sağlamıyor, tam kapsamlı
@@ -56,7 +56,9 @@
 
  <style>
   .ds-solutions-section {
-   background: url('{$WEB_ROOT}/templates/{$template}/img/server/firewall.webp') center/cover no-repeat fixed;
+   background: 
+     linear-gradient(180deg, rgba(8, 16, 32, 0.90) 0%, rgba(9, 19, 34, 0.82) 50%, rgba(8, 16, 32, 0.94) 100%),
+     url('{$WEB_ROOT}/templates/{$template}/img/server/firewall.webp') center/cover no-repeat fixed;
   }
  </style>
 </section>
