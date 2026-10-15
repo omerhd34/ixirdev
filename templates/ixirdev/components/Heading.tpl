@@ -14,6 +14,25 @@
             font-size: 24px; 
         }
 
+        .bg-dark-blue .site-heading,
+        .bg-dark .site-heading,
+        .ixir-wh-diff--dark .site-heading,
+        .ixir-cs-usage .site-heading,
+        .ixir-colo-story .site-heading,
+        .ixir-pci-story .site-heading,
+        .ixir-wh-story:not(.bg-light-blue):not(.ixir-wh-story--light) .site-heading,
+        .ixir-wh-story--features .site-heading,
+        .ixir-wh-story-features-head .site-heading,
+        .ixir-wh-software .site-heading,
+        .ixir-ds-network-section.bg-dark-blue .site-heading,
+        section[style*="#091322"] .site-heading,
+        div[style*="#091322"] .site-heading,
+        section[style*="#070e1a"] .site-heading,
+        div[style*="#070e1a"] .site-heading,
+        .site-heading.text-white {
+            color: #ffffff !important;
+        }
+
         .site-heading:not(.site-heading--no-line)::after {
             content: "";
             display: block;
