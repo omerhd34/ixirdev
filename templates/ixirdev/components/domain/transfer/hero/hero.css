@@ -18,7 +18,7 @@
   flex: 0 0 188px;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   #order-standard_cart.ixir-transfer-page .ixir-hero form#frmDomainTransfer .ixir-domain-checker {
     flex-wrap: nowrap;
   }

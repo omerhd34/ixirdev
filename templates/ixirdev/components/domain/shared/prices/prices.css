@@ -1,6 +1,8 @@
 .ixir-domain-prices {
   padding: 56px 0 32px;
-  background: #fff;
+  background: #f8fafc !important;
+  border-top: 1px solid rgba(59, 130, 246, 0.12);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.12);
 }
 .ixir-domain-prices-search {
   display: flex;

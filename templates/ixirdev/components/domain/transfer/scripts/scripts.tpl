@@ -244,14 +244,14 @@
      return;
     }
     var rows = Array.prototype.slice.call(body.querySelectorAll('tr'));
-    var perPage = 10;
+    var perPage = 5;
     var page = 1;
     var sortKey = '';
     var sortDir = 'asc';
 
     function value(row, key) {
      var raw = row.getAttribute('data-' + key) || '';
-     if (key === 'tld' || key === 'period') {
+     if (key === 'tld') {
       return raw.toLowerCase();
      }
      return parseFloat(raw) || 0;
@@ -292,13 +292,20 @@
       row.style.display = '';
      });
      pager.innerHTML = '';
+     if (pages <= 1) {
+      pager.style.display = 'none';
+      return;
+     }
+     pager.style.display = 'flex';
      var prev = document.createElement('button');
      prev.type = 'button';
      prev.textContent = 'Geri';
      prev.disabled = page <= 1;
      prev.addEventListener('click', function() {
-      page -= 1;
-      render();
+      if (page > 1) {
+       page -= 1;
+       render();
+      }
      });
      pager.appendChild(prev);
      for (var i = 1; i <= pages; i += 1) {
@@ -321,8 +328,10 @@
      next.textContent = 'İleri';
      next.disabled = page >= pages;
      next.addEventListener('click', function() {
-      page += 1;
-      render();
+      if (page < pages) {
+       page += 1;
+       render();
+      }
      });
      pager.appendChild(next);
     }

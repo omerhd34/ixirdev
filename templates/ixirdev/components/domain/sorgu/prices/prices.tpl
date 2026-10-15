@@ -12,7 +12,7 @@
       <thead>
        <tr>
         <th data-sort="tld">Domain Uzantı Adı <span class="ixir-dp-sort" aria-hidden="true"></span></th>
-        <th data-sort="period">Süre <span class="ixir-dp-sort" aria-hidden="true"></span></th>
+        <th>Süre</th>
         <th data-sort="register">Domain Tescil <span class="ixir-dp-sort" aria-hidden="true"></span></th>
         <th data-sort="transfer">Domain Transfer <span class="ixir-dp-sort" aria-hidden="true"></span></th>
         <th data-sort="renew">Domain Yenileme <span class="ixir-dp-sort" aria-hidden="true"></span></th>
@@ -22,7 +22,7 @@
        {if $ixirDomainPrices}
         {foreach $ixirDomainPrices as $price}
          <tr data-tld="{$price.tld|escape:'html'}" data-period="{$price.period|escape:'html'}"
-          data-register="{$price.registerNum}" data-transfer="{$price.transferNum}" data-renew="{$price.renewNum}">
+          data-register="{$price.registerNum}" data-transfer="{$price.transferNum}" data-renew="{$price.renewNum}"{if $price@iteration > 5} style="display: none;"{/if}>
           <td><span class="ixir-dp-tld">{$price.tld}</span></td>
           <td>{$price.period}</td>
           <td>{$price.register}</td>

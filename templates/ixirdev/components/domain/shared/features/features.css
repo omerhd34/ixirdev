@@ -1,6 +1,8 @@
 .ixir-domain-features {
   padding: 64px 0 52px;
-  background: #fff;
+  background: #f8fafc !important;
+  border-top: 1px solid rgba(59, 130, 246, 0.12);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.12);
 }
 .ixir-domain-feature-grid {
   display: grid;
@@ -49,7 +51,7 @@
   height: 56px;
   flex-shrink: 0;
   border-radius: 18px;
-  background: linear-gradient(145deg, #ffffff 0%, #f0f6ff 100%);
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
   border: 1.5px solid #dbeafe;
   color: #2563eb;
   font-size: 24px;

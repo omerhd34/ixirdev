@@ -2,7 +2,7 @@
     <div class="container">
      <div class="ixir-xfer-notes-grid">
       <div>
-       {include file="$template/components/Heading.tpl" title="Domain Transferi ile İlgili Önemli Bilgiler" id="ixirXferNotesTitle" align="left"}
+       {include file="$template/components/Heading.tpl" title="Domain Transferi ile İlgili Önemli Bilgiler" id="ixirXferNotesTitle"}
        <ul>
         <li>Domain'in transfer kodunu(authorization code, epp code, vs.) domain tescil firmanızdan alın.</li>
         <li>Domain'inizin tescil, yenileme veya transfer işleminin üzerinden 60 gün geçmiş olması gerektiğini unutmayın.

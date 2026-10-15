@@ -1,6 +1,12 @@
 .ixir-domain-transfer {
   padding: 8px 0 0;
-  background: #f7f9fc;
+  background-color: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
 }
 .ixir-domain-transfer-grid {
@@ -12,9 +18,10 @@
 .ixir-domain-transfer-copy {
   padding: 48px 0 56px;
 }
-.ixir-domain-transfer-copy h2 {
+.ixir-domain-transfer-copy h2,
+.ixir-domain-transfer-copy .site-heading {
   margin: 0 0 14px;
-  color: #0b2545;
+  color: #ffffff !important;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   text-align: left;
 }
@@ -25,7 +32,7 @@
 .ixir-domain-transfer-copy p {
   margin: 0 0 24px;
   max-width: 560px;
-  color: #64748b;
+  color: #94a3b8 !important;
   font-size: 15.5px;
   line-height: 1.65;
 }
