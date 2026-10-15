@@ -1,6 +1,8 @@
 .ixir-km-reviews {
   padding: 72px 0;
-  background: linear-gradient(180deg, #f4f7ff 0%, #eef3fe 100%);
+  background: #f8fafc !important;
+  border-top: 1px solid rgba(59, 130, 246, 0.12);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.12);
 }
 .ixir-km-reviews-head {
   max-width: 760px;

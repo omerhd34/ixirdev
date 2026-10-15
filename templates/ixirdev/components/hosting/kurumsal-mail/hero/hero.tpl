@@ -115,7 +115,7 @@
      </li>
      <li>
       <a href="{$WEB_ROOT}/cloud-drive" title="Cloud Drive">
-       <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Cloud Drive</span>
+       <i class="fas fa-cloud-upload-alt fa-fw" aria-hidden="true"></i><span>Cloud Drive</span>
       </a>
      </li>
      <li>
