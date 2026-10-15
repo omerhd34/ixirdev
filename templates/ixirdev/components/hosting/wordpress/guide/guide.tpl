@@ -1,4 +1,4 @@
- <section class="ixir-wh-guide ixir-wh-guide--dark bg-koyu-mavi ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting rehberi">
+ <section class="ixir-wh-guide ixir-wh-guide--dark bg-dark-blue ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting rehberi">
   <script>
    {literal}
     (function() {

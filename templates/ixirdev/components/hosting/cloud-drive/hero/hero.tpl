@@ -17,15 +17,15 @@
     <p class="ixir-hero-label" aria-hidden="true">Özellikler</p>
     <ul class="ixir-hero-points" aria-label="Özellikler">
      <li>
-      <i class="fas fa-hdd" aria-hidden="true"></i>
+      <i class="fas fa-exchange-alt" aria-hidden="true"></i>
       <span>Sınırsız Trafik</span>
      </li>
      <li>
-      <i class="fas fa-desktop" aria-hidden="true"></i>
+      <i class="fas fa-sync-alt" aria-hidden="true"></i>
       <span>Otomatik Senkronizasyon</span>
      </li>
      <li>
-      <i class="fas fa-lock" aria-hidden="true"></i>
+      <i class="fas fa-globe" aria-hidden="true"></i>
       <span>Her Yerden Erişim</span>
      </li>
     </ul>

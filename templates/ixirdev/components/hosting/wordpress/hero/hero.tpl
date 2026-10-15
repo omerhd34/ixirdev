@@ -21,11 +21,11 @@
       <span>Limitsiz NVMe SSD Disk</span>
      </li>
      <li>
-      <i class="fas fa-desktop" aria-hidden="true"></i>
+      <i class="fas fa-bolt" aria-hidden="true"></i>
       <span>LiteSpeed & LSCache</span>
      </li>
      <li>
-      <i class="fas fa-lock" aria-hidden="true"></i>
+      <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
       <span>AccelerateWP</span>
      </li>
     </ul>

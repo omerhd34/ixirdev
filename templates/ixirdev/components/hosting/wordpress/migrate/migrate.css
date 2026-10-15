@@ -2,7 +2,7 @@
   position: relative;
   padding: 72px 0 80px;
   overflow: hidden;
-  background-color: #f0f6ff !important;
+  background-color: #f8fafc !important;
   border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
   border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
 }
@@ -176,7 +176,7 @@
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .ixir-wh-migrate-art {
     width: min(80%, 260px);
   }
@@ -194,7 +194,6 @@
   }
 }
 
-/* Dark variant on WordPress page */
 .ixir-wh-page--wp .ixir-wh-migrate {
   color: #fff;
   background: #091322 !important;

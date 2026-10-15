@@ -1,4 +1,4 @@
-<section class="ixir-wh-faq ixir-wh-faq--light bg-acik-mavi ixir-slide ixir-slide--right is-slide-on"
+<section class="ixir-wh-faq ixir-wh-faq--light bg-light-blue ixir-slide ixir-slide--right is-slide-on"
  aria-labelledby="ixir-wh-faq-title">
  <div class="container">
   <header class="ixir-wh-plans-head">
@@ -12,7 +12,6 @@
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      Developer Hosting paketlerini diğer hosting paketlerinden ayıran nedir?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       Developer Hosting, geliştiricilerin hem geliştirme hem de canlı ortam ihtiyaçlarını karşılamak üzere
@@ -22,16 +21,13 @@
       <strong>tek bir cPanel hesabı üzerinden</strong> kullanabilirsiniz.
      </p>
     </div>
-
    </div>
 
    <div class="ixir-wh-faq-item">
-
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      Composer, npm ve pip gibi paket yöneticilerini kullanabilir miyim?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       Evet. <strong>SSH erişiminiz</strong> sayesinde Composer (PHP/Laravel), npm (Node.js), pip (Python)
@@ -40,16 +36,13 @@
       <strong>pip install -r requirements.txt</strong> gibi komutları çalıştırabilirsiniz.
      </p>
     </div>
-
    </div>
 
    <div class="ixir-wh-faq-item">
-
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      php artisan ve rails gibi framework CLI komutlarını çalıştırabilir miyim?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       Evet. <strong>SSH / Terminal erişimi</strong> sayesinde framework'lerin komut satırı araçlarını
@@ -60,16 +53,13 @@
       kolayca yönetebilirsiniz.
      </p>
     </div>
-
    </div>
 
    <div class="ixir-wh-faq-item">
-
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      Node.js sürümünü seçebilir miyim?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       Evet. cPanel'deki <strong>Node.js Selector</strong> aracı sayesinde desteklenen Node.js sürümleri
@@ -77,16 +67,13 @@
       belirleyebilir, npm paket yönetimini de aynı ortam üzerinden gerçekleştirebilirsiniz.
      </p>
     </div>
-
    </div>
 
    <div class="ixir-wh-faq-item">
-
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      Hangi Developer Hosting paketini tercih etmeliyim?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       Tek bir proje için <strong>Bütçe paketi</strong> iyi bir başlangıç noktasıdır.
@@ -96,16 +83,13 @@
       önemli bir faktördür.
      </p>
     </div>
-
    </div>
 
    <div class="ixir-wh-faq-item">
-
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      Developer Hosting ile hangi teknolojileri kullanabilirim?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       Developer Hosting üzerinde <strong>PHP, Node.js, Python, Ruby on Rails ve Git</strong> desteklenmektedir.
@@ -114,16 +98,13 @@
       paket yöneticilerini de doğrudan çalıştırabilirsiniz.
      </p>
     </div>
-
    </div>
 
    <div class="ixir-wh-faq-item">
-
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      SSH / Terminal erişimini nasıl kullanabilirim?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       Hesabınız aktif olduktan sonra size iletilen <strong>kullanıcı adı ve SSH şifresi</strong> ile
@@ -132,16 +113,13 @@
        ve Git işlemlerini</strong> doğrudan çalıştırabilirsiniz.
      </p>
     </div>
-
    </div>
 
    <div class="ixir-wh-faq-item">
-
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      Developer Hosting ile WordPress veya farklı bir web sitesi yayınlayabilir miyim?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       Evet. Developer Hosting, <strong>tam özellikli bir cPanel hosting hizmetidir.</strong>
@@ -150,16 +128,13 @@
        için tek tıkla kurulum desteği</strong> bulunmaktadır.
      </p>
     </div>
-
    </div>
 
    <div class="ixir-wh-faq-item">
-
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      Hangi PHP sürümlerini kullanabilirim ve sürüm değiştirebilir miyim?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       <strong>PHP 5.x, 7.x ve 8.x</strong> sürümleri arasında cPanel üzerinden kolayca geçiş yapabilirsiniz.
@@ -167,16 +142,13 @@
       Her domain için <strong>bağımsız PHP sürümü seçimi</strong> desteklenmektedir.
      </p>
     </div>
-
    </div>
 
    <div class="ixir-wh-faq-item">
-
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      MySQL veritabanına uzaktan bağlanabilir miyim?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       Evet. <strong>MySQL 8</strong> veritabanınıza TablePlus, DBeaver veya MySQL Workbench gibi
@@ -185,16 +157,13 @@
       Uzak MySQL bağlantısının yalnızca <strong>geliştirme amaçlı</strong> kullanılması önerilmektedir.
      </p>
     </div>
-
    </div>
 
    <div class="ixir-wh-faq-item">
-
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      E-posta gönderim limiti bulunuyor mu?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       Evet. Spam gönderimlerini önlemek amacıyla saatlik e-posta gönderim limitleri uygulanmaktadır.
@@ -203,32 +172,26 @@
       gönderilebilir. Daha yüksek bir limite ihtiyaç duymanız halinde destek ekibimizle iletişime geçebilirsiniz.
      </p>
     </div>
-
    </div>
 
    <div class="ixir-wh-faq-item">
-
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      Para iade garantisi sunuyor musunuz?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       Evet. Developer Hosting paketlerinde <strong>15 gün koşulsuz para iade garantisi</strong> sunuyoruz.
       İade talebiniz için <strong>muhasebe servisimize bildirmeniz</strong> yeterlidir.
      </p>
     </div>
-
    </div>
 
    <div class="ixir-wh-faq-item">
-
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      Developer Hosting hizmetini ücretsiz deneyebilir miyim?
     </button>
-
     <div class="ixir-wh-faq-a">
      <p>
       Evet. Web sitemize üye olarak denemek istediğiniz planın siparişini oluşturun ve ödeme aşamasında
@@ -237,8 +200,6 @@
      </p>
     </div>
    </div>
-
-
 
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
@@ -249,6 +210,7 @@
      </p>
     </div>
    </div>
+
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Yanlış hosting paketi seçersem değiştirebilir miyim?</button>
@@ -259,6 +221,7 @@
      </p>
     </div>
    </div>
+   
    <div class="ixir-wh-faq-item">
     <button type="button" class="ixir-wh-faq-q" aria-expanded="false">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
