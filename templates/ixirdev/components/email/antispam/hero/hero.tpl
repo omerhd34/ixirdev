@@ -48,7 +48,7 @@
       <span>SMTP-TLS/SSL Desteği</span>
      </li>
     </ul>
-    <div class="ixir-hero-links-wrap ixir-domain-links-wrap" role="region" aria-label="Diğer hizmetler">
+    <div class="ixir-hero-links-wrap ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
      <ul class="ixir-hero-links ixir-domain-links">
       <li>

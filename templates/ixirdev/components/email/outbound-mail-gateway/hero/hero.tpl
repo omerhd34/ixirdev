@@ -58,7 +58,7 @@
      <span>1 IP/Sunucu SmartHost</span>
     </li>
    </ul>
-   <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer hizmetler">
+   <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer Hizmetler">
     <p class="ixir-hero-label">Diğer Hizmetler</p>
     <ul class="ixir-hero-links">
      <li>

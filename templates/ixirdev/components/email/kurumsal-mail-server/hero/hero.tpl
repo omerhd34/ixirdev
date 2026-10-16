@@ -69,8 +69,8 @@
     </li>
     
    </ul>
-   <div class="ixir-hero-links-wrap ixir-domain-links-wrap" role="region" aria-label="DiÄŸer hizmetler">
-    <p class="ixir-hero-label">DiÄŸer Hizmetler</p>
+   <div class="ixir-hero-links-wrap ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
+    <p class="ixir-hero-label">Diğer Hizmetler</p>
     <ul class="ixir-hero-links ixir-domain-links">
      <li>
       <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
