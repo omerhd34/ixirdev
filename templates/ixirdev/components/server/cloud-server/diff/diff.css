@@ -88,6 +88,31 @@
   opacity: 1;
 }
 
+.ixir-cs-usage .ixir-wh-diff-grid li h3,
+.ixir-cs-diff .ixir-wh-diff-grid li h3 {
+  margin: 0 0 8px;
+  color: #0b2545 !important;
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  font-size: 17.5px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+  transition: color 0.25s ease;
+}
+
+.ixir-cs-usage .ixir-wh-diff-grid li:hover h3,
+.ixir-cs-diff .ixir-wh-diff-grid li:hover h3 {
+  color: #2563eb !important;
+}
+
+.ixir-cs-usage .ixir-wh-diff-grid li p,
+.ixir-cs-diff .ixir-wh-diff-grid li p {
+  margin: 0;
+  color: #64748b !important;
+  font-size: 14.5px;
+  line-height: 1.65;
+}
+
 @media (max-width: 768px) {
   .ixir-wh-diff.ixir-cs-usage {
     padding: 60px 0 70px;

@@ -4,14 +4,11 @@
 .ixir-colo-story {
   position: relative;
   padding: 85px 0 95px;
-  background-color: #091322 !important;
-  background-image: 
-    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
-    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
-    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
-  color: #fff !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #f8fafc !important;
+  background-image: none !important;
+  color: #0b1e36 !important;
+  border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -25,7 +22,7 @@
   transform: translateX(-50%);
   width: 960px;
   height: 520px;
-  background: radial-gradient(ellipse at center, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -74,7 +71,7 @@
 .ixir-wh-story.ixir-colo-story .site-heading {
   margin: 0 0 16px !important;
   text-align: center !important;
-  color: #fff !important;
+  color: #0b1e36 !important;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif !important;
   letter-spacing: -0.02em;
   font-weight: 700;
@@ -91,14 +88,14 @@
   margin: 0 auto 24px !important;
   max-width: 820px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.78) !important;
+  color: #475569 !important;
   font-size: 15.5px;
   line-height: 1.7;
 }
 
 .ixir-colo-story .colo-story-intro p strong,
 .ixir-colo-story .ixir-wh-story-intro p strong {
-  color: #fff !important;
+  color: #0b1e36 !important;
   font-weight: 700;
 }
 
