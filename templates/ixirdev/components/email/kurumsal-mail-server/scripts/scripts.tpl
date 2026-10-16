@@ -1,4 +1,4 @@
-﻿<script>
+<script>
  {literal}
   (function() {
    var list = document.querySelector('.ixir-wh-shared--click');
@@ -128,7 +128,7 @@
    });
   })();
   (function() {
-   var root = document.querySelector('.ixir-wh-plans');
+   var root = document.getElementById('ixir-mail-plans') || document.querySelector('.ixir-mail-plans, .ixir-wh-plans');
    if (!root) return;
    var items = root.querySelectorAll('.ixir-wh-billing');
 
@@ -248,9 +248,9 @@
    });
   })();
   (function() {
-   var root = document.getElementById('ixir-wh-plans');
+   var root = document.getElementById('ixir-mail-plans') || document.getElementById('ixir-wh-plans') || document.querySelector('.ixir-mail-plans, .ixir-wh-plans');
    if (!root || !root.classList.contains('is-armed') || !window.IntersectionObserver) return;
-   var nodes = root.querySelectorAll('.ixir-wh-plans-head, .ixir-wh-plan, .ixir-wh-shared-box');
+   var nodes = root.querySelectorAll('.ixir-mail-plans-head, .ixir-wh-plans-head, .ixir-wh-plan, .ixir-wh-shared-box');
    if (!nodes.length) {
     root.classList.remove('is-armed');
     return;
@@ -276,9 +276,18 @@
    Array.prototype.forEach.call(nodes, function(node) {
     observer.observe(node);
    });
+   setTimeout(function() {
+    if (root && root.classList.contains('is-armed')) {
+     Array.prototype.forEach.call(nodes, function(node) {
+      node.classList.add('is-in');
+     });
+     root.classList.remove('is-armed');
+     root.classList.add('is-settled');
+    }
+   }, 1500);
   })();
   (function() {
-   var root = document.querySelector('.ixir-wh-diff');
+   var root = document.querySelector('.ixir-kms-diff, .ixir-wh-diff');
    if (!root || !root.classList.contains('is-armed') || !window.IntersectionObserver) return;
    var nodes = root.querySelectorAll('.ixir-wh-diff-head, .ixir-wh-diff-grid li');
    if (!nodes.length) {
@@ -306,6 +315,15 @@
    Array.prototype.forEach.call(nodes, function(node) {
     observer.observe(node);
    });
+   setTimeout(function() {
+    if (root && root.classList.contains('is-armed')) {
+     Array.prototype.forEach.call(nodes, function(node) {
+      node.classList.add('is-in');
+     });
+     root.classList.remove('is-armed');
+     root.classList.add('is-settled');
+    }
+   }, 1500);
   })();
   (function() {
    var root = document.getElementById('ixir-wh-compare');
@@ -397,6 +415,15 @@
    Array.prototype.forEach.call(nodes, function(node) {
     observer.observe(node);
    });
+   setTimeout(function() {
+    if (root && root.classList.contains('is-armed')) {
+     Array.prototype.forEach.call(nodes, function(node) {
+      node.classList.add('is-in');
+     });
+     root.classList.remove('is-armed');
+     root.classList.add('is-settled');
+    }
+   }, 1500);
   })();
   (function() {
    var root = document.querySelector('.ixir-wh-guide');

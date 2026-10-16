@@ -20,7 +20,7 @@
 
     <article class="ixir-as-story-row ixir-wh-story-row ixir-as-story-row--ai ixir-wh-story-row--ai">
      <div class="ixir-as-story-visual ixir-wh-story-visual" aria-hidden="true">
-      <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/ai.webp" alt="">
+      <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/antispam-ai.webp" alt="Makine Öğrenimi" width="480" height="340" loading="lazy">
      </div>
      <div class="ixir-as-story-copy ixir-wh-story-copy">
       <div class="ixir-as-story-heading ixir-wh-story-heading">
@@ -32,7 +32,7 @@
     </article>
     <article class="ixir-as-story-row ixir-wh-story-row ixir-as-story-row--flip ixir-wh-story-row--flip ixir-as-story-row--speed ixir-wh-story-row--speed">
      <div class="ixir-as-story-visual ixir-wh-story-visual" aria-hidden="true">
-      <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/secure.webp" alt="">
+      <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/antispam-shield.webp" alt="%99.8 Spam Engelleme" width="480" height="340" loading="lazy">
      </div>
      <div class="ixir-as-story-copy ixir-wh-story-copy">
       <div class="ixir-as-story-heading ixir-wh-story-heading">
@@ -44,7 +44,7 @@
     </article>
     <article class="ixir-as-story-row ixir-wh-story-row ixir-as-story-row--mail ixir-wh-story-row--mail">
      <div class="ixir-as-story-visual ixir-wh-story-visual" aria-hidden="true">
-      <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/support3.webp" alt="">
+      <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/antispam-setup.webp" alt="Dakikalar İçinde Kurulum" width="480" height="340" loading="lazy">
      </div>
      <div class="ixir-as-story-copy ixir-wh-story-copy">
       <div class="ixir-as-story-heading ixir-wh-story-heading">
@@ -56,7 +56,7 @@
     </article>
     <article class="ixir-as-story-row ixir-wh-story-row ixir-as-story-row--flip ixir-wh-story-row--flip ixir-as-story-row--speed ixir-wh-story-row--speed">
      <div class="ixir-as-story-visual ixir-wh-story-visual" aria-hidden="true">
-      <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/smarthost4.webp" alt="">
+      <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/antispam-malware.webp" alt="Zararlı Yazılım Koruması" width="480" height="340" loading="lazy">
      </div>
      <div class="ixir-as-story-copy ixir-wh-story-copy">
       <div class="ixir-as-story-heading ixir-wh-story-heading">

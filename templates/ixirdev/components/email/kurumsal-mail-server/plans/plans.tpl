@@ -3,7 +3,7 @@
  <script>
   {literal}
    (function() {
-    var root = document.getElementById('ixir-mail-plans') || document.getElementById('ixir-wh-plans');
+    var root = document.getElementById('ixir-mail-plans') || document.getElementById('ixir-wh-plans') || document.querySelector('.ixir-mail-plans, .ixir-wh-plans');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;

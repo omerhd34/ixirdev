@@ -7,7 +7,7 @@
         <i class="fas fa-layer-group" aria-hidden="true"></i>
         <span>Özellikler &amp; Avantajlar</span>
       </span>
-      {include file="$template/components/Heading.tpl" title="Kurumsal Mail Sunucusu Özellikleri ve Avantajları" id="ixir-kms-features-title"}
+      {include file="$template/components/Heading.tpl" title="Kurumsal Mail Server Özellikleri ve Avantajları" id="ixir-kms-features-title"}
       <p class="ixir-kms-subhead">İşletmenizin kurumsal iletişimini kesintisiz, güvenli ve yüksek performanslı özel mail sunucusu altyapısıyla güçlendirin.</p>
     </div>
 
