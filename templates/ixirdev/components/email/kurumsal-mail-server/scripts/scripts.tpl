@@ -1,4 +1,4 @@
-<script>
+﻿<script>
  {literal}
   (function() {
    var list = document.querySelector('.ixir-wh-shared--click');
@@ -223,9 +223,6 @@
      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
      var start = window.pageYOffset || document.documentElement.scrollTop || 0;
      var dest = destination(target);
-     if (window.history && window.history.pushState) {
-      window.history.pushState(null, '', '#ixir-wh-compare');
-     }
      if (reduce || Math.abs(dest - start) < 2) {
       window.scrollTo(0, dest);
       return;
@@ -371,9 +368,9 @@
    });
   })();
   (function() {
-   var root = document.querySelector('.ixir-wh-story');
+   var root = document.querySelector('.ixir-mail-story, .ixir-wh-story');
    if (!root || !root.classList.contains('is-armed') || !window.IntersectionObserver) return;
-   var nodes = root.querySelectorAll('.ixir-wh-story-intro, .ixir-wh-story-row');
+   var nodes = root.querySelectorAll('.ixir-mail-story-intro, .ixir-wh-story-intro, .ixir-wh-story-row');
    if (!nodes.length) {
     root.classList.remove('is-armed');
     return;

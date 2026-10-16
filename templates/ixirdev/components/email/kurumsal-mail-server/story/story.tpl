@@ -1,8 +1,8 @@
-<section class="ixir-wh-story ixir-slide ixir-slide--left is-slide-on" aria-label="Kurumsal Mail Hosting nedir">
+<section class="ixir-mail-story ixir-wh-story ixir-slide ixir-slide--left is-slide-on" aria-label="Kurumsal Mail Server Nedir?">
  <script>
   {literal}
    (function() {
-    var root = document.querySelector('.ixir-wh-story');
+    var root = document.querySelector('.ixir-mail-story, .ixir-wh-story');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
@@ -11,11 +11,11 @@
   {/literal}
  </script>
  <div class="container">
-  <div class="ixir-wh-story-intro">
-   <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
+  <div class="ixir-mail-story-intro ixir-wh-story-intro">
+   <span class="ixir-mail-story-icon ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
    {include file="$template/components/Heading.tpl" title="Kurumsal Mail Server Nedir?"}
    <p>Kurumsal Mail Server, işletmelerin profesyonel iletişim ihtiyaçlarına özel tasarlanmış, kurumsal düzeyde güvenlik ve yüksek performans sunan özel e-posta altyapısıdır. Gelişmiş antivirüs, antispam koruma, dedicated IP adresi ve DKIM/SPF/DMARC kimlik doğrulama desteği ile tamamen size ait bir sunucuda e-postalarınızı güvenle yönetebilir, işletmenizin dijital iletişiminde tam kontrolü elinizde bulundurabilirsiniz.</p>
-   <a class="ixir-wh-story-cta" href="#ixir-wh-plans">Hemen Paket Seç</a>
+   <a class="ixir-mail-story-cta ixir-wh-story-cta" href="#ixir-mail-plans">Hemen Paket Seç</a>
   </div>
  </div>
 </section>

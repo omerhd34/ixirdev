@@ -1,9 +1,9 @@
-<section class="ixir-wh-diff ixir-wh-diff--mail ixir-wh-diff--dark bg-dark-blue ixir-slide ixir-slide--right is-slide-on"
- aria-labelledby="ixir-wh-diff-title">
+<section class="ixir-kms-diff ixir-wh-diff ixir-wh-diff--mail ixir-wh-diff--dark bg-dark-blue ixir-slide ixir-slide--right is-slide-on"
+ id="ixir-kms-diff" aria-labelledby="ixir-kms-diff-title">
  <script>
   {literal}
    (function() {
-    var root = document.querySelector('.ixir-wh-diff');
+    var root = document.querySelector('.ixir-kms-diff') || document.querySelector('.ixir-wh-diff');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
@@ -12,8 +12,8 @@
   {/literal}
  </script>
  <div class="container">
-  <header class="ixir-wh-diff-head">
-   {include file="$template/components/Heading.tpl" title="Neden Kurumsal Mail Server Seçmelisiniz?" id="ixir-wh-diff-title" class="text-white"}
+  <header class="ixir-wh-diff-head ixir-kms-diff-head">
+   {include file="$template/components/Heading.tpl" title="Neden Kurumsal Mail Server Seçmelisiniz?" id="ixir-kms-diff-title" class="text-white"}
   </header>
   <ul class="ixir-wh-diff-grid">
    <li>

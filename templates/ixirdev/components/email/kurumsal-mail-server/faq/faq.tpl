@@ -1,8 +1,8 @@
-<section class="ixir-wh-faq ixir-wh-faq--light bg-light-blue ixir-slide ixir-slide--right is-slide-on"
- aria-labelledby="ixir-wh-faq-title">
+<section class="ixir-kms-faq ixir-wh-faq ixir-wh-faq--light bg-light-blue ixir-slide ixir-slide--right is-slide-on"
+ id="ixir-kms-faq" aria-labelledby="ixir-kms-faq-title">
  <div class="container">
-  <header class="ixir-wh-plans-head">
-   {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-wh-faq-title"}
+  <header class="ixir-wh-plans-head ixir-kms-faq-head">
+   {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular" id="ixir-kms-faq-title"}
    <p>Kurumsal mail server hizmetimiz hakkında merak ettiğiniz tüm sorular</p>
   </header>
   <div class="ixir-wh-faq-list">

@@ -1,9 +1,9 @@
-<section class="ixir-wh-plans ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-plans"
- aria-labelledby="ixir-wh-plans-title">
+<section class="ixir-wh-plans ixir-mail-plans ixir-slide ixir-slide--right is-slide-on" id="ixir-mail-plans"
+ aria-labelledby="ixir-mail-plans-title">
  <script>
   {literal}
    (function() {
-    var root = document.getElementById('ixir-wh-plans');
+    var root = document.getElementById('ixir-mail-plans') || document.getElementById('ixir-wh-plans');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
@@ -12,8 +12,8 @@
   {/literal}
  </script>
  <div class="container">
-  <header class="ixir-wh-plans-head">
-   {include file="$template/components/Heading.tpl" title="Kurumsal Mail Server Paketleri" id="ixir-wh-plans-title"}
+  <header class="ixir-wh-plans-head ixir-mail-plans-head">
+   {include file="$template/components/Heading.tpl" title="Kurumsal Mail Server Paketleri" id="ixir-mail-plans-title"}
    <p>İhtiyacınıza uygun paketi seçin.</p>
   </header>
   <div class="ixir-wh-grid">

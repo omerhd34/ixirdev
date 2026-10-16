@@ -1,4 +1,4 @@
-<section id="home-banner" class="ixir-hero ixir-hero--kurumsal-mail-server" aria-label="Kurumsal Mail Server">
+﻿<section id="home-banner" class="ixir-hero ixir-hero--kurumsal-mail-server" aria-label="Kurumsal Mail Server">
  <picture class="ixir-hero-photo ixir-hero-photo--mail">
   <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/bg17.jpg" alt="">
  </picture>
@@ -13,7 +13,7 @@
     <p>Türkiye lokasyonlu, KVKK uyumlu, esnek ve yüksek performanslı kurumsal e-posta sunucu altyapısı.</p>
    </div>
    <div class="ixir-hero-actions">
-    <a href="#ixir-wh-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-wh-plans-btn">
+    <a href="#ixir-mail-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-mail-plans-btn ixir-wh-plans-btn">
      Kurumsal Mail Server Paketleri <i class="fas fa-arrow-down" aria-hidden="true"></i>
     </a>
    </div>
@@ -69,9 +69,9 @@
     </li>
     
    </ul>
-   <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer hizmetler">
-    <p class="ixir-hero-label">Diğer Hizmetler</p>
-    <ul class="ixir-hero-links">
+   <div class="ixir-hero-links-wrap ixir-domain-links-wrap" role="region" aria-label="DiÄŸer hizmetler">
+    <p class="ixir-hero-label">DiÄŸer Hizmetler</p>
+    <ul class="ixir-hero-links ixir-domain-links">
      <li>
       <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
@@ -93,7 +93,7 @@
       </a>
      </li>
     </ul>
-    <ul class="ixir-hero-links">
+    <ul class="ixir-hero-links ixir-domain-links">
      <li>
       <a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting">
        <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Linux Hosting</span>
@@ -115,7 +115,7 @@
       </a>
      </li>
     </ul>
-    <ul class="ixir-hero-links">
+    <ul class="ixir-hero-links ixir-domain-links">
      <li>
       <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
        <i class="fas fa-mail-bulk fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
@@ -176,7 +176,7 @@
    window.addEventListener('resize', apply);
    window.addEventListener('load', apply);
 
-   var plansLink = document.querySelector('a.ixir-wh-plans-btn');
+   var plansLink = document.querySelector('a.ixir-mail-plans-btn, a.ixir-wh-plans-btn');
    if (plansLink) {
     var frame = 0;
 
@@ -205,7 +205,7 @@
     }
 
     plansLink.addEventListener('click', function(e) {
-     var plans = document.getElementById('ixir-wh-plans');
+     var plans = document.getElementById('ixir-mail-plans') || document.getElementById('ixir-wh-plans');
      if (!plans) return;
      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
      e.preventDefault();
@@ -216,9 +216,6 @@
      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
      var start = window.pageYOffset || document.documentElement.scrollTop || 0;
      var dest = destination(plans);
-     if (window.history && window.history.pushState) {
-      window.history.pushState(null, '', '#ixir-wh-plans');
-     }
      if (reduce || Math.abs(dest - start) < 2) {
       window.scrollTo(0, dest);
       return;
