@@ -13,13 +13,11 @@
     {/literal}
   </script>
 
-  <!-- Arka plan görsel ışıması -->
   <div class="pci-how-bg-glow" aria-hidden="true"></div>
 
   <div class="container">
     <div class="pci-how-grid">
 
-      <!-- Sol Kolon: Başlık ve Adımlar -->
       <div class="pci-how-left">
         <header class="pci-how-header">
           <span class="pci-how-badge">
@@ -32,10 +30,8 @@
           </p>
         </header>
 
-        <!-- Süreç Adımları (Interactive Process Timeline) -->
         <div class="pci-how-steps" role="list">
 
-          <!-- Adım 1 -->
           <div class="pci-how-step" role="listitem">
             <div class="pci-how-step-indicator" aria-hidden="true">
               <span class="pci-how-step-num">01</span>
@@ -54,7 +50,6 @@
             </div>
           </div>
 
-          <!-- Adım 2 -->
           <div class="pci-how-step" role="listitem">
             <div class="pci-how-step-indicator" aria-hidden="true">
               <span class="pci-how-step-num">02</span>
@@ -73,7 +68,6 @@
             </div>
           </div>
 
-          <!-- Adım 3 -->
           <div class="pci-how-step" role="listitem">
             <div class="pci-how-step-indicator" aria-hidden="true">
               <span class="pci-how-step-num">03</span>
@@ -92,7 +86,6 @@
             </div>
           </div>
 
-          <!-- Adım 4 -->
           <div class="pci-how-step is-last" role="listitem">
             <div class="pci-how-step-indicator" aria-hidden="true">
               <span class="pci-how-step-num"><i class="fas fa-check" aria-hidden="true"></i></span>
@@ -113,7 +106,6 @@
         </div>
       </div>
 
-      <!-- Sağ Kolon: Görsel & İllüstrasyon Vitrini -->
       <div class="pci-how-right">
         <div class="pci-how-visual-wrapper">
           <div class="pci-how-visual-aura" aria-hidden="true"></div>
@@ -127,7 +119,6 @@
                  class="pci-how-img">
           </picture>
 
-          <!-- Yüzen Rozet (Floating Trust Badge) -->
           <div class="pci-how-floating-badge" aria-hidden="true">
             <div class="pci-how-floating-icon">
               <i class="fas fa-shield-check"></i>
@@ -138,7 +129,6 @@
             </div>
           </div>
 
-          <!-- İkinci Yüzen Metrik Rozeti -->
           <div class="pci-how-floating-badge pci-how-floating-badge--secondary" aria-hidden="true">
             <div class="pci-how-floating-icon pci-how-floating-icon--green">
               <i class="fas fa-certificate"></i>
