@@ -444,8 +444,6 @@ div.header-lined h1 {
 .ixir-wh-story:not(.bg-light-blue):not(.ixir-wh-story--light) h2,
 .ixir-wh-story-features-head .site-heading,
 .ixir-wh-story-features-head h2,
-.ixir-colo-story .site-heading,
-.colo-story-intro .site-heading,
 .ixir-pci-story .site-heading,
 .pci-story-intro .site-heading,
 .ixir-cs-story .site-heading,
@@ -464,11 +462,21 @@ div.header-lined h1 {
 .bg-dark .ixir-wh-diff-head p,
 .bg-dark .ixir-ds-head p,
 .ixir-wh-story-features-head p,
-.ixir-colo-story .colo-story-intro p,
-.ixir-colo-story .ixir-wh-story-intro p,
 .ixir-pci-story .pci-story-intro p,
 .ixir-pci-story .ixir-wh-story-intro p,
 .ixir-cs-story .ixir-cs-story-intro p,
 .ixir-cs-story .ixir-wh-story-intro p {
   color: rgba(255, 255, 255, 0.78) !important;
+}
+
+.ixir-cs-usage .ixir-wh-diff-grid li h3 {
+  color: #0b2545 !important;
+}
+
+.ixir-cs-usage .ixir-wh-diff-grid li:hover h3 {
+  color: #2563eb !important;
+}
+
+.ixir-cs-usage .ixir-wh-diff-grid li p {
+  color: #64748b !important;
 }

@@ -12,7 +12,7 @@
 <link href="{assetPath file='all.min.css'}?v={$versionHash}-r1" rel="stylesheet">
 <link href="{$WEB_ROOT}/assets/css/fontawesome-all.min.css" rel="stylesheet">
 {assetExists file="base.css"}
-<link href="{$__assetPath__}?v={$versionHash}-r27" rel="stylesheet">
+<link href="{$__assetPath__}?v={$versionHash}-r28" rel="stylesheet">
 {/assetExists}
 <link href="{$WEB_ROOT}/templates/{$template}/css/common.css?v={$versionHash}-r3" rel="stylesheet">
 <link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r37" rel="stylesheet">
@@ -67,7 +67,7 @@
   ]}
  {/if}
  {foreach from=$ixirDomainCss item=ixirCss}
-  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r117"
+  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r118"
    rel="stylesheet">
  {/foreach}
 {/if}
@@ -311,7 +311,7 @@
   ]}
  {/if}
  {foreach from=$ixirPageCss item=ixirCss}
-  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r123"
+  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r134"
    rel="stylesheet">
  {/foreach}
  <script src="{$WEB_ROOT}/templates/{$template}/components/hosting/plans-slider.js?v={$versionHash}-r7" defer></script>

@@ -19,8 +19,6 @@
         .ixir-wh-diff--dark .site-heading,
         .ixir-cs-usage .site-heading,
         .ixir-cs-story .site-heading,
-        .ixir-colo-story .site-heading,
-        .colo-story-intro .site-heading,
         .ixir-pci-story .site-heading,
         .pci-story-intro .site-heading,
         .ixir-as-why .site-heading,
