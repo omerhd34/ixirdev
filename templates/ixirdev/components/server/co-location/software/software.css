@@ -1,3 +1,4 @@
+.ixir-colo-software,
 .ixir-wh-software {
   position: relative;
   padding: 72px 0 80px;
@@ -11,6 +12,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
 }
+.ixir-colo-software::before,
 .ixir-wh-software::before {
   content: "";
   position: absolute;
@@ -23,33 +25,41 @@
   pointer-events: none;
   z-index: 0;
 }
+.ixir-colo-software.is-armed,
 .ixir-wh-software.is-armed {
   overflow-x: clip;
 }
+.ixir-colo-software.is-armed .ixir-colo-software-card,
 .ixir-wh-software.is-armed .ixir-wh-software-card {
   opacity: 0;
   transform: translate3d(0, 30px, 0);
   pointer-events: none;
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms), opacity 0.5s ease var(--ixir-enter-delay, 0ms);
 }
+.ixir-colo-software.is-armed .ixir-colo-software-card:nth-child(1),
 .ixir-wh-software.is-armed .ixir-wh-software-card:nth-child(1) {
   --ixir-enter-delay: 0ms;
 }
+.ixir-colo-software.is-armed .ixir-colo-software-card.is-in,
+.ixir-colo-software.is-settled .ixir-colo-software-card,
 .ixir-wh-software.is-armed .ixir-wh-software-card.is-in,
 .ixir-wh-software.is-settled .ixir-wh-software-card {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   pointer-events: auto;
 }
+.ixir-colo-software.is-settled .ixir-colo-software-card,
 .ixir-wh-software.is-settled .ixir-wh-software-card {
   transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
 }
+.ixir-colo-software-grid,
 .ixir-wh-software-grid {
   display: block;
   width: 100%;
   position: relative;
   z-index: 1;
 }
+.ixir-colo-software-card,
 .ixir-wh-software-card {
   position: relative;
   display: flex;
@@ -66,6 +76,7 @@
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
+.ixir-colo-software-card::before,
 .ixir-wh-software-card::before {
   content: "";
   position: absolute;
@@ -75,14 +86,17 @@
   opacity: 0;
   transition: opacity 0.35s ease;
 }
+.ixir-colo-software-card:hover,
 .ixir-wh-software-card:hover {
   border-color: #bfdbfe;
   box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08), 0 0 24px rgba(37, 99, 235, 0.06);
   transform: translateY(-4px);
 }
+.ixir-colo-software-card:hover::before,
 .ixir-wh-software-card:hover::before {
   opacity: 1;
 }
+.ixir-colo-software-head,
 .ixir-wh-software-head {
   position: relative;
   z-index: 1;
@@ -95,9 +109,11 @@
   max-width: 1000px;
   width: 100%;
 }
+.ixir-colo-software-head > div,
 .ixir-wh-software-head > div {
   width: 100%;
 }
+.ixir-colo-software-icon,
 .ixir-wh-software-icon {
   display: inline-flex;
   flex: 0 0 58px;
@@ -113,21 +129,26 @@
   margin-bottom: 6px;
   transition: transform 0.3s ease;
 }
+.ixir-colo-software-card:hover .ixir-colo-software-icon,
 .ixir-wh-software-card:hover .ixir-wh-software-icon {
   transform: scale(1.08) rotate(-3deg);
 }
+.ixir-colo-software-head h2,
+.ixir-colo-software-head .site-heading,
 .ixir-wh-software-head h2,
 .ixir-wh-software-head .site-heading {
   margin: 0 0 8px;
   color: #ffffff !important;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
 }
+.ixir-colo-software-head p,
 .ixir-wh-software-head p {
   margin: 0;
   color: #94a3b8 !important;
   font-size: 15px;
   line-height: 1.6;
 }
+.ixir-colo-software ul,
 .ixir-wh-software ul {
   position: relative;
   z-index: 1;
@@ -139,6 +160,7 @@
   list-style: none;
   width: 100%;
 }
+.ixir-colo-software li,
 .ixir-wh-software li {
   display: flex;
   align-items: center;
@@ -155,6 +177,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
+.ixir-colo-software li:hover,
 .ixir-wh-software li:hover {
   background: rgba(30, 41, 59, 0.8);
   border-color: rgba(96, 165, 250, 0.4);
@@ -162,6 +185,7 @@
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
 }
+.ixir-colo-software-check,
 .ixir-wh-software-check {
   display: inline-flex;
   flex: 0 0 32px;
@@ -176,6 +200,7 @@
   border: 1px solid #dbeafe;
   transition: all 0.25s ease;
 }
+.ixir-colo-software li:hover .ixir-colo-software-check,
 .ixir-wh-software li:hover .ixir-wh-software-check {
   background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
   border-color: #2563eb;
@@ -185,23 +210,28 @@
 }
 
 @media (max-width: 1100px) {
+  .ixir-colo-software ul,
   .ixir-wh-software ul {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 768px) {
+  .ixir-colo-software,
   .ixir-wh-software {
     padding: 48px 0 56px;
   }
+  .ixir-colo-software-card,
   .ixir-wh-software-card {
     padding: 26px 20px 22px;
     border-radius: 20px;
   }
+  .ixir-colo-software ul,
   .ixir-wh-software ul {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
+  .ixir-colo-software li,
   .ixir-wh-software li {
     padding: 11px 12px;
     font-size: 13px;
@@ -209,15 +239,19 @@
 }
 
 @media (max-width: 480px) {
+  .ixir-colo-software ul,
   .ixir-wh-software ul {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 1024px), (prefers-reduced-motion: reduce) {
+  .ixir-colo-software.is-armed,
   .ixir-wh-software.is-armed {
     overflow-x: visible;
   }
+  .ixir-colo-software.is-armed .ixir-colo-software-card,
+  .ixir-colo-software.is-armed .ixir-colo-software-card.is-in,
   .ixir-wh-software.is-armed .ixir-wh-software-card,
   .ixir-wh-software.is-armed .ixir-wh-software-card.is-in {
     opacity: 1;
