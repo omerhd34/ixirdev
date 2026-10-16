@@ -4,7 +4,6 @@
   <header class="ixir-ds-head" style="max-width: 100%; margin-bottom: 4rem;">
    {include file="$template/components/Heading.tpl" title="Güçlü ve Yedekli Network Altyapımız" class="text-white"}
   </header>
-  <img src="{$WEB_ROOT}/templates/{$template}/img/server/network-schema.webp" alt="Network Şeması"
-   style="max-width: 100%; height: auto; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.05));" loading="lazy">
+  {include file="$template/components/server/network/network-diagram.tpl" theme="dark"}
  </div>
 </section>
