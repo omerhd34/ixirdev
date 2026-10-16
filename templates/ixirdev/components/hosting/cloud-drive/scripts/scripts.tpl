@@ -44,8 +44,7 @@
    var storyOptions = { threshold: 0.2, rootMargin: '0px' };
    arm(document.getElementById('ixir-wh-plans'), '.ixir-wh-plans-head, .ixir-wh-plan, .ixir-wh-shared-box', 1300,
     sectionOptions);
-   arm(document.querySelector('.ixir-wh-story--intro'), '.ixir-wh-story-intro', 900, storyOptions);
-   arm(document.querySelector('.ixir-wh-story--features'), '.ixir-wh-story-row', 900, storyOptions);
+   arm(document.querySelector('.ixir-wh-story'), '.ixir-wh-story-intro, .ixir-wh-story-row', 900, storyOptions);
    arm(document.querySelector('.ixir-wh-diff'), '.ixir-wh-diff-head, .ixir-wh-diff-grid li', 1100, sectionOptions);
    arm(document.querySelector('.ixir-wh-faq'), '.ixir-wh-plans-head, .ixir-wh-faq-item', 1300, sectionOptions);
   })();
