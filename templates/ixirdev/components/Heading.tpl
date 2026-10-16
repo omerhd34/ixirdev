@@ -18,8 +18,14 @@
         .bg-dark .site-heading,
         .ixir-wh-diff--dark .site-heading,
         .ixir-cs-usage .site-heading,
+        .ixir-cs-story .site-heading,
         .ixir-colo-story .site-heading,
+        .colo-story-intro .site-heading,
         .ixir-pci-story .site-heading,
+        .pci-story-intro .site-heading,
+        .ixir-as-why .site-heading,
+        .ixir-as-why-header .site-heading,
+        .ixir-kms-diff .site-heading,
         .ixir-wh-story:not(.bg-light-blue):not(.ixir-wh-story--light) .site-heading,
         .ixir-wh-story--features .site-heading,
         .ixir-wh-story-features-head .site-heading,
@@ -49,10 +55,29 @@
 
         .site-heading.text-left::after,
         .site-heading.align-left::after,
+        .site-heading.site-heading--align-left::after,
         .site-heading--align-left::after,
         .text-left > .site-heading::after {
-            margin-left: 0;
-            margin-right: auto;
+            margin-left: 0 !important;
+            margin-right: auto !important;
+        }
+
+        .site-heading.text-center::after,
+        .site-heading.align-center::after,
+        .site-heading.site-heading--align-center::after,
+        .site-heading--align-center::after,
+        .text-center > .site-heading::after {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .site-heading.text-right::after,
+        .site-heading.align-right::after,
+        .site-heading.site-heading--align-right::after,
+        .site-heading--align-right::after,
+        .text-right > .site-heading::after {
+            margin-left: auto !important;
+            margin-right: 0 !important;
         }
 
         @media screen and (max-width: 768px) {

@@ -77,6 +77,14 @@
      enter.observe(node);
      leave.observe(node);
     });
+
+    setTimeout(function() {
+     Array.prototype.forEach.call(nodes, function(node) {
+      if (!node.classList.contains('is-slide-in')) {
+       node.classList.add('is-slide-in');
+      }
+     });
+    }, 1000);
    }
 
    if (document.readyState === 'loading') {
