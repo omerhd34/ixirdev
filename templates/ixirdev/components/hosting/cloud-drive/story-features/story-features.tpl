@@ -1,5 +1,5 @@
  <section class="ixir-wh-story ixir-wh-story--features ixir-slide ixir-slide--right is-slide-on"
-  aria-label="WordPress Hosting özellikleri">
+  aria-label="Cloud Drive Özellikleri">
   <script>
    {literal}
     (function() {

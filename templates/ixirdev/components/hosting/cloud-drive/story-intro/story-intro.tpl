@@ -1,5 +1,5 @@
  <section class="ixir-wh-story ixir-wh-story--intro ixir-slide ixir-slide--left is-slide-on"
-  aria-label="WordPress Hosting nedir">
+  aria-label="Cloud Drive Nedir?">
   <script>
    {literal}
     (function() {

@@ -1,4 +1,4 @@
- <section id="home-banner" class="ixir-hero ixir-hero--wordpress" aria-label="WordPress Hosting">
+﻿ <section id="home-banner" class="ixir-hero ixir-hero--cloud-drive" aria-label="Cloud Drive">
   <picture class="ixir-hero-photo">
    <source srcset="{$WEB_ROOT}/templates/{$template}/img/hosting/bg15.webp" type="image/webp">
    <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/bg15.webp" alt="" width="1920" height="1080">
@@ -29,9 +29,9 @@
       <span>Her Yerden Erişim</span>
      </li>
     </ul>
-    <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer hizmetler">
+    <div class="ixir-hero-links-wrap ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links ixir-domain-links">
       <li>
        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
@@ -53,7 +53,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links ixir-domain-links">
       <li>
        <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
@@ -75,7 +75,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-domain-links">
+     <ul class="ixir-hero-links ixir-domain-links">
       <li>
        <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
         <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
@@ -169,9 +169,6 @@
       var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       var start = window.pageYOffset || document.documentElement.scrollTop || 0;
       var dest = destination(plans);
-      if (window.history && window.history.pushState) {
-       window.history.pushState(null, '', '#ixir-wh-plans');
-      }
       if (reduce || Math.abs(dest - start) < 2) {
        window.scrollTo(0, dest);
        return;
