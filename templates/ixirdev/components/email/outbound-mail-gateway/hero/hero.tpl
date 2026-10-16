@@ -26,11 +26,11 @@
      <span>KVKK Uyumlu</span>
     </li>
     <li>
-     <i class="fas fa-filter" aria-hidden="true"></i>
+     <i class="fas fa-shield-check" aria-hidden="true"></i>
      <span>%99.8 Outbound Filtreleme</span>
     </li>
     <li>
-     <i class="fas fa-award" aria-hidden="true"></i>
+     <i class="fas fa-star" aria-hidden="true"></i>
      <span>Yüksek Reputation</span>
     </li>
     <li>

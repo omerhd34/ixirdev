@@ -1,3 +1,11 @@
+.ixir-wh-plans-head {
+  max-width: 980px;
+}
+
+.ixir-wh-plans-head p {
+  max-width: 980px;
+}
+
 .ixir-wh-grid.ixir-wh-grid--3,
 .ixir-wh-grid--3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));

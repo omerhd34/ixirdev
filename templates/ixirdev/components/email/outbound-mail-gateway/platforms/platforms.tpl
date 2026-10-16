@@ -84,7 +84,7 @@
       <article class="ixir-omg-platform-card ixir-omg-platform-badge">
         <div class="ixir-omg-platform-header">
           <div class="ixir-omg-platform-icon ixir-omg-platform-icon--zimbra" aria-hidden="true">
-            <i class="fas fa-envelope-open-text"></i>
+            <i class="fas fa-mail-bulk"></i>
           </div>
           <span class="ixir-omg-platform-status">
             <i class="fas fa-check" aria-hidden="true"></i> Tam Uyumlu
@@ -104,7 +104,7 @@
       <article class="ixir-omg-platform-card ixir-omg-platform-badge">
         <div class="ixir-omg-platform-header">
           <div class="ixir-omg-platform-icon ixir-omg-platform-icon--plesk" aria-hidden="true">
-            <i class="fas fa-layer-group"></i>
+            <i class="fas fa-cubes"></i>
           </div>
           <span class="ixir-omg-platform-status">
             <i class="fas fa-check" aria-hidden="true"></i> Tam Uyumlu
@@ -124,7 +124,7 @@
       <article class="ixir-omg-platform-card ixir-omg-platform-badge">
         <div class="ixir-omg-platform-header">
           <div class="ixir-omg-platform-icon ixir-omg-platform-icon--hmail" aria-hidden="true">
-            <i class="fab fa-windows"></i>
+            <i class="fas fa-server"></i>
           </div>
           <span class="ixir-omg-platform-status">
             <i class="fas fa-check" aria-hidden="true"></i> Tam Uyumlu
@@ -144,7 +144,7 @@
       <article class="ixir-omg-platform-card ixir-omg-platform-badge">
         <div class="ixir-omg-platform-header">
           <div class="ixir-omg-platform-icon ixir-omg-platform-icon--sendmail" aria-hidden="true">
-            <i class="fas fa-terminal"></i>
+            <i class="fas fa-code-branch"></i>
           </div>
           <span class="ixir-omg-platform-status">
             <i class="fas fa-check" aria-hidden="true"></i> Tam Uyumlu

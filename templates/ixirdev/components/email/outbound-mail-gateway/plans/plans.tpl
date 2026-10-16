@@ -59,7 +59,7 @@
         </div>
         <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
         <ul class="ixir-wh-specs">
-          <li><span>Aylık Maksimum Mail Çıkışı</span><b>10.000</b></li>
+          <li><span>Aylık Maksimum Mail Çıkışı</span><b>10000</b></li>
           <li><span>Öncelikli Destek</span><b>Yok</b></li>
         </ul>
       </article>
@@ -68,7 +68,7 @@
         <span class="ixir-wh-badge">En İyi Tercih</span>
         <header class="ixir-wh-plan-head">
           <h3>ECONOMY</h3>
-          <p>KOBİ'ler ve düzenli kurumsal mail gönderimi yapan şirketler için optimize edilmiş paket</p>
+          <p>KOBİ'ler ve düzenli kurumsal mail gönderimi yapan şirketler için optimize edilmiş</p>
         </header>
         <div class="ixir-wh-price">
           <s>6.277 TL</s>
@@ -171,10 +171,10 @@
         <li><i class="fas fa-server" aria-hidden="true"></i>1 IP/Sunucu SmartHost</li>
         <li><i class="fas fa-brain" aria-hidden="true"></i>Kendi Öğrenen Sistem</li>
         <li><i class="fas fa-mail-bulk" aria-hidden="true"></i>Aylık Birçok Mail Çıkışı</li>
-        <li><i class="fas fa-filter" aria-hidden="true"></i>%99.8 Filtreleme</li>
+        <li><i class="fas fa-shield-check" aria-hidden="true"></i>%99.8 Filtreleme</li>
         <li><i class="fas fa-paper-plane" aria-hidden="true"></i>Giden E-posta Koruması</li>
         <li><i class="fas fa-shield-alt" aria-hidden="true"></i>Giden Antivirüs Koruması</li>
-        <li><i class="fas fa-award" aria-hidden="true"></i>Yüksek Reputation</li>
+        <li><i class="fas fa-star" aria-hidden="true"></i>Yüksek Reputation</li>
         <li><i class="fas fa-tachometer-alt" aria-hidden="true"></i>Yüksek SenderScore</li>
       </ul>
     </div>
