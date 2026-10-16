@@ -1,4 +1,4 @@
-<section class="ixir-wh-guide ixir-wh-guide--dark bg-dark-blue ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting rehberi">
+﻿<section class="ixir-wh-guide ixir-wh-guide--dark bg-dark-blue ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting rehberi">
  <script>
   {literal}
    (function() {
@@ -19,7 +19,7 @@
      bu teknolojilerle çalışan müşteri portföyüne sahip web tasarım ajansları ve freelancerlar için en uygun bayi
      hosting çözümüdür. Linux tabanlı alternatiflerin aksine IIS, .NET Framework ve MSSQL Server gibi Microsoft
      ekosisteminin temel bileşenlerini doğrudan destekleyen bu yapı; ERP entegrasyonları, kurumsal intranet uygulamaları
-     ve klasik ASP projelerinin sorunsuz çalışmasını sağlar. IxirHost'un Windows Reseller Hosting altyapısı, Enterprise
+     ve klasik ASP projelerinin sorunsuz çalışmasını sağlar. İXİRHOST'un Windows Reseller Hosting altyapısı, Enterprise
      NVMe SSD disk, cluster yedekli mimari ve İstanbul Tier III+ veri merkezi üzerinde çalışarak hem sizin hem de
      müşterilerinizin sitelerine yüksek erişilebilirlik garantisi sunar.</p>
     <p>Plesk yönetim paneli, Windows bayi hosting hizmetinin en güçlü avantajlarından biridir. Plesk ile her müşteri
@@ -166,9 +166,6 @@
      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
      var start = window.pageYOffset || document.documentElement.scrollTop || 0;
      var dest = destination(target);
-     if (window.history && window.history.pushState) {
-      window.history.pushState(null, '', '#ixir-wh-compare');
-     }
      if (reduce || Math.abs(dest - start) < 2) {
       window.scrollTo(0, dest);
       return;

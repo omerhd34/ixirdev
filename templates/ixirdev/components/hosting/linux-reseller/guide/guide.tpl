@@ -1,4 +1,4 @@
-<section class="ixir-wh-guide ixir-wh-guide--dark bg-dark-blue ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting rehberi">
+﻿<section class="ixir-wh-guide ixir-wh-guide--dark bg-dark-blue ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting rehberi">
  <script>
   {literal}
    (function() {
@@ -18,7 +18,7 @@
     <p>Linux Reseller, web tasarım ajanslarının, freelance geliştiricilerin ve dijital pazarlama firmalarının
      müşterilerine profesyonel hosting hizmeti sunabilmesi için tasarlanmış çok kullanıcılı bir hosting çözümüdür.
      WHM/cPanel altyapısı sayesinde satın aldığınız kaynakları dilediğiniz gibi bölerek müşterilerinize ayrı cPanel
-     hesabı açabilir; disk alanı, e-posta ve trafik limitlerini kendiniz belirleyebilirsiniz. IxirHost Linux Reseller
+     hesabı açabilir; disk alanı, e-posta ve trafik limitlerini kendiniz belirleyebilirsiniz. İXİRHOST Linux Reseller
      Hosting paketleri, CloudLinux işletim sistemi üzerinde çalışan LiteSpeed web sunucusu ve Enterprise NVMe disk
      altyapısıyla hem sizin hem de müşterilerinizin internet sitelerinin maksimum hızda çalışmasını sağlar. 10 siteden
      100 siteye kadar farklı ihtiyaçlara uygun 4 paket seçeneğiyle, büyümenize paralel olarak kolayca bir üst pakete
@@ -28,8 +28,8 @@
     <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-users-cog"></i></span>
     <h2>WHM/cPanel Reseller Hosting ile Sunucu Maliyeti Olmadan Hosting Firması Yönetin</h2>
     <p>Geleneksel dedicated sunucu ya da VPS çözümlerinde sunucu kurulumu, güvenlik yamaları ve kernel güncellemeleri
-     gibi teknik sorumluluklar tamamen size aittir. IxirHost Linux Bayi Hosting paketlerinde ise tüm altyapı yönetimi,
-     güvenlik güncellemeleri ve sunucu optimizasyonları IxirHost teknik ekibi tarafından gerçekleştirilir; siz yalnızca
+     gibi teknik sorumluluklar tamamen size aittir. İXİRHOST Linux Bayi Hosting paketlerinde ise tüm altyapı yönetimi,
+     güvenlik güncellemeleri ve sunucu optimizasyonları İXİRHOST teknik ekibi tarafından gerçekleştirilir; siz yalnızca
      müşterilerinizi yönetmeye odaklanırsınız. CloudLinux CageFS sanallaştırma teknolojisi sayesinde her cPanel hesabı
      birbirinden izole çalışır: bir müşterinin yaşadığı sorun diğerlerini etkilemez. Imunify360 WAF güvenlik katmanı tüm
      hesapları malware, brute-force ve DDoS saldırılarına karşı korurken, JetBackup ile verileriniz haftalık otomatik
@@ -173,9 +173,6 @@
      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
      var start = window.pageYOffset || document.documentElement.scrollTop || 0;
      var dest = destination(target);
-     if (window.history && window.history.pushState) {
-      window.history.pushState(null, '', '#ixir-wh-compare');
-     }
      if (reduce || Math.abs(dest - start) < 2) {
       window.scrollTo(0, dest);
       return;
