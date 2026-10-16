@@ -5,7 +5,6 @@
   </header>
 
   <div class="ixir-ss-tab-container">
-   <!-- Tab Buttons -->
    <div class="ixir-ss-tab-nav-wrapper">
     <div class="ixir-ss-tab-nav" role="tablist" aria-label="Sunucu Destek Özellikleri">
      <button type="button" class="ixir-ss-tab-btn is-active" role="tab" aria-selected="true" aria-controls="ixir-ss-pane-1" id="ixir-ss-tab-1" data-tab-target="1">
@@ -39,9 +38,7 @@
     </div>
    </div>
 
-   <!-- Tab Content Panels -->
    <div class="ixir-ss-tab-content">
-    <!-- Panel 1 -->
     <div class="ixir-ss-pane is-active" role="tabpanel" id="ixir-ss-pane-1" aria-labelledby="ixir-ss-tab-1">
      <div class="ixir-ss-pane-card">
       <div class="ixir-ss-pane-icon">
@@ -52,7 +49,6 @@
      </div>
     </div>
 
-    <!-- Panel 2 -->
     <div class="ixir-ss-pane" role="tabpanel" id="ixir-ss-pane-2" aria-labelledby="ixir-ss-tab-2" hidden>
      <div class="ixir-ss-pane-card">
       <div class="ixir-ss-pane-icon">
@@ -63,7 +59,6 @@
      </div>
     </div>
 
-    <!-- Panel 3 -->
     <div class="ixir-ss-pane" role="tabpanel" id="ixir-ss-pane-3" aria-labelledby="ixir-ss-tab-3" hidden>
      <div class="ixir-ss-pane-card">
       <div class="ixir-ss-pane-icon">
@@ -74,7 +69,6 @@
      </div>
     </div>
 
-    <!-- Panel 4 -->
     <div class="ixir-ss-pane" role="tabpanel" id="ixir-ss-pane-4" aria-labelledby="ixir-ss-tab-4" hidden>
      <div class="ixir-ss-pane-card">
       <div class="ixir-ss-pane-icon">
@@ -85,7 +79,6 @@
      </div>
     </div>
 
-    <!-- Panel 5 -->
     <div class="ixir-ss-pane" role="tabpanel" id="ixir-ss-pane-5" aria-labelledby="ixir-ss-tab-5" hidden>
      <div class="ixir-ss-pane-card">
       <div class="ixir-ss-pane-icon">
@@ -96,7 +89,6 @@
      </div>
     </div>
 
-    <!-- Panel 6 -->
     <div class="ixir-ss-pane" role="tabpanel" id="ixir-ss-pane-6" aria-labelledby="ixir-ss-tab-6" hidden>
      <div class="ixir-ss-pane-card">
       <div class="ixir-ss-pane-icon">
@@ -107,14 +99,13 @@
      </div>
     </div>
 
-    <!-- Panel 7 -->
     <div class="ixir-ss-pane" role="tabpanel" id="ixir-ss-pane-7" aria-labelledby="ixir-ss-tab-7" hidden>
      <div class="ixir-ss-pane-card">
       <div class="ixir-ss-pane-icon">
        <i class="fas fa-tv" aria-hidden="true"></i>
       </div>
       <h3 class="ixir-ss-pane-title">Monitoring</h3>
-      <p class="ixir-ss-pane-desc">Sunucu monitoring özelliği ile sahip olduğunuz sunucunu, IxirHost teknik destek ekibi tarafından 7/24 izlenir ve olağan dışı durumlarda anında müdahale edilir.</p>
+      <p class="ixir-ss-pane-desc">Sunucu monitoring özelliği ile sahip olduğunuz sunucunu, İXİRHOST teknik destek ekibi tarafından 7/24 izlenir ve olağan dışı durumlarda anında müdahale edilir.</p>
      </div>
     </div>
    </div>
@@ -153,7 +144,6 @@
         var activePane = section.querySelector('#ixir-ss-pane-' + targetId);
         if (activePane) {
           activePane.removeAttribute('hidden');
-          // Trigger reflow for transition
           void activePane.offsetWidth;
           activePane.classList.add('is-active');
         }

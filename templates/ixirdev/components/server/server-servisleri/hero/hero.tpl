@@ -1,4 +1,4 @@
- <section id="home-banner" class="ixir-hero ixir-hero--server-servisleri" aria-label="Server Destek Hizmeti">
+﻿ <section id="home-banner" class="ixir-hero ixir-hero--server-servisleri" aria-label="Server Destek Hizmeti">
   <picture class="ixir-hero-photo">
    <source srcset="{$WEB_ROOT}/templates/{$template}/img/server/bg36.webp" type="image/webp">
    <img src="{$WEB_ROOT}/templates/{$template}/img/server/bg36.webp" alt="" width="1920" height="1080">
@@ -10,7 +10,7 @@
      <p>Sunucunuz Nerede Olursa Olsun, Desteği İXİRHOST'tan Olsun.</p>
     </div>
     <div class="ixir-hero-actions">
-     <a href="#ixir-wh-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-wh-plans-btn">
+     <a href="#ixir-ss-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-ss-plans-btn">
       Server Destek Paketleri <i class="fas fa-arrow-down" aria-hidden="true"></i>
      </a>
     </div>
@@ -29,9 +29,9 @@
       <span>Sunucu / Servis İzleme</span>
      </li>
     </ul>
-    <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer hizmetler">
+    <div class="ixir-hero-links-wrap ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
-     <ul class="ixir-hero-links">
+     <ul class="ixir-hero-links ixir-domain-links">
       <li>
        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
@@ -53,7 +53,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-hero-links">
+     <ul class="ixir-hero-links ixir-domain-links">
       <li>
        <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
@@ -75,7 +75,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-hero-links">
+     <ul class="ixir-hero-links ixir-domain-links">
       <li>
        <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
         <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
@@ -133,7 +133,7 @@
     window.addEventListener('resize', apply);
     window.addEventListener('load', apply);
 
-    var plansLink = document.querySelector('a.ixir-wh-plans-btn');
+    var plansLink = document.querySelector('a.ixir-ss-plans-btn, a.ixir-wh-plans-btn');
     if (plansLink) {
      var frame = 0;
 
@@ -162,7 +162,7 @@
      }
 
      plansLink.addEventListener('click', function(e) {
-      var plans = document.getElementById('ixir-wh-plans');
+      var plans = document.getElementById('ixir-ss-plans') || document.getElementById('ixir-wh-plans');
       if (!plans) return;
       if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
       e.preventDefault();
@@ -173,9 +173,6 @@
       var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       var start = window.pageYOffset || document.documentElement.scrollTop || 0;
       var dest = destination(plans);
-      if (window.history && window.history.pushState) {
-       window.history.pushState(null, '', '#ixir-wh-plans');
-      }
       if (reduce || Math.abs(dest - start) < 2) {
        window.scrollTo(0, dest);
        return;
