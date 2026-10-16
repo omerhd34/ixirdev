@@ -314,7 +314,7 @@
   {include file="$template/includes/verifyemail.tpl"}
  {/if}
 
- {if $templatefile != 'homepage' && $templatefile != 'whois-sorgulama' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage && !($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'kurumsal-mail-server' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'colocation' || $ixirPageSlug == 'pci-tarama' || $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri'))}
+ {if $templatefile != 'homepage' && $templatefile != 'whois-sorgulama' && !$ixirCorporate && !$ixirDomainSearchPage && !$ixirDomainTransferPage && !($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'kurumsal-mail-server' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'colocation' || $ixirPageSlug == 'pci-tarama' || $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri' || $ixirPageSlug == 'antispam' || $ixirPageSlug == 'outbound-mail-gateway'))}
 
   <section id="main-body">
    <div class="container{if $skipMainBodyContainer}-fluid without-padding{/if}">
@@ -335,7 +335,6 @@
        {include file="$template/includes/sidebar.tpl" sidebar=$primarySidebar}
       </div>
      {/if}
-     <!-- Container for main page display content -->
      <div
       class="{if !$ixirHideSidebar && !$inShoppingCart && $primarySidebar && $secondarySidebar && ($primarySidebar->hasChildren() || $secondarySidebar->hasChildren())}col-md-9 pull-md-right{else}col-xs-12{/if} main-content">
       {if !$ixirHideSidebar && $primarySidebar && !$primarySidebar->hasChildren() && !$showingLoginPage && $templatefile != 'clientregister' && !$inShoppingCart && !$skipMainBodyContainer}

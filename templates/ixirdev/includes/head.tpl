@@ -1,7 +1,7 @@
-{if !$ixirDomainSearchPage && $filename == 'cart' && $domain == 'register'}
+{if !$ixirDomainSearchPage && (($filename == 'cart' && $domain == 'register') || $templatefile == 'domainregister')}
  {assign var="ixirDomainSearchPage" value=true}
 {/if}
-{if $templatefile == 'domaintransfer'}
+{if !$ixirDomainTransferPage && ($templatefile == 'domaintransfer' || ($filename == 'cart' && $domain == 'transfer'))}
  {assign var="ixirDomainTransferPage" value=true}
 {/if}
 {assign var="ixirLoadRecaptcha" value=false}
@@ -12,16 +12,16 @@
 <link href="{assetPath file='all.min.css'}?v={$versionHash}-r1" rel="stylesheet">
 <link href="{$WEB_ROOT}/assets/css/fontawesome-all.min.css" rel="stylesheet">
 {assetExists file="base.css"}
-<link href="{$__assetPath__}?v={$versionHash}-r26" rel="stylesheet">
+<link href="{$__assetPath__}?v={$versionHash}-r27" rel="stylesheet">
 {/assetExists}
-<link href="{$WEB_ROOT}/templates/{$template}/css/common.css?v={$versionHash}-r2" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/css/common.css?v={$versionHash}-r3" rel="stylesheet">
 <link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r37" rel="stylesheet">
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/news-bar/news-bar.css?v={$versionHash}-r12"
   rel="stylesheet">
 {/if}
-{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'kurumsal-mail-server' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'colocation' || $ixirPageSlug == 'co-location' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'pci-tarama' || $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri'))}
- <link href="{$WEB_ROOT}/templates/{$template}/components/home/homepage-hero/homepage-hero.css?v={$versionHash}-r57"
+{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'kurumsal-mail-server' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'colocation' || $ixirPageSlug == 'co-location' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'pci-tarama' || $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri' || $ixirPageSlug == 'antispam' || $ixirPageSlug == 'outbound-mail-gateway'))}
+ <link href="{$WEB_ROOT}/templates/{$template}/components/home/homepage-hero/homepage-hero.css?v={$versionHash}-r58"
   rel="stylesheet">
 {/if}
 
@@ -67,7 +67,7 @@
   ]}
  {/if}
  {foreach from=$ixirDomainCss item=ixirCss}
-  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r116"
+  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r117"
    rel="stylesheet">
  {/foreach}
 {/if}
@@ -97,7 +97,7 @@
  <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r73" rel="stylesheet">
 {/if}
 {if $ixirCorporate || $templatefile == 'kurumsal' || $templatefile == 'contact'}
- <link href="{$WEB_ROOT}/templates/{$template}/components/kurumsal/kurumsal.css?v={$versionHash}-r33" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/components/kurumsal/kurumsal.css?v={$versionHash}-r34" rel="stylesheet">
 {/if}
 {if $templatefile == 'product-landing'}
  {assign var=ixirPageCss value=[]}
@@ -196,7 +196,34 @@
    'email/kurumsal-mail-server/kurumsal-mail-server',
    'email/kurumsal-mail-server/features/features'
   ]}
- {elseif $ixirPageSlug == 'linux-reseller-hosting'}
+ {elseif $ixirPageSlug == 'antispam'}
+  {assign var=ixirPageCss value=[
+   'hosting/shared/plans/plans',
+   'hosting/shared/story/story',
+   'hosting/shared/diff/diff',
+   'hosting/shared/compare/compare',
+   'hosting/shared/common/common',
+   'hosting/shared/faq/faq',
+   'hosting/shared/guide/guide',
+   'hosting/shared/hero/hero',
+   'email/antispam/details/details',
+   'email/antispam/why/why'
+  ]}
+ {elseif $ixirPageSlug == 'outbound-mail-gateway'}
+  {assign var=ixirPageCss value=[
+   'hosting/shared/plans/plans',
+   'hosting/shared/story/story',
+   'hosting/shared/diff/diff',
+   'hosting/shared/compare/compare',
+   'hosting/shared/common/common',
+   'hosting/shared/faq/faq',
+   'hosting/shared/guide/guide',
+   'hosting/shared/hero/hero',
+   'email/outbound-mail-gateway/hero/hero',
+   'email/outbound-mail-gateway/plans/plans',
+   'email/outbound-mail-gateway/outbound-mail-gateway'
+  ]}
+  {elseif $ixirPageSlug == 'linux-reseller-hosting'}
   {assign var=ixirPageCss value=[
    'hosting/shared/plans/plans',
    'hosting/shared/story/story',
@@ -284,7 +311,7 @@
   ]}
  {/if}
  {foreach from=$ixirPageCss item=ixirCss}
-  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r120"
+  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r123"
    rel="stylesheet">
  {/foreach}
  <script src="{$WEB_ROOT}/templates/{$template}/components/hosting/plans-slider.js?v={$versionHash}-r7" defer></script>

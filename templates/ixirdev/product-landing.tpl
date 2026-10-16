@@ -26,4 +26,8 @@
  {include file="$template/components/server/pci-tarama/pci-tarama.tpl"}
 {elseif $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri'}
  {include file="$template/components/server/server-servisleri/server-servisleri.tpl"}
+{elseif $ixirPageSlug == 'antispam'}
+ {include file="$template/components/email/antispam/antispam.tpl"}
+{elseif $ixirPageSlug == 'outbound-mail-gateway'}
+ {include file="$template/components/email/outbound-mail-gateway/outbound-mail-gateway.tpl"}
 {/if}
