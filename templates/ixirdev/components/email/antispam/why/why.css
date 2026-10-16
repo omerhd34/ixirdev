@@ -1,0 +1,564 @@
+.ixir-as-why {
+  position: relative;
+  padding: 85px 0 95px;
+  background-color: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 20%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 75%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 0%, rgba(59, 130, 246, 0.14) 0%, transparent 60%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.ixir-as-why::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ixir-as-why .container {
+  position: relative;
+  z-index: 1;
+}
+
+.ixir-as-why-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 52px;
+}
+
+.ixir-as-why-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #60a5fa;
+  background: rgba(37, 99, 235, 0.14);
+  border: 1px solid rgba(96, 165, 250, 0.28);
+  border-radius: 999px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.2);
+}
+
+.ixir-as-why-badge i {
+  font-size: 13px;
+  color: #60a5fa;
+}
+
+.ixir-as-why-header .site-heading {
+  margin-top: 0 !important;
+  margin-bottom: 16px;
+  color: #ffffff !important;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif !important;
+  letter-spacing: -0.025em;
+}
+
+.ixir-as-why-lead {
+  color: #94a3b8;
+  font-size: 16.5px;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.ixir-as-why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.ixir-as-why-card {
+  position: relative;
+  background: rgba(13, 27, 49, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 38px 34px 32px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.ixir-as-why-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 2.5px;
+  background: linear-gradient(90deg, transparent, #2563eb, #60a5fa, transparent);
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.ixir-as-why-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(96, 165, 250, 0.35);
+  box-shadow: 0 22px 48px -10px rgba(0, 0, 0, 0.45), 0 0 32px rgba(37, 99, 235, 0.16);
+}
+
+.ixir-as-why-card:hover::before {
+  left: 10%;
+  right: 10%;
+  opacity: 1;
+}
+
+.ixir-as-why-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.ixir-as-why-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.22) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border: 1.5px solid rgba(96, 165, 250, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ixir-as-why-icon-wrap svg {
+  width: 36px;
+  height: 36px;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.ixir-as-why-card:hover .ixir-as-why-icon-wrap {
+  transform: translateY(-2px) scale(1.08);
+  border-color: rgba(96, 165, 250, 0.6);
+  box-shadow: 0 12px 28px -4px rgba(37, 99, 235, 0.4);
+}
+
+.ixir-as-why-card:hover .ixir-as-why-icon-wrap svg {
+  transform: scale(1.06);
+}
+
+.ixir-as-why-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 13px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+}
+
+.ixir-as-why-pill i {
+  font-size: 11px;
+}
+
+.ixir-as-why-pill.is-danger {
+  color: #f87171;
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.28);
+}
+
+.ixir-as-why-pill.is-primary {
+  color: #38bdf8;
+  background: rgba(14, 165, 233, 0.12);
+  border-color: rgba(14, 165, 233, 0.28);
+}
+
+.ixir-as-why-pill.is-success {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.28);
+}
+
+.ixir-as-why-pill.is-purple {
+  color: #c084fc;
+  background: rgba(168, 85, 247, 0.12);
+  border-color: rgba(168, 85, 247, 0.28);
+}
+
+.ixir-as-why-pill.is-featured {
+  color: #60a5fa;
+  background: rgba(37, 99, 235, 0.2);
+  border-color: rgba(96, 165, 250, 0.35);
+}
+
+.ixir-as-why-title {
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 14px;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+  transition: color 0.25s ease;
+}
+
+.ixir-as-why-card:hover .ixir-as-why-title {
+  color: #60a5fa;
+}
+
+.ixir-as-why-desc {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #94a3b8;
+  margin: 0 0 22px;
+  flex-grow: 1;
+}
+
+.ixir-as-why-desc strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.ixir-as-why-footer {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ixir-as-why-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.22);
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #93c5fa;
+  transition: all 0.25s ease;
+}
+
+.ixir-as-why-tag i {
+  font-size: 11px;
+  color: #60a5fa;
+}
+
+.ixir-as-why-card:hover .ixir-as-why-tag {
+  background: rgba(37, 99, 235, 0.2);
+  border-color: rgba(96, 165, 250, 0.45);
+  color: #ffffff;
+}
+
+.ixir-as-why-card--featured {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(16, 32, 60, 0.88) 0%, rgba(11, 23, 44, 0.94) 100%);
+  border: 1.5px solid rgba(59, 130, 246, 0.28);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35), 0 0 35px rgba(37, 99, 235, 0.12);
+  padding: 42px 40px 38px;
+}
+
+.ixir-as-why-card--featured::before {
+  background: linear-gradient(90deg, transparent, #3b82f6, #60a5fa, #38bdf8, transparent);
+  height: 3px;
+  opacity: 0.8;
+}
+
+.ixir-as-why-card--featured:hover {
+  border-color: rgba(96, 165, 250, 0.55);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45), 0 0 45px rgba(37, 99, 235, 0.22);
+}
+
+.ixir-as-why-card--featured:hover::before {
+  opacity: 1;
+}
+
+.ixir-as-why-featured-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 36px;
+  align-items: center;
+}
+
+.ixir-as-why-featured-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.ixir-as-why-featured-content .ixir-as-why-title {
+  font-size: 23px;
+  margin-bottom: 14px;
+}
+
+.ixir-as-why-featured-content .ixir-as-why-desc {
+  margin-bottom: 18px;
+  font-size: 15.5px;
+}
+
+.ixir-as-why-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ixir-as-why-action-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  background: rgba(13, 27, 49, 0.9);
+  border: 1px solid rgba(96, 165, 250, 0.22);
+  border-radius: 16px;
+  text-decoration: none !important;
+  color: #ffffff !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ixir-as-why-action-card:hover {
+  transform: translateX(4px);
+  background: rgba(23, 44, 78, 0.95);
+  border-color: rgba(96, 165, 250, 0.5);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.25);
+}
+
+.ixir-as-why-action-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ixir-as-why-action-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.ixir-as-why-action-card:hover .ixir-as-why-action-icon {
+  transform: scale(1.1);
+}
+
+.ixir-as-why-action-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.ixir-as-why-action-title {
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.ixir-as-why-action-sub {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.ixir-as-why-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: rgba(37, 99, 235, 0.18);
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  color: #60a5fa;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+}
+
+.ixir-as-why-action-btn i {
+  font-size: 11px;
+  transition: transform 0.25s ease;
+}
+
+.ixir-as-why-action-card:hover .ixir-as-why-action-btn {
+  background: #2563eb;
+  border-color: #3b82f6;
+  color: #ffffff;
+}
+
+.ixir-as-why-action-card:hover .ixir-as-why-action-btn i {
+  transform: translateX(4px);
+}
+
+.ixir-as-why.is-armed {
+  overflow-x: clip;
+}
+
+.ixir-as-why.is-armed .ixir-as-why-header,
+.ixir-as-why.is-armed .ixir-as-why-card {
+  opacity: 0;
+  transform: translate3d(0, 32px, 0);
+  pointer-events: none;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--ixir-enter-delay, 0ms),
+              opacity 0.55s ease var(--ixir-enter-delay, 0ms);
+}
+
+.ixir-as-why.is-armed .ixir-as-why-header {
+  --ixir-enter-delay: 0ms;
+}
+
+.ixir-as-why.is-armed .ixir-as-why-card:nth-child(1) {
+  --ixir-enter-delay: 80ms;
+}
+
+.ixir-as-why.is-armed .ixir-as-why-card:nth-child(2) {
+  --ixir-enter-delay: 150ms;
+}
+
+.ixir-as-why.is-armed .ixir-as-why-card:nth-child(3) {
+  --ixir-enter-delay: 220ms;
+}
+
+.ixir-as-why.is-armed .ixir-as-why-card:nth-child(4) {
+  --ixir-enter-delay: 290ms;
+}
+
+.ixir-as-why.is-armed .ixir-as-why-card--featured {
+  --ixir-enter-delay: 360ms;
+}
+
+.ixir-as-why.is-armed .ixir-as-why-header.is-in,
+.ixir-as-why.is-armed .ixir-as-why-card.is-in,
+.ixir-as-why.is-settled .ixir-as-why-header,
+.ixir-as-why.is-settled .ixir-as-why-card {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+
+.ixir-as-why.is-settled .ixir-as-why-header,
+.ixir-as-why.is-settled .ixir-as-why-card {
+  transform: none;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (max-width: 1024px) {
+  .ixir-as-why {
+    padding: 70px 0 80px;
+  }
+
+  .ixir-as-why-featured-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .ixir-as-why-card {
+    padding: 32px 26px 28px;
+  }
+
+  .ixir-as-why-card--featured {
+    padding: 34px 28px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ixir-as-why {
+    padding: 56px 0 64px;
+  }
+
+  .ixir-as-why-header {
+    margin-bottom: 36px;
+  }
+
+  .ixir-as-why-lead {
+    font-size: 15px;
+  }
+
+  .ixir-as-why-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .ixir-as-why-card {
+    padding: 26px 20px 24px;
+    border-radius: 20px;
+  }
+
+  .ixir-as-why-card--featured {
+    padding: 26px 20px 24px;
+  }
+
+  .ixir-as-why-icon-wrap {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+  }
+
+  .ixir-as-why-icon-wrap svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ixir-as-why-title {
+    font-size: 18.5px;
+  }
+
+  .ixir-as-why-featured-content .ixir-as-why-title {
+    font-size: 19.5px;
+  }
+
+  .ixir-as-why-desc {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .ixir-as-why-action-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 16px;
+  }
+
+  .ixir-as-why-action-btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 1024px), (prefers-reduced-motion: reduce) {
+  .ixir-as-why.is-armed {
+    overflow-x: visible;
+  }
+  .ixir-as-why.is-armed .ixir-as-why-header,
+  .ixir-as-why.is-armed .ixir-as-why-card,
+  .ixir-as-why.is-armed .ixir-as-why-card.is-in {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
+  }
+}
