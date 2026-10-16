@@ -1,11 +1,12 @@
 #order-standard_cart.ixir-transfer-page .ixir-domain-features {
-  background: #0b2545;
+  background: #f8fafc;
 }
-#order-standard_cart.ixir-transfer-page .ixir-domain-features h2 {
-  color: #fff;
+#order-standard_cart.ixir-transfer-page .ixir-domain-features h2,
+#order-standard_cart.ixir-transfer-page .ixir-domain-features .site-heading {
+  color: #0b2545;
 }
 #order-standard_cart.ixir-transfer-page .ixir-domain-features-lead {
-  color: rgba(255, 255, 255, 0.72);
+  color: #64748b;
 } 
 #order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid h3 {
   color: #0b2545;

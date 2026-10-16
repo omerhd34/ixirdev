@@ -42,7 +42,7 @@
 }
 .ixir-wh-diff--dark .ixir-wh-diff-grid li,
 .ixir-wh-diff--dark.is-settled .ixir-wh-diff-grid li,
-.ixir-wh-diff.is-settled .ixir-wh-diff-grid li {
+.ixir-wh-diff.bg-dark-blue.is-settled .ixir-wh-diff-grid li {
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
