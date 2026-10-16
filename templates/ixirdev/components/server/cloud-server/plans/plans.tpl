@@ -1,9 +1,9 @@
-<section class="ixir-wh-plans ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-plans"
+<section class="ixir-wh-plans ixir-cs-plans-section ixir-slide ixir-slide--right is-slide-on" id="ixir-cs-plans"
  aria-labelledby="ixir-wh-plans-title">
  <script>
   {literal}
    (function() {
-    var root = document.getElementById('ixir-wh-plans');
+    var root = document.getElementById('ixir-cs-plans') || document.getElementById('ixir-wh-plans');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;

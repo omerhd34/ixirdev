@@ -1,8 +1,8 @@
-<section class="ixir-wh-diff ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-wh-diff-title">
+<section class="ixir-cs-diff ixir-wh-diff ixir-slide ixir-slide--right is-slide-on" id="ixir-cs-diff" aria-labelledby="ixir-cs-diff-title">
  <script>
   {literal}
    (function() {
-    var root = document.querySelector('.ixir-wh-diff');
+    var root = document.querySelector('.ixir-cs-diff') || document.querySelector('.ixir-wh-diff');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
@@ -11,16 +11,16 @@
   {/literal}
  </script>
  <div class="container">
-  <header class="ixir-wh-diff-head">
-   {include file="$template/components/Heading.tpl" title="Neden İXİRHOST?" id="ixir-wh-diff-title"}
+  <header class="ixir-wh-diff-head ixir-cs-diff-head">
+   {include file="$template/components/Heading.tpl" title="Neden İXİRHOST?" id="ixir-cs-diff-title"}
    <p>20 yıllık deneyimimizle kurumsal altyapı, güvenilir destek ve kesintisiz hizmet sunuyoruz.</p>
   </header>
   <ul class="ixir-wh-diff-grid">
    <li>
     <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-desktop"></i></span>
     <div>
-     <h3>Ücretsiz Kontrol Paneli</h3>
-     <p>Extreme pakette yer alan sınırsız web sitesi hosting ile domain sınırı olmadan hosting yönetimi gerçekleştirin.
+     <h3>Gelişmiş Kontrol Paneli</h3>
+     <p>Cloud Server yönetim paneli ile sunucunuzu kolayca yönetin, reboot, reinstall ve izleme işlemlerini tek tıkla gerçekleştirin.
      </p>
     </div>
    </li>

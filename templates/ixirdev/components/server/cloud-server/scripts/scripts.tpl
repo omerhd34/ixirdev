@@ -47,9 +47,9 @@
     });
    }
 
-   reveal('.ixir-wh-plans', '.ixir-wh-plans-head, .ixir-wh-plan, .ixir-wh-shared-box', 1300, 0.15);
-   reveal('.ixir-wh-story', '.ixir-wh-story-intro, .ixir-wh-story-row', 900, 0.2);
-   reveal('.ixir-wh-diff', '.ixir-wh-diff-head, .ixir-wh-diff-grid li', 1100, 0.15);
+   reveal('.ixir-cs-plans-section, .ixir-wh-plans', '.ixir-wh-plans-head, .ixir-wh-plan, .ixir-wh-shared-box', 1300, 0.15);
+   reveal('.ixir-cs-story, .ixir-wh-story', '.ixir-cs-story-intro, .ixir-wh-story-intro, .ixir-wh-story-row', 900, 0.2);
+   reveal('.ixir-cs-diff, .ixir-cs-usage, .ixir-wh-diff', '.ixir-cs-diff-head, .ixir-wh-diff-head, .ixir-wh-diff-grid li', 1100, 0.15);
    reveal('.ixir-wh-faq', '.ixir-wh-plans-head, .ixir-wh-faq-item', 1300, 0.15);
   })();
  {/literal}
