@@ -1,4 +1,4 @@
-<script>
+﻿<script>
  {literal}
   (function() {
    var list = document.querySelector('.ixir-wh-shared--click');
@@ -223,9 +223,6 @@
      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
      var start = window.pageYOffset || document.documentElement.scrollTop || 0;
      var dest = destination(target);
-     if (window.history && window.history.pushState) {
-      window.history.pushState(null, '', '#ixir-wh-compare');
-     }
      if (reduce || Math.abs(dest - start) < 2) {
       window.scrollTo(0, dest);
       return;
