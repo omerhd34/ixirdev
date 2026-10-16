@@ -76,7 +76,7 @@
      </div>
      <p><strong>Nvme diskler</strong>, normal hard disklere (HDD) göre <strong>40 kata kadar daha hızlı</strong> okuma &
       yazma ve IOPS değerine sahiptir.
-      IxirHost Windows Hosting paketlerinin tamamında <strong>NVMe SSD</strong> disk <strong>standart özellik</strong>
+      İXİRHOST Windows Hosting paketlerinin tamamında <strong>NVMe SSD</strong> disk <strong>standart özellik</strong>
       olarak yer almaktadır. NVMe SSD
       disklerin sahip olduğu <strong>yüksek okuma, yazma ve IOPS</strong> değerleri ile Windows Hosting server'ında
       çalışan internet

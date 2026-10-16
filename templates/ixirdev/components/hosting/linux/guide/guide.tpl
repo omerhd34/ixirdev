@@ -1,4 +1,4 @@
-<section class="ixir-wh-guide ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting rehberi">
+﻿<section class="ixir-wh-guide ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting rehberi">
  <script>
   {literal}
    (function() {
@@ -176,9 +176,6 @@
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var start = window.pageYOffset || document.documentElement.scrollTop || 0;
     var dest = destination(target);
-    if (window.history && window.history.pushState) {
-     window.history.pushState(null, '', '#ixir-wh-compare');
-    }
     if (reduce || Math.abs(dest - start) < 2) {
      window.scrollTo(0, dest);
      return;

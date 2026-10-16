@@ -1,4 +1,4 @@
- <section class="ixir-wh-guide ixir-wh-guide--dark bg-dark-blue ixir-slide ixir-slide--left is-slide-on" aria-label="Web hosting rehberi">
+﻿ <section class="ixir-wh-guide ixir-wh-guide--dark bg-dark-blue ixir-slide ixir-slide--left is-slide-on" aria-label="Web hosting rehberi">
   <script>
    {literal}
     (function() {
@@ -22,7 +22,7 @@
       veritabanı ve <strong>Plesk</strong> kontrol panelinin bir arada çalıştığı bu platform; kişisel projelerden
       kurumsal
       e-ticaret
-      sistemlerine kadar her ölçekte güvenilir ve yüksek performanslı bir altyapı sunar. <strong>IxirHost Windows
+      sistemlerine kadar her ölçekte güvenilir ve yüksek performanslı bir altyapı sunar. <strong>İXİRHOST Windows
        Hosting</strong>
       server'ları, İstanbul'daki <strong>Tier III+</strong> veri merkezinde <strong>Enterprise NVMe SSD</strong>
       depolama
@@ -37,7 +37,7 @@
     <article class="ixir-wh-guide-item">
      <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
      <h2>Plesk ile Kolay Yönetim, NVMe ile Yüksek Performans</h2>
-     <p><strong>IxirHost Windows Hosting</strong> paketlerinin tamamında standart olarak sunulan <strong>Plesk</strong>
+     <p><strong>İXİRHOST Windows Hosting</strong> paketlerinin tamamında standart olarak sunulan <strong>Plesk</strong>
       kontrol paneli, teknik bilgiden
       bağımsız olarak hosting hesabınızı kolaylıkla yönetmenizi sağlar. E-posta hesabı açma,
       <strong>MSSQL/MySQL</strong>
@@ -53,7 +53,7 @@
       güvencesiyle gelen <strong>mail saygınlığı</strong> özelliği, <strong>7/24 teknik destek</strong> ve <strong>15
        gün
        koşulsuz para iade garantisi</strong> bir arada
-      değerlendirildiğinde <strong>IxirHost Windows Hosting</strong>; güvenilir, ölçeklenebilir ve ekonomik bir
+      değerlendirildiğinde <strong>İXİRHOST Windows Hosting</strong>; güvenilir, ölçeklenebilir ve ekonomik bir
       barındırma
       deneyimi
       sunmaktadır.
@@ -190,9 +190,6 @@
       var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       var start = window.pageYOffset || document.documentElement.scrollTop || 0;
       var dest = destination(target);
-      if (window.history && window.history.pushState) {
-       window.history.pushState(null, '', '#ixir-wh-compare');
-      }
       if (reduce || Math.abs(dest - start) < 2) {
        window.scrollTo(0, dest);
        return;
