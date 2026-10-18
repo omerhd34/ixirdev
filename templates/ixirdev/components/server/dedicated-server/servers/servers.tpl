@@ -36,7 +36,9 @@
 
 <section class="ixir-ds ixir-slide ixir-slide--right is-slide-on" id="ixir-ds-plans" aria-labelledby="ixir-ds-title">
  <div class="container">
-  <header class="ixir-ds-head">
+  <header class="ixir-ds-head" style="text-align: center;">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill">
+    <i class="fas fa-server" aria-hidden="true"></i> FİZİKSEL SUNUCULAR</div>
    {include file="$template/components/Heading.tpl" title="Dedicated Server Kiralama" id="ixir-ds-title"}
    <p>Türkiye'nin en geniş dedicated server seçenekleri, güvenilir, <b>yedekli ve çeşitli operatör bağlantıları</b> ile
     birlikte, 150'den fazla peering bağlantısıyla, <b>İstanbul</b>'un merkezinden 20 yıllık deneyimle kiralık sunucu

@@ -5,6 +5,7 @@
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-server" aria-hidden="true"></i> DEDICATED SUNUCU</div>
      <h1>Dedicated Server</h1>
      <p>Her ihtiyaca uygun dedicated sunucularımızla ışık hızına çıkın! Hemen şimdi güçlü network altyapımızla tanışın.
       Sipariş verin, deneyiminizi rakipsiz bir seviyeye taşıyın</p>

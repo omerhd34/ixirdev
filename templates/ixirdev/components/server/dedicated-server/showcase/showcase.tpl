@@ -1,4 +1,4 @@
-<section class="ds-showcase-section ds-hero-showcase ixir-slide ixir-slide--left is-slide-on">
+<section class="ds-showcase-section ds-hero-showcase bg-dark-blue ixir-slide ixir-slide--left is-slide-on">
  <div class="container">
 
   <style>
@@ -8,6 +8,7 @@
   </style>
 
   <header class="ixir-ds-head ds-showcase-title-wrapper">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> KESİNTİSİZ GÜÇ</div>
    {include file="$template/components/Heading.tpl" title="Yüksek Performans, Yüksek Uptime — Dedicated Server ile İşinize Odaklanın."}
    <p>Yalnızca hizmet değil, 20 yıllık deneyimimizle birlikte size katma değerli servisler
     sunuyoruz.</p>

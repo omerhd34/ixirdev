@@ -1,6 +1,7 @@
-<section class="ds-solutions-section ixir-slide ixir-slide--left is-slide-on">
+<section class="ds-solutions-section bg-dark-blue ixir-slide ixir-slide--left is-slide-on">
  <div class="container text-center">
   <header class="ds-solutions-title-wrapper" style="max-width: 1000px;">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-layer-group" aria-hidden="true"></i> ALTYAPI ÇÖZÜMLERİ</div>
    {include file="$template/components/Heading.tpl" title="Farklı Altyapı Çözümleri"}
    <p>Dedicated server servislerinize ek olarak altyapımızda yedekli olarak bulunan <b>Citrix® Netscaler®</b> cihazları
     ile Web Sitelerinize güç katıyoruz. Dedicated Server, Kiralık Sunucu'da yalnızca hizmet sağlamıyor, tam kapsamlı

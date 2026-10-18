@@ -1,6 +1,7 @@
-<section class="ixir-ds-datacenter ixir-slide ixir-slide--left is-slide-on">
+<section class="ixir-ds-datacenter bg-dark-blue ixir-slide ixir-slide--left is-slide-on">
  <div class="container">
   <div class="ixir-ds-datacenter-content">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-city" aria-hidden="true"></i> VERİ MERKEZİ</div>
    {include file="$template/components/Heading.tpl" title="TIER III+ Veri Merkezi"}
    <h3>Güçlü Sunucu ve Network Altyapısı</h3>
    <p>İnternet erişimimiz <b>2x 40G Türknet</b>, <b>2x40G GIBIRNet</b> ve <b>2x40G TürkTelekom</b> ISP'leriyle
