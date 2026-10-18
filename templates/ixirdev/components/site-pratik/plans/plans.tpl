@@ -198,7 +198,7 @@
     <li><i class="fas fa-layer-group" aria-hidden="true"></i>Limitsiz Altsayfa Oluşturma</li>
     <li><i class="fas fa-images" aria-hidden="true"></i>Resim Galerisi</li>
     <li><i class="fas fa-language" aria-hidden="true"></i>Birçok Dil Desteği</li>
-    <li><i class="fas fa-mobile-alt" aria-hidden="true"></i>Mobil Uyumlu Tasarımlar</li>
+    <li><i class="fas fa-mobile-alt" aria-hidden="true"></i>Mobil Uyumlu Tasarımlar(Responsive)</li>
    </ul>
   </div>
  </div>

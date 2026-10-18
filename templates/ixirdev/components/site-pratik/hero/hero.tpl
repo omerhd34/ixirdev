@@ -47,7 +47,7 @@
      </li>
      <li>
       <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-      <span>Mobil Uyumlu Tasarımlar</span>
+      <span>Mobil Uyumlu Tasarımlar(Responsive)</span>
      </li>
     </ul>
     <div class="ixir-hero-links-wrap ixir-sp-links-wrap" role="region" aria-label="Diğer Hizmetler">
@@ -130,7 +130,7 @@
     <span>Ücretsiz SSL Sertifikası</span>
     <span>Limitsiz Altsayfa Oluşturma</span>
     <span>Birçok Dil Desteği</span>
-    <span>Mobil Uyumlu Tasarımlar</span>
+    <span>Mobil Uyumlu Tasarımlar(Responsive)</span>
    </div>
   </div>
  </section>
