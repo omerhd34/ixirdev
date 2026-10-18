@@ -1,13 +1,13 @@
-<section class="ixir-wh-faq ixir-wh-faq--light bg-light-blue ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-wh-faq-title">
+<section class="ixir-colo-faq ixir-wh-faq ixir-wh-faq--light bg-light-blue ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-colo-faq-title">
  <div class="container">
-  <header class="ixir-wh-plans-head">
-   {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-wh-faq-title"}
+  <header class="ixir-colo-plans-head ixir-wh-plans-head">
+   {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-colo-faq-title"}
    <p>Co-Location hizmetimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
   </header>
 
-  <div class="ixir-wh-faq-list">
-   <div class="ixir-wh-faq-item is-open">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
+  <div class="ixir-colo-faq-list ixir-wh-faq-list">
+   <div class="ixir-colo-faq-item ixir-wh-faq-item is-open">
+    <button type="button" class="ixir-colo-faq-q ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Sunucu Barındırma (Co-Location) Nedir?</button>
     <div class="ixir-wh-faq-a">
      <p>Mülkiyeti size ait bir sunucu veya sunucu sistemi, bununla birlikte network, firewall ekipmanlarının bir veri merkezinde, paylaşımlı veya tamamen size ait bir kabinette barındırılmasıdır.</p>

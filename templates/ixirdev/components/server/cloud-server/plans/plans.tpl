@@ -1,5 +1,5 @@
-<section class="ixir-wh-plans ixir-cs-plans-section ixir-slide ixir-slide--right is-slide-on" id="ixir-cs-plans"
- aria-labelledby="ixir-wh-plans-title">
+<section class="ixir-wh-plans ixir-cs-plans ixir-cs-plans-section ixir-slide ixir-slide--right is-slide-on" id="ixir-cs-plans"
+ aria-labelledby="ixir-cs-plans-title">
  <script>
   {literal}
    (function() {
@@ -12,8 +12,8 @@
   {/literal}
  </script> 
  <div class="container">
-  <header class="ixir-wh-plans-head">
-   {include file="$template/components/Heading.tpl" title="Standart Cloud Server Paketleri" id="ixir-wh-plans-title"}
+  <header class="ixir-wh-plans-head ixir-cs-plans-head">
+   {include file="$template/components/Heading.tpl" title="Standart Cloud Server Paketleri" id="ixir-cs-plans-title"}
    <p>Standart Cloud Server planlarımızı inceleyin ve hemen kullanmaya başlayın.</p>
   </header>
   <div class="ixir-wh-grid">

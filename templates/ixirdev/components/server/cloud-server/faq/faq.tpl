@@ -1,13 +1,13 @@
-<section class="ixir-wh-faq ixir-wh-faq--light bg-light-blue ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-wh-faq-title">
+<section class="ixir-cs-faq ixir-wh-faq ixir-wh-faq--light bg-light-blue ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-cs-faq-title">
  <div class="container">
-  <header class="ixir-wh-plans-head">
-   {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-wh-faq-title"}
+  <header class="ixir-cs-plans-head ixir-wh-plans-head">
+   {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-cs-faq-title"}
    <p>Cloud Server paketlerimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
   </header>
 
-  <div class="ixir-wh-faq-list">
-   <div class="ixir-wh-faq-item is-open">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
+  <div class="ixir-cs-faq-list ixir-wh-faq-list">
+   <div class="ixir-cs-faq-item ixir-wh-faq-item is-open">
+    <button type="button" class="ixir-cs-faq-q ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Cloud Server Otomatik Kuruluyor mu?</button>
     <div class="ixir-wh-faq-a">
      <p>Elbette, Cloud Server'larımız sipariş ve ödemeniz ardından otomatik kurulmaktadır. Tekrar kurulum yapmak ister

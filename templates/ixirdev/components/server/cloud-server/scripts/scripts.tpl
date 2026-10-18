@@ -1,9 +1,9 @@
 <script>
  {literal}
   (function() {
-   var list = document.querySelector('.ixir-wh-faq-list');
+   var list = document.querySelector('.ixir-cs-faq-list') || document.querySelector('.ixir-wh-faq-list');
    if (!list) return;
-   Array.prototype.forEach.call(list.querySelectorAll('.ixir-wh-faq-q'), function(btn) {
+   Array.prototype.forEach.call(list.querySelectorAll('.ixir-cs-faq-q, .ixir-wh-faq-q'), function(btn) {
     btn.addEventListener('click', function() {
      var item = btn.parentNode;
      var open = item.classList.toggle('is-open');
@@ -47,10 +47,10 @@
     });
    }
 
-   reveal('.ixir-cs-plans-section, .ixir-wh-plans', '.ixir-wh-plans-head, .ixir-wh-plan, .ixir-wh-shared-box', 1300, 0.15);
+   reveal('.ixir-cs-plans, .ixir-cs-plans-section, .ixir-wh-plans', '.ixir-cs-plans-head, .ixir-wh-plans-head, .ixir-wh-plan, .ixir-wh-shared-box', 1300, 0.15);
    reveal('.ixir-cs-story, .ixir-wh-story', '.ixir-cs-story-intro, .ixir-wh-story-intro, .ixir-wh-story-row', 900, 0.2);
    reveal('.ixir-cs-diff, .ixir-cs-usage, .ixir-wh-diff', '.ixir-cs-diff-head, .ixir-wh-diff-head, .ixir-wh-diff-grid li', 1100, 0.15);
-   reveal('.ixir-wh-faq', '.ixir-wh-plans-head, .ixir-wh-faq-item', 1300, 0.15);
+   reveal('.ixir-cs-faq, .ixir-wh-faq', '.ixir-cs-plans-head, .ixir-wh-plans-head, .ixir-cs-faq-item, .ixir-wh-faq-item', 1300, 0.15);
   })();
  {/literal}
 </script>

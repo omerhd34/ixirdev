@@ -1,4 +1,4 @@
- <section class="ixir-wh-story ixir-wh-story--light bg-light-blue ixir-colo-story2 ixir-slide ixir-slide--right is-slide-on" aria-label="Co-Location Sunucu Barındırma Özellikleri">
+ <section class="ixir-wh-story ixir-wh-story--light bg-light-blue ixir-colo-story ixir-colo-story2 ixir-slide ixir-slide--right is-slide-on" aria-label="Co-Location Sunucu Barındırma Özellikleri">
   <script>
    {literal}
     (function() {
@@ -11,11 +11,11 @@
    {/literal}
   </script>
   <div class="container">
-   <div class="ixir-wh-story-intro">
-    <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
+   <div class="ixir-wh-story-intro colo-story-intro">
+    <span class="ixir-wh-story-icon colo-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
     {include file="$template/components/Heading.tpl" title="Neden Sunucunuzu İxirHost'ta Barındırmalısınız?"}
    </div>
-   <article class="ixir-wh-story-row ixir-wh-story-row--cpanel">
+   <article class="ixir-wh-story-row ixir-colo-story-row">
     <div class="ixir-wh-story-visual" aria-hidden="true">
      <img src="{$WEB_ROOT}/templates/{$template}/img/server/server4.png" alt="">
     </div>
@@ -27,7 +27,7 @@
      <p>Farklı boyutlara sahip fiziksel sunucularınız mu mevcut? Hiç sorun değil, fiziksel sunucularınızın boyutu ne olursa olsun, İXİRHOST'un <strong>TIER III+</strong> seviyesindeki veri merkezinde güvenle barındırabilir ve yüksek kaliteye en uygun fiyatlarla sahip olabilirsiniz.</p>
     </div>
    </article>
-   <article class="ixir-wh-story-row ixir-wh-story-row--flip ixir-wh-story-row--speed">
+   <article class="ixir-wh-story-row ixir-wh-story-row--flip ixir-colo-story-row ixir-colo-story-row--flip">
     <div class="ixir-wh-story-visual" aria-hidden="true">
      <img src="{$WEB_ROOT}/templates/{$template}/img/server/server1.png" alt="">
     </div>
@@ -39,7 +39,7 @@
      <p>Sunucu monitörleme hizmeti oldukça önemli ve gerekli bir hizmettir. Fiziksel sunucunuz, İXİRHOST teknik destek ekibi tarafından 7/24 izlenir, olağan dışı kaynak kullanımı olması durumunda veya herhangi bir sunucu servisinin düşmesi durumunda teknik destek ekibimizin size bilgi vermesini sağlayabilirsiniz.</p>
     </div>
    </article>
-   <article class="ixir-wh-story-row ixir-wh-story-row--mail">
+   <article class="ixir-wh-story-row ixir-colo-story-row">
     <div class="ixir-wh-story-visual" aria-hidden="true">
      <img src="{$WEB_ROOT}/templates/{$template}/img/server/server5.png" alt="">
     </div>
@@ -52,7 +52,7 @@
     </div>
    </article>
 
-   <article class="ixir-wh-story-row ixir-wh-story-row--flip ixir-wh-story-row--speed">
+   <article class="ixir-wh-story-row ixir-wh-story-row--flip ixir-colo-story-row ixir-colo-story-row--flip">
     <div class="ixir-wh-story-visual" aria-hidden="true">
      <img src="{$WEB_ROOT}/templates/{$template}/img/server/server3.png" alt="">
     </div>
@@ -65,7 +65,7 @@
     </div>
    </article>
 
-   <article class="ixir-wh-story-row ixir-wh-story-row--mail">
+   <article class="ixir-wh-story-row ixir-colo-story-row">
     <div class="ixir-wh-story-visual" aria-hidden="true">
      <img src="{$WEB_ROOT}/templates/{$template}/img/server/server6.png" alt="">
     </div>
@@ -78,7 +78,7 @@
     </div>
    </article>
 
-   <article class="ixir-wh-story-row ixir-wh-story-row--flip ixir-wh-story-row--speed">
+   <article class="ixir-wh-story-row ixir-wh-story-row--flip ixir-colo-story-row ixir-colo-story-row--flip">
     <div class="ixir-wh-story-visual" aria-hidden="true">
      <img src="{$WEB_ROOT}/templates/{$template}/img/server/server2.png" alt="">
     </div>
@@ -91,4 +91,4 @@
     </div>
    </article>
   </div>
-</section>
+ </section>
