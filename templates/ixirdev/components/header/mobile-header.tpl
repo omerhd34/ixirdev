@@ -3,11 +3,11 @@
   <div class="container">
    <div class="mobile-top-row">
     <div class="mobile-top-left">
-     <a href="//blog.ixirhost.com" title="ixirhost blog" rel="nofollow" target="_blank">
+     <a href="//blog.ixirhost.com" title="İXİRHOST blog" rel="nofollow" target="_blank">
       <i class="fas fa-newspaper"></i>
       <span>Blog</span>
      </a>
-     <a href="{$WEB_ROOT}/kurumsal" title="ixirhost hakkında">
+     <a href="{$WEB_ROOT}/kurumsal" title="İXİRHOST hakkında">
       <i class="far fa-building"></i>
       <span>Kurumsal</span>
      </a>
@@ -35,7 +35,7 @@
  <div class="container">
   <div class="mobile-header-main">
    <a href="{$WEB_ROOT}/" class="mobile-logo">
-    <img src="{$WEB_ROOT}/templates/{$template}/img/logo-color.webp" alt="ixirhost logo">
+    <img src="{$WEB_ROOT}/templates/{$template}/img/logo-color.webp" alt="İXİRHOST logo">
    </a>
    <div class="mobile-header-actions">
     <div class="nav-cart dropdown">
@@ -63,7 +63,7 @@
  <nav class="ixir-mobile-drawer" id="ixirMobileMenu" aria-hidden="true" aria-label="Mobil menü">
   <div class="ixir-mobile-drawer-head">
    <a href="{$WEB_ROOT}/" class="ixir-mobile-drawer-logo">
-    <img src="{$WEB_ROOT}/templates/{$template}/img/logo-color.webp" alt="ixirhost">
+    <img src="{$WEB_ROOT}/templates/{$template}/img/logo-color.webp" alt="İXİRHOST">
    </a>
    <button type="button" class="ixir-mobile-drawer-close ixir-close" title="Kapat" aria-label="Menüyü kapat">
     <i class="fas fa-times"></i>

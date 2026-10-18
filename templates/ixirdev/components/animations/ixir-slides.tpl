@@ -38,11 +38,9 @@
 
     function show(el, delay) {
      if (el.classList.contains('is-slide-in')) return;
-     el.classList.add('is-slide-reset');
-     el.classList.remove('is-slide-in');
+     el.classList.remove('is-slide-reset');
      void el.offsetWidth;
      el.style.transitionDelay = delay ? delay + 'ms' : '';
-     el.classList.remove('is-slide-reset');
      el.classList.add('is-slide-in');
     }
 
@@ -61,7 +59,7 @@
      });
     }, {
      threshold: 0,
-     rootMargin: '-10% 0px -10% 0px'
+     rootMargin: '0px 0px -40px 0px'
     });
 
     var leave = new IntersectionObserver(function(entries) {
@@ -79,9 +77,13 @@
     });
 
     setTimeout(function() {
+     var vh = window.innerHeight || document.documentElement.clientHeight || 0;
      Array.prototype.forEach.call(nodes, function(node) {
       if (!node.classList.contains('is-slide-in')) {
-       node.classList.add('is-slide-in');
+       var rect = node.getBoundingClientRect();
+       if (rect.top < vh && rect.bottom > 0) {
+        node.classList.add('is-slide-in');
+       }
       }
      });
     }, 1000);

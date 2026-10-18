@@ -1,9 +1,9 @@
 {assign var="helpIsLight" value=false}
-{if $templatefile == 'homepage' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'dedicated-server' || $ixirDomainSearchPage || $ixirDomainTransferPage}
+{if $templatefile == 'homepage' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'outbound-mail-gateway' || $ixirPageSlug == 'site-pratik' || $ixirDomainSearchPage || $ixirDomainTransferPage}
  {assign var="helpIsLight" value=true}
 {/if}
 <section
- class="ixir-help{if $helpIsLight} ixir-help--light bg-light-blue{else} bg-dark-blue{/if}{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || $ixirCorporate || $templatefile == 'kurumsal' || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'kurumsal-mail-server' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri' || $ixirPageSlug == 'antispam'))} ixir-slide ixir-slide--right is-slide-on{/if}"
+ class="ixir-help{if $helpIsLight} ixir-help--light bg-light-blue ixir-slide ixir-slide--right is-slide-on{else} bg-dark-blue ixir-slide ixir-slide--left is-slide-on{/if}"
  id="ixir-help" aria-label="Destek kanalları">
  <img class="ixir-help-visual" src="{$WEB_ROOT}/templates/{$template}/img/help/bg4.webp" alt="" width="1154"
   height="420" decoding="async" aria-hidden="true">
@@ -14,12 +14,12 @@
     {include file="$template/components/Heading.tpl" title="Sizler İçin Buradayız!"}
     <p>Desteğe ihtiyacınız olduğu her anda bize ulaşın.</p>
     <div class="ixir-help-cards">
-     <a href="tel:+908503027111" class="ixir-help-card" title="ixirhost çağrı merkezi">
+     <a href="tel:+908503027111" class="ixir-help-card" title="İXİRHOST çağrı merkezi">
       <div class="ixir-help-icon-wrap"><i class="fas fa-phone-volume" aria-hidden="true"></i></div>
       <span>Telefon Destek</span>
       <small>0850 302 7 111</small>
      </a>
-     <a href="mailto:destek@ixirhost.com" class="ixir-help-card" title="ixirhost destek e-posta adresi">
+     <a href="mailto:destek@ixirhost.com" class="ixir-help-card" title="İXİRHOST destek e-posta adresi">
       <div class="ixir-help-icon-wrap"><i class="fas fa-paper-plane" aria-hidden="true"></i></div>
       <span>E-posta Destek</span>
       <small>destek@ixirhost.com</small>
