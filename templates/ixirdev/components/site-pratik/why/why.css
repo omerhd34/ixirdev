@@ -1,0 +1,186 @@
+.ixir-sp-why {
+  position: relative;
+  padding: 85px 0 95px;
+  background-color: #f8fafc;
+  border-top: 1px solid #eef2f6;
+  border-bottom: 1px solid #eef2f6;
+  overflow: hidden;
+}
+
+.ixir-sp-why::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1050px;
+  height: 500px;
+  background: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.08) 0%, rgba(59, 130, 246, 0.03) 45%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ixir-sp-why .container {
+  position: relative;
+  z-index: 1;
+}
+
+.ixir-sp-why-head {
+  max-width: 820px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.ixir-sp-why-head .site-heading {
+  margin: 0 auto 14px;
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  letter-spacing: -0.02em;
+  text-align: center;
+  display: block;
+}
+
+.ixir-sp-why-head .site-heading::after {
+  margin: 16px auto 0 !important;
+}
+
+.ixir-sp-why-ai-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #6366f1 0%, #3b82f6 100%);
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.ixir-sp-why-subtitle {
+  margin: 16px auto 0;
+  color: #64748b;
+  font-size: 16.5px;
+  line-height: 1.6;
+  max-width: 660px;
+}
+
+.ixir-sp-why-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.ixir-sp-why-card {
+  position: relative;
+  flex: 0 0 calc(25% - 18px);
+  max-width: calc(25% - 18px);
+  min-width: 250px;
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 24px;
+  padding: 38px 26px 34px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.ixir-sp-why-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.ixir-sp-why-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(59, 120, 231, 0.35);
+  box-shadow: 0 22px 42px -10px rgba(59, 120, 231, 0.15), 0 10px 20px -6px rgba(15, 23, 42, 0.05);
+}
+
+.ixir-sp-why-card:hover::before {
+  left: 10%;
+  right: 10%;
+  opacity: 1;
+}
+
+.ixir-sp-why-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #6366f1 0%, #3b82f6 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 10px 24px rgba(99, 102, 241, 0.32);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+}
+
+.ixir-sp-why-card:hover .ixir-sp-why-icon {
+  transform: scale(1.1) rotate(-3deg);
+  box-shadow: 0 14px 30px rgba(99, 102, 241, 0.45);
+}
+
+.ixir-sp-why-card-title {
+  font-size: 17.5px;
+  font-weight: 700;
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  margin: 0 0 10px;
+  letter-spacing: -0.015em;
+}
+
+.ixir-sp-why-card-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #64748b;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .ixir-sp-why-card {
+    flex: 0 0 calc(33.333% - 16px);
+    max-width: calc(33.333% - 16px);
+  }
+}
+
+@media (max-width: 992px) {
+  .ixir-sp-why-card {
+    flex: 0 0 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 640px) {
+  .ixir-sp-why {
+    padding: 60px 0 70px;
+  }
+  .ixir-sp-why-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 30px 22px 28px;
+  }
+  .ixir-sp-why-head {
+    margin-bottom: 34px;
+  }
+}

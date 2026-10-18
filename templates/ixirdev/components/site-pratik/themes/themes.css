@@ -1,0 +1,385 @@
+.ixir-sp-themes {
+  position: relative;
+  padding: 85px 0 95px;
+  background-color: #091322;
+  background-image:
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.ixir-sp-themes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ixir-sp-themes .container {
+  position: relative;
+  z-index: 1;
+}
+
+.ixir-sp-themes-head {
+  text-align: center;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.ixir-sp-themes-head .site-heading {
+  color: #ffffff !important;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 992px) {
+  .ixir-sp-themes-head .site-heading {
+    font-size: 30px;
+    white-space: nowrap;
+  }
+}
+
+.ixir-sp-themes-subtitle {
+  margin: 16px auto 0;
+  color: #cbd5e1;
+  font-size: 16.5px;
+  line-height: 1.6;
+  max-width: 680px;
+}
+
+.ixir-sp-tabs-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: none;
+  margin: 38px auto 32px;
+  padding: 0 12px;
+  max-width: 980px;
+}
+
+.ixir-sp-tab-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f8fafc !important;
+  padding: 11px 24px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.ixir-sp-tab-btn:hover {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.32);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.ixir-sp-tab-btn.active {
+  color: #ffffff !important;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border-color: #3b82f6;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.55), 0 0 14px rgba(59, 130, 246, 0.35);
+  transform: translateY(-2px);
+}
+
+.ixir-sp-tabs-content {
+  position: relative;
+  width: 100%;
+}
+
+.ixir-sp-tab-pane {
+  display: none;
+}
+
+.ixir-sp-tab-pane.active {
+  display: block;
+  animation: ixirThemeFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes ixirThemeFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ixir-sp-category-heading,
+h3.ixir-sp-category-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff !important;
+  text-align: center;
+  margin: 10px auto 30px;
+  letter-spacing: -0.01em;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.ixir-sp-category-heading::before,
+.ixir-sp-category-heading::after {
+  content: "";
+  width: 44px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.8));
+  border-radius: 2px;
+}
+
+.ixir-sp-category-heading::after {
+  background: linear-gradient(90deg, rgba(96, 165, 250, 0.8), transparent);
+}
+
+.ixir-sp-theme-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.ixir-sp-theme-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ixir-sp-theme-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  transition: all 0.35s ease;
+  z-index: 10;
+}
+
+.ixir-sp-theme-card:hover {
+  transform: translateY(-6px);
+  background: rgba(30, 41, 59, 0.9);
+  border-color: #3b82f6;
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.25), 0 0 20px rgba(59, 130, 246, 0.15);
+}
+
+.ixir-sp-theme-card:hover::before {
+  opacity: 1;
+  left: 10%;
+  right: 10%;
+}
+
+.ixir-sp-card-visual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ixir-sp-card-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ixir-sp-theme-card:hover .ixir-sp-card-visual img {
+  transform: scale(1.05);
+}
+
+.ixir-sp-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ixir-sp-theme-card:hover .ixir-sp-card-overlay {
+  opacity: 1;
+}
+
+.ixir-sp-preview-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(10px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ixir-sp-preview-badge i {
+  color: #2563eb;
+  font-size: 14px;
+}
+
+.ixir-sp-theme-card:hover .ixir-sp-preview-badge {
+  transform: translateY(0);
+}
+
+.ixir-sp-themes-action {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.ixir-sp-themes-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff !important;
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  border-radius: 12px;
+  border: 1.5px solid transparent;
+  text-decoration: none !important;
+  box-shadow: 0 10px 24px -4px rgba(37, 99, 235, 0.38), 0 4px 10px -2px rgba(37, 99, 235, 0.2);
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.ixir-sp-themes-cta:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px -4px rgba(37, 99, 235, 0.46), 0 6px 12px -2px rgba(37, 99, 235, 0.25);
+}
+
+.ixir-sp-themes-cta i,
+.ixir-sp-themes-cta .ixir-sp-btn-arrow {
+  display: inline-block;
+  font-size: 13.5px;
+  transform: rotate(45deg);
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ixir-sp-themes-cta:hover i,
+.ixir-sp-themes-cta:hover .ixir-sp-btn-arrow {
+  transform: translate(3px, -3px) rotate(45deg);
+}
+
+.ixir-sp-themes-cta:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px -2px rgba(37, 99, 235, 0.3);
+}
+
+.ixir-sp-themes-cta:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}
+
+@media (max-width: 1024px) {
+  .ixir-sp-theme-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ixir-sp-themes {
+    padding: 60px 0 70px;
+  }
+
+  .ixir-sp-tabs-nav {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin: 28px 0 24px;
+    padding: 6px 12px;
+  }
+
+  .ixir-sp-tabs-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ixir-sp-tab-btn {
+    font-size: 14px;
+    padding: 9px 18px;
+    flex-shrink: 0;
+  }
+
+  .ixir-sp-category-heading,
+  h3.ixir-sp-category-heading {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+
+  .ixir-sp-category-heading::before,
+  .ixir-sp-category-heading::after {
+    width: 24px;
+  }
+
+  .ixir-sp-theme-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .ixir-sp-themes-cta {
+    width: 100%;
+    max-width: 320px;
+  }
+}

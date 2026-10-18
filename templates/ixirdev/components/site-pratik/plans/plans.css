@@ -1,0 +1,38 @@
+.ixir-wh-grid.ixir-wh-grid--3,
+.ixir-wh-grid--3,
+.ixir-sp-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ixir-sp-plans.is-armed .ixir-sp-grid--3 .ixir-sp-plan:not(.is-in),
+.ixir-sp-page .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:not(.is-in),
+.ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:not(.is-in) {
+  transform: translate3d(112px, 0, 0);
+}
+
+@media (min-width: 1024px) {
+  .ixir-sp-plans.is-armed .ixir-sp-grid--3 .ixir-sp-plan:nth-child(3),
+  .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:nth-child(3) {
+    --ixir-enter-delay: 80ms;
+  }
+  .ixir-sp-plans.is-armed .ixir-sp-grid--3 .ixir-sp-plan:nth-child(2),
+  .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:nth-child(2) {
+    --ixir-enter-delay: 180ms;
+  }
+  .ixir-sp-plans.is-armed .ixir-sp-grid--3 .ixir-sp-plan:nth-child(1),
+  .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:nth-child(1) {
+    --ixir-enter-delay: 280ms;
+  }
+}
+
+.ixir-sp-page .ixir-wh-plan:has(.ixir-wh-billing) .ixir-wh-price,
+.ixir-sp-plan:has(.ixir-wh-billing) .ixir-wh-price {
+  margin-bottom: 8px;
+}
+
+#sitepratik-paketleri,
+#sitepratik-paketleri-title,
+.ixir-sp-plans,
+.ixir-sp-plans-head {
+  scroll-margin-top: 140px;
+}

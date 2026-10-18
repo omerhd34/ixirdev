@@ -1,0 +1,320 @@
+.ixir-sp-sectors {
+ position: relative;
+ padding: 85px 0 95px;
+ background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+ overflow: hidden;
+ border-top: 1px solid #eef2f6;
+ border-bottom: 1px solid #eef2f6;
+}
+
+.ixir-sp-sectors::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 900px;
+ height: 380px;
+ background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 70%);
+ pointer-events: none;
+ z-index: 0;
+}
+
+.ixir-sp-sectors .container {
+ position: relative;
+ z-index: 1;
+}
+
+.ixir-sp-sectors-head {
+ text-align: center;
+ max-width: 860px;
+ margin: 0 auto;
+}
+
+.ixir-sp-sectors .site-heading {
+ color: #0f172a !important;
+ font-size: 32px;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ margin: 0 0 14px;
+}
+
+.ixir-sp-sectors-subtitle {
+ margin: 0 auto;
+ color: #64748b;
+ font-size: 16.5px;
+ line-height: 1.6;
+ max-width: 680px;
+}
+
+.ixir-sp-sectors-grid {
+ display: grid;
+ grid-template-columns: repeat(6, max-content);
+ justify-content: center;
+ align-items: stretch;
+ gap: 12px 14px;
+ max-width: 1200px;
+ margin: 46px auto 0;
+}
+
+.ixir-sp-sector-pill {
+ position: relative;
+ overflow: hidden;
+ width: 100%;
+ display: inline-flex;
+ align-items: center;
+ gap: 10px;
+ padding: 9px 18px 9px 12px;
+ background: #ffffff;
+ border: 1px solid #e2e8f0;
+ border-radius: 999px;
+ box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+ transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+ cursor: default !important;
+ user-select: none;
+ box-sizing: border-box;
+}
+
+.ixir-sp-sector-pill::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 25%;
+ right: 25%;
+ height: 2.5px;
+ background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+ border-radius: 999px 999px 0 0;
+ opacity: 0;
+ transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+ pointer-events: none;
+}
+
+.ixir-sp-sector-pill:hover {
+ border-color: rgba(59, 130, 246, 0.35);
+ transform: translateY(-2px);
+ box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.12), 0 2px 6px rgba(15, 23, 42, 0.04);
+}
+
+.ixir-sp-sector-pill:hover::before {
+ left: 10%;
+ right: 10%;
+ opacity: 1;
+}
+
+.ixir-sp-sector-icon,
+.ixir-sp-sector-check {
+ width: 22px;
+ height: 22px;
+ border-radius: 50%;
+ background: #2563eb;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ color: #ffffff;
+ font-size: 10.5px;
+ flex-shrink: 0;
+ box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+ transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.ixir-sp-sector-pill:hover .ixir-sp-sector-icon,
+.ixir-sp-sector-pill:hover .ixir-sp-sector-check {
+ background: #1d4ed8;
+ transform: scale(1.08);
+}
+
+.ixir-sp-sector-name {
+ color: #334155;
+ font-size: 14.5px;
+ font-weight: 600;
+ white-space: nowrap;
+ letter-spacing: -0.01em;
+ transition: color 0.25s ease;
+}
+
+.ixir-sp-sector-pill:hover .ixir-sp-sector-name {
+ color: #1d4ed8;
+}
+
+.ixir-sp-sectors-action {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 16px;
+ margin-top: 48px;
+ text-align: center;
+ flex-wrap: wrap;
+}
+
+.ixir-sp-sectors-btn {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ gap: 11px;
+ padding: 14px 30px;
+ font-size: 15.5px;
+ font-weight: 700;
+ line-height: 1.4;
+ letter-spacing: -0.01em;
+ border-radius: 12px;
+ text-decoration: none !important;
+ transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+ cursor: pointer;
+ box-sizing: border-box;
+}
+
+.ixir-sp-sectors-btn--primary,
+.ixir-sp-sectors-btn:not(.ixir-sp-sectors-btn--secondary) {
+ background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+ color: #ffffff !important;
+ border: 1.5px solid transparent;
+ box-shadow: 0 10px 24px -4px rgba(37, 99, 235, 0.38), 0 4px 10px -2px rgba(37, 99, 235, 0.2);
+}
+
+.ixir-sp-sectors-btn--primary .ixir-sp-btn-arrow,
+.ixir-sp-sectors-btn--primary i,
+.ixir-sp-sectors-btn:not(.ixir-sp-sectors-btn--secondary) .ixir-sp-btn-arrow,
+.ixir-sp-sectors-btn:not(.ixir-sp-sectors-btn--secondary) i {
+ display: inline-block;
+ font-size: 13.5px;
+ transform: rotate(45deg);
+ transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ixir-sp-sectors-btn--primary:hover,
+.ixir-sp-sectors-btn:not(.ixir-sp-sectors-btn--secondary):hover {
+ background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+ transform: translateY(-2px);
+ box-shadow: 0 14px 28px -4px rgba(37, 99, 235, 0.46), 0 6px 12px -2px rgba(37, 99, 235, 0.25);
+ color: #ffffff !important;
+}
+
+.ixir-sp-sectors-btn--primary:hover .ixir-sp-btn-arrow,
+.ixir-sp-sectors-btn--primary:hover i,
+.ixir-sp-sectors-btn:not(.ixir-sp-sectors-btn--secondary):hover .ixir-sp-btn-arrow,
+.ixir-sp-sectors-btn:not(.ixir-sp-sectors-btn--secondary):hover i {
+ transform: translate(3px, -3px) rotate(45deg);
+}
+
+.ixir-sp-sectors-btn--secondary {
+ background: #ffffff;
+ color: #0f172a !important;
+ border: 1.5px solid #cbd5e1;
+ box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+}
+
+.ixir-sp-sectors-btn--secondary .ixir-sp-btn-icon,
+.ixir-sp-sectors-btn--secondary i {
+ color: #2563eb;
+ font-size: 13.5px;
+ transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), color 0.45s ease;
+}
+
+.ixir-sp-sectors-btn--secondary:hover {
+ background: #ffffff;
+ border-color: #2563eb;
+ color: #1d4ed8 !important;
+ transform: translateY(-2px);
+ box-shadow: 0 12px 24px -4px rgba(37, 99, 235, 0.16), 0 3px 8px rgba(15, 23, 42, 0.04);
+}
+
+.ixir-sp-sectors-btn--secondary:hover .ixir-sp-btn-icon,
+.ixir-sp-sectors-btn--secondary:hover i {
+ color: #1d4ed8;
+ transform: translateY(-3px);
+}
+
+.ixir-sp-sectors-btn:active {
+ transform: translateY(0);
+ box-shadow: 0 6px 16px -2px rgba(37, 99, 235, 0.3);
+}
+
+.ixir-sp-sectors-btn:focus-visible {
+ outline: 2px solid #2563eb;
+ outline-offset: 3px;
+}
+
+@media (max-width: 1200px) {
+ .ixir-sp-sectors-grid {
+  gap: 10px 10px;
+ }
+}
+
+@media (max-width: 1100px) {
+ .ixir-sp-sectors-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 36px;
+ }
+}
+
+@media (max-width: 992px) {
+ .ixir-sp-sectors {
+  padding: 70px 0 80px;
+ }
+
+ .ixir-sp-sectors .site-heading {
+  font-size: 27px;
+ }
+
+ .ixir-sp-sectors-subtitle {
+  font-size: 15px;
+ }
+
+ .ixir-sp-sectors-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 36px;
+ }
+
+ .ixir-sp-sector-pill {
+  padding: 8px 15px 8px 10px;
+ }
+
+ .ixir-sp-sector-name {
+  font-size: 13.5px;
+ }
+}
+
+@media (max-width: 640px) {
+ .ixir-sp-sectors {
+  padding: 55px 0 65px;
+ }
+
+ .ixir-sp-sectors .site-heading {
+  font-size: 22px;
+ }
+
+ .ixir-sp-sectors-grid {
+  grid-template-columns: 1fr;
+  gap: 8px;
+ }
+
+ .ixir-sp-sector-pill {
+  padding: 7px 13px 7px 9px;
+ }
+
+ .ixir-sp-sector-icon,
+ .ixir-sp-sector-check {
+  width: 19px;
+  height: 19px;
+  font-size: 9.5px;
+ }
+
+ .ixir-sp-sector-name {
+  font-size: 12.5px;
+ }
+
+ .ixir-sp-sectors-action {
+  margin-top: 32px;
+  gap: 12px;
+  flex-direction: column;
+ }
+
+ .ixir-sp-sectors-btn {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px 22px;
+  font-size: 15px;
+ }
+}

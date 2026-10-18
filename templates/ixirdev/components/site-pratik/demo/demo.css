@@ -1,0 +1,242 @@
+.ixir-sp-demo-section {
+  position: relative;
+  padding: 85px 0 95px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border-top: 1px solid #eef2f6;
+  border-bottom: 1px solid #eef2f6;
+  overflow: hidden;
+  color: #0f172a;
+}
+
+.ixir-sp-demo-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ixir-sp-demo-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.ixir-sp-demo-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  gap: 52px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.ixir-sp-demo-content {
+  position: relative;
+  z-index: 1;
+}
+
+.ixir-sp-demo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  margin-bottom: 20px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.ixir-sp-demo-pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2563eb;
+  box-shadow: 0 0 10px #2563eb;
+  animation: pulseDemo 2s infinite ease-in-out;
+}
+
+@keyframes pulseDemo {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.5;
+  }
+}
+
+.ixir-sp-demo-title {
+  margin: 0 0 16px;
+  color: #0f172a;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+}
+
+.ixir-sp-demo-desc {
+  margin: 0 0 28px;
+  color: #64748b;
+  font-size: 16.5px;
+  line-height: 1.65;
+  max-width: 520px;
+}
+
+.ixir-sp-demo-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 34px;
+}
+
+.ixir-sp-demo-perk {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.ixir-sp-demo-perk i {
+  color: #10b981;
+  font-size: 16px;
+}
+
+.ixir-sp-demo-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.ixir-sp-demo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 34px;
+  background: #2563eb;
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  letter-spacing: 0.01em;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.28);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ixir-sp-demo-btn:hover {
+  background: #1d4ed8;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.4);
+}
+
+.ixir-sp-demo-btn i {
+  font-size: 14px;
+  transition: transform 0.25s ease;
+}
+
+.ixir-sp-demo-btn:hover i {
+  transform: translateX(4px);
+}
+
+.ixir-sp-demo-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ixir-sp-demo-glow {
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(circle at center, rgba(37, 99, 235, 0.15) 0%, transparent 65%);
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ixir-sp-demo-mockup {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ixir-sp-demo-mockup:hover {
+  transform: translateY(-6px);
+  box-shadow: none;
+}
+
+.ixir-sp-demo-mockup img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 20px 35px rgba(15, 23, 42, 0.18));
+  transition: filter 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ixir-sp-demo-mockup:hover img {
+  filter: drop-shadow(0 28px 45px rgba(15, 23, 42, 0.25));
+}
+
+@media (max-width: 992px) {
+  .ixir-sp-demo-section {
+    padding: 65px 0 75px;
+  }
+  .ixir-sp-demo-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+  .ixir-sp-demo-title {
+    font-size: 28px;
+  }
+  .ixir-sp-demo-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ixir-sp-demo-perks {
+    justify-content: center;
+  }
+  .ixir-sp-demo-actions {
+    justify-content: center;
+  }
+  .ixir-sp-demo-mockup {
+    margin: 0 auto;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ixir-sp-demo-section {
+    padding: 55px 0 65px;
+  }
+  .ixir-sp-demo-title {
+    font-size: 24px;
+  }
+  .ixir-sp-demo-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 28px;
+  }
+}
