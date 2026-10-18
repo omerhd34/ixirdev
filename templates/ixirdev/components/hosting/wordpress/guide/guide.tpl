@@ -1,4 +1,4 @@
-﻿ <section class="ixir-wh-guide ixir-wh-guide--dark bg-dark-blue ixir-slide ixir-slide--right is-slide-on" aria-label="WordPress Hosting rehberi">
+ <section class="ixir-wh-guide ixir-wh-guide--light bg-light-blue ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-guide" aria-labelledby="ixir-wh-guide-title">
   <script>
    {literal}
     (function() {
@@ -11,6 +11,11 @@
    {/literal}
   </script>
   <div class="container">
+   <header class="ixir-wh-plans-head">
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-book-open" aria-hidden="true"></i> BİLGİ REHBERİ</div>
+    {include file="$template/components/Heading.tpl" title="WordPress Hosting Rehberi" id="ixir-wh-guide-title"}
+    <p>WordPress optimizasyonu, LiteSpeed altyapısı ve paket seçimi hakkında bilmeniz gerekenler.</p>
+   </header>
    <div class="ixir-wh-guide-list">
     <article class="ixir-wh-guide-item">
      <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fab fa-wordpress"></i></span>
@@ -36,17 +41,6 @@
  </section>
  <script>
   {literal}
-   (function() {
-    var list = document.querySelector('.ixir-wh-faq-list');
-    if (!list) return;
-    Array.prototype.forEach.call(list.querySelectorAll('.ixir-wh-faq-q'), function(btn) {
-     btn.addEventListener('click', function() {
-      var item = btn.parentNode;
-      var open = item.classList.toggle('is-open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-     });
-    });
-   })();
    (function() {
     var table = document.querySelector('.ixir-wh-table');
     if (!table) return;
@@ -367,38 +361,35 @@
     });
    })();
    (function() {
-    function armStory(root, selector) {
-     if (!root || !root.classList.contains('is-armed') || !window.IntersectionObserver) return;
-     var nodes = root.querySelectorAll(selector);
-     if (!nodes.length) {
-      root.classList.remove('is-armed');
-      return;
-     }
-     var pending = nodes.length;
-     var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-       if (!entry.isIntersecting) return;
-       observer.unobserve(entry.target);
-       window.requestAnimationFrame(function() {
-        entry.target.classList.add('is-in');
-       });
-       pending -= 1;
-       if (pending > 0) return;
-       window.setTimeout(function() {
-        root.classList.remove('is-armed');
-        root.classList.add('is-settled');
-       }, 900);
-      });
-     }, {
-      threshold: 0.2,
-      rootMargin: '0px'
-     });
-     Array.prototype.forEach.call(nodes, function(node) {
-      observer.observe(node);
-     });
+    var root = document.querySelector('.ixir-wh-story');
+    if (!root || !root.classList.contains('is-armed') || !window.IntersectionObserver) return;
+    var nodes = root.querySelectorAll('.ixir-wh-story-intro, .ixir-wh-story-row');
+    if (!nodes.length) {
+     root.classList.remove('is-armed');
+     return;
     }
-    armStory(document.querySelector('.ixir-wh-story--intro'), '.ixir-wh-story-intro');
-    armStory(document.querySelector('.ixir-wh-story--features'), '.ixir-wh-story-row');
+    var pending = nodes.length;
+    var observer = new IntersectionObserver(function(entries) {
+     entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      observer.unobserve(entry.target);
+      window.requestAnimationFrame(function() {
+       entry.target.classList.add('is-in');
+      });
+      pending -= 1;
+      if (pending > 0) return;
+      window.setTimeout(function() {
+       root.classList.remove('is-armed');
+       root.classList.add('is-settled');
+      }, 900);
+     });
+    }, {
+     threshold: 0.2,
+     rootMargin: '0px'
+    });
+    Array.prototype.forEach.call(nodes, function(node) {
+     observer.observe(node);
+    });
    })();
    (function() {
     var root = document.querySelector('.ixir-wh-guide');

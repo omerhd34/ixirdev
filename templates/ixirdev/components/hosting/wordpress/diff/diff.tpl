@@ -1,4 +1,4 @@
- <section class="ixir-wh-diff ixir-wh-diff--wp ixir-slide ixir-slide--left is-slide-on"
+ <section class="ixir-wh-diff ixir-wh-diff--wp ixir-wh-diff--light bg-light-blue ixir-slide ixir-slide--right is-slide-on"
   aria-labelledby="ixir-wh-diff-title">
   <script>
    {literal}
@@ -13,6 +13,7 @@
   </script>
   <div class="container">
    <header class="ixir-wh-diff-head">
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-bolt" aria-hidden="true"></i> WORDPRESS FARKI</div>
     {include file="$template/components/Heading.tpl" title="WordPress Hosting'den Çok Daha Fazlası" id="ixir-wh-diff-title"}
     <p>Türkiye'nin en gelişmiş WP Hosting hizmeti ile farkı görün</p>
    </header>

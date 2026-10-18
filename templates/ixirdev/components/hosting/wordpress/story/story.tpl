@@ -1,9 +1,8 @@
- <section class="ixir-wh-story ixir-wh-story--features ixir-slide ixir-slide--right is-slide-on"
-  aria-label="WordPress Hosting özellikleri">
+ <section class="ixir-wh-story ixir-slide ixir-slide--left is-slide-on" aria-label="WordPress Hosting özellikleri">
   <script>
    {literal}
     (function() {
-     var root = document.querySelector('.ixir-wh-story--features');
+     var root = document.querySelector('.ixir-wh-story');
      if (!root || !window.IntersectionObserver) return;
      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
      if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
@@ -12,7 +11,20 @@
    {/literal}
   </script>
   <div class="container">
-   <article class="ixir-wh-story-row ixir-wh-story-row--cpanel">
+   <div class="ixir-wh-story-intro">
+    <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
+    <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fab fa-wordpress" aria-hidden="true"></i> WORDPRESS REHBERİ</div>
+    {include file="$template/components/Heading.tpl" title="WordPress Hosting Nedir?"}
+    <p>WordPress Hosting, WordPress web siteleri için özel olarak tasarlanmış server ve ağ altyapısında sunulan; tek
+     tıkla kurulum, yüksek CPU ve RAM kaynakları ile WordPress’e özel optimizasyonlar içeren bir hosting çözümüdür.
+     LiteSpeed web server'ı, AccelerateWP ve PHP X-RAY gibi araçlarla desteklenen bu hizmette disk, bant genişliği,
+     veritabanı, CPU, RAM ve server önbelleği gibi tüm kaynaklar WordPress sitelerinin en verimli şekilde çalışacağı
+     seviyede yapılandırılmıştır. Imunify360 WAF ile güvenlik, JetBackup ile haftalık yedekleme ve ücretsiz SSL tüm
+     paketlerde standarttır.</p>
+    <a class="ixir-wh-story-cta" href="#ixir-wh-plans">Hemen Satın Al</a>
+   </div>
+
+   <article class="ixir-wh-story-row ixir-wh-story-row--resource">
     <div class="ixir-wh-story-visual" aria-hidden="true">
      <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/wordpress-macbook.webp?v=3" alt="">
     </div>
@@ -43,6 +55,7 @@
       ileri seviye ayar ve yapılandırmalarınızı kolayca yapabilirsiniz.</p>
     </div>
    </article>
+
    <article class="ixir-wh-story-row">
     <div class="ixir-wh-story-visual" aria-hidden="true">
      <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/litespeed.webp?v=2" alt="">
@@ -58,6 +71,7 @@
       klasik hosting hizmetlerine nazaran 10 kata kadar daha yüksek hız performansı gösterir.</p>
     </div>
    </article>
+
    <article class="ixir-wh-story-row ixir-wh-story-row--flip ixir-wh-story-row--mail">
     <div class="ixir-wh-story-visual" aria-hidden="true">
      <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/wp-macbook.webp?v=3" alt="">
@@ -73,4 +87,5 @@
     </div>
    </article>
   </div>
-</section>
+ </section>
+

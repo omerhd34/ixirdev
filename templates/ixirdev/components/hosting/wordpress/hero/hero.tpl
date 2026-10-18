@@ -1,11 +1,12 @@
  <section id="home-banner" class="ixir-hero ixir-hero--wordpress" aria-label="WordPress Hosting">
   <picture class="ixir-hero-photo">
    <source srcset="{$WEB_ROOT}/templates/{$template}/img/wordpress-hero.webp?v=r2" type="image/webp">
-   <img src="{$WEB_ROOT}/templates/{$template}/img/wordpress-hero.jpg?v=r2" alt="" width="1920" height="1080">
+   <img src="{$WEB_ROOT}/templates/{$template}/img/wordpress-hero.jpg?v=r2" alt="WordPress Hosting" width="1920" height="1080">
   </picture>
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fab fa-wordpress-simple" aria-hidden="true"></i> LITESPEED WORDPRESS</div>
      <h1>WordPress Hosting</h1>
      <p>NVMe, Litespeed Cache, AccelerateWP ile Wordpress Sitenizi Hızlandırın!</p>
     </div>

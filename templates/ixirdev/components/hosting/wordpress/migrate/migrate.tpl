@@ -1,4 +1,4 @@
- <section class="ixir-wh-migrate ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-wh-migrate-title">
+ <section class="ixir-wh-migrate ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-wh-migrate-title">
   <script>
    {literal}
     (function() {
@@ -20,6 +20,7 @@
     </div>
     <div class="ixir-wh-migrate-copy">
      <span class="ixir-wh-migrate-eyebrow"><i class="fas fa-exchange-alt" aria-hidden="true"></i> Ücretsiz Taşıma</span>
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-exchange-alt" aria-hidden="true"></i> ÜCRETSİZ TAŞIMA</div>
      <h2 id="ixir-wh-migrate-title">WordPress Sitelerinizi Ücretsiz Taşıyoruz!</h2>
      <p class="ixir-wh-migrate-lead">Taşınmak gözünüzü mü korkutuyor? Korkutmasın!</p>
      <p>Farklı firmada yer alan WordPress web sitelerinizi uzman WordPress ekibimiz ücretsiz olarak, sorunsuz bir
