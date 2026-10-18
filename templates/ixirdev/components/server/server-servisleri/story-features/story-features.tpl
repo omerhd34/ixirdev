@@ -1,4 +1,4 @@
- <section class="ixir-ss-story ixir-wh-story ixir-ss-story--features ixir-wh-story--features ixir-slide ixir-slide--left is-slide-on"
+ <section class="ixir-ss-story ixir-wh-story ixir-ss-story--features ixir-wh-story--features bg-dark-blue ixir-slide ixir-slide--left is-slide-on"
   aria-labelledby="ixir-ss-story-features-title">
   <script>
    {literal}
@@ -13,6 +13,7 @@
   </script>
   <div class="container">
    <header class="ixir-ss-story-features-head ixir-wh-story-features-head" style="margin-bottom: 36px;">
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> HİZMET FAYDALARI</div>
     {include file="$template/components/Heading.tpl" title="Server Destek Hizmetinin Faydaları" id="ixir-ss-story-features-title" class="text-white"}
     <p>Profesyonel sunucu yönetimi ile maksimum verim, kesintisiz performans ve maliyet avantajı sağlayın.</p>
    </header>

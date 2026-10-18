@@ -1,11 +1,12 @@
  <section id="home-banner" class="ixir-hero ixir-hero--server-servisleri" aria-label="Server Destek Hizmeti">
   <picture class="ixir-hero-photo">
    <source srcset="{$WEB_ROOT}/templates/{$template}/img/server/bg36.webp" type="image/webp">
-   <img src="{$WEB_ROOT}/templates/{$template}/img/server/bg36.webp" alt="" width="1920" height="1080">
+   <img src="{$WEB_ROOT}/templates/{$template}/img/server/bg36.webp" alt="Server Destek Hizmeti" width="1920" height="1080">
   </picture>
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-user-shield" aria-hidden="true"></i> SİSTEM YÖNETİMİ</div>
      <h1>Server Destek Hizmeti</h1>
      <p>Sunucunuz Nerede Olursa Olsun, Desteği İXİRHOST'tan Olsun.</p>
     </div>

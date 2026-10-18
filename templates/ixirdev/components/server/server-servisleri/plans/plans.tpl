@@ -13,20 +13,22 @@
   </script>
   <div class="container">
    <header class="ixir-wh-plans-head ixir-ss-plans-head">
-    {include file="$template/components/Heading.tpl" title="Server Destek Paketleri" id="ixir-ss-plans-title"}
+    <div class="ixir-badge-pill ixir-ssl-badge-pill">
+     <i class="fas fa-headset" aria-hidden="true"></i> DESTEK PAKETLERİ</div>
+    {include file="$template/components/Heading.tpl" title="Server Destek Paketleri" id="ixir-ss-plans-title" align="center"}
     <p>İhtiyacınıza en uygun destek paketine kolayca karar verin.</p>
    </header>
    <div class="ixir-wh-grid ixir-ss-grid ixir-wh-grid--3 ixir-ss-grid--3">
     <article class="ixir-wh-plan ixir-ss-plan">
-     <header class="ixir-wh-plan-head">
+     <header class="ixir-ss-plan-head ixir-wh-plan-head">
       <h3>Başlangıç</h3>
      </header>
-     <div class="ixir-wh-price">
+     <div class="ixir-ss-price ixir-wh-price">
       <s>1628 TL</s>
-      <div class="ixir-wh-amount"><b>1356</b><span>,83</span><small>TL<small>/ay</small></small></div>
+      <div class="ixir-ss-amount ixir-wh-amount"><b>1356</b><span>,83</span><small>TL<small>/ay</small></small></div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
-     <ul class="ixir-wh-specs">
+     <a class="ixir-ss-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <ul class="ixir-ss-specs ixir-wh-specs">
       <li><span>Genel Performans Optimizasyonu</span><b><i class="fas fa-times" aria-label="Yok"></i></b></li>
       <li><span>Zararlı Yazılım Taraması</span><b><i class="fas fa-times" aria-label="Yok"></i></b></li>
       <li><span>Ek Bileşen Kurulumu (Panel/OS Destekli)</span><b><i class="fas fa-times" aria-label="Yok"></i></b></li>
@@ -41,16 +43,16 @@
     </article>
 
     <article class="ixir-wh-plan ixir-ss-plan ixir-wh-plan--best ixir-ss-plan--best">
-     <span class="ixir-wh-badge">En İyi Tercih</span>
-     <header class="ixir-wh-plan-head">
+     <span class="ixir-ss-badge ixir-wh-badge">En İyi Tercih</span>
+     <header class="ixir-ss-plan-head ixir-wh-plan-head">
       <h3>Ekonomik</h3>
      </header>
-     <div class="ixir-wh-price">
+     <div class="ixir-ss-price ixir-wh-price">
       <s>2721 TL</s>
-      <div class="ixir-wh-amount"><b>2267</b><span>,51</span><small>TL<small>/ay</small></small></div>
+      <div class="ixir-ss-amount ixir-wh-amount"><b>2267</b><span>,51</span><small>TL<small>/ay</small></small></div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
-     <ul class="ixir-wh-specs">
+     <a class="ixir-ss-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <ul class="ixir-ss-specs ixir-wh-specs">
          <li><span>Genel Performans Optimizasyonu</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
          <li><span>Zararlı Yazılım Taraması</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
          <li><span>Ek Bileşen Kurulumu (Panel/OS Destekli)</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
@@ -65,15 +67,15 @@
     </article>
     
     <article class="ixir-wh-plan ixir-ss-plan">
-     <header class="ixir-wh-plan-head">
+     <header class="ixir-ss-plan-head ixir-wh-plan-head">
       <h3>Profesyonel</h3>
      </header>
-     <div class="ixir-wh-price">
+     <div class="ixir-ss-price ixir-wh-price">
       <s>3811 TL</s>
-      <div class="ixir-wh-amount"><b>3178</b><span>,17</span><small>TL<small>/ay</small></small></div>
+      <div class="ixir-ss-amount ixir-wh-amount"><b>3178</b><span>,17</span><small>TL<small>/ay</small></small></div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
-     <ul class="ixir-wh-specs">
+     <a class="ixir-ss-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <ul class="ixir-ss-specs ixir-wh-specs">
          <li><span>Genel Performans Optimizasyonu</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
          <li><span>Zararlı Yazılım Taraması</span><b><i class="fas fa-check" aria-label="Var"></i></b></li> 
          <li><span>Ek Bileşen Kurulumu (Panel/OS Destekli)</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
@@ -88,12 +90,12 @@
     </article>
 
    </div>
-   <div class="ixir-wh-shared-box">
-    <div class="ixir-wh-shared-head">
-     <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+   <div class="ixir-ss-shared-box ixir-wh-shared-box">
+    <div class="ixir-ss-shared-head ixir-wh-shared-head">
+     <p class="ixir-ss-shared-label ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
      <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
     </div>
-    <ul class="ixir-wh-shared ixir-wh-shared--click">
+    <ul class="ixir-ss-shared ixir-wh-shared ixir-ss-shared--click ixir-wh-shared--click">
      <li><i class="fas fa-server" aria-hidden="true"></i>İlk Kurulum</li>
      <li><i class="fas fa-power-off" aria-hidden="true"></i>Yeniden Kurulum</li>
      <li><i class="fas fa-sync-alt" aria-hidden="true"></i>İşletim Sistemi Güncelleme</li>
