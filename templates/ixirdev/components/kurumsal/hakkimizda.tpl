@@ -1,5 +1,6 @@
 <div class="ixir-about-hero">
  <span class="ixir-about-hero-kicker">2005'ten beri</span>
+ <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-history" aria-hidden="true"></i> ŞİRKET PROFİLİ</div>
  {include file="$template/components/Heading.tpl" title="20 Yıldır Güven Barındırıyoruz."}
  <p><strong>İksir İnternet Hizmetleri A.Ş.</strong> olarak 20 yılı aşkın süredir; hosting, server, domain, e-posta,
   SSL, güvenlik ve
@@ -50,7 +51,7 @@
 </div>
 
 <div class="ixir-box">
- <h3>Neden ixirhost?</h3>
+ <h3>Neden İXİRHOST?</h3>
  <div class="ixir-grid">
   <div class="ixir-card">
    <span class="ixir-card-icon" aria-hidden="true">

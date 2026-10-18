@@ -77,7 +77,7 @@
  <p><strong>3.9.</strong> Cloud Drive, MÜŞTERİ'nin erişimine açık, internet tabanlı tek merkezli veri
   depolama, farklı
   cihazlardan erişim ve kullanma servislerini ifade etmektedir.</p>
- <p><strong>3.10.</strong> <strong>İxirhost</strong>, .TR uzantılı alan adları tescil ve yönetiminde TRABİS onaylı kayıt
+ <p><strong>3.10.</strong> <strong>İXİRHOST</strong>, .TR uzantılı alan adları tescil ve yönetiminde TRABİS onaylı kayıt
   kuruluşu Alastyr
   Telekomünikasyon
   A.Ş. yetkili bayisidir. Kayıt Kuruluşu Tel: 0850 850 46 78 .TR alan adları TRABİS mevzuatına uygun olarak yetkili
@@ -106,8 +106,8 @@
  </ul>
 
  <h3>4. Hizmet Tanımı</h3>
- <p><strong>İxirhost</strong>'un MÜŞTERİ'ye vermiş olduğu temel hizmet olarak MÜŞTERİ'nin web site veya sitelerinin
-  <strong>İxirhost</strong>
+ <p><strong>İXİRHOST</strong>'un MÜŞTERİ'ye vermiş olduğu temel hizmet olarak MÜŞTERİ'nin web site veya sitelerinin
+  <strong>İXİRHOST</strong>
   server'larında
   barındırılarak internet ağı üzerinden yayınlanmasıdır. MÜŞTERİ sözleşme kapsamında web hosting, bayi/reseller
   hosting,server kiralama, co-location (server barındırma), Cloud Server, cloud drive, ssl ve domain tescili servisini

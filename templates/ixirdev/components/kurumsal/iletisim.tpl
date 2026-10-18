@@ -1,5 +1,5 @@
 <section class="ixir-contact-map" aria-label="Konum haritası">
- <iframe title="ixirhost konum haritası"
+ <iframe title="İXİRHOST konum haritası"
   src="https://www.google.com/maps?q=ixirhost+%C4%B0ksir+%C4%B0nternet+Hizmetleri+A.%C5%9E.+Bayrak+Cd.+Bilim+Tower+%C3%9Cmraniye+%C4%B0stanbul&hl=tr&z=16&output=embed"
   loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
 </section>
@@ -36,17 +36,17 @@
       <div class="ixir-contact-item">
        <h6>Sosyal Medya</h6>
        <nav class="ixir-contact-social" aria-label="Sosyal medya">
-        <a href="https://www.facebook.com/ixirhost" title="ixirhost Facebook" target="_blank" rel="nofollow noopener"><i
+        <a href="https://www.facebook.com/ixirhost" title="İXİRHOST Facebook" target="_blank" rel="nofollow noopener"><i
           class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
-        <a href="https://www.twitter.com/ixirhost" title="ixirhost Twitter" target="_blank" rel="nofollow noopener"><i
+        <a href="https://www.twitter.com/ixirhost" title="İXİRHOST Twitter" target="_blank" rel="nofollow noopener"><i
           class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
-        <a href="https://www.instagram.com/ixirhost" title="ixirhost Instagram" target="_blank"
+        <a href="https://www.instagram.com/ixirhost" title="İXİRHOST Instagram" target="_blank"
          rel="nofollow noopener"><i class="fab fa-instagram" aria-hidden="true"></i><span
           class="sr-only">Instagram</span></a>
-        <a href="https://www.linkedin.com/company/iksir-internet-hizmetleri-a-%C5%9F-" title="ixirhost LinkedIn"
+        <a href="https://www.linkedin.com/company/iksir-internet-hizmetleri-a-%C5%9F-" title="İXİRHOST LinkedIn"
          target="_blank" rel="nofollow noopener"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span
           class="sr-only">LinkedIn</span></a>
-        <a href="https://www.youtube.com/ixirhostcom" title="ixirhost Youtube" target="_blank"
+        <a href="https://www.youtube.com/ixirhostcom" title="İXİRHOST Youtube" target="_blank"
          rel="nofollow noopener"><i class="fab fa-youtube" aria-hidden="true"></i><span
           class="sr-only">YouTube</span></a>
        </nav>
