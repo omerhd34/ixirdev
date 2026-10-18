@@ -1,6 +1,9 @@
  <section class="ixir-wh-faq ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-wh-faq-title">
   <div class="container">
    <header class="ixir-wh-plans-head">
+    <div class="ixir-badge-pill ixir-ssl-badge-pill">
+     <i class="far fa-question-circle" aria-hidden="true"></i> MERAK EDİLENLER
+    </div>
     {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-wh-faq-title"}
     <p>Cloud Drive paketlerimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
    </header>

@@ -27,7 +27,9 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
 }
 
+.ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-guide-item h2,
 .ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-guide-item h3,
+.ixir-wh-guide.bg-dark-blue .ixir-wh-guide-item h2,
 .ixir-wh-guide.bg-dark-blue .ixir-wh-guide-item h3 {
   color: #ffffff !important;
 }
@@ -35,6 +37,43 @@
 .ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-guide-item p,
 .ixir-wh-guide.bg-dark-blue .ixir-wh-guide-item p {
   color: #94a3b8 !important;
+}
+
+.ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-guide-item strong,
+.ixir-wh-guide.bg-dark-blue .ixir-wh-guide-item strong {
+  color: #ffffff !important;
+}
+
+.ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-guide-item a,
+.ixir-wh-guide.bg-dark-blue .ixir-wh-guide-item a {
+  color: #60a5fa !important;
+  border-bottom-color: rgba(96, 165, 250, 0.4) !important;
+}
+
+.ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-guide-item a:hover,
+.ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-guide-item a:focus,
+.ixir-wh-guide.bg-dark-blue .ixir-wh-guide-item a:hover,
+.ixir-wh-guide.bg-dark-blue .ixir-wh-guide-item a:focus {
+  color: #93c5fd !important;
+  border-bottom-color: #93c5fd !important;
+}
+
+.ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-guide-item:hover,
+.ixir-wh-guide.bg-dark-blue .ixir-wh-guide-item:hover {
+  border-color: rgba(59, 130, 246, 0.45) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45), 0 0 24px rgba(37, 99, 235, 0.15) !important;
+}
+
+.ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-plans-head h2,
+.ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-plans-head .site-heading,
+.ixir-wh-guide.bg-dark-blue .ixir-wh-plans-head h2,
+.ixir-wh-guide.bg-dark-blue .ixir-wh-plans-head .site-heading {
+  color: #ffffff !important;
+}
+
+.ixir-wh-guide.ixir-wh-guide--dark .ixir-wh-plans-head p,
+.ixir-wh-guide.bg-dark-blue .ixir-wh-plans-head p {
+  color: rgba(255, 255, 255, 0.78) !important;
 }
 .ixir-wh-guide.is-armed {
   overflow-x: clip;
@@ -115,7 +154,8 @@
 .ixir-wh-guide-item:hover .ixir-wh-guide-icon {
   transform: scale(1.08) rotate(-3deg);
 }
-.ixir-wh-guide-item h2 {
+.ixir-wh-guide-item h2,
+.ixir-wh-guide-item h3 {
   margin: 0;
   color: #0b2545;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
@@ -163,7 +203,8 @@
     border-radius: 13px;
     font-size: 17px;
   }
-  .ixir-wh-guide-item h2 {
+  .ixir-wh-guide-item h2,
+  .ixir-wh-guide-item h3 {
     font-size: 19px;
   }
   .ixir-wh-guide-item p {

@@ -1172,27 +1172,6 @@
   }
 }
 
-.ixir-wh-page--wp .ixir-wh-story--intro {
-  padding: 85px 0 95px;
-  background-color: #091322 !important;
-  background-image: 
-    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
-    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
-    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
-  color: #fff !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-.ixir-wh-page--wp .ixir-wh-story--intro .ixir-wh-story-intro {
-  margin-bottom: 0;
-  opacity: 1 !important;
-  transform: none !important;
-}
-.ixir-wh-page--wp .ixir-wh-story--features {
-  padding: 36px 0 64px;
-  background: radial-gradient( ellipse 70% 42% at 50% -8%, rgba(59, 120, 231, 0.22), transparent 62% ), #0b2545;
-  color: #fff;
-}
 .ixir-wh-story-features-head {
   max-width: 980px;
   margin: 0 auto 36px;

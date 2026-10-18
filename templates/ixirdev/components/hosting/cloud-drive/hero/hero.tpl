@@ -1,11 +1,12 @@
  <section id="home-banner" class="ixir-hero ixir-hero--cloud-drive" aria-label="Cloud Drive">
   <picture class="ixir-hero-photo">
    <source srcset="{$WEB_ROOT}/templates/{$template}/img/hosting/bg15.webp" type="image/webp">
-   <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/bg15.webp" alt="" width="1920" height="1080">
+   <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/bg15.webp" alt="Cloud Drive" width="1920" height="1080">
   </picture>
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-cloud" aria-hidden="true"></i> BULUT DEPOLAMA</div>
      <h1>Cloud Drive</h1>
      <p>Dosyalarınızı yurt içindeki sunucularda barındırın, dünyanın her yerinden ulaşın.</p>
     </div>

@@ -13,6 +13,7 @@
   <div class="container">
     <div class="ixir-wh-story-intro">
       <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
+      <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-cloud-download-alt" aria-hidden="true"></i> DEPOLAMA REHBERİ</div>
       {include file="$template/components/Heading.tpl" title="Cloud Drive Nedir?"}
       <p>Cloud Drive hizmeti, Microsoft'un Onedrive, Google'ın Drive veya Apple'ın iCloud hizmetine benzer bir hizmettir.
         Dosyalarınız Cloud Drive'da güvenle saklanır. Dünyanın her yerinden internet üzerinden erişebilirsiniz. Güvenli

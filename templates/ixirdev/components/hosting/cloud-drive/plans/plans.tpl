@@ -13,7 +13,9 @@
  </script>
  <div class="container">
   <header class="ixir-wh-plans-head">
-   {include file="$template/components/Heading.tpl" title="Cloud Drive Paketleri" id="ixir-wh-plans-title"}
+   <div class="ixir-badge-pill ixir-ssl-badge-pill">
+    <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i> DEPOLAMA PLANLARI</div>
+   {include file="$template/components/Heading.tpl" title="Cloud Drive Paketleri" id="ixir-wh-plans-title" align="center"}
    <p>İhtiyacınıza uygun paketi seçin ve dosyalarınızı güvenle barındırın.</p>
   </header>
   <div class="ixir-wh-grid ixir-wh-grid--3">
