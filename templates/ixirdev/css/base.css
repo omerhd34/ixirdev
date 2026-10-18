@@ -374,7 +374,7 @@ div.header-lined h1 {
   transition: none;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .ixir-slide--left.is-slide-on:not(.is-slide-in),
   .ixir-slide--right.is-slide-on:not(.is-slide-in) {
     transform: none;

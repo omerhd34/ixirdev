@@ -1,4 +1,4 @@
-﻿<section id="home-banner" class="ixir-hero">
+<section id="home-banner" class="ixir-hero">
  <picture class="ixir-hero-photo">
   <source srcset="{$WEB_ROOT}/templates/{$template}/img/hero-bg.webp?v=r42" type="image/webp">
   <img src="{$WEB_ROOT}/templates/{$template}/img/hero-bg.jpg?v=r42" alt="">
@@ -36,9 +36,9 @@
      <span>Imunify360 koruması</span>
     </li>
    </ul>
-   <div class="ixir-hero-links-wrap ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
+   <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer Hizmetler">
     <p class="ixir-hero-label">Diğer Hizmetler</p>
-    <ul class="ixir-hero-links ixir-domain-links">
+    <ul class="ixir-hero-links">
      <li>
       <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
@@ -60,7 +60,7 @@
       </a>
      </li>
     </ul>
-    <ul class="ixir-hero-links ixir-domain-links">
+    <ul class="ixir-hero-links">
      <li>
       <a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting">
        <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Linux Hosting</span>
@@ -83,7 +83,7 @@
       </a>
      </li>
     </ul>
-    <ul class="ixir-hero-links ixir-domain-links">
+    <ul class="ixir-hero-links">
      <li>
       <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
        <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
