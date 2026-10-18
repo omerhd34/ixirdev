@@ -5,11 +5,12 @@
     <span class="ixir-cs-cta-icon" aria-hidden="true"><i class="far fa-headset"></i></span>
    </div>
    <div class="ixir-cs-cta-title">
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-question-circle" aria-hidden="true"></i> PAKET DANIŞMANI</div>
     {include file="$template/components/Heading.tpl" title="Hangi Paketi Seçeceğinize Karar Veremediniz mi?" id="ixir-cs-cta-title" align="center"}
    </div>
    <p>Satış ekibimiz ihtiyaçlarınızı dinleyip size en uygun planı belirler.</p>
    <div class="ixir-cs-cta-actions">
-    <a class="ixir-cs-cta-btn ixir-cs-cta-btn--primary" href="tel:+908503027111" title="ixirhost satış ekibi">
+    <a class="ixir-cs-cta-btn ixir-cs-cta-btn--primary" href="tel:+908503027111" title="İXİRHOST satış ekibi">
      <i class="far fa-phone-volume" aria-hidden="true"></i>0850 302 7 111
     </a>
     <a class="ixir-cs-cta-btn ixir-cs-cta-btn--ghost" href="{$WEB_ROOT}/destek/yeni" data-ixir-chat

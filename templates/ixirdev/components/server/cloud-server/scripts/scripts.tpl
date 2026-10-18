@@ -47,9 +47,9 @@
     });
    }
 
-   reveal('.ixir-cs-plans, .ixir-cs-plans-section, .ixir-wh-plans', '.ixir-cs-plans-head, .ixir-wh-plans-head, .ixir-wh-plan, .ixir-wh-shared-box', 1300, 0.15);
-   reveal('.ixir-cs-story, .ixir-wh-story', '.ixir-cs-story-intro, .ixir-wh-story-intro, .ixir-wh-story-row', 900, 0.2);
-   reveal('.ixir-cs-diff, .ixir-cs-usage, .ixir-wh-diff', '.ixir-cs-diff-head, .ixir-wh-diff-head, .ixir-wh-diff-grid li', 1100, 0.15);
+   reveal('.ixir-cs-plans, .ixir-cs-plans-section, .ixir-wh-plans', '.ixir-cs-plans-head, .ixir-wh-plans-head, .ixir-cs-plan, .ixir-wh-plan, .ixir-cs-shared-box, .ixir-wh-shared-box', 1300, 0.15);
+   reveal('.ixir-cs-story, .ixir-wh-story', '.ixir-cs-story-intro, .ixir-wh-story-intro, .ixir-cs-story-row, .ixir-wh-story-row', 900, 0.2);
+   reveal('.ixir-cs-diff, .ixir-cs-usage, .ixir-wh-diff', '.ixir-cs-diff-head, .ixir-cs-usage-head, .ixir-wh-diff-head, .ixir-cs-diff-grid li, .ixir-cs-usage-grid li, .ixir-wh-diff-grid li', 1100, 0.15);
    reveal('.ixir-cs-faq, .ixir-wh-faq', '.ixir-cs-plans-head, .ixir-wh-plans-head, .ixir-cs-faq-item, .ixir-wh-faq-item', 1300, 0.15);
   })();
  {/literal}

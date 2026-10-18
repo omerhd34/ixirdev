@@ -5,6 +5,7 @@
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-bolt" aria-hidden="true"></i> HIZLI CLOUD SERVER</div>
      <h1>60 Saniye'de Cloud Server Hazır!</h1>
      <p>Yüksek Performanslı Cloud Server'ınızı hemen kullanın!</p>
     </div>
