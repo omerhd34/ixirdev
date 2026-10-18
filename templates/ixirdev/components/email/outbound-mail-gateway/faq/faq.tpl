@@ -1,12 +1,12 @@
-<section class="ixir-wh-faq ixir-slide ixir-slide--left is-slide-on" id="ixir-wh-faq" aria-labelledby="ixir-wh-faq-title">
+<section class="ixir-omg-faq ixir-wh-faq ixir-slide ixir-slide--left is-slide-on" id="ixir-omg-faq" aria-labelledby="ixir-omg-faq-title">
   <div class="container">
-    <header class="ixir-wh-plans-head text-center">
-      {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular" id="ixir-wh-faq-title"}
+    <header class="ixir-omg-plans-head ixir-wh-plans-head text-center">
+      {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular" id="ixir-omg-faq-title"}
       <p>Outbound Mail Gateway (SmartHost) paketlerimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
     </header>
-    <div class="ixir-wh-faq-list">
-      <div class="ixir-wh-faq-item is-open">
-        <button type="button" class="ixir-wh-faq-q" aria-expanded="true">
+    <div class="ixir-omg-faq-list ixir-wh-faq-list">
+      <div class="ixir-omg-faq-item ixir-wh-faq-item is-open">
+        <button type="button" class="ixir-omg-faq-q ixir-wh-faq-q" aria-expanded="true">
           <i class="fas fa-chevron-down" aria-hidden="true"></i>Sistem Nasıl Çalışıyor?
         </button>
         <div class="ixir-wh-faq-a">

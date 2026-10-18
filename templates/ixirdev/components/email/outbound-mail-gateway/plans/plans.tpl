@@ -1,8 +1,8 @@
-<section class="ixir-wh-plans ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-plans" aria-labelledby="ixir-wh-plans-title">
+<section class="ixir-omg-plans ixir-wh-plans ixir-slide ixir-slide--right is-slide-on" id="ixir-omg-plans" aria-labelledby="ixir-omg-plans-title">
   <script>
     {literal}
       (function() {
-        var root = document.getElementById('ixir-wh-plans');
+        var root = document.getElementById('ixir-omg-plans') || document.getElementById('ixir-wh-plans');
         if (!root || !window.IntersectionObserver) return;
         if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
@@ -11,8 +11,8 @@
     {/literal}
   </script>
   <div class="container">
-    <header class="ixir-wh-plans-head">
-      {include file="$template/components/Heading.tpl" title="Outbound Mail Gateway (SmartHost) Paketleri" id="ixir-wh-plans-title"}
+    <header class="ixir-omg-plans-head ixir-wh-plans-head">
+      {include file="$template/components/Heading.tpl" title="Outbound Mail Gateway (SmartHost) Paketleri" id="ixir-omg-plans-title"}
       <p>İşletmenizin e-posta gönderim hacmine uygun planı seçin; mailleriniz spam'e düşmeden alıcılarına güvenle ulaşsın.</p>
     </header>
     <div class="ixir-wh-grid ixir-wh-grid--3">

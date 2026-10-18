@@ -92,9 +92,9 @@
    render(total);
   })();
   (function() {
-   var list = document.querySelector('.ixir-wh-faq-list');
+   var list = document.querySelector('.ixir-kms-faq-list') || document.querySelector('.ixir-wh-faq-list');
    if (!list) return;
-   Array.prototype.forEach.call(list.querySelectorAll('.ixir-wh-faq-q'), function(btn) {
+   Array.prototype.forEach.call(list.querySelectorAll('.ixir-kms-faq-q, .ixir-wh-faq-q'), function(btn) {
     btn.addEventListener('click', function() {
      var item = btn.parentNode;
      var open = item.classList.toggle('is-open');
@@ -356,9 +356,9 @@
    });
   })();
   (function() {
-   var root = document.querySelector('.ixir-wh-faq');
+   var root = document.querySelector('.ixir-kms-faq') || document.querySelector('.ixir-wh-faq');
    if (!root || !root.classList.contains('is-armed') || !window.IntersectionObserver) return;
-   var nodes = root.querySelectorAll('.ixir-wh-plans-head, .ixir-wh-faq-item');
+   var nodes = root.querySelectorAll('.ixir-kms-faq-head, .ixir-wh-plans-head, .ixir-kms-faq-item, .ixir-wh-faq-item');
    if (!nodes.length) {
     root.classList.remove('is-armed');
     return;

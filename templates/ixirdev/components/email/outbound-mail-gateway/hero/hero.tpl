@@ -1,4 +1,4 @@
-<section id="home-banner" class="ixir-hero ixir-hero--outbound ixir-hero--webhosting"
+<section id="home-banner" class="ixir-hero ixir-hero--outbound"
  aria-label="Outbound Mail Gateway (SmartHost)">
  <picture class="ixir-hero-photo">
   <source srcset="{$WEB_ROOT}/templates/{$template}/img/e-posta/bg17.webp" type="image/webp">
@@ -15,7 +15,7 @@
     <p>E-postalarınızı Yerli ve Güvenilir Gateway Hizmeti ile Gönderin.</p>
    </div>
    <div class="ixir-hero-actions">
-    <a href="#ixir-wh-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-wh-plans-btn">
+    <a href="#ixir-omg-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-omg-plans-btn ixir-wh-plans-btn">
      Outbound Mail Gateway Paketleri <i class="fas fa-arrow-down" aria-hidden="true"></i>
     </a>
    </div>

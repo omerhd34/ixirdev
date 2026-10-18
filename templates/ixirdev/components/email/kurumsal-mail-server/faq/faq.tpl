@@ -5,9 +5,9 @@
    {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular" id="ixir-kms-faq-title"}
    <p>Kurumsal mail server hizmetimiz hakkında merak ettiğiniz tüm sorular</p>
   </header>
-  <div class="ixir-wh-faq-list">
-   <div class="ixir-wh-faq-item is-open">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="true">
+  <div class="ixir-kms-faq-list ixir-wh-faq-list">
+   <div class="ixir-kms-faq-item ixir-wh-faq-item is-open">
+    <button type="button" class="ixir-kms-faq-q ixir-wh-faq-q" aria-expanded="true">
      <i class="fas fa-chevron-down" aria-hidden="true"></i>
      Sunucu Lokasyonu KVKK Gereksinimlerini Karşılıyor mu?
     </button>
