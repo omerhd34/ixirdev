@@ -1,24 +1,114 @@
-#order-standard_cart.ixir-transfer-page .ixir-domain-features {
-  background: #f8fafc;
+#order-standard_cart.ixir-transfer-page .ixir-domain-features,
+.ixir-domain-transfer-page .ixir-domain-features,
+.ixir-domain-features.ixir-domain-features--dark {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background-color: #091322 !important;
+  background-image: 
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-features .ixir-ssl-badge-pill,
+.ixir-domain-transfer-page .ixir-domain-features .ixir-ssl-badge-pill,
+.ixir-domain-features.ixir-domain-features--dark .ixir-ssl-badge-pill {
+  background: rgba(59, 130, 246, 0.15) !important;
+  border-color: rgba(96, 165, 250, 0.35) !important;
+  color: #60a5fa !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-features .ixir-ssl-badge-pill i,
+.ixir-domain-transfer-page .ixir-domain-features .ixir-ssl-badge-pill i,
+.ixir-domain-features.ixir-domain-features--dark .ixir-ssl-badge-pill i {
+  color: #60a5fa !important;
+}
+
 #order-standard_cart.ixir-transfer-page .ixir-domain-features h2,
-#order-standard_cart.ixir-transfer-page .ixir-domain-features .site-heading {
-  color: #0b2545;
+#order-standard_cart.ixir-transfer-page .ixir-domain-features .site-heading,
+.ixir-domain-transfer-page .ixir-domain-features h2,
+.ixir-domain-transfer-page .ixir-domain-features .site-heading,
+.ixir-domain-features.ixir-domain-features--dark h2,
+.ixir-domain-features.ixir-domain-features--dark .site-heading {
+  color: #ffffff !important;
 }
-#order-standard_cart.ixir-transfer-page .ixir-domain-features-lead {
-  color: #64748b;
-} 
-#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid h3 {
-  color: #0b2545;
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-features-lead,
+.ixir-domain-transfer-page .ixir-domain-features-lead,
+.ixir-domain-features.ixir-domain-features--dark .ixir-domain-features-lead {
+  color: #94a3b8 !important;
 }
-#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid p {
-  color: #64748b;
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid article,
+.ixir-domain-transfer-page .ixir-domain-feature-grid article,
+.ixir-domain-features.ixir-domain-features--dark .ixir-domain-feature-grid article {
+  background: rgba(13, 27, 49, 0.75) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25) !important;
 }
-#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid article > div {
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid article:hover,
+.ixir-domain-transfer-page .ixir-domain-feature-grid article:hover,
+.ixir-domain-features.ixir-domain-features--dark .ixir-domain-feature-grid article:hover {
+  border-color: rgba(96, 165, 250, 0.35) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(37, 99, 235, 0.15) !important;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-icon,
+.ixir-domain-transfer-page .ixir-domain-feature-icon,
+.ixir-domain-features.ixir-domain-features--dark .ixir-domain-feature-icon {
+  background: rgba(37, 99, 235, 0.15) !important;
+  border: 1.5px solid rgba(59, 130, 246, 0.35) !important;
+  color: #60a5fa !important;
+  box-shadow: 0 8px 18px -4px rgba(0, 0, 0, 0.4) !important;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-icon i,
+.ixir-domain-transfer-page .ixir-domain-feature-icon i,
+.ixir-domain-features.ixir-domain-features--dark .ixir-domain-feature-icon i {
+  color: #60a5fa !important;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid article:hover .ixir-domain-feature-icon,
+.ixir-domain-transfer-page .ixir-domain-feature-grid article:hover .ixir-domain-feature-icon,
+.ixir-domain-features.ixir-domain-features--dark .ixir-domain-feature-grid article:hover .ixir-domain-feature-icon {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  border-color: #2563eb !important;
+  color: #ffffff !important;
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.35) !important;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid article:hover .ixir-domain-feature-icon i,
+.ixir-domain-transfer-page .ixir-domain-feature-grid article:hover .ixir-domain-feature-icon i,
+.ixir-domain-features.ixir-domain-features--dark .ixir-domain-feature-grid article:hover .ixir-domain-feature-icon i {
+  color: #ffffff !important;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid h3,
+.ixir-domain-transfer-page .ixir-domain-feature-grid h3,
+.ixir-domain-features.ixir-domain-features--dark .ixir-domain-feature-grid h3 {
+  color: #ffffff !important;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid p,
+.ixir-domain-transfer-page .ixir-domain-feature-grid p,
+.ixir-domain-features.ixir-domain-features--dark .ixir-domain-feature-grid p {
+  color: #94a3b8 !important;
+}
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-feature-grid article > div,
+.ixir-domain-transfer-page .ixir-domain-feature-grid article > div,
+.ixir-domain-features.ixir-domain-features--dark .ixir-domain-feature-grid article > div {
   flex: 1;
   min-width: 0;
 }
-#order-standard_cart.ixir-transfer-page .ixir-domain-features, #order-standard_cart.ixir-transfer-page .ixir-domain-prices {
+
+#order-standard_cart.ixir-transfer-page .ixir-domain-prices {
   padding-top: 56px;
   padding-bottom: 56px;
 }

@@ -2,7 +2,8 @@
     <div class="container">
      <div class="ixir-xfer-notes-grid">
       <div>
-       {include file="$template/components/Heading.tpl" title="Domain Transferi ile İlgili Önemli Bilgiler" id="ixirXferNotesTitle"}
+       <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> ÖNEMLİ BİLGİLER</div>
+       {include file="$template/components/Heading.tpl" title="Domain Transferi ile İlgili Önemli Bilgiler" id="ixirXferNotesTitle" align="left"}
        <ul>
         <li>Domain'in transfer kodunu(authorization code, epp code, vs.) domain tescil firmanızdan alın.</li>
         <li>Domain'inizin tescil, yenileme veya transfer işleminin üzerinden 60 gün geçmiş olması gerektiğini unutmayın.
@@ -17,7 +18,7 @@
        </ul>
       </div>
       <div class="ixir-xfer-notes-art">
-       <img src="{$WEB_ROOT}/templates/{$template}/img/domain-transfer-notes.png" alt="" width="439" height="415">
+       <img src="{$WEB_ROOT}/templates/{$template}/img/domain-transfer-notes.png" alt="Domain Transferi ile İlgili Önemli Bilgiler" width="439" height="415">
       </div>
      </div>
     </div>

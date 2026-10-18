@@ -1,8 +1,11 @@
-  <section class="ixir-domain-prices ixir-slide ixir-slide--left is-slide-on" id="ixirDomainPrices">
+  <section class="ixir-domain-prices ixir-slide ixir-slide--right is-slide-on" id="ixirDomainPrices">
    <div class="container">
-    {include file="$template/components/Heading.tpl" title="Domain Fiyatları"}
-    <p class="ixir-domain-prices-lead">Yıl boyu ekonomik domain fiyatlaması ile yatırım ve yenileme maliyetlerinizi
-     düşürün.</p>
+    <header class="ixir-domain-prices-head ixir-domain-plans-head ixir-wh-plans-head text-center" style="max-width: 860px; margin: 0 auto 32px; text-align: center;">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill">
+      <i class="fas fa-globe" aria-hidden="true"></i> DOMAIN FİYAT LİSTESİ</div>
+     {include file="$template/components/Heading.tpl" title="Domain Fiyatları" align="center"}
+     <p class="ixir-domain-prices-lead" style="margin: 0 auto 0;">Yıl boyu ekonomik domain fiyatlaması ile yatırım ve yenileme maliyetlerinizi düşürün.</p>
+    </header>
     <div class="ixir-domain-prices-search">
      <label for="ixirDomainPriceSearch">Domain Uzantı Ara:</label>
      <input type="search" id="ixirDomainPriceSearch" placeholder="">

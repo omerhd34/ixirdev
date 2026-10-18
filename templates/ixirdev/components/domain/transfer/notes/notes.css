@@ -27,20 +27,50 @@
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
 }
 
+.ixir-xfer-notes .ixir-ssl-badge-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  margin-top: 0 !important;
+  margin-bottom: 18px !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  gap: 8px !important;
+  padding: 6px 16px !important;
+  border-radius: 999px !important;
+  background: rgba(59, 130, 246, 0.15) !important;
+  border: 1px solid rgba(96, 165, 250, 0.35) !important;
+  color: #60a5fa !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+  font-family: "Space Grotesk", "Roboto", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+}
+.ixir-xfer-notes .ixir-ssl-badge-pill i {
+  color: #60a5fa !important;
+}
 .ixir-xfer-notes h2,
 .ixir-xfer-notes .site-heading {
   color: #fff;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 100%;
 }
 .ixir-xfer-notes .site-heading::after,
 .ixir-xfer-notes h2::after {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 !important;
+  margin-right: auto !important;
 }
 .ixir-xfer-notes-grid {
   display: grid;
@@ -190,6 +220,11 @@
   .ixir-xfer-notes h2::after {
     margin-left: auto;
     margin-right: auto;
+  }
+  .ixir-xfer-notes .ixir-ssl-badge-pill {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center !important;
   }
   .ixir-xfer-notes-art {
     display: none;

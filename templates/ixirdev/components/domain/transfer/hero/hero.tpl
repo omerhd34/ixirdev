@@ -1,11 +1,12 @@
-  <section id="home-banner" class="ixir-hero">
+  <section id="home-banner" class="ixir-hero" aria-label="Domain Transfer">
    <picture class="ixir-hero-photo">
     <source srcset="{$WEB_ROOT}/templates/{$template}/img/hero-domain-transfer.webp?v=r1" type="image/webp">
-    <img src="{$WEB_ROOT}/templates/{$template}/img/hero-domain-transfer.jpg?v=r1" alt="">
+    <img src="{$WEB_ROOT}/templates/{$template}/img/hero-domain-transfer.jpg?v=r1" alt="Domain Transfer">
    </picture>
    <div class="container">
     <div class="ixir-hero-main">
      <div class="ixir-hero-copy">
+      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-exchange-alt" aria-hidden="true"></i> KESİNTİSİZ TRANSFER</div>
       <h1>Domain Transferi</h1>
       <p>Domain'inizi en uygun fiyata transfer edin ve yüksek yenileme maliyetlerinden kurtulun.</p>
      </div>
@@ -46,7 +47,7 @@
      </form>
      {include file="$template/components/domain/no-autofocus/no-autofocus.tpl"}
      {include file="$template/components/domain/float-label/float-label.tpl"}
-     <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
+     <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
       <p class="ixir-hero-label">Diğer Hizmetler</p>
       <ul class="ixir-domain-links">
        <li>

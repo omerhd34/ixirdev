@@ -1,37 +1,40 @@
-  <section class="ixir-wh-faq ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-domain-faq-title">
+  <section class="ixir-domain-faq ixir-dom-faq ixir-wh-faq ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-domain-faq-title">
    <div class="container">
-    <header class="ixir-wh-plans-head">
+    <header class="ixir-domain-plans-head ixir-wh-plans-head">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill">
+      <i class="far fa-question-circle" aria-hidden="true"></i> MERAK EDİLENLER
+     </div>
      {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-domain-faq-title"}
      <p>Domain tescil ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
     </header>
-    <div class="ixir-wh-faq-list">
-     <div class="ixir-wh-faq-item is-open">
-      <button type="button" class="ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
+    <div class="ixir-domain-faq-list ixir-wh-faq-list">
+     <div class="ixir-domain-faq-item ixir-wh-faq-item is-open">
+      <button type="button" class="ixir-domain-faq-q ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
         aria-hidden="true"></i>Domain tescili hemen gerçekleşiyor mu?</button>
-      <div class="ixir-wh-faq-a">
+      <div class="ixir-domain-faq-a ixir-wh-faq-a">
        <p>Domain'iniz ödemenizin ardından <strong>anında tescil</strong> edilecektir.</p>
       </div>
      </div>
-     <div class="ixir-wh-faq-item">
-      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+     <div class="ixir-domain-faq-item ixir-wh-faq-item">
+      <button type="button" class="ixir-domain-faq-q ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
         aria-hidden="true"></i>Neden İXİRHOST'dan domain almalıyım?</button>
-      <div class="ixir-wh-faq-a">
+      <div class="ixir-domain-faq-a ixir-wh-faq-a">
        <p>Birçok <strong>ücretsiz özellik</strong> ve maliyet fiyatına yakın fiyatlar, en önemlisi <strong>17 yıllık
          sektör tecrübemiz</strong> ile
         güvenle bizi tercih edebilirsiniz.</p>
       </div>
      </div>
-     <div class="ixir-wh-faq-item">
-      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+     <div class="ixir-domain-faq-item ixir-wh-faq-item">
+      <button type="button" class="ixir-domain-faq-q ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
         aria-hidden="true"></i>Alt isim server oluşturabilir miyim?</button>
-      <div class="ixir-wh-faq-a">
+      <div class="ixir-domain-faq-a ixir-wh-faq-a">
        <p>Evet, <strong>müşteri panelinizden</strong> birkaç tıklama ile yapabilirsiniz.</p>
       </div>
      </div>
-     <div class="ixir-wh-faq-item">
-      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+     <div class="ixir-domain-faq-item ixir-wh-faq-item">
+      <button type="button" class="ixir-domain-faq-q ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
         aria-hidden="true"></i>Domain'iyle birlikte hangi servisler ücretsiz?</button>
-      <div class="ixir-wh-faq-a">
+      <div class="ixir-domain-faq-a ixir-wh-faq-a">
        <p><strong>Whois gizleme</strong>, <strong>DNS yönetimi</strong>, <strong>URL yönlendirme</strong> ve
         <strong>e-posta yönlendirme</strong> domain alan müşterilerimize
         <strong>ücretsiz</strong> sağlanmaktadır.<br>*Bu servisler yalnızca <strong>.com, .net, .org</strong> gibi alan
@@ -40,10 +43,10 @@
        </p>
       </div>
      </div>
-     <div class="ixir-wh-faq-item">
-      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+     <div class="ixir-domain-faq-item ixir-wh-faq-item">
+      <button type="button" class="ixir-domain-faq-q ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
         aria-hidden="true"></i>Hatalı domain (com/net/org) tescil ettim ne yapabilirim?</button>
-      <div class="ixir-wh-faq-a">
+      <div class="ixir-domain-faq-a ixir-wh-faq-a">
        <p><strong>Aynı gün</strong> içerisinde <strong>yarı bedel</strong> kesilerek kalan tutar iade edilebilir.
         Yalnızca
         <strong>com/net/org</strong> domain'leri
@@ -51,10 +54,10 @@
        </p>
       </div>
      </div>
-     <div class="ixir-wh-faq-item">
-      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
+     <div class="ixir-domain-faq-item ixir-wh-faq-item">
+      <button type="button" class="ixir-domain-faq-q ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
         aria-hidden="true"></i>Domanin Tesciline İptal ve İade Mevcut mu?</button>
-      <div class="ixir-wh-faq-a">
+      <div class="ixir-domain-faq-a ixir-wh-faq-a">
        <p>Hayır. Domain, kayıt kuruluşu tarafından tescil edildiği için tescil edilmiş bir domain'in bizde de
         <strong>iptal ve iadesi mümkün değildir</strong>. Domain'iniz tescil dönemi boyunca açık kalır. Tescil
         edilemeyen
@@ -68,9 +71,9 @@
   <script>
    {literal}
    (function() {
-    var list = document.querySelector('.ixir-wh-faq-list');
+    var list = document.querySelector('.ixir-domain-faq-list') || document.querySelector('.ixir-wh-faq-list');
     if (!list) return;
-    Array.prototype.forEach.call(list.querySelectorAll('.ixir-wh-faq-q'), function(btn) {
+    Array.prototype.forEach.call(list.querySelectorAll('.ixir-domain-faq-q, .ixir-wh-faq-q'), function(btn) {
      btn.addEventListener('click', function() {
       var item = btn.parentNode;
       var open = item.classList.toggle('is-open');

@@ -4,6 +4,18 @@
   border-top: 1px solid rgba(59, 130, 246, 0.12);
   border-bottom: 1px solid rgba(59, 130, 246, 0.12);
 }
+.ixir-domain-prices .ixir-wh-plans-head {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 32px;
+}
+.ixir-domain-prices .ixir-ssl-badge-pill {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: fit-content !important;
+  margin: 0 auto 16px !important;
+}
 .ixir-domain-prices-search {
   display: flex;
   justify-content: flex-end;

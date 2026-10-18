@@ -1,5 +1,6 @@
   <section class="ixir-xfer-steps ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixirXferStepsTitle">
    <div class="container">
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-list-ol" aria-hidden="true"></i> TRANSFER ADIMLARI</div>
     {include file="$template/components/Heading.tpl" title="Domain Transferi Nasıl Yapılır?" id="ixirXferStepsTitle"}
     <p class="ixir-xfer-lead">Dört adımda domain'inizi İXİRHOST'a taşıyın.</p>
     <ol class="ixir-xfer-step-list">

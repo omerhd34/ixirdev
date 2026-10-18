@@ -1,4 +1,4 @@
-<section class="ixir-whois-page">
+<section class="ixir-whois-page ixir-slide ixir-slide--right is-slide-on">
  <div class="container">
   {if $ixirWhoisError && !$ixirWhoisInvalid}
    <div class="ixir-whois-alert ixir-whois-alert--error" role="alert">{$ixirWhoisError|escape}</div>
@@ -205,7 +205,7 @@
        </li>
        <li>
         <span class="ixir-whois-point-check" aria-hidden="true"><i class="fas fa-check"></i></span>
-        <span>İxirhost müşteri panelinizden dilediğiniz an tek tıkla açıp kapatın.</span>
+        <span>İXİRHOST müşteri panelinizden dilediğiniz an tek tıkla açıp kapatın.</span>
        </li>
       </ul>
      </div>

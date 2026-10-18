@@ -1,11 +1,12 @@
-  <section id="home-banner" class="ixir-hero">
+  <section id="home-banner" class="ixir-hero" aria-label="Domain Sorgulama">
    <picture class="ixir-hero-photo">
     <source srcset="{$WEB_ROOT}/templates/{$template}/img/hero-domain-sorgu.webp?v=r1" type="image/webp">
-    <img src="{$WEB_ROOT}/templates/{$template}/img/hero-domain-sorgu.jpg?v=r1" alt="">
+    <img src="{$WEB_ROOT}/templates/{$template}/img/hero-domain-sorgu.jpg?v=r1" alt="Domain Sorgulama">
    </picture>
    <div class="container">
     <div class="ixir-hero-main">
      <div class="ixir-hero-copy">
+      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-search" aria-hidden="true"></i> DOMAIN SORGULA</div>
       <h1>Mükemmel Bir Domain İle Başlayın!</h1>
       <p>125 TL'den başlayan fiyatlarla mükemmel bir domain'e sahip olun!</p>
      </div>

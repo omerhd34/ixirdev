@@ -1,11 +1,12 @@
- <section id="home-banner" class="ixir-hero">
+ <section id="home-banner" class="ixir-hero" aria-label="Whois Sorgulama">
   <picture class="ixir-hero-photo">
    <source srcset="{$WEB_ROOT}/templates/{$template}/img/hero-whois.webp?v=r2" type="image/webp">
-   <img src="{$WEB_ROOT}/templates/{$template}/img/hero-whois.jpg?v=r2" alt="">
+   <img src="{$WEB_ROOT}/templates/{$template}/img/hero-whois.jpg?v=r2" alt="Whois Sorgulama">
   </picture>
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-id-card" aria-hidden="true"></i> WHOIS SORGULAMA</div>
      <h1>Whois Domain Sorgulama</h1>
      <p>Domain'inin sahiplik bilgilerini ücretsiz ve anında sorgulayın.</p>
     </div>
@@ -33,7 +34,7 @@
      </p>
     </form>
     {include file="$template/components/domain/float-label/float-label.tpl"}
-    <div class="ixir-domain-links-wrap" role="region" aria-label="İxirhost hizmetleri">
+    <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
      <ul class="ixir-domain-links">
       <li>

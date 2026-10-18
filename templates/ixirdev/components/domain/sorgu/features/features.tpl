@@ -1,5 +1,6 @@
-  <section class="ixir-domain-features ixir-slide ixir-slide--left is-slide-on">
+  <section class="ixir-domain-features ixir-slide ixir-slide--right is-slide-on">
    <div class="container">
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-cogs" aria-hidden="true"></i> KOLAY YÖNETİM</div>
     {include file="$template/components/Heading.tpl" title="Kolay ve Pratik Domain Yönetimi" }
     <p class="ixir-domain-features-lead">Domain'inizi gelişmiş domain paneli ile zahmetsizce yönetin.</p>
     <div class="ixir-domain-feature-grid">
