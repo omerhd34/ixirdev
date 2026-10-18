@@ -1,4 +1,4 @@
-<section class="ixir-omg-platforms ixir-slide ixir-slide--left is-slide-on" id="ixir-omg-platforms" aria-labelledby="ixir-omg-platforms-title">
+<section class="ixir-omg-platforms ixir-slide ixir-slide--right is-slide-on" id="ixir-omg-platforms" aria-labelledby="ixir-omg-platforms-title">
   <script>
     {literal}
       (function() {
@@ -12,10 +12,7 @@
   </script>
   <div class="container">
     <header class="ixir-omg-section-head text-center">
-      <div class="ixir-omg-eyebrow">
-        <i class="fas fa-network-wired" aria-hidden="true"></i>
-        <span>Geniş Platform Uyumluluğu</span>
-      </div>
+      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-network-wired" aria-hidden="true"></i> PLATFORM UYUMLULUĞU</div>
       {include file="$template/components/Heading.tpl" title="Hangi Mail Sunucuları ile Uyumludur?" id="ixir-omg-platforms-title"}
       <p class="ixir-omg-platforms-subtitle">Smarthost özelliğini destekleyen tüm mail sunucuları ile çalışır. Sunucu değiştirmenize gerek yoktur.</p>
     </header>

@@ -1,11 +1,11 @@
 <script>
  {literal}
   (function() {
-   var list = document.querySelector('.ixir-wh-shared--click');
+   var list = document.querySelector('.ixir-kms-shared--click, .ixir-wh-shared--click');
    if (!list) return;
 
    function setOpen(li, open) {
-    var tipBtn = li.querySelector('.ixir-wh-tip-btn');
+    var tipBtn = li.querySelector('.ixir-kms-tip-btn, .ixir-wh-tip-btn');
     li.classList.toggle('is-open', open);
     if (tipBtn) tipBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
    }
@@ -17,11 +17,11 @@
    }
 
    Array.prototype.forEach.call(list.children, function(li) {
-    var tipBtn = li.querySelector('.ixir-wh-tip-btn');
+    var tipBtn = li.querySelector('.ixir-kms-tip-btn, .ixir-wh-tip-btn');
     if (tipBtn) tipBtn.setAttribute('aria-expanded', 'false');
     li.addEventListener('click', function(event) {
      event.stopPropagation();
-     if (event.target.closest && event.target.closest('.ixir-wh-tip-box')) return;
+     if (event.target.closest && (event.target.closest('.ixir-kms-tip-box') || event.target.closest('.ixir-wh-tip-box'))) return;
      var open = !li.classList.contains('is-open');
      closeAll(li);
      setOpen(li, open);
@@ -41,7 +41,7 @@
   (function() {
    var list = document.getElementById('ixir-km-shared');
    if (!list) return;
-   var btn = document.querySelector('.ixir-wh-shared-more-btn[aria-controls="ixir-km-shared"]');
+   var btn = document.querySelector('.ixir-kms-shared-more-btn[aria-controls="ixir-km-shared"], .ixir-wh-shared-more-btn[aria-controls="ixir-km-shared"]');
    var items = list.children;
    var total = items.length;
    var step = 10;
@@ -50,8 +50,8 @@
     if (btn) btn.parentNode.hidden = true;
     return;
    }
-   var text = btn.querySelector('.ixir-wh-shared-more-text');
-   var count = btn.querySelector('.ixir-wh-shared-more-count');
+   var text = btn.querySelector('.ixir-kms-shared-more-text, .ixir-wh-shared-more-text');
+   var count = btn.querySelector('.ixir-kms-shared-more-count, .ixir-wh-shared-more-count');
    var visible = step;
 
    function render(prev) {
@@ -128,26 +128,26 @@
    });
   })();
   (function() {
-   var root = document.getElementById('ixir-mail-plans') || document.querySelector('.ixir-mail-plans, .ixir-wh-plans');
+   var root = document.getElementById('ixir-kms-plans') || document.getElementById('ixir-mail-plans') || document.querySelector('.ixir-kms-plans, .ixir-mail-plans, .ixir-wh-plans');
    if (!root) return;
-   var items = root.querySelectorAll('.ixir-wh-billing');
+   var items = root.querySelectorAll('.ixir-kms-billing, .ixir-wh-billing');
 
    function closeAll(except) {
     Array.prototype.forEach.call(items, function(item) {
      if (item === except) return;
      item.classList.remove('is-open');
-     var plan = item.closest ? item.closest('.ixir-wh-plan') : null;
+     var plan = item.closest ? (item.closest('.ixir-kms-plan') || item.closest('.ixir-wh-plan')) : null;
      if (plan) plan.classList.remove('is-billing-open');
-     var btn = item.querySelector('.ixir-wh-billing-btn');
+     var btn = item.querySelector('.ixir-kms-billing-btn, .ixir-wh-billing-btn');
      if (btn) btn.setAttribute('aria-expanded', 'false');
     });
    }
 
    Array.prototype.forEach.call(items, function(item) {
-    var btn = item.querySelector('.ixir-wh-billing-btn');
-    var closeBtn = item.querySelector('.ixir-wh-billing-close');
-    var pop = item.querySelector('.ixir-wh-billing-pop');
-    var plan = item.closest ? item.closest('.ixir-wh-plan') : null;
+    var btn = item.querySelector('.ixir-kms-billing-btn, .ixir-wh-billing-btn');
+    var closeBtn = item.querySelector('.ixir-kms-billing-close, .ixir-wh-billing-close');
+    var pop = item.querySelector('.ixir-kms-billing-pop, .ixir-wh-billing-pop');
+    var plan = item.closest ? (item.closest('.ixir-kms-plan') || item.closest('.ixir-wh-plan')) : null;
     if (!btn) return;
     btn.addEventListener('click', function(event) {
      event.stopPropagation();
@@ -248,9 +248,9 @@
    });
   })();
   (function() {
-   var root = document.getElementById('ixir-mail-plans') || document.getElementById('ixir-wh-plans') || document.querySelector('.ixir-mail-plans, .ixir-wh-plans');
+   var root = document.getElementById('ixir-kms-plans') || document.getElementById('ixir-mail-plans') || document.getElementById('ixir-wh-plans') || document.querySelector('.ixir-kms-plans, .ixir-mail-plans, .ixir-wh-plans');
    if (!root || !root.classList.contains('is-armed') || !window.IntersectionObserver) return;
-   var nodes = root.querySelectorAll('.ixir-mail-plans-head, .ixir-wh-plans-head, .ixir-wh-plan, .ixir-wh-shared-box');
+   var nodes = root.querySelectorAll('.ixir-kms-plans-head, .ixir-mail-plans-head, .ixir-wh-plans-head, .ixir-kms-plan, .ixir-wh-plan, .ixir-kms-shared-box, .ixir-wh-shared-box');
    if (!nodes.length) {
     root.classList.remove('is-armed');
     return;
@@ -289,7 +289,7 @@
   (function() {
    var root = document.querySelector('.ixir-kms-diff, .ixir-wh-diff');
    if (!root || !root.classList.contains('is-armed') || !window.IntersectionObserver) return;
-   var nodes = root.querySelectorAll('.ixir-wh-diff-head, .ixir-wh-diff-grid li');
+   var nodes = root.querySelectorAll('.ixir-kms-diff-head, .ixir-wh-diff-head, .ixir-kms-diff-grid li, .ixir-wh-diff-grid li');
    if (!nodes.length) {
     root.classList.remove('is-armed');
     return;
@@ -386,9 +386,9 @@
    });
   })();
   (function() {
-   var root = document.querySelector('.ixir-mail-story, .ixir-wh-story');
+   var root = document.querySelector('.ixir-kms-story, .ixir-mail-story, .ixir-wh-story');
    if (!root || !root.classList.contains('is-armed') || !window.IntersectionObserver) return;
-   var nodes = root.querySelectorAll('.ixir-mail-story-intro, .ixir-wh-story-intro, .ixir-wh-story-row');
+   var nodes = root.querySelectorAll('.ixir-kms-story-intro, .ixir-mail-story-intro, .ixir-wh-story-intro, .ixir-wh-story-row');
    if (!nodes.length) {
     root.classList.remove('is-armed');
     return;

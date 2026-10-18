@@ -8,9 +8,7 @@
  <div class="container">
   <div class="ixir-hero-main">
    <div class="ixir-hero-copy">
-    <span class="ixir-hero-badge">
-     <i class="fas fa-paper-plane" aria-hidden="true"></i> SmartHost &amp; Giden Mail Güvenliği
-    </span>
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-paper-plane" aria-hidden="true"></i> SMARTHOST GEÇİDİ</div>
     <h1>Outbound Mail Gateway (SmartHost)</h1>
     <p>E-postalarınızı Yerli ve Güvenilir Gateway Hizmeti ile Gönderin.</p>
    </div>
@@ -158,7 +156,7 @@
    window.addEventListener('resize', apply);
    window.addEventListener('load', apply);
 
-   var plansLink = document.querySelector('a.ixir-wh-plans-btn');
+   var plansLink = document.querySelector('a.ixir-omg-plans-btn, a.ixir-wh-plans-btn');
    if (plansLink) {
     var frame = 0;
 
@@ -187,7 +185,7 @@
     }
 
     plansLink.addEventListener('click', function(e) {
-     var plans = document.getElementById('ixir-wh-plans');
+     var plans = document.getElementById('ixir-omg-plans') || document.getElementById('ixir-wh-plans');
      if (!plans) return;
      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
      e.preventDefault();

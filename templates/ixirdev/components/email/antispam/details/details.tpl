@@ -1,6 +1,7 @@
 <section class="ixir-as-details ixir-ss-details bg-light-blue ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-as-details-title">
  <div class="container">
   <header class="ixir-as-details-head ixir-ss-details-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-user-check" aria-hidden="true"></i> KİMLER KULLANMALI</div>
    {include file="$template/components/Heading.tpl" title="AntiSpam Hizmeti Kimler Kullanmalıdır?" id="ixir-as-details-title"}
   </header>
 

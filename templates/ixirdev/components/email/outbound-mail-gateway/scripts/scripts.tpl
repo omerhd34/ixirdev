@@ -1,17 +1,17 @@
 <script>
   {literal}
     (function() {
-      var root = document.getElementById('ixir-omg-plans') || document.getElementById('ixir-wh-plans');
+      var root = document.getElementById('ixir-omg-plans') || document.getElementById('ixir-wh-plans') || document.querySelector('.ixir-omg-plans, .ixir-wh-plans');
       if (!root) return;
-      var items = root.querySelectorAll('.ixir-wh-billing');
+      var items = root.querySelectorAll('.ixir-omg-billing, .ixir-wh-billing');
 
       function closeAll(except) {
         Array.prototype.forEach.call(items, function(item) {
           if (item === except) return;
           item.classList.remove('is-open');
-          var plan = item.closest ? item.closest('.ixir-wh-plan') : null;
+          var plan = item.closest ? (item.closest('.ixir-omg-plan') || item.closest('.ixir-wh-plan')) : null;
           if (plan) plan.classList.remove('is-billing-open');
-          var btn = item.querySelector('.ixir-wh-billing-btn');
+          var btn = item.querySelector('.ixir-omg-billing-btn, .ixir-wh-billing-btn');
           if (btn) btn.setAttribute('aria-expanded', 'false');
         });
       }
@@ -20,10 +20,10 @@
         if (item.dataset && item.dataset.billingInit) return;
         if (item.dataset) item.dataset.billingInit = '1';
 
-        var btn = item.querySelector('.ixir-wh-billing-btn');
-        var closeBtn = item.querySelector('.ixir-wh-billing-close');
-        var pop = item.querySelector('.ixir-wh-billing-pop');
-        var plan = item.closest ? item.closest('.ixir-wh-plan') : null;
+        var btn = item.querySelector('.ixir-omg-billing-btn, .ixir-wh-billing-btn');
+        var closeBtn = item.querySelector('.ixir-omg-billing-close, .ixir-wh-billing-close');
+        var pop = item.querySelector('.ixir-omg-billing-pop, .ixir-wh-billing-pop');
+        var plan = item.closest ? (item.closest('.ixir-omg-plan') || item.closest('.ixir-wh-plan')) : null;
         if (!btn) return;
 
         btn.addEventListener('click', function(event) {
@@ -107,13 +107,13 @@
       var sectionOptions = { threshold: 0.15 };
       var storyOptions = { threshold: 0.2, rootMargin: '0px' };
 
-      arm(document.getElementById('ixir-omg-plans') || document.getElementById('ixir-wh-plans'), '.ixir-omg-plans-head, .ixir-wh-plans-head, .ixir-omg-plan, .ixir-wh-plan, .ixir-wh-shared-box', 1300, sectionOptions);
-      arm(document.getElementById('ixir-omg-story') || document.querySelector('.ixir-wh-story'), '.ixir-wh-story-intro, .ixir-omg-story-card, .ixir-wh-story-row', 900, storyOptions);
+      arm(document.getElementById('ixir-omg-plans') || document.getElementById('ixir-wh-plans'), '.ixir-omg-plans-head, .ixir-wh-plans-head, .ixir-omg-plan, .ixir-wh-plan, .ixir-omg-shared-box, .ixir-as-shared-box, .ixir-wh-shared-box', 1300, sectionOptions);
+      arm(document.getElementById('ixir-omg-story') || document.querySelector('.ixir-omg-story, .ixir-wh-story'), '.ixir-omg-story-intro, .ixir-wh-story-intro, .ixir-omg-story-card, .ixir-omg-story-row, .ixir-wh-story-row', 900, storyOptions);
       arm(document.getElementById('ixir-omg-workflow'), '.ixir-omg-section-head, .ixir-flow-canvas', 900, sectionOptions);
-      arm(document.getElementById('ixir-omg-audience'), '.ixir-wh-diff-head, .ixir-wh-diff-grid li', 1100, sectionOptions);
+      arm(document.getElementById('ixir-omg-audience'), '.ixir-omg-diff-head, .ixir-wh-diff-head, .ixir-omg-diff-grid li, .ixir-wh-diff-grid li', 1100, sectionOptions);
       arm(document.getElementById('ixir-omg-platforms'), '.ixir-omg-section-head, .ixir-omg-platform-card, .ixir-omg-platforms-support', 900, sectionOptions);
-      arm(document.getElementById('ixir-omg-why'), '.ixir-wh-diff-head, .ixir-wh-diff-grid li', 1100, sectionOptions);
-      arm(document.getElementById('ixir-omg-guide'), '.ixir-wh-guide-item', 900, storyOptions);
+      arm(document.getElementById('ixir-omg-why'), '.ixir-omg-diff-head, .ixir-wh-diff-head, .ixir-omg-diff-grid li, .ixir-wh-diff-grid li', 1100, sectionOptions);
+      arm(document.getElementById('ixir-omg-guide'), '.ixir-omg-guide-item, .ixir-wh-guide-item', 900, storyOptions);
       arm(document.getElementById('ixir-omg-faq') || document.getElementById('ixir-wh-faq'), '.ixir-omg-plans-head, .ixir-wh-plans-head, .ixir-omg-faq-item, .ixir-wh-faq-item', 1300, sectionOptions);
     })();
   {/literal}

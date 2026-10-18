@@ -13,7 +13,9 @@
    </script>
    <div class="container">
     <header class="ixir-as-plans-head ixir-wh-plans-head">
-     {include file="$template/components/Heading.tpl" title="AntiSpam Paketleri" id="ixir-as-plans-title"}
+     <div class="ixir-badge-pill ixir-ssl-badge-pill">
+      <i class="fas fa-shield-virus" aria-hidden="true"></i> ANTİSPAM LİSANSLARI</div>
+     {include file="$template/components/Heading.tpl" title="AntiSpam Paketleri" id="ixir-as-plans-title" align="center"}
      <p>İhtiyacınıza uygun paketi seçin, e-postalarınızı hemen güvenceye alın.</p>
     </header>
     <div class="ixir-as-grid ixir-wh-grid">

@@ -37,18 +37,6 @@
   })();
 
   (function() {
-   var list = document.querySelector('.ixir-as-faq-list, .ixir-wh-faq-list');
-   if (!list) return;
-   Array.prototype.forEach.call(list.querySelectorAll('.ixir-as-faq-q, .ixir-wh-faq-q'), function(btn) {
-    btn.addEventListener('click', function() {
-     var item = btn.parentNode;
-     var open = item.classList.toggle('is-open');
-     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-   });
-  })();
-
-  (function() {
    var root = document.getElementById('ixir-as-plans') || document.querySelector('.ixir-as-plans, .ixir-wh-plans');
    if (!root) return;
    var items = root.querySelectorAll('.ixir-as-billing, .ixir-wh-billing');

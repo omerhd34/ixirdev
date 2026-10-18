@@ -1,6 +1,9 @@
-<section class="ixir-as-faq ixir-wh-faq ixir-slide ixir-slide--left is-slide-on" id="ixir-as-faq" aria-labelledby="ixir-as-faq-title">
+<section class="ixir-as-faq ixir-wh-faq ixir-wh-faq--light bg-light-blue ixir-slide ixir-slide--right is-slide-on" id="ixir-as-faq" aria-labelledby="ixir-as-faq-title">
  <div class="container">
   <header class="ixir-as-faq-head ixir-wh-plans-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill">
+    <i class="far fa-question-circle" aria-hidden="true"></i> MERAK EDİLENLER
+   </div>
    {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular" id="ixir-as-faq-title"}
    <p>E-Posta AntiSpam hizmetimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
   </header>
@@ -79,9 +82,22 @@
     if (!list) return;
     Array.prototype.forEach.call(list.querySelectorAll('.ixir-as-faq-q, .ixir-wh-faq-q'), function(btn) {
      btn.addEventListener('click', function() {
-      var item = btn.parentNode;
-      var open = item.classList.toggle('is-open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      var item = btn.closest('.ixir-as-faq-item, .ixir-wh-faq-item') || btn.parentNode;
+      var isOpen = item.classList.contains('is-open');
+      Array.prototype.forEach.call(list.querySelectorAll('.ixir-as-faq-item, .ixir-wh-faq-item'), function(other) {
+       if (other !== item) {
+        other.classList.remove('is-open');
+        var otherBtn = other.querySelector('.ixir-as-faq-q, .ixir-wh-faq-q');
+        if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+       }
+      });
+      if (isOpen) {
+       item.classList.remove('is-open');
+       btn.setAttribute('aria-expanded', 'false');
+      } else {
+       item.classList.add('is-open');
+       btn.setAttribute('aria-expanded', 'true');
+      }
      });
     });
    })();

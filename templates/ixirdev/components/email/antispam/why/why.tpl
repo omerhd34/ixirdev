@@ -1,10 +1,7 @@
-<section class="ixir-as-why bg-dark-blue ixir-slide ixir-slide--right is-slide-on" id="ixir-as-why" aria-labelledby="ixir-as-why-title">
+<section class="ixir-as-why bg-dark-blue ixir-slide ixir-slide--left is-slide-on" id="ixir-as-why" aria-labelledby="ixir-as-why-title">
   <div class="container">
     <header class="ixir-as-why-header">
-      <span class="ixir-as-why-badge">
-        <i class="fas fa-shield-alt" aria-hidden="true"></i>
-        <span>Kurumsal E-Posta Güvenliği</span>
-      </span>
+      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> KURUMSAL E-POSTA GÜVENLİĞİ</div>
       {include file="$template/components/Heading.tpl" title="E-Posta Spam Koruması: İşletmeniz İçin Neden Vazgeçilmez?" id="ixir-as-why-title" class="text-white text-center"}
       <p class="ixir-as-why-lead">
         Gelen kutunuzu spam gürültüsünden ve gelişmiş siber tehditlerden arındırın; iş sürekliliğinizi, şirket itibarınızı ve yasal uyumluluğunuzu garanti altına alın.

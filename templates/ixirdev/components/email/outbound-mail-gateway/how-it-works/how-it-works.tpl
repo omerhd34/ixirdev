@@ -1,4 +1,4 @@
-<section class="ixir-omg-workflow ixir-slide ixir-slide--left is-slide-on" id="ixir-omg-workflow" aria-labelledby="ixir-omg-workflow-title">
+<section class="ixir-omg-workflow ixir-slide ixir-slide--right is-slide-on" id="ixir-omg-workflow" aria-labelledby="ixir-omg-workflow-title">
   <script>
     {literal}
       (function() {
@@ -12,6 +12,7 @@
   </script>
   <div class="container">
     <header class="ixir-omg-section-head text-center">
+      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-cogs" aria-hidden="true"></i> ÇALIŞMA PRENSİBİ</div>
       {include file="$template/components/Heading.tpl" title="SmartHost Hizmetimiz Nasıl Çalışıyor?" id="ixir-omg-workflow-title"}
       <p>Sunucunuzdan çıkan e-postalar İXİRHOST Mail Gateway güvenlik filtrelerinden geçer ve yüksek itibarlı dağıtık sunucu kümesiyle alıcının gelen kutusuna (inbox) güvenle iletilir.</p>
     </header>

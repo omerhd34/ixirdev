@@ -13,6 +13,7 @@
    <div class="container">
     <div class="ixir-as-story-intro ixir-wh-story-intro">
      <span class="ixir-as-story-icon ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
+     <div class="ixir-badge-pill ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-filter" aria-hidden="true"></i> ANTİSPAM ÖZELLİKLERİ</div>
      {include file="$template/components/Heading.tpl" title="AntiSpam Hizmeti ve Üstün Özellikleri"}
      <p>Spam mail; alıcısı tarafından istenmeyen, zararlı dosya veya yanıltıcı içerik barındıran ya da rastgele kişilere toplu gönderilen e-postalardır. Bu iletiler yalnızca gelen kutunuzu doldurmakla kalmaz; phishing, fidye yazılımı ve cryptolocker gibi ciddi siber tehditlerin başlıca taşıyıcısı da olabilir. İXİRHOST AntiSpam hizmeti, bu tehditleri sunucunuza ulaşmadan ağ katmanında tespit ederek engeller. Sürekli güncellenen veritabanları ve makine öğrenimi algoritmalarıyla %99.8 oranında spam ve virüs engelleme sağlanır; yalnızca temiz e-postalar mail sunucunuza iletilir.</p>
      <a class="ixir-as-story-cta ixir-wh-story-cta" href="#ixir-as-plans">Hemen Satın Al</a>

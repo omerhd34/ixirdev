@@ -1,19 +1,16 @@
 <section id="home-banner" class="ixir-hero ixir-hero--kurumsal-mail-server" aria-label="Kurumsal Mail Server">
  <picture class="ixir-hero-photo ixir-hero-photo--mail">
-  <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/bg17.jpg" alt="">
+  <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/bg17.jpg" alt="Kurumsal Mail Server">
  </picture>
  <div class="container">
   <div class="ixir-hero-main">
    <div class="ixir-hero-copy">
-    <h2 class="ixir-hero-eyebrow">
-     <i class="fas fa-layer-group" aria-hidden="true"></i>
-     <span>İşletmenize Özel Altyapı</span>
-    </h2>
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-envelope-open" aria-hidden="true"></i> ÖZEL E-POSTA SUNUCUSU</div>
     <h1>Kurumsal Mail Server</h1>
     <p>Türkiye lokasyonlu, KVKK uyumlu, esnek ve yüksek performanslı kurumsal e-posta sunucu altyapısı.</p>
    </div>
    <div class="ixir-hero-actions">
-    <a href="#ixir-mail-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-mail-plans-btn ixir-wh-plans-btn">
+    <a href="#ixir-mail-plans" class="ixir-hero-btn ixir-hero-btn--primary ixir-kms-plans-btn ixir-mail-plans-btn ixir-wh-plans-btn">
      Kurumsal Mail Server Paketleri <i class="fas fa-arrow-down" aria-hidden="true"></i>
     </a>
    </div>
@@ -176,7 +173,7 @@
    window.addEventListener('resize', apply);
    window.addEventListener('load', apply);
 
-   var plansLink = document.querySelector('a.ixir-mail-plans-btn, a.ixir-wh-plans-btn');
+   var plansLink = document.querySelector('a.ixir-kms-plans-btn, a.ixir-mail-plans-btn, a.ixir-wh-plans-btn');
    if (plansLink) {
     var frame = 0;
 
@@ -205,7 +202,7 @@
     }
 
     plansLink.addEventListener('click', function(e) {
-     var plans = document.getElementById('ixir-mail-plans') || document.getElementById('ixir-wh-plans');
+     var plans = document.getElementById('ixir-kms-plans') || document.getElementById('ixir-mail-plans') || document.getElementById('ixir-wh-plans');
      if (!plans) return;
      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
      e.preventDefault();

@@ -3,10 +3,7 @@
 <section class="ixir-kms-features bg-light-blue ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-kms-features-title">
   <div class="container">
     <div class="ixir-kms-header">
-      <span class="ixir-kms-badge">
-        <i class="fas fa-layer-group" aria-hidden="true"></i>
-        <span>Özellikler &amp; Avantajlar</span>
-      </span>
+      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-layer-group" aria-hidden="true"></i> ÖZELLİKLER & AVANTAJLAR</div>
       {include file="$template/components/Heading.tpl" title="Kurumsal Mail Server Özellikleri ve Avantajları" id="ixir-kms-features-title"}
       <p class="ixir-kms-subhead">İşletmenizin kurumsal iletişimini kesintisiz, güvenli ve yüksek performanslı özel mail sunucusu altyapısıyla güçlendirin.</p>
     </div>

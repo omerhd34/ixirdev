@@ -12,26 +12,28 @@
   </script>
   <div class="container">
     <header class="ixir-omg-plans-head ixir-wh-plans-head">
-      {include file="$template/components/Heading.tpl" title="Outbound Mail Gateway (SmartHost) Paketleri" id="ixir-omg-plans-title"}
+      <div class="ixir-badge-pill ixir-ssl-badge-pill">
+       <i class="fas fa-paper-plane" aria-hidden="true"></i> SMARTHOST PAKETLERİ</div>
+      {include file="$template/components/Heading.tpl" title="Outbound Mail Gateway (SmartHost) Paketleri" id="ixir-omg-plans-title" align="center"}
       <p>İşletmenizin e-posta gönderim hacmine uygun planı seçin; mailleriniz spam'e düşmeden alıcılarına güvenle ulaşsın.</p>
     </header>
-    <div class="ixir-wh-grid ixir-wh-grid--3">
-      <article class="ixir-wh-plan">
-        <header class="ixir-wh-plan-head">
+    <div class="ixir-omg-grid ixir-wh-grid ixir-omg-grid--3 ixir-wh-grid--3">
+      <article class="ixir-omg-plan ixir-wh-plan">
+        <header class="ixir-omg-plan-head ixir-wh-plan-head">
           <h3>BUDGET</h3>
           <p>Bireysel ve küçük ölçekli gönderimler için ideal outbound çözümü</p>
         </header>
-        <div class="ixir-wh-price">
+        <div class="ixir-omg-price ixir-wh-price">
           <s>1345,42 TL</s>
-          <div class="ixir-wh-amount"><b>1034</b><span>,94</span><small>TL<small>/ay</small></small></div>
-          <span class="ixir-wh-save">%30 tasarruf</span>
+          <div class="ixir-omg-amount ixir-wh-amount"><b>1034</b><span>,94</span><small>TL<small>/ay</small></small></div>
+          <span class="ixir-omg-save ixir-wh-save">%30 tasarruf</span>
         </div>
-        <div class="ixir-wh-billing">
-          <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-budget">Ödeme Planları</button>
-          <div class="ixir-wh-billing-pop" id="ixir-wh-bill-budget" role="dialog" aria-label="Budget ödeme planı">
-            <div class="ixir-wh-billing-top">
+        <div class="ixir-omg-billing ixir-wh-billing">
+          <button type="button" class="ixir-omg-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-budget">Ödeme Planları</button>
+          <div class="ixir-omg-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-budget" role="dialog" aria-label="Budget ödeme planı">
+            <div class="ixir-omg-billing-top ixir-wh-billing-top">
               <strong>Budget Plan</strong>
-              <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
+              <button type="button" class="ixir-omg-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
             </div>
             <table>
               <thead>
@@ -57,30 +59,30 @@
             <p>* En avantajlı fiyat</p>
           </div>
         </div>
-        <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
-        <ul class="ixir-wh-specs">
+        <a class="ixir-omg-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+        <ul class="ixir-omg-specs ixir-wh-specs">
           <li><span>Aylık Maksimum Mail Çıkışı</span><b>10000</b></li>
           <li><span>Öncelikli Destek</span><b>Yok</b></li>
         </ul>
       </article>
 
-      <article class="ixir-wh-plan ixir-wh-plan--best">
-        <span class="ixir-wh-badge">En İyi Tercih</span>
-        <header class="ixir-wh-plan-head">
+      <article class="ixir-omg-plan ixir-wh-plan ixir-omg-plan--best ixir-wh-plan--best">
+        <span class="ixir-omg-badge ixir-wh-badge">En İyi Tercih</span>
+        <header class="ixir-omg-plan-head ixir-wh-plan-head">
           <h3>ECONOMY</h3>
           <p>KOBİ'ler ve düzenli kurumsal mail gönderimi yapan şirketler için optimize edilmiş</p>
         </header>
-        <div class="ixir-wh-price">
+        <div class="ixir-omg-price ixir-wh-price">
           <s>6.277 TL</s>
-          <div class="ixir-wh-amount"><b>4829</b><span>,20</span><small>TL<small>/ay</small></small></div>
-          <span class="ixir-wh-save">%30 tasarruf</span>
+          <div class="ixir-omg-amount ixir-wh-amount"><b>4829</b><span>,20</span><small>TL<small>/ay</small></small></div>
+          <span class="ixir-omg-save ixir-wh-save">%30 tasarruf</span>
         </div>
-        <div class="ixir-wh-billing">
-          <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-economy">Ödeme Planları</button>
-          <div class="ixir-wh-billing-pop" id="ixir-wh-bill-economy" role="dialog" aria-label="Economy ödeme planı">
-            <div class="ixir-wh-billing-top">
+        <div class="ixir-omg-billing ixir-wh-billing">
+          <button type="button" class="ixir-omg-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-economy">Ödeme Planları</button>
+          <div class="ixir-omg-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-economy" role="dialog" aria-label="Economy ödeme planı">
+            <div class="ixir-omg-billing-top ixir-wh-billing-top">
               <strong>Economy Plan</strong>
-              <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
+              <button type="button" class="ixir-omg-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
             </div>
             <table>
               <thead>
@@ -106,29 +108,29 @@
             <p>* En avantajlı fiyat</p>
           </div>
         </div>
-        <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
-        <ul class="ixir-wh-specs">
+        <a class="ixir-omg-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+        <ul class="ixir-omg-specs ixir-wh-specs">
           <li><span>Aylık Maksimum Mail Çıkışı</span><b>50000</b></li>
           <li><span>Öncelikli Destek</span><b>Var</b></li>
         </ul>
       </article>
 
-      <article class="ixir-wh-plan">
-        <header class="ixir-wh-plan-head">
+      <article class="ixir-omg-plan ixir-wh-plan">
+        <header class="ixir-omg-plan-head ixir-wh-plan-head">
           <h3>PROFESSIONAL</h3>
           <p>Yüksek hacimli kurumsal gönderimler ve e-ticaret altyapıları için</p>
         </header>
-        <div class="ixir-wh-price">
+        <div class="ixir-omg-price ixir-wh-price">
           <s>11.658 TL</s>
-          <div class="ixir-wh-amount"><b>8968</b><span>,38</span><small>TL<small>/ay</small></small></div>
-          <span class="ixir-wh-save">%30 tasarruf</span>
+          <div class="ixir-omg-amount ixir-wh-amount"><b>8968</b><span>,38</span><small>TL<small>/ay</small></small></div>
+          <span class="ixir-omg-save ixir-wh-save">%30 tasarruf</span>
         </div>
-        <div class="ixir-wh-billing">
-          <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-professional">Ödeme Planları</button>
-          <div class="ixir-wh-billing-pop" id="ixir-wh-bill-professional" role="dialog" aria-label="Professional ödeme planı">
-            <div class="ixir-wh-billing-top">
+        <div class="ixir-omg-billing ixir-wh-billing">
+          <button type="button" class="ixir-omg-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-professional">Ödeme Planları</button>
+          <div class="ixir-omg-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-professional" role="dialog" aria-label="Professional ödeme planı">
+            <div class="ixir-omg-billing-top ixir-wh-billing-top">
               <strong>Professional Plan</strong>
-              <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
+              <button type="button" class="ixir-omg-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
             </div>
             <table>
               <thead>
@@ -154,20 +156,20 @@
             <p>* En avantajlı fiyat</p>
           </div>
         </div>
-        <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
-        <ul class="ixir-wh-specs">
+        <a class="ixir-omg-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+        <ul class="ixir-omg-specs ixir-wh-specs">
           <li><span>Aylık Maksimum Mail Çıkışı</span><b>100000</b></li>
           <li><span>Öncelikli Destek</span><b>Var</b></li>
         </ul>
       </article>
     </div>
 
-    <div class="ixir-as-shared-box ixir-wh-shared-box">
-      <div class="ixir-as-shared-head ixir-wh-shared-head">
-        <p class="ixir-as-shared-label ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
+    <div class="ixir-omg-shared-box ixir-as-shared-box ixir-wh-shared-box">
+      <div class="ixir-omg-shared-head ixir-as-shared-head ixir-wh-shared-head">
+        <p class="ixir-omg-shared-label ixir-as-shared-label ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
         <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
       </div>
-      <ul class="ixir-as-shared ixir-wh-shared">
+      <ul class="ixir-omg-shared ixir-as-shared ixir-wh-shared">
         <li><i class="fas fa-server" aria-hidden="true"></i>1 IP/Sunucu SmartHost</li>
         <li><i class="fas fa-brain" aria-hidden="true"></i>Kendi Öğrenen Sistem</li>
         <li><i class="fas fa-mail-bulk" aria-hidden="true"></i>Aylık Birçok Mail Çıkışı</li>
@@ -184,17 +186,17 @@
     {literal}
       (function() {
         function initBilling() {
-          var root = document.getElementById('ixir-wh-plans') || document.querySelector('.ixir-wh-plans');
+          var root = document.getElementById('ixir-omg-plans') || document.getElementById('ixir-wh-plans') || document.querySelector('.ixir-omg-plans, .ixir-wh-plans');
           if (!root) return;
-          var items = root.querySelectorAll('.ixir-wh-billing');
+          var items = root.querySelectorAll('.ixir-omg-billing, .ixir-wh-billing');
 
           function closeAll(except) {
             Array.prototype.forEach.call(items, function(item) {
               if (item === except) return;
               item.classList.remove('is-open');
-              var plan = item.closest ? item.closest('.ixir-wh-plan') : null;
+              var plan = item.closest ? (item.closest('.ixir-omg-plan') || item.closest('.ixir-wh-plan')) : null;
               if (plan) plan.classList.remove('is-billing-open');
-              var btn = item.querySelector('.ixir-wh-billing-btn');
+              var btn = item.querySelector('.ixir-omg-billing-btn, .ixir-wh-billing-btn');
               if (btn) btn.setAttribute('aria-expanded', 'false');
             });
           }
@@ -203,10 +205,10 @@
             if (item.dataset && item.dataset.billingInit) return;
             if (item.dataset) item.dataset.billingInit = '1';
 
-            var btn = item.querySelector('.ixir-wh-billing-btn');
-            var closeBtn = item.querySelector('.ixir-wh-billing-close');
-            var pop = item.querySelector('.ixir-wh-billing-pop');
-            var plan = item.closest ? item.closest('.ixir-wh-plan') : null;
+            var btn = item.querySelector('.ixir-omg-billing-btn, .ixir-wh-billing-btn');
+            var closeBtn = item.querySelector('.ixir-omg-billing-close, .ixir-wh-billing-close');
+            var pop = item.querySelector('.ixir-omg-billing-pop, .ixir-wh-billing-pop');
+            var plan = item.closest ? (item.closest('.ixir-omg-plan') || item.closest('.ixir-wh-plan')) : null;
             if (!btn) return;
 
             btn.addEventListener('click', function(event) {

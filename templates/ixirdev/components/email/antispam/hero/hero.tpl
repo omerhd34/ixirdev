@@ -1,10 +1,11 @@
- <section id="home-banner" class="ixir-hero ixir-hero--antispam ixir-hero--webhosting" aria-label="AntiSpam">
+ <section id="home-banner" class="ixir-hero ixir-hero--antispam" aria-label="AntiSpam">
   <picture class="ixir-hero-photo">
-   <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/bg24.webp" alt="">
+   <img src="{$WEB_ROOT}/templates/{$template}/img/e-posta/bg24.webp" alt="AntiSpam">
   </picture>
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shield-virus" aria-hidden="true"></i> GELİŞMİŞ ANTİSPAM</div>
      <h1>E-Posta AntiSpam & Antivirüs Koruması</h1>
      <p>Yalnızca MX kaydını değiştir — gelen e-postalarını %99.8 oranında spam ve virüsten koru</p>
     </div>
