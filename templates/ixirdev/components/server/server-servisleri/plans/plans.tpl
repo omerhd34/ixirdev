@@ -1,5 +1,5 @@
  <section class="ixir-wh-plans ixir-ss-plans-section ixir-slide ixir-slide--right is-slide-on" id="ixir-ss-plans"
-  aria-labelledby="ixir-wh-plans-title">
+  aria-labelledby="ixir-ss-plans-title">
   <script>
    {literal}
     (function() {
@@ -12,12 +12,12 @@
    {/literal}
   </script>
   <div class="container">
-   <header class="ixir-wh-plans-head">
-    {include file="$template/components/Heading.tpl" title="Server Destek Paketleri" id="ixir-wh-plans-title"}
+   <header class="ixir-wh-plans-head ixir-ss-plans-head">
+    {include file="$template/components/Heading.tpl" title="Server Destek Paketleri" id="ixir-ss-plans-title"}
     <p>İhtiyacınıza en uygun destek paketine kolayca karar verin.</p>
    </header>
-   <div class="ixir-wh-grid ixir-wh-grid--3">
-    <article class="ixir-wh-plan">
+   <div class="ixir-wh-grid ixir-ss-grid ixir-wh-grid--3 ixir-ss-grid--3">
+    <article class="ixir-wh-plan ixir-ss-plan">
      <header class="ixir-wh-plan-head">
       <h3>Başlangıç</h3>
      </header>
@@ -40,7 +40,7 @@
      </ul>
     </article>
 
-    <article class="ixir-wh-plan ixir-wh-plan--best">
+    <article class="ixir-wh-plan ixir-ss-plan ixir-wh-plan--best ixir-ss-plan--best">
      <span class="ixir-wh-badge">En İyi Tercih</span>
      <header class="ixir-wh-plan-head">
       <h3>Ekonomik</h3>
@@ -64,7 +64,7 @@
      </ul>
     </article>
     
-    <article class="ixir-wh-plan">
+    <article class="ixir-wh-plan ixir-ss-plan">
      <header class="ixir-wh-plan-head">
       <h3>Profesyonel</h3>
      </header>

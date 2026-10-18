@@ -1,9 +1,9 @@
 <script>
  {literal}
   (function() {
-   var list = document.querySelector('.ixir-wh-faq-list');
+   var list = document.querySelector('.ixir-ss-faq-list') || document.querySelector('.ixir-wh-faq-list');
    if (!list) return;
-   Array.prototype.forEach.call(list.querySelectorAll('.ixir-wh-faq-q'), function(btn) {
+   Array.prototype.forEach.call(list.querySelectorAll('.ixir-ss-faq-q, .ixir-wh-faq-q'), function(btn) {
     btn.addEventListener('click', function() {
      var item = btn.parentNode;
      var open = item.classList.toggle('is-open');
@@ -57,10 +57,10 @@
 
    var sectionOptions = { threshold: 0.1, rootMargin: '40px 0px 40px 0px' };
    var storyOptions = { threshold: 0.1, rootMargin: '40px 0px 40px 0px' };
-   arm(document.getElementById('ixir-ss-plans') || document.getElementById('ixir-wh-plans'), '.ixir-wh-plans-head, .ixir-wh-plan, .ixir-wh-shared-box', 1300, sectionOptions);
-   arm(document.querySelector('.ixir-wh-story--intro'), '.ixir-wh-story-intro', 900, storyOptions);
-   arm(document.querySelector('.ixir-wh-story--features'), '.ixir-wh-story-row', 900, storyOptions);
-   arm(document.querySelector('.ixir-wh-faq'), '.ixir-wh-plans-head, .ixir-wh-faq-item', 1300, sectionOptions);
+   arm(document.getElementById('ixir-ss-plans') || document.getElementById('ixir-wh-plans'), '.ixir-ss-plans-head, .ixir-wh-plans-head, .ixir-ss-plan, .ixir-wh-plan, .ixir-wh-shared-box', 1300, sectionOptions);
+   arm(document.querySelector('.ixir-ss-story--intro') || document.querySelector('.ixir-wh-story--intro'), '.ixir-ss-story-intro, .ixir-wh-story-intro', 900, storyOptions);
+   arm(document.querySelector('.ixir-ss-story--features') || document.querySelector('.ixir-wh-story--features'), '.ixir-ss-story-row, .ixir-wh-story-row', 900, storyOptions);
+   arm(document.querySelector('.ixir-ss-faq') || document.querySelector('.ixir-wh-faq'), '.ixir-ss-plans-head, .ixir-wh-plans-head, .ixir-ss-faq-item, .ixir-wh-faq-item', 1300, sectionOptions);
   })();
  {/literal}
 </script>

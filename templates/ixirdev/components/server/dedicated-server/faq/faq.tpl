@@ -1,13 +1,13 @@
-<section class="ixir-wh-faq ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-wh-faq-title">
+<section class="ixir-ds-faq ixir-wh-faq ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-ds-faq-title">
  <div class="container">
-  <header class="ixir-wh-plans-head">
-   {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-wh-faq-title"}
+  <header class="ixir-ds-plans-head ixir-wh-plans-head">
+   {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-ds-faq-title"}
    <p>Dedicated Server paketlerimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
   </header>
 
-  <div class="ixir-wh-faq-list">
-   <div class="ixir-wh-faq-item is-open">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
+  <div class="ixir-ds-faq-list ixir-wh-faq-list">
+   <div class="ixir-ds-faq-item ixir-wh-faq-item is-open">
+    <button type="button" class="ixir-ds-faq-q ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>Hangi Dedicated Server Benim İçin Uygun?</button>
     <div class="ixir-wh-faq-a">
      <p>İhtiyacınızı ve kaynak tüketimini bilmeniz seçimde yararlı olur, çok disk okuma yazması varsa SSD veya Nvme
@@ -131,9 +131,9 @@
  {literal}
  <script>
   (function() {
-   var list = document.querySelector('.ixir-wh-faq-list');
+   var list = document.querySelector('.ixir-ds-faq-list') || document.querySelector('.ixir-wh-faq-list');
    if (!list) return;
-   Array.prototype.forEach.call(list.querySelectorAll('.ixir-wh-faq-q'), function(btn) {
+   Array.prototype.forEach.call(list.querySelectorAll('.ixir-ds-faq-q, .ixir-wh-faq-q'), function(btn) {
     btn.addEventListener('click', function() {
      var item = btn.parentNode;
      var open = item.classList.toggle('is-open');

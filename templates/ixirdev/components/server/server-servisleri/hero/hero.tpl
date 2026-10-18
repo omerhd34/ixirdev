@@ -1,4 +1,4 @@
-﻿ <section id="home-banner" class="ixir-hero ixir-hero--server-servisleri" aria-label="Server Destek Hizmeti">
+ <section id="home-banner" class="ixir-hero ixir-hero--server-servisleri" aria-label="Server Destek Hizmeti">
   <picture class="ixir-hero-photo">
    <source srcset="{$WEB_ROOT}/templates/{$template}/img/server/bg36.webp" type="image/webp">
    <img src="{$WEB_ROOT}/templates/{$template}/img/server/bg36.webp" alt="" width="1920" height="1080">
@@ -29,9 +29,9 @@
       <span>Sunucu / Servis İzleme</span>
      </li>
     </ul>
-    <div class="ixir-hero-links-wrap ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
+    <div class="ixir-hero-links-wrap ixir-ss-links-wrap" role="region" aria-label="Diğer Hizmetler">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
-     <ul class="ixir-hero-links ixir-domain-links">
+     <ul class="ixir-hero-links ixir-ss-links">
       <li>
        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
@@ -53,7 +53,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-hero-links ixir-domain-links">
+     <ul class="ixir-hero-links ixir-ss-links">
       <li>
        <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
@@ -75,7 +75,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-hero-links ixir-domain-links">
+     <ul class="ixir-hero-links ixir-ss-links">
       <li>
        <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
         <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>

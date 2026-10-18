@@ -1,13 +1,13 @@
-<section class="ixir-wh-faq ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-wh-faq-title">
+<section class="ixir-pci-faq ixir-wh-faq ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-pci-faq-title">
  <div class="container">
-  <header class="ixir-wh-plans-head">
-   {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-wh-faq-title"}
+  <header class="ixir-pci-plans-head ixir-wh-plans-head">
+   {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-pci-faq-title"}
    <p>PCI-DSS Tarama hizmetimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
   </header>
 
-  <div class="ixir-wh-faq-list">
-   <div class="ixir-wh-faq-item is-open">
-    <button type="button" class="ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
+  <div class="ixir-pci-faq-list ixir-wh-faq-list">
+   <div class="ixir-pci-faq-item ixir-wh-faq-item is-open">
+    <button type="button" class="ixir-pci-faq-q ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
       aria-hidden="true"></i>PCI-DSS Nedir?</button>
     <div class="ixir-wh-faq-a">
      <p>Payment Card Industry Data Security Standart Türkçe karşılığı ise Ödeme kartları endüstrisi veri güvenliği standartları olan ve kredi kartı ödemelerin güvenilir şekilde yapılması, sahtecilik ve dolandırıcılık işlemlerini azaltmak maksadıysa sistemin zaafiyetleri, risklerini tarayıp bildiren ve çözülmesini gerektiren bir güvenlik temelli raporlamadır.</p>

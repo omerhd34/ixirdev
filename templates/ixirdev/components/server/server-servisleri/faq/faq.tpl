@@ -1,12 +1,12 @@
- <section class="ixir-wh-faq ixir-wh-faq--light bg-light-blue ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-wh-faq-title">
+ <section class="ixir-ss-faq ixir-wh-faq ixir-wh-faq--light bg-light-blue ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-ss-faq-title">
   <div class="container">
-   <header class="ixir-wh-plans-head">
-    {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-wh-faq-title"}
+   <header class="ixir-ss-plans-head ixir-wh-plans-head">
+    {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-ss-faq-title"}
     <p>Server Destek Planlarımızla ilgili detaylı bilgiye mi ihtiyacınız var?</p>
    </header>
-   <div class="ixir-wh-faq-list">
-    <div class="ixir-wh-faq-item is-open">
-     <button type="button" class="ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
+   <div class="ixir-ss-faq-list ixir-wh-faq-list">
+    <div class="ixir-ss-faq-item ixir-wh-faq-item is-open">
+     <button type="button" class="ixir-ss-faq-q ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
        aria-hidden="true"></i>Server Yönetim Desteğini Neden Almalıyım?</button>
      <div class="ixir-wh-faq-a">
       <p>Sunucu kiralama veya barındırma hizmeti ayrı, sunucu yönetim servisi ise ayrı birer hizmettir, sunucu yönetim hizmeti teknik bilgi ve yeterlilik gerektirir, sunucu yönetimi konusunda teknik bilginiz sorunlarınızı çözmede yeterli gelmiyorsa paketlerimizi almanızı öneririz.</p>
