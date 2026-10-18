@@ -1,4 +1,4 @@
-<div class="ixir-wh-page--wp ixir-wh-page--cloud-drive">
+<div class="ixir-wh-page--cloud-drive">
  {include file="$template/components/hosting/cloud-drive/hero/hero.tpl"}
  {include file="$template/components/hosting/cloud-drive/plans/plans.tpl"}
  {include file="$template/components/hosting/cloud-drive/story/story.tpl"}

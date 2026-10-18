@@ -2,24 +2,19 @@ body:has(.ixir-wh-page--cloud-drive) .ixir-help {
   margin-top: 0;
 }
 
-.ixir-wh-page--cloud-drive .ixir-wh-diff,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff {
+.ixir-wh-page--cloud-drive .ixir-wh-diff {
   background: #ffffff;
   border-top: 1px solid #eef2f6;
   border-bottom: 1px solid #eef2f6;
 }
-.ixir-wh-page--cloud-drive .ixir-wh-diff-head h2,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-head h2 {
+.ixir-wh-page--cloud-drive .ixir-wh-diff-head h2 {
   color: #0b2545;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
 }
-.ixir-wh-page--cloud-drive .ixir-wh-diff-head p,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-head p {
+.ixir-wh-page--cloud-drive .ixir-wh-diff-head p {
   color: #64748b;
 }
-.ixir-wh-page--cloud-drive .ixir-wh-diff-grid li,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-grid li,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff--wp .ixir-wh-diff-grid li {
+.ixir-wh-page--cloud-drive .ixir-wh-diff-grid li {
   position: relative;
   border: 1px solid #eef2f6;
   border-radius: 24px;
@@ -28,9 +23,7 @@ body:has(.ixir-wh-page--cloud-drive) .ixir-help {
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   overflow: hidden;
 }
-.ixir-wh-page--cloud-drive .ixir-wh-diff-grid li::before,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-grid li::before,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff--wp .ixir-wh-diff-grid li::before {
+.ixir-wh-page--cloud-drive .ixir-wh-diff-grid li::before {
   content: "";
   position: absolute;
   inset: 0 0 auto 0;
@@ -39,24 +32,18 @@ body:has(.ixir-wh-page--cloud-drive) .ixir-help {
   opacity: 0;
   transition: opacity 0.35s ease;
 }
-.ixir-wh-page--cloud-drive .ixir-wh-diff-grid li:hover,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-grid li:hover,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff--wp .ixir-wh-diff-grid li:hover {
+.ixir-wh-page--cloud-drive .ixir-wh-diff-grid li:hover {
   transform: translateY(-5px);
   border-color: #bfdbfe;
   box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08), 0 0 24px rgba(37, 99, 235, 0.06);
 }
-.ixir-wh-page--cloud-drive .ixir-wh-diff-grid li:hover::before,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-grid li:hover::before,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff--wp .ixir-wh-diff-grid li:hover::before {
+.ixir-wh-page--cloud-drive .ixir-wh-diff-grid li:hover::before {
   opacity: 1;
 }
-.ixir-wh-page--cloud-drive .ixir-wh-diff-grid h3,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-grid h3 {
+.ixir-wh-page--cloud-drive .ixir-wh-diff-grid h3 {
   color: #0b2545;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
 }
-.ixir-wh-page--cloud-drive .ixir-wh-diff-grid p,
-.ixir-wh-page--cloud-drive.ixir-wh-page--wp .ixir-wh-diff-grid p {
+.ixir-wh-page--cloud-drive .ixir-wh-diff-grid p {
   color: #64748b;
 }

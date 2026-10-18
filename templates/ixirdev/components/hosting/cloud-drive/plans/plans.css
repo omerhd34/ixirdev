@@ -4,7 +4,7 @@
 }
 
 .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:not(.is-in),
-.ixir-wh-page--wp .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:not(.is-in) {
+.ixir-wh-page--cloud-drive .ixir-wh-plans.is-armed .ixir-wh-grid--3 .ixir-wh-plan:not(.is-in) {
   transform: translate3d(112px, 0, 0);
 }
 
