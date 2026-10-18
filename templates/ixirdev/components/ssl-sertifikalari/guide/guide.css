@@ -1,0 +1,706 @@
+.ixir-ssl-guide-section {
+  position: relative;
+  padding: 85px 0 95px;
+  background-color: #f8fafc;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(37, 99, 235, 0.04) 0%, transparent 45%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
+  border-top: 1px solid #eef2f6;
+  border-bottom: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.ixir-ssl-guide-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 380px;
+  background: radial-gradient(ellipse at center, rgba(37, 99, 235, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ixir-ssl-guide-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.ixir-ssl-guide-head {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 52px;
+}
+
+.ssl-guide-lead {
+  margin: 14px auto 0;
+  color: #64748b;
+  font-size: 16.5px;
+  line-height: 1.65;
+  max-width: 720px;
+}
+
+.ssl-guide-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-bottom: 34px;
+}
+
+.ssl-guide-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 22px;
+  padding: 34px 32px 30px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+}
+
+.ssl-guide-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 3.5px;
+  border-radius: 0 0 3px 3px;
+  opacity: 0.85;
+  transition: all 0.35s ease;
+}
+
+.ssl-guide-card--primary::before {
+  background: linear-gradient(90deg, transparent, #2563eb, #60a5fa, transparent);
+}
+
+.ssl-guide-card--warning::before {
+  background: linear-gradient(90deg, transparent, #f59e0b, #ef4444, transparent);
+}
+
+.ssl-guide-card--selection::before {
+  background: linear-gradient(90deg, transparent, #0284c7, #38bdf8, transparent);
+}
+
+.ssl-guide-card--guarantee::before {
+  background: linear-gradient(90deg, transparent, #10b981, #059669, transparent);
+}
+
+.ssl-guide-card:hover {
+  transform: translateY(-5px);
+  border-color: #cbd5e1;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.ssl-guide-card:hover::before {
+  left: 10%;
+  right: 10%;
+  opacity: 1;
+}
+
+.ssl-guide-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.ssl-guide-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #ffffff;
+  flex-shrink: 0;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ssl-icon--primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.28);
+}
+
+.ssl-icon--warning {
+  background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.25);
+}
+
+.ssl-icon--sky {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.25);
+}
+
+.ssl-icon--emerald {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.25);
+}
+
+.ssl-guide-card:hover .ssl-guide-icon-wrap {
+  transform: scale(1.08) rotate(-3deg);
+}
+
+.ssl-guide-head-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.ssl-guide-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.ssl-badge--blue {
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.ssl-badge--red {
+  background: rgba(239, 68, 68, 0.08);
+  color: #dc2626;
+  border: 1px solid rgba(239, 68, 68, 0.22);
+}
+
+.ssl-badge--indigo {
+  background: rgba(99, 102, 241, 0.08);
+  color: #4f46e5;
+  border: 1px solid rgba(99, 102, 241, 0.22);
+}
+
+.ssl-badge--sky {
+  background: rgba(2, 132, 199, 0.08);
+  color: #0284c7;
+  border: 1px solid rgba(2, 132, 199, 0.22);
+}
+
+.ssl-badge--emerald {
+  background: rgba(16, 185, 129, 0.08);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.22);
+}
+
+.ssl-guide-card-title {
+  margin: 0;
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+}
+
+.ssl-guide-card-body {
+  margin-bottom: 22px;
+}
+
+.ssl-guide-text {
+  margin: 0;
+  color: #475569;
+  font-size: 15.5px;
+  line-height: 1.78;
+}
+
+.ssl-guide-text strong {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.ssl-guide-pills-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.ssl-guide-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  font-size: 12.5px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.ssl-guide-pill i {
+  color: #2563eb;
+  font-size: 11px;
+}
+
+.ssl-guide-pill.ssl-pill--danger {
+  background: #fef2f2;
+  border-color: #fee2e2;
+  color: #991b1b;
+}
+
+.ssl-guide-pill.ssl-pill--danger i {
+  color: #ef4444;
+}
+
+.ssl-guide-showcase-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 44px 38px 40px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  margin-bottom: 34px;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.ssl-guide-showcase-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 3.5px;
+  background: linear-gradient(90deg, transparent, #6366f1, #3b82f6, transparent);
+  border-radius: 0 0 3px 3px;
+}
+
+.ssl-guide-showcase-head {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 36px;
+}
+
+.ssl-guide-showcase-title {
+  margin: 10px 0 10px;
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.ssl-guide-showcase-desc {
+  margin: 0;
+  color: #64748b;
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.ssl-guide-types-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.ssl-type-card-item {
+  position: relative;
+  background: #f8fafc;
+  border: 1px solid #eef2f6;
+  border-radius: 18px;
+  padding: 26px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease,
+              background-color 0.3s ease;
+}
+
+.ssl-type-card-item:hover {
+  transform: translateY(-6px);
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
+}
+
+.ssl-type-item-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.ssl-badge--dv {
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+}
+
+.ssl-badge--ov {
+  background: rgba(99, 102, 241, 0.1);
+  color: #4f46e5;
+}
+
+.ssl-badge--ev {
+  background: rgba(16, 185, 129, 0.1);
+  color: #059669;
+}
+
+.ssl-badge--wildcard {
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+}
+
+.ssl-type-item-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  color: #ffffff;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.icon--dv {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+
+.icon--ov {
+  background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+}
+
+.icon--ev {
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+}
+
+.icon--wildcard {
+  background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%);
+}
+
+.ssl-type-card-item:hover .ssl-type-item-icon-box {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.ssl-type-item-title-block {
+  margin-bottom: 12px;
+}
+
+.ssl-type-item-name {
+  margin: 0 0 3px;
+  color: #0b2545;
+  font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.ssl-type-item-full {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.ssl-type-item-desc {
+  margin: 0 0 18px;
+  color: #475569;
+  font-size: 13.5px;
+  line-height: 1.65;
+  flex: 1;
+}
+
+.ssl-type-item-footer {
+  padding-top: 14px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ssl-type-for-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #0b2545;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ssl-type-for-label i {
+  color: #10b981;
+  font-size: 12px;
+}
+
+.ssl-type-item-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #2563eb !important;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Space Grotesk", sans-serif;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.ssl-type-item-btn i {
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+
+.ssl-type-item-btn:hover {
+  background: #2563eb;
+  color: #ffffff !important;
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.ssl-type-item-btn:hover i {
+  transform: translateX(3px);
+}
+
+.ssl-guide-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.ssl-guide-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.ssl-guide-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #eef2f6;
+  transition: all 0.25s ease;
+}
+
+.ssl-guide-check-item:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  transform: translateX(3px);
+}
+
+.ssl-check-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(2, 132, 199, 0.1);
+  color: #0284c7;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ssl-check-content {
+  color: #475569;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+.ssl-check-content strong {
+  color: #0b2545;
+  font-weight: 700;
+}
+
+.ssl-guide-brands-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.ssl-brand-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+  font-size: 12.5px;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.ssl-brand-tag i {
+  color: #16a34a;
+  font-size: 11px;
+}
+
+.ssl-guarantee-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.ssl-guarantee-stat-card {
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: #f8fafc;
+  border: 1px solid #eef2f6;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.ssl-guarantee-stat-card:hover {
+  background: #ffffff;
+  border-color: #86efac;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.08);
+  transform: translateY(-2px);
+}
+
+.ssl-guarantee-stat-card .stat-number {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #059669;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.ssl-guarantee-stat-card .stat-label {
+  color: #64748b;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .ssl-guide-types-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ixir-ssl-guide-section {
+    padding: 65px 0 75px;
+  }
+
+  .ssl-guide-hero-grid,
+  .ssl-guide-bottom-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .ssl-guide-showcase-card {
+    padding: 34px 26px 30px;
+  }
+
+  .ssl-guide-card-title {
+    font-size: 19px;
+  }
+
+  .ssl-guide-showcase-title {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ixir-ssl-guide-section {
+    padding: 50px 0 60px;
+  }
+
+  .ssl-guide-head {
+    margin-bottom: 34px;
+  }
+
+  .ssl-guide-card {
+    padding: 24px 20px 22px;
+    border-radius: 18px;
+  }
+
+  .ssl-guide-card-head {
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .ssl-guide-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    font-size: 17px;
+  }
+
+  .ssl-guide-card-title {
+    font-size: 17.5px;
+  }
+
+  .ssl-guide-text {
+    font-size: 14.5px;
+    line-height: 1.7;
+  }
+
+  .ssl-guide-showcase-card {
+    padding: 26px 18px 24px;
+    border-radius: 18px;
+  }
+
+  .ssl-guide-types-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .ssl-type-card-item {
+    padding: 20px 18px;
+  }
+
+  .ssl-guarantee-stat-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .ssl-guide-brands-wrap {
+    gap: 8px;
+  }
+
+  .ssl-brand-tag {
+    font-size: 11.5px;
+    padding: 5px 12px;
+  }
+}
