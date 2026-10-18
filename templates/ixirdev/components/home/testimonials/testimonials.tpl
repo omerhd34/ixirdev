@@ -1,4 +1,4 @@
-<section class="ixir-reviews ixir-slide ixir-slide--left is-slide-on" id="ixirReviews" aria-label="Müşteri yorumları">
+<section class="ixir-reviews ixir-slide ixir-slide--right is-slide-on" id="ixirReviews" aria-label="Müşteri yorumları">
  <div class="container">
   <header class="ixir-reviews-head">
    <div class="pci-adv-badge"><i class="fas fa-heart text-danger"></i> %99.9 MÜŞTERİ MEMNUNİYETİ</div>
@@ -11,13 +11,13 @@
    "initials" => "OA",
    "name" => "Ozan Akçora",
    "role" => "RGLabs",
-   "text" => "17 yıldır birlikte çalıştığımız ixirhost, gelişen teknolojilere ayak uyduran ve farklı bir noktaya taşıyan öncü bir firmadır. Güvenilir, sürdürülebilir çözümler arayan her firma tarafından tercih edilmelidir."
+   "text" => "17 yıldır birlikte çalıştığımız İXİRHOST, gelişen teknolojilere ayak uyduran ve farklı bir noktaya taşıyan öncü bir firmadır. Güvenilir, sürdürülebilir çözümler arayan her firma tarafından tercih edilmelidir."
   ],
   [
    "initials" => "BD",
    "name" => "Bilgehan Demir",
    "role" => "Spiker / Yapımcı",
-   "text" => "FightClub 15 yıldır tüm hosting, kiralık sunucu ve servisleriyle ixirhost bünyesinde, çözüm odaklı ve hızlı destek, güçlü altyapı ile verdikleri hizmetler için teşekkür ederim."
+   "text" => "FightClub 15 yıldır tüm hosting, kiralık sunucu ve servisleriyle İXİRHOST bünyesinde, çözüm odaklı ve hızlı destek, güçlü altyapı ile verdikleri hizmetler için teşekkür ederim."
   ],
   [
    "initials" => "BK",
@@ -47,7 +47,7 @@
    "initials" => "OHD",
    "name" => "Ömer Halis Demir",
    "role" => "Full Stack Developer",
-   "text" => "Full stack projelerimde performans ve uptime vazgeçilmez. ixirhost altyapısı tutarlı, panel sade, teknik ekip de gerçekten geliştirici dilinden anlıyor. Gönül rahatlığıyla öneririm."
+   "text" => "Full stack projelerimde performans ve uptime vazgeçilmez. İXİRHOST altyapısı tutarlı, panel sade, teknik ekip de gerçekten geliştirici dilinden anlıyor. Gönül rahatlığıyla öneririm."
   ]
  ]}
 

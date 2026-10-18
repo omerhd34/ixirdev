@@ -1,8 +1,8 @@
-<section class="ixir-solutions ixir-slide ixir-slide--right is-slide-on" id="ixir-solutions"
+<section class="ixir-solutions ixir-slide ixir-slide--left is-slide-on" id="ixir-solutions"
  aria-label="Web hosting ve altyapı çözümleri">
  <div class="container">
   <header class="ixir-solutions-head">
-   <div class="pci-aud-badge"><span class="pci-aud-badge-dot"></span> BÜTÜNLEŞİK ÇÖZÜMLER</div>
+  <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-layer-group" aria-hidden="true"></i> HOSTING ÇÖZÜMLERİ</div>
   {include file="$template/components/Heading.tpl" title="Türkiye'nin Güvenilir Web Hosting ve Altyapı Çözümleri"}
    <p>2005'ten bu yana 22.000'den fazla müşteriye kesintisiz hizmet sunuyoruz.</p>
   </header>

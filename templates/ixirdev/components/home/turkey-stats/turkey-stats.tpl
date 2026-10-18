@@ -6,7 +6,7 @@
    {include file="$template/components/Heading.tpl" title="Türkiye Bizi Tercih Ediyor!" class="ixir-stats-heading"}
    <picture class="ixir-stats-map">
     <source srcset="{$WEB_ROOT}/templates/{$template}/img/turkey-stats/turkey-map.webp" type="image/webp">
-    <img src="{$WEB_ROOT}/templates/{$template}/img/turkey-stats/turkey-map.jpg" alt="ixirhost Türkiye" width="3600"
+    <img src="{$WEB_ROOT}/templates/{$template}/img/turkey-stats/turkey-map.jpg" alt="İXİRHOST Türkiye" width="3600"
      height="1500" decoding="async">
    </picture>
    <ul class="ixir-stats-grid">

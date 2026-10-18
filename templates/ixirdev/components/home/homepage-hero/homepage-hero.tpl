@@ -1,11 +1,12 @@
-<section id="home-banner" class="ixir-hero">
+<section id="home-banner" class="ixir-hero" aria-label="İxirHost">
  <picture class="ixir-hero-photo">
   <source srcset="{$WEB_ROOT}/templates/{$template}/img/hero-bg.webp?v=r42" type="image/webp">
-  <img src="{$WEB_ROOT}/templates/{$template}/img/hero-bg.jpg?v=r42" alt="">
+  <img src="{$WEB_ROOT}/templates/{$template}/img/hero-bg.jpg?v=r42" alt="İxirHost">
  </picture>
  <div class="container">
   <div class="ixir-hero-main">
    <div class="ixir-hero-copy">
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> 20+ YILLIK SEKTÖR TECRÜBESİ & GÜVEN</div>
     <h1>İXİRHOST ile Güvenilir Hosting</h1>
     <p>Hızlı altyapı, 7/24 destek ve uygun fiyatlarla sitenizi hemen yayına alın.</p>
    </div>

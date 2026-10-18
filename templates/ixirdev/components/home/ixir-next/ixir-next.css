@@ -62,8 +62,8 @@
 
 .ixir-next-badge i {
   font-size: 13px;
-  color: #f43f5e !important;
-  filter: drop-shadow(0 0 6px rgba(244, 63, 94, 0.5));
+  color: #38bdf8 !important;
+  filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.45));
 }
 
 .ixir-next-badge span {

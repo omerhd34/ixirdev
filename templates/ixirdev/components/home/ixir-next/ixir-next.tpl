@@ -1,13 +1,12 @@
 <section class="ixir-next ixir-slide ixir-slide--left is-slide-on" id="ixir-next" aria-labelledby="ixir-next-title">
  <div class="container">
   <div class="ixir-next-header">
-   <div class="ixir-next-badge">
-    <i class="fas fa-heart text-danger" aria-hidden="true"></i>
-    <span>SOSYAL SORUMLULUK &amp; EĞİTİM DESTEĞİ</span>
+   <div class="ixir-badge-pill ixir-ssl-badge-pill">
+    <i class="fas fa-rocket" aria-hidden="true"></i> YENİ NESİL BULUT
    </div>
    {include file="$template/components/Heading.tpl" title="İxirNext ile Geleceğe Dokunuyoruz!" id="ixir-next-title" align="center"}
    <p class="ixir-next-lead">
-    <strong>İxirhost</strong> olarak 2005 yılından bu yana internet teknolojileri üretiyoruz. Bugün bu yolculuğun bir parçasını, internetin geleceğini inşa edecek çocuklara ve gençlere armağan ediyoruz.
+    <strong>İXİRHOST</strong> olarak 2005 yılından bu yana internet teknolojileri üretiyoruz. Bugün bu yolculuğun bir parçasını, internetin geleceğini inşa edecek çocuklara ve gençlere armağan ediyoruz.
    </p>
   </div>
 
