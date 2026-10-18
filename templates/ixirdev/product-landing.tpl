@@ -30,4 +30,6 @@
  {include file="$template/components/email/antispam/antispam.tpl"}
 {elseif $ixirPageSlug == 'outbound-mail-gateway'}
  {include file="$template/components/email/outbound-mail-gateway/outbound-mail-gateway.tpl"}
+{elseif $ixirPageSlug == 'site-pratik'}
+ {include file="$template/components/site-pratik/site-pratik.tpl"}
 {/if}
