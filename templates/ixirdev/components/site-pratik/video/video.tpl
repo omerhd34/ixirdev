@@ -1,10 +1,11 @@
-<section class="ixir-sp-video-section" id="sitepratik-video" aria-labelledby="ixir-sp-video-title">
+<section class="ixir-sp-video-section ixir-slide ixir-slide--left is-slide-on" id="sitepratik-video" aria-labelledby="ixir-sp-video-title">
  <div class="container">
   <header class="ixir-sp-video-head">
    <div class="ixir-sp-video-badge">
     <i class="fab fa-youtube" aria-hidden="true"></i>
     <span>Video Rehber</span>
    </div>
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-play-circle" aria-hidden="true"></i> VİDEOLU ANLATIM</div>
    {include file="$template/components/Heading.tpl" title="SitePratik'i Yakından Tanıyın" id="ixir-sp-video-title"}
    <p class="ixir-sp-video-subtitle">Dakikalar içinde nasıl profesyonel bir web sitesi oluşturabileceğinizi izleyin.</p>
   </header>

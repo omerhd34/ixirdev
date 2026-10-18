@@ -1,4 +1,4 @@
-<section class="ixir-sp-demo-section" id="sitepratik-demo" aria-labelledby="ixir-sp-demo-title">
+<section class="ixir-sp-demo-section ixir-slide ixir-slide--right is-slide-on" id="sitepratik-demo" aria-labelledby="ixir-sp-demo-title">
  <div class="container">
   <div class="ixir-sp-demo-grid">
    <div class="ixir-sp-demo-content">
@@ -7,6 +7,7 @@
      <span>Canlı Demo &amp; Editör</span>
     </div>
 
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-magic" aria-hidden="true"></i> ÜCRETSİZ DENE</div>
     <h2 class="ixir-sp-demo-title" id="ixir-sp-demo-title">
      Şimdi Ücretsiz Deneyin!
     </h2>

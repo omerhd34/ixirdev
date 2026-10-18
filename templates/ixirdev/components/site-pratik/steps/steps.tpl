@@ -1,6 +1,7 @@
-<section class="ixir-sp-steps" id="sitepratik-adimlar" aria-labelledby="ixir-sp-steps-title">
+<section class="ixir-sp-steps ixir-slide ixir-slide--left is-slide-on" id="sitepratik-adimlar" aria-labelledby="ixir-sp-steps-title">
  <div class="container">
   <header class="ixir-sp-steps-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shoe-prints" aria-hidden="true"></i> 3 ADIMDA YAYINLA</div>
    {include file="$template/components/Heading.tpl" title="Şimdi Üç Adımda Web Sitenizi Yayınlayın" id="ixir-sp-steps-title" align="center"}
    <p class="ixir-sp-steps-subtitle">Temanı seç, içeriklerini yaz ve web siteni dakikalar içerisinde yayınla! Teknik bilgi gerektirmez.</p>
   </header>

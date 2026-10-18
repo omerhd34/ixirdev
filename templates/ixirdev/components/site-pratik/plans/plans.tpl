@@ -13,27 +13,29 @@
  </script>
  <div class="container">
   <header class="ixir-wh-plans-head ixir-sp-plans-head">
-   {include file="$template/components/Heading.tpl" title="SitePratik Paketleri" id="sitepratik-paketleri-title"}
+   <div class="ixir-badge-pill ixir-ssl-badge-pill">
+    <i class="fas fa-magic" aria-hidden="true"></i> SİTEPRATİK PAKETLERİ</div>
+   {include file="$template/components/Heading.tpl" title="SitePratik Paketleri" id="sitepratik-paketleri-title" align="center"}
    <p>İhtiyacınıza uygun paketi seçin, sitenizi dakikalar içinde hemen yayına alın.</p>
   </header>
   <div class="ixir-wh-grid ixir-sp-grid ixir-wh-grid--3 ixir-sp-grid--3">
    <article class="ixir-wh-plan ixir-sp-plan">
-    <header class="ixir-wh-plan-head">
+    <header class="ixir-sp-plan-head ixir-wh-plan-head">
      <h3>BUDGET</h3>
      <p>En iyi başlangıcı yapın.</p>
     </header>
-    <div class="ixir-wh-price">
+    <div class="ixir-sp-price ixir-wh-price">
      <s>128,84 TL</s>
-     <div class="ixir-wh-amount"><b>82</b><span>,59</span><small>TL<small>/ay</small></small></div>
-     <span class="ixir-wh-save">%50 tasarruf</span>
+     <div class="ixir-sp-amount ixir-wh-amount"><b>82</b><span>,59</span><small>TL<small>/ay</small></small></div>
+     <span class="ixir-sp-save ixir-wh-save">%50 tasarruf</span>
     </div>
-    <div class="ixir-wh-billing">
-     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-budget">Ödeme
+    <div class="ixir-sp-billing ixir-wh-billing">
+     <button type="button" class="ixir-sp-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-budget">Ödeme
       Planları</button>
-     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-budget" role="dialog" aria-label="Budget ödeme planı">
+     <div class="ixir-sp-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-budget" role="dialog" aria-label="Budget ödeme planı">
       <div class="ixir-wh-billing-top">
        <strong>Budget</strong>
-       <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
+       <button type="button" class="ixir-sp-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
       </div>
       <table>
        <thead>
@@ -65,7 +67,7 @@
      </div>
     </div>
     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
-    <ul class="ixir-wh-specs">
+    <ul class="ixir-sp-specs ixir-wh-specs">
      <li><span>Web Alanı(GB)</span><b>1</b></li>
      <li><span>E-Posta Sayısı</span><b>5</b></li>
      <li><span>Aylık Trafik(GB)</span><b>10</b></li>
@@ -73,23 +75,23 @@
     </ul>
    </article>
    <article class="ixir-wh-plan ixir-sp-plan ixir-wh-plan--best ixir-sp-plan--best">
-    <span class="ixir-wh-badge">En İyi Tercih</span>
-    <header class="ixir-wh-plan-head">
+    <span class="ixir-sp-badge ixir-wh-badge">En İyi Tercih</span>
+    <header class="ixir-sp-plan-head ixir-wh-plan-head">
      <h3>ECONOMY</h3>
      <p>Profesyonel bir site açın.</p>
     </header>
-    <div class="ixir-wh-price">
+    <div class="ixir-sp-price ixir-wh-price">
      <s>156,65 TL</s>
-     <div class="ixir-wh-amount"><b>100</b><span>,42</span><small>TL<small>/ay</small></small></div>
-     <span class="ixir-wh-save">%50 tasarruf</span>
+     <div class="ixir-sp-amount ixir-wh-amount"><b>100</b><span>,42</span><small>TL<small>/ay</small></small></div>
+     <span class="ixir-sp-save ixir-wh-save">%50 tasarruf</span>
     </div>
-    <div class="ixir-wh-billing">
-     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-economy">Ödeme
+    <div class="ixir-sp-billing ixir-wh-billing">
+     <button type="button" class="ixir-sp-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-economy">Ödeme
       Planları</button>
-     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-economy" role="dialog" aria-label="Economy ödeme planı">
+     <div class="ixir-sp-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-economy" role="dialog" aria-label="Economy ödeme planı">
       <div class="ixir-wh-billing-top">
        <strong>Economy</strong>
-       <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
+       <button type="button" class="ixir-sp-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
       </div>
       <table>
        <thead>
@@ -121,7 +123,7 @@
      </div>
     </div>
     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
-    <ul class="ixir-wh-specs">
+    <ul class="ixir-sp-specs ixir-wh-specs">
      <li><span>Web Alanı(GB)</span><b>3</b></li>
      <li><span>E-Posta Sayısı</span><b>10</b></li>
      <li><span>Aylık Trafik(GB)</span><b>100</b></li>
@@ -129,23 +131,23 @@
     </ul>
    </article>
    <article class="ixir-wh-plan ixir-sp-plan">
-    <header class="ixir-wh-plan-head">
+    <header class="ixir-sp-plan-head ixir-wh-plan-head">
      <h3>PROFESSIONAL</h3>
      <p>İşinizi internete taşıyın.</p>
     </header>
-    <div class="ixir-wh-price">
+    <div class="ixir-sp-price ixir-wh-price">
      <s>184,47 TL</s>
-     <div class="ixir-wh-amount"><b>118</b><span>,24</span><small>TL<small>/ay</small></small></div>
-     <span class="ixir-wh-save">%50 tasarruf</span>
+     <div class="ixir-sp-amount ixir-wh-amount"><b>118</b><span>,24</span><small>TL<small>/ay</small></small></div>
+     <span class="ixir-sp-save ixir-wh-save">%50 tasarruf</span>
     </div>
-    <div class="ixir-wh-billing">
-     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
+    <div class="ixir-sp-billing ixir-wh-billing">
+     <button type="button" class="ixir-sp-billing-btn ixir-wh-billing-btn" aria-expanded="false"
       aria-controls="ixir-wh-bill-professional">Ödeme Planları</button>
-     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-professional" role="dialog"
+     <div class="ixir-sp-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-professional" role="dialog"
       aria-label="Professional ödeme planı">
       <div class="ixir-wh-billing-top">
        <strong>Professional</strong>
-       <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
+       <button type="button" class="ixir-sp-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
       </div>
       <table>
        <thead>
@@ -177,7 +179,7 @@
      </div>
     </div>
     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
-    <ul class="ixir-wh-specs">
+    <ul class="ixir-sp-specs ixir-wh-specs">
      <li><span>Web Alanı(GB)</span><b>Limitsiz</b></li>
      <li><span>E-Posta Sayısı</span><b>Limitsiz</b></li>
      <li><span>Aylık Trafik(GB)</span><b>Limitsiz</b></li>

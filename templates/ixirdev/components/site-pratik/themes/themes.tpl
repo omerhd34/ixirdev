@@ -1,6 +1,7 @@
-<section class="ixir-sp-themes" id="sitepratik-temalar" aria-labelledby="ixir-sp-themes-title">
+<section class="ixir-sp-themes ixir-slide ixir-slide--left is-slide-on" id="sitepratik-temalar" aria-labelledby="ixir-sp-themes-title">
   <div class="container">
     <header class="ixir-sp-themes-head">
+      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-laptop-code" aria-hidden="true"></i> MODERN TEMALAR</div>
       {include file="$template/components/Heading.tpl" title="Hazır Profesyonel Tasarımlar Arasından Dilediğinizi Seçin!" id="ixir-sp-themes-title" align="center"}
       <p class="ixir-sp-themes-subtitle">Mobil ve SEO uyumlu yüzlerce tema ile profesyonel bir web sitesine kavuşun.</p>
     </header>
@@ -285,34 +286,3 @@
 
   </div>
 </section>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const tabBtns = document.querySelectorAll('.ixir-sp-tab-btn');
-  const tabPanes = document.querySelectorAll('.ixir-sp-tab-pane');
-
-  if (!tabBtns.length || !tabPanes.length) return;
-
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', function () {
-      const targetControl = this.getAttribute('aria-controls');
-      const targetPane = document.getElementById(targetControl);
-
-      if (!targetPane) return;
-
-      tabBtns.forEach(b => {
-        b.classList.remove('active');
-        b.setAttribute('aria-selected', 'false');
-      });
-
-      tabPanes.forEach(p => {
-        p.classList.remove('active');
-      });
-
-      this.classList.add('active');
-      this.setAttribute('aria-selected', 'true');
-      targetPane.classList.add('active');
-    });
-  });
-});
-</script>

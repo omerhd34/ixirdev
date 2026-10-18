@@ -12,6 +12,40 @@
    });
   })();
   (function() {
+   function initThemeTabs() {
+    var tabBtns = document.querySelectorAll('.ixir-sp-tab-btn');
+    var tabPanes = document.querySelectorAll('.ixir-sp-tab-pane');
+    if (!tabBtns.length || !tabPanes.length) return;
+
+    Array.prototype.forEach.call(tabBtns, function(btn) {
+     btn.addEventListener('click', function() {
+      var targetControl = this.getAttribute('aria-controls');
+      var targetPane = document.getElementById(targetControl);
+      if (!targetPane) return;
+
+      Array.prototype.forEach.call(tabBtns, function(b) {
+       b.classList.remove('active');
+       b.setAttribute('aria-selected', 'false');
+      });
+
+      Array.prototype.forEach.call(tabPanes, function(p) {
+       p.classList.remove('active');
+      });
+
+      this.classList.add('active');
+      this.setAttribute('aria-selected', 'true');
+      targetPane.classList.add('active');
+     });
+    });
+   }
+
+   if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initThemeTabs);
+   } else {
+    initThemeTabs();
+   }
+  })();
+  (function() {
    var root = document.querySelector('.ixir-sp-plans') || document.querySelector('.ixir-wh-plans');
    if (!root) return;
    var items = root.querySelectorAll('.ixir-sp-billing, .ixir-wh-billing');

@@ -6,6 +6,7 @@
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-magic" aria-hidden="true"></i> WEB SİHİRBAZI</div>
      <h1>SitePratik - Web Sitesi Oluşturucu</h1>
      <p>Teknik bilgi ve uzman desteği ihtiyacı olmadan Yapay Zeka ile dakikalar içerisinde web sitenizi hazırlayıp
       yayınlayın!</p>

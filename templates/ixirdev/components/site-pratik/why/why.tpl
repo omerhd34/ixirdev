@@ -1,6 +1,7 @@
-<section class="ixir-sp-why" id="sitepratik-neden" aria-labelledby="ixir-sp-why-title">
+<section class="ixir-sp-why ixir-slide ixir-slide--right is-slide-on" id="sitepratik-neden" aria-labelledby="ixir-sp-why-title">
  <div class="container">
   <header class="ixir-sp-why-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-brain" aria-hidden="true"></i> YAPAY ZEKA GÜCÜ</div>
    {include file="$template/components/Heading.tpl" title="Neden SitePratik? <span class=\"ixir-sp-why-ai-pill\">✦ AI</span>" id="ixir-sp-why-title" align="center"}
    <p class="ixir-sp-why-subtitle">Güçlü özellikler, sezgisel araçlar — web sitenizi bir üst seviyeye taşıyın.</p>
   </header>

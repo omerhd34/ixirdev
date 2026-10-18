@@ -13,6 +13,7 @@
  <div class="container">
   <div class="ixir-wh-story-intro ixir-sp-story-intro">
    <span class="ixir-wh-story-icon ixir-sp-story-icon" aria-hidden="true"><i class="fas fa-star"></i></span>
+   <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-palette" aria-hidden="true"></i> SİTEPRATİK ÖZELLİKLERİ</div>
    {include file="$template/components/Heading.tpl" title="SitePratik'in Öne Çıkan Özellikleri"}
    <p>Profesyonel bir web sitesi için ihtiyacınız olan her şey tek platformda.</p>
   </div>

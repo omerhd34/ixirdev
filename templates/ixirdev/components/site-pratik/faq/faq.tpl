@@ -1,6 +1,9 @@
  <section class="ixir-wh-faq ixir-sp-faq ixir-slide ixir-slide--left is-slide-on" id="sitepratik-sss" aria-labelledby="sitepratik-sss-title">
   <div class="container">
    <header class="ixir-wh-plans-head ixir-sp-faq-head">
+    <div class="ixir-badge-pill ixir-ssl-badge-pill">
+     <i class="far fa-question-circle" aria-hidden="true"></i> MERAK EDİLENLER
+    </div>
     {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular" id="sitepratik-sss-title"}
     <p>Sitepratik paketlerimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
    </header>
