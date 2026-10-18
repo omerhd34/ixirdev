@@ -1,4 +1,4 @@
-<section class="ixir-colo-story ixir-wh-story ixir-wh-story--light bg-light-blue ixir-slide ixir-slide--left is-slide-on"
+<section class="ixir-colo-story ixir-wh-story ixir-wh-story--light bg-light-blue ixir-slide ixir-slide--right is-slide-on"
  aria-labelledby="ixir-colo-story-title">
  <script>
   {literal}
@@ -12,11 +12,12 @@
   {/literal}
  </script>
  <div class="container">
-  <div class="colo-story-intro ixir-wh-story-intro">
-   <span class="colo-story-icon ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
+  <div class="colo-story-intro ixir-colo-story-intro ixir-wh-story-intro">
+   <span class="colo-story-icon ixir-colo-story-icon ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-hdd" aria-hidden="true"></i> BARINDIRMA NEDİR</div>
    {include file="$template/components/Heading.tpl" title="Co-Location Nedir?" id="ixir-colo-story-title"}
    <p><strong>Co-Location (Sunucu Barındırma)</strong> hizmeti, donanımsal olarak size olan bir sunucunun yüksek internet bağlantısının bulunduğu, 7/24 izlenen, yedekli internet ve elektrik altyapısına ve yüksek güvenliğe sahip veri merkezlerinde barındırılması işlemine denir. <strong>Co-location işlemi</strong> ile siz sadece kabin, internet ve elektrik hattı ve eğer sahipseniz sunucu destek maliyetlerine katlanırsınız.</p>
-   <a class="colo-story-cta ixir-wh-story-cta" href="#ixir-colo-cta">Hemen Satın Al</a>
+   <a class="colo-story-cta ixir-colo-story-cta ixir-wh-story-cta" href="#ixir-colo-cta">Hemen Satın Al</a>
   </div>
  </div>
 </section>

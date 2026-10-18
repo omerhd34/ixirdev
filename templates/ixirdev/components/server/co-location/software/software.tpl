@@ -16,8 +16,9 @@
     <header class="ixir-colo-software-head">
      <span class="ixir-colo-software-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
      <div>
+      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-compact-disc" aria-hidden="true"></i> LİSANS ÇÖZÜMLERİ</div>
       {include file="$template/components/Heading.tpl" title="Fiziksel Sunucunuz İçin Kiralayabileceğiniz Yazılımlar"}
-      <p>İxirhost, bir çok yazılım firmasıyla işbirliği yapmakta ve size avantajlı lisans kiralama modelleri sunabilmektedir.</p>
+      <p>İXİRHOST, bir çok yazılım firmasıyla işbirliği yapmakta ve size avantajlı lisans kiralama modelleri sunabilmektedir.</p>
      </div>
     </header>
     <ul>

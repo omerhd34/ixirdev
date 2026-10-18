@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/co-location/cta/cta.css?v={$versionHash}-r3">
 
-<section class="ixir-colo-cta" aria-labelledby="ixir-colo-cta-title">
+<section class="ixir-colo-cta ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-colo-cta-title">
   <div class="container">
     <div class="colo-cta-grid">
       
@@ -10,6 +10,7 @@
           <span>Uzman Danışman Desteği</span>
         </div>
 
+        <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-phone-alt" aria-hidden="true"></i> ÖZEL TEKLİF AL</div>
         <h2 class="colo-cta-title" id="ixir-colo-cta-title">
           Co-Location
           <span class="colo-cta-title-highlight">Hakkında Daha Fazla Bilgi</span>

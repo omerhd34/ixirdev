@@ -5,6 +5,7 @@
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-building" aria-hidden="true"></i> SUNUCU BARINDIRMA</div>
      <h1>Co-Location (Sunucu Barındırma)</h1>
      <p>Kendi sunucunuzu TIER III veri merkezinde ekonomik ve güvenle barındırın.</p>
     </div>
