@@ -1,4 +1,4 @@
-﻿ <section id="home-banner" class="ixir-hero ixir-hero--windows" aria-label="Windows Hosting">
+ <section id="home-banner" class="ixir-hero ixir-hero--windows" aria-label="Windows Hosting">
   <picture class="ixir-hero-photo">
    <img src="{$WEB_ROOT}/templates/{$template}/img/bg37.webp?v=r2" alt="">
   </picture>
@@ -32,9 +32,9 @@
       <span>Ücretsiz SSL Sertifikası</span>
      </li>
     </ul>
-    <div class="ixir-hero-links-wrap ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
+    <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer Hizmetler">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
-     <ul class="ixir-hero-links ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
@@ -56,7 +56,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-hero-links ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
         <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
@@ -78,7 +78,7 @@
        </a>
       </li>
      </ul>
-     <ul class="ixir-hero-links ixir-domain-links">
+     <ul class="ixir-hero-links">
       <li>
        <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
         <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
