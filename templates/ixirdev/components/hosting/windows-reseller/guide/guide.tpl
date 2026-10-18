@@ -1,4 +1,4 @@
-﻿<section class="ixir-wh-guide ixir-wh-guide--dark bg-dark-blue ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting rehberi">
+<section class="ixir-wh-guide ixir-wh-guide--light bg-light-blue ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-guide" aria-labelledby="ixir-wh-guide-title">
  <script>
   {literal}
    (function() {
@@ -11,6 +11,11 @@
   {/literal}
  </script>
  <div class="container">
+  <header class="ixir-wh-plans-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-book-open" aria-hidden="true"></i> BİLGİ REHBERİ</div>
+   {include file="$template/components/Heading.tpl" title="Windows Reseller Hosting Rehberi" id="ixir-wh-guide-title"}
+   <p>Plesk bayi hosting altyapısı, müşteri yönetimi ve paket seçimi hakkında bilmeniz gerekenler.</p>
+  </header>
   <div class="ixir-wh-guide-list">
    <article class="ixir-wh-guide-item">
     <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fab fa-windows"></i></span>
@@ -34,17 +39,6 @@
 </section>
 <script>
  {literal}
-  (function() {
-   var list = document.querySelector('.ixir-wh-faq-list');
-   if (!list) return;
-   Array.prototype.forEach.call(list.querySelectorAll('.ixir-wh-faq-q'), function(btn) {
-    btn.addEventListener('click', function() {
-     var item = btn.parentNode;
-     var open = item.classList.toggle('is-open');
-     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-   });
-  })();
   (function() {
    var table = document.querySelector('.ixir-wh-table');
    if (!table) return;

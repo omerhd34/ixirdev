@@ -1,4 +1,4 @@
-<section class="ixir-wh-manage bg-light-blue ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-wh-manage-title">
+<section class="ixir-wh-manage bg-light-blue ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-wh-manage-title">
  <script>
   {literal}
    (function() {
@@ -12,6 +12,7 @@
  </script>
  <div class="container">
   <header class="ixir-wh-manage-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-user-cog" aria-hidden="true"></i> MERKEZİ YÖNETİM</div>
    {include file="$template/components/Heading.tpl" title="Hosting Firmanızı Profesyonelce Yönetin!" id="ixir-wh-manage-title"}
    <p>Plesk Yönetim Paneli ile Tüm Kontrol Sizde! Müşterilerinizi Dilediğiniz Gibi Yönetin.</p>
   </header>

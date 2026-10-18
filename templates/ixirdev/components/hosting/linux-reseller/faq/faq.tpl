@@ -1,6 +1,9 @@
-<section class="ixir-wh-faq ixir-wh-faq--light bg-light-blue ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-wh-faq-title">
+<section class="ixir-wh-faq ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-wh-faq-title">
  <div class="container">
   <header class="ixir-wh-plans-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill">
+    <i class="far fa-question-circle" aria-hidden="true"></i> MERAK EDİLENLER
+   </div>
    {include file="$template/components/Heading.tpl" title="Sıkça Sorulan Sorular"  id="ixir-wh-faq-title"}
    <p>Linux Hosting paketlerimiz ile ilgili detaylı bilgiye mi ihtiyacınız var?</p>
   </header>
@@ -66,4 +69,32 @@
    </div>
   </div>
  </div>
+ <script>
+  {literal}
+   (function() {
+    var list = document.querySelector('.ixir-wh-faq-list');
+    if (!list) return;
+    Array.prototype.forEach.call(list.querySelectorAll('.ixir-wh-faq-q'), function(btn) {
+     btn.addEventListener('click', function() {
+      var item = btn.closest('.ixir-wh-faq-item') || btn.parentNode;
+      var isOpen = item.classList.contains('is-open');
+      Array.prototype.forEach.call(list.querySelectorAll('.ixir-wh-faq-item'), function(other) {
+       if (other !== item) {
+        other.classList.remove('is-open');
+        var otherBtn = other.querySelector('.ixir-wh-faq-q');
+        if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+       }
+      });
+      if (isOpen) {
+       item.classList.remove('is-open');
+       btn.setAttribute('aria-expanded', 'false');
+      } else {
+       item.classList.add('is-open');
+       btn.setAttribute('aria-expanded', 'true');
+      }
+     });
+    });
+   })();
+  {/literal}
+ </script>
 </section>

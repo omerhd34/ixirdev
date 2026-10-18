@@ -1,10 +1,11 @@
  <section id="home-banner" class="ixir-hero ixir-hero--webhosting" aria-label="Windows Reseller Hosting">
   <picture class="ixir-hero-photo">
-   <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/bg23.webp" alt="">
+   <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/bg23.webp" alt="Windows Reseller Hosting">
   </picture>
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fab fa-windows" aria-hidden="true"></i> WINDOWS BAYİ HOSTING</div>
      <h1>Windows Reseller Hosting</h1>
      <p>Windows ve Plesk Altyapılı Reseller Hosting</p>
     </div>
@@ -31,7 +32,7 @@
       <span>Ücretsiz Site Taşıma</span>
      </li>
     </ul>
-    <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer hizmetler">
+    <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer Hizmetler">
      <p class="ixir-hero-label">Diğer Hizmetler</p>
      <ul class="ixir-hero-links">
       <li>

@@ -5,5 +5,5 @@
 {include file="$template/components/hosting/windows-reseller/diff/diff.tpl"}
 {include file="$template/components/hosting/windows-reseller/features/features.tpl"}
 {include file="$template/components/hosting/windows-reseller/compare/compare.tpl"}
-{include file="$template/components/hosting/windows-reseller/faq/faq.tpl"}
 {include file="$template/components/hosting/windows-reseller/guide/guide.tpl"}
+{include file="$template/components/hosting/windows-reseller/faq/faq.tpl"}

@@ -13,7 +13,9 @@
   </script>
   <div class="container">
    <header class="ixir-wh-plans-head">
-    {include file="$template/components/Heading.tpl" title="Windows Reseller Hosting Paketleri" id="ixir-wh-plans-title"}
+    <div class="ixir-badge-pill ixir-ssl-badge-pill">
+     <i class="fab fa-windows" aria-hidden="true"></i> WINDOWS RESELLER PLANLARI</div>
+    {include file="$template/components/Heading.tpl" title="Windows Reseller Hosting Paketleri" id="ixir-wh-plans-title" align="center"}
     <p>Windows Reseller Hosting paketlerimiz arasından size en uygun olan seçimi yapın.</p>
    </header>
    <div class="ixir-wh-grid">

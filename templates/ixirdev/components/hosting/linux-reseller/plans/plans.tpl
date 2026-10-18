@@ -13,7 +13,9 @@
   </script>
   <div class="container">
    <header class="ixir-wh-plans-head">
-    {include file="$template/components/Heading.tpl" title="Linux Reseller Hosting Paketleri" id="ixir-wh-plans-title"}
+    <div class="ixir-badge-pill ixir-ssl-badge-pill">
+     <i class="fas fa-users-cog" aria-hidden="true"></i> LINUX RESELLER PLANLARI</div>
+    {include file="$template/components/Heading.tpl" title="Linux Reseller Hosting Paketleri" id="ixir-wh-plans-title" align="center"}
     <p>Linux Reseller Hosting paketlerimiz arasından size en uygun olan seçimi yapın.</p>
    </header>
    <div class="ixir-wh-grid">

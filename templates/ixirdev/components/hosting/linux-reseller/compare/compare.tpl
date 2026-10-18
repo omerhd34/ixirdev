@@ -1,4 +1,4 @@
-<section class="ixir-wh-compare ixir-wh-compare--dark bg-dark-blue ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-compare"
+<section class="ixir-wh-compare ixir-wh-compare--dark bg-dark-blue ixir-slide ixir-slide--left is-slide-on" id="ixir-wh-compare"
  aria-labelledby="ixir-wh-compare-title">
  <script>
   {literal}
@@ -13,6 +13,7 @@
  </script>
  <div class="container">
   <header class="ixir-wh-plans-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-chart-pie" aria-hidden="true"></i> BAYİ KARŞILAŞTIRMA</div>
    {include file="$template/components/Heading.tpl" title="Özellik Karşılaştırma Tablosu" id="ixir-wh-compare-title"}
    <p>Linux Reseller Hosting paketlerimiz arasından size en uygun olan seçimi yapın</p>
   </header>

@@ -1,4 +1,4 @@
-<section class="ixir-wh-features ixir-wh-features--dark ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-wh-features-title">
+<section class="ixir-wh-features ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-wh-features-title">
  <script>
   {literal}
    (function() {
@@ -12,6 +12,7 @@
  </script>
  <div class="container">
   <header class="ixir-wh-features-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-cogs" aria-hidden="true"></i> GELİŞMİŞ ÖZELLİKLER</div>
    {include file="$template/components/Heading.tpl" title="Windows Reseller Hosting Özellikleri" id="ixir-wh-features-title"}
   </header>
   <ul class="ixir-wh-features-grid">

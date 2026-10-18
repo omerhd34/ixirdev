@@ -1,10 +1,11 @@
  <section id="home-banner" class="ixir-hero ixir-hero--webhosting" aria-label="Linux Reseller Hosting">
   <picture class="ixir-hero-photo">
-   <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/bg35.webp" alt="">
+   <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/bg35.webp" alt="Linux Reseller Hosting">
   </picture>
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-users-cog" aria-hidden="true"></i> LINUX BAYİ HOSTING</div>
      <h1>Linux Reseller Hosting</h1>
      <p>CloudLinux ve CPanel Altyapılı Reseller Hosting</p>
     </div>

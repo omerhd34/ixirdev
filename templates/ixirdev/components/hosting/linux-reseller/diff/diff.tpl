@@ -1,4 +1,4 @@
-<section class="ixir-wh-diff ixir-wh-diff--2col ixir-wh-diff--dark ixir-slide ixir-slide--right is-slide-on"
+<section class="ixir-wh-diff ixir-wh-diff--2col ixir-wh-diff--dark ixir-slide ixir-slide--left is-slide-on"
  aria-labelledby="ixir-wh-diff-title">
  <script>
   {literal}
@@ -13,6 +13,7 @@
  </script>
  <div class="container">
   <header class="ixir-wh-diff-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-user-friends" aria-hidden="true"></i> AJANS ÇÖZÜMLERİ</div>
    {include file="$template/components/Heading.tpl" title="Linux Reseller Hosting Hizmeti Kimler İçin Uygundur?" id="ixir-wh-diff-title"}
   </header>
   <ul class="ixir-wh-diff-grid">

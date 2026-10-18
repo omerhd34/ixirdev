@@ -5,5 +5,5 @@
 {include file="$template/components/hosting/linux-reseller/diff/diff.tpl"}
 {include file="$template/components/hosting/linux-reseller/features/features.tpl"}
 {include file="$template/components/hosting/linux-reseller/compare/compare.tpl"}
-{include file="$template/components/hosting/linux-reseller/faq/faq.tpl"}
 {include file="$template/components/hosting/linux-reseller/guide/guide.tpl"}
+{include file="$template/components/hosting/linux-reseller/faq/faq.tpl"}

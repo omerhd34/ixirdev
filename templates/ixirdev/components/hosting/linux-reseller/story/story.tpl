@@ -13,6 +13,7 @@
   <div class="container">
    <div class="ixir-wh-story-intro">
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
+    <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-network-wired" aria-hidden="true"></i> BAYİ HOSTING NEDİR</div>
     {include file="$template/components/Heading.tpl" title="Linux Reseller Hosting Nedir?"}
     <p>Linux Reseller Hosting hizmeti, site tasarımı yapan kişi ve ajanslar için oluşturulmuş uygun fiyatlı ve yüksek
      performanslı bir hosting hizmetidir. Reseller Hosting hizmeti ile müşterilerinizi ve hosting paketlerini
