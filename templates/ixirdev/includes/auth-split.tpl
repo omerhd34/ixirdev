@@ -93,7 +93,7 @@
     </a>
     <h2>Henüz hesabınız yok mu?</h2>
     <p>Hemen ücretsiz hesap oluşturun; hosting, domain ve e-posta hizmetlerinizi tek panelden yönetmek için
-     <strong>ixirhost</strong> ayrıcalıklarından yararlanın.
+     <strong>İXİRHOST</strong> ayrıcalıklarından yararlanın.
     </p>
     <button type="button" class="ixir-overlay-btn" data-ixir-auth-goto="register"><i class="fas fa-user-plus"
       aria-hidden="true"></i> KAYIT OL</button>

@@ -23,3 +23,114 @@
  grid-column: 1 / -1;
  margin: 0 0 calc(var(--ixir-hero-label-gap) - var(--ixir-links-row-gap, 10px));
 }
+
+.ixir-badge-pill,
+.ixir-ssl-badge-pill {
+ display: flex !important;
+ align-items: center !important;
+ justify-content: center !important;
+ width: fit-content !important;
+ max-width: 100% !important;
+ margin-left: auto !important;
+ margin-right: auto !important;
+ margin-top: 0 !important;
+ margin-bottom: 16px !important;
+ gap: 8px !important;
+ padding: 6px 18px !important;
+ border-radius: 999px !important;
+ background: rgba(37, 99, 235, 0.08) !important;
+ border: 1px solid rgba(37, 99, 235, 0.2) !important;
+ color: #2563eb !important;
+ font-family: "Space Grotesk", "Roboto", sans-serif !important;
+ font-size: 12.5px !important;
+ font-weight: 700 !important;
+ letter-spacing: 0.04em !important;
+ text-transform: uppercase !important;
+ box-sizing: border-box !important;
+}
+
+.bg-dark-blue .ixir-badge-pill,
+.bg-dark-blue .ixir-ssl-badge-pill,
+.bg-dark .ixir-badge-pill,
+.bg-dark .ixir-ssl-badge-pill,
+.ixir-cs-pro .ixir-badge-pill,
+.ixir-cs-pro .ixir-ssl-badge-pill,
+.ixir-wh-plans.ixir-cs-pro .ixir-badge-pill,
+.ixir-wh-plans.ixir-cs-pro .ixir-ssl-badge-pill,
+section[style*="#091322"] .ixir-badge-pill,
+section[style*="#091322"] .ixir-ssl-badge-pill,
+div[style*="#091322"] .ixir-badge-pill,
+div[style*="#091322"] .ixir-ssl-badge-pill,
+.ixir-domain-transfer .ixir-badge-pill,
+.ixir-domain-transfer .ixir-ssl-badge-pill,
+.ixir-xfer-notes .ixir-badge-pill,
+.ixir-xfer-notes .ixir-ssl-badge-pill {
+ background: rgba(59, 130, 246, 0.15) !important;
+ border-color: rgba(96, 165, 250, 0.35) !important;
+ color: #60a5fa !important;
+}
+
+.ixir-hero .ixir-hero-copy .ixir-badge-pill,
+.ixir-hero .ixir-hero-copy .ixir-ssl-badge-pill {
+ display: inline-flex !important;
+ align-items: center !important;
+ justify-content: flex-start !important;
+ width: fit-content !important;
+ max-width: 100% !important;
+ margin-top: 0 !important;
+ margin-bottom: 18px !important;
+ margin-left: 0 !important;
+ margin-right: auto !important;
+ gap: 8px !important;
+ padding: 6px 18px !important;
+ border-radius: 999px !important;
+ background: rgba(255, 255, 255, 0.12) !important;
+ border: 1px solid rgba(255, 255, 255, 0.25) !important;
+ color: #ffffff !important;
+ backdrop-filter: blur(8px) !important;
+ -webkit-backdrop-filter: blur(8px) !important;
+ box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+ font-family: "Space Grotesk", "Roboto", sans-serif !important;
+ font-size: 12px !important;
+ font-weight: 700 !important;
+ letter-spacing: 0.05em !important;
+ text-transform: uppercase !important;
+}
+
+.ixir-hero .ixir-hero-copy .ixir-badge-pill i,
+.ixir-hero .ixir-hero-copy .ixir-ssl-badge-pill i {
+ color: #60a5fa !important;
+}
+
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-hero-copy .ixir-badge-pill,
+#order-standard_cart.ixir-domain-page .ixir-hero .ixir-hero-copy .ixir-ssl-badge-pill,
+.ixir-hero-copy.text-center .ixir-badge-pill,
+.ixir-hero-copy.text-center .ixir-ssl-badge-pill {
+ margin-left: auto !important;
+ margin-right: auto !important;
+ justify-content: center !important;
+}
+
+.ixir-badge-pill--left,
+.ixir-ssl-badge-pill--left,
+.text-left > .ixir-badge-pill,
+.text-left > .ixir-ssl-badge-pill,
+.ixir-domain-transfer-copy .ixir-badge-pill,
+.ixir-domain-transfer-copy .ixir-ssl-badge-pill,
+.ixir-xfer-notes .ixir-badge-pill,
+.ixir-xfer-notes .ixir-ssl-badge-pill,
+.ixir-wh-story-copy .ixir-badge-pill,
+.ixir-wh-story-copy .ixir-ssl-badge-pill,
+.ixir-wh-diff-copy .ixir-badge-pill,
+.ixir-wh-diff-copy .ixir-ssl-badge-pill,
+.site-heading--align-left + .ixir-badge-pill,
+.site-heading--align-left + .ixir-ssl-badge-pill,
+.site-heading--align-left .ixir-badge-pill,
+.site-heading--align-left .ixir-ssl-badge-pill {
+ margin-left: 0 !important;
+ margin-right: auto !important;
+}
+
+.ixir-wh-plans-head {
+ text-align: center;
+}

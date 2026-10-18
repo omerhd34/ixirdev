@@ -32,4 +32,6 @@
  {include file="$template/components/email/outbound-mail-gateway/outbound-mail-gateway.tpl"}
 {elseif $ixirPageSlug == 'site-pratik'}
  {include file="$template/components/site-pratik/site-pratik.tpl"}
+{elseif $ixirPageSlug == 'ssl-sertifikalari'}
+ {include file="$template/components/ssl-sertifikalari/ssl-sertifikalari.tpl"}
 {/if}
