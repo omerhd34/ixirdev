@@ -13,6 +13,7 @@
   <div class="container">
    <div class="ixir-wh-story-intro">
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
+    <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-info-circle" aria-hidden="true"></i> LINUX REHBERİ</div>
     {include file="$template/components/Heading.tpl" title="Linux Hosting Nedir?"}
     <p><strong>Web hosting hizmeti</strong>, web sitenizi veya uygulamalarınızı web üzerine yayınlayabilmenizi sağlayan
      bir hizmettir.

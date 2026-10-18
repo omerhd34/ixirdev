@@ -1,10 +1,11 @@
 <section id="home-banner" class="ixir-hero ixir-hero--webhosting" aria-label="Developer Hosting">
  <picture class="ixir-hero-photo">
-  <img src="{$WEB_ROOT}/templates/{$template}/img/developer-hero.webp?v=r1" alt="">
+  <img src="{$WEB_ROOT}/templates/{$template}/img/developer-hero.webp?v=r1" alt="Developer Hosting">
  </picture>
  <div class="container">
   <div class="ixir-hero-main">
    <div class="ixir-hero-copy">
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-terminal" aria-hidden="true"></i> GELİŞTİRİCİ PLATFORMU</div>
     <h1>Developer Hosting</h1>
     <p>SSH erişimi, Git, Composer ve npm desteğiyle Laravel, Node.js, Python ve Ruby projelerinizi geliştirin ve
      yayınlayın. Türkiye'nin öncü developer hosting hizmeti.</p>

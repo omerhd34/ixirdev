@@ -13,8 +13,8 @@
  <div class="container">
   <div class="ixir-wh-about-body">
    <header class="ixir-wh-about-head ixir-wh-about-anim">
-    <span class="ixir-wh-about-eyebrow"><i class="fas fa-code" aria-hidden="true"></i> Geliştirici Ortamı</span>
-    {include file="$template/components/Heading.tpl" title="ixirhost Developer Hosting: Yazılımcıya Özel, Gerçek Bir Geliştirici Ortamı" id="ixir-wh-about-title"}
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-code" aria-hidden="true"></i> GELİŞTİRİCİ ORTAMI</div>
+    {include file="$template/components/Heading.tpl" title="İXİRHOST Developer Hosting: Yazılımcıya Özel, Gerçek Bir Geliştirici Ortamı" id="ixir-wh-about-title"}
     <p class="ixir-wh-about-lead">İXİRHOST Developer Hosting, yazılım geliştiricilerin modern uygulama geliştirme ve
      yayınlama süreçleri için ihtiyaç duydukları tüm araçları tek bir paylaşımlı hosting ortamında sunan, Türkiye'nin
      bu alanda öncü hizmetidir. <strong>SSH/terminal erişimi</strong>, <strong>Git</strong> entegrasyonu,

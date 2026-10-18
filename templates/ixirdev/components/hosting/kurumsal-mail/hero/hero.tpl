@@ -1,14 +1,11 @@
 <section id="home-banner" class="ixir-hero ixir-hero--webhosting" aria-label="Kurumsal Mail Hosting">
  <picture class="ixir-hero-photo ixir-hero-photo--mail">
-  <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/bg35.webp" alt="">
+  <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/bg35.webp" alt="Kurumsal Mail Hosting">
  </picture>
  <div class="container">
   <div class="ixir-hero-main">
    <div class="ixir-hero-copy">
-    <h2 class="ixir-hero-eyebrow">
-     <i class="fas fa-layer-group" aria-hidden="true"></i>
-     <span>Hepsi bir arada</span>
-    </h2>
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-at" aria-hidden="true"></i> KURUMSAL E-POSTA</div>
     <h1>Kurumsal Mail Hosting</h1>
     <p>Büyük ve Esnek Kapasiteli, Türkiye Merkezli, KVKK Uyumlu</p>
    </div>

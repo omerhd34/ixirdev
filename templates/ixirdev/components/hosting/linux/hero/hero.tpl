@@ -1,10 +1,11 @@
  <section id="home-banner" class="ixir-hero ixir-hero--webhosting" aria-label="Linux Hosting">
   <picture class="ixir-hero-photo">
-   <img src="{$WEB_ROOT}/templates/{$template}/img/bg6.webp?v=r1" alt="">
+   <img src="{$WEB_ROOT}/templates/{$template}/img/bg6.webp?v=r1" alt="Linux Hosting">
   </picture>
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fab fa-linux" aria-hidden="true"></i> HIZLI LINUX HOSTING</div>
      <h1>Linux Hosting</h1>
      <p>NVMe SSD, LiteSpeed ve cPanel ile güçlü, hızlı ve kesintisiz bir web hosting deneyimi yaşayın. Linux yerine
       Windows tercih ediyorsanız planlarımıza göz atabilirsiniz.</p>

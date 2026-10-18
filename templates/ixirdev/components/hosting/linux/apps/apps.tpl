@@ -19,6 +19,7 @@
     <i class="fab fa-wordpress" aria-hidden="true"></i>
    </span>
   </div>
+  <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-cubes" aria-hidden="true"></i> HAZIR UYGULAMALAR</div>
   <h2 id="ixir-wh-apps-title">Hazır Sistemler</h2>
   <p class="ixir-wh-apps-lead">Tek Tıkla Yükle ve Başla</p>
   <p class="ixir-wh-apps-copy">Dünyanın en popüler içerik yönetim sistemlerinin son versiyonlarını tek tıkla kurulum

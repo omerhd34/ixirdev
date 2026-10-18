@@ -1,6 +1,7 @@
-<section class="ixir-km-reviews" aria-labelledby="ixir-km-reviews-title">
+<section class="ixir-km-reviews ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-km-reviews-title">
  <div class="container">
   <header class="ixir-km-reviews-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-smile" aria-hidden="true"></i> MÜŞTERİ DENEYİMİ</div>
    {include file="$template/components/Heading.tpl" title="Müşterilerimiz Ne Diyor?" id="ixir-km-reviews-title"}
    <p>Farklı sektörlerden kurumsal e-posta müşterilerimizin deneyimleri</p>
   </header>

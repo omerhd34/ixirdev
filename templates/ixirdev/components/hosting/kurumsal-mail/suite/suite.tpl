@@ -1,6 +1,7 @@
-<section class="ixir-km-suite" id="ixir-km-suite" aria-labelledby="ixir-km-suite-title">
+<section class="ixir-km-suite bg-dark-blue ixir-slide ixir-slide--left is-slide-on" id="ixir-km-suite" aria-labelledby="ixir-km-suite-title">
  <div class="container">
   <header class="ixir-km-suite-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-briefcase" aria-hidden="true"></i> OFİS SUITE</div>
    {include file="$template/components/Heading.tpl" title="Yalnızca E-Posta Hizmeti Değil, Bütünleşik Bir Çözüm Sunuyoruz" id="ixir-km-suite-title"}
    <p>Normal bir web hosting üzerindeki mail alışverişi gibi değil; takvimler, kişiler, notlar, video konferans, anlık
     mesajlaşma ve dosya paylaşımı gibi işinizi kolaylaştıracak fonksiyonlarla birlikte.</p>

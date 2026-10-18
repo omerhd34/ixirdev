@@ -1,4 +1,4 @@
-﻿<section class="ixir-wh-guide ixir-slide ixir-slide--right is-slide-on" aria-label="Web hosting rehberi">
+<section class="ixir-wh-guide ixir-wh-guide--dark bg-dark-blue ixir-slide ixir-slide--left is-slide-on" id="ixir-wh-guide" aria-labelledby="ixir-wh-guide-title">
  <script>
   {literal}
    (function() {
@@ -11,6 +11,11 @@
   {/literal}
  </script>
  <div class="container">
+  <header class="ixir-wh-plans-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-book-open" aria-hidden="true"></i> BİLGİ REHBERİ</div>
+   {include file="$template/components/Heading.tpl" title="Linux Hosting Rehberi" id="ixir-wh-guide-title"}
+   <p>Web hosting altyapısı, paket seçim kriterleri ve güvenilirlik hakkında bilmeniz gerekenler.</p>
+  </header>
   <div class="ixir-wh-guide-list">
    <article class="ixir-wh-guide-item">
     <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-server"></i></span>
@@ -18,7 +23,7 @@
     <p>Web sitenizin yükleme hızı yalnızca kodunuza ya da tasarımınıza değil, barındırıldığı server'ın altyapısına
      doğrudan bağlıdır. Geleneksel HDD disk sistemlerine kıyasla Sınırsız NVMe SSD altyapısı, dosya okuma ve yazma
      hızını 40
-     kata kadar artırarak veritabanı sorgularını anlık tamamlar, sayfa yükleme sürelerini minimuma indirir. ixirhost web
+     kata kadar artırarak veritabanı sorgularını anlık tamamlar, sayfa yükleme sürelerini minimuma indirir. İXİRHOST web
      hosting paketlerinde kullanılan <strong>LiteSpeed web server'u</strong> ise Apache'ye göre 10 kat daha yüksek
      performans sunar, özellikle WordPress, WooCommerce ve OpenCart gibi içerik yönetim sistemlerinde bu fark ziyaretçi
      deneyimine ve Google sıralamasına doğrudan yansır. Tüm paketlerde ayrıca LiteSpeed Cache, PHP X-RAY ve AccelerateWP
@@ -38,7 +43,7 @@
    <article class="ixir-wh-guide-item">
     <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
     <h2>İXİRHOST ile Türkiye'de Güvenilir Linux Hosting</h2>
-    <p>ixirhost, tüm web hosting hizmetlerini İstanbul'daki TIER III+ veri merkezinden, 3 operatör yedekli ağ
+    <p>İXİRHOST, tüm web hosting hizmetlerini İstanbul'daki TIER III+ veri merkezinden, 3 operatör yedekli ağ
      altyapısıyla sunmaktadır. Bu sayede %99.9 uptime garantisiyle web siteniz her zaman erişilebilir kalır. Satın alma
      tarihinden itibaren 15 gün boyunca geçerli olan koşulsuz para iade garantisi sayesinde hizmeti risksiz deneyimleme
      şansına sahip olursunuz. WordPress tabanlı bir siteniz varsa <a href="{$WEB_ROOT}/wordpress-hosting">WordPress
@@ -50,17 +55,6 @@
 </section>
 <script>
  {literal}
- (function() {
-  var list = document.querySelector('.ixir-wh-faq-list');
-  if (!list) return;
-  Array.prototype.forEach.call(list.querySelectorAll('.ixir-wh-faq-q'), function(btn) {
-   btn.addEventListener('click', function() {
-    var item = btn.parentNode;
-    var open = item.classList.toggle('is-open');
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-   });
-  });
- })();
  (function() {
   var table = document.querySelector('.ixir-wh-table');
   if (!table) return;

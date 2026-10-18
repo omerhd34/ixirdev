@@ -1,8 +1,8 @@
-<section class="ixir-km-cmp" id="ixir-km-cmp" aria-labelledby="ixir-km-cmp-title" data-usd="49" data-gmail="7"
+<section class="ixir-km-cmp ixir-slide ixir-slide--left is-slide-on" id="ixir-km-cmp" aria-labelledby="ixir-km-cmp-title" data-usd="49" data-gmail="7"
  data-ms="6">
  <div class="container">
   <header class="ixir-km-cmp-head">
-   <span class="ixir-km-cmp-eyebrow"><i class="fas fa-balance-scale" aria-hidden="true"></i>Fiyat Karşılaştırması</span>
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-balance-scale" aria-hidden="true"></i> FİYAT KARŞILAŞTIRMASI</div>
    {include file="$template/components/Heading.tpl" title="Kurumsal E-Posta Hosting İçin Neden Daha Fazla Ödeyeceksiniz?" id="ixir-km-cmp-title"}
    <p>İXİRHOST'ta sabit TL fiyatı ödersiniz. Kullanıcı sayısı arttıkça fark katlanır.</p>
   </header>

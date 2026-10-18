@@ -332,7 +332,7 @@
   margin-bottom: 14px;
 }
 .ixir-km-cmp-row-name {
-  color: #0b2545;
+  color: #ffffff;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -542,5 +542,8 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 .ixir-km-cmp .ixir-km-cmp-save-head p {
+  color: #ffffff;
+}
+.ixir-km-cmp .ixir-km-cmp-row-name {
   color: #ffffff;
 }

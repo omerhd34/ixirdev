@@ -13,6 +13,7 @@
  </script>
  <div class="container">
   <header class="ixir-wh-diff-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-certificate" aria-hidden="true"></i> E-POSTA FARKI</div>
    {include file="$template/components/Heading.tpl" title="Kurumsal Mail Hosting: Fark Yaratan Özellikler" id="ixir-wh-diff-title"}
   </header>
   <ul class="ixir-wh-diff-grid">

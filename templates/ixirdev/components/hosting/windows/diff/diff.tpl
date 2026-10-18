@@ -12,6 +12,7 @@
   </script>
   <div class="container">
    <header class="ixir-wh-diff-head">
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-star" aria-hidden="true"></i> İXİRHOST FARKI</div>
     {include file="$template/components/Heading.tpl" title="İXİRHOST ile Farkı Hissedin!" id="ixir-wh-diff-title"}
     <p>Aradığınız üstün performanslı web hosting hizmeti ile bugün tanışın.</p>
    </header>

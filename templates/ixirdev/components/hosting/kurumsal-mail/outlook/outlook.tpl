@@ -1,4 +1,4 @@
-<section class="ixir-km-outlook" aria-labelledby="ixir-km-outlook-title">
+<section class="ixir-km-outlook ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-km-outlook-title">
  <div class="container">
   <div class="ixir-km-outlook-inner">
    <figure class="ixir-km-outlook-shot">
@@ -8,6 +8,7 @@
    </figure>
    <div class="ixir-km-outlook-copy">
     <span class="ixir-km-outlook-eyebrow"><i class="fab fa-microsoft" aria-hidden="true"></i>Microsoft Outlook</span>
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fab fa-microsoft" aria-hidden="true"></i> OUTLOOK ENTEGRASYONU</div>
     {include file="$template/components/Heading.tpl" title="MAPI ile Tam Outlook Desteği" id="ixir-km-outlook-title"}
     <p>Standart POP3/IMAP iletişimi yerine Outlook üzerinde MAPI ile tüm önemli bilgilerinizi tam senkronize
      edebilirsiniz.</p>

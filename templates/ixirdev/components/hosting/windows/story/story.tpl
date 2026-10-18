@@ -13,6 +13,7 @@
   <div class="container">
    <div class="ixir-wh-story-intro">
     <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
+    <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-desktop" aria-hidden="true"></i> WINDOWS REHBERİ</div>
     {include file="$template/components/Heading.tpl" title="Windows Hosting Nedir?"}
     <p>Web hosting hizmetinin bir kolu olan <strong>Windows Hosting</strong>, <strong>ASP.NET</strong>, <strong>.NET
       Core</strong>, <strong>MVC</strong> gibi yazılım dilleri ve
@@ -24,7 +25,7 @@
      hizmettir.</p>
     <a class="ixir-wh-story-cta" href="#ixir-wh-plans">Hemen Satın Al</a>
    </div>
-   <article class="ixir-wh-story-row ixir-wh-story-row--cpanel">
+   <article class="ixir-wh-story-row ixir-wh-story-row--windows">
     <div class="ixir-wh-story-visual" aria-hidden="true">
      <img src="{$WEB_ROOT}/templates/{$template}/img/hosting/windows-server.webp?v=3" alt="">
     </div>

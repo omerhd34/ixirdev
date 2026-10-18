@@ -1,5 +1,5 @@
-<section class="ixir-wh-guide ixir-wh-guide--dark ixir-slide ixir-slide--left is-slide-on"
- aria-label="Developer Hosting rehberi">
+<section class="ixir-wh-guide ixir-wh-guide--dark ixir-slide ixir-slide--left is-slide-on" id="ixir-wh-guide"
+ aria-labelledby="ixir-wh-guide-title">
  <script>
   {literal}
    (function() {
@@ -12,6 +12,11 @@
   {/literal}
  </script>
  <div class="container">
+  <header class="ixir-wh-plans-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-book-open" aria-hidden="true"></i> BİLGİ REHBERİ</div>
+   {include file="$template/components/Heading.tpl" title="Developer Hosting Rehberi" id="ixir-wh-guide-title"}
+   <p>Geliştirici araçları, terminal erişimi ve modern framework destekleri hakkında bilmeniz gerekenler.</p>
+  </header>
   <div class="ixir-wh-guide-list">
    <article class="ixir-wh-guide-item">
     <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-terminal"></i></span>
@@ -34,7 +39,7 @@
    <article class="ixir-wh-guide-item">
     <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-code"></i></span>
     <h2>İXİRHOST ile Geliştirici Dostu Hosting</h2>
-    <p>ixirhost Developer Hosting, İstanbul TIER III+ veri merkezinde CloudLinux ve cPanel ile sunulur. Klasik web
+    <p>İXİRHOST Developer Hosting, İstanbul TIER III+ veri merkezinde CloudLinux ve cPanel ile sunulur. Klasik web
      siteleri için <a href="{$WEB_ROOT}/linux-hosting">Linux Hosting</a>, WordPress odaklı ihtiyaçlar için
      <a href="{$WEB_ROOT}/wordpress-hosting">WordPress Hosting</a> paketlerimizi de inceleyebilirsiniz. 15 gün
      koşulsuz iade garantisiyle hizmeti risksiz deneyimleyebilirsiniz.

@@ -13,6 +13,7 @@
   </script>
   <div class="container">
    <header class="ixir-wh-plans-head">
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-balance-scale" aria-hidden="true"></i> WINDOWS KARŞILAŞTIRMA</div>
     {include file="$template/components/Heading.tpl" title="Özellik Karşılaştırma Tablosu" id="ixir-wh-compare-title"}
     <p>Windows Hosting paketlerimiz arasından size en uygun olan seçimi yapın</p>
    </header>

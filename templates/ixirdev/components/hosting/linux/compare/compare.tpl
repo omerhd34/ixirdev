@@ -13,6 +13,7 @@
  </script>
  <div class="container">
   <header class="ixir-wh-plans-head">
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-columns" aria-hidden="true"></i> LINUX KARŞILAŞTIRMA</div>
    {include file="$template/components/Heading.tpl" title="Özellik Karşılaştırma Tablosu" id="ixir-wh-compare-title"}
    <p>Linux Hosting paketlerimiz arasından size en uygun olan seçimi yapın</p>
   </header>

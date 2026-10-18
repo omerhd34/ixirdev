@@ -1,4 +1,4 @@
-<section class="ixir-km-tr" aria-labelledby="ixir-km-tr-title">
+<section class="ixir-km-tr ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-km-tr-title">
  <div class="container">
   <div class="ixir-km-tr-inner">
    <div class="ixir-km-tr-media">
@@ -8,6 +8,7 @@
    </div>
    <div class="ixir-km-tr-copy">
     <span class="ixir-km-tr-eyebrow"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Yerli Altyapı</span>
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-flag" aria-hidden="true"></i> YERLİ VERİ MERKEZİ</div>
     {include file="$template/components/Heading.tpl" title="Kurumsal E-mail ile<br> Tüm Verileriniz Türkiye'de" id="ixir-km-tr-title"}
     <p>Yalnızca e-posta sunucularımız ve verileriniz değil; gelen ve giden antispam, outbound filtreleme
      sunucularımız da Türkiye'de. Dolayısıyla KVKK 6698'e tam uyumlu, yerli iletişim ve yerli operatörler ile yerel

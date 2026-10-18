@@ -1,10 +1,11 @@
  <section id="home-banner" class="ixir-hero ixir-hero--windows" aria-label="Windows Hosting">
   <picture class="ixir-hero-photo">
-   <img src="{$WEB_ROOT}/templates/{$template}/img/bg37.webp?v=r2" alt="">
+   <img src="{$WEB_ROOT}/templates/{$template}/img/bg37.webp?v=r2" alt="Windows Hosting">
   </picture>
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fab fa-windows" aria-hidden="true"></i> GÜÇLÜ WINDOWS HOSTING</div>
      <h1>Windows Hosting</h1>
      <p>ASP.NET, .NET Core ve MSSQL ile oluşturulmuş projeleriniz için Windows Hosting hizmeti. Windows yerine Linux
       tercih ediyorsanız planlarımıza göz atabilirsiniz.</p>
