@@ -5,6 +5,7 @@
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> PCI-DSS UYUMLULUK</div>
      <h1>PCI Uyumluluk Hizmeti</h1>
      <p>PCI Uyumluluk Hizmeti ile Sanal Pos Güvenliği ve Uyumluluğuna Sahip Olun!</p>
     </div>
@@ -117,7 +118,7 @@
     window.addEventListener('resize', apply);
     window.addEventListener('load', apply);
 
-    var plansLink = document.querySelector('a.ixir-wh-plans-btn');
+    var plansLink = document.querySelector('a.ixir-pci-plans-btn, a.ixir-wh-plans-btn');
     if (plansLink) {
      var frame = 0;
 
@@ -146,7 +147,7 @@
      }
 
      plansLink.addEventListener('click', function(e) {
-      var plans = document.getElementById('ixir-wh-plans');
+      var plans = document.getElementById('ixir-pci-plans') || document.getElementById('ixir-wh-plans');
       if (!plans) return;
       if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
       e.preventDefault();

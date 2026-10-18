@@ -1,12 +1,13 @@
 <link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/advantages/advantages.css?v={$versionHash}-r3">
 
-<section class="ixir-pci-advantages ixir-slide ixir-slide--right is-slide-on" aria-labelledby="ixir-pci-advantages-title">
+<section class="ixir-pci-advantages bg-dark-blue ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-pci-advantages-title">
   <div class="container">
     <div class="pci-adv-header">
       <span class="pci-adv-badge">
         <i class="fas fa-shield-alt" aria-hidden="true"></i>
         <span>Avantajlar</span>
       </span>
+      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-medal" aria-hidden="true"></i> PCI AVANTAJLARI</div>
       {include file="$template/components/Heading.tpl" title="PCI - DSS Avantajları" id="ixir-pci-advantages-title"}
       <p class="pci-adv-subhead">PCI - DSS uyumluluğu ile online ödeme güvenliğinizi en üst standartlara taşıyın, marka itibarınızı ve satışlarınızı güvenceye alın.</p>
     </div>

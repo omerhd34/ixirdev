@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/operations/operations.css?v={$versionHash}-r3">
 
-<section class="ixir-pci-ops ixir-slide ixir-slide--left is-slide-on" id="ixir-pci-ops" aria-labelledby="ixir-pci-ops-title">
+<section class="ixir-pci-ops bg-light-blue ixir-slide ixir-slide--right is-slide-on" id="ixir-pci-ops" aria-labelledby="ixir-pci-ops-title">
   <script>
     {literal}
       (function() {
@@ -21,6 +21,7 @@
         <i class="fas fa-clipboard-check" aria-hidden="true"></i>
         <span>Denetim Kapsamı</span>
       </span>
+      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-tasks" aria-hidden="true"></i> TARAMA ADIMLARI</div>
       {include file="$template/components/Heading.tpl" title="PCI - DSS Taraması Sırasında Yapılan İşlemler" id="ixir-pci-ops-title"}
       <p class="pci-ops-subhead">
         Altyapınız, IP bloklarınız, web portallarınız ve ödeme kanallarınız uluslararası standartlara göre 12 kritik güvenlik maddesinde uçtan uca taranır.

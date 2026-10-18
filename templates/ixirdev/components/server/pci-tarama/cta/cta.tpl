@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/cta/cta.css?v={$versionHash}-r14">
 
-<section class="ixir-pci-cta ixir-slide ixir-slide--left is-slide-on" id="ixir-pci-cta" aria-labelledby="ixir-pci-cta-title">
+<section class="ixir-pci-cta bg-dark-blue ixir-slide ixir-slide--left is-slide-on" id="ixir-pci-cta" aria-labelledby="ixir-pci-cta-title">
   <div class="container">
     <div class="pci-cta-grid">
       
@@ -10,6 +10,7 @@
           <span>Uzman Danışman Desteği</span>
         </div>
 
+        <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shield-check" aria-hidden="true"></i> UYUMLULUK BAŞLAT</div>
         <h2 class="pci-cta-title" id="ixir-pci-cta-title">
           PCI - DSS Tarama
           <span class="pci-cta-title-highlight">Hakkında Daha Fazla Bilgi</span>

@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/how-it-works/how-it-works.css?v={$versionHash}-r3">
 
-<section class="ixir-pci-how ixir-slide ixir-slide--right is-slide-on" id="ixir-pci-how" aria-labelledby="ixir-pci-how-title">
+<section class="ixir-pci-how bg-dark-blue ixir-slide ixir-slide--left is-slide-on" id="ixir-pci-how" aria-labelledby="ixir-pci-how-title">
   <script>
     {literal}
       (function() {
@@ -24,6 +24,7 @@
             <i class="fas fa-cogs" aria-hidden="true"></i>
             <span>Adım Adım Denetim Süreci</span>
           </span>
+          <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-search-plus" aria-hidden="true"></i> NASIL ÇALIŞIR</div>
           {include file="$template/components/Heading.tpl" title="PCI - DSS Tarama Hizmeti Nasıl Çalışır?" id="ixir-pci-how-title" class="text-left"}
           <p class="pci-how-subhead">
             Uluslararası standartlarda 4 aşamalı uçtan uca tarama ve iyileştirme metodolojisiyle güvenlik açıklarınızı tespit edip kapatıyoruz.

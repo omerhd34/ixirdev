@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/audience/audience.css?v={$versionHash}-r3">
 
-<section class="ixir-pci-audience ixir-slide ixir-slide--left is-slide-on" id="ixir-pci-audience" aria-labelledby="ixir-pci-audience-title">
+<section class="ixir-pci-audience bg-light-blue ixir-slide ixir-slide--right is-slide-on" id="ixir-pci-audience" aria-labelledby="ixir-pci-audience-title">
   <script>
     {literal}
       (function() {
@@ -21,6 +21,7 @@
         <i class="fas fa-user-shield" aria-hidden="true"></i>
         <span>Kapsam & Hedef Kitle</span>
       </span>
+      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-store" aria-hidden="true"></i> HEDEF SEKTÖRLER</div>
       {include file="$template/components/Heading.tpl" title="Kimler PCI - DSS Tarama Hizmeti Kullanmalıdır?" id="ixir-pci-audience-title"}
       <p class="pci-aud-subhead">
         Online ödeme ve kart hamili verilerini işleyen, saklayan veya aracı kurumlara aktaran tüm işletmeler için uluslararası PCI standartlarına uyum zorunludur.

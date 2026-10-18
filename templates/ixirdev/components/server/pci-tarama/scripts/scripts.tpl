@@ -48,8 +48,6 @@
    }
 
    reveal('.ixir-pci-story, .ixir-wh-story', '.pci-story-intro, .ixir-pci-story-intro, .ixir-wh-story-intro, .ixir-wh-story-row', 900, 0.2);
-   reveal('.ixir-wh-diff', '.ixir-wh-diff-head, .ixir-wh-diff-grid li', 1100, 0.15);
-   reveal('.ixir-wh-software', '.ixir-wh-software-card', 1100, 0.15);
    reveal('.ixir-pci-faq, .ixir-wh-faq', '.ixir-pci-plans-head, .ixir-wh-plans-head, .ixir-pci-faq-item, .ixir-wh-faq-item', 1300, 0.15);
   })();
 
