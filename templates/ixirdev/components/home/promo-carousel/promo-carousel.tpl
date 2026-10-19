@@ -2,6 +2,7 @@
   [
     "theme" => "linux-hosting",
     "badge" => "cPanel & NVMe SSD",
+    "icon" => "fas fa-server",
     "title" => "Yüksek Performanslı Linux Hosting",
     "desc" => "NVMe SSD altyapısı, LiteSpeed web sunucusu, ücretsiz SSL ve cPanel kolaylığıyla web sitelerinize üstün hız ve kesintisiz performans kazandırın.",
     "features" => [
@@ -18,6 +19,7 @@
   [
     "theme" => "windows-hosting",
     "badge" => "Windows Server 2022 & Plesk",
+    "icon" => "fab fa-windows",
     "title" => "Yüksek Performanslı Windows Hosting",
     "desc" => "Windows Server 2022, ASP.NET Core 9 ve SQL Server 2022 desteğiyle kurumsal Microsoft teknolojilerinizi Plesk panel konforunda güvenle çalıştırın.",
     "features" => [
@@ -34,6 +36,7 @@
   [
     "theme" => "wordpress",
     "badge" => "LiteSpeed & LSCache & 10x Hız",
+    "icon" => "fab fa-wordpress",
     "title" => "Yüksek Performanslı WordPress Hosting",
     "desc" => "WordPress sitelerinize özel optimize edilmiş LiteSpeed Cache, AccelerateWP ve PHP X-Ray teknolojileriyle 10 kata kadar daha hızlı sayfa açılışları sağlayın.",
     "features" => [
@@ -50,6 +53,7 @@
   [
     "theme" => "mail",
     "badge" => "Büyük Posta Kutusu & KVKK",
+    "icon" => "far fa-envelope",
     "title" => "Gelişmiş Kurumsal Mail Hosting",
     "desc" => "Yüksek kotalı posta kutuları, görüntülü ve sesli konferans, ortak takvim ve tüm cihazlarla anlık senkronizasyon sunan hepsi bir arada kurumsal iletişim altyapısı.",
     "features" => [
@@ -66,6 +70,7 @@
   [
     "theme" => "developer",
     "badge" => "Node.js & Python & Terminal",
+    "icon" => "fas fa-code",
     "title" => "Gelişmiş Developer Hosting",
     "desc" => "Laravel, Node.js, Python, Ruby ve Git desteği ile SSH terminal erişimine sahip, yazılımcı ve ajanslar için özel yapılandırılmış modern geliştirici altyapısı.",
     "features" => [
@@ -82,6 +87,7 @@
   [
     "theme" => "cloud-drive",
     "badge" => "Güvenli Bulut Depolama",
+    "icon" => "fas fa-cloud",
     "title" => "Güvenli Kurumsal Cloud Drive",
     "desc" => "Yüksek kotalı ve şifrelenmiş bulut depolama alanıyla şirket belgelerinizi, projelerinizi ve verilerinizi tüm cihazlarınızdan güvenle yedekleyin ve paylaşın.",
     "features" => [
@@ -98,6 +104,7 @@
   [
     "theme" => "linux-reseller",
     "badge" => "WHM & cPanel Bayi Yönetimi",
+    "icon" => "fas fa-users",
     "title" => "Yüksek Kapasiteli Linux Reseller Hosting",
     "desc" => "Sınırsız site barındırma, WHM/cPanel bayi yönetimi ve bağımsız kaynak izolasyonuyla kendi hosting markanızı ve müşterilerinizi kolayca yönetin.",
     "features" => [
@@ -114,6 +121,7 @@
   [
     "theme" => "windows-reseller",
     "badge" => "Plesk Bayi & ASP.NET Core",
+    "icon" => "fas fa-users",
     "title" => "Yüksek Kapasiteli Windows Reseller Hosting",
     "desc" => "Plesk kontrol paneli, MSSQL ve ASP.NET Core desteğiyle Windows odaklı web projeleri ve müşteri portföyünüz için esnek reseller altyapısı.",
     "features" => [
@@ -130,6 +138,7 @@
   [
     "theme" => "cloud",
     "badge" => "60 Saniyede Otomatik Kurulum",
+    "icon" => "fas fa-cloud",
     "title" => "Yüksek Performanslı Cloud Server",
     "desc" => "60 saniyede otomatik hazırlanan, 1 Gbps port hızına ve limitsiz trafiğe sahip NVMe SSD destekli yüksek performanslı bulut sunucu çözümleri.",
     "features" => [
@@ -146,6 +155,7 @@
   [
     "theme" => "dedicated",
     "badge" => "Tier III+ & %100 Donanım Gücü",
+    "icon" => "fas fa-server",
     "title" => "Yüksek Performanslı Dedicated Server",
     "desc" => "Intel Xeon ve AMD EPYC işlemcili, İstanbul merkezli Tier III+ veri merkezinde operatör yedekli altyapı ve 7/24 KVM erişimli size özel fiziksel sunucular.",
     "features" => [
@@ -162,6 +172,7 @@
   [
     "theme" => "server-servisleri",
     "badge" => "7/24 Uzman Mühendis Desteği",
+    "icon" => "fas fa-tools",
     "title" => "Profesyonel Server Yönetim Servisleri",
     "desc" => "7/24 kesintisiz sistem izleme, güvenlik optimizasyonu, felaket kurtarma ve proaktif müdahale sağlayan SLA garantili sunucu yönetim desteği.",
     "features" => [
@@ -178,6 +189,7 @@
   [
     "theme" => "pci-tarama",
     "badge" => "ASV Onaylı Güvenlik Denetimi",
+    "icon" => "fas fa-shield-alt",
     "title" => "Kapsamlı PCI-DSS Tarama Hizmeti",
     "desc" => "Sanal POS altyapınızı, web portallarınızı ve sunucu güvenlik standartlarınızı ASV onaylı resmi denetimlerle BDDK ve banka gereksinimlerine tam uyumlu hale getirin.",
     "features" => [
@@ -194,6 +206,7 @@
   [
     "theme" => "colocation",
     "badge" => "Tier III+ İstanbul Veri Merkezi",
+    "icon" => "fas fa-building",
     "title" => "Güvenli Co-Location Sunucu Barındırma",
     "desc" => "Fiziksel sunucularınızı 3 operatör yedekli internet, N+1 enerji ve iklimlendirme altyapısına sahip Tier III+ standartlarındaki veri merkezimizde güvenle barındırın.",
     "features" => [
@@ -210,6 +223,7 @@
   [
     "theme" => "mail-server",
     "badge" => "İzole Sunucu & Yüksek İtibar",
+    "icon" => "fas fa-envelope",
     "title" => "Profesyonel Kurumsal Mail Server",
     "desc" => "İşletmenize özel tahsis edilen bağımsız sunucu mimarisi, temiz IP itibar puanı ve gelişmiş spam korumasıyla e-postalarınızın doğrudan gelen kutusuna ulaşmasını sağlayın.",
     "features" => [
@@ -226,6 +240,7 @@
   [
     "theme" => "antispam",
     "badge" => "Yapay Zeka & %99.8 Filtreleme",
+    "icon" => "fas fa-shield-alt",
     "title" => "Gelişmiş AntiSpam & Anti-Virüs Filtreleme",
     "desc" => "Domaininiz nerede barınırsa barınsın, gelen e-postalarınızı yapay zeka ve makine öğrenimi destekli filtreleme ile zararlı yazılım ve oltalama saldırılarına karşı koruyun.",
     "features" => [
@@ -242,6 +257,7 @@
   [
     "theme" => "outbound-mail",
     "badge" => "SmartHost & Inbox Garantisi",
+    "icon" => "fas fa-paper-plane",
     "title" => "Güvenilir Outbound Mail Gateway",
     "desc" => "SmartHost e-posta iletim altyapısı sayesinde yüksek SenderScore ve temiz IP güvencesiyle kurumsal gönderilerinizde teslimat oranını zirveye taşıyın.",
     "features" => [
@@ -258,6 +274,7 @@
   [
     "theme" => "kurumsal-eposta",
     "badge" => "KVKK Uyumlu Güvenli İletişim",
+    "icon" => "fas fa-envelope",
     "title" => "Kapsamlı Kurumsal E-posta Çözümleri",
     "desc" => "Türkiye lokasyonlu KVKK uyumlu sunucularda çalışan bulut webmail ve mobil senkronizasyon ile şirket içi ve şirket dışı iletişiminizi kurumsallaştırın.",
     "features" => [
@@ -274,6 +291,7 @@
   [
     "theme" => "site-pratik",
     "badge" => "Yapay Zeka Destekli Tasarım",
+    "icon" => "fas fa-magic",
     "title" => "Modern Site Pratik Web Sitesi Oluşturucu",
     "desc" => "Yapay zeka asistanı, modern hazır şablonlar ve sürükle-bırak kolaylığı ile kodlama bilmeden dakikalar içinde profesyonel ve mobil uyumlu web sitenizi oluşturun.",
     "features" => [
@@ -290,6 +308,7 @@
   [
     "theme" => "ssl",
     "badge" => "256-Bit Şifreleme & Google SEO",
+    "icon" => "fas fa-lock",
     "title" => "Maksimum Güvenlikli SSL Sertifikaları",
     "desc" => "Web sitenizi ve kullanıcı verilerinizi 256-bit güçlü şifreleme ile koruyun, Google arama sonuçlarında prestij ve sıralama avantajı elde edin.",
     "features" => [
@@ -313,7 +332,7 @@
         <div class="container">
           <div class="ixir-promo-grid">
             <div class="ixir-promo-copy">
-              <span class="ixir-promo-badge"><span class="pci-cta-pulse-dot"></span> {$slide.badge}</span>
+              <span class="ixir-promo-badge"><i class="{$slide.icon}" aria-hidden="true"></i> {$slide.badge}</span>
               <h2>{$slide.title}</h2>
               <p>{$slide.desc}</p>
               <ul>

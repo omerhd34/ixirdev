@@ -181,7 +181,7 @@ section#home-banner.ixir-hero .ixir-hero-eyebrow span {
  -webkit-text-fill-color: transparent;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
  section#home-banner.ixir-hero .ixir-hero-eyebrow {
   gap: 8px;
   margin-bottom: 14px;

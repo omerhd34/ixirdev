@@ -81,7 +81,7 @@
   height: auto;
   margin: 0 0 42px;
   background: transparent;
-  pointer-events: none;
+  pointer-events: auto;
   user-select: none;
   position: relative;
   opacity: 0.95;
@@ -92,6 +92,11 @@
   display: block;
   width: 100%;
   height: auto;
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ixir-stats-map:hover img {
+  transform: scale(1.03);
 }
 
 .ixir-stats-grid {
@@ -270,6 +275,14 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .ixir-stats-map img {
+    transition: none;
+  }
+
+  .ixir-stats-map:hover img {
+    transform: none;
+  }
+
   .ixir-stats.is-armed .ixir-stats-stage h2,
   .ixir-stats.is-armed .ixir-stats-map,
   .ixir-stats.is-armed .pci-aud-badge,

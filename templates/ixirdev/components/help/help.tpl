@@ -1,5 +1,5 @@
 {assign var="helpIsLight" value=false}
-{if $templatefile == 'homepage' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'outbound-mail-gateway' || $ixirPageSlug == 'site-pratik' || $ixirDomainSearchPage || $ixirDomainTransferPage}
+{if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'outbound-mail-gateway' || $ixirPageSlug == 'site-pratik' || $ixirDomainSearchPage || $ixirDomainTransferPage}
  {assign var="helpIsLight" value=true}
 {/if}
 <section
@@ -10,7 +10,9 @@
  <div class="container">
   <div class="ixir-help-stage">
    <div class="ixir-help-copy">
-    <div class="pci-cta-badge"><span class="pci-cta-pulse-dot"></span> 7/24 KESİNTİSİZ DESTEK</div>
+    <div class="pci-cta-badge">
+    <span class="pci-cta-pulse-dot"></span>
+     7/24 KESİNTİSİZ DESTEK</div>
     {include file="$template/components/Heading.tpl" title="Sizler İçin Buradayız!"}
     <p>Desteğe ihtiyacınız olduğu her anda bize ulaşın.</p>
     <div class="ixir-help-cards">

@@ -97,6 +97,28 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
 }
 
+.ixir-help-copy .pci-cta-pulse-dot {
+  display: inline-block;
+  flex: 0 0 8px;
+  width: 8px;
+  height: 8px;
+  background: #38bdf8;
+  border-radius: 50%;
+  animation: ixirHelpPulse 2s infinite;
+}
+
+@keyframes ixirHelpPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(56, 189, 248, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+  }
+}
+
 .ixir-help-copy h2,
 .ixir-help-copy .site-heading {
   margin: 0 0 12px;
@@ -292,6 +314,66 @@
   color: #2563eb !important;
 }
 
+body:has(.ixir-whois-page) #ixir-help {
+  background-color: #f8fafc !important;
+  background-image: none !important;
+  border-top: 1px solid rgba(59, 130, 246, 0.12);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.12);
+}
+
+body:has(.ixir-whois-page) #ixir-help::before {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+}
+
+body:has(.ixir-whois-page) #ixir-help::after {
+  background: linear-gradient(
+    90deg,
+    #f8fafc 0%,
+    #f8fafc 72%,
+    rgba(248, 250, 252, 0.85) 88%,
+    rgba(248, 250, 252, 0.3) 96%,
+    transparent 100%
+  ) !important;
+}
+
+body:has(.ixir-whois-page) #ixir-help .pci-cta-badge {
+  color: #2563eb !important;
+  background: #eff6ff !important;
+  border: 1px solid #dbeafe !important;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+}
+
+body:has(.ixir-whois-page) #ixir-help .ixir-help-copy h2,
+body:has(.ixir-whois-page) #ixir-help .ixir-help-copy .site-heading {
+  color: #0b1e36 !important;
+}
+
+body:has(.ixir-whois-page) #ixir-help .ixir-help-copy p {
+  color: #64748b !important;
+}
+
+body:has(.ixir-whois-page) #ixir-help .ixir-help-card {
+  color: #0b1e36 !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(59, 130, 246, 0.18) !important;
+  box-shadow: 0 10px 25px -4px rgba(59, 130, 246, 0.08) !important;
+}
+
+body:has(.ixir-whois-page) #ixir-help .ixir-help-card:hover {
+  border-color: rgba(59, 130, 246, 0.45) !important;
+  box-shadow: 0 18px 36px -4px rgba(59, 130, 246, 0.16) !important;
+  background: #ffffff !important;
+}
+
+body:has(.ixir-whois-page) #ixir-help .ixir-help-card > span {
+  color: #0b1e36;
+}
+
+body:has(.ixir-whois-page) #ixir-help .ixir-help-card:hover > span,
+body:has(.ixir-whois-page) #ixir-help .ixir-help-card > small {
+  color: #2563eb;
+}
+
 @media only screen and (max-width: 1024px) {
   .ixir-help.ixir-help--light::after,
   .ixir-help.bg-light-blue::after {
@@ -331,6 +413,12 @@
       #091322 0%,
       #091322 58%,
       rgba(9, 19, 34, 0.88) 100%);
+  }
+  body:has(.ixir-whois-page) #ixir-help::after {
+    background: linear-gradient(90deg,
+      #f8fafc 0%,
+      #f8fafc 58%,
+      rgba(248, 250, 252, 0.92) 100%) !important;
   }
   .ixir-help-visual {
     right: -280px;
