@@ -62,7 +62,7 @@
         <a class="ixir-omg-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
         <ul class="ixir-omg-specs ixir-wh-specs">
           <li><span>Aylık Maksimum Mail Çıkışı</span><b>10000</b></li>
-          <li><span>Öncelikli Destek</span><b>Yok</b></li>
+          <li><span>Öncelikli Destek</span><b><i class="fas fa-times" aria-label="Yok"></i></b></li>
         </ul>
       </article>
 
@@ -111,7 +111,7 @@
         <a class="ixir-omg-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
         <ul class="ixir-omg-specs ixir-wh-specs">
           <li><span>Aylık Maksimum Mail Çıkışı</span><b>50000</b></li>
-          <li><span>Öncelikli Destek</span><b>Var</b></li>
+          <li><span>Öncelikli Destek</span><b><i class="fas fa-check" aria-label="Yok"></i></b></li>
         </ul>
       </article>
 
@@ -159,7 +159,7 @@
         <a class="ixir-omg-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
         <ul class="ixir-omg-specs ixir-wh-specs">
           <li><span>Aylık Maksimum Mail Çıkışı</span><b>100000</b></li>
-          <li><span>Öncelikli Destek</span><b>Var</b></li>
+          <li><span>Öncelikli Destek</span><b><i class="fas fa-check" aria-label="Yok"></i></b></li>
         </ul>
       </article>
     </div>
