@@ -14,7 +14,7 @@
 {assetExists file="base.css"}
 <link href="{$__assetPath__}?v={$versionHash}-r28" rel="stylesheet">
 {/assetExists}
-<link href="{$WEB_ROOT}/templates/{$template}/css/common.css?v={$versionHash}-r4" rel="stylesheet">
+<link href="{$WEB_ROOT}/templates/{$template}/css/common.css?v={$versionHash}-r5" rel="stylesheet">
 <link href="{$WEB_ROOT}/templates/{$template}/components/header/header.css?v={$versionHash}-r37" rel="stylesheet">
 {if $templatefile == 'homepage'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/news-bar/news-bar.css?v={$versionHash}-r12"
@@ -62,6 +62,7 @@
    'domain/shared/hero/hero',
    'domain/shared/common/common',
    'domain/shared/faq/faq',
+   'domain/whois/faq/faq',
    'domain/whois/hero/hero',
    'domain/whois/results/results'
   ]}
@@ -94,7 +95,7 @@
   rel="stylesheet">
 {/if}
 {if $ixirIsAuthPage || $showingLoginPage || $templatefile == 'login' || $templatefile == 'logout' || $templatefile == 'clientregister' || $templatefile == 'password-reset' || $filename == 'ixir-hesabim'}
- <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r73" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/css/auth.css?v={$versionHash}-r75" rel="stylesheet">
 {/if}
 {if $ixirCorporate || $templatefile == 'kurumsal' || $templatefile == 'contact'}
  <link href="{$WEB_ROOT}/templates/{$template}/components/kurumsal/kurumsal.css?v={$versionHash}-r34" rel="stylesheet">

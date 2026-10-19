@@ -637,23 +637,35 @@ body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body .col-xs-12 {
  line-height: 1.2;
  cursor: text;
  pointer-events: none;
+ z-index: 1;
  transform: translateY(-50%);
  transform-origin: left center;
  transition:
-  opacity 0.15s ease,
-  visibility 0.15s ease,
+  top 0.2s ease,
+  transform 0.2s ease,
+  font-size 0.2s ease,
   color 0.2s ease;
 }
 
+.ixir-auth-page .ixir-dc-float input:focus~.ixir-dc-label,
 .ixir-auth-page .ixir-dc-float input:not(:placeholder-shown)~.ixir-dc-label,
 .ixir-auth-page .ixir-dc-float input:-webkit-autofill~.ixir-dc-label,
 .ixir-auth-page .ixir-dc-float input.is-filled~.ixir-dc-label,
+.ixir-split-form .ixir-dc-float input:focus~.ixir-dc-label,
 .ixir-split-form .ixir-dc-float input:not(:placeholder-shown)~.ixir-dc-label,
 .ixir-split-form .ixir-dc-float input:-webkit-autofill~.ixir-dc-label,
 .ixir-split-form .ixir-dc-float input.is-filled~.ixir-dc-label {
- opacity: 0 !important;
- visibility: hidden !important;
- pointer-events: none !important;
+ top: 0px;
+ font-size: 10.5px;
+ font-weight: 600;
+ line-height: 1.4;
+ letter-spacing: 0.04em;
+ transform: none;
+}
+
+.ixir-auth-page .ixir-dc-float input:focus~.ixir-dc-label,
+.ixir-split-form .ixir-dc-float input:focus~.ixir-dc-label {
+ color: #386ce0;
 }
 
 .ixir-auth-page .ixir-dc-float input:-webkit-autofill,
@@ -1038,6 +1050,10 @@ body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body .col-xs-12 {
 
 .ixir-company-field.is-visible {
  display: block;
+}
+
+.ixir-register-form.is-corporate .ixir-pw-confirm-field {
+ display: none;
 }
 
 .ixir-split-meta {
@@ -1622,7 +1638,7 @@ a.ixir-split-btn {
  padding: 36px 32px 28px;
 }
 
-@media (max-width: 1280px) and (min-width: 1025px) {
+@media (max-width: 1280px) and (min-width: 1024px) {
  .ixir-auth-overlay-panel {
   padding: 28px 22px;
  }
@@ -1818,12 +1834,14 @@ a.ixir-split-btn {
   font-size: 14px;
  }
 
+ .ixir-dc-float input:focus~.ixir-dc-label,
  .ixir-dc-float input:not(:placeholder-shown)~.ixir-dc-label,
  .ixir-dc-float input:-webkit-autofill~.ixir-dc-label,
  .ixir-dc-float input.is-filled~.ixir-dc-label {
-  opacity: 0 !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
+  top: -4px;
+  font-size: 9.5px;
+  letter-spacing: 0.02em;
+  transform: none;
  }
 
  .ixir-select-trigger {

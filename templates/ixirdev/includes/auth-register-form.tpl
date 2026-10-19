@@ -10,6 +10,8 @@
  jQuery(document).ready(function() {
   var $pass = jQuery("#inputNewPassword1");
   var $pass2 = jQuery("#inputNewPassword2");
+  var $companyInput = jQuery("#inputCompanyName");
+  var $companyField = jQuery(".ixir-company-field");
   var $box = jQuery("#ixirPwHints");
   var $label = jQuery("#ixirPwStrengthLabel");
   var $bar = jQuery("#ixirPwStrengthBar");
@@ -47,6 +49,9 @@
   }
 
   function getMatchState() {
+   if (jQuery('input[name="ixir_member_type"]:checked').val() === "kurumsal") {
+    return { status: "match", ok: true };
+   }
    var pass = $pass.val() || "";
    var pass2 = $pass2.val() || "";
    if (!pass2.length) {
@@ -264,13 +269,22 @@
    $box.removeClass("is-invalid is-warn");
   });
 
-  jQuery('input[name="ixir_member_type"]').on("change", function() {
-   var isCorp = jQuery(this).val() === "kurumsal";
-   jQuery(".ixir-company-field").toggleClass("is-visible", isCorp);
-   if (!isCorp) {
-    jQuery("#inputCompanyName").val("");
+  function updateMemberType(clearCompany) {
+   var isCorp = jQuery('input[name="ixir_member_type"]:checked').val() === "kurumsal";
+   $form.toggleClass("is-corporate", isCorp);
+   $companyField.toggleClass("is-visible", isCorp);
+   $companyInput.prop("disabled", !isCorp);
+   $pass2.prop("disabled", isCorp);
+   if (clearCompany && !isCorp) {
+    $companyInput.val("");
    }
+   renderPasswordUI();
+  }
+
+  jQuery('input[name="ixir_member_type"]').on("change", function() {
+   updateMemberType(true);
   });
+  updateMemberType(false);
 
   var $phone = jQuery("#inputPhone.ixir-plain-phone");
   if ($phone.length) {
@@ -415,17 +429,6 @@
    </div>
   </div>
 
-  <div class="ixir-field ixir-company-field">
-   <div class="ixir-domain-checker">
-    <div class="ixir-dc-input ixir-dc-float">
-     <span class="ixir-dc-icon" aria-hidden="true"><i class="far fa-building"></i></span>
-     <input type="text" name="companyname" id="inputCompanyName" class="form-control" placeholder=" "
-      value="{$clientcompanyname}">
-     <label for="inputCompanyName" class="ixir-dc-label">Firma Adı (Opsiyonel)</label>
-    </div>
-   </div>
-  </div>
-
   <div class="ixir-field-row">
    <div class="ixir-field">
     <div class="ixir-domain-checker">
@@ -507,6 +510,16 @@
       <button type="button" class="ixir-toggle-password" tabindex="-1" aria-label="Şifreyi göster/gizle">
        <i class="far fa-eye" aria-hidden="true"></i>
       </button>
+     </div>
+    </div>
+   </div>
+   <div class="ixir-field ixir-company-field">
+    <div class="ixir-domain-checker">
+     <div class="ixir-dc-input ixir-dc-float">
+      <span class="ixir-dc-icon" aria-hidden="true"><i class="far fa-building"></i></span>
+      <input type="text" name="companyname" id="inputCompanyName" class="form-control" placeholder=" "
+       value="{$clientcompanyname}">
+      <label for="inputCompanyName" class="ixir-dc-label">Firma Adı (Opsiyonel)</label>
      </div>
     </div>
    </div>
