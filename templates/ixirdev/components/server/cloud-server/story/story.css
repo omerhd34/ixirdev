@@ -45,8 +45,7 @@
   transform: none !important;
 }
 
-.ixir-cs-story .ixir-cs-story-icon,
-.ixir-cs-story .ixir-wh-story-icon {
+.ixir-cs-story .ixir-cs-story-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -61,8 +60,7 @@
   transition: transform 0.3s ease;
 }
 
-.ixir-cs-story .ixir-cs-story-icon:hover,
-.ixir-cs-story .ixir-wh-story-icon:hover {
+.ixir-cs-story .ixir-cs-story-icon:hover {
   transform: translateY(-2px) scale(1.05);
 }
 
@@ -135,8 +133,7 @@
   .ixir-cs-story {
     padding: 60px 0;
   }
-  .ixir-cs-story .ixir-cs-story-icon,
-  .ixir-cs-story .ixir-wh-story-icon {
+  .ixir-cs-story .ixir-cs-story-icon {
     width: 52px;
     height: 52px;
     border-radius: 14px;

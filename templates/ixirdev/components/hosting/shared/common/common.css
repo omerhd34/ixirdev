@@ -269,19 +269,6 @@
   color: #e23b3b;
   font-size: 15px;
 }
-.ixir-wh-story-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  margin-bottom: 16px;
-  border-radius: 18px;
-  background: #3b78e7;
-  color: #fff;
-  font-size: 26px;
-  box-shadow: 0 12px 28px rgba(59, 120, 231, 0.28);
-}
 .ixir-wh-diff {
   position: relative;
   padding: 85px 0 95px;

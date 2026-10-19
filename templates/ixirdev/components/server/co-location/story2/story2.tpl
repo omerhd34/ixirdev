@@ -12,7 +12,6 @@
   </script>
   <div class="container">
    <div class="ixir-wh-story-intro colo-story-intro ixir-colo-story-intro">
-    <span class="ixir-wh-story-icon colo-story-icon ixir-colo-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-server" aria-hidden="true"></i> SUNUCU BARINDIRMA</div>
     {include file="$template/components/Heading.tpl" title="Neden Sunucunuzu İxirHost'ta Barındırmalısınız?"}
    </div>

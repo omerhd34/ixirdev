@@ -12,7 +12,6 @@
   </script>
   <div class="container">
    <div class="ixir-wh-story-intro">
-    <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
     <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fab fa-wordpress" aria-hidden="true"></i> WORDPRESS REHBERİ</div>
     {include file="$template/components/Heading.tpl" title="WordPress Hosting Nedir?"}
     <p>WordPress Hosting, WordPress web siteleri için özel olarak tasarlanmış server ve ağ altyapısında sunulan; tek

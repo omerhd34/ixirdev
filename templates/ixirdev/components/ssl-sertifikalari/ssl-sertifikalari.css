@@ -1742,25 +1742,6 @@ h3.ixir-sp-category-heading {
  transform: none !important;
 }
 
-.ixir-wh-story-icon {
- display: inline-flex;
- align-items: center;
- justify-content: center;
- width: 64px;
- height: 64px;
- margin: 0 auto 16px;
- border-radius: 18px;
- font-size: 26px;
- background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
- color: #fff !important;
- box-shadow: 0 12px 28px rgba(37, 99, 235, 0.35) !important;
- transition: transform 0.3s ease;
-}
-
-.ixir-wh-story-icon:hover {
- transform: translateY(-2px) scale(1.05);
-}
-
 .ixir-wh-story-intro h2,
 .ixir-wh-story-intro .site-heading,
 .ixir-wh-story-features-head h2,

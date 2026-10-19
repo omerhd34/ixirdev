@@ -12,7 +12,6 @@
   </script>
   <div class="container">
    <div class="ixir-wh-story-intro">
-    <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
     <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-cubes" aria-hidden="true"></i> PLESK BAYİ ALTYAPISI</div>
     {include file="$template/components/Heading.tpl" title="Windows Reseller Hosting Nedir?"}
     <p>Windows Reseller Hosting hizmeti, site tasarımı yapan kişi ve ajanslar için oluşturulmuş uygun fiyatlı ve yüksek

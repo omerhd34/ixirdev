@@ -7,7 +7,6 @@
      decoding="async">
    </div>
    <div class="ixir-km-tr-copy">
-    <span class="ixir-km-tr-eyebrow"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Yerli Altyapı</span>
     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-flag" aria-hidden="true"></i> YERLİ VERİ MERKEZİ</div>
     {include file="$template/components/Heading.tpl" title="Kurumsal E-mail ile<br> Tüm Verileriniz Türkiye'de" id="ixir-km-tr-title"}
     <p>Yalnızca e-posta sunucularımız ve verileriniz değil; gelen ve giden antispam, outbound filtreleme

@@ -13,7 +13,6 @@
   </script>
   <div class="container">
    <div class="ixir-ss-story-intro ixir-wh-story-intro">
-    <span class="ixir-ss-story-icon ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
     <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-tools" aria-hidden="true"></i> DESTEK KAPSAMI</div>
     {include file="$template/components/Heading.tpl" title="Server Destek Hizmeti Nedir?" class="text-white"}
     <p>Server destek hizmeti Cloud Server, Dedicated Server veya Co-Location hizmeti olan üyelerimizin veya farklı firmadan kiralamış olduğunuz sunucularda yaşanabilecek olası sorunlar için İXİRHOST teknik destek ekibinden alabileceği yardım hizmetidir. Paketlerimizi tercih ederek sunucu yönetimini tamamen İxirHost profesyonel ekibine bırakabilirsiniz, eğer kayıtlı müşterimizseniz de yaşadığınız sorunlar için tek seferlik yardım hizmetlerine bir destek bildirimi açarak sahip olabilirsiniz.</p>

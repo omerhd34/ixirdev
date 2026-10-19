@@ -12,7 +12,6 @@
  </script>
  <div class="container">
   <div class="ixir-wh-story-intro">
-   <span class="ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
    <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-laptop-code" aria-hidden="true"></i> GELİŞTİRİCİ REHBERİ</div>
    {include file="$template/components/Heading.tpl" title="Developer Hosting Nedir?"}
    <p>Developer Hosting paketlerimiz, web uygulama geliştiriciler için özel olarak oluşturulmuştur. Laravel, Node.js,

@@ -45,8 +45,7 @@
   transform: none !important;
 }
 
-.ixir-pci-story .pci-story-icon,
-.ixir-pci-story .ixir-wh-story-icon {
+.ixir-pci-story .pci-story-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -61,8 +60,7 @@
   transition: transform 0.3s ease;
 }
 
-.ixir-pci-story .pci-story-icon:hover,
-.ixir-pci-story .ixir-wh-story-icon:hover {
+.ixir-pci-story .pci-story-icon:hover {
   transform: translateY(-2px) scale(1.05);
 }
 
@@ -137,8 +135,7 @@
   .ixir-pci-story {
     padding: 60px 0;
   }
-  .ixir-pci-story .pci-story-icon,
-  .ixir-pci-story .ixir-wh-story-icon {
+  .ixir-pci-story .pci-story-icon {
     width: 52px;
     height: 52px;
     border-radius: 14px;

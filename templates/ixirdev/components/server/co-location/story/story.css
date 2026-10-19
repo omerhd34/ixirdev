@@ -42,8 +42,7 @@
   transform: none !important;
 }
 
-.ixir-colo-story .colo-story-icon,
-.ixir-colo-story .ixir-wh-story-icon {
+.ixir-colo-story .colo-story-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -58,8 +57,7 @@
   transition: transform 0.3s ease;
 }
 
-.ixir-colo-story .colo-story-icon:hover,
-.ixir-colo-story .ixir-wh-story-icon:hover {
+.ixir-colo-story .colo-story-icon:hover {
   transform: translateY(-2px) scale(1.05);
 }
 
@@ -134,8 +132,7 @@
   .ixir-colo-story {
     padding: 60px 0;
   }
-  .ixir-colo-story .colo-story-icon,
-  .ixir-colo-story .ixir-wh-story-icon {
+  .ixir-colo-story .colo-story-icon {
     width: 52px;
     height: 52px;
     border-radius: 14px;

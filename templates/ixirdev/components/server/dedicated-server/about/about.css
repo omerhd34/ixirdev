@@ -40,8 +40,7 @@
   transform: none !important;
 }
 
-.ds-about-section .ds-about-icon,
-.ds-about-section .ixir-wh-story-icon {
+.ds-about-section .ds-about-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -54,10 +53,6 @@
   color: #fff !important;
   box-shadow: 0 12px 28px rgba(37, 99, 235, 0.35);
   transition: transform 0.3s ease;
-}
-
-.ds-about-section .ixir-wh-story-icon:hover {
-  transform: translateY(-2px) scale(1.05);
 }
 
 .ds-about-section .ds-about-intro h2,
@@ -129,8 +124,7 @@
   .ds-about-section {
     padding: 60px 0;
   }
-  .ds-about-section .ds-about-icon,
-  .ds-about-section .ixir-wh-story-icon {
+  .ds-about-section .ds-about-icon {
     width: 52px;
     height: 52px;
     border-radius: 14px;

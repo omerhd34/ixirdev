@@ -16,7 +16,6 @@
    <div class="ixir-badge-pill ixir-ssl-badge-pill">
      <i class="fas fa-microchip" aria-hidden="true"></i> PRO CLOUD SERİSİ</div>
     <div class="ixir-cs-title">
-     <span class="ixir-cs-story-icon ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-rocket"></i></span>
      {include file="$template/components/Heading.tpl" title="Daha Güçlü Cloud Server mı Arıyorsunuz?" id="ixir-cs-pro-plans-title" align="center"}
     </div>
    <p>Kurumsal uygulamalar, yüksek trafik ve kritik sistemler için tasarlanan Pro Cloud Server paketlerini

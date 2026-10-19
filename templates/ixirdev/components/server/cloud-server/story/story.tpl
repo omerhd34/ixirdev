@@ -13,7 +13,6 @@
   </script>
   <div class="container">
    <div class="ixir-cs-story-intro ixir-wh-story-intro">
-    <span class="ixir-cs-story-icon ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-info"></i></span>
     <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-server" aria-hidden="true"></i> CLOUD NEDİR</div>
     {include file="$template/components/Heading.tpl" title="Cloud Server Nedir?" id="ixir-cs-story-title" class="text-white"}
     <p>CPU, RAM, disk gibi fiziksel sunucu kaynaklarının sanallaştırma teknolojisi yardımıyla özel sunuculara ayrılması

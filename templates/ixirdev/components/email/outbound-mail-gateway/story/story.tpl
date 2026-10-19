@@ -12,7 +12,6 @@
   </script>
   <div class="container">
     <div class="ixir-omg-story-intro ixir-wh-story-intro">
-      <span class="ixir-omg-story-icon ixir-wh-story-icon" aria-hidden="true"><i class="fas fa-paper-plane"></i></span>
       <div class="ixir-badge-pill ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-route" aria-hidden="true"></i> SMARTHOST NEDİR</div>
       {include file="$template/components/Heading.tpl" title="SmartHost Nedir ve Neler Sunar?" class="text-white"}
       <p>SmartHost hizmeti, dünyanın herhangi bir yerinde bulunan sunucunuzdan gönderdiğiniz e-postaların İXİRHOST delivery cluster sunucularına gelmesi, filtrelenmesi ve yüksek saygınlık ile alıcısına iletilmesidir. Örneğin, Amerika'da bulunan e-posta sunucunuz eklenecek SmartHost ve SPF kaydı ile tüm dünyaya e-posta gönderimini İXİRHOST'un SmartHost hizmeti aracılığıyla yapabilirsiniz. Böylece gönderilen iletiler, direkt olarak gelen kutusuna iletilir.</p>
