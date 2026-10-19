@@ -17,10 +17,6 @@
 
   <div class="container">
     <header class="pci-ops-header">
-      <span class="pci-ops-badge">
-        <i class="fas fa-clipboard-check" aria-hidden="true"></i>
-        <span>Denetim Kapsamı</span>
-      </span>
       <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-tasks" aria-hidden="true"></i> TARAMA ADIMLARI</div>
       {include file="$template/components/Heading.tpl" title="PCI - DSS Taraması Sırasında Yapılan İşlemler" id="ixir-pci-ops-title"}
       <p class="pci-ops-subhead">

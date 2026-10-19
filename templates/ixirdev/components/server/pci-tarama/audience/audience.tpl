@@ -17,10 +17,6 @@
 
   <div class="container">
     <header class="pci-aud-header">
-      <span class="pci-aud-badge">
-        <i class="fas fa-user-shield" aria-hidden="true"></i>
-        <span>Kapsam & Hedef Kitle</span>
-      </span>
       <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-store" aria-hidden="true"></i> HEDEF SEKTÖRLER</div>
       {include file="$template/components/Heading.tpl" title="Kimler PCI - DSS Tarama Hizmeti Kullanmalıdır?" id="ixir-pci-audience-title"}
       <p class="pci-aud-subhead">

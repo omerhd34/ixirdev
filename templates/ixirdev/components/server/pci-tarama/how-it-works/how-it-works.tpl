@@ -20,11 +20,7 @@
 
       <div class="pci-how-left">
         <header class="pci-how-header">
-          <span class="pci-how-badge">
-            <i class="fas fa-cogs" aria-hidden="true"></i>
-            <span>Adım Adım Denetim Süreci</span>
-          </span>
-          <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-search-plus" aria-hidden="true"></i> NASIL ÇALIŞIR</div>
+          <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-cogs" aria-hidden="true"></i> Adım Adım Denetim Süreci</div>
           {include file="$template/components/Heading.tpl" title="PCI - DSS Tarama Hizmeti Nasıl Çalışır?" id="ixir-pci-how-title" class="text-left"}
           <p class="pci-how-subhead">
             Uluslararası standartlarda 4 aşamalı uçtan uca tarama ve iyileştirme metodolojisiyle güvenlik açıklarınızı tespit edip kapatıyoruz.

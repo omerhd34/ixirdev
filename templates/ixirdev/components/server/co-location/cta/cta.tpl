@@ -5,12 +5,7 @@
     <div class="colo-cta-grid">
       
       <div class="colo-cta-content">
-        <div class="colo-cta-badge">
-          <span class="colo-cta-pulse-dot" aria-hidden="true"></span>
-          <span>Uzman Danışman Desteği</span>
-        </div>
-
-        <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-phone-alt" aria-hidden="true"></i> ÖZEL TEKLİF AL</div>
+        <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-phone-alt" aria-hidden="true"></i> Uzman Danışman Desteği</div>
         <h2 class="colo-cta-title" id="ixir-colo-cta-title">
           Co-Location
           <span class="colo-cta-title-highlight">Hakkında Daha Fazla Bilgi</span>

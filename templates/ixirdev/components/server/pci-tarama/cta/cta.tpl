@@ -5,12 +5,7 @@
     <div class="pci-cta-grid">
       
       <div class="pci-cta-content">
-        <div class="pci-cta-badge">
-          <span class="pci-cta-pulse-dot" aria-hidden="true"></span>
-          <span>Uzman Danışman Desteği</span>
-        </div>
-
-        <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shield-check" aria-hidden="true"></i> UYUMLULUK BAŞLAT</div>
+        <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shield-check" aria-hidden="true"></i> Uzman Danışman Desteği</div>
         <h2 class="pci-cta-title" id="ixir-pci-cta-title">
           PCI - DSS Tarama
           <span class="pci-cta-title-highlight">Hakkında Daha Fazla Bilgi</span>
