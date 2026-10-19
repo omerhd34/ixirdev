@@ -1,6 +1,6 @@
 .ixir-wh-story {
   position: relative;
-  padding: 85px 0 95px;
+  padding: 85px 0;
   background-color: #091322 !important;
   background-image: 
     radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
@@ -278,7 +278,7 @@
 
 @media (max-width: 768px) {
   .ixir-wh-story {
-    padding: 40px 0 48px;
+    padding: 40px 0;
   }
   .ixir-wh-story-row, .ixir-wh-story-row--flip {
     grid-template-columns: 1fr;
