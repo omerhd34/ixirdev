@@ -1,4 +1,5 @@
-<section class="ixir-wh-guide ixir-wh-guide--light bg-light-blue ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-guide" aria-labelledby="ixir-wh-guide-title">
+<section class="ixir-wh-guide ixir-wh-guide--light bg-light-blue ixir-slide ixir-slide--right is-slide-on"
+ id="ixir-wh-guide" aria-labelledby="ixir-wh-guide-title">
  <script>
   {literal}
    (function() {
@@ -12,7 +13,8 @@
  </script>
  <div class="container">
   <header class="ixir-wh-plans-head">
-   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-book-open" aria-hidden="true"></i> BİLGİ REHBERİ</div>
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-book-open" aria-hidden="true"></i> BİLGİ REHBERİ
+   </div>
    {include file="$template/components/Heading.tpl" title="Linux Reseller Hosting Rehberi" id="ixir-wh-guide-title"}
    <p>Bayi hosting altyapısı, cPanel yönetimi ve kaynak tahsisi hakkında bilmeniz gerekenler.</p>
   </header>
@@ -500,6 +502,60 @@
    document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') closeAll(null);
    });
+  })();
+
+  (function() {
+   var list = document.getElementById('ixir-wh-shared-list');
+   if (!list) return;
+   var btn = document.querySelector('.ixir-wh-shared-more-btn[aria-controls="ixir-wh-shared-list"]');
+   var items = list.children;
+   var total = items.length;
+   var step = 10;
+   if (!btn || total <= step) {
+    list.removeAttribute('data-visible');
+    if (btn) btn.parentNode.hidden = true;
+    return;
+   }
+   var text = btn.querySelector('.ixir-wh-shared-more-text');
+   var count = btn.querySelector('.ixir-wh-shared-more-count');
+   var visible = step;
+
+   function render(prev) {
+    var i;
+    for (i = 0; i < total; i++) {
+     items[i].classList.toggle('is-revealed', i >= prev && i < visible);
+    }
+    if (visible >= total) {
+     list.removeAttribute('data-visible');
+     btn.setAttribute('aria-expanded', 'true');
+     text.textContent = 'Daha Az Göster';
+     count.textContent = '';
+    } else {
+     list.setAttribute('data-visible', String(visible));
+     btn.setAttribute('aria-expanded', 'false');
+     text.textContent = 'Diğer Özellikler';
+     count.textContent = '+' + (total - visible);
+    }
+   }
+
+   btn.addEventListener('click', function() {
+    var prev = visible;
+    if (visible >= total) {
+     if (window.CustomEvent) list.dispatchEvent(new CustomEvent('ixir:collapse'));
+     visible = step;
+     prev = total;
+     render(prev);
+     var box = list.parentNode.getBoundingClientRect();
+     if (box.top < 0) {
+      window.scrollBy(0, box.top - 120);
+     }
+     return;
+    }
+    visible = Math.min(total, visible + step);
+    render(prev);
+   });
+
+   render(total);
   })();
  {/literal}
 </script>

@@ -14,7 +14,8 @@
   <div class="container">
    <header class="ixir-wh-plans-head">
     <div class="ixir-badge-pill ixir-ssl-badge-pill">
-     <i class="fas fa-users-cog" aria-hidden="true"></i> LINUX RESELLER PLANLARI</div>
+     <i class="fas fa-users-cog" aria-hidden="true"></i> LINUX RESELLER PLANLARI
+    </div>
     {include file="$template/components/Heading.tpl" title="Linux Reseller Hosting Paketleri" id="ixir-wh-plans-title" align="center"}
     <p>Linux Reseller Hosting paketlerimiz arasından size en uygun olan seçimi yapın.</p>
    </header>
@@ -237,15 +238,13 @@
      <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
      <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
     </div>
-    <ul class="ixir-wh-shared ixir-wh-shared--click">
+    <ul class="ixir-wh-shared ixir-wh-shared--click ixir-wh-shared--5" id="ixir-wh-shared-list" data-visible="10">
      <li><i class="fas fa-hdd" aria-hidden="true"></i>Limitsiz NVMe Disk Alanı<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Limitsiz NVMe Disk Alanı açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box"
         role="tooltip">Enterprise NVMe ile geleneksel
         depolama birimlerine göre 40 kat daha fazla hız, daha fazla I/O sağlıyoruz, hosting planınızda
         limitlendirilmemiş depolama alanı sunuyoruz. Ancak adil kullanım politikaları geçerlidir.</span></span></li>
-
-
      <li><i class="fas fa-exchange-alt" aria-hidden="true"></i>Limitsiz Trafik
       <span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn" aria-label="Limitsiz Trafik açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box"
@@ -257,7 +256,6 @@
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Limitsiz E-Posta, hosting
         planınızda limitlendirilmemiş posta kutusu sayısını ifade eder. Ancak adil kullanım politikaları
         geçerlidir.</span></span></li>
-
      <li><i class="fas fa-microchip" aria-hidden="true"></i>Site Başına 1 Core CPU<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Site Başına 1 Core CPU açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">En yeni
@@ -270,7 +268,6 @@
         type="button" class="ixir-wh-tip-btn" aria-label="Litespeed Web Server açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Geleneksel Apache web sunucusuna
         göre 10 kat daha fazla performans sağlar.</span></span></li>
-
      <li><i class="fas fa-bolt" aria-hidden="true"></i>Litespeed Cache<span class="ixir-wh-tip"><button type="button"
         class="ixir-wh-tip-btn" aria-label="Litespeed Cache açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Litespeed Cache önbellekleme ile
@@ -299,6 +296,13 @@
         SSL sertifikanız otomatik kurulur ve ömür boyu ücretsizdir.</span></span></li>
      <li><i class="fas fa-th-large" aria-hidden="true"></i>cPanel kontrol paneli</li>
     </ul>
+    <div class="ixir-wh-shared-more">
+     <button type="button" class="ixir-wh-shared-more-btn" aria-controls="ixir-wh-shared-list" aria-expanded="false">
+      <span class="ixir-wh-shared-more-text">Diğer Özellikler</span>
+      <span class="ixir-wh-shared-more-count">+5</span>
+      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+     </button>
+    </div>
    </div>
   </div>
 </section>

@@ -365,7 +365,7 @@
     <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
     <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
    </div>
-   <ul class="ixir-wh-shared ixir-wh-shared--click">
+   <ul class="ixir-wh-shared ixir-wh-shared--click ixir-wh-shared--5" id="ixir-wh-shared-list" data-visible="10">
     <li><i class="fab fa-node-js" aria-hidden="true"></i>Node.Js / Nest.js vb.<span class="ixir-wh-tip"><button
        type="button" class="ixir-wh-tip-btn" aria-label="COM.TR domain açıklaması"><i class="fas fa-info-circle"
         aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">v16,v18,v20,v22,v24
@@ -407,6 +407,13 @@
     <li><i class="fab fa-linux" aria-hidden="true"></i>Cloud Linux OS</li>
     <li><i class="fas fa-th-large" aria-hidden="true"></i>cPanel Kontrol Paneli</li>
    </ul>
+   <div class="ixir-wh-shared-more">
+     <button type="button" class="ixir-wh-shared-more-btn" aria-controls="ixir-wh-shared-list" aria-expanded="false">
+      <span class="ixir-wh-shared-more-text">Diğer Özellikler</span>
+      <span class="ixir-wh-shared-more-count">+2</span>
+      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+     </button>
+    </div>
   </div>
  </div>
 </section>

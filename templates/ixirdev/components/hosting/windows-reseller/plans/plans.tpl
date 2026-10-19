@@ -14,7 +14,8 @@
   <div class="container">
    <header class="ixir-wh-plans-head">
     <div class="ixir-badge-pill ixir-ssl-badge-pill">
-     <i class="fab fa-windows" aria-hidden="true"></i> WINDOWS RESELLER PLANLARI</div>
+     <i class="fab fa-windows" aria-hidden="true"></i> WINDOWS RESELLER PLANLARI
+    </div>
     {include file="$template/components/Heading.tpl" title="Windows Reseller Hosting Paketleri" id="ixir-wh-plans-title" align="center"}
     <p>Windows Reseller Hosting paketlerimiz arasından size en uygun olan seçimi yapın.</p>
    </header>
@@ -240,7 +241,7 @@
      <p class="ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
      <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
     </div>
-    <ul class="ixir-wh-shared ixir-wh-shared--click">
+    <ul class="ixir-wh-shared ixir-wh-shared--click ixir-wh-shared--5" id="ixir-wh-shared-list" data-visible="10">
      <li><i class="fas fa-hdd" aria-hidden="true"></i>Limitsiz NVMe Disk Alanı<span class="ixir-wh-tip"><button
         type="button" class="ixir-wh-tip-btn" aria-label="Limitsiz NVMe Disk Alanı açıklaması"><i
          class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-wh-tip-box"
@@ -267,7 +268,6 @@
         class="ixir-wh-tip-btn" aria-label="SSL açıklaması"><i class="fas fa-info-circle"
          aria-hidden="true"></i></button><span class="ixir-wh-tip-box" role="tooltip">Tüm siteleriniz için Let's Encrypt
         SSL sertifikanız otomatik kurulur ve ömür boyu ücretsizdir.</span></span></li>
-     </li>
      <li><i class="fas fa-memory" aria-hidden="true"></i>Site Başına 1 GB RAM</li>
      <li><i class="fab fa-windows" aria-hidden="true"></i>Windows Server 2022</li>
      <li><i class="fas fa-database" aria-hidden="true"></i>MSSQL Server 2022</li>
@@ -276,6 +276,13 @@
      <li><i class="fas fa-server" aria-hidden="true"></i>IIS 10</li>
      <li><i class="fas fa-sliders-h" aria-hidden="true"></i>Plesk Kontrol Paneli</li>
     </ul>
+    <div class="ixir-wh-shared-more">
+     <button type="button" class="ixir-wh-shared-more-btn" aria-controls="ixir-wh-shared-list" aria-expanded="false">
+      <span class="ixir-wh-shared-more-text">Diğer Özellikler</span>
+      <span class="ixir-wh-shared-more-count">+2</span>
+      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+     </button>
+    </div>
    </div>
   </div>
 </section>

@@ -14,7 +14,8 @@
   <div class="container">
    <header class="ixir-wh-plans-head ixir-ss-plans-head">
     <div class="ixir-badge-pill ixir-ssl-badge-pill">
-     <i class="fas fa-headset" aria-hidden="true"></i> DESTEK PAKETLERİ</div>
+     <i class="fas fa-headset" aria-hidden="true"></i> DESTEK PAKETLERİ
+    </div>
     {include file="$template/components/Heading.tpl" title="Server Destek Paketleri" id="ixir-ss-plans-title" align="center"}
     <p>İhtiyacınıza en uygun destek paketine kolayca karar verin.</p>
    </header>
@@ -53,19 +54,19 @@
      </div>
      <a class="ixir-ss-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
      <ul class="ixir-ss-specs ixir-wh-specs">
-         <li><span>Genel Performans Optimizasyonu</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
-         <li><span>Zararlı Yazılım Taraması</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
-         <li><span>Ek Bileşen Kurulumu (Panel/OS Destekli)</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
-         <li><span>Sanallaştırma Desteği</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
-         <li><span>Ek Bileşen/Servis Ayarları</span><b><i class="fas fa-times" aria-label="Yok"></i></b></li>
-         <li><span>7/24 Sunucu/Servis İzleme</span><b><i class="fas fa-times" aria-label="Yok"></i></b></li>
-         <li><span>7/24 Sunucu/Servis Müdahale</span><b><i class="fas fa-times" aria-label="Yok"></i></b></li>
-         <li><span>Destek Masası</span><b>Ticket / E-Posta</b></li>
-         <li><span>Destek Saat Aralıkları</span><b>08:30 - 03:00</b></li>
-         <li><span>Ortalama Yanıt Süresi</span><b>3 Saat</b></li>
+      <li><span>Genel Performans Optimizasyonu</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
+      <li><span>Zararlı Yazılım Taraması</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
+      <li><span>Ek Bileşen Kurulumu (Panel/OS Destekli)</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
+      <li><span>Sanallaştırma Desteği</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
+      <li><span>Ek Bileşen/Servis Ayarları</span><b><i class="fas fa-times" aria-label="Yok"></i></b></li>
+      <li><span>7/24 Sunucu/Servis İzleme</span><b><i class="fas fa-times" aria-label="Yok"></i></b></li>
+      <li><span>7/24 Sunucu/Servis Müdahale</span><b><i class="fas fa-times" aria-label="Yok"></i></b></li>
+      <li><span>Destek Masası</span><b>Ticket / E-Posta</b></li>
+      <li><span>Destek Saat Aralıkları</span><b>08:30 - 03:00</b></li>
+      <li><span>Ortalama Yanıt Süresi</span><b>3 Saat</b></li>
      </ul>
     </article>
-    
+
     <article class="ixir-wh-plan ixir-ss-plan">
      <header class="ixir-ss-plan-head ixir-wh-plan-head">
       <h3>Profesyonel</h3>
@@ -76,16 +77,16 @@
      </div>
      <a class="ixir-ss-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
      <ul class="ixir-ss-specs ixir-wh-specs">
-         <li><span>Genel Performans Optimizasyonu</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
-         <li><span>Zararlı Yazılım Taraması</span><b><i class="fas fa-check" aria-label="Var"></i></b></li> 
-         <li><span>Ek Bileşen Kurulumu (Panel/OS Destekli)</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
-         <li><span>Sanallaştırma Desteği</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
-         <li><span>Ek Bileşen/Servis Ayarları</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
-         <li><span>7/24 Sunucu/Servis İzleme</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
-         <li><span>7/24 Sunucu/Servis Müdahale</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
-         <li><span>Destek Masası</span><b>Ticket / E-posta / Telefon</b></li>
-         <li><span>Destek Saat Aralıkları</span><b>7/24</b></li>
-         <li><span>Ortalama Yanıt Süresi</span><b>1 Saat</b></li>
+      <li><span>Genel Performans Optimizasyonu</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
+      <li><span>Zararlı Yazılım Taraması</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
+      <li><span>Ek Bileşen Kurulumu (Panel/OS Destekli)</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
+      <li><span>Sanallaştırma Desteği</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
+      <li><span>Ek Bileşen/Servis Ayarları</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
+      <li><span>7/24 Sunucu/Servis İzleme</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
+      <li><span>7/24 Sunucu/Servis Müdahale</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
+      <li><span>Destek Masası</span><b>Ticket / E-posta / Telefon</b></li>
+      <li><span>Destek Saat Aralıkları</span><b>7/24</b></li>
+      <li><span>Ortalama Yanıt Süresi</span><b>1 Saat</b></li>
      </ul>
     </article>
 
@@ -95,7 +96,8 @@
      <p class="ixir-ss-shared-label ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
      <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
     </div>
-    <ul class="ixir-ss-shared ixir-wh-shared ixir-ss-shared--click ixir-wh-shared--click">
+    <ul class="ixir-ss-shared ixir-wh-shared ixir-ss-shared--click ixir-wh-shared--click ixir-wh-shared--5"
+     id="ixir-wh-shared-list" data-visible="10">
      <li><i class="fas fa-server" aria-hidden="true"></i>İlk Kurulum</li>
      <li><i class="fas fa-power-off" aria-hidden="true"></i>Yeniden Kurulum</li>
      <li><i class="fas fa-sync-alt" aria-hidden="true"></i>İşletim Sistemi Güncelleme</li>
@@ -106,10 +108,17 @@
      <li><i class="fas fa-network-wired" aria-hidden="true"></i>Sunucu Servisleri Desteği</li>
      <li><i class="fas fa-tachometer-alt" aria-hidden="true"></i>Sunucu Servisleri Optimizasyonu</li>
      <li><i class="fas fa-fire-alt" aria-hidden="true"></i>Software Firewall Ayarları</li>
-     <li><i class="fas fa-shield-alt" aria-hidden="true"></i>Spam / Anti-Spam Ayarları</li>     
+     <li><i class="fas fa-shield-alt" aria-hidden="true"></i>Spam / Anti-Spam Ayarları</li>
      <li><i class="fas fa-envelope" aria-hidden="true"></i>E-Posta Problemleri</li>
      <li><i class="fas fa-life-ring" aria-hidden="true"></i>7/24 Olağanüstü Durum Desteği</li>
-     </ul>
+    </ul>
+    <div class="ixir-wh-shared-more">
+     <button type="button" class="ixir-wh-shared-more-btn" aria-controls="ixir-wh-shared-list" aria-expanded="false">
+      <span class="ixir-wh-shared-more-text">Diğer Özellikler</span>
+      <span class="ixir-wh-shared-more-count">+3</span>
+      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+     </button>
+    </div>
    </div>
   </div>
 </section>

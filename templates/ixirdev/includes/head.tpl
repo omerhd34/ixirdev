@@ -345,7 +345,7 @@
   ]}
  {/if}
  {foreach from=$ixirPageCss item=ixirCss}
-  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r147"
+  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r148"
    rel="stylesheet">
  {/foreach}
  <script src="{$WEB_ROOT}/templates/{$template}/components/hosting/plans-slider.js?v={$versionHash}-r7" defer></script>
