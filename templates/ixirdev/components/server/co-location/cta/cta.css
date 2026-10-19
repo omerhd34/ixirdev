@@ -51,6 +51,20 @@
   max-width: 620px;
 }
 
+.ixir-colo-cta .colo-cta-content > .ixir-badge-pill {
+  display: inline-flex !important;
+  justify-content: flex-start !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  background: rgba(59, 130, 246, 0.15) !important;
+  border-color: rgba(96, 165, 250, 0.35) !important;
+  color: #60a5fa !important;
+}
+
+.ixir-colo-cta .colo-cta-content > .ixir-badge-pill i {
+  color: #60a5fa !important;
+}
+
 .colo-cta-badge {
   display: inline-flex;
   align-items: center;
@@ -493,6 +507,11 @@
   .colo-cta-content {
     max-width: 100%;
     text-align: center;
+  }
+  .ixir-colo-cta .colo-cta-content > .ixir-badge-pill {
+    justify-content: flex-start !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
   }
   .colo-cta-badge {
     margin-left: auto;

@@ -2,15 +2,15 @@
 #ixir-pci-cta {
   position: relative;
   scroll-margin-top: 130px;
-  padding: 85px 0 95px;
-  background-color: #f8fafc !important;
-  background-image: radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.08) 0%, transparent 45%),
-                    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.06) 0%, transparent 50%),
-                    linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
-  color: #0b1e36 !important;
+  padding: 80px 0;
+  background-color: #091322 !important;
+  background-image: radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+                    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+                    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  color: #ffffff !important;
   overflow: hidden;
-  border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
-  border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 .ixir-pci-cta::before {
@@ -20,7 +20,7 @@
   right: 10%;
   width: 480px;
   height: 480px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -32,7 +32,7 @@
   left: 5%;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -51,6 +51,12 @@
 
 .pci-cta-content {
   max-width: 620px;
+}
+
+.ixir-pci-cta .pci-cta-content > .ixir-badge-pill {
+  justify-content: flex-start !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
 }
 
 .pci-cta-badge {
@@ -97,14 +103,14 @@
   font-size: 38px;
   font-weight: 800;
   line-height: 1.22;
-  color: #0b1e36;
+  color: #ffffff;
   margin: 0 0 20px;
   letter-spacing: -0.025em;
   scroll-margin-top: 260px;
 }
 
 .pci-cta-title-highlight {
-  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #60a5fa 0%, #38bdf8 100%);
   -webkit-background-clip: text;
   background-clip: text; 
   -webkit-text-fill-color: transparent;
@@ -114,7 +120,7 @@
 .pci-cta-desc {
   font-size: 16.5px;
   line-height: 1.7;
-  color: #475569;
+  color: rgba(255, 255, 255, 0.82);
   margin: 0 0 32px;
 }
 
@@ -130,20 +136,18 @@
   align-items: center;
   gap: 12px;
   font-size: 15px;
-  font-weight: 500;
-  color: #1e293b;
+  color: #e2e8f0;
 }
 
 .pci-cta-feature-item i {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border-radius: 8px;
-  background: #eff6ff;
-  border: 1px solid #dbeafe;
-  color: #2563eb;
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
   font-size: 13px;
   flex-shrink: 0;
 }
@@ -153,39 +157,41 @@
   align-items: center;
   gap: 12px;
   padding-top: 20px;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 14.5px;
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .pci-cta-phone-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #2563eb;
+  color: #38bdf8;
   font-weight: 700;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .pci-cta-phone-link:hover {
-  color: #1d4ed8;
+  color: #93c5fd;
   text-decoration: underline;
 }
 
 .pci-cta-form-card {
   position: relative;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 26px;
   padding: 40px 36px;
-  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.08), 0 4px 12px rgba(15, 23, 42, 0.03);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.12);
   transition: all 0.3s ease;
 }
 
 .pci-cta-form-card:hover {
   border-color: rgba(59, 130, 246, 0.35);
-  box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.14), 0 6px 16px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 30px 70px -15px rgba(37, 99, 235, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
 
 .pci-form-head {
@@ -193,18 +199,18 @@
   text-align: left;
 }
 
-.pci-form-head h3 {
+.ixir-pci-cta .pci-cta-form-card .pci-form-head h3 {
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  color: #0b1e36;
+  color: #ffffff !important;
   margin: 0 0 6px;
   letter-spacing: -0.01em;
 }
 
-.pci-form-head p {
+.ixir-pci-cta .pci-cta-form-card .pci-form-head p {
   font-size: 14px;
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.65) !important;
   margin: 0;
 }
 
@@ -244,7 +250,7 @@
   left: 18px;
   top: 26px;
   transform: translateY(-50%);
-  color: #94a3b8;
+  color: rgba(255, 255, 255, 0.4);
   font-size: 15px;
   pointer-events: none;
   transition: color 0.2s ease;
@@ -253,10 +259,10 @@
 .pci-form-input {
   width: 100%;
   height: 52px;
-  background: #f8fafc;
-  border: 1px solid #cbd5e1;
+  background: rgba(10, 18, 32, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 14px;
-  color: #0f172a;
+  color: #ffffff;
   padding: 0 16px 0 48px;
   font-size: 15px;
   font-family: inherit;
@@ -265,26 +271,26 @@
 }
 
 .pci-form-input::placeholder {
-  color: #94a3b8;
+  color: rgba(255, 255, 255, 0.42);
 }
 
 .pci-form-input:focus {
   outline: none;
-  background: #ffffff;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+  background: rgba(10, 18, 32, 0.95);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.22);
 }
 
 .pci-form-input:focus + .pci-input-icon,
 .pci-input-group:focus-within .pci-input-icon {
-  color: #2563eb;
+  color: #60a5fa;
 }
 
 .pci-submit-btn {
   width: 100%;
   height: 54px;
   background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 14px;
   color: #ffffff;
   font-family: "Space Grotesk", "Roboto", sans-serif;
@@ -296,7 +302,7 @@
   justify-content: center;
   gap: 10px;
   cursor: pointer;
-  box-shadow: 0 10px 25px -4px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 10px 25px -4px rgba(37, 99, 235, 0.5);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   margin-top: 6px;
 }
@@ -308,7 +314,7 @@
 
 .pci-submit-btn:hover {
   background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  box-shadow: 0 14px 30px -4px rgba(37, 99, 235, 0.5);
+  box-shadow: 0 14px 30px -4px rgba(37, 99, 235, 0.65);
   transform: translateY(-2px);
 }
 
@@ -327,23 +333,23 @@
   gap: 7px;
   margin-top: 14px;
   font-size: 12.5px;
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.55);
   text-align: center;
 }
 
 .pci-form-privacy i {
   font-size: 12px;
-  color: #2563eb;
+  color: #38bdf8;
 }
 
 .pci-form-alert {
   display: none;
   padding: 24px 20px;
   border-radius: 16px;
-  background: #ecfdf5;
-  border: 1px solid #a7f3d0;
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.35);
   text-align: center;
-  color: #065f46;
+  color: #ffffff;
 }
 
 .pci-form-alert.is-shown {
@@ -354,8 +360,8 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #d1fae5;
-  color: #059669;
+  background: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -367,32 +373,31 @@
   font-size: 18px;
   font-weight: 700;
   margin: 0 0 6px;
-  color: #065f46;
+  color: #ffffff;
 }
 
 .pci-form-alert p {
   font-size: 14px;
-  color: #047857;
+  color: rgba(255, 255, 255, 0.85);
   margin: 0;
 }
 
 .pci-form-alert.pci-form-alert--error {
-  background: #fef2f2 !important;
-  border-color: #fecaca !important;
-  color: #991b1b !important;
+  background: rgba(239, 68, 68, 0.15) !important;
+  border-color: rgba(239, 68, 68, 0.35) !important;
 }
 
 .pci-form-alert-icon.pci-form-alert-icon--error {
-  background: #fee2e2 !important;
-  color: #dc2626 !important;
+  background: rgba(239, 68, 68, 0.2) !important;
+  color: #f87171 !important;
 }
 
 .pci-form-alert.pci-form-alert--error h4 {
-  color: #991b1b !important;
+  color: #ffffff !important;
 }
 
 .pci-form-alert.pci-form-alert--error p {
-  color: #b91c1c !important;
+  color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .pci-alert-retry-btn {
@@ -402,9 +407,9 @@
   margin-top: 14px;
   padding: 8px 18px;
   border-radius: 10px;
-  background: #fee2e2;
-  border: 1px solid #fca5a5;
-  color: #991b1b;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
@@ -412,39 +417,39 @@
 }
 
 .pci-alert-retry-btn:hover {
-  background: #fecaca;
-  border-color: #f87171;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.35);
   transform: translateY(-1px);
 }
 
 .pci-input-group.has-error .pci-form-input {
-  border-color: #ef4444 !important;
-  background: #fef2f2 !important;
-  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.12) !important;
+  border-color: rgba(248, 113, 113, 0.85) !important;
+  background: rgba(30, 16, 26, 0.85) !important;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
 }
 
 .pci-input-group.has-error .pci-form-input::placeholder,
 .pci-input-group.has-error .pci-form-input::-webkit-input-placeholder,
 .pci-input-group.has-error .pci-form-input::-moz-placeholder,
 .pci-input-group.has-error .pci-form-input:-ms-input-placeholder {
-  color: #dc2626 !important;
+  color: #f87171 !important;
   font-size: 14px !important;
   font-weight: 500 !important;
   opacity: 1 !important;
 }
 
 .pci-input-group.has-error .pci-form-input:focus {
-  border-color: #2563eb !important;
-  background: #ffffff !important;
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12) !important;
+  border-color: #3b82f6 !important;
+  background: rgba(10, 18, 32, 0.95) !important;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.22) !important;
 }
 
 .pci-input-group.has-error .pci-input-icon {
-  color: #dc2626 !important;
+  color: #f87171 !important;
 }
 
 .pci-input-group.has-error .intl-tel-input .selected-flag {
-  border-right-color: #fca5a5 !important;
+  border-right-color: rgba(248, 113, 113, 0.45) !important;
 }
 
 .pci-input-group.is-shaking .pci-form-input,
@@ -504,6 +509,11 @@
     max-width: 100%;
     text-align: center;
   }
+  .ixir-pci-cta .pci-cta-content > .ixir-badge-pill {
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
   .pci-cta-badge {
     margin-left: auto;
     margin-right: auto;
@@ -562,7 +572,7 @@
   padding: 0 !important;
   margin: 0 !important;
   background: transparent !important;
-  border-right: 1px solid #cbd5e1 !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.18) !important;
   box-sizing: border-box !important;
   outline: none !important;
 }
@@ -586,7 +596,7 @@
   display: inline-block !important;
   padding: 0 !important;
   margin: 0 !important;
-  color: #1e293b !important;
+  color: #e2e8f0 !important;
   font-size: 14.5px !important;
   font-weight: 600 !important;
   line-height: 1 !important;
@@ -603,12 +613,12 @@
   height: 0 !important;
   border-left: 3px solid transparent !important;
   border-right: 3px solid transparent !important;
-  border-top: 4px solid #64748b !important;
+  border-top: 4px solid #94a3b8 !important;
   border-bottom: none !important;
 }
 
 .ixir-pci-cta .intl-tel-input .selected-flag .iti-arrow.up {
-  border-bottom: 4px solid #2563eb !important;
+  border-bottom: 4px solid #38bdf8 !important;
   border-top: none !important;
 }
 
@@ -618,11 +628,11 @@
 }
 
 .ixir-pci-cta .intl-tel-input .country-list {
-  background-color: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  background-color: #0b1528 !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
   border-radius: 14px !important;
-  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.15) !important;
-  color: #0f172a !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.75) !important;
+  color: #ffffff !important;
   max-height: 240px !important;
   overflow-y: auto !important;
   overflow-x: hidden !important;
@@ -638,7 +648,7 @@
   padding: 8px 14px !important;
   font-size: 14px !important;
   line-height: 1.4 !important;
-  color: #0f172a !important;
+  color: #f1f5f9 !important;
   display: flex !important;
   align-items: center !important;
   gap: 10px !important;
@@ -671,12 +681,12 @@
   width: 20px !important;
   margin: 0 !important;
   flex-shrink: 0 !important;
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5) !important;
   background-color: transparent !important;
 }
 
 .ixir-pci-cta .intl-tel-input .country-list .country .country-name {
-  color: #0f172a !important;
+  color: #ffffff !important;
   font-weight: 500 !important;
   margin-right: 6px !important;
   white-space: nowrap !important;
@@ -687,7 +697,7 @@
 }
 
 .ixir-pci-cta .intl-tel-input .country-list .country .dial-code {
-  color: #2563eb !important;
+  color: #60a5fa !important;
   font-weight: 600 !important;
   margin-left: auto !important;
   flex-shrink: 0 !important;
@@ -695,12 +705,12 @@
 
 .ixir-pci-cta .intl-tel-input .country-list .country:hover,
 .ixir-pci-cta .intl-tel-input .country-list .country.highlight {
-  background-color: #eff6ff !important;
-  color: #1e293b !important;
+  background-color: rgba(59, 130, 246, 0.25) !important;
+  color: #ffffff !important;
 }
 
 .ixir-pci-cta .intl-tel-input .country-list .divider {
-  border-bottom: 1px solid #e2e8f0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
   margin: 6px 0 !important;
 }
 
@@ -708,13 +718,13 @@
   width: 6px !important;
 }
 .ixir-pci-cta .intl-tel-input .country-list::-webkit-scrollbar-track {
-  background: #f1f5f9 !important;
+  background: rgba(15, 23, 42, 0.6) !important;
   border-radius: 8px !important;
 }
 .ixir-pci-cta .intl-tel-input .country-list::-webkit-scrollbar-thumb {
-  background: rgba(37, 99, 235, 0.3) !important;
+  background: rgba(59, 130, 246, 0.5) !important;
   border-radius: 8px !important;
 }
 .ixir-pci-cta .intl-tel-input .country-list::-webkit-scrollbar-thumb:hover {
-  background: #2563eb !important;
+  background: #3b82f6 !important;
 }

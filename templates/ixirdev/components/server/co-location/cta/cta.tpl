@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/co-location/cta/cta.css?v={$versionHash}-r3">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/co-location/cta/cta.css?v={$versionHash}-r4">
 
 <section class="ixir-colo-cta ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-colo-cta-title">
   <div class="container">

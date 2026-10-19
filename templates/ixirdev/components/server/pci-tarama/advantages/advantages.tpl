@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/advantages/advantages.css?v={$versionHash}-r3">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/advantages/advantages.css?v={$versionHash}-r4">
 
 <section class="ixir-pci-advantages bg-dark-blue ixir-slide ixir-slide--left is-slide-on" aria-labelledby="ixir-pci-advantages-title">
   <div class="container">
@@ -98,4 +98,3 @@
     </div>
   </div>
 </section>
-

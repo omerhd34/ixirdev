@@ -1,9 +1,13 @@
 .ixir-pci-how {
   position: relative;
   padding: 95px 0 105px;
-  background-color: #f8fafc !important;
-  border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
-  border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
+  background-color: #091322 !important;
+  background-image:
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
   overflow: hidden;
 }
 
@@ -37,6 +41,12 @@
 
 .pci-how-header {
   margin-bottom: 38px;
+}
+
+.ixir-pci-how .pci-how-header > .ixir-badge-pill {
+  justify-content: flex-start !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
 }
 
 .pci-how-badge {
@@ -74,11 +84,11 @@
 .pci-how-header h2 {
   margin-top: 0 !important;
   margin-bottom: 16px;
-  color: #0b2545;
+  color: #ffffff;
 }
 
 .pci-how-subhead {
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.78);
   font-size: 16px;
   line-height: 1.65;
   margin: 0;
@@ -180,19 +190,19 @@
   margin-bottom: 8px;
 }
 
-.pci-how-step-title {
+.ixir-pci-how .pci-how-step-card .pci-how-step-title {
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
   font-size: 17px;
   font-weight: 700;
-  color: #0b2545;
+  color: #0b2545 !important;
   margin: 0;
   letter-spacing: -0.01em;
   line-height: 1.35;
   transition: color 0.25s ease;
 }
 
-.pci-how-step:hover .pci-how-step-title {
-  color: #1d4ed8;
+.ixir-pci-how .pci-how-step:hover .pci-how-step-title {
+  color: #1d4ed8 !important;
 }
 
 .pci-how-step-pill {
@@ -221,9 +231,9 @@
   font-size: 11px;
 }
 
-.pci-how-step-desc {
+.ixir-pci-how .pci-how-step-card .pci-how-step-desc {
   font-size: 14.5px;
-  color: #475569;
+  color: #475569 !important;
   line-height: 1.65;
   margin: 0;
 }

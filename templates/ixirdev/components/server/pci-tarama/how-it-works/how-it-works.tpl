@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/how-it-works/how-it-works.css?v={$versionHash}-r3">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/how-it-works/how-it-works.css?v={$versionHash}-r5">
 
 <section class="ixir-pci-how bg-dark-blue ixir-slide ixir-slide--left is-slide-on" id="ixir-pci-how" aria-labelledby="ixir-pci-how-title">
   <script>

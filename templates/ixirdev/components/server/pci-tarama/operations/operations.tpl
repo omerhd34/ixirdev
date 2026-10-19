@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/operations/operations.css?v={$versionHash}-r3">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/components/server/pci-tarama/operations/operations.css?v={$versionHash}-r4">
 
 <section class="ixir-pci-ops bg-light-blue ixir-slide ixir-slide--right is-slide-on" id="ixir-pci-ops" aria-labelledby="ixir-pci-ops-title">
   <script>
@@ -186,4 +186,3 @@
 
   </div>
 </section>
-

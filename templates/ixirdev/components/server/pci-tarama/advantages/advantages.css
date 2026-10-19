@@ -1,9 +1,13 @@
 .ixir-pci-advantages {
   position: relative;
   padding: 85px 0 95px;
-  background: #f8fafc !important;
-  border-top: 1px solid rgba(59, 130, 246, 0.12) !important;
-  border-bottom: 1px solid rgba(59, 130, 246, 0.12) !important;
+  background-color: #091322 !important;
+  background-image:
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
+    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
   overflow: hidden;
 }
 
@@ -57,11 +61,11 @@
 .pci-adv-header h2 {
   margin-top: 0 !important;
   margin-bottom: 16px;
-  color: #0b2545;
+  color: #ffffff;
 }
 
 .pci-adv-subhead {
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.78);
   font-size: 16px;
   line-height: 1.65;
   margin: 0 auto;
@@ -142,30 +146,30 @@
   box-shadow: 0 16px 32px -6px rgba(59, 130, 246, 0.28);
 }
 
-.pci-adv-card-title {
+.ixir-pci-advantages .pci-adv-card .pci-adv-card-title {
   font-family: "Space Grotesk", "Roboto", sans-serif;
   font-size: 21px;
   font-weight: 700;
-  color: #0b2545;
+  color: #0b2545 !important;
   margin: 0 0 14px;
   letter-spacing: -0.02em;
   transition: color 0.25s ease;
 }
 
-.pci-adv-card:hover .pci-adv-card-title {
-  color: #2563eb;
+.ixir-pci-advantages .pci-adv-card:hover .pci-adv-card-title {
+  color: #2563eb !important;
 }
 
-.pci-adv-card-desc {
+.ixir-pci-advantages .pci-adv-card .pci-adv-card-desc {
   font-size: 15px;
   line-height: 1.7;
-  color: #64748b;
+  color: #64748b !important;
   margin: 0 0 24px;
   flex-grow: 1;
 }
 
-.pci-adv-card-desc strong {
-  color: #1e293b;
+.ixir-pci-advantages .pci-adv-card .pci-adv-card-desc strong {
+  color: #1e293b !important;
   font-weight: 600;
 }
 
@@ -233,4 +237,3 @@
     gap: 20px;
   }
 }
-

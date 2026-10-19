@@ -4,14 +4,14 @@
 .ixir-pci-story {
   position: relative;
   padding: 85px 0 95px;
-  background-color: #091322 !important;
+  background-color: #f8fafc !important;
   background-image: 
-    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
-    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%),
-    linear-gradient(135deg, #070e1a 0%, #0c1a30 100%) !important;
-  color: #fff !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.06) 0%, transparent 50%),
+    linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+  color: #0b2545 !important;
+  border-top: 1px solid rgba(59, 130, 246, 0.12);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.12);
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -55,7 +55,7 @@
   border-radius: 18px;
   font-size: 26px;
   background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
-  color: #fff !important;
+  color: #0b2545 !important;
   box-shadow: 0 12px 28px rgba(37, 99, 235, 0.35);
   transition: transform 0.3s ease;
 }
@@ -89,14 +89,14 @@
   margin: 0 auto 24px !important;
   max-width: 820px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.78) !important;
+  color: #475569 !important;
   font-size: 15.5px;
   line-height: 1.7;
 }
 
 .ixir-pci-story .pci-story-intro p strong,
 .ixir-pci-story .ixir-wh-story-intro p strong {
-  color: #fff !important;
+  color: #1e293b !important;
   font-weight: 700;
 }
 
