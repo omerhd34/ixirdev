@@ -371,7 +371,7 @@ div.header-lined h1 {
 }
 
 .ixir-slide.is-slide-reset {
-  transition: none;
+  transition: none !important;
 }
 
 @media (max-width: 1024px) {
