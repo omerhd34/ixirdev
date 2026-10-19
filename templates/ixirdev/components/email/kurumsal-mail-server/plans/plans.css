@@ -196,3 +196,40 @@
   z-index: 100 !important;
   overflow: visible !important;
 }
+
+.ixir-kms-plans .ixir-kms-grid.ixir-wh-grid,
+.ixir-kms-plans .ixir-wh-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ixir-kms-plans .ixir-wh-badge {
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 16px !important;
+  height: 28px !important;
+  line-height: 28px !important;
+  border-radius: 999px !important;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4) !important;
+  white-space: nowrap !important;
+  z-index: 10 !important;
+  pointer-events: none !important;
+}
+
+@media (max-width: 1200px) {
+  .ixir-kms-plans .ixir-kms-grid.ixir-wh-grid,
+  .ixir-kms-plans .ixir-wh-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

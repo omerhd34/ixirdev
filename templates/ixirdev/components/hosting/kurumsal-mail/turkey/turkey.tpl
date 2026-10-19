@@ -7,8 +7,8 @@
      decoding="async">
    </div>
    <div class="ixir-km-tr-copy">
-    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-flag" aria-hidden="true"></i> YERLİ VERİ MERKEZİ</div>
-    {include file="$template/components/Heading.tpl" title="Kurumsal E-mail ile<br> Tüm Verileriniz Türkiye'de" id="ixir-km-tr-title"}
+    <div class="ixir-badge-pill ixir-badge-pill--left ixir-ssl-badge-pill ixir-ssl-badge-pill--left"><i class="fas fa-flag" aria-hidden="true"></i> YERLİ VERİ MERKEZİ</div>
+    {include file="$template/components/Heading.tpl" title="Kurumsal E-mail ile<br> Tüm Verileriniz Türkiye'de" id="ixir-km-tr-title" align="left"}
     <p>Yalnızca e-posta sunucularımız ve verileriniz değil; gelen ve giden antispam, outbound filtreleme
      sunucularımız da Türkiye'de. Dolayısıyla KVKK 6698'e tam uyumlu, yerli iletişim ve yerli operatörler ile yerel
      e-posta sağlıyoruz.</p>

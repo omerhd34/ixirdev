@@ -33,6 +33,11 @@
   margin: 0 0 16px;
   color: #0b2545;
 }
+.ixir-km-tr-copy .ixir-badge-pill,
+.ixir-km-tr-copy .ixir-ssl-badge-pill {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
 .ixir-km-tr-copy p {
   margin: 0 0 22px;
   color: #4b5160;
