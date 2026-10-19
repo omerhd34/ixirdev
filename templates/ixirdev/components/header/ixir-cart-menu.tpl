@@ -52,7 +52,7 @@
    <span class="ixir-cart-empty-text">Henüz ürün eklemediniz.</span>
   </div>
  {/if}
- <a href="{$WEB_ROOT}/sepet/goruntule" class="ixir-cart-view-btn">
+ <a href="{$WEB_ROOT}/sepet" class="ixir-cart-view-btn">
   <span class="ixir-cart-view-btn-label">Sepeti Gör <i class="fas fa-arrow-right"></i></span>
  </a>
 </div>
