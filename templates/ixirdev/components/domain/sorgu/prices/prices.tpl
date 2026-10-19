@@ -14,11 +14,11 @@
      <table class="ixir-domain-prices-table">
       <thead>
        <tr>
-        <th data-sort="tld">Domain Uzantı Adı <span class="ixir-dp-sort" aria-hidden="true"></span></th>
-        <th>Süre</th>
-        <th data-sort="register">Domain Tescil <span class="ixir-dp-sort" aria-hidden="true"></span></th>
-        <th data-sort="transfer">Domain Transfer <span class="ixir-dp-sort" aria-hidden="true"></span></th>
-        <th data-sort="renew">Domain Yenileme <span class="ixir-dp-sort" aria-hidden="true"></span></th>
+        <th data-sort="tld"><i class="fas fa-globe" aria-hidden="true"></i> Domain Uzantı Adı<span class="ixir-dp-sort" aria-hidden="true"></span></th>
+        <th><i class="far fa-clock" aria-hidden="true"></i> Süre(Yıl)</th>
+        <th data-sort="register"><i class="fas fa-file-signature" aria-hidden="true"></i> Domain Tescil(TL) <span class="ixir-dp-sort" aria-hidden="true"></span></th>
+        <th data-sort="transfer"><i class="fas fa-exchange-alt" aria-hidden="true"></i> Domain Transfer(TL) <span class="ixir-dp-sort" aria-hidden="true"></span></th>
+        <th data-sort="renew"><i class="fas fa-sync-alt" aria-hidden="true"></i> Domain Yenileme(TL) <span class="ixir-dp-sort" aria-hidden="true"></span></th>
        </tr>
       </thead>
       <tbody id="ixirDomainPriceBody">
@@ -27,10 +27,10 @@
          <tr data-tld="{$price.tld|escape:'html'}" data-period="{$price.period|escape:'html'}"
           data-register="{$price.registerNum}" data-transfer="{$price.transferNum}" data-renew="{$price.renewNum}"{if $price@iteration > 5} style="display: none;"{/if}>
           <td><span class="ixir-dp-tld">{$price.tld}</span></td>
-          <td>{$price.period}</td>
-          <td>{$price.register}</td>
-          <td>{$price.transfer}</td>
-          <td>{$price.renew}</td>
+          <td>{$price.period|replace:' Yıl':''}</td>
+          <td>{$price.registerNum}</td>
+          <td>{$price.transferNum}</td>
+          <td>{$price.renewNum}</td>
          </tr>
         {/foreach}
        {/if}

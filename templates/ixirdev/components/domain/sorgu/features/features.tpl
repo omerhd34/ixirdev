@@ -8,15 +8,14 @@
       <span class="ixir-domain-feature-icon" aria-hidden="true"><i class="fas fa-cog"></i></span>
       <div>
        <h3>Gelişmiş Yönetim Paneli</h3>
-       <p>Gelişmiş Türkçe domain yönetim paneli ile pratik domain yönetimi gerçekleştirin</p>
+       <p>Gelişmiş Türkçe domain yönetim paneli ile pratik domain yönetimi gerçekleştirin.</p>
       </div>
      </article>
      <article>
       <span class="ixir-domain-feature-icon" aria-hidden="true"><i class="fas fa-percent"></i></span>
       <div>
        <h3>Ekonomik Fiyatlar</h3>
-       <p>Yıl boyu en ekonomik fiyatlardan domain kaydedin, ayrıca zaman zaman bazı uzantılarda çok cazip fiyatlar
-        sunmaktayız</p>
+       <p>Yıl boyu en ekonomik fiyatlardan domain kaydedin, ayrıca zaman zaman bazı uzantılarda çok cazip fiyatlar sunmaktayız.</p>
       </div>
      </article>
      <article>

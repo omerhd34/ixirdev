@@ -299,7 +299,8 @@
      pager.style.display = 'flex';
      var prev = document.createElement('button');
      prev.type = 'button';
-     prev.textContent = 'Geri';
+     prev.setAttribute('aria-label', 'Önceki sayfa');
+     prev.innerHTML = '<i class="fas fa-chevron-left" aria-hidden="true"></i>';
      prev.disabled = page <= 1;
      prev.addEventListener('click', function() {
       if (page > 1) {
@@ -308,24 +309,10 @@
       }
      });
      pager.appendChild(prev);
-     for (var i = 1; i <= pages; i += 1) {
-      var btn = document.createElement('button');
-      btn.type = 'button';
-      btn.textContent = String(i);
-      if (i === page) {
-       btn.className = 'is-active';
-      }
-      btn.addEventListener('click', function(n) {
-       return function() {
-        page = n;
-        render();
-       };
-      }(i));
-      pager.appendChild(btn);
-     }
      var next = document.createElement('button');
      next.type = 'button';
-     next.textContent = 'İleri';
+     next.setAttribute('aria-label', 'Sonraki sayfa');
+     next.innerHTML = '<i class="fas fa-chevron-right" aria-hidden="true"></i>';
      next.disabled = page >= pages;
      next.addEventListener('click', function() {
       if (page < pages) {

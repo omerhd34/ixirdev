@@ -77,6 +77,11 @@
   user-select: none;
   font-size: 13.5px;
 }
+.ixir-domain-prices-table th > i {
+  margin-right: 6px;
+  color: #2563eb;
+  font-size: 12px;
+}
 .ixir-domain-prices-table th[data-sort] {
   cursor: pointer;
 }
@@ -130,37 +135,47 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 8px;
-  margin: 20px 0 0;
+  gap: 10px;
+  margin: 22px 0 0;
 }
 .ixir-domain-prices-pager button {
-  min-width: 38px;
-  height: 38px;
-  padding: 0 12px;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  background: #fff;
-  color: #334155;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid #dbe5f2;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #fff 0%, #f8fbff 100%);
+  color: #174277;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
-  font-size: 13.5px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s ease;
+  box-shadow: 0 3px 8px rgba(15, 23, 42, 0.06);
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 .ixir-domain-prices-pager button:hover:not(:disabled) {
+  transform: translateY(-2px);
   border-color: #2563eb;
-  color: #2563eb;
-}
-.ixir-domain-prices-pager button.is-active {
   background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-  border-color: #2563eb;
   color: #fff;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 7px 16px rgba(37, 99, 235, 0.24);
+}
+.ixir-domain-prices-pager button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.25);
+  outline-offset: 3px;
 }
 .ixir-domain-prices-pager button:disabled {
-  color: #94a3b8;
+  border-color: #e8edf4;
+  background: #f8fafc;
+  color: #b6c2d1;
   cursor: default;
-  opacity: 0.6;
+  box-shadow: none;
+}
+.ixir-domain-prices-pager button i {
+  font-size: 14px;
 }
 #order-standard_cart.ixir-domain-page:not(.ixir-transfer-page):not(.ixir-whois-page) .ixir-domain-prices {
   background: #fff;

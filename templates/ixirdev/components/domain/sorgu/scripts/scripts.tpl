@@ -345,23 +345,23 @@
 
   function ixirFallbackSuggestions(parsed) {
    var extras = [
-    { tld: 'online', price: '350.00TL' },
-    { tld: 'live', price: '169.00TL' },
-    { tld: 'tech', price: '550.00TL' },
-    { tld: 'app', price: '1150.00TL' },
-    { tld: 'co', price: '2080.00TL' },
-    { tld: 'eu', price: '600.00TL' },
-    { tld: 'me', price: '1150.00TL' },
-    { tld: 'club', price: '1400.00TL' },
-    { tld: 'site', price: '1960.00TL' },
-    { tld: 'blog', price: '1600.00TL' },
-    { tld: 'biz', price: '1100.00TL' },
-    { tld: 'pw', price: '260.00TL' },
-    { tld: 'io', price: '1760.00TL' },
-    { tld: 'studio', price: '1810.00TL' },
-    { tld: 'gen.tr', price: '150.00TL' },
-    { tld: 'web.tr', price: '150.00TL' },
-    { tld: 'market', price: '2450.00TL' }
+    { tld: 'online', price: '350' },
+    { tld: 'live', price: '169' },
+    { tld: 'tech', price: '550' },
+    { tld: 'app', price: '1150' },
+    { tld: 'co', price: '2080' },
+    { tld: 'eu', price: '600' },
+    { tld: 'me', price: '1150' },
+    { tld: 'club', price: '1400' },
+    { tld: 'site', price: '1960' },
+    { tld: 'blog', price: '1600' },
+    { tld: 'biz', price: '1100' },
+    { tld: 'pw', price: '260' },
+    { tld: 'io', price: '1760' },
+    { tld: 'studio', price: '1810' },
+    { tld: 'gen.tr', price: '150' },
+    { tld: 'web.tr', price: '150' },
+    { tld: 'market', price: '2450' }
    ];
    var list = [];
    jQuery.each(extras, function(i, item) {
@@ -1040,7 +1040,8 @@
     pager.style.display = 'flex';
     var prev = document.createElement('button');
     prev.type = 'button';
-    prev.textContent = 'Geri';
+    prev.setAttribute('aria-label', 'Önceki sayfa');
+    prev.innerHTML = '<i class="fas fa-chevron-left" aria-hidden="true"></i>';
     prev.disabled = page <= 1;
     prev.addEventListener('click', function() {
      if (page > 1) {
@@ -1049,24 +1050,10 @@
      }
     });
     pager.appendChild(prev);
-    for (var i = 1; i <= pages; i += 1) {
-     var btn = document.createElement('button');
-     btn.type = 'button';
-     btn.textContent = String(i);
-     if (i === page) {
-      btn.className = 'is-active';
-     }
-     btn.addEventListener('click', function(n) {
-      return function() {
-       page = n;
-       render();
-      };
-     }(i));
-     pager.appendChild(btn);
-    }
     var next = document.createElement('button');
     next.type = 'button';
-    next.textContent = 'İleri';
+    next.setAttribute('aria-label', 'Sonraki sayfa');
+    next.innerHTML = '<i class="fas fa-chevron-right" aria-hidden="true"></i>';
     next.disabled = page >= pages;
     next.addEventListener('click', function() {
      if (page < pages) {
