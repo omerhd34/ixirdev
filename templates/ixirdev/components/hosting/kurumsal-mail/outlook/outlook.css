@@ -43,11 +43,17 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+.ixir-km-outlook-copy .ixir-badge-pill,
+.ixir-km-outlook-copy .ixir-ssl-badge-pill {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
 .ixir-km-outlook-copy h2 {
   margin: 0 0 16px;
   color: #0b1e36 !important;
   font-family: "Space Grotesk", "Roboto", -apple-system, sans-serif;
 }
+
 .ixir-km-outlook-copy p {
   margin: 0 0 14px;
   color: #475569 !important;
