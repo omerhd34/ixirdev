@@ -1487,16 +1487,67 @@ body.ixir-corporate-page {
 }
 
 .ixir-contact-form .form-control::placeholder {
- color: #94a3b8;
- opacity: 1;
+ color: transparent;
+ opacity: 0;
 }
 
 .ixir-contact-form textarea.form-control {
  height: auto;
  min-height: 150px;
- padding-top: 14px;
- padding-bottom: 14px;
+ padding: 24px 16px 14px;
  resize: vertical;
+}
+
+.ixir-contact-field {
+ position: relative;
+}
+
+.ixir-contact-float-label {
+ position: absolute;
+ top: 50%;
+ left: 16px;
+ max-width: calc(100% - 32px);
+ margin: 0;
+ overflow: hidden;
+ color: #94a3b8;
+ font-size: 14px;
+ font-weight: 400;
+ line-height: 1.2;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+ pointer-events: none;
+ transform: translateY(-50%);
+ transform-origin: left center;
+ transition: top 0.2s ease, transform 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+.ixir-contact-form .form-control:focus + .ixir-contact-float-label,
+.ixir-contact-form .form-control:not(:placeholder-shown) + .ixir-contact-float-label {
+ top: 5px;
+ color: #64748b;
+ font-size: 10px;
+ font-weight: 600;
+ line-height: 1.4;
+ transform: none;
+}
+
+.ixir-contact-form .form-control:focus + .ixir-contact-float-label {
+ color: #386ce0;
+}
+
+.ixir-contact-field--message .ixir-contact-float-label {
+ top: 25px;
+ transform: none;
+}
+
+.ixir-contact-form textarea.form-control:focus + .ixir-contact-float-label,
+.ixir-contact-form textarea.form-control:not(:placeholder-shown) + .ixir-contact-float-label {
+ top: 8px;
+}
+
+.ixir-contact-form .ixir-contact-field.has-error .ixir-contact-float-label,
+.ixir-contact-form .form-control.is-invalid + .ixir-contact-float-label {
+ color: #dc2626;
 }
 
 .ixir-contact-form .form-control:hover {
@@ -1556,6 +1607,7 @@ body.ixir-corporate-page {
 .ixir-contact-form .ixir-captcha-wrap {
  max-width: 100%;
  overflow-x: auto;
+ overflow-y: hidden;
 }
 
 .ixir-contact-form .ixir-captcha-wrap.is-invalid .ixir-recaptcha-box,

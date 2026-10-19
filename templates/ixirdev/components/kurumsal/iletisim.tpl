@@ -90,31 +90,31 @@
 
       <div class="ixir-grid-2">
        <div class="ixir-contact-field">
-        <label class="sr-only" for="inputName">{$LANG.supportticketsclientname}</label>
-        <input type="text" name="name" value="{$name}" class="form-control" id="inputName" placeholder="Adınız Soyadınız"
+        <input type="text" name="name" value="{$name}" class="form-control" id="inputName" placeholder=" "
          autocomplete="name" data-ixir-validate="1" data-ixir-required="Adınızı ve soyadınızı yazın.">
+        <label class="ixir-contact-float-label" for="inputName">Adınız Soyadınız</label>
         <span class="ixir-contact-field-error" hidden></span>
        </div>
        <div class="ixir-contact-field">
-        <label class="sr-only" for="inputEmail">{$LANG.supportticketsclientemail}</label>
         <input type="email" name="email" value="{$email}" class="form-control" id="inputEmail"
-         placeholder="E-posta Adresiniz" autocomplete="email" data-ixir-validate="1" data-ixir-type="email"
+         placeholder=" " autocomplete="email" data-ixir-validate="1" data-ixir-type="email"
          data-ixir-required="Geçerli bir e-posta adresi yazın.">
+        <label class="ixir-contact-float-label" for="inputEmail">E-posta Adresiniz</label>
         <span class="ixir-contact-field-error" hidden></span>
        </div>
       </div>
 
       <div class="ixir-contact-field">
-       <label class="sr-only" for="inputSubject">{$LANG.supportticketsticketsubject}</label>
-       <input type="text" name="subject" value="{$subject}" class="form-control" id="inputSubject" placeholder="Konu"
+       <input type="text" name="subject" value="{$subject}" class="form-control" id="inputSubject" placeholder=" "
         data-ixir-validate="1" data-ixir-required="Konu alanını doldurun.">
+       <label class="ixir-contact-float-label" for="inputSubject">Konu</label>
        <span class="ixir-contact-field-error" hidden></span>
       </div>
 
-      <div class="ixir-contact-field">
-       <label class="sr-only" for="inputMessage">{$LANG.contactmessage}</label>
-       <textarea name="message" rows="7" class="form-control" id="inputMessage" placeholder="Mesajınız"
+      <div class="ixir-contact-field ixir-contact-field--message">
+       <textarea name="message" rows="7" class="form-control" id="inputMessage" placeholder=" "
         data-ixir-validate="1" data-ixir-required="Mesajınızı yazın.">{$message}</textarea>
+       <label class="ixir-contact-float-label" for="inputMessage">Mesajınız</label>
        <span class="ixir-contact-field-error" hidden></span>
       </div>
 
