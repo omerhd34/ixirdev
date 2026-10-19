@@ -10,7 +10,6 @@
      <div class="notice-header-badge">
       <span class="notice-pulse-dot"></span> KÜRESEL GÜVENLİK GÜNCELLEMESİ
      </div>
-     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-clock" aria-hidden="true"></i> SÜRE BİLGİLENDİRMESİ</div>
      <h2 id="ssl-notice-title" class="notice-title">SSL Sertifikası Geçerlilik Süreleri Kısalıyor — Bilmeniz Gerekenler
      </h2>
      <p class="notice-desc">Apple, Google ve Mozilla'nın öncülüğünde CA/Browser Forum'un aldığı kararla SSL sertifikası geçerlilik süreleri kademeli olarak düşürülmektedir. Bu değişiklik tüm SSL markalarını kapsıyor; sertifikanızı daha sık yenilemeniz gerekecek.</p>

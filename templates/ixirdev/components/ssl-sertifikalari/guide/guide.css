@@ -704,3 +704,18 @@
     padding: 5px 12px;
   }
 }
+
+.ixir-ssl-guide-section .ssl-guide-card-title,
+.ixir-ssl-guide-section .ssl-guide-showcase-title,
+.ixir-ssl-guide-section .ssl-type-item-name {
+  color: #0b2545 !important;
+}
+
+.ixir-ssl-guide-section .ssl-guide-text,
+.ixir-ssl-guide-section .ssl-type-item-desc {
+  color: #475569 !important;
+}
+
+.ixir-ssl-guide-section .ssl-guide-showcase-desc {
+  color: #64748b !important;
+}
