@@ -136,13 +136,6 @@
   box-shadow: 0 14px 28px rgba(9, 19, 34, 0.35);
 }
 
-@media (min-width: 768px) {
-  .ixir-wh-migrate-grid {
-    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-    gap: 36px;
-  }
-}
-
 @media (min-width: 992px) {
   .ixir-wh-migrate-grid {
     grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
@@ -153,8 +146,9 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ixir-wh-migrate-grid {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
     gap: 20px;
   }
   .ixir-wh-migrate-visual {
@@ -174,6 +168,9 @@
   .ixir-wh-migrate-copy p {
     font-size: 15px;
   }
+  .ixir-wh-migrate {
+    padding: 48px 0 52px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -188,33 +185,20 @@
   }
 }
 
-@media (max-width: 768px) {
-  .ixir-wh-migrate {
-    padding: 48px 0 52px;
+.ixir-wh-migrate-copy .ixir-badge-pill,
+.ixir-wh-migrate-copy .ixir-ssl-badge-pill {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 767px) {
+  .ixir-wh-migrate-copy .ixir-badge-pill,
+  .ixir-wh-migrate-copy .ixir-ssl-badge-pill {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
-.ixir-wh-page--wp .ixir-wh-migrate {
-  color: #fff;
-  background: #091322 !important;
-  background-image: 
-    radial-gradient(circle at 18% 25%, rgba(59, 130, 246, 0.18) 0%, transparent 45%),
-    radial-gradient(circle at 82% 70%, rgba(37, 99, 235, 0.16) 0%, transparent 50%) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-.ixir-wh-page--wp .ixir-wh-migrate-eyebrow {
-  background: rgba(37, 99, 235, 0.15);
-  border: 1px solid rgba(96, 165, 250, 0.3);
-  color: #60a5fa;
-}
-.ixir-wh-page--wp .ixir-wh-migrate-copy h2, 
-.ixir-wh-page--wp .ixir-wh-migrate-copy .ixir-wh-migrate-lead {
-  color: #fff;
-}
-.ixir-wh-page--wp .ixir-wh-migrate-copy p {
-  color: #94a3b8;
-}
 .ixir-wh-page--wp .ixir-wh-migrate.is-armed .ixir-wh-migrate-visual:not(.is-in) {
   transform: translate3d(-72px, 0, 0);
 }
