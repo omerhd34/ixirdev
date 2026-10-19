@@ -12,19 +12,13 @@
  </script>
  <div class="container">
   <header class="ixir-wh-diff-head">
-   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-code-branch" aria-hidden="true"></i> GELİŞTİRİCİ ARAÇLARI</div>
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-code-branch" aria-hidden="true"></i> GELİŞTİRİCİ
+    ARAÇLARI</div>
    {include file="$template/components/Heading.tpl" title="Developer Hosting: Fark Yaratan Özellikler" id="ixir-wh-diff-title"}
+   <p>Node.js, Python, Laravel ve Ruby desteği; Git, SSH/Terminal, Composer, npm ve pip araçlarıyla projelerinizi tek
+    bir ortamda geliştirin, yönetin ve yayına alın.</p>
   </header>
   <ul class="ixir-wh-diff-grid">
-   <li>
-    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fab fa-laravel"></i></span>
-    <div>
-     <h3>Laravel</h3>
-     <p>Laravel, bir çok özellik ve yapıyı içinde bulunduran ve web uygulamaları geliştirmeyi sağlayan PHP
-      Framework'tür. Çok yalın kod yazıp, çok kolay kod dizilimi ve kolay öğrenebilir ve framework'tür.
-     </p>
-    </div>
-   </li>
    <li>
     <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fab fa-node-js"></i></span>
     <div>
@@ -47,20 +41,29 @@
     </div>
    </li>
    <li>
-    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-gem"></i></span>
-    <div>
-     <h3>Ruby On Rails</h3>
-     <p>Ruby programlama diliyle yazılmış fullstack web uygulama geliştirme kütüphanesidir, web uygulama geliştirenlerin
-      ihtiyaç duyacakları tüm bileşenleri barındırmaktadır.</p>
-    </div>
-   </li>
-   <li>
     <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fab fa-git"></i></span>
     <div>
      <h3>Git</h3>
      <p>Git, yazılımcıların vazgeçilmezi versiyon kontrol sistemidir, Developer hosting ile git repolarınızı Cpanel
       hesabınızda kolayca barındırmanıza olanak tanır, kendinize ait git repoları oluşturup saklamanıza ve kullanmanıza
       olanak tanır. Git head verisi ile sha1 commit doğrulamaları da sağlanmaktadır.</p>
+    </div>
+   </li>
+   <li>
+    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fab fa-laravel"></i></span>
+    <div>
+     <h3>Laravel</h3>
+     <p>Laravel, bir çok özellik ve yapıyı içinde bulunduran ve web uygulamaları geliştirmeyi sağlayan PHP
+      Framework'tür. Çok yalın kod yazıp, çok kolay kod dizilimi ve kolay öğrenebilir ve framework'tür.
+     </p>
+    </div>
+   </li>
+   <li>
+    <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-gem"></i></span>
+    <div>
+     <h3>Ruby On Rails</h3>
+     <p>Ruby programlama diliyle yazılmış fullstack web uygulama geliştirme kütüphanesidir, web uygulama geliştirenlerin
+      ihtiyaç duyacakları tüm bileşenleri barındırmaktadır.</p>
     </div>
    </li>
    <li>

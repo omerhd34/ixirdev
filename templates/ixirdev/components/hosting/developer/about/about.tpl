@@ -12,15 +12,15 @@
  </script>
  <div class="container">
   <div class="ixir-wh-about-body">
-   <header class="ixir-wh-about-head ixir-wh-about-anim">
+   <header class="ixir-wh-about-head">
     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-code" aria-hidden="true"></i> GELİŞTİRİCİ ORTAMI</div>
-    {include file="$template/components/Heading.tpl" title="İXİRHOST Developer Hosting: Yazılımcıya Özel, Gerçek Bir Geliştirici Ortamı" id="ixir-wh-about-title"}
+    {include file="$template/components/Heading.tpl" title="Yazılımcıya Özel, Gerçek Bir Geliştirici Ortamı" id="ixir-wh-about-title"}
     <p class="ixir-wh-about-lead">İXİRHOST Developer Hosting, yazılım geliştiricilerin modern uygulama geliştirme ve
      yayınlama süreçleri için ihtiyaç duydukları tüm araçları tek bir paylaşımlı hosting ortamında sunan, Türkiye'nin
      bu alanda öncü hizmetidir. <strong>SSH/terminal erişimi</strong>, <strong>Git</strong> entegrasyonu,
-     <strong>Composer</strong>, <strong>npm</strong> ve <strong>pip</strong> gibi paket yöneticisi desteğiyle; Laravel,
-     Symfony gibi PHP framework projelerinizi, Node.js ve Nest.js uygulamalarınızı, Python/Django/Flask projelerinizi
-     ve Ruby on Rails uygulamalarınızı aynı cPanel hesabında barındırabilirsiniz.
+     <strong>Composer</strong>, <strong>npm</strong> ve <strong>pip</strong> gibi paket yöneticisi desteğiyle; <strong>Laravel</strong>,
+     Symfony gibi PHP framework projelerinizi, <strong>Node.js</strong> ve <strong>Nest.js</strong> uygulamalarınızı, <strong>Python/Django/Flask</strong> projelerinizi
+     ve <strong>Ruby on Rails</strong> uygulamalarınızı aynı <strong>cPanel</strong> hesabında barındırabilirsiniz.
     </p>
    </header>
    <div class="ixir-wh-about-split">

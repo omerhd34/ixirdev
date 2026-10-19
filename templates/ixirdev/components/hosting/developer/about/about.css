@@ -12,7 +12,8 @@
   --ixir-enter-delay: 270ms;
 }
 .ixir-wh-about-head {
-  margin: 0 0 40px;
+  max-width: 860px;
+  margin: 0 auto 40px;
   text-align: center;
 }
 .ixir-wh-about-eyebrow {
@@ -34,7 +35,8 @@
   color: #0b2545;
 }
 .ixir-wh-about-lead {
-  margin: 0;
+  max-width: 820px;
+  margin: 0 auto;
   color: #4b5563;
   font-size: 16px;
   line-height: 1.8;

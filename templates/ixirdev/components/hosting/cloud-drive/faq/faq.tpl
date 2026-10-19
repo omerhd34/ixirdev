@@ -12,16 +12,15 @@
      <button type="button" class="ixir-wh-faq-q" aria-expanded="true"><i class="fas fa-chevron-down"
        aria-hidden="true"></i>Cloud Drive Nedir ve Nasıl Kullanılır?</button>
      <div class="ixir-wh-faq-a">
-      <p>Cloud drive Türkçe adıyla bulut depolama, yerli sunucular ve internet erişimi üzerinden sizlere sunduğumuz
-       gerek mobil, gerek masaüstü gerek web üzerinden erişebileceğiniz depolama uygulamasıdır.
-      </p>
+      <p><strong>Cloud drive</strong> Türkçe adıyla bulut depolama, yerli sunucular ve internet erişimi üzerinden
+       sizlere sunduğumuz gerek mobil, gerek masaüstü gerek web üzerinden erişebileceğiniz depolama uygulamasıdır.</p>
      </div>
     </div>
     <div class="ixir-wh-faq-item">
      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
        aria-hidden="true"></i>Cloud Drive Yedeklemesi Yapılıyor Mu?</button>
      <div class="ixir-wh-faq-a">
-      <p>Cloud drive hizmetimizin yedeklemesi haftalık olarak yapılmakta ve istenildiği taktirde küçük bir ücret
+      <p><strong>Cloud drive</strong> hizmetimizin yedeklemesi haftalık olarak yapılmakta ve istenildiği taktirde küçük bir ücret
        karşılığında yedekten geri dönüş sağlanmaktadır.</p>
      </div>
     </div>
@@ -29,16 +28,14 @@
      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
        aria-hidden="true"></i>Daha Büyük Kapasite ve Çok Kullanıcılı Cloud Drive Kullanabilir miyim?</button>
      <div class="ixir-wh-faq-a">
-      <p>Elbette, kurumunuza özel tamamen izole ve kullanıcıları sizin yetkilendirebileceğiniz, yedek senaryoları
-       oluşturabileceğiniz, disk alanını belirleyebileceğiniz şekilde tamamen kurumunuza öze bir bulut depolama ortamı
-       oluşturabiliriz.</p>
+      <p>Elbette, kurumunuza özel tamamen izole ve kullanıcıları sizin yetkilendirebileceğiniz, yedek senaryoları oluşturabileceğiniz, disk alanını belirleyebileceğiniz şekilde tamamen kurumunuza öze bir <strong>bulut depolama ortamı</strong> oluşturabiliriz.</p>
      </div>
     </div>
     <div class="ixir-wh-faq-item">
      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
        aria-hidden="true"></i>Para iade garantisi sunuyor musunuz?</button>
      <div class="ixir-wh-faq-a">
-      <p>Evet, tüm hosting hizmetlerimizde olduğu gibi 15 gün boyunca koşulsuz para iade garantisi sunuyoruz. Muhasebe
+      <p>Evet, tüm hosting hizmetlerimizde olduğu gibi <strong>15 gün</strong> boyunca koşulsuz para iade garantisi sunuyoruz. Muhasebe
        servisimize bunu iletmeniz yeterlidir.
       </p>
      </div>
@@ -47,9 +44,9 @@
      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
        aria-hidden="true"></i>Yeni bir kullanıcıyım, ücretsiz deneme yapabilir miyim?</button>
      <div class="ixir-wh-faq-a">
-      <p>Elbette Web sitemize üye olup denemek istediğiniz ürünün siparişini verin ve ödeme kısmında banka havalesi
-       seçiniz. Sonrasında Destek talebi ileterek yada telefon ile arayarak seçmiş olduğunuz ürünü 2 günlük bir süre
-       içersinde deneyebilirsiniz.
+      <p>Elbette web sitemize üye olup denemek istediğiniz ürünün siparişini verin ve ödeme kısmında banka havalesi
+       seçiniz. Sonrasında destek talebi ileterek yada telefon ile arayarak seçmiş olduğunuz ürünü 2 günlük bir süre
+       içerisinde deneyebilirsiniz.
       </p>
      </div>
     </div>
@@ -64,7 +61,7 @@
      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
        aria-hidden="true"></i>Hosting hizmetini yanlış satın aldım, değiştirebilir miyim?</button>
      <div class="ixir-wh-faq-a">
-      <p>Tabiki eğer yanlış hizmeti sipariş verdiğinizi düşünüyorsanız yada linux hosting yerine başka bir hosting
+      <p>Tabiki eğer yanlış hizmeti sipariş verdiğinizi düşünüyorsanız yada <strong>linux hosting</strong> yerine başka bir <strong>hosting</strong>
        hizmetimizi kullanmak istediniz bu değişikliği istediğiniz zaman yaptırabilirsiniz. Bu konuda bize destek talebi
        iletmeniz yeterlidir hemen yapacağız.</p>
      </div>

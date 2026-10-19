@@ -21,43 +21,42 @@
      <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-database"></i></span>
      <div>
       <h3>Yüksek Kota</h3>
-      <p>Cloud Drive hizmetinde 250 GB’ye kadar verilerinizi özgürce ve güvenle barındırabilirsiniz.</p>
+      <p><strong>Cloud Drive</strong> hizmetinde <strong>250 GB</strong>’ye kadar verilerinizi özgürce ve güvenle barındırabilirsiniz.</p>
      </div>
     </li>
     <li>
      <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-exchange-alt"></i></span>
      <div>
       <h3>Sınırsız Trafik</h3>
-      <p>Cloud Drive hizmetinde dosyalarınızı yükleme ve indirmede herhangi bir trafik kotasına takılmazsınız.</p>
+      <p><strong>Cloud Drive</strong> hizmetinde dosyalarınızı yükleme ve indirmede herhangi bir trafik kotasına takılmazsınız.</p>
      </div>
     </li>
     <li>
      <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-tachometer-alt"></i></span>
      <div>
       <h3>Yüksek Bağlantı Hızı</h3>
-      <p>Cloud Drive hizmetindeki yüksek bağlantı hızı sayesinde tüm dosyalarınıza ışık hızında erişebilirsiniz.</p>
+      <p><strong>Cloud Drive</strong> hizmetindeki yüksek bağlantı hızı sayesinde tüm dosyalarınıza ışık hızında erişebilirsiniz.</p>
      </div>
     </li>
     <li>
      <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-share-alt"></i></span>
      <div>
       <h3>Dosya Paylaşımı</h3>
-      <p>Cloud Drive hizmetinde bulunan dosyalarınıza özel bağlantılar oluşturarak dilediğiniz kişi ile
-       paylaşabilirsiniz.</p>
+      <p><strong>Cloud Drive</strong> hizmetinde bulunan dosyalarınıza özel bağlantılar oluşturarak dilediğiniz kişi ile paylaşabilirsiniz.</p>
      </div>
     </li>
     <li>
      <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-history"></i></span>
      <div>
       <h3>Yedekleme</h3>
-      <p>Cloud Drive hizmetiniz düzenli aralıklar ile yedeklenir. Bu sayede üst düzey veri güvenliği sağlarsınız.</p>
+      <p><strong>Cloud Drive</strong> hizmetiniz düzenli aralıklar ile yedeklenir. Bu sayede üst düzey veri güvenliği sağlarsınız.</p>
      </div>
     </li>
     <li>
      <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-coins"></i></span>
      <div>
       <h3>Uygun Fiyat</h3>
-      <p>Google, Microsoft gibi firmalara göre Cloud Drive, çok daha ekonomiktir. Böylece paradan tasarruf sağlarsınız.
+      <p><strong>Google</strong>, <strong>Microsoft</strong> gibi firmalara göre <strong>Cloud Drive</strong>, çok daha ekonomiktir. Böylece paradan tasarruf sağlarsınız.
       </p>
      </div>
     </li>

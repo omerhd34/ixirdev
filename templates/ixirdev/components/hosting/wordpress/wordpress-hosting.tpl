@@ -8,4 +8,5 @@
  {include file="$template/components/hosting/wordpress/compare/compare.tpl"}
   {include file="$template/components/hosting/wordpress/guide/guide.tpl"}
  {include file="$template/components/hosting/wordpress/faq/faq.tpl"}
+ {include file="$template/components/hosting/wordpress/scripts/scripts.tpl"}
 </div>

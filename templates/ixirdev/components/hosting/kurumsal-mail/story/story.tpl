@@ -1,4 +1,4 @@
-<section class="ixir-wh-story ixir-slide ixir-slide--left is-slide-on" aria-label="Kurumsal Mail Hosting nedir">
+<section class="ixir-wh-story ixir-wh-story--intro-only ixir-slide ixir-slide--left is-slide-on" aria-label="Kurumsal Mail Hosting nedir">
  <script>
   {literal}
    (function() {

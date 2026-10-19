@@ -191,7 +191,7 @@
   margin-right: auto !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ixir-wh-migrate-copy .ixir-badge-pill,
   .ixir-wh-migrate-copy .ixir-ssl-badge-pill {
     margin-left: auto !important;

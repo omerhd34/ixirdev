@@ -1,3 +1,13 @@
+.ixir-wh-apps-stack {
+  scale: 1;
+  transition: scale 0.5s ease;
+}
+.ixir-wh-apps-stack:hover {
+  scale: 1.1;
+}
+.ixir-wh-apps.is-settled .ixir-wh-apps-stack {
+  transition: scale 0.5s ease;
+}
 .ixir-wh-apps-tile {
   position: absolute;
   display: block;
@@ -49,6 +59,10 @@
   height: 78px;
   border-radius: 18px;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+  transition: transform 0.5s ease;
+}
+.ixir-wh-apps-list li:hover .ixir-wh-app {
+  transform: scale(1.1);
 }
 .ixir-wh-app i {
   font-size: 38px;
@@ -83,4 +97,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ixir-wh-app,
+  .ixir-wh-apps.is-settled .ixir-wh-apps-stack {
+    transition: none;
+  }
 }

@@ -6,3 +6,4 @@
 {include file="$template/components/hosting/linux/compare/compare.tpl"}
 {include file="$template/components/hosting/linux/guide/guide.tpl"}
 {include file="$template/components/hosting/linux/faq/faq.tpl"}
+{include file="$template/components/hosting/linux/scripts/scripts.tpl"}

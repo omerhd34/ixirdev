@@ -69,6 +69,9 @@
   opacity: 1 !important;
   transform: none !important;
 }
+.ixir-wh-story--intro-only .ixir-wh-story-intro {
+  margin-bottom: 0;
+}
 .ixir-wh-story-intro h2,
 .ixir-wh-story-intro .site-heading,
 .ixir-wh-story-features-head h2,
