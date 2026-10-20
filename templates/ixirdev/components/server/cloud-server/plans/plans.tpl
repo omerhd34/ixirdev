@@ -21,7 +21,7 @@
   <div class="ixir-cs-grid ixir-wh-grid">
    <article class="ixir-cs-plan ixir-wh-plan">
     <header class="ixir-cs-plan-head ixir-wh-plan-head">
-     <h3>Budget Cloud</h3>
+     <h3>Starter</h3>
      <p>Küçük projeler ve test ortamları için</p>
     </header>
     <div class="ixir-cs-price ixir-wh-price">
@@ -39,7 +39,7 @@
    </article>
    <article class="ixir-cs-plan ixir-wh-plan">
     <header class="ixir-cs-plan-head ixir-wh-plan-head">
-     <h3>Economy Cloud</h3>
+     <h3>Essential</h3>
      <p>Büyüyen web siteleri ve uygulamalar için</p>
     </header>
     <div class="ixir-cs-price ixir-wh-price">
@@ -58,7 +58,7 @@
    <article class="ixir-cs-plan ixir-wh-plan ixir-cs-plan--best ixir-wh-plan--best">
     <span class="ixir-cs-badge ixir-wh-badge">En Popüler</span>
     <header class="ixir-cs-plan-head ixir-wh-plan-head">
-     <h3>Premium Cloud</h3>
+     <h3>Advanced</h3>
      <p>Yüksek trafikli siteler ve e-ticaret için</p>
     </header>
     <div class="ixir-cs-price ixir-wh-price">
@@ -76,7 +76,7 @@
    </article>
    <article class="ixir-cs-plan ixir-wh-plan">
     <header class="ixir-cs-plan-head ixir-wh-plan-head">
-     <h3>Expert Cloud</h3>
+     <h3>Premium</h3>
      <p>Kurumsal uygulamalar ve yoğun iş yükleri için</p>
     </header>
     <div class="ixir-cs-price ixir-wh-price">

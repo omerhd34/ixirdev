@@ -22,7 +22,7 @@
    <div class="ixir-wh-grid ixir-ss-grid ixir-wh-grid--3 ixir-ss-grid--3">
     <article class="ixir-wh-plan ixir-ss-plan">
      <header class="ixir-ss-plan-head ixir-wh-plan-head">
-      <h3>Başlangıç</h3>
+      <h3>Starter</h3>
      </header>
      <div class="ixir-ss-price ixir-wh-price">
       <s>1628 TL</s>
@@ -46,7 +46,7 @@
     <article class="ixir-wh-plan ixir-ss-plan ixir-wh-plan--best ixir-ss-plan--best">
      <span class="ixir-ss-badge ixir-wh-badge">En İyi Tercih</span>
      <header class="ixir-ss-plan-head ixir-wh-plan-head">
-      <h3>Ekonomik</h3>
+      <h3>Growth</h3>
      </header>
      <div class="ixir-ss-price ixir-wh-price">
       <s>2721 TL</s>
@@ -69,7 +69,7 @@
 
     <article class="ixir-wh-plan ixir-ss-plan">
      <header class="ixir-ss-plan-head ixir-wh-plan-head">
-      <h3>Profesyonel</h3>
+      <h3>Advanced</h3>
      </header>
      <div class="ixir-ss-price ixir-wh-price">
       <s>3811 TL</s>
