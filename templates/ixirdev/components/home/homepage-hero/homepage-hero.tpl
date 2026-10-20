@@ -9,102 +9,62 @@
     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> 20+ YILLIK SEKTÖR TECRÜBESİ & GÜVEN</div>
     <h1>İXİRHOST ile Güvenilir Hosting</h1>
     <p>Hızlı altyapı, 7/24 destek ve uygun fiyatlarla sitenizi hemen yayına alın.</p>
+    <div class="ixir-hero-actions">
+     <a class="ixir-hero-btn ixir-hero-btn--primary ixir-hero-btn--services"
+      href="#ixir-service-catalog-label">
+      Hizmetler <i class="fas fa-arrow-down" aria-hidden="true"></i>
+     </a>
+    </div>
    </div>
-   <p class="ixir-hero-label" aria-hidden="true">Avantajlar</p>
-   <ul class="ixir-hero-points" aria-label="Avantajlar">
-    <li>
-     <i class="fas fa-bolt" aria-hidden="true"></i>
-     <span>NVMe SSD & LiteSpeed</span>
-    </li>
-    <li>
-     <i class="fas fa-headset" aria-hidden="true"></i>
-     <span>7/24 uzman teknik destek</span>
-    </li>
-    <li>
-     <i class="fas fa-shield-alt" aria-hidden="true"></i>
-     <span>15 gün iade garantisi</span>
-    </li>
-    <li>
-     <i class="fas fa-lock" aria-hidden="true"></i>
-     <span>Ücretsiz SSL sertifikası</span>
-    </li>
-    <li>
-     <i class="fab fa-cpanel" aria-hidden="true"></i>
-     <span>cPanel kontrol paneli</span>
-    </li>
-    <li>
-     <i class="fas fa-user-shield" aria-hidden="true"></i>
-     <span>Imunify360 koruması</span>
-    </li>
-   </ul>
-   <div class="ixir-hero-links-wrap" role="region" aria-label="Diğer Hizmetler">
-    <p class="ixir-hero-label">Diğer Hizmetler</p>
+   <div class="ixir-hero-links-wrap" role="region" aria-label="Tüm hizmetlerimiz">
+    <p class="ixir-hero-label">Tüm Hizmetlerimiz <span>(21)</span></p>
     <ul class="ixir-hero-links">
-     <li>
-      <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
-       <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
-      </a>
-     </li>
-     <li>
-      <a href="{$WEB_ROOT}/domain-transfer" title="Domain Transfer">
-       <i class="fas fa-retweet fa-fw" aria-hidden="true"></i><span>Domain Transfer</span>
-      </a>
-     </li>
-     <li>
-      <a href="{$WEB_ROOT}/whois-sorgulama" title="Whois Sorgulama">
-       <i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Whois Sorgulama</span>
-      </a>
-     </li>
-     <li>
-      <a href="{$WEB_ROOT}/ssl-sertifikalari" title="SSL Sertifikaları">
-       <i class="far fa-lock fa-fw" aria-hidden="true"></i><span>SSL Sertifikaları</span>
-      </a>
-     </li>
-    </ul>
-    <ul class="ixir-hero-links">
-     <li>
-      <a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting">
-       <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Linux Hosting</span>
-      </a>
-     </li>
-     <li>
-      <a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting">
-       <i class="fab fa-windows fa-fw" aria-hidden="true"></i><span>Windows Hosting</span>
-      </a>
-     </li>
-     <li>
-      <a href="{$WEB_ROOT}/wordpress-hosting" title="WordPress Hosting">
-       <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress
-        Hosting</span>
-      </a>
-     </li>
-     <li>
-      <a href="{$WEB_ROOT}/linux-reseller-hosting" title="Linux Reseller Hosting">
-       <i class="fab fa-linux fa-fw" aria-hidden="true"></i><span>Linux Reseller Hosting</span>
-      </a>
-     </li>
-    </ul>
-    <ul class="ixir-hero-links">
-     <li>
-      <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
-       <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
-      </a>
-     </li>
-     <li>
-      <a href="{$WEB_ROOT}/kurumsal-mail-server" title="Kurumsal Mail Server">
-       <i class="fas fa-mail-bulk fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Server</span>
-      </a>
-     </li>
-     <li>
-      <a href="{$WEB_ROOT}/cloud-server" title="Cloud Server">
-       <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Cloud Server</span>
-      </a>
-     </li>
-     <li>
-      <a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">
-       <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Dedicated Server</span>
-      </a>
-     </li>
+     <li><a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgulama"><i class="far fa-search fa-fw"
+        aria-hidden="true"></i><span>Domain Sorgulama</span></a></li>
+     <li><a href="{$WEB_ROOT}/domain-transfer" title="Domain Transfer"><i class="fas fa-exchange-alt fa-fw"
+        aria-hidden="true"></i><span>Domain Transfer</span></a></li>
+     <li><a href="{$WEB_ROOT}/whois-sorgulama" title="Whois Sorgulama"><i class="far fa-eye fa-fw"
+        aria-hidden="true"></i><span>Whois Sorgulama</span></a></li>
+     <li><a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting"><i class="fab fa-linux fa-fw"
+        aria-hidden="true"></i><span>Linux Hosting</span></a></li>
+     <li><a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting"><svg class="ixir-hero-windows-icon"
+        viewBox="0 0 640 640" aria-hidden="true">
+        <path d="M96 157.7L279.6 132.4L279.6 309.8L96 309.8L96 157.7zM96 482.3L279.6 507.6L279.6 332.4L96 332.4L96 482.3zM299.8 510.3L544 544L544 332.4L299.8 332.4L299.8 510.3zM299.8 129.7L299.8 309.8L544 309.8L544 96L299.8 129.7z"></path>
+       </svg><span>Windows Hosting</span></a></li>
+     <li><a href="{$WEB_ROOT}/wordpress-hosting" title="WordPress Hosting"><i
+        class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress Hosting</span></a></li>
+     <li><a href="{$WEB_ROOT}/developer-hosting" title="Developer Hosting"><i class="fas fa-code fa-fw"
+        aria-hidden="true"></i><span>Developer Hosting</span></a></li>
+     <li><a href="{$WEB_ROOT}/linux-reseller-hosting" title="Linux Reseller Hosting"><i
+        class="fab fa-linux fa-fw" aria-hidden="true"></i><span>Linux Reseller Hosting</span></a></li>
+     <li><a href="{$WEB_ROOT}/windows-reseller-hosting" title="Windows Reseller Hosting"><svg
+        class="ixir-hero-windows-icon" viewBox="0 0 640 640" aria-hidden="true">
+        <path d="M96 157.7L279.6 132.4L279.6 309.8L96 309.8L96 157.7zM96 482.3L279.6 507.6L279.6 332.4L96 332.4L96 482.3zM299.8 510.3L544 544L544 332.4L299.8 332.4L299.8 510.3zM299.8 129.7L299.8 309.8L544 309.8L544 96L299.8 129.7z"></path>
+       </svg><span>Windows Reseller Hosting</span></a></li>
+     <li><a href="{$WEB_ROOT}/cloud-drive" title="Cloud Drive"><i class="fas fa-cloud-upload-alt fa-fw"
+        aria-hidden="true"></i><span>Cloud Drive</span></a></li>
+     <li><a href="{$WEB_ROOT}/cloud-server" title="Cloud Server"><i class="fas fa-cloud fa-fw"
+        aria-hidden="true"></i><span>Cloud Server</span></a></li>
+     <li><a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server"><i class="fas fa-server fa-fw"
+        aria-hidden="true"></i><span>Dedicated Server</span></a></li>
+     <li><a href="{$WEB_ROOT}/colocation" title="Co-Location"><i class="fas fa-database fa-fw"
+        aria-hidden="true"></i><span>Co-Location</span></a></li>
+     <li><a href="{$WEB_ROOT}/server-servisleri" title="Server Servisleri"><i class="fas fa-tools fa-fw"
+        aria-hidden="true"></i><span>Server Servisleri</span></a></li>
+     <li><a href="{$WEB_ROOT}/pci-tarama" title="PCI-DSS Tarama"><i class="fas fa-shield-alt fa-fw"
+        aria-hidden="true"></i><span>PCI-DSS Tarama</span></a></li>
+     <li><a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting"><i
+        class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span></a></li>
+     <li><a href="{$WEB_ROOT}/kurumsal-mail-server" title="Kurumsal Mail Server"><i
+        class="fas fa-server fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Server</span></a></li>
+     <li><a href="{$WEB_ROOT}/antispam" title="AntiSpam"><i class="fas fa-shield-alt fa-fw"
+        aria-hidden="true"></i><span>AntiSpam</span></a></li>
+     <li><a href="{$WEB_ROOT}/outbound-mail-gateway" title="Outbound Mail Gateway"><i
+        class="fas fa-paper-plane fa-fw" aria-hidden="true"></i><span>Outbound Mail Gateway</span></a></li>
+     <li><a href="{$WEB_ROOT}/site-pratik" title="Site Pratik"><i class="fas fa-magic fa-fw"
+        aria-hidden="true"></i><span>Site Pratik</span></a></li>
+     <li><a href="{$WEB_ROOT}/ssl-sertifikalari" title="SSL Sertifikaları"><i class="fas fa-lock fa-fw"
+        aria-hidden="true"></i><span>SSL Sertifikaları</span></a></li>
     </ul>
    </div>
   </div>
@@ -239,6 +199,60 @@
      }
 
      frame = window.requestAnimationFrame(step);
+    });
+   })();
+
+   (function initIxirHeroServicesScroll() {
+    var link = document.querySelector(
+     'a.ixir-hero-btn--services[href="#ixir-service-catalog-label"]');
+    var target = document.getElementById('ixir-service-catalog-label');
+    if (!link || !target) {
+     return;
+    }
+
+    function stickyBottom() {
+     var bottom = 0;
+     var selectors = ['.ixir-header', '.mobile-header', '.news-bar'];
+     var i;
+     for (i = 0; i < selectors.length; i++) {
+      var el = document.querySelector(selectors[i]);
+      if (!el || el.classList.contains('is-hidden')) {
+       continue;
+      }
+      var style = window.getComputedStyle(el);
+      if (style.display === 'none' || style.visibility === 'hidden' || style.position !==
+       'fixed') {
+       continue;
+      }
+      var rect = el.getBoundingClientRect();
+      if (rect.height > 0 && rect.bottom > bottom) {
+       bottom = rect.bottom;
+      }
+     }
+     return Math.ceil(bottom);
+    }
+
+    link.addEventListener('click', function(e) {
+     if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) {
+      return;
+     }
+     e.preventDefault();
+     if (!target.hasAttribute('tabindex')) {
+      target.setAttribute('tabindex', '-1');
+     }
+     if (target.focus) {
+      target.focus({ preventScroll: true });
+     }
+
+     var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+     var destination = Math.max(0, Math.round(
+      target.getBoundingClientRect().top + y - stickyBottom() - 20));
+     var reduce = window.matchMedia && window.matchMedia(
+      '(prefers-reduced-motion: reduce)').matches;
+     window.scrollTo({
+      top: destination,
+      behavior: reduce ? 'auto' : 'smooth'
+     });
     });
    })();
 

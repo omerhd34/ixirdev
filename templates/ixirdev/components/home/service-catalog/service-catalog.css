@@ -24,16 +24,19 @@
   align-items: center;
   gap: 8px;
   margin: 0 auto 14px;
-  padding: 7px 13px;
+  padding: 8px 16px;
+  border: 1px solid #b9d2ff;
   border-radius: 999px;
-  color: #1d4ed8;
+  color: #2563eb;
   background: #eaf2ff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.07em;
+  line-height: 1.2;
 }
 
 .ixir-service-catalog-eyebrow i {
+  color: #2563eb;
   font-size: 12px;
 }
 
@@ -208,11 +211,27 @@
 }
 
 .ixir-service-card h4 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
   margin: 0;
   color: #102b4e;
   font-size: 17px;
   font-weight: 800;
   line-height: 1.35;
+}
+
+.ixir-service-card h4 > i,
+.ixir-service-card h4 > svg {
+  order: 1;
+}
+
+.ixir-service-card h4 .ixir-windows-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  fill: currentColor;
 }
 
 .ixir-service-card-link {
@@ -256,7 +275,7 @@
 
 .ixir-service-card-details {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  grid-template-columns: max-content minmax(0, 1fr);
   gap: 14px;
   padding-top: 14px;
   box-shadow: inset 0 1px 0 #edf1f6;
@@ -264,6 +283,10 @@
 
 .ixir-service-card-detail {
   min-width: 0;
+}
+
+.ixir-service-card-detail:first-child p {
+  white-space: nowrap;
 }
 
 .ixir-service-card-detail:last-child {
@@ -336,8 +359,16 @@
   }
 
   .ixir-service-card-details {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 10px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .ixir-service-card-detail:last-child {
+    width: 100%;
+  }
+
+  .ixir-service-card-detail:first-child p {
+    font-size: 11px;
   }
 }
 
@@ -413,6 +444,10 @@
   .ixir-service-card-details {
     grid-template-columns: minmax(0, 1fr);
     gap: 12px;
+  }
+
+  .ixir-service-card-detail:first-child p {
+    font-size: 10px;
   }
 }
 

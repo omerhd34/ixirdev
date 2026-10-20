@@ -1,7 +1,7 @@
 <section class="ixir-service-catalog" id="ixir-service-catalog" aria-labelledby="ixir-service-catalog-title">
  <div class="container">
   <header class="ixir-service-catalog-head">
-   <div class="ixir-service-catalog-eyebrow">
+   <div class="ixir-service-catalog-eyebrow" id="ixir-service-catalog-label">
     <i class="fas fa-layer-group" aria-hidden="true"></i> TÜM HİZMETLERİMİZ
    </div>
    {include file="$template/components/Heading.tpl" title="Tüm İXİRHOST Hizmetleri Tek Bakışta" id="ixir-service-catalog-title"}
@@ -29,7 +29,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">DOMAIN</span>
-        <h4>Domain Sorgulama</h4>
+        <h4><i class="far fa-search" aria-hidden="true"></i>Domain Sorgulama</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/domain-sorgu"
         aria-label="Domain Sorgulama hizmetini incele"><i class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -48,7 +48,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">DOMAIN</span>
-        <h4>Domain Transfer</h4>
+        <h4><i class="fas fa-exchange-alt" aria-hidden="true"></i>Domain Transfer</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/domain-transfer"
         aria-label="Domain Transfer hizmetini incele"><i class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -67,7 +67,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">DOMAIN</span>
-        <h4>Whois Sorgulama</h4>
+        <h4><i class="far fa-eye" aria-hidden="true"></i>Whois Sorgulama</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/whois-sorgulama"
         aria-label="Whois Sorgulama hizmetini incele"><i class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -102,7 +102,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">HOSTING</span>
-        <h4>Linux Hosting</h4>
+        <h4><i class="fab fa-linux" aria-hidden="true"></i>Linux Hosting</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/linux-hosting" aria-label="Linux Hosting hizmetini incele"><i
          class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -121,7 +121,9 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">HOSTING</span>
-        <h4>Windows Hosting</h4>
+        <h4><svg class="ixir-windows-icon" viewBox="0 0 640 640" aria-hidden="true">
+          <path d="M96 157.7L279.6 132.4L279.6 309.8L96 309.8L96 157.7zM96 482.3L279.6 507.6L279.6 332.4L96 332.4L96 482.3zM299.8 510.3L544 544L544 332.4L299.8 332.4L299.8 510.3zM299.8 129.7L299.8 309.8L544 309.8L544 96L299.8 129.7z"></path>
+         </svg>Windows Hosting</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/windows-hosting"
         aria-label="Windows Hosting hizmetini incele"><i class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -140,7 +142,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">HOSTING</span>
-        <h4>WordPress Hosting</h4>
+        <h4><i class="fab fa-wordpress-simple" aria-hidden="true"></i>WordPress Hosting</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/wordpress-hosting"
         aria-label="WordPress Hosting hizmetini incele"><i class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -160,7 +162,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">HOSTING</span>
-        <h4>Developer Hosting</h4>
+        <h4><i class="fas fa-code" aria-hidden="true"></i>Developer Hosting</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/developer-hosting"
         aria-label="Developer Hosting hizmetini incele"><i class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -179,7 +181,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">HOSTING</span>
-        <h4>Linux Reseller Hosting</h4>
+        <h4><i class="fab fa-linux" aria-hidden="true"></i>Linux Reseller Hosting</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/linux-reseller-hosting"
         aria-label="Linux Reseller Hosting hizmetini incele"><i class="far fa-arrow-up-right"
@@ -199,7 +201,9 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">HOSTING</span>
-        <h4>Windows Reseller Hosting</h4>
+        <h4><svg class="ixir-windows-icon" viewBox="0 0 640 640" aria-hidden="true">
+          <path d="M96 157.7L279.6 132.4L279.6 309.8L96 309.8L96 157.7zM96 482.3L279.6 507.6L279.6 332.4L96 332.4L96 482.3zM299.8 510.3L544 544L544 332.4L299.8 332.4L299.8 510.3zM299.8 129.7L299.8 309.8L544 309.8L544 96L299.8 129.7z"></path>
+         </svg>Windows Reseller Hosting</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/windows-reseller-hosting"
         aria-label="Windows Reseller Hosting hizmetini incele"><i class="far fa-arrow-up-right"
@@ -219,7 +223,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">HOSTING</span>
-        <h4>Cloud Drive</h4>
+        <h4><i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>Cloud Drive</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/cloud-drive" aria-label="Cloud Drive hizmetini incele"><i
          class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -254,7 +258,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">SUNUCU</span>
-        <h4>Cloud Server</h4>
+        <h4><i class="fas fa-cloud" aria-hidden="true"></i>Cloud Server</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/cloud-server" aria-label="Cloud Server hizmetini incele"><i
          class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -273,7 +277,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">SUNUCU</span>
-        <h4>Dedicated Server</h4>
+        <h4><i class="fas fa-server" aria-hidden="true"></i>Dedicated Server</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/dedicated-server"
         aria-label="Dedicated Server hizmetini incele"><i class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -293,7 +297,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">SUNUCU</span>
-        <h4>Co-Location</h4>
+        <h4><i class="fas fa-database" aria-hidden="true"></i>Co-Location</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/colocation" aria-label="Co-Location hizmetini incele"><i
          class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -313,7 +317,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">SUNUCU</span>
-        <h4>Server Servisleri</h4>
+        <h4><i class="fas fa-tools" aria-hidden="true"></i>Server Servisleri</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/server-servisleri"
         aria-label="Sunucu Yönetim Servisleri hizmetini incele"><i class="far fa-arrow-up-right"
@@ -334,7 +338,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">SUNUCU</span>
-        <h4>PCI-DSS Tarama</h4>
+        <h4><i class="fas fa-shield-alt" aria-hidden="true"></i>PCI-DSS Tarama</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/pci-tarama" aria-label="PCI-DSS Tarama hizmetini incele"><i
          class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -369,7 +373,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">E-POSTA</span>
-        <h4>Kurumsal Mail Hosting</h4>
+        <h4><i class="far fa-envelope" aria-hidden="true"></i>Kurumsal Mail Hosting</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/kurumsal-mail-hosting"
         aria-label="Kurumsal Mail Hosting hizmetini incele"><i class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -389,7 +393,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">E-POSTA</span>
-        <h4>Kurumsal Mail Server</h4>
+        <h4><i class="fas fa-server" aria-hidden="true"></i>Kurumsal Mail Server</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/kurumsal-mail-server"
         aria-label="Kurumsal Mail Server hizmetini incele"><i class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -409,7 +413,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">E-POSTA</span>
-        <h4>AntiSpam</h4>
+        <h4><i class="fas fa-shield-alt" aria-hidden="true"></i>AntiSpam</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/antispam" aria-label="AntiSpam hizmetini incele"><i
          class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -429,7 +433,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">E-POSTA</span>
-        <h4>Outbound Mail Gateway</h4>
+        <h4><i class="fas fa-paper-plane" aria-hidden="true"></i>Outbound Mail Gateway</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/outbound-mail-gateway"
         aria-label="Outbound Mail Gateway hizmetini incele"><i class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -465,7 +469,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">WEB VE GÜVENLİK</span>
-        <h4>Site Pratik</h4>
+        <h4><i class="fas fa-magic" aria-hidden="true"></i>Site Pratik</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/site-pratik" aria-label="Site Pratik hizmetini incele"><i
          class="far fa-arrow-up-right" aria-hidden="true"></i></a>
@@ -485,7 +489,7 @@
      <article class="ixir-service-card">
       <div class="ixir-service-card-top">
        <div><span class="ixir-service-card-category">WEB VE GÜVENLİK</span>
-        <h4>SSL Sertifikaları</h4>
+        <h4><i class="fas fa-lock" aria-hidden="true"></i>SSL Sertifikaları</h4>
        </div>
        <a class="ixir-service-card-link" href="{$WEB_ROOT}/ssl-sertifikalari"
         aria-label="SSL Sertifikaları hizmetini incele"><i class="far fa-arrow-up-right" aria-hidden="true"></i></a>
