@@ -457,7 +457,7 @@ section#home-banner.ixir-hero .ixir-hero-photo.ixir-hero-photo--mail img {
  line-height: 1;
  text-transform: uppercase;
  color: rgba(255, 255, 255, 0.72);
- padding: 0 28px;
+ padding: 0 28px 0 50px;
 }
 
 .ixir-hero-strip-track span::before {
@@ -470,6 +470,18 @@ section#home-banner.ixir-hero .ixir-hero-photo.ixir-hero-photo--mail img {
  margin: 0;
  border-radius: 0;
  background: rgba(142, 180, 255, 0.7);
+ transform: translateY(-50%);
+}
+
+.ixir-hero-strip-track span::after {
+ content: "\f058";
+ position: absolute;
+ left: 28px;
+ top: 50%;
+ font-family: "Font Awesome 5 Pro";
+ font-size: 13px;
+ font-weight: 900;
+ color: #386ce0;
  transform: translateY(-50%);
 }
 
@@ -793,11 +805,15 @@ section#home-banner.ixir-hero .ixir-hero-photo.ixir-hero-photo--mail img {
 
  .ixir-hero-strip-track span {
   font-size: 12px;
-  padding: 0 20px;
+  padding: 0 20px 0 40px;
  }
 
  .ixir-hero-strip-track span::before {
   margin: 0;
+ }
+
+ .ixir-hero-strip-track span::after {
+  left: 20px;
  }
 }
 
