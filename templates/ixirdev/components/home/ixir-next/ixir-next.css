@@ -43,33 +43,6 @@
   padding: 0 12px;
 }
 
-.ixir-next-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px 18px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #60a5fa !important;
-  background: #08111e !important;
-  border: 1px solid rgba(59, 130, 246, 0.38) !important;
-  border-radius: 999px;
-  margin-bottom: 16px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
-}
-
-.ixir-next-badge i {
-  font-size: 13px;
-  color: #38bdf8 !important;
-  filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.45));
-}
-
-.ixir-next-badge span {
-  font-weight: 700;
-}
-
 .ixir-next-header .site-heading,
 .ixir-next-header h2 {
   margin-top: 0 !important;
