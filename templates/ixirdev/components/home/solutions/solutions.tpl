@@ -12,10 +12,8 @@
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-server"></i></span>
      <h3>Linux Hosting &amp; WordPress Hosting</h3>
     </div>
-    <p>Litespeed Web Server, NVMe SSD diskler ve Imunify360 WAF güvenliğiyle donatılmış hosting altyapımız; kişisel
-     bloglardan kurumsal sitelere kadar her ölçekte hız ve güvenlik sunar. AccelerateWP ve Litespeed Cache
-     desteğiyle
-     WordPress siteniz 10 kata kadar daha hızlı çalışır.</p>
+    <p><strong>Litespeed Web Server</strong>, <strong>NVMe SSD diskler</strong> ve <strong>Imunify360 WAF</strong> güvenliğiyle donatılmış hosting altyapımız; kişisel bloglardan kurumsal sitelere kadar her ölçekte hız ve güvenlik sunar. <strong>AccelerateWP</strong> ve <strong>Litespeed Cache</strong> desteğiyle
+     <strong>WordPress</strong> siteniz 10 kata kadar daha hızlı çalışır.</p>
     <div class="ixir-solutions-links">
      <a href="{$WEB_ROOT}/linux-hosting">Linux Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
      <a href="{$WEB_ROOT}/wordpress-hosting">WordPress Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
@@ -26,7 +24,7 @@
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-cloud"></i></span>
      <h3>Cloud Server &amp; Dedicated Server</h3>
     </div>
-    <p>İstanbul merkezli Tier III+ veri merkezimizde Intel Xeon işlemciler ve SSD depolama ile tam kontrol sizde. 60 saniyede kurulan Cloud Server'larımız; Windows &amp; Linux desteği, 3 operatör yedekli bağlantı ve otomatik yedekleme seçenekleriyle kurumsal altyapınızın güvencesidir.</p>
+    <p>İstanbul merkezli <strong>Tier III+</strong> veri merkezimizde <strong>Intel Xeon işlemciler</strong> ve <strong>SSD depolama</strong> ile tam kontrol sizde. 60 saniyede kurulan <strong>Cloud Server</strong>'larımız; <strong>Windows &amp; Linux</strong> desteği, 3 operatör yedekli bağlantı ve otomatik yedekleme seçenekleriyle kurumsal altyapınızın güvencesidir.</p>
     <div class="ixir-solutions-links">
      <a href="{$WEB_ROOT}/cloud-server">Cloud Server <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
      <a href="{$WEB_ROOT}/dedicated-server">Dedicated Server <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
@@ -37,8 +35,8 @@
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
      <h3>Kurumsal E-posta &amp; AntiSpam</h3>
     </div>
-    <p>KVKK uyumlu server'larda barındırılan kurumsal e-posta çözümlerimiz; makine öğrenimi destekli %99.8 spam
-     engelleme ve antivirüs koruması sunar. Tüm cihazlardan erişim, güvenli e-posta yönetimi ve giden mail
+    <p><strong>KVKK uyumlu server</strong>'larda barındırılan kurumsal e-posta çözümlerimiz; makine öğrenimi destekli <strong>%99.8 spam
+     engelleme</strong> ve <strong>antivirüs</strong> koruması sunar. Tüm cihazlardan erişim, güvenli e-posta yönetimi ve giden mail
      saygınlığı
      hizmetleriyle iş iletişiminizi kesintisiz sürdürün.</p>
     <div class="ixir-solutions-links">
@@ -52,8 +50,7 @@
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-globe"></i></span>
      <h3>Domain Tescili &amp; Yönetimi</h3>
     </div>
-    <p>125 TL'den başlayan fiyatlarla .com, .net, .org ve 500'den fazla uzantıda domain tescili yapın. Belgesiz
-     .com.tr ve .net.tr anında tescil, ücretsiz Whois gizleme, DNS yönetimi ve URL yönlendirme hizmetleriyle domain
+    <p>125 TL'den başlayan fiyatlarla <strong>.com, .net, .org</strong> ve 500'den fazla uzantıda domain tescili yapın. Belgesiz <strong>.com.tr</strong> ve <strong>.net.tr</strong> anında tescil, ücretsiz <strong>Whois gizleme</strong>, <strong>DNS yönetimi</strong> ve <strong>URL yönlendirme</strong> hizmetleriyle domain
      süreçlerinizi kolayca yönetin.</p>
     <div class="ixir-solutions-links">
      <a href="{$WEB_ROOT}/domain-sorgu">Domain Tescil <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
@@ -64,9 +61,9 @@
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-lock"></i></span>
      <h3>SSL Sertifikası &amp; Web Güvenliği</h3>
     </div>
-    <p>Standart, Wildcard ve EV SSL sertifika seçenekleriyle web sitenizi ve ziyaretçilerinizi koruyun. Tarayıcı
+    <p><strong>Standart</strong>, <strong>Wildcard</strong> ve <strong>EV SSL</strong> sertifika seçenekleriyle web sitenizi ve ziyaretçilerinizi koruyun. Tarayıcı
      adres
-     çubuğundaki yeşil kilit güvencesiyle ziyaretçi güvenini artırın; PCI DSS tarama hizmetiyle e-ticaret
+     çubuğundaki yeşil kilit güvencesiyle ziyaretçi güvenini artırın; <strong>PCI DSS</strong> tarama hizmetiyle e-ticaret
      altyapınızı
      uyumlu ve güvende tutun.</p>
     <div class="ixir-solutions-links">
@@ -78,9 +75,9 @@
      <span class="ixir-solutions-icon" aria-hidden="true"><i class="fas fa-code"></i></span>
      <h3>Developer Hosting</h3>
     </div>
-    <p>Laravel, Node.js, Python, Ruby ve Git desteğiyle geliştiricilere özel hosting altyapısı. SSH terminal
-     erişimi,
-     çoklu PHP sürümü ve cPanel kontrol paneli ile hem geliştirme hem de yönetim süreçlerinizi tek platformda
+    <p><strong>Laravel, Node.js, Python, Ruby</strong> ve <strong>Git</strong> desteğiyle geliştiricilere özel hosting altyapısı. <strong>SSH terminal
+     erişimi</strong>,
+     çoklu <strong>PHP sürümü</strong> ve <strong>cPanel kontrol paneli</strong> ile hem geliştirme hem de yönetim süreçlerinizi tek platformda
      birleştirin; üretkenliğinizi en üst düzeye taşıyın.</p>
     <div class="ixir-solutions-links">
      <a href="{$WEB_ROOT}/developer-hosting">Developer Hosting <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
