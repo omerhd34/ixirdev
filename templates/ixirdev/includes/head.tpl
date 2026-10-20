@@ -74,6 +74,8 @@
 {/if}
 
 {if $templatefile == 'homepage'}
+ <link href="{$WEB_ROOT}/templates/{$template}/components/home/service-catalog/service-catalog.css?v={$versionHash}-r4"
+  rel="stylesheet">
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/packages/packages.css?v={$versionHash}-r18"
   rel="stylesheet">
  <link href="{$WEB_ROOT}/templates/{$template}/components/home/promo-carousel/promo-carousel.css?v={$versionHash}-r16"
