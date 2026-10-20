@@ -21,10 +21,10 @@
     <div class="ixir-wh-table">
      <div class="ixir-wh-table-plans">
       <div></div>
-      <div>Başlangıç</div>
-      <div>Ekonomik</div>
-      <div class="is-best"><span class="ixir-wh-table-ribbon"><span>En İyi Tercih</span></span>Profesyonel</div>
-      <div>Ekstrem</div>
+      <div>Starter</div>
+      <div>Essential</div>
+      <div class="is-best"><span class="ixir-wh-table-ribbon"><span>En İyi Tercih</span></span>Advanced</div>
+      <div>Premium</div>
      </div>
      <div class="ixir-wh-table-prices">
       <div></div>

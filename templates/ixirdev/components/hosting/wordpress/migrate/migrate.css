@@ -74,21 +74,6 @@
 .ixir-wh-migrate-copy {
   max-width: 560px;
 }
-.ixir-wh-migrate-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0 0 16px;
-  padding: 6px 14px;
-  border-radius: 999px;
-  background: #eff6ff;
-  border: 1px solid #dbeafe;
-  color: #2563eb;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  line-height: 1;
-}
 .ixir-wh-migrate-copy h2 {
   margin: 0 0 14px;
   color: #0b2545;

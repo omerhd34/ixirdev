@@ -79,9 +79,9 @@
     </button>
     <div class="ixir-wh-faq-a">
      <p>
-      Tek bir proje için <strong>Bütçe paketi</strong> iyi bir başlangıç noktasıdır.
-      Birden fazla uygulama veya staging + production ortamı için <strong>Ekonomik paket</strong>;
-      yüksek trafik ve çoklu servis ihtiyaçları için ise <strong>Profesyonel veya Ekstrem paketler</strong>
+      Tek bir proje için <strong>Starter paketi</strong> iyi bir başlangıç noktasıdır.
+      Birden fazla uygulama veya staging + production ortamı için <strong>Essential paketi</strong>;
+      yüksek trafik ve çoklu servis ihtiyaçları için ise <strong>Advanced veya Premium paketler</strong>
       tercih edilebilir. Özellikle Node.js ve Python uygulamalarında <strong>RAM miktarı</strong>
       önemli bir faktördür.
      </p>
@@ -155,8 +155,8 @@
     <div class="ixir-wh-faq-a">
      <p>
       Evet. <strong>MySQL 8</strong> veritabanınıza TablePlus, DBeaver veya MySQL Workbench gibi
-      geliştirme araçlarıyla uzaktan bağlanabilirsiniz. <strong>Budget Dev planında 1 adet</strong>,
-      Economy Dev ve üzerindeki planlarda ise <strong>limitsiz MySQL veritabanı</strong> oluşturabilirsiniz.
+      geliştirme araçlarıyla uzaktan bağlanabilirsiniz. <strong>Starter Dev planında 1 adet</strong>,
+      Essential Dev ve üzerindeki planlarda ise <strong>limitsiz MySQL veritabanı</strong> oluşturabilirsiniz.
       Uzak MySQL bağlantısının yalnızca <strong>geliştirme amaçlı</strong> kullanılması önerilmektedir.
      </p>
     </div>
@@ -170,8 +170,8 @@
     <div class="ixir-wh-faq-a">
      <p>
       Evet. Spam gönderimlerini önlemek amacıyla saatlik e-posta gönderim limitleri uygulanmaktadır.
-      <strong>Başlangıç paketinde saatte 50</strong>, <strong>Ekonomik pakette 100</strong>,
-      <strong>Profesyonel pakette 200</strong> ve <strong>Ekstrem pakette 400 e-posta</strong>
+      <strong>Starter paketinde saatte 50</strong>, <strong>Essential pakette 100</strong>,
+      <strong>Advanced pakette 200</strong> ve <strong>Premium pakette 400 e-posta</strong>
       gönderilebilir. Daha yüksek bir limite ihtiyaç duymanız halinde destek ekibimizle iletişime geçebilirsiniz.
      </p>
     </div>

@@ -21,7 +21,7 @@
      <span class="ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
      <div>
       <h3>Sınırsız Web Sitesi</h3>
-      <p>Extreme pakette yer alan sınırsız web sitesi hosting ile domain sınırı olmadan hosting yönetimi gerçekleştirin.
+      <p>Premium pakette yer alan sınırsız web sitesi hosting ile domain sınırı olmadan hosting yönetimi gerçekleştirin.
       </p>
      </div>
     </li>

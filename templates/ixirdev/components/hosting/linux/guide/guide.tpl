@@ -33,10 +33,10 @@
     <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
     <h2>Hangi Linux Hosting Paketi Size Uygun?</h2>
     <p>Paket seçimi, sitenizin trafiğine, barındırmak istediğiniz domain sayısına ve kaynak ihtiyacınıza göre
-     şekillenmelidir. Tek bir web sitesi yayınlayan ve yeni başlayanlar için <strong>Budget planı</strong> bir başlangıç
-     noktasıdır. Birden fazla domain'i tek panelde yönetmek isteyenler <strong>Economy veya Professional</strong>
+     şekillenmelidir. Tek bir web sitesi yayınlayan ve yeni başlayanlar için <strong>Starter planı</strong> bir başlangıç
+     noktasıdır. Birden fazla domain'i tek panelde yönetmek isteyenler <strong>Essential veya Advanced</strong>
      paketleri tercih edebilir. Yoğun trafik alan bir e-ticaret sitesi ya da kurumsal web uygulaması işletiyorsanız, 2
-     Core Intel Xeon Gold işlemci ve 4 GB RAM kapasitesiyle donatılmış <strong>Extreme paketi</strong> size kesintisiz
+     Core Intel Xeon Gold işlemci ve 4 GB RAM kapasitesiyle donatılmış <strong>Premium paketi</strong> size kesintisiz
      bir ortam sağlar. Hangi paketi seçerseniz seçin; cPanel kontrol paneli, ücretsiz Let's Encrypt SSL, Imunify360 WAF
      güvenlik koruması ve haftalık JetBackup yedekleme hizmetleri tüm planlarda standart olarak yer almaktadır.</p>
    </article>

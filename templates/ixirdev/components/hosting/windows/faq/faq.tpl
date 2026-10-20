@@ -58,10 +58,10 @@
      <div class="ixir-wh-faq-a">
       <p>Evet, istenmeyen e-posta (spam) gönderiminin önüne geçmek amacıyla her paket için <strong>saatlik e-posta
         gönderim
-        limiti</strong> uygulanmaktadır. <strong>Budget</strong> pakette saatte <strong>50 adet</strong>,
-       <strong>Economy</strong> pakette <strong>100 adet</strong>, <strong>Professional</strong> pakette <strong>200
+        limiti</strong> uygulanmaktadır. <strong>Starter</strong> pakette saatte <strong>50 adet</strong>,
+       <strong>Essential</strong> pakette <strong>100 adet</strong>, <strong>Advanced</strong> pakette <strong>200
         adet</strong>,
-       <strong>Extreme</strong> pakette ise <strong>400 adet</strong> e-posta gönderilebilmektedir. Toplu kampanya veya
+       <strong>Premium</strong> pakette ise <strong>400 adet</strong> e-posta gönderilebilmektedir. Toplu kampanya veya
        bildirim e-postası ihtiyacınız
        varsa destek ekibimizle görüşerek çözüm üretebiliriz.
       </p>

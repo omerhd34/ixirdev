@@ -21,7 +21,7 @@
   <div class="ixir-wh-grid">
    <article class="ixir-wh-plan">
     <header class="ixir-wh-plan-head">
-     <h3>Budget Mail</h3>
+     <h3>Starter</h3>
     </header>
     <div class="ixir-wh-price">
      <s>952,79 TL</s>
@@ -29,11 +29,11 @@
      <span class="ixir-wh-save">%30 tasarruf</span>
     </div>
     <div class="ixir-wh-billing">
-     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-budget">Ödeme
+     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-starter">Ödeme
       Planları</button>
-     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-budget" role="dialog" aria-label="Budget Plan ödeme planı">
+     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-starter" role="dialog" aria-label="Starter ödeme planı">
       <div class="ixir-wh-billing-top">
-       <strong>Budget Plan</strong>
+       <strong>Starter Planı</strong>
        <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
       </div>
       <table>
@@ -68,7 +68,7 @@
    </article>
    <article class="ixir-wh-plan">
     <header class="ixir-wh-plan-head">
-     <h3>Essential Mail</h3>
+     <h3>Essential</h3>
     </header>
     <div class="ixir-wh-price">
      <s>1536,82 TL</s>
@@ -79,9 +79,9 @@
      <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
       aria-controls="ixir-wh-bill-essential">Ödeme
       Planları</button>
-     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-essential" role="dialog" aria-label="Essential Plan ödeme planı">
+     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-essential" role="dialog" aria-label="Essential ödeme planı">
       <div class="ixir-wh-billing-top">
-       <strong>Essential Plan</strong>
+       <strong>Essential Planı</strong>
        <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
       </div>
       <table>
@@ -117,7 +117,7 @@
    <article class="ixir-wh-plan ixir-wh-plan--best">
     <span class="ixir-wh-badge">En İyi Tercih</span>
     <header class="ixir-wh-plan-head">
-     <h3>Economy Mail</h3>
+     <h3>Advanced</h3>
     </header>
     <div class="ixir-wh-price">
      <s>2119,87 TL</s>
@@ -125,11 +125,11 @@
      <span class="ixir-wh-save">%30 tasarruf</span>
     </div>
     <div class="ixir-wh-billing">
-     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-economy">Ödeme
+     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-advanced">Ödeme
       Planları</button>
-     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-economy" role="dialog" aria-label="Economy Plan ödeme planı">
+     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-advanced" role="dialog" aria-label="Advanced ödeme planı">
       <div class="ixir-wh-billing-top">
-       <strong>Economy Plan</strong>
+       <strong>Advanced Planı</strong>
        <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
       </div>
       <table>
@@ -164,7 +164,7 @@
    </article>
    <article class="ixir-wh-plan">
     <header class="ixir-wh-plan-head">
-     <h3>Professional Mail</h3>
+     <h3>Premium</h3>
     </header>
     <div class="ixir-wh-price">
      <s>4289,35 TL</s>
@@ -173,12 +173,12 @@
     </div>
     <div class="ixir-wh-billing">
      <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
-      aria-controls="ixir-wh-bill-professional">Ödeme
+      aria-controls="ixir-wh-bill-premium">Ödeme
       Planları</button>
-     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-professional" role="dialog"
-      aria-label="Professional Plan ödeme planı">
+     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-premium" role="dialog"
+      aria-label="Premium ödeme planı">
       <div class="ixir-wh-billing-top">
-       <strong>Professional Plan</strong>
+       <strong>Premium Planı</strong>
        <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
       </div>
       <table>

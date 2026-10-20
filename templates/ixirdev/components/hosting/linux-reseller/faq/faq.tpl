@@ -29,8 +29,8 @@
       class="fas fa-chevron-down" aria-hidden="true"></i>E-posta gönderiminde saatlik limit var
      mı?</button>
     <div class="ixir-wh-faq-a">
-     <p>Evet, saatlik e-posta gönderim limiti pakete göre değişmektedir. Core pakette saatte 50,
-      Starter'da 100, Premium ve Expert paketlerde ise 200 adet e-posta gönderilebilir. Spam
+     <p>Evet, saatlik e-posta gönderim limiti pakete göre değişmektedir. Starter pakette saatte 50,
+      Essential'da 100, Advanced ve Premium paketlerde ise 200 adet e-posta gönderilebilir. Spam
       engellemesi amacıyla uygulanan bu limitler aşıldığında bizimle iletişime geçebilirsiniz, size
       yardımcı olacağız.</p>
     </div>

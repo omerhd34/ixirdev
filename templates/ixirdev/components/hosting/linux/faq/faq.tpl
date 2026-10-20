@@ -25,8 +25,8 @@
       aria-hidden="true"></i>Hosting hizmetimde ne kadar CPU kullanabilirim?
     </button>
     <div class="ixir-wh-faq-a">
-     <p><strong>Budget</strong> ve <strong>Economy</strong> paketlerde <strong>1 Core Intel Xeon Gold</strong>,
-      <strong>Professional</strong> ve <strong>Extreme</strong> paketlerde <strong>2 Core Intel Xeon Gold</strong>
+     <p><strong>Starter</strong> ve <strong>Essential</strong> paketlerde <strong>1 Core Intel Xeon Gold</strong>,
+      <strong>Advanced</strong> ve <strong>Premium</strong> paketlerde <strong>2 Core Intel Xeon Gold</strong>
       işlemci kaynağı tahsis edilmektedir. Daha fazla kaynağa ihtiyaç duyarsanız destek ekibimizle irtibata
       geçebilirsiniz.
      </p>
@@ -37,9 +37,9 @@
       aria-hidden="true"></i>E-posta gönderiminde limit var mı?</button>
     <div class="ixir-wh-faq-a">
      <p>Evet, spam engellemesi amacıyla <strong>saatlik e-posta gönderim limiti</strong> uygulanmaktadır.
-      <strong>Budget</strong> pakette saatte <strong>100 adet</strong>,
-      <strong>Economy</strong> pakette <strong>200 adet</strong>, <strong>Professional</strong> ve
-      <strong>Extreme</strong> paketlerde <strong>400 adet</strong> e-posta gönderimi yapılabilmektedir. Toplu
+      <strong>Starter</strong> pakette saatte <strong>100 adet</strong>,
+      <strong>Essential</strong> pakette <strong>200 adet</strong>, <strong>Advanced</strong> ve
+      <strong>Premium</strong> paketlerde <strong>400 adet</strong> e-posta gönderimi yapılabilmektedir. Toplu
       e-posta ihtiyacınız için destek ekibimizle iletişime geçebilirsiniz.
      </p>
     </div>

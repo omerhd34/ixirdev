@@ -21,7 +21,7 @@
   <div class="ixir-wh-grid ixir-wh-grid--3">
    <article class="ixir-wh-plan">
     <header class="ixir-wh-plan-head">
-     <h3>Sprinkle</h3>
+     <h3>Starter</h3>
      <p>50 GB disk alanı ve sınırsız trafik.</p>
     </header>
     <div class="ixir-wh-price">
@@ -41,7 +41,7 @@
    <article class="ixir-wh-plan ixir-wh-plan--best">
     <span class="ixir-wh-badge">En İyi Tercih</span>
     <header class="ixir-wh-plan-head">
-     <h3>Thunderstrom</h3>
+     <h3>Growth</h3>
      <p>100 GB disk alanı ve sınırsız trafik.</p>
     </header>
     <div class="ixir-wh-price">
@@ -60,7 +60,7 @@
    </article>
    <article class="ixir-wh-plan">
     <header class="ixir-wh-plan-head">
-     <h3>Typhoon</h3>
+     <h3>Advanced</h3>
      <p>250 GB disk alanı ve sınırsız trafik.</p>
     </header>
     <div class="ixir-wh-price">

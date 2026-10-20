@@ -24,8 +24,8 @@
      <button type="button" class="ixir-wh-faq-q" aria-expanded="false"><i class="fas fa-chevron-down"
        aria-hidden="true"></i>WordPress Hosting hizmetimde ne kadar CPU kullanabilirim?</button>
      <div class="ixir-wh-faq-a">
-      <p>Paket detaylarında belirtilen core sayısı kadar CPU kullanım hakkınız vardır. Budget WordPress planında 1 Core,
-       Economy planında 2 Core, Professional planında ise 3 Core Intel Xeon Gold işlemci kaynağı tahsis edilmektedir.
+      <p>Paket detaylarında belirtilen core sayısı kadar CPU kullanım hakkınız vardır. Starter WordPress planında 1 Core,
+       Growth planında 2 Core, Advanced planında ise 3 Core Intel Xeon Gold işlemci kaynağı tahsis edilmektedir.
        Daha fazla kaynağa ihtiyaç duymanız halinde üst pakete geçiş yapabilirsiniz.</p>
      </div>
     </div>
@@ -72,7 +72,7 @@
        aria-hidden="true"></i>Hosting hizmetini yanlış satın aldım, değiştirebilir miyim?</button>
      <div class="ixir-wh-faq-a">
       <p>Evet, yanlış hosting paketi aldıysanız ya da farklı bir WordPress Hosting paketine geçmek istiyorsanız bu
-       değişikliği istediğiniz zaman yaptırabilirsiniz. Budget'tan Economy'ye, Economy'den Professional'a geçiş de dahil
+       değişikliği istediğiniz zaman yaptırabilirsiniz. Starter'dan Growth'a, Growth'tan Advanced'a geçiş de dahil
        olmak üzere tüm paket değişikliklerinde destek talebi iletmeniz yeterlidir.</p>
      </div>
     </div>

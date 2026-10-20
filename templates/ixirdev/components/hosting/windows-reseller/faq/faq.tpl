@@ -48,8 +48,8 @@
       class="fas fa-chevron-down" aria-hidden="true"></i>E-mail gönderiminde limit var mı? Varsa ne
      kadar?</button>
     <div class="ixir-wh-faq-a">
-     <p>E-posta gönderim limiti pakete göre değişmektedir: Core pakette saatte 50, Starter'da 100,
-      Premium'da 200, Expert paketinde ise 400 adet e-posta gönderilebilir. Spam engellemesi amacıyla
+     <p>E-posta gönderim limiti pakete göre değişmektedir: Starter pakette saatte 50, Essential'da 100,
+      Advanced'da 200, Premium paketinde ise 400 adet e-posta gönderilebilir. Spam engellemesi amacıyla
       uygulanan bu limitler aşıldığında bizimle iletişime geçebilirsiniz, size yardımcı olacağız.</p>
     </div>
    </div>

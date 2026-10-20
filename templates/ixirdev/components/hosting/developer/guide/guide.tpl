@@ -31,10 +31,8 @@
    <article class="ixir-wh-guide-item">
     <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
     <h2>Hangi Developer Hosting Paketi Size Uygun?</h2>
-    <p>Tek bir uygulama veya deneme projesi için <strong>Başlangıç</strong> planı yeterlidir. Birden fazla proje,
-     daha yüksek process limiti ve RAM ihtiyacı olan ekipler <strong>Profesyonel</strong> veya üst paketleri tercih
-     edebilir. Hangi paketi seçerseniz seçin; Node.js / Python seçicileri, Git, SSH, LiteSpeed, ücretsiz SSL ve
-     JetBackup yedekleme tüm planlarda standart olarak yer alır.</p>
+    <p>Tek bir uygulama veya deneme projesi için <strong>Starter</strong> planı yeterlidir. Birden fazla proje,
+     daha yüksek process limiti ve RAM ihtiyacı olan ekipler <strong>Advanced</strong> veya <strong>Premium</strong> paketleri tercih edebilir. Hangi paketi seçerseniz seçin; Node.js / Python seçicileri, Git, SSH, LiteSpeed, ücretsiz SSL ve JetBackup yedekleme tüm planlarda standart olarak yer alır.</p>
    </article>
    <article class="ixir-wh-guide-item">
     <span class="ixir-wh-guide-icon" aria-hidden="true"><i class="fas fa-code"></i></span>

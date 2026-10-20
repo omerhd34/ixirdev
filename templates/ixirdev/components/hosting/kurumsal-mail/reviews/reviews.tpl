@@ -17,7 +17,7 @@
      <span>
       <b>M. Karadeniz</b>
       <small>Genel Müdür · Lojistik Sektörü</small>
-      <em>65 Kullanıcı · Economy Mail</em>
+      <em>65 Kullanıcı · Advanced</em>
      </span>
     </figcaption>
    </figure>
@@ -32,7 +32,7 @@
      <span>
       <b>S. Arslan</b>
       <small>Kurucu Ortak · Mali Müşavirlik</small>
-      <em>18 Kullanıcı · Essential Mail</em>
+      <em>18 Kullanıcı · Essential</em>
      </span>
     </figcaption>
    </figure>
@@ -46,7 +46,7 @@
      <span>
       <b>E. Demirci</b>
       <small>BT Sorumlusu · Üretim Firması</small>
-      <em>120 Kullanıcı · Professional Mail</em>
+      <em>120 Kullanıcı · Premium</em>
      </span>
     </figcaption>
    </figure>

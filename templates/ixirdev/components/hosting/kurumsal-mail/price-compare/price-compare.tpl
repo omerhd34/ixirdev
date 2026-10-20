@@ -22,7 +22,7 @@
      <span class="ixir-km-cmp-badge"><i class="fas fa-crown" aria-hidden="true"></i>En Avantajlı</span>
      <div class="ixir-km-cmp-tags">
       <span class="ixir-km-cmp-plan"><i class="fas fa-box" aria-hidden="true"></i><span><span
-         data-km="ixir-plan">Economy Mail</span> paketi</span></span>
+         data-km="ixir-plan">Advanced Mail</span> paketi</span></span>
      </div>
      <h3>İXİRHOST</h3>
      <p class="ixir-km-cmp-meta">Yerli - Sabit TL fiyat</p>
@@ -129,10 +129,10 @@
    var gPer = (parseFloat(root.getAttribute('data-gmail')) || 7) * usd;
    var mPer = (parseFloat(root.getAttribute('data-ms')) || 6) * usd;
    var tiers = [
-    { max: 10, name: 'Budget Mail', price: 732.92 },
+    { max: 10, name: 'Starter Mail', price: 732.92 },
     { max: 30, name: 'Essential Mail', price: 1182.17 },
-    { max: 100, name: 'Economy Mail', price: 1630.67 },
-    { max: 300, name: 'Professional Mail', price: 3299.50 }
+    { max: 100, name: 'Advanced Mail', price: 1630.67 },
+    { max: 300, name: 'Premium Mail', price: 3299.50 }
    ];
    var fmt = function(n) { return Math.round(n).toLocaleString('tr-TR'); };
    var set = function(key, val) {
