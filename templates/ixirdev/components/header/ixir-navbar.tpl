@@ -79,13 +79,6 @@
         "width" => "col-md-4",
         "items" => [
           [
-            "href" => "/kurumsal-mail-hosting",
-            "title" => "Kurumsal Mail Hosting",
-            "icon" => "far fa-envelope",
-            "label" => "Kurumsal Mail Hosting",
-            "desc" => "Büyük Kapasiteli, Kişi, Takvim, Konferans, Mesajlaşma Hepsi bir arada Mail Çözümü"
-          ],
-          [
             "href" => "/developer-hosting",
             "title" => "Developer Hosting",
             "icon" => "fas fa-code",

@@ -159,13 +159,6 @@
         <small>WordPress sitelere özel altyapı</small>
        </span>
       </a>
-      <a href="{$WEB_ROOT}/kurumsal-mail-hosting">
-       <i class="far fa-envelope"></i>
-       <span>
-        Kurumsal Mail Hosting
-        <small>Kişi, takvim ve mesajlaşma</small>
-       </span>
-      </a>
       <a href="{$WEB_ROOT}/developer-hosting">
        <i class="fas fa-code"></i>
        <span>

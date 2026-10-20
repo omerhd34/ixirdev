@@ -16,7 +16,6 @@
       <li><a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting">Linux Hosting</a></li>
       <li><a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting">Windows Hosting</a></li>
       <li><a href="{$WEB_ROOT}/wordpress-hosting" title="Wordpress Hosting">Wordpress Hosting</a></li>
-      <li><a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">Kurumsal Mail Hosting</a></li>
       <li><a href="{$WEB_ROOT}/developer-hosting" title="Developer Hosting">Developer Hosting</a></li>
       <li><a href="{$WEB_ROOT}/cloud-drive" title="Cloud Drive">Cloud Drive</a></li>
       <li><a href="{$WEB_ROOT}/linux-reseller-hosting" title="Linux Reseller Hosting">Linux Reseller Hosting</a></li>
