@@ -21,7 +21,7 @@
   <div class="ixir-kms-grid ixir-wh-grid">
    <article class="ixir-kms-plan ixir-wh-plan">
     <header class="ixir-kms-plan-head ixir-wh-plan-head">
-     <h3>Budget MailServer</h3>
+     <h3>Starter</h3>
     </header>
     <div class="ixir-kms-price ixir-wh-price">
      <s>2541 TL</s>
@@ -29,11 +29,11 @@
      <span class="ixir-kms-save ixir-wh-save">%30 tasarruf</span>
     </div>
     <div class="ixir-kms-billing ixir-wh-billing">
-     <button type="button" class="ixir-kms-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-budget">Ödeme
+     <button type="button" class="ixir-kms-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-starter">Ödeme
       Planları</button>
-     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-budget" role="dialog" aria-label="Budget Plan ödeme planı">
+     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-starter" role="dialog" aria-label="Starter ödeme planı">
       <div class="ixir-kms-billing-top ixir-wh-billing-top">
-       <strong>Budget MailServer</strong>
+       <strong>Starter</strong>
        <button type="button" class="ixir-kms-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
       </div>
       <table>
@@ -71,7 +71,7 @@
    <article class="ixir-kms-plan ixir-wh-plan ixir-kms-plan--best ixir-wh-plan--best">
     <span class="ixir-kms-badge ixir-wh-badge">En İyi Tercih</span>
     <header class="ixir-kms-plan-head ixir-wh-plan-head">
-     <h3>Economy MailServer</h3>
+     <h3>Essential</h3>
     </header>
     <div class="ixir-kms-price ixir-wh-price">
      <s>3085 TL</s>
@@ -82,9 +82,9 @@
      <button type="button" class="ixir-kms-billing-btn ixir-wh-billing-btn" aria-expanded="false"
       aria-controls="ixir-wh-bill-essential">Ödeme
       Planları</button>
-     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-essential" role="dialog" aria-label="Economy MailServer ödeme planı">
+     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-essential" role="dialog" aria-label="Essential ödeme planı">
       <div class="ixir-kms-billing-top ixir-wh-billing-top">
-       <strong>Economy MailServer</strong>
+       <strong>Essential</strong>
        <button type="button" class="ixir-kms-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
       </div>
       <table>
@@ -121,7 +121,7 @@
    </article>
    <article class="ixir-kms-plan ixir-wh-plan">
     <header class="ixir-kms-plan-head ixir-wh-plan-head">
-     <h3>Professional MailServer</h3>
+     <h3>Advanced</h3>
     </header>
     <div class="ixir-kms-price ixir-wh-price">
      <s>4902 TL</s>
@@ -129,11 +129,11 @@
      <span class="ixir-kms-save ixir-wh-save">%30 tasarruf</span>
     </div>
     <div class="ixir-kms-billing ixir-wh-billing">
-     <button type="button" class="ixir-kms-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-economy">Ödeme
+     <button type="button" class="ixir-kms-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-advanced">Ödeme
       Planları</button>
-     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-economy" role="dialog" aria-label="Professional MailServer ödeme planı">
+     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-advanced" role="dialog" aria-label="Advanced ödeme planı">
       <div class="ixir-kms-billing-top ixir-wh-billing-top">
-       <strong>Professional MailServer</strong>
+       <strong>Advanced Planı</strong>
        <button type="button" class="ixir-kms-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
       </div>
       <table>
@@ -170,7 +170,7 @@
    </article>
    <article class="ixir-kms-plan ixir-wh-plan">
     <header class="ixir-kms-plan-head ixir-wh-plan-head">
-     <h3>Expert MailServer</h3>
+     <h3>Premium</h3>
     </header>
     <div class="ixir-kms-price ixir-wh-price">
      <s>9079,07 TL</s>
@@ -179,12 +179,12 @@
     </div>
     <div class="ixir-kms-billing ixir-wh-billing">
      <button type="button" class="ixir-kms-billing-btn ixir-wh-billing-btn" aria-expanded="false"
-      aria-controls="ixir-wh-bill-professional">Ödeme
+      aria-controls="ixir-wh-bill-premium">Ödeme
       Planları</button>
-     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-professional" role="dialog"
-      aria-label="Expert MailServer ödeme planı">
+     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-premium" role="dialog"
+      aria-label="Premium ödeme planı">
       <div class="ixir-kms-billing-top ixir-wh-billing-top">
-       <strong>Expert MailServer</strong>
+       <strong>Premium</strong>
        <button type="button" class="ixir-kms-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
       </div>
       <table>

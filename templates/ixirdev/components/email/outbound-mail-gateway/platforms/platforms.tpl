@@ -128,7 +128,7 @@
           </span>
         </div>
         <div class="ixir-omg-platform-meta">
-          <h3 class="ixir-omg-platform-name">hMailServer</h3>
+          <h3 class="ixir-omg-platform-name">MailServer</h3>
           <span class="ixir-omg-platform-os"><i class="fab fa-windows" aria-hidden="true"></i> Windows</span>
         </div>
         <p class="ixir-omg-platform-desc">SMTP Delivery of e-mail sekmesinden SmartHost IP adresi girilerek Windows sunucularda anında aktifleşir.</p>

@@ -21,7 +21,7 @@
     <div class="ixir-as-grid ixir-wh-grid">
      <article class="ixir-as-plan ixir-wh-plan">
       <header class="ixir-as-plan-head ixir-wh-plan-head">
-       <h3>BUDGET</h3>
+       <h3>Starter</h3>
        <p>Küçük ekipler için başlangıç</p>
       </header>
       <div class="ixir-as-price ixir-wh-price">
@@ -30,11 +30,11 @@
        <span class="ixir-as-save ixir-wh-save">%30 tasarruf</span>
       </div>
       <div class="ixir-as-billing ixir-wh-billing">
-       <button type="button" class="ixir-as-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-as-bill-budget">Ödeme
+       <button type="button" class="ixir-as-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-as-bill-starter">Ödeme
         Planları</button>
-       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-budget" role="dialog" aria-label="Budget ödeme planı">
+       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-starter" role="dialog" aria-label="Starter ödeme planı">
         <div class="ixir-as-billing-top ixir-wh-billing-top">
-         <strong>Budget</strong>
+         <strong>Starter Planı</strong>
          <button type="button" class="ixir-as-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
         </div>
         <table>
@@ -69,7 +69,7 @@
      </article>
      <article class="ixir-as-plan ixir-wh-plan">
       <header class="ixir-as-plan-head ixir-wh-plan-head">
-       <h3>ESSENTIAL</h3>
+       <h3>Essential</h3>
        <p>Büyüyen işletmeler için temel koruma</p>
       </header>
       <div class="ixir-as-price ixir-wh-price">
@@ -82,7 +82,7 @@
         Planları</button>
        <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-essential" role="dialog" aria-label="Essential ödeme planı">
         <div class="ixir-as-billing-top ixir-wh-billing-top">
-         <strong>Essential</strong>
+         <strong>Essential Planı</strong>
          <button type="button" class="ixir-as-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
         </div>
         <table>
@@ -118,7 +118,7 @@
      <article class="ixir-as-plan ixir-wh-plan ixir-as-plan--best ixir-wh-plan--best">
       <span class="ixir-as-badge ixir-wh-badge">En İyi Tercih</span>
       <header class="ixir-as-plan-head ixir-wh-plan-head">
-       <h3>ECONOMY</h3>
+       <h3>Advanced</h3>
        <p>Orta Ölçekli Firmalar için Kapsamlı Çözüm</p>
       </header>
       <div class="ixir-as-price ixir-wh-price">
@@ -128,10 +128,10 @@
       </div>
       <div class="ixir-as-billing ixir-wh-billing">
        <button type="button" class="ixir-as-billing-btn ixir-wh-billing-btn" aria-expanded="false"
-        aria-controls="ixir-as-bill-economy">Ödeme Planları</button>
-       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-economy" role="dialog" aria-label="Economy ödeme planı">
+        aria-controls="ixir-as-bill-advanced">Ödeme Planları</button>
+       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-advanced" role="dialog" aria-label="Advanced ödeme planı">
         <div class="ixir-as-billing-top ixir-wh-billing-top">
-         <strong>Economy</strong>
+         <strong>Advanced Planı</strong>
          <button type="button" class="ixir-as-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
         </div>
         <table>
@@ -166,7 +166,7 @@
      </article>
      <article class="ixir-as-plan ixir-wh-plan">
       <header class="ixir-as-plan-head ixir-wh-plan-head">
-       <h3>PROFESSIONAL</h3>
+       <h3>Premium</h3>
        <p>500 Kullanıcılı Kurumsal Ortamlar için</p>
       </header>
       <div class="ixir-as-price ixir-wh-price">
@@ -175,11 +175,11 @@
        <span class="ixir-as-save ixir-wh-save">%30 tasarruf</span>
       </div>
       <div class="ixir-as-billing ixir-wh-billing">
-       <button type="button" class="ixir-as-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-as-bill-professional">Ödeme
+       <button type="button" class="ixir-as-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-as-bill-premium">Ödeme
         Planları</button>
-       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-professional" role="dialog" aria-label="Professional ödeme planı">
+       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-premium" role="dialog" aria-label="Premium ödeme planı">
         <div class="ixir-as-billing-top ixir-wh-billing-top">
-         <strong>PROFESSIONAL</strong>
+         <strong>Premium Planı</strong>
          <button type="button" class="ixir-as-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
         </div>
         <table>
@@ -231,62 +231,4 @@
     </div>
    </div>
 
-   <script>
-    {literal}
-     (function() {
-      var root = document.getElementById('ixir-as-plans') || document.querySelector('.ixir-as-plans, .ixir-wh-plans');
-      if (!root) return;
-      var items = root.querySelectorAll('.ixir-as-billing, .ixir-wh-billing');
-
-      function closeAll(except) {
-       Array.prototype.forEach.call(items, function(item) {
-        if (item === except) return;
-        item.classList.remove('is-open');
-        var plan = item.closest ? item.closest('.ixir-as-plan, .ixir-wh-plan') : null;
-        if (plan) plan.classList.remove('is-billing-open');
-        var btn = item.querySelector('.ixir-as-billing-btn, .ixir-wh-billing-btn');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
-       });
-      }
-
-      Array.prototype.forEach.call(items, function(item) {
-       var btn = item.querySelector('.ixir-as-billing-btn, .ixir-wh-billing-btn');
-       var closeBtn = item.querySelector('.ixir-as-billing-close, .ixir-wh-billing-close');
-       var pop = item.querySelector('.ixir-as-billing-pop, .ixir-wh-billing-pop');
-       var plan = item.closest ? item.closest('.ixir-as-plan, .ixir-wh-plan') : null;
-       if (!btn) return;
-       btn.addEventListener('click', function(event) {
-        event.stopPropagation();
-        var open = item.classList.contains('is-open');
-        closeAll(open ? null : item);
-        var willOpen = !open;
-        item.classList.toggle('is-open', willOpen);
-        if (plan) plan.classList.toggle('is-billing-open', willOpen);
-        btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
-       });
-       if (closeBtn) {
-        closeBtn.addEventListener('click', function(event) {
-         event.stopPropagation();
-         item.classList.remove('is-open');
-         if (plan) plan.classList.remove('is-billing-open');
-         btn.setAttribute('aria-expanded', 'false');
-         btn.focus();
-        });
-       }
-       if (pop) {
-        pop.addEventListener('click', function(event) {
-         event.stopPropagation();
-        });
-       }
-      });
-
-      document.addEventListener('click', function() {
-       closeAll(null);
-      });
-      document.addEventListener('keydown', function(event) {
-       if (event.key === 'Escape') closeAll(null);
-      });
-     })();
-    {/literal}
-   </script>
 </section>

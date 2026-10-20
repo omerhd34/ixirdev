@@ -20,7 +20,7 @@
     <div class="ixir-omg-grid ixir-wh-grid ixir-omg-grid--3 ixir-wh-grid--3">
       <article class="ixir-omg-plan ixir-wh-plan">
         <header class="ixir-omg-plan-head ixir-wh-plan-head">
-          <h3>BUDGET</h3>
+          <h3>Starter</h3>
           <p>Bireysel ve küçük ölçekli gönderimler için ideal outbound çözümü</p>
         </header>
         <div class="ixir-omg-price ixir-wh-price">
@@ -29,10 +29,10 @@
           <span class="ixir-omg-save ixir-wh-save">%30 tasarruf</span>
         </div>
         <div class="ixir-omg-billing ixir-wh-billing">
-          <button type="button" class="ixir-omg-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-budget">Ödeme Planları</button>
-          <div class="ixir-omg-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-budget" role="dialog" aria-label="Budget ödeme planı">
+          <button type="button" class="ixir-omg-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-starter">Ödeme Planları</button>
+          <div class="ixir-omg-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-starter" role="dialog" aria-label="Starter ödeme planı">
             <div class="ixir-omg-billing-top ixir-wh-billing-top">
-              <strong>Budget Plan</strong>
+              <strong>Starter Planı</strong>
               <button type="button" class="ixir-omg-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
             </div>
             <table>
@@ -69,7 +69,7 @@
       <article class="ixir-omg-plan ixir-wh-plan ixir-omg-plan--best ixir-wh-plan--best">
         <span class="ixir-omg-badge ixir-wh-badge">En İyi Tercih</span>
         <header class="ixir-omg-plan-head ixir-wh-plan-head">
-          <h3>ECONOMY</h3>
+          <h3>Growth</h3>
           <p>KOBİ'ler ve düzenli kurumsal mail gönderimi yapan şirketler için optimize edilmiş</p>
         </header>
         <div class="ixir-omg-price ixir-wh-price">
@@ -78,10 +78,10 @@
           <span class="ixir-omg-save ixir-wh-save">%30 tasarruf</span>
         </div>
         <div class="ixir-omg-billing ixir-wh-billing">
-          <button type="button" class="ixir-omg-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-economy">Ödeme Planları</button>
-          <div class="ixir-omg-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-economy" role="dialog" aria-label="Economy ödeme planı">
+          <button type="button" class="ixir-omg-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-growth">Ödeme Planları</button>
+          <div class="ixir-omg-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-growth" role="dialog" aria-label="Growth ödeme planı">
             <div class="ixir-omg-billing-top ixir-wh-billing-top">
-              <strong>Economy Plan</strong>
+              <strong>Growth Planı</strong>
               <button type="button" class="ixir-omg-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
             </div>
             <table>
@@ -117,7 +117,7 @@
 
       <article class="ixir-omg-plan ixir-wh-plan">
         <header class="ixir-omg-plan-head ixir-wh-plan-head">
-          <h3>PROFESSIONAL</h3>
+          <h3>Advanced</h3>
           <p>Yüksek hacimli kurumsal gönderimler ve e-ticaret altyapıları için</p>
         </header>
         <div class="ixir-omg-price ixir-wh-price">
@@ -126,10 +126,10 @@
           <span class="ixir-omg-save ixir-wh-save">%30 tasarruf</span>
         </div>
         <div class="ixir-omg-billing ixir-wh-billing">
-          <button type="button" class="ixir-omg-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-professional">Ödeme Planları</button>
-          <div class="ixir-omg-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-professional" role="dialog" aria-label="Professional ödeme planı">
+          <button type="button" class="ixir-omg-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-advanced">Ödeme Planları</button>
+          <div class="ixir-omg-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-advanced" role="dialog" aria-label="Advanced ödeme planı">
             <div class="ixir-omg-billing-top ixir-wh-billing-top">
-              <strong>Professional Plan</strong>
+              <strong>Advanced Planı</strong>
               <button type="button" class="ixir-omg-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
             </div>
             <table>

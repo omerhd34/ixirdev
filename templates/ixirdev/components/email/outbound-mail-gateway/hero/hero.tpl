@@ -177,7 +177,8 @@
     function destination(plans) {
      var y = window.pageYOffset || document.documentElement.scrollTop || 0;
      var stickyH = stickyBottom();
-     return Math.max(0, Math.round(plans.getBoundingClientRect().top + y - stickyH));
+     var badge = plans.querySelector('.ixir-badge-pill.ixir-ssl-badge-pill') || plans;
+     return Math.max(0, Math.round(badge.getBoundingClientRect().top + y - stickyH - 20));
     }
 
     function easeOutCubic(t) {

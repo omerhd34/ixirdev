@@ -62,7 +62,7 @@
         <span class="ixir-omg-diff-icon ixir-wh-diff-icon" aria-hidden="true"><i class="fas fa-tags"></i></span>
         <div>
           <h3>Şeffaf Fiyatlandırma</h3>
-          <p>Gizli maliyet yoktur. Mail adedi bazlı net fiyatlandırma ile ihtiyacınıza göre paket seçer, büyüdükçe kolayca üst pakete geçersiniz. Economy ve Professional paketlerde öncelikli teknik destek dahildir.</p>
+          <p>Gizli maliyet yoktur. Mail adedi bazlı net fiyatlandırma ile ihtiyacınıza göre paket seçer, büyüdükçe kolayca üst pakete geçersiniz. Growth ve Advanced paketlerde öncelikli teknik destek dahildir.</p>
         </div>
       </li>
     </ul>

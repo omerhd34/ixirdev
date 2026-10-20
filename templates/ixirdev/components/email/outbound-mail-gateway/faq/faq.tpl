@@ -29,7 +29,7 @@
           <i class="fas fa-chevron-down" aria-hidden="true"></i>Hangi paketi seçmeliyim?
         </button>
         <div class="ixir-omg-faq-a ixir-wh-faq-a">
-          <p>Bu tamamen mail çıkış yoğunluğunuza bağlıdır, 1 IP üzerinden aylık 10.000 adet mail gönderiyorsanız budget outbound paketini önerebiliriz, 1 sunucudan 50 veya 100.000 adet mail gönderiyorsanız veya bir kaç farklı IP adresinden relay yapıp toplamda 50-100.000 adet mail gönderiyorsa economy veya profesional planları tercih edebilirsiniz.</p>
+          <p>Bu tamamen mail çıkış yoğunluğunuza bağlıdır, 1 IP üzerinden aylık 10.000 adet mail gönderiyorsanız starter paketini önerebiliriz, 1 sunucudan 50 veya 100.000 adet mail gönderiyorsanız veya bir kaç farklı IP adresinden relay yapıp toplamda 50-100.000 adet mail gönderiyorsa economy veya profesional planları tercih edebilirsiniz.</p>
         </div>
       </div>
       <div class="ixir-omg-faq-item ixir-wh-faq-item">
