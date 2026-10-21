@@ -1,7 +1,7 @@
 @import url("base.css");
 @import url("../components/header/header.css");
 @import url("../components/home/news-bar/news-bar.css");
-@import url("../components/home/homepage-hero/homepage-hero.css");
+@import url("../components/shared/hero/hero-base.css");
 @import url("../components/home/packages/packages.css");
 @import url("../components/home/promo-carousel/promo-carousel.css");
 @import url("../components/home/trust/trust.css");
