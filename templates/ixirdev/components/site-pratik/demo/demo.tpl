@@ -2,12 +2,8 @@
  <div class="container">
   <div class="ixir-sp-demo-grid">
    <div class="ixir-sp-demo-content">
-    <div class="ixir-sp-demo-badge">
-     <span class="ixir-sp-demo-pulse" aria-hidden="true"></span>
-     <span>Canlı Demo &amp; Editör</span>
-    </div>
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-magic" aria-hidden="true"></i> Canlı Demo &amp; Editör</div>
 
-    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-magic" aria-hidden="true"></i> ÜCRETSİZ DENE</div>
     <h2 class="ixir-sp-demo-title" id="ixir-sp-demo-title">
      Şimdi Ücretsiz Deneyin!
     </h2>

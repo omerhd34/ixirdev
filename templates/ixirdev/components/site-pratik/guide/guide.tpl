@@ -1,11 +1,7 @@
 <section class="ixir-sp-guide ixir-slide ixir-slide--right is-slide-on" id="sitepratik-rehber" aria-labelledby="ixir-sp-guide-title">
   <div class="container">
     <header class="ixir-sp-guide-head">
-      <div class="ixir-sp-guide-badge">
-        <i class="fas fa-magic" aria-hidden="true"></i>
-        <span>Yapay Zeka Destekli Web Sitesi Sihirbazı</span>
-      </div>
-      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-book-reader" aria-hidden="true"></i> NASIL YAPILIR</div>
+      <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-book-reader" aria-hidden="true"></i> NASIL YAPILIR ?</div>
       {include file="$template/components/Heading.tpl" title="Web Sitesi Nasıl Yapılır?" id="ixir-sp-guide-title" align="center"}
       <p class="ixir-sp-guide-lead">
         Kodlama veya tasarım bilgisine ihtiyaç duymadan, yapay zeka gücüyle işletmenizi dijital dünyaya taşıyın.
