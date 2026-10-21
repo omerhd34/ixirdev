@@ -495,9 +495,6 @@ body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body .col-xs-12 {
 .ixir-split-form .ixir-domain-checker:focus-within {
  border-color: #386ce0;
  background: #fff;
- box-shadow:
-  0 0 0 4px rgba(56, 108, 224, 0.24),
-  0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
 .ixir-auth-page .ixir-dc-input,
@@ -666,8 +663,8 @@ body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body .col-xs-12 {
  max-width: calc(100% + 4px);
  padding: 0 6px;
  background: linear-gradient(to bottom,
-   transparent calc(50% - 0.75px),
-   var(--ixir-label-bg, #fff) calc(50% - 0.75px));
+   #fff 50%,
+   var(--ixir-label-bg, #fff) 50%);
  font-size: 12px;
  font-weight: 500;
  line-height: 1.2;
@@ -833,7 +830,7 @@ body.ixir-auth-page:has(.ixir-auth-split.is-register) #main-body .col-xs-12 {
  background: #fff;
  outline: none;
  box-shadow:
-  0 0 0 4px rgba(56, 108, 224, 0.24),
+  0 0 0 3px rgba(56, 108, 224, 0.13),
   0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
