@@ -21,7 +21,7 @@
   rel="stylesheet">
 {/if}
 {if $templatefile == 'homepage' || $templatefile == 'whois-sorgulama' || $ixirDomainSearchPage || $ixirDomainTransferPage || ($templatefile == 'product-landing' && ($ixirPageSlug == 'linux-hosting' || $ixirPageSlug == 'windows-hosting' || $ixirPageSlug == 'wordpress-hosting' || $ixirPageSlug == 'developer-hosting' || $ixirPageSlug == 'cloud-drive' || $ixirPageSlug == 'kurumsal-mail-hosting' || $ixirPageSlug == 'kurumsal-mail-server' || $ixirPageSlug == 'linux-reseller-hosting' || $ixirPageSlug == 'windows-reseller-hosting' || $ixirPageSlug == 'cloud-server' || $ixirPageSlug == 'colocation' || $ixirPageSlug == 'co-location' || $ixirPageSlug == 'dedicated-server' || $ixirPageSlug == 'pci-tarama' || $ixirPageSlug == 'ek-servisler' || $ixirPageSlug == 'server-servisleri' || $ixirPageSlug == 'antispam' || $ixirPageSlug == 'outbound-mail-gateway' || $ixirPageSlug == 'site-pratik' || $ixirPageSlug == 'ssl-sertifikalari'))}
- <link href="{$WEB_ROOT}/templates/{$template}/components/home/homepage-hero/homepage-hero.css?v={$versionHash}-r61"
+ <link href="{$WEB_ROOT}/templates/{$template}/components/home/homepage-hero/homepage-hero.css?v={$versionHash}-r62"
   rel="stylesheet">
 {/if}
 
@@ -346,7 +346,7 @@
   ]}
  {/if}
  {foreach from=$ixirPageCss item=ixirCss}
-  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r148"
+  <link href="{$WEB_ROOT}/templates/{$template}/components/{$ixirCss}.css?v={$versionHash}-r152"
    rel="stylesheet">
  {/foreach}
  <script src="{$WEB_ROOT}/templates/{$template}/components/hosting/plans-slider.js?v={$versionHash}-r7" defer></script>

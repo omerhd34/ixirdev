@@ -1,21 +1,21 @@
-.ixir-sp-sectors {
+#sitepratik-sektorler.ixir-sp-sectors {
  position: relative;
- padding: 85px 0 95px;
- background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+ padding: 88px 0 96px;
+ background: linear-gradient(180deg, #f8fafc 0%, #ffffff 48%, #f8fafc 100%);
  overflow: hidden;
- border-top: 1px solid #eef2f6;
- border-bottom: 1px solid #eef2f6;
+ border-top: 1px solid #e8edf5;
+ border-bottom: 1px solid #e8edf5;
 }
 
-.ixir-sp-sectors::before {
+#sitepratik-sektorler::before {
  content: "";
  position: absolute;
  top: 0;
  left: 50%;
  transform: translateX(-50%);
- width: 900px;
- height: 380px;
- background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 70%);
+ width: min(100%, 1100px);
+ height: 460px;
+ background: radial-gradient(ellipse, rgba(59, 130, 246, 0.075) 0%, transparent 68%);
  pointer-events: none;
  z-index: 0;
 }
@@ -25,123 +25,116 @@
  z-index: 1;
 }
 
-.ixir-sp-sectors-head {
+#sitepratik-sektorler .ixir-sp-sectors-head {
  text-align: center;
  max-width: 860px;
  margin: 0 auto;
 }
 
-.ixir-sp-sectors .site-heading {
- color: #0f172a !important;
- font-size: 32px;
- font-weight: 700;
- letter-spacing: -0.02em;
- margin: 0 0 14px;
+#sitepratik-sektorler .ixir-sp-sectors-head > .ixir-badge-pill {
+ margin-bottom: 20px !important;
 }
 
-.ixir-sp-sectors-subtitle {
+#sitepratik-sektorler .site-heading {
+ color: #0f172a !important;
+ font-size: clamp(28px, 2.2vw, 36px);
+ font-weight: 750;
+ letter-spacing: -0.035em;
+ line-height: 1.2;
+ margin: 0 0 16px;
+}
+
+#sitepratik-sektorler .ixir-sp-sectors-subtitle {
  margin: 0 auto;
  color: #64748b;
- font-size: 16.5px;
- line-height: 1.6;
- max-width: 680px;
+ font-size: 16px;
+ line-height: 1.7;
+ max-width: 700px;
 }
 
-.ixir-sp-sectors-grid {
+#sitepratik-sektorler .ixir-sp-sectors-grid {
  display: grid;
- grid-template-columns: repeat(6, max-content);
- justify-content: center;
+ grid-template-columns: repeat(6, minmax(0, 1fr));
+ justify-content: stretch;
  align-items: stretch;
- gap: 12px 14px;
- max-width: 1200px;
- margin: 46px auto 0;
+ gap: 12px;
+ max-width: 1216px;
+ margin: 42px auto 0;
 }
 
-.ixir-sp-sector-pill {
+#sitepratik-sektorler .ixir-sp-sector-pill {
  position: relative;
  overflow: hidden;
- width: 100%;
+ min-width: 0;
+ min-height: 58px;
  display: inline-flex;
  align-items: center;
- gap: 10px;
- padding: 9px 18px 9px 12px;
- background: #ffffff;
+ gap: 11px;
+ padding: 10px 12px;
+ background: rgba(255, 255, 255, 0.88);
  border: 1px solid #e2e8f0;
- border-radius: 999px;
- box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
- transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+ border-radius: 14px;
+ box-shadow: 0 2px 5px rgba(15, 23, 42, 0.035), 0 1px 2px rgba(15, 23, 42, 0.025);
+ transition: border-color 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease, transform 0.22s ease;
  cursor: default !important;
  user-select: none;
  box-sizing: border-box;
 }
 
-.ixir-sp-sector-pill::before {
- content: "";
- position: absolute;
- top: 0;
- left: 25%;
- right: 25%;
- height: 2.5px;
- background: linear-gradient(90deg, transparent, #3b82f6, transparent);
- border-radius: 999px 999px 0 0;
- opacity: 0;
- transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
- pointer-events: none;
+#sitepratik-sektorler .ixir-sp-sector-pill::before {
+ content: none;
 }
 
-.ixir-sp-sector-pill:hover {
- border-color: rgba(59, 130, 246, 0.35);
- transform: translateY(-2px);
- box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.12), 0 2px 6px rgba(15, 23, 42, 0.04);
+#sitepratik-sektorler .ixir-sp-sector-pill:hover {
+ background: #ffffff;
+ border-color: #bfdbfe;
+ transform: translateY(-1px);
+ box-shadow: 0 8px 18px -8px rgba(37, 99, 235, 0.24), 0 2px 5px rgba(15, 23, 42, 0.04);
 }
 
-.ixir-sp-sector-pill:hover::before {
- left: 10%;
- right: 10%;
- opacity: 1;
-}
-
-.ixir-sp-sector-icon,
-.ixir-sp-sector-check {
- width: 22px;
- height: 22px;
- border-radius: 50%;
- background: #2563eb;
+#sitepratik-sektorler .ixir-sp-sector-icon,
+#sitepratik-sektorler .ixir-sp-sector-check {
+ width: 34px;
+ height: 34px;
+ border-radius: 10px;
+ background: #eff6ff;
  display: inline-flex;
  align-items: center;
  justify-content: center;
- color: #ffffff;
- font-size: 10.5px;
+ color: #2563eb;
+ font-size: 14px;
  flex-shrink: 0;
- box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
- transition: transform 0.25s ease, background-color 0.25s ease;
+ transition: color 0.22s ease, background-color 0.22s ease;
 }
 
-.ixir-sp-sector-pill:hover .ixir-sp-sector-icon,
-.ixir-sp-sector-pill:hover .ixir-sp-sector-check {
- background: #1d4ed8;
- transform: scale(1.08);
-}
-
-.ixir-sp-sector-name {
- color: #334155;
- font-size: 14.5px;
- font-weight: 600;
- white-space: nowrap;
- letter-spacing: -0.01em;
- transition: color 0.25s ease;
-}
-
-.ixir-sp-sector-pill:hover .ixir-sp-sector-name {
+#sitepratik-sektorler .ixir-sp-sector-pill:hover .ixir-sp-sector-icon,
+#sitepratik-sektorler .ixir-sp-sector-pill:hover .ixir-sp-sector-check {
+ background: #dbeafe;
  color: #1d4ed8;
 }
 
-.ixir-sp-sectors-action {
+#sitepratik-sektorler .ixir-sp-sector-name {
+ min-width: 0;
+ color: #334155;
+ font-size: 13.5px;
+ font-weight: 600;
+ line-height: 1.35;
+ letter-spacing: -0.015em;
+ white-space: normal !important;
+ overflow-wrap: anywhere;
+ transition: color 0.25s ease;
+}
+
+#sitepratik-sektorler .ixir-sp-sector-pill:hover .ixir-sp-sector-name {
+ color: #1d4ed8;
+}
+
+#sitepratik-sektorler .ixir-sp-sectors-action {
  display: flex;
  justify-content: center;
  align-items: center;
  gap: 16px;
- margin-top: 48px;
+ margin-top: 40px;
  text-align: center;
  flex-wrap: wrap;
 }
@@ -235,13 +228,13 @@
 }
 
 @media (max-width: 1200px) {
- .ixir-sp-sectors-grid {
-  gap: 10px 10px;
+ #sitepratik-sektorler .ixir-sp-sectors-grid {
+  gap: 10px;
  }
 }
 
 @media (max-width: 1100px) {
- .ixir-sp-sectors-grid {
+ #sitepratik-sektorler .ixir-sp-sectors-grid {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-top: 36px;
@@ -249,63 +242,64 @@
 }
 
 @media (max-width: 992px) {
- .ixir-sp-sectors {
+ #sitepratik-sektorler.ixir-sp-sectors {
   padding: 70px 0 80px;
  }
 
- .ixir-sp-sectors .site-heading {
-  font-size: 27px;
+ #sitepratik-sektorler .site-heading {
+  font-size: 28px;
  }
 
- .ixir-sp-sectors-subtitle {
+ #sitepratik-sektorler .ixir-sp-sectors-subtitle {
   font-size: 15px;
  }
 
- .ixir-sp-sectors-grid {
+ #sitepratik-sektorler .ixir-sp-sectors-grid {
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin-top: 36px;
  }
 
- .ixir-sp-sector-pill {
-  padding: 8px 15px 8px 10px;
+ #sitepratik-sektorler .ixir-sp-sector-pill {
+  padding: 9px 12px;
  }
 
- .ixir-sp-sector-name {
-  font-size: 13.5px;
+ #sitepratik-sektorler .ixir-sp-sector-name {
+  font-size: 14px;
  }
 }
 
 @media (max-width: 640px) {
- .ixir-sp-sectors {
+ #sitepratik-sektorler.ixir-sp-sectors {
   padding: 55px 0 65px;
  }
 
- .ixir-sp-sectors .site-heading {
-  font-size: 22px;
+ #sitepratik-sektorler .site-heading {
+  font-size: 23px;
  }
 
- .ixir-sp-sectors-grid {
+ #sitepratik-sektorler .ixir-sp-sectors-grid {
   grid-template-columns: 1fr;
   gap: 8px;
  }
 
- .ixir-sp-sector-pill {
-  padding: 7px 13px 7px 9px;
+ #sitepratik-sektorler .ixir-sp-sector-pill {
+  min-height: 52px;
+  padding: 8px 11px;
  }
 
- .ixir-sp-sector-icon,
- .ixir-sp-sector-check {
-  width: 19px;
-  height: 19px;
-  font-size: 9.5px;
+ #sitepratik-sektorler .ixir-sp-sector-icon,
+ #sitepratik-sektorler .ixir-sp-sector-check {
+  width: 32px;
+  height: 32px;
+  font-size: 13px;
  }
 
- .ixir-sp-sector-name {
-  font-size: 12.5px;
+ #sitepratik-sektorler .ixir-sp-sector-name {
+  font-size: 13.5px;
  }
 
- .ixir-sp-sectors-action {
+ #sitepratik-sektorler .ixir-sp-sectors-action {
   margin-top: 32px;
   gap: 12px;
   flex-direction: column;

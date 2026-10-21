@@ -2,7 +2,7 @@
  <div class="container">
   <header class="ixir-sp-sectors-head">
    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-store-alt" aria-hidden="true"></i> SEKTÖREL ŞABLONLAR</div>
-   {include file="$template/components/Heading.tpl" title="Her Sektörde Hazır Web Sitesi Oluşturabilirsiniz" id="ixir-sp-sectors-title" align="center" line=false}
+   {include file="$template/components/Heading.tpl" title="Her Sektörde Hazır Web Sitesi Oluşturabilirsiniz?" id="ixir-sp-sectors-title" align="center" line=false}
    <p class="ixir-sp-sectors-subtitle">Hangi sektörde olursanız olun, size özel profesyonel web sitenizi dakikalar
     içinde yayınlayın.</p>
   </header>
