@@ -40,6 +40,12 @@
   z-index: 1;
 }
 
+.ixir-sp-demo-content > .ixir-badge-pill {
+  justify-content: flex-start !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
 .ixir-sp-demo-badge {
   display: inline-flex;
   align-items: center;
