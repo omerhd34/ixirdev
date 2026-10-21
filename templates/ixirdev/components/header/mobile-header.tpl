@@ -192,45 +192,6 @@
    </li>
    <li class="has-children">
     <button type="button" class="ixir-mobile-toggle" aria-expanded="false">
-     <i class="fas fa-envelope"></i>
-     <span>E-posta</span>
-     <i class="fas fa-chevron-down ixir-mobile-caret"></i>
-    </button>
-    <div class="ixir-mobile-sub">
-     <div class="ixir-mobile-sub-inner">
-      <a href="{$WEB_ROOT}/kurumsal-mail-hosting">
-       <i class="far fa-envelope"></i>
-       <span>
-        Kurumsal Mail Hosting
-        <small>Kişi, takvim ve mesajlaşma</small>
-       </span>
-      </a>
-      <a href="{$WEB_ROOT}/kurumsal-mail-server">
-       <i class="fas fa-server"></i>
-       <span>
-        Kurumsal Mail Server
-        <small>İşletmenize özel mail altyapısı</small>
-       </span>
-      </a>
-      <a href="{$WEB_ROOT}/antispam">
-       <i class="fas fa-shield-alt"></i>
-       <span>
-        AntiSpam
-        <small>Yapay zeka destekli, KVKK uyumlu</small>
-       </span>
-      </a>
-      <a href="{$WEB_ROOT}/outbound-mail-gateway">
-       <i class="fas fa-check-double"></i>
-       <span>
-        Outbound Mail Gateway
-        <small>Yüksek reputation &amp; senderscore</small>
-       </span>
-      </a>
-     </div>
-    </div>
-   </li>
-   <li class="has-children">
-    <button type="button" class="ixir-mobile-toggle" aria-expanded="false">
      <i class="fas fa-server"></i>
      <span>Server</span>
      <i class="fas fa-chevron-down ixir-mobile-caret"></i>
@@ -270,6 +231,45 @@
        <span>
         PCI-DSS
         <small>Sunucu güvenlik kontrol hizmeti</small>
+       </span>
+      </a>
+     </div>
+    </div>
+   </li>
+   <li class="has-children">
+    <button type="button" class="ixir-mobile-toggle" aria-expanded="false">
+     <i class="fas fa-envelope"></i>
+     <span>E-posta</span>
+     <i class="fas fa-chevron-down ixir-mobile-caret"></i>
+    </button>
+    <div class="ixir-mobile-sub">
+     <div class="ixir-mobile-sub-inner">
+      <a href="{$WEB_ROOT}/kurumsal-mail-hosting">
+       <i class="far fa-envelope"></i>
+       <span>
+        Kurumsal Mail Hosting
+        <small>Kişi, takvim ve mesajlaşma</small>
+       </span>
+      </a>
+      <a href="{$WEB_ROOT}/kurumsal-mail-server">
+       <i class="fas fa-server"></i>
+       <span>
+        Kurumsal Mail Server
+        <small>İşletmenize özel mail altyapısı</small>
+       </span>
+      </a>
+      <a href="{$WEB_ROOT}/antispam">
+       <i class="fas fa-shield-alt"></i>
+       <span>
+        AntiSpam
+        <small>Yapay zeka destekli, KVKK uyumlu</small>
+       </span>
+      </a>
+      <a href="{$WEB_ROOT}/outbound-mail-gateway">
+       <i class="fas fa-check-double"></i>
+       <span>
+        Outbound Mail Gateway
+        <small>Yüksek reputation &amp; senderscore</small>
        </span>
       </a>
      </div>
