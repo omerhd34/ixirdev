@@ -9,110 +9,35 @@
      <h1>60 Saniye'de Cloud Server Hazır!</h1>
      <p>Yüksek Performanslı Cloud Server'ınızı hemen kullanın!</p>
     </div>
-    <p class="ixir-hero-label" aria-hidden="true">Özellikler</p>
-    <ul class="ixir-hero-points" aria-label="Özellikler">
-     <li>
-      <i class="fas fa-bolt" aria-hidden="true"></i>
-      <span>60 Saniyede Otomatik Kurulum</span>
-     </li>
-     <li>
-      <i class="fas fa-exchange-alt" aria-hidden="true"></i>
-      <span>Limitsiz Trafik</span>
-     </li>
-     <li>
-      <i class="fas fa-hdd" aria-hidden="true"></i>
-      <span>SSD Depolama</span>
-     </li>
-     <li>
-      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-      <span>İstanbul Lokasyon</span>
-     </li>
-     <li>
-      <i class="fas fa-desktop" aria-hidden="true"></i>
-      <span>Ücretsiz Yönetim Paneli</span>
-     </li>
-     <li>
-      <i class="fas fa-server" aria-hidden="true"></i>
-      <span>Tier III+ Veri Merkezi</span>
-     </li>
-     <li>
-      <i class="fas fa-award" aria-hidden="true"></i>
-      <span>ISO 27001 Sertifikalı</span>
-     </li>
-     <li>
-      <i class="fas fa-network-wired" aria-hidden="true"></i>
-      <span>1 adet IP Adresi</span>
-     </li>
-    </ul>
-    <div class="ixir-hero-links-wrap ixir-cs-links-wrap" role="region" aria-label="Diğer Hizmetler">
-     <p class="ixir-hero-label">Diğer Hizmetler</p>
-     <ul class="ixir-hero-links ixir-cs-links">
-      <li>
-       <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
-        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/domain-transfer" title="Domain Transfer">
-        <i class="fas fa-retweet fa-fw" aria-hidden="true"></i><span>Domain Transfer</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/whois-sorgulama" title="Whois Sorgulama">
-        <i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Whois Sorgulama</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/ssl-sertifikalari" title="SSL Sertifikaları">
-        <i class="far fa-lock fa-fw" aria-hidden="true"></i><span>SSL Sertifikaları</span>
-       </a>
-      </li>
-     </ul>
-     <ul class="ixir-hero-links ixir-cs-links">
-      <li>
-       <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
-        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting">
-        <i class="fab fa-windows fa-fw" aria-hidden="true"></i><span>Windows Hosting</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/wordpress-hosting" title="WordPress Hosting">
-        <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress Hosting</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/linux-reseller-hosting" title="Linux Reseller Hosting">
-        <i class="fab fa-linux fa-fw" aria-hidden="true"></i><span>Linux Reseller Hosting</span>
-       </a>
-      </li>
-     </ul>
-     <ul class="ixir-hero-links ixir-cs-links">
-      <li>
-       <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
-        <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/kurumsal-mail-server" title="Kurumsal Mail Server">
-        <i class="fas fa-mail-bulk fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Server</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/colocation" title="Co-Location">
-        <i class="fas fa-database fa-fw" aria-hidden="true"></i><span>Co-Location</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">
-        <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Dedicated Server</span>
-       </a>
-      </li>
-     </ul>
-    </div>
+
+    {assign var="features" value=[
+     ['label' => '60 Saniyede Otomatik Kurulum',     'icon' => 'fas fa-bolt'],
+     ['label' => 'Limitsiz Trafik',                  'icon' => 'fas fa-exchange-alt'],
+     ['label' => 'SSD Depolama',                     'icon' => 'fas fa-hdd'],
+     ['label' => 'İstanbul Lokasyon',                'icon' => 'fas fa-map-marker-alt'],
+     ['label' => 'Ücretsiz Yönetim Paneli',          'icon' => 'fas fa-desktop'],
+     ['label' => 'Tier III+ Veri Merkezi',           'icon' => 'fas fa-server'],
+     ['label' => 'ISO 27001 Sertifikalı',            'icon' => 'fas fa-award'],
+     ['label' => '1 adet IP Adresi',                 'icon' => 'fas fa-network-wired']
+   ]}
+    {include file="$template/components/List.tpl" title="Özellikler" items=$features columns=3 align="left"}
+
+    {assign var="otherServices" value=[
+       ['label' => 'Domain Sorgulama',            'icon' => 'fas fa-retweet',         'href' => 'domain-sorgu'],
+       ['label' => 'Domain Transfer',             'icon' => 'fas fa-retweet fa-fw',   'href' => 'domain-transfer'],
+       ['label' => 'Whois Sorgulama',             'icon' => 'far fa-eye',             'href' => 'whois-sorgulama'],
+       ['label' => 'SSL Sertifikaları',           'icon' => 'far fa-lock',            'href' => 'ssl-sertifikalari'],
+       ['label' => 'Site Pratik',                 'icon' => 'fas fa-globe',           'href' => 'site-pratik'],
+       ['label' => 'Linux Hosting',               'icon' => 'fab fa-linux',           'href' => 'linux-hosting'],
+       ['label' => 'Windows Hosting',             'icon' => 'fab fa-windows',         'href' => 'windows-hosting'],
+       ['label' => 'Linux Reseller Hosting',      'icon' => 'fab fa-linux',           'href' => 'linux-reseller-hosting'],
+       ['label' => 'Kurumsal Mail Hosting',       'icon' => 'far fa-envelope',        'href' => 'kurumsal-mail-hosting'],
+       ['label' => 'Kurumsal Mail Server',        'icon' => 'fas fa-mail-bulk',       'href' => 'kurumsal-mail-server'],
+       ['label' => 'Co-Location',                 'icon' => 'fas fa-database',        'href' => 'colocation'],
+       ['label' => 'Dedicated Server',            'icon' => 'fas fa-server',          'href' => 'dedicated-server']
+     ]}
+    {include file="$template/components/List.tpl" title="Diğer Hizmetler" items=$otherServices columns=3}
+
    </div>
   </div>
   <div class="ixir-hero-strip" aria-hidden="true">

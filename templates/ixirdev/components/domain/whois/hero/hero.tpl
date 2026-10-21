@@ -34,76 +34,24 @@
      </p>
     </form>
     {include file="$template/components/domain/float-label/float-label.tpl"}
-    <div class="ixir-domain-links-wrap" role="region" aria-label="Diğer Hizmetler">
-     <p class="ixir-hero-label">Diğer Hizmetler</p>
-     <ul class="ixir-domain-links">
-      <li>
-       <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
-        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/domain-transfer" title="Domain Transfer">
-        <i class="fas fa-retweet fa-fw" aria-hidden="true"></i><span>Domain Transfer</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/ssl-sertifikalari" title="SSL Sertifikaları">
-        <i class="far fa-lock fa-fw" aria-hidden="true"></i><span>SSL Sertifikaları</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
-        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
-       </a>
-      </li>
-     </ul>
-     <ul class="ixir-domain-links">
-      <li>
-       <a href="{$WEB_ROOT}/linux-hosting" title="Linux Hosting">
-        <i class="fas fa-hdd fa-fw" aria-hidden="true"></i><span>Linux Hosting</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting">
-        <i class="fab fa-windows fa-fw" aria-hidden="true"></i><span>Windows Hosting</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/wordpress-hosting" title="WordPress Hosting">
-        <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress
-         Hosting</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/linux-reseller-hosting" title="Linux Reseller Hosting">
-        <i class="fab fa-linux fa-fw" aria-hidden="true"></i><span>Linux Reseller Hosting</span>
-       </a>
-      </li>
-     </ul>
-     <ul class="ixir-domain-links">
-      <li>
-       <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
-        <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/kurumsal-mail-server" title="Kurumsal Mail Server">
-        <i class="fas fa-mail-bulk fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Server</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/cloud-server" title="Cloud Server">
-        <i class="fas fa-cloud fa-fw" aria-hidden="true"></i><span>Cloud Server</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">
-        <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Dedicated Server</span>
-       </a>
-      </li>
-     </ul>
-    </div>
+
+    {assign var="otherServices" value=[
+       ['label' => 'Domain Sorgulama',       'icon' => 'fas fa-retweet',         'href' => 'domain-sorgu'],
+       ['label' => 'Domain Transfer',        'icon' => 'fas fa-retweet fa-fw',   'href' => 'domain-transfer'],
+       ['label' => 'SSL Sertifikaları',      'icon' => 'far fa-lock',            'href' => 'ssl-sertifikalari'],
+       ['label' => 'Site Pratik',            'icon' => 'fas fa-globe',           'href' => 'site-pratik'],
+       ['label' => 'Linux Hosting',          'icon' => 'fas fa-hdd',             'href' => 'linux-hosting'],
+       ['label' => 'Windows Hosting',        'icon' => 'fab fa-windows',         'href' => 'windows-hosting'],
+       ['label' => 'WordPress Hosting',      'icon' => 'fab fa-wordpress-simple','href' => 'wordpress-hosting'],
+       ['label' => 'Linux Reseller Hosting', 'icon' => 'fab fa-linux',           'href' => 'linux-reseller-hosting'],
+       ['label' => 'Kurumsal Mail Hosting',  'icon' => 'far fa-envelope',        'href' => 'kurumsal-mail-hosting'],
+       ['label' => 'Kurumsal Mail Server',   'icon' => 'fas fa-mail-bulk',       'href' => 'kurumsal-mail-server'],
+       ['label' => 'Cloud Server',           'icon' => 'fas fa-cloud',           'href' => 'cloud-server'],
+       ['label' => 'Dedicated Server',       'icon' => 'fas fa-server',          'href' => 'dedicated-server']
+     ]}
+    {include file="$template/components/List.tpl" title="Diğer Hizmetler" items=$otherServices columns=3}
+
+
    </div>
   </div>
   <div class="ixir-domain-tlds" id="ixirDomainTlds" aria-label="İndirimli uzantılar">

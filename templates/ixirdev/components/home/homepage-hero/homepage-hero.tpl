@@ -16,20 +16,21 @@
      </a>
     </div>
    </div>
-   <div class="ixir-hero-links-wrap" role="region" aria-label="Tüm hizmetlerimiz">
-    <p class="ixir-hero-label">Özellikler</p>
-    <ul class="ixir-hero-links">
-     <li><i class="fas fa-user-check fa-fw" aria-hidden="true"></i><span>Müşteri Odaklı Hizmet</span></li>
-     <li><i class="fas fa-gift fa-fw" aria-hidden="true"></i><span>Ücretsiz Servisler</span></li>
-     <li><i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Ücretsiz Whois Gizleme</span></li>
-     <li><i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Ücretsiz DNS Yönetimi</span></li>
-     <li><i class="fas fa-envelope fa-fw" aria-hidden="true"></i><span>Ücretsiz URL & Mail Yönlendirme</span></li>
-     <li><i class="fas fa-lock fa-fw" aria-hidden="true"></i><span>Ücretsiz SSL</span></li>
-     <li><i class="fas fa-flag fa-fw" aria-hidden="true"></i><span>.TR Kayıtları Başladı!</span></li>
-     <li><i class="fas fa-id-card fa-fw" aria-hidden="true"></i><span>Belgesiz .com.tr & .net.tr Anında Tescil!</span></li>
-     <li><i class="fas fa-headset fa-fw" aria-hidden="true"></i><span>7/24/365 Destek</span></li>
-    </ul>
-   </div>
+
+   {assign var="features" value=[
+     ['label' => 'Müşteri Odaklı Hizmet',               'icon' => 'fas fa-user-check fa-fw'],
+     ['label' => 'Ücretsiz Servisler',                  'icon' => 'fas fa-gift fa-fw'],
+     ['label' => 'Ücretsiz Whois Gizleme',              'icon' => 'far fa-eye fa-fw'],
+     ['label' => 'Ücretsiz DNS Yönetimi',               'icon' => 'fas fa-globe fa-fw'],
+     ['label' => 'Ücretsiz URL & Mail Yönlendirme',     'icon' => 'fas fa-envelope fa-fw'],
+     ['label' => 'Ücretsiz SSL',                        'icon' => 'fas fa-lock fa-fw'],
+     ['label' => '.TR Kayıtları Başladı!',              'icon' => 'fas fa-flag fa-fw'],
+     ['label' => 'Belgesiz .com.tr Anında Tescil!',     'icon' => 'fas fa-id-card fa-fw'],
+     ['label' => 'Belgesiz .net.tr Anında Tescil!',     'icon' => 'fas fa-id-card fa-fw'],
+     ['label' => '7/24/365 Destek',        'icon' => 'fas fa-headset fa-fw']
+   ]}
+   {include file="$template/components/List.tpl" title="Özellikler" items=$features columns=3 align="left"}
+
   </div>
  </div>
  <div class="ixir-hero-strip" aria-hidden="true">

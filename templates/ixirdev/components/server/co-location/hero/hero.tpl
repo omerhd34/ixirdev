@@ -9,90 +9,30 @@
      <h1>Co-Location (Sunucu Barındırma)</h1>
      <p>Kendi sunucunuzu TIER III veri merkezinde ekonomik ve güvenle barındırın.</p>
     </div>
-    <p class="ixir-hero-label" aria-hidden="true">Özellikler</p>
-    <ul class="ixir-hero-points" aria-label="Özellikler">
-     <li>
-      <i class="fas fa-clock" aria-hidden="true"></i>
-      <span>%99.99 Uptime</span>
-     </li>
-     <li>
-      <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
-      <span>Sunucu Monitörleme</span>
-     </li>
-     <li>
-      <i class="fas fa-server" aria-hidden="true"></i>
-      <span>TIER III Veri Merkezi</span>
-     </li>
-    </ul>
-    <div class="ixir-hero-links-wrap ixir-colo-links-wrap" role="region" aria-label="Diğer Hizmetler">
-     <p class="ixir-hero-label">Diğer Hizmetler</p>
-     <ul class="ixir-hero-links ixir-colo-links">
-      <li>
-       <a href="{$WEB_ROOT}/domain-sorgu" title="Domain Sorgula">
-        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Domain Sorgulama</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/domain-transfer" title="Domain Transfer">
-        <i class="fas fa-retweet fa-fw" aria-hidden="true"></i><span>Domain Transfer</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/whois-sorgulama" title="Whois Sorgulama">
-        <i class="far fa-eye fa-fw" aria-hidden="true"></i><span>Whois Sorgulama</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/ssl-sertifikalari" title="SSL Sertifikaları">
-        <i class="far fa-lock fa-fw" aria-hidden="true"></i><span>SSL Sertifikaları</span>
-       </a>
-      </li>
-     </ul>
-     <ul class="ixir-hero-links ixir-colo-links">
-      <li>
-       <a href="{$WEB_ROOT}/site-pratik" title="Site Pratik">
-        <i class="fas fa-globe fa-fw" aria-hidden="true"></i><span>Site Pratik</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/windows-hosting" title="Windows Hosting">
-        <i class="fab fa-windows fa-fw" aria-hidden="true"></i><span>Windows Hosting</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/wordpress-hosting" title="WordPress Hosting">
-        <i class="fab fa-wordpress-simple fa-fw" aria-hidden="true"></i><span>WordPress Hosting</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/linux-reseller-hosting" title="Linux Reseller Hosting">
-        <i class="fab fa-linux fa-fw" aria-hidden="true"></i><span>Linux Reseller Hosting</span>
-       </a>
-      </li>
-     </ul>
-     <ul class="ixir-hero-links ixir-colo-links">
-      <li>
-       <a href="{$WEB_ROOT}/kurumsal-mail-hosting" title="Kurumsal Mail Hosting">
-        <i class="far fa-envelope fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Hosting</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/kurumsal-mail-server" title="Kurumsal Mail Server">
-        <i class="fas fa-mail-bulk fa-fw" aria-hidden="true"></i><span>Kurumsal Mail Server</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/dedicated-server" title="Dedicated Server">
-        <i class="fas fa-server fa-fw" aria-hidden="true"></i><span>Dedicated Server</span>
-       </a>
-      </li>
-      <li>
-       <a href="{$WEB_ROOT}/pci-tarama" title="PCI Uyumluluk Hizmeti">
-        <i class="fas fa-shield-alt fa-fw" aria-hidden="true"></i><span>PCI Uyumluluk Hizmeti</span>
-       </a>
-      </li>
-     </ul>
-    </div>
+
+    {assign var="features" value=[
+      ['label' => '%99.99 Uptime',                     'icon' => 'fas fa-clock'],
+      ['label' => 'Sunucu Monitörleme',                'icon' => 'fas fa-tachometer-alt'],
+      ['label' => 'TIER III Veri Merkezi',             'icon' => 'fas fa-server']
+    ]}
+    {include file="$template/components/List.tpl" title="Özellikler" items=$features columns=3 align="left"}
+    
+    {assign var="otherServices" value=[
+       ['label' => 'Domain Sorgulama',            'icon' => 'fas fa-retweet',         'href' => 'domain-sorgu'],
+       ['label' => 'Domain Transfer',             'icon' => 'fas fa-retweet fa-fw',   'href' => 'domain-transfer'],
+       ['label' => 'Whois Sorgulama',             'icon' => 'far fa-eye',             'href' => 'whois-sorgulama'],
+       ['label' => 'SSL Sertifikaları',           'icon' => 'far fa-lock',            'href' => 'ssl-sertifikalari'],
+       ['label' => 'Site Pratik',                 'icon' => 'fas fa-globe',           'href' => 'site-pratik'],
+       ['label' => 'Linux Hosting',               'icon' => 'fab fa-linux',           'href' => 'linux-hosting'],
+       ['label' => 'Windows Hosting',             'icon' => 'fab fa-windows',         'href' => 'windows-hosting'],
+       ['label' =>  'Linux Reseller Hosting',      'icon' => 'fab fa-linux',           'href' => 'linux-reseller-hosting'],
+       ['label' => 'Kurumsal Mail Hosting',       'icon' => 'far fa-envelope',        'href' => 'kurumsal-mail-hosting'],
+       ['label' => 'Kurumsal Mail Server',        'icon' => 'fas fa-mail-bulk',       'href' => 'kurumsal-mail-server'],
+       ['label' => 'Cloud Server',                'icon' => 'fas fa-cloud',           'href' => 'cloud-server'],
+       ['label' => 'PCI Uyumluluk Hizmeti',       'icon' => 'fas fa-shield-alt fa-fw',      'href' => 'pci-tarama']
+     ]}
+    {include file="$template/components/List.tpl" title="Diğer Hizmetler" items=$otherServices columns=3}
+  
    </div>
   </div>
   <div class="ixir-hero-strip" aria-hidden="true">
