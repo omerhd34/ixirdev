@@ -1,8 +1,10 @@
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/css/page-not-found.css?v={$versionHash}-r7">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/css/page-not-found.css?v={$versionHash}-r12">
 
 <section class="ixir-404" aria-labelledby="ixir-404-title">
  <div class="ixir-404-hero">
-  <p class="ixir-404-kicker">HTTP 404</p>
+  <a class="ixir-404-mark" href="{$WEB_ROOT}/" title="Ana Sayfa">
+   <img src="{$WEB_ROOT}/templates/{$template}/img/logo.webp" alt="İXİRHOST" width="189" height="44">
+  </a>
   <div class="ixir-404-code" aria-hidden="true">
    <span>4</span>
    <span class="ixir-404-zero">
