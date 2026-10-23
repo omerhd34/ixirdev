@@ -1,49 +1,43 @@
-# Veritabanı, lisans ve şifreleme anahtarları
 configuration.php
 
-# Derlenmiş şablonlar
 templates_c/*
 !templates_c/index.php
 
-# Kullanıcı yüklemeleri
 attachments/*
 !attachments/index.php
 downloads/*
 !downloads/index.php
 
-# Loglar ve ortam dosyaları
 *.log
 .env
 .env.*
 
-# SFTP şifresi
 .vscode/sftp.json
 
-# İşletim sistemi
 Thumbs.db
 .DS_Store
 Desktop.ini
 
-# Bağımlılıklar (en kritik)
 vendor/
 
-# Yerel geçici
 _tmp_preview/
 
-# İsteğe bağlı (boyut için)
 assets/img/marketconnect/
 assets/webfonts/
-# admin/
-# modules/
 
-# WHMCS Çekirdek ve Kullanılmayan Şablonlar
 /admin/
-/assets/
+/assets/*
+!/assets/logo.webp
 /attachments/
 /crons/
 /downloads/
 /feeds/
-/includes/
+/includes/*
+!/includes/hooks/
+!/includes/ixir-*.php
+/includes/hooks/*
+!/includes/hooks/index.php
+!/includes/hooks/ixir-*.php
 /install/
 /lang/
 /modules/
@@ -53,13 +47,26 @@ assets/webfonts/
 /templates_c/
 /templates/six/
 /templates/twenty-one/
-/templates/orderforms/
+/templates/orderforms/*
+!/templates/orderforms/standard_cart/
+/templates/orderforms/standard_cart/*
+!/templates/orderforms/standard_cart/viewcart.tpl
+!/templates/orderforms/standard_cart/domain-renewals.tpl
+!/templates/orderforms/standard_cart/domainregister.tpl
+!/templates/orderforms/standard_cart/domaintransfer.tpl
+!/templates/orderforms/standard_cart/domainoptions.tpl
+!/templates/orderforms/standard_cart/common.tpl
+!/templates/orderforms/standard_cart/error.tpl
+!/templates/orderforms/standard_cart/js/
+/templates/orderforms/standard_cart/js/*
+!/templates/orderforms/standard_cart/js/base.js
+!/templates/orderforms/standard_cart/js/scripts.js
+!/templates/orderforms/standard_cart/js/scripts.min.js
 /templates/index.php
-/.htaccess
 /.hintrc
 /.editorconfig
 
-# Kök dizin ayarları ve çekirdek PHP dosyaları
 /.agents/
 /.vscode/
 /*.php
+!/ixir-*.php
