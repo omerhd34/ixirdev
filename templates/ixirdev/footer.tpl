@@ -146,7 +146,7 @@
 </script>
 
 {if $templatefile == 'viewcart' && !$checkout}
- <link href="{$WEB_ROOT}/templates/{$template}/css/cart.css?v={$versionHash}-r24" rel="stylesheet">
+ <link href="{$WEB_ROOT}/templates/{$template}/css/cart.css?v={$versionHash}-r25" rel="stylesheet">
  <script>
   {literal}
    (function() {

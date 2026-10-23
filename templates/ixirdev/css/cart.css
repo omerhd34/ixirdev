@@ -465,56 +465,79 @@ body.page-viewcart
  color: #2456c9 !important;
 }
 
-body.page-viewcart #order-standard_cart .view-cart-tabs .tab-content {
+body.page-viewcart #order-standard_cart .view-cart-tabs .tab-content,
+body.page-viewcart #order-standard_cart .view-cart-tabs .promo,
+body.page-viewcart #order-standard_cart .view-cart-tabs .promo form,
+body.page-viewcart #order-standard_cart .view-cart-tabs .promo .form-group,
+body.page-viewcart #order-standard_cart .view-cart-tabs .prepend-icon {
  display: flex;
  align-items: center;
  width: 100%;
- padding: 0 6px 0 4px;
+ height: 100%;
+ margin: 0;
+}
+
+body.page-viewcart #order-standard_cart .view-cart-tabs .tab-content {
+ padding: 0 6px 0 0;
  background: transparent;
 }
 
-body.page-viewcart #order-standard_cart .view-cart-tabs .promo,
 body.page-viewcart #order-standard_cart .view-cart-tabs .promo form {
- display: flex;
- align-items: center;
- width: 100%;
- margin: 0;
- gap: 10px;
+ gap: 8px;
 }
 
-body.page-viewcart #order-standard_cart .view-cart-tabs .promo .form-group {
+body.page-viewcart #order-standard_cart .view-cart-tabs .promo .form-group,
+body.page-viewcart #order-standard_cart .view-cart-tabs .prepend-icon {
+ position: relative;
  flex: 1 1 auto;
- margin: 0;
+ min-width: 0;
 }
 
 body.page-viewcart #order-standard_cart .prepend-icon .field,
 body.page-viewcart #order-standard_cart .prepend-icon .form-control {
- height: 36px;
- padding-left: 36px;
+ height: 100%;
+ margin: 0;
+ padding: 0 0 0 36px;
  border: 0 !important;
  border-radius: 0;
  background: transparent !important;
  box-shadow: none !important;
  color: #1a1f2e;
  font-size: 14px;
+ line-height: 46px;
 }
 
 body.page-viewcart #order-standard_cart .prepend-icon .field-icon {
- width: 34px;
- height: 36px;
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 36px;
+ height: auto;
+ margin: 0;
  color: #386ce0;
- line-height: 36px;
+ line-height: 1;
 }
 
 body.page-viewcart #order-standard_cart .prepend-icon .field-icon i {
+ display: block;
  color: #386ce0;
- font-size: 15px;
+ font-size: 14px;
+ line-height: 1;
 }
 
 body.page-viewcart #order-standard_cart .view-cart-tabs .promo .btn {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
  flex: 0 0 auto;
+ align-self: center;
  width: auto;
- height: 36px;
+ height: 34px;
+ margin: 0 !important;
  padding: 0 14px;
  border: 0 !important;
  border-radius: 8px;
@@ -523,6 +546,7 @@ body.page-viewcart #order-standard_cart .view-cart-tabs .promo .btn {
  color: #fff !important;
  font-size: 14px;
  font-weight: 700;
+ line-height: 1 !important;
 }
 
 body.page-viewcart #order-standard_cart .view-cart-tabs .promo .btn:hover,
