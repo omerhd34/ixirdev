@@ -14,7 +14,8 @@
   <div class="container">
    <header class="ixir-wh-plans-head">
     <div class="ixir-badge-pill ixir-ssl-badge-pill">
-     <i class="fas fa-bolt" aria-hidden="true"></i> LINUX PAKETLERİ</div>
+     <i class="fas fa-bolt" aria-hidden="true"></i> LINUX PAKETLERİ
+    </div>
     {include file="$template/components/Heading.tpl" title="Linux Hosting Paketleri" id="ixir-wh-plans-title" align="center"}
     <p>İhtiyacınıza uygun paketi seçin, sitenizi hemen yayına alın.</p>
    </header>
@@ -66,7 +67,8 @@
        <p>* En avantajlı fiyat</p>
       </div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-wh-buy" data-pid="211" data-name="Starter" data-product="Linux Hosting"
+      data-billingcycle="triennially" href="#">Satın Al</a>
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>1<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -99,7 +101,8 @@
       <span class="ixir-wh-save">%50 tasarruf</span>
      </div>
      <div class="ixir-wh-billing">
-      <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-essential">Ödeme
+      <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
+       aria-controls="ixir-wh-bill-essential">Ödeme
        Planları</button>
       <div class="ixir-wh-billing-pop" id="ixir-wh-bill-essential" role="dialog" aria-label="Essential ödeme planı">
        <div class="ixir-wh-billing-top">
@@ -118,24 +121,25 @@
          <tr>
           <td>1 Yıllık</td>
           <td>147,17 TL</td>
-          <td>1.765 TL</td>
+          <td>1765 TL</td>
          </tr>
          <tr>
           <td>2 Yıllık</td>
           <td>132,99 TL</td>
-          <td>3.192 TL</td>
+          <td>3192 TL</td>
          </tr>
          <tr class="is-best">
           <td>3 Yıllık</td>
           <td>122,00 TL</td>
-          <td>4.392 TL</td>
+          <td>4392 TL</td>
          </tr>
         </tbody>
        </table>
        <p>* En avantajlı fiyat</p>
       </div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-wh-buy" data-pid="212" data-name="Essential" data-product="Linux Hosting"
+      data-billingcycle="triennially" href="#">Satın Al</a>
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>3<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -185,8 +189,7 @@
      <div class="ixir-wh-billing">
       <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
        aria-controls="ixir-wh-bill-advanced">Ödeme Planları</button>
-      <div class="ixir-wh-billing-pop" id="ixir-wh-bill-advanced" role="dialog"
-       aria-label="Advanced ödeme planı">
+      <div class="ixir-wh-billing-pop" id="ixir-wh-bill-advanced" role="dialog" aria-label="Advanced ödeme planı">
        <div class="ixir-wh-billing-top">
         <strong>Advanced Planı</strong>
         <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -220,7 +223,8 @@
        <p>* En avantajlı fiyat</p>
       </div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-wh-buy" data-pid="213" data-name="Advanced" data-product="Linux Hosting"
+      data-billingcycle="triennially" href="#">Satın Al</a>
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>10<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -302,7 +306,8 @@
        <p>* En avantajlı fiyat</p>
       </div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-wh-buy" data-pid="324" data-name="Premium" data-product="Linux Hosting"
+      data-billingcycle="triennially" href="#">Satın Al</a>
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button"
           class="ixir-wh-tip-btn" aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle"

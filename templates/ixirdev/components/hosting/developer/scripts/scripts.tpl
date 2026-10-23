@@ -459,5 +459,6 @@
 
    render(total);
   })();
+
  {/literal}
 </script>

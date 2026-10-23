@@ -14,7 +14,8 @@
  <div class="container">
   <header class="ixir-wh-plans-head ixir-sp-plans-head">
    <div class="ixir-badge-pill ixir-ssl-badge-pill">
-    <i class="fas fa-magic" aria-hidden="true"></i> SİTEPRATİK PAKETLERİ</div>
+    <i class="fas fa-magic" aria-hidden="true"></i> SİTEPRATİK PAKETLERİ
+   </div>
    {include file="$template/components/Heading.tpl" title="SitePratik Paketleri" id="sitepratik-paketleri-title" align="center"}
    <p>İhtiyacınıza uygun paketi seçin, sitenizi dakikalar içinde hemen yayına alın.</p>
   </header>
@@ -30,9 +31,11 @@
      <span class="ixir-sp-save ixir-wh-save">%50 tasarruf</span>
     </div>
     <div class="ixir-sp-billing ixir-wh-billing">
-     <button type="button" class="ixir-sp-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-starter">Ödeme
+     <button type="button" class="ixir-sp-billing-btn ixir-wh-billing-btn" aria-expanded="false"
+      aria-controls="ixir-wh-bill-starter">Ödeme
       Planları</button>
-     <div class="ixir-sp-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-starter" role="dialog" aria-label="Starter ödeme planı">
+     <div class="ixir-sp-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-starter" role="dialog"
+      aria-label="Starter ödeme planı">
       <div class="ixir-wh-billing-top">
        <strong>Starter Planı</strong>
        <button type="button" class="ixir-sp-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -66,7 +69,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="291" data-name="Starter" data-product="Site Pratik" data-billingcycle="triennially"
+     href="#">Satın Al</a>
     <ul class="ixir-sp-specs ixir-wh-specs">
      <li><span>Web Alanı(GB)</span><b>1</b></li>
      <li><span>E-Posta Sayısı</span><b>5</b></li>
@@ -86,9 +90,11 @@
      <span class="ixir-sp-save ixir-wh-save">%50 tasarruf</span>
     </div>
     <div class="ixir-sp-billing ixir-wh-billing">
-     <button type="button" class="ixir-sp-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-growth">Ödeme
+     <button type="button" class="ixir-sp-billing-btn ixir-wh-billing-btn" aria-expanded="false"
+      aria-controls="ixir-wh-bill-growth">Ödeme
       Planları</button>
-     <div class="ixir-sp-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-growth" role="dialog" aria-label="Growth ödeme planı">
+     <div class="ixir-sp-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-growth" role="dialog"
+      aria-label="Growth ödeme planı">
       <div class="ixir-wh-billing-top">
        <strong>Growth Planı</strong>
        <button type="button" class="ixir-sp-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -122,7 +128,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="292" data-name="Growth" data-product="Site Pratik" data-billingcycle="triennially"
+     href="#">Satın Al</a>
     <ul class="ixir-sp-specs ixir-wh-specs">
      <li><span>Web Alanı(GB)</span><b>3</b></li>
      <li><span>E-Posta Sayısı</span><b>10</b></li>
@@ -178,7 +185,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="293" data-name="Advanced" data-product="Site Pratik"
+     data-billingcycle="triennially" href="#">Satın Al</a>
     <ul class="ixir-sp-specs ixir-wh-specs">
      <li><span>Web Alanı(GB)</span><b>Limitsiz</b></li>
      <li><span>E-Posta Sayısı</span><b>Limitsiz</b></li>

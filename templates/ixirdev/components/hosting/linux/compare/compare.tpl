@@ -13,7 +13,8 @@
  </script>
  <div class="container">
   <header class="ixir-wh-plans-head">
-   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-columns" aria-hidden="true"></i> LINUX KARŞILAŞTIRMA</div>
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-columns" aria-hidden="true"></i> LINUX
+    KARŞILAŞTIRMA</div>
    {include file="$template/components/Heading.tpl" title="Özellik Karşılaştırma Tablosu" id="ixir-wh-compare-title"}
    <p>Linux Hosting paketlerimiz arasından size en uygun olan seçimi yapın</p>
   </header>
@@ -512,16 +513,20 @@
     <div class="ixir-wh-table-foot">
      <div></div>
      <div>
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="211" data-name="Starter" data-product="Linux Hosting"
+       data-billingcycle="triennially" href="#">Satın Al</a>
      </div>
      <div>
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="212" data-name="Essential" data-product="Linux Hosting"
+       data-billingcycle="triennially" href="#">Satın Al</a>
      </div>
      <div class="is-best">
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="213" data-name="Advanced" data-product="Linux Hosting"
+       data-billingcycle="triennially" href="#">Satın Al</a>
      </div>
      <div>
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="324" data-name="Premium" data-product="Linux Hosting"
+       data-billingcycle="triennially" href="#">Satın Al</a>
      </div>
     </div>
    </div>

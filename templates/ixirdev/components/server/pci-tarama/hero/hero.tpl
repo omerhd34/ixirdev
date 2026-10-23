@@ -5,7 +5,8 @@
   <div class="container">
    <div class="ixir-hero-main">
     <div class="ixir-hero-copy">
-     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> PCI-DSS UYUMLULUK</div>
+     <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> PCI-DSS
+      UYUMLULUK</div>
      <h1>PCI Uyumluluk Hizmeti</h1>
      <p>PCI Uyumluluk Hizmeti ile Sanal Pos Güvenliği ve Uyumluluğuna Sahip Olun!</p>
     </div>
@@ -16,7 +17,7 @@
       ['label' => 'Sanal Pos Gereklilikleri Sağlanır.',        'icon' => 'fas fa-credit-card']
     ]}
     {include file="$template/components/List.tpl" title="Özellikler" items=$features columns=3 align="left"}
-    
+
     {assign var="otherServices" value=[
        ['label' => 'Domain Sorgulama',            'icon' => 'fas fa-retweet',         'href' => 'domain-sorgu'],
        ['label' => 'Domain Transfer',             'icon' => 'fas fa-retweet',         'href' => 'domain-transfer'],

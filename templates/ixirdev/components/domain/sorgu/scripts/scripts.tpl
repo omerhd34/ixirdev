@@ -28,6 +28,22 @@
    });
   }
 
+  var ixirWhmcsPriceRows = {$ixirDomainPriceJson|default:'[]' nofilter};
+
+  function ixirPriceForTld(tld) {
+   tld = '.' + String(tld || '').replace(/^\./, '').toLowerCase();
+   var found = '';
+   jQuery.each(ixirWhmcsPriceRows || [], function(_, row) {
+    if (found || !row) {
+     return;
+    }
+    if (String(row.tld || '').toLowerCase() === tld && row.register && row.register !== '-') {
+     found = row.register;
+    }
+   });
+   return found;
+  }
+
   function ixirRegisterPrice(pricing, fallback) {
    if (pricing && typeof pricing === 'object') {
     var keys = Object.keys(pricing);
@@ -344,32 +360,18 @@
   }
 
   function ixirFallbackSuggestions(parsed) {
-   var extras = [
-    { tld: 'online', price: '350' },
-    { tld: 'live', price: '169' },
-    { tld: 'tech', price: '550' },
-    { tld: 'app', price: '1150' },
-    { tld: 'co', price: '2080' },
-    { tld: 'eu', price: '600' },
-    { tld: 'me', price: '1150' },
-    { tld: 'club', price: '1400' },
-    { tld: 'site', price: '1960' },
-    { tld: 'blog', price: '1600' },
-    { tld: 'biz', price: '1100' },
-    { tld: 'pw', price: '260' },
-    { tld: 'io', price: '1760' },
-    { tld: 'studio', price: '1810' },
-    { tld: 'gen.tr', price: '150' },
-    { tld: 'web.tr', price: '150' },
-    { tld: 'market', price: '2450' }
-   ];
+   var extras = ['online', 'live', 'tech', 'app', 'co', 'eu', 'me', 'club', 'site', 'blog', 'biz', 'pw', 'io', 'studio', 'gen.tr', 'web.tr', 'market'];
    var list = [];
-   jQuery.each(extras, function(i, item) {
+   jQuery.each(extras, function(i, tld) {
+    var price = ixirPriceForTld(tld);
+    if (!price) {
+     return;
+    }
     list.push({
      sld: parsed.sld,
-     tld: item.tld,
-     domainName: parsed.sld + '.' + item.tld,
-     pricing: { 1: { register: item.price } }
+     tld: tld,
+     domainName: parsed.sld + '.' + tld,
+     pricing: { 1: { register: price } }
     });
    });
    ixirFillSuggestions(list, parsed, false);
@@ -637,85 +639,12 @@
    return jQuery('<div/>').text(String(text || '')).html();
   }
 
-  function ixirCartItemIcon(type) {
-   if (type === 'domain' || type === 'renewal') {
-    return 'fa-globe';
-   }
-   if (type === 'addon') {
-    return 'fa-puzzle-piece';
-   }
-   return 'fa-cube';
-  }
-
   function ixirPaintMiniCart(payload) {
    var items = (payload && payload.items) ? payload.items : [];
    var count = (payload && payload.cartCount !== undefined) ? parseInt(payload.cartCount, 10) : items.length;
-   if (isNaN(count) || count < 0) {
-    count = items.length;
+   if (window.ixirPaintCartMenus) {
+    window.ixirPaintCartMenus(items, count);
    }
-   var root = window.whmcsBaseUrl || '';
-   jQuery('.ixir-cart-toggle').each(function() {
-    var $a = jQuery(this);
-    var $badge = $a.find('.cart-item-count');
-    if (count > 0) {
-     if (!$badge.length) {
-      $a.append('<span class="badge badge-danger cart-item-count">' + count + '</span>');
-     } else {
-      $badge.text(count).show();
-     }
-    } else {
-     $badge.remove();
-    }
-   });
-   jQuery('#cartItemCount').text(count);
-   jQuery('.ixir-cart-menu').each(function() {
-    var $menu = jQuery(this);
-    var $actions = $menu.find('.ixir-cart-head-actions');
-    var $count = $actions.find('.ixir-cart-count');
-    if (count > 0) {
-     if (!$count.length) {
-      $actions.prepend('<span class="ixir-cart-count">' + count + ' ürün</span>');
-     } else {
-      $count.text(count + ' ürün').show();
-     }
-    } else {
-     $count.remove();
-    }
-    $menu.find('.ixir-cart-items, .ixir-cart-empty').remove();
-    var html = '';
-    if (items.length) {
-     html += '<ul class="ixir-cart-items">';
-     jQuery.each(items, function(i, item) {
-      var type = item.type || 'product';
-      var name = ixirEsc(item.name || 'Ürün');
-      var meta = item.meta ? '<span class="ixir-cart-item-meta">' + ixirEsc(item.meta) + '</span>' : '';
-      var qty = item.qty ? '<em>x' + ixirEsc(item.qty) + '</em>' : '';
-      var remove = '';
-      if (item.removeType) {
-       var href = root + '/cart.php?a=remove&r=' + encodeURIComponent(item.removeType) +
-        '&i=' + encodeURIComponent(item.removeIndex);
-       if (item.renewalType) {
-        href += '&rt=' + encodeURIComponent(item.renewalType);
-       }
-       remove = '<a href="' + href + '" class="ixir-cart-item-remove" data-type="' +
-        ixirEsc(item.removeType) + '" data-index="' + ixirEsc(item.removeIndex) +
-        '" data-name="' + name + '"' +
-        (item.renewalType ? ' data-rt="' + ixirEsc(item.renewalType) + '"' : '') +
-        ' title="Kaldır" aria-label="' + name + ' ürününü sepetten kaldır">' +
-        '<i class="fas fa-times" aria-hidden="true"></i></a>';
-      }
-      html += '<li><span class="ixir-cart-item-icon"><i class="fas ' + ixirCartItemIcon(type) +
-       '"></i></span><span class="ixir-cart-item-body"><span class="ixir-cart-item-name">' + name + qty +
-       '</span>' + meta + '</span>' + remove + '</li>';
-     });
-     html += '</ul>';
-    } else {
-     html =
-      '<div class="ixir-cart-empty"><span class="ixir-cart-empty-icon"><i class="fas fa-shopping-basket"></i></span>' +
-      '<strong>Sepetiniz boş</strong><span class="ixir-cart-empty-text">Henüz ürün eklemediniz</span></div>';
-    }
-    $menu.find('.ixir-cart-head').after(html);
-   });
   }
 
   function ixirSetCartButtons(buttons, state) {

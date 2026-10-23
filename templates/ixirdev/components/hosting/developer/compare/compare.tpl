@@ -13,7 +13,8 @@
  </script>
  <div class="container">
   <header class="ixir-wh-plans-head">
-   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-table" aria-hidden="true"></i> GELİŞTİRİCİ LİMİTLERİ</div>
+   <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-table" aria-hidden="true"></i> GELİŞTİRİCİ
+    LİMİTLERİ</div>
    {include file="$template/components/Heading.tpl" title="Özellik Karşılaştırma Tablosu" id="ixir-wh-compare-title"}
    <p>Developer Hosting paketlerimiz arasından size en uygun olan seçimi yapın</p>
   </header>
@@ -512,16 +513,20 @@
     <div class="ixir-wh-table-foot">
      <div></div>
      <div>
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="363" data-name="Starter" data-billingcycle="triennially"
+       href="#ixir-wh-plans">Satın Al</a>
      </div>
      <div>
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="364" data-name="Essential" data-billingcycle="triennially"
+       href="#ixir-wh-plans">Satın Al</a>
      </div>
      <div class="is-best">
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="365" data-name="Advanced" data-billingcycle="triennially"
+       href="#ixir-wh-plans">Satın Al</a>
      </div>
      <div>
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="366" data-name="Premium" data-billingcycle="triennially"
+       href="#ixir-wh-plans">Satın Al</a>
      </div>
     </div>
    </div>

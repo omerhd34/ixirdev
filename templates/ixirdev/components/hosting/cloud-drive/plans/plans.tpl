@@ -14,7 +14,8 @@
  <div class="container">
   <header class="ixir-wh-plans-head">
    <div class="ixir-badge-pill ixir-ssl-badge-pill">
-    <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i> DEPOLAMA PLANLARI</div>
+    <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i> DEPOLAMA PLANLARI
+   </div>
    {include file="$template/components/Heading.tpl" title="Cloud Drive Paketleri" id="ixir-wh-plans-title" align="center"}
    <p>İhtiyacınıza uygun paketi seçin ve dosyalarınızı güvenle barındırın.</p>
   </header>
@@ -29,7 +30,8 @@
      <div class="ixir-wh-amount"><b>62</b><span>,57</span><small>TL<small>/ay</small></small></div>
      <span class="ixir-wh-save">%30 tasarruf</span>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="232" data-name="Starter" data-product="Cloud Drive" data-billingcycle="monthly"
+     href="#">Satın Al</a>
     <ul class="ixir-wh-specs">
      <li><span>Disk Alanı(GB)</span><b>50</b></li>
      <li><span>Kullanıcı Sayısı</span><b>Tek</b></li>
@@ -49,7 +51,8 @@
      <div class="ixir-wh-amount"><b>111</b><span>,13</span><small>TL<small>/ay</small></small></div>
      <span class="ixir-wh-save">%30 tasarruf</span>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="233" data-name="Growth" data-product="Cloud Drive" data-billingcycle="monthly"
+     href="#">Satın Al</a>
     <ul class="ixir-wh-specs">
      <li><span>Disk Alanı(GB)</span><b>100</b></li>
      <li><span>Kullanıcı Sayısı</span><b>Tek</b></li>
@@ -68,7 +71,8 @@
      <div class="ixir-wh-amount"><b>234</b><span>,60</span><small>TL<small>/ay</small></small></div>
      <span class="ixir-wh-save">%30 tasarruf</span>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="234" data-name="Advanced" data-product="Cloud Drive" data-billingcycle="monthly"
+     href="#">Satın Al</a>
     <ul class="ixir-wh-specs">
      <li><span>Disk Alanı(GB)</span><b>250</b></li>
      <li><span>Kullanıcı Sayısı</span><b>Tek</b></li>

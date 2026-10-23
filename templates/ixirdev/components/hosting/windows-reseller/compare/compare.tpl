@@ -491,16 +491,16 @@
     <div class="ixir-wh-table-foot">
      <div></div>
      <div>
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="427" data-name="Starter" data-product="Windows Reseller Hosting" data-billingcycle="triennially" href="#">Satın Al</a>
      </div>
      <div>
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="214" data-name="Essential" data-product="Windows Reseller Hosting" data-billingcycle="triennially" href="#">Satın Al</a>
      </div>
      <div class="is-best">
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="215" data-name="Advanced" data-product="Windows Reseller Hosting" data-billingcycle="triennially" href="#">Satın Al</a>
      </div>
      <div class="is-best">
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="216" data-name="Premium" data-product="Windows Reseller Hosting" data-billingcycle="triennially" href="#">Satın Al</a>
      </div>
     </div>
    </div>

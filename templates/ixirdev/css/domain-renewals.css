@@ -1,0 +1,573 @@
+body.page-domain-renewals #main-body,
+body:has(#order-standard_cart.ixir-renew) #main-body {
+ padding-top: 28px !important;
+ padding-bottom: 72px !important;
+ background: #f4f7fb !important;
+}
+
+body.page-domain-renewals #main-body > .container,
+body:has(#order-standard_cart.ixir-renew) #main-body > .container {
+ width: min(1180px, calc(100% - 32px));
+ max-width: 1180px;
+}
+
+body.page-domain-renewals .main-content,
+body:has(#order-standard_cart.ixir-renew) .main-content {
+ width: 100%;
+ padding-left: 0;
+ padding-right: 0;
+}
+
+#order-standard_cart.ixir-renew {
+ width: 100%;
+ margin: 0;
+ padding: 0;
+ color: #1d2a3a;
+ font-size: 15px;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-head {
+ display: flex;
+ align-items: flex-end;
+ justify-content: space-between;
+ gap: 24px;
+ margin: 0 0 22px;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-head .ixir-renew-kicker {
+ display: inline-flex;
+ align-items: center;
+ gap: 7px;
+ margin: 0 0 10px;
+ padding: 5px 10px 5px 8px;
+ border-radius: 999px;
+ background: #e8efff;
+ color: #2458c8;
+ font-family: "Space Grotesk", "Roboto", sans-serif;
+ font-size: 13px;
+ font-weight: 700;
+ letter-spacing: 0;
+ line-height: 1;
+ text-transform: none;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-kicker i {
+ color: #3a6fe0;
+ font-size: 12px;
+}
+
+#order-standard_cart.ixir-renew h1 {
+ margin: 0;
+ color: #1d2a3a;
+ font-family: "Space Grotesk", "Roboto", sans-serif;
+ font-size: 34px;
+ font-weight: 700;
+ letter-spacing: -0.03em;
+ line-height: 1.1;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-head p {
+ margin: 8px 0 0;
+ max-width: 560px;
+ color: #6d7b8d;
+ font-size: 15px;
+ line-height: 1.5;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-search {
+ position: relative;
+ flex: 0 0 260px;
+ margin: 0;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-search i {
+ position: absolute;
+ left: 14px;
+ top: 50%;
+ color: #8b98aa;
+ transform: translateY(-50%);
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-search input {
+ width: 100%;
+ height: 46px;
+ padding: 0 14px 0 40px;
+ border: 1px solid #e1e8f2;
+ border-radius: 12px;
+ background: #fff;
+ color: #1d2a3a;
+ box-shadow: 0 8px 24px rgba(22, 42, 84, 0.04);
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-search input:focus {
+ border-color: #3a6fe0;
+ outline: none;
+ box-shadow: 0 0 0 4px rgba(58, 111, 224, 0.12);
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-showing {
+ margin: 0 0 14px;
+ color: #6d7b8d;
+ font-size: 14px;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-showing a {
+ color: #3a6fe0;
+ font-weight: 700;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-layout {
+ display: grid;
+ grid-template-columns: minmax(0, 1fr) 320px;
+ gap: 22px;
+ align-items: start;
+}
+
+#order-standard_cart.ixir-renew .domain-renewals {
+ display: flex;
+ flex-direction: column;
+ gap: 14px;
+ margin: 0;
+ border: 0;
+ background: transparent;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-card {
+ display: grid;
+ grid-template-columns: minmax(0, 1fr) auto;
+ gap: 14px 18px;
+ margin: 0;
+ padding: 20px 22px;
+ border: 1px solid #e6edf5;
+ border-left-width: 4px;
+ border-radius: 18px;
+ background: #fff;
+ box-shadow: 0 12px 32px rgba(22, 42, 84, 0.05);
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-card.is-ok {
+ border-left-color: #2fbe6a;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-card.is-soon {
+ border-left-color: #f0a202;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-card.is-late {
+ border-left-color: #e25b5b;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-card.is-gone {
+ border-left-color: #1aa7b0;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-card:nth-child(even) {
+ background: #fff;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-identity h3 {
+ margin: 0;
+ color: #172033;
+ font-family: "Space Grotesk", "Roboto", sans-serif;
+ font-size: 20px;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ line-height: 1.2;
+ word-break: break-word;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-identity p {
+ margin: 6px 0 0;
+ color: #7d8b9c;
+ font-size: 13.5px;
+ line-height: 1.45;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-identity strong {
+ color: #314155;
+ font-weight: 700;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-identity span {
+ color: #8b98aa;
+}
+
+#order-standard_cart.ixir-renew .domain-renewal-desc {
+ color: #3a6fe0 !important;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-badge {
+ justify-self: end;
+ align-self: start;
+ padding: 7px 12px;
+ border-radius: 999px;
+ font-size: 12.5px;
+ font-weight: 700;
+ line-height: 1.2;
+ white-space: nowrap;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-badge.is-ok {
+ background: #e7f8ee;
+ color: #128a45;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-badge.is-soon {
+ background: #fff4e5;
+ color: #b86a00;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-badge.is-late {
+ background: #ffecec;
+ color: #c43737;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-badge.is-gone {
+ background: #e7f6f6;
+ color: #0d7f86;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-actions {
+ grid-column: 1 / -1;
+ display: flex;
+ align-items: flex-end;
+ justify-content: space-between;
+ gap: 16px;
+ margin-top: 2px;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-period {
+ display: flex;
+ flex-direction: column;
+ gap: 6px;
+ min-width: min(100%, 280px);
+ margin: 0;
+ font-weight: 500;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-period span {
+ color: #7d8b9c;
+ font-size: 12px;
+ font-weight: 700;
+ letter-spacing: 0.04em;
+ text-transform: uppercase;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-period select {
+ height: 46px;
+ width: 100%;
+ padding: 0 36px 0 14px;
+ border: 1px solid #d7e0ec;
+ border-radius: 12px;
+ background: #fff
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%237d8b9c' d='M1.2 1.4 6 6.2l4.8-4.8 1.2 1.2L6 8.6 0 2.6z'/%3E%3C/svg%3E")
+  no-repeat right 14px center;
+ color: #1d2a3a;
+ font-size: 14px;
+ font-weight: 600;
+ appearance: none;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-period select:focus {
+ border-color: #3a6fe0;
+ outline: none;
+ box-shadow: 0 0 0 4px rgba(58, 111, 224, 0.12);
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-add {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ min-width: 158px;
+ height: 46px;
+ padding: 0 18px;
+ border: 0;
+ border-radius: 12px;
+ background: #2f6bff;
+ color: #fff;
+ font-size: 14.5px;
+ font-weight: 700;
+ line-height: 1;
+ cursor: pointer;
+ box-shadow: 0 10px 20px rgba(47, 107, 255, 0.22);
+ transition:
+  background 0.15s ease,
+  transform 0.15s ease;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-add:hover,
+#order-standard_cart.ixir-renew .ixir-renew-add:focus {
+ background: #2458db;
+ color: #fff;
+ outline: none;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-add .to-add i,
+#order-standard_cart.ixir-renew .ixir-renew-add .added {
+ display: none;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-add:disabled {
+ background: #e8f8ef;
+ color: #157a45;
+ box-shadow: none;
+ cursor: default;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-summary {
+ position: sticky;
+ top: 124px;
+}
+
+#order-standard_cart.ixir-renew .order-summary {
+ margin: 0;
+ padding: 18px 18px 16px;
+ border: 1px solid #e6edf5;
+ border-bottom: 1px solid #e6edf5;
+ border-radius: 18px;
+ background: #fff;
+ box-shadow: 0 12px 32px rgba(22, 42, 84, 0.05);
+}
+
+#order-standard_cart.ixir-renew .order-summary h2 {
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ margin: 0 0 14px;
+ padding: 0 0 14px;
+ border-bottom: 1px solid #eef2f7;
+ color: #1d2a3a;
+ font-family: "Space Grotesk", "Roboto", sans-serif;
+ font-size: 18px;
+ font-weight: 700;
+ text-align: left;
+}
+
+#order-standard_cart.ixir-renew .order-summary h2 i {
+ color: #3a6fe0;
+}
+
+#order-standard_cart.ixir-renew .order-summary .loader {
+ display: none;
+ position: absolute;
+ top: 18px;
+ right: 18px;
+ height: auto;
+ padding: 0;
+ color: #3a6fe0;
+}
+
+#order-standard_cart.ixir-renew .summary-container {
+ min-height: 0;
+ margin: 0;
+ padding: 0;
+ border-radius: 0;
+ background: transparent;
+ font-size: 14px;
+ color: #314155;
+}
+
+#order-standard_cart.ixir-renew .summary-container:empty {
+ display: none;
+}
+
+#order-standard_cart.ixir-renew .summary-container .product-name {
+ margin-bottom: 8px;
+ color: #1d2a3a;
+ font-size: 14px;
+}
+
+#order-standard_cart.ixir-renew .summary-container .clearfix {
+ display: flex;
+ justify-content: space-between;
+ gap: 12px;
+ padding: 8px 0;
+ border-bottom: 1px solid #f0f3f8;
+}
+
+#order-standard_cart.ixir-renew .summary-container .clearfix::before,
+#order-standard_cart.ixir-renew .summary-container .clearfix::after {
+ display: none;
+}
+
+#order-standard_cart.ixir-renew .summary-container .pull-left,
+#order-standard_cart.ixir-renew .summary-container .pull-right,
+#order-standard_cart.ixir-renew .summary-container .float-left,
+#order-standard_cart.ixir-renew .summary-container .float-right {
+ float: none;
+}
+
+#order-standard_cart.ixir-renew .summary-container .pull-left,
+#order-standard_cart.ixir-renew .summary-container .float-left {
+ min-width: 0;
+ color: #5d6b7d;
+}
+
+#order-standard_cart.ixir-renew .summary-container .pull-right,
+#order-standard_cart.ixir-renew .summary-container .float-right {
+ font-weight: 700;
+ white-space: nowrap;
+}
+
+#order-standard_cart.ixir-renew .summary-container a {
+ margin-left: 6px;
+ color: #c43737;
+}
+
+#order-standard_cart.ixir-renew .summary-container .summary-totals {
+ margin: 8px 0 0;
+ padding: 4px 0 0;
+ border: 0;
+}
+
+#order-standard_cart.ixir-renew .summary-container .total-due-today {
+ margin-top: 12px;
+ padding-top: 12px;
+ border-top: 1px solid #e6edf5;
+}
+
+#order-standard_cart.ixir-renew .summary-container .total-due-today span {
+ text-align: right;
+ color: #7d8b9c;
+ font-size: 12px;
+}
+
+#order-standard_cart.ixir-renew .summary-container .total-due-today .amt {
+ color: #1d2a3a;
+ font-family: "Space Grotesk", "Roboto", sans-serif;
+ font-size: 28px;
+ font-weight: 700;
+ letter-spacing: -0.03em;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-summary-empty {
+ margin: 4px 0 16px;
+ color: #8b98aa;
+ font-size: 14px;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-summary-empty[hidden] {
+ display: none;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-checkout {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 8px;
+ width: 100%;
+ height: 48px;
+ margin-top: 8px;
+ border-radius: 12px;
+ background: #2f6bff;
+ color: #fff;
+ font-size: 15px;
+ font-weight: 700;
+ text-decoration: none;
+ box-shadow: 0 10px 20px rgba(47, 107, 255, 0.22);
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-checkout:hover,
+#order-standard_cart.ixir-renew .ixir-renew-checkout:focus {
+ background: #2458db;
+ color: #fff;
+ text-decoration: none;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-note {
+ margin: 16px 0 0;
+ color: #8b98aa;
+ font-size: 13px;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-empty {
+ padding: 48px 24px;
+ border: 1px solid #e6edf5;
+ border-radius: 18px;
+ background: #fff;
+ text-align: center;
+ box-shadow: 0 12px 32px rgba(22, 42, 84, 0.05);
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-empty-icon {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 64px;
+ height: 64px;
+ margin-bottom: 12px;
+ border-radius: 18px;
+ background: #eef3ff;
+ color: #3a6fe0;
+ font-size: 24px;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-empty h2 {
+ margin: 0 0 6px;
+ font-family: "Space Grotesk", "Roboto", sans-serif;
+ font-size: 22px;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-empty p {
+ margin: 0 0 16px;
+ color: #7d8b9c;
+}
+
+#order-standard_cart.ixir-renew .ixir-renew-empty a {
+ display: inline-flex;
+ align-items: center;
+ height: 44px;
+ padding: 0 16px;
+ border-radius: 12px;
+ background: #2f6bff;
+ color: #fff;
+ font-weight: 700;
+ text-decoration: none;
+}
+
+#order-standard_cart.ixir-renew .order-summary {
+ position: relative;
+}
+
+@media (max-width: 900px) {
+ #order-standard_cart.ixir-renew .ixir-renew-layout {
+  grid-template-columns: 1fr;
+ }
+
+ #order-standard_cart.ixir-renew .ixir-renew-summary {
+  position: static;
+  order: -1;
+ }
+
+ #order-standard_cart.ixir-renew .ixir-renew-head {
+  flex-direction: column;
+  align-items: stretch;
+ }
+
+ #order-standard_cart.ixir-renew .ixir-renew-search {
+  flex-basis: auto;
+ }
+
+ #order-standard_cart.ixir-renew h1 {
+  font-size: 28px;
+ }
+}
+
+@media (max-width: 640px) {
+ #order-standard_cart.ixir-renew .ixir-renew-card,
+ #order-standard_cart.ixir-renew .ixir-renew-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+ }
+
+ #order-standard_cart.ixir-renew .ixir-renew-badge {
+  align-self: flex-start;
+  white-space: normal;
+ }
+
+ #order-standard_cart.ixir-renew .ixir-renew-add,
+ #order-standard_cart.ixir-renew .ixir-renew-period {
+  width: 100%;
+ }
+}

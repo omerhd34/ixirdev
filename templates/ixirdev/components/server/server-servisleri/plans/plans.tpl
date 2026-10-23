@@ -28,7 +28,8 @@
       <s>1628 TL</s>
       <div class="ixir-ss-amount ixir-wh-amount"><b>1356</b><span>,83</span><small>TL<small>/ay</small></small></div>
      </div>
-     <a class="ixir-ss-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-ss-buy ixir-wh-buy" data-pid="326" data-name="Starter" data-product="Server Servisleri"
+      data-billingcycle="monthly" href="#">Satın Al</a>
      <ul class="ixir-ss-specs ixir-wh-specs">
       <li><span>Genel Performans Optimizasyonu</span><b><i class="fas fa-times" aria-label="Yok"></i></b></li>
       <li><span>Zararlı Yazılım Taraması</span><b><i class="fas fa-times" aria-label="Yok"></i></b></li>
@@ -52,7 +53,8 @@
       <s>2721 TL</s>
       <div class="ixir-ss-amount ixir-wh-amount"><b>2267</b><span>,51</span><small>TL<small>/ay</small></small></div>
      </div>
-     <a class="ixir-ss-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-ss-buy ixir-wh-buy" data-pid="327" data-name="Growth" data-product="Server Servisleri"
+      data-billingcycle="monthly" href="#">Satın Al</a>
      <ul class="ixir-ss-specs ixir-wh-specs">
       <li><span>Genel Performans Optimizasyonu</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
       <li><span>Zararlı Yazılım Taraması</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
@@ -75,7 +77,8 @@
       <s>3811 TL</s>
       <div class="ixir-ss-amount ixir-wh-amount"><b>3178</b><span>,17</span><small>TL<small>/ay</small></small></div>
      </div>
-     <a class="ixir-ss-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-ss-buy ixir-wh-buy" data-pid="328" data-name="Advanced" data-product="Server Servisleri"
+      data-billingcycle="monthly" href="#">Satın Al</a>
      <ul class="ixir-ss-specs ixir-wh-specs">
       <li><span>Genel Performans Optimizasyonu</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>
       <li><span>Zararlı Yazılım Taraması</span><b><i class="fas fa-check" aria-label="Var"></i></b></li>

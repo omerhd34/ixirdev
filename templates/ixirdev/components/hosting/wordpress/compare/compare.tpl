@@ -1,5 +1,5 @@
- <section class="ixir-wh-compare ixir-wh-compare--dark bg-dark-blue ixir-slide ixir-slide--left is-slide-on" id="ixir-wh-compare"
-  aria-labelledby="ixir-wh-compare-title">
+ <section class="ixir-wh-compare ixir-wh-compare--dark bg-dark-blue ixir-slide ixir-slide--left is-slide-on"
+  id="ixir-wh-compare" aria-labelledby="ixir-wh-compare-title">
   <script>
    {literal}
     (function() {
@@ -13,7 +13,8 @@
   </script>
   <div class="container">
    <header class="ixir-wh-plans-head">
-    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-th-list" aria-hidden="true"></i> WORDPRESS KARŞILAŞTIRMA</div>
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-th-list" aria-hidden="true"></i> WORDPRESS
+     KARŞILAŞTIRMA</div>
     {include file="$template/components/Heading.tpl" title="Özellik Karşılaştırma Tablosu" id="ixir-wh-compare-title"}
     <p>WordPress Hosting Paketlerimiz arasından size en uygun olan seçimi yapın</p>
    </header>
@@ -449,13 +450,16 @@
      <div class="ixir-wh-table-foot">
       <div></div>
       <div>
-       <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+       <a class="ixir-wh-buy" data-pid="287" data-name="Starter" data-product="WordPress Hosting"
+        data-billingcycle="triennially" href="#">Satın Al</a>
       </div>
       <div class="is-best">
-       <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+       <a class="ixir-wh-buy" data-pid="288" data-name="Growth" data-product="WordPress Hosting"
+        data-billingcycle="triennially" href="#">Satın Al</a>
       </div>
       <div>
-       <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+       <a class="ixir-wh-buy" data-pid="289" data-name="Advanced" data-product="WordPress Hosting"
+        data-billingcycle="triennially" href="#">Satın Al</a>
       </div>
      </div>
     </div>

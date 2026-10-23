@@ -1,5 +1,5 @@
-<section class="ixir-wh-plans ixir-cs-plans ixir-cs-plans-section ixir-slide ixir-slide--right is-slide-on" id="ixir-cs-plans"
- aria-labelledby="ixir-cs-plans-title">
+<section class="ixir-wh-plans ixir-cs-plans ixir-cs-plans-section ixir-slide ixir-slide--right is-slide-on"
+ id="ixir-cs-plans" aria-labelledby="ixir-cs-plans-title">
  <script>
   {literal}
    (function() {
@@ -10,11 +10,12 @@
     root.classList.add('is-armed');
    })();
   {/literal}
- </script> 
+ </script>
  <div class="container">
   <header class="ixir-cs-plans-head ixir-wh-plans-head">
    <div class="ixir-badge-pill ixir-ssl-badge-pill">
-    <i class="fas fa-cloud" aria-hidden="true"></i> STANDART CLOUD PLANLARI</div>
+    <i class="fas fa-cloud" aria-hidden="true"></i> STANDART CLOUD PLANLARI
+   </div>
    {include file="$template/components/Heading.tpl" title="Standart Cloud Server Paketleri" id="ixir-cs-plans-title" align="center"}
    <p>Standart Cloud Server planlarımızı inceleyin ve hemen kullanmaya başlayın.</p>
   </header>
@@ -29,7 +30,8 @@
      <div class="ixir-cs-amount ixir-wh-amount"><b>218</b><small>TL<small>/ay</small></small></div>
      <span class="ixir-cs-save ixir-wh-save">%24 tasarruf</span>
     </div>
-    <a class="ixir-cs-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-cs-buy ixir-wh-buy" data-pid="244" data-name="Starter" data-product="Cloud Server"
+     data-billingcycle="monthly" href="#">Satın Al</a>
     <ul class="ixir-cs-specs ixir-wh-specs">
      <li><span>İşlemci</span><b>1 Core CPU</b></li>
      <li><span>RAM boyutu</span><b>1 GB</b></li>
@@ -47,7 +49,8 @@
      <div class="ixir-cs-amount ixir-wh-amount"><b>392</b><small>TL<small>/ay</small></small></div>
      <span class="ixir-cs-save ixir-wh-save">%24 tasarruf</span>
     </div>
-    <a class="ixir-cs-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-cs-buy ixir-wh-buy" data-pid="250" data-name="Essential" data-product="Cloud Server"
+     data-billingcycle="monthly" href="#">Satın Al</a>
     <ul class="ixir-cs-specs ixir-wh-specs">
      <li><span>İşlemci</span><b>1 Core CPU</b></li>
      <li><span>RAM boyutu</span><b>2 GB</b></li>
@@ -66,7 +69,8 @@
      <div class="ixir-cs-amount ixir-wh-amount"><b>671</b><small>TL<small>/ay</small></small></div>
      <span class="ixir-cs-save ixir-wh-save">%31 tasarruf</span>
     </div>
-    <a class="ixir-cs-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-cs-buy ixir-wh-buy" data-pid="254" data-name="Advanced" data-product="Cloud Server"
+     data-billingcycle="monthly" href="#">Satın Al</a>
     <ul class="ixir-cs-specs ixir-wh-specs">
      <li><span>İşlemci</span><b>2 Core CPU</b></li>
      <li><span>RAM boyutu</span><b>4 GB</b></li>
@@ -84,7 +88,8 @@
      <div class="ixir-cs-amount ixir-wh-amount"><b>1299</b><small>TL<small>/ay</small></small></div>
      <span class="ixir-cs-save ixir-wh-save">%24 tasarruf</span>
     </div>
-    <a class="ixir-cs-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-cs-buy ixir-wh-buy" data-pid="255" data-name="Premium" data-product="Cloud Server"
+     data-billingcycle="monthly" href="#">Satın Al</a>
     <ul class="ixir-cs-specs ixir-wh-specs">
      <li><span>İşlemci</span><b>4 Core CPU</b></li>
      <li><span>RAM boyutu</span><b>4 GB</b></li>

@@ -14,7 +14,8 @@
    <div class="container">
     <header class="ixir-as-plans-head ixir-wh-plans-head">
      <div class="ixir-badge-pill ixir-ssl-badge-pill">
-      <i class="fas fa-shield-virus" aria-hidden="true"></i> ANTİSPAM LİSANSLARI</div>
+      <i class="fas fa-shield-virus" aria-hidden="true"></i> ANTİSPAM LİSANSLARI
+     </div>
      {include file="$template/components/Heading.tpl" title="AntiSpam Paketleri" id="ixir-as-plans-title" align="center"}
      <p>İhtiyacınıza uygun paketi seçin, e-postalarınızı hemen güvenceye alın.</p>
     </header>
@@ -30,9 +31,11 @@
        <span class="ixir-as-save ixir-wh-save">%30 tasarruf</span>
       </div>
       <div class="ixir-as-billing ixir-wh-billing">
-       <button type="button" class="ixir-as-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-as-bill-starter">Ödeme
+       <button type="button" class="ixir-as-billing-btn ixir-wh-billing-btn" aria-expanded="false"
+        aria-controls="ixir-as-bill-starter">Ödeme
         Planları</button>
-       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-starter" role="dialog" aria-label="Starter ödeme planı">
+       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-starter" role="dialog"
+        aria-label="Starter ödeme planı">
         <div class="ixir-as-billing-top ixir-wh-billing-top">
          <strong>Starter Planı</strong>
          <button type="button" class="ixir-as-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -61,7 +64,8 @@
         <p>* En avantajlı fiyat</p>
        </div>
       </div>
-      <a class="ixir-as-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-as-buy ixir-wh-buy" data-pid="278" data-name="Starter" data-product="AntiSpam"
+       data-billingcycle="annually" href="#">Satın Al</a>
       <ul class="ixir-as-specs ixir-wh-specs">
        <li><span>Mail Koruma Adeti</span><b>10</b></li>
        <li><span>Domain Koruma Adeti</span><b>1</b></li>
@@ -78,9 +82,11 @@
        <span class="ixir-as-save ixir-wh-save">%30 tasarruf</span>
       </div>
       <div class="ixir-as-billing ixir-wh-billing">
-       <button type="button" class="ixir-as-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-as-bill-essential">Ödeme
+       <button type="button" class="ixir-as-billing-btn ixir-wh-billing-btn" aria-expanded="false"
+        aria-controls="ixir-as-bill-essential">Ödeme
         Planları</button>
-       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-essential" role="dialog" aria-label="Essential ödeme planı">
+       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-essential" role="dialog"
+        aria-label="Essential ödeme planı">
         <div class="ixir-as-billing-top ixir-wh-billing-top">
          <strong>Essential Planı</strong>
          <button type="button" class="ixir-as-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -109,7 +115,8 @@
         <p>* En avantajlı fiyat</p>
        </div>
       </div>
-      <a class="ixir-as-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-as-buy ixir-wh-buy" data-pid="409" data-name="Essential" data-product="AntiSpam"
+       data-billingcycle="annually" href="#">Satın Al</a>
       <ul class="ixir-as-specs ixir-wh-specs">
        <li><span>Mail Koruma Adeti</span><b>30</b></li>
        <li><span>Domain Koruma Adeti</span><b>1</b></li>
@@ -129,7 +136,8 @@
       <div class="ixir-as-billing ixir-wh-billing">
        <button type="button" class="ixir-as-billing-btn ixir-wh-billing-btn" aria-expanded="false"
         aria-controls="ixir-as-bill-advanced">Ödeme Planları</button>
-       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-advanced" role="dialog" aria-label="Advanced ödeme planı">
+       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-advanced" role="dialog"
+        aria-label="Advanced ödeme planı">
         <div class="ixir-as-billing-top ixir-wh-billing-top">
          <strong>Advanced Planı</strong>
          <button type="button" class="ixir-as-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -158,7 +166,8 @@
         <p>* En avantajlı fiyat</p>
        </div>
       </div>
-      <a class="ixir-as-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-as-buy ixir-wh-buy" data-pid="279" data-name="Advanced" data-product="AntiSpam"
+       data-billingcycle="annually" href="#">Satın Al</a>
       <ul class="ixir-as-specs ixir-wh-specs">
        <li><span>Mail Koruma Adeti</span><b>100</b></li>
        <li><span>Domain Koruma Adeti</span><b>1</b></li>
@@ -175,9 +184,11 @@
        <span class="ixir-as-save ixir-wh-save">%30 tasarruf</span>
       </div>
       <div class="ixir-as-billing ixir-wh-billing">
-       <button type="button" class="ixir-as-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-as-bill-premium">Ödeme
+       <button type="button" class="ixir-as-billing-btn ixir-wh-billing-btn" aria-expanded="false"
+        aria-controls="ixir-as-bill-premium">Ödeme
         Planları</button>
-       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-premium" role="dialog" aria-label="Premium ödeme planı">
+       <div class="ixir-as-billing-pop ixir-wh-billing-pop" id="ixir-as-bill-premium" role="dialog"
+        aria-label="Premium ödeme planı">
         <div class="ixir-as-billing-top ixir-wh-billing-top">
          <strong>Premium Planı</strong>
          <button type="button" class="ixir-as-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -206,7 +217,8 @@
         <p>* En avantajlı fiyat</p>
        </div>
       </div>
-      <a class="ixir-as-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-as-buy ixir-wh-buy" data-pid="280" data-name="Premium" data-product="AntiSpam"
+       data-billingcycle="annually" href="#">Satın Al</a>
       <ul class="ixir-as-specs ixir-wh-specs">
        <li><span>Mail Koruma Adeti</span><b>500</b></li>
        <li><span>Domain Koruma Adeti</span><b>1</b></li>

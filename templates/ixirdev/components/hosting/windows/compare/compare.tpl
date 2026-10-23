@@ -1,5 +1,5 @@
- <section class="ixir-wh-compare ixir-wh-compare--dark bg-dark-blue ixir-slide ixir-slide--left is-slide-on" id="ixir-wh-compare"
-  aria-labelledby="ixir-wh-compare-title">
+ <section class="ixir-wh-compare ixir-wh-compare--dark bg-dark-blue ixir-slide ixir-slide--left is-slide-on"
+  id="ixir-wh-compare" aria-labelledby="ixir-wh-compare-title">
   <script>
    {literal}
     (function() {
@@ -13,7 +13,8 @@
   </script>
   <div class="container">
    <header class="ixir-wh-plans-head">
-    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-balance-scale" aria-hidden="true"></i> WINDOWS KARŞILAŞTIRMA</div>
+    <div class="ixir-badge-pill ixir-ssl-badge-pill"><i class="fas fa-balance-scale" aria-hidden="true"></i> WINDOWS
+     KARŞILAŞTIRMA</div>
     {include file="$template/components/Heading.tpl" title="Özellik Karşılaştırma Tablosu" id="ixir-wh-compare-title"}
     <p>Windows Hosting paketlerimiz arasından size en uygun olan seçimi yapın</p>
    </header>
@@ -491,16 +492,20 @@
      <div class="ixir-wh-table-foot">
       <div></div>
       <div>
-       <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+       <a class="ixir-wh-buy" data-pid="208" data-name="Starter" data-product="Windows Hosting"
+        data-billingcycle="triennially" href="#">Satın Al</a>
       </div>
       <div>
-       <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+       <a class="ixir-wh-buy" data-pid="209" data-name="Essential" data-product="Windows Hosting"
+        data-billingcycle="triennially" href="#">Satın Al</a>
       </div>
       <div class="is-best">
-       <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+       <a class="ixir-wh-buy" data-pid="210" data-name="Advanced" data-product="Windows Hosting"
+        data-billingcycle="triennially" href="#">Satın Al</a>
       </div>
       <div>
-       <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+       <a class="ixir-wh-buy" data-pid="325" data-name="Premium" data-product="Windows Hosting"
+        data-billingcycle="triennially" href="#">Satın Al</a>
       </div>
      </div>
     </div>

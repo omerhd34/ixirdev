@@ -512,16 +512,16 @@
     <div class="ixir-wh-table-foot">
      <div></div>
      <div>
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="428" data-name="Starter" data-product="Linux Reseller Hosting" data-billingcycle="triennially" href="#">Satın Al</a>
      </div>
      <div>
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="217" data-name="Essential" data-product="Linux Reseller Hosting" data-billingcycle="triennially" href="#">Satın Al</a>
      </div>
      <div class="is-best">
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="218" data-name="Advanced" data-product="Linux Reseller Hosting" data-billingcycle="triennially" href="#">Satın Al</a>
      </div>
      <div class="is-best">
-      <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+      <a class="ixir-wh-buy" data-pid="219" data-name="Premium" data-product="Linux Reseller Hosting" data-billingcycle="triennially" href="#">Satın Al</a>
      </div>
     </div>
    </div>

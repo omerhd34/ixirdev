@@ -62,7 +62,8 @@
        <p>* En avantajlı fiyat</p>
       </div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-wh-buy" data-pid="427" data-name="Starter" data-product="Windows Reseller Hosting"
+      data-billingcycle="triennially" href="#">Satın Al</a>
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>10<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -84,7 +85,8 @@
       <span class="ixir-wh-save">%30 tasarruf</span>
      </div>
      <div class="ixir-wh-billing">
-      <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-essential">Ödeme
+      <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
+       aria-controls="ixir-wh-bill-essential">Ödeme
        Planları</button>
       <div class="ixir-wh-billing-pop" id="ixir-wh-bill-essential" role="dialog" aria-label="Essential ödeme planı">
        <div class="ixir-wh-billing-top">
@@ -115,7 +117,8 @@
        <p>* En avantajlı fiyat</p>
       </div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-wh-buy" data-pid="214" data-name="Essential" data-product="Windows Reseller Hosting"
+      data-billingcycle="triennially" href="#">Satın Al</a>
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>20<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -140,8 +143,7 @@
      <div class="ixir-wh-billing">
       <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
        aria-controls="ixir-wh-bill-advanced">Ödeme Planları</button>
-      <div class="ixir-wh-billing-pop" id="ixir-wh-bill-advanced" role="dialog"
-       aria-label="Premium ödeme planı">
+      <div class="ixir-wh-billing-pop" id="ixir-wh-bill-advanced" role="dialog" aria-label="Premium ödeme planı">
        <div class="ixir-wh-billing-top">
         <strong>Advanced Planı</strong>
         <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -170,7 +172,8 @@
        <p>* En avantajlı fiyat</p>
       </div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-wh-buy" data-pid="215" data-name="Advanced" data-product="Windows Reseller Hosting"
+      data-billingcycle="triennially" href="#">Satın Al</a>
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>50<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -225,12 +228,14 @@
        <p>* En avantajlı fiyat</p>
       </div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-wh-buy" data-pid="216" data-name="Premium" data-product="Windows Reseller Hosting"
+      data-billingcycle="triennially" href="#">Satın Al</a>
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>100<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
           class="ixir-wh-tip-box" role="tooltip">100 Adet Web Sitesi, bayi hosting paketinizde 100 adet domain
           barındırabileceğinizi ifade eder.</span></span></b></li>
+      <li><span>Site Başına I/O Limiti(MB)</span><b>30</b></li>
      </ul>
      <a class="ixir-wh-more" href="#ixir-wh-compare">Diğer Özellikleri Gör <i class="fas fa-chevron-down"
        aria-hidden="true"></i></a>

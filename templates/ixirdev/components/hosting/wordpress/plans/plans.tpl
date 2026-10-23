@@ -14,7 +14,8 @@
   <div class="container">
    <header class="ixir-wh-plans-head">
     <div class="ixir-badge-pill ixir-ssl-badge-pill">
-     <i class="fab fa-wordpress" aria-hidden="true"></i> WORDPRESS PAKETLERİ</div>
+     <i class="fab fa-wordpress" aria-hidden="true"></i> WORDPRESS PAKETLERİ
+    </div>
     {include file="$template/components/Heading.tpl" title="WordPress Hosting Paketleri" id="ixir-wh-plans-title" align="center"}
     <p>İhtiyacınıza uygun paketi seçin, sitenizi hemen yayına alın.</p>
    </header>
@@ -66,7 +67,8 @@
        <p>* En avantajlı fiyat</p>
       </div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-wh-buy" data-pid="287" data-name="Starter" data-product="WordPress Hosting"
+      data-billingcycle="triennially" href="#">Satın Al</a>
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>1<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -137,7 +139,8 @@
        <p>* En avantajlı fiyat</p>
       </div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-wh-buy" data-pid="288" data-name="Growth" data-product="WordPress Hosting"
+      data-billingcycle="triennially" href="#">Satın Al</a>
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>3<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -183,8 +186,7 @@
      <div class="ixir-wh-billing">
       <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
        aria-controls="ixir-wh-bill-advanced">Ödeme Planları</button>
-      <div class="ixir-wh-billing-pop" id="ixir-wh-bill-advanced" role="dialog"
-       aria-label="Advanced ödeme planı">
+      <div class="ixir-wh-billing-pop" id="ixir-wh-bill-advanced" role="dialog" aria-label="Advanced ödeme planı">
        <div class="ixir-wh-billing-top">
         <strong>Advanced Planı</strong>
         <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -218,7 +220,8 @@
        <p>* En avantajlı fiyat</p>
       </div>
      </div>
-     <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+     <a class="ixir-wh-buy" data-pid="289" data-name="Advanced" data-product="WordPress Hosting"
+      data-billingcycle="triennially" href="#">Satın Al</a>
      <ul class="ixir-wh-specs">
       <li><span>Web sitesi adeti</span><b>5<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
           aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -305,7 +308,8 @@
      <li><i class="fas fa-th-large" aria-hidden="true"></i>cPanel Kontrol Paneli</li>
     </ul>
     <div class="ixir-wh-shared-more">
-     <button type="button" class="ixir-wh-shared-more-btn" aria-controls="ixir-wh-wordpress-shared" aria-expanded="false">
+     <button type="button" class="ixir-wh-shared-more-btn" aria-controls="ixir-wh-wordpress-shared"
+      aria-expanded="false">
       <span class="ixir-wh-shared-more-text">Diğer Özellikler</span>
       <span class="ixir-wh-shared-more-count">+1</span>
       <i class="fas fa-chevron-down" aria-hidden="true"></i>

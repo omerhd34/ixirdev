@@ -72,7 +72,7 @@
   <div
    class="ixir-mobile-auth{if $loggedin} is-loggedin{elseif !$condlinks.allowClientRegistration} is-login-only{/if}">
    {if $loggedin}
-    <a href="{$WEB_ROOT}/musteri-paneli" class="ixir-mobile-auth-btn ixir-mobile-auth-btn--account">
+    <a href="{$WEB_ROOT}/musteri-paneli#genel-bakis" class="ixir-mobile-auth-btn ixir-mobile-auth-btn--account">
      <i class="fas fa-user"></i>
      <span>
       <strong>Hesabım</strong>

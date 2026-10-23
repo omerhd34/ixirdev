@@ -1,5 +1,5 @@
 <section class="ixir-wh-plans ixir-slide ixir-slide--right is-slide-on" id="ixir-wh-plans"
- aria-labelledby="ixir-wh-plans-title">
+ aria-labelledby="ixir-wh-plans-title" data-cart-add="{$WEB_ROOT}/templates/{$template}/cart-add.php">
  <script>
   {literal}
    (function() {
@@ -14,7 +14,8 @@
  <div class="container">
   <header class="ixir-wh-plans-head">
    <div class="ixir-badge-pill ixir-ssl-badge-pill">
-    <i class="fas fa-code" aria-hidden="true"></i> DEVELOPER PAKETLERİ</div>
+    <i class="fas fa-code" aria-hidden="true"></i> DEVELOPER PAKETLERİ
+   </div>
    {include file="$template/components/Heading.tpl" title="Developer Hosting Paketleri" id="ixir-wh-plans-title" align="center"}
    <p>İhtiyacınıza uygun paketi seçin, sitenizi hemen yayına alın.</p>
   </header>
@@ -66,7 +67,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="363" data-name="Starter" data-billingcycle="triennially"
+     href="#ixir-wh-plans">Satın Al</a>
     <ul class="ixir-wh-specs">
      <li><span>Web sitesi adeti</span><b>1<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -105,7 +107,8 @@
      <span class="ixir-wh-save">%50 tasarruf</span>
     </div>
     <div class="ixir-wh-billing">
-     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-essential">Ödeme
+     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
+      aria-controls="ixir-wh-bill-essential">Ödeme
       Planları</button>
      <div class="ixir-wh-billing-pop" id="ixir-wh-bill-essential" role="dialog" aria-label="Essential ödeme planı">
       <div class="ixir-wh-billing-top">
@@ -141,7 +144,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="364" data-name="Essential" data-billingcycle="triennially"
+     href="#ixir-wh-plans">Satın Al</a>
     <ul class="ixir-wh-specs">
      <li><span>Web sitesi adeti</span><b>3<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -194,8 +198,8 @@
      <span class="ixir-wh-save">%50 tasarruf</span>
     </div>
     <div class="ixir-wh-billing">
-     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
-      aria-controls="ixir-wh-bill-advanced">Ödeme Planları</button>
+     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-advanced">Ödeme
+      Planları</button>
      <div class="ixir-wh-billing-pop" id="ixir-wh-bill-advanced" role="dialog" aria-label="Advanced ödeme planı">
       <div class="ixir-wh-billing-top">
        <strong>Advanced Planı</strong>
@@ -230,7 +234,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="365" data-name="Advanced" data-billingcycle="triennially"
+     href="#ixir-wh-plans">Satın Al</a>
     <ul class="ixir-wh-specs">
      <li><span>Web sitesi adeti</span><b>10<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -317,7 +322,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="366" data-name="Premium" data-billingcycle="triennially"
+     href="#ixir-wh-plans">Satın Al</a>
     <ul class="ixir-wh-specs">
      <li><span>Web sitesi adeti</span><b>Limitsiz<span class="ixir-wh-tip"><button type="button" class="ixir-wh-tip-btn"
          aria-label="Web sitesi açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
@@ -408,12 +414,12 @@
     <li><i class="fas fa-th-large" aria-hidden="true"></i>cPanel Kontrol Paneli</li>
    </ul>
    <div class="ixir-wh-shared-more">
-     <button type="button" class="ixir-wh-shared-more-btn" aria-controls="ixir-wh-shared-list" aria-expanded="false">
-      <span class="ixir-wh-shared-more-text">Diğer Özellikler</span>
-      <span class="ixir-wh-shared-more-count">+2</span>
-      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-     </button>
-    </div>
+    <button type="button" class="ixir-wh-shared-more-btn" aria-controls="ixir-wh-shared-list" aria-expanded="false">
+     <span class="ixir-wh-shared-more-text">Diğer Özellikler</span>
+     <span class="ixir-wh-shared-more-count">+2</span>
+     <i class="fas fa-chevron-down" aria-hidden="true"></i>
+    </button>
+   </div>
   </div>
  </div>
 </section>

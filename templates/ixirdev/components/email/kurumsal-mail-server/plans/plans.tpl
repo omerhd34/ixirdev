@@ -1,9 +1,10 @@
-<section class="ixir-kms-plans ixir-wh-plans ixir-mail-plans ixir-slide ixir-slide--right is-slide-on" id="ixir-mail-plans"
- aria-labelledby="ixir-mail-plans-title">
+<section class="ixir-kms-plans ixir-wh-plans ixir-mail-plans ixir-slide ixir-slide--right is-slide-on"
+ id="ixir-mail-plans" aria-labelledby="ixir-mail-plans-title">
  <script>
   {literal}
    (function() {
-    var root = document.getElementById('ixir-kms-plans') || document.getElementById('ixir-mail-plans') || document.getElementById('ixir-wh-plans') || document.querySelector('.ixir-kms-plans, .ixir-mail-plans, .ixir-wh-plans');
+    var root = document.getElementById('ixir-kms-plans') || document.getElementById('ixir-mail-plans') || document
+     .getElementById('ixir-wh-plans') || document.querySelector('.ixir-kms-plans, .ixir-mail-plans, .ixir-wh-plans');
     if (!root || !window.IntersectionObserver) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     if (window.matchMedia && window.matchMedia('(max-width: 1024px)').matches) return;
@@ -14,7 +15,8 @@
  <div class="container">
   <header class="ixir-kms-plans-head ixir-wh-plans-head ixir-mail-plans-head">
    <div class="ixir-badge-pill ixir-ssl-badge-pill">
-    <i class="fas fa-mail-bulk" aria-hidden="true"></i> SUNUCU PAKETLERİ</div>
+    <i class="fas fa-mail-bulk" aria-hidden="true"></i> SUNUCU PAKETLERİ
+   </div>
    {include file="$template/components/Heading.tpl" title="Kurumsal Mail Server Paketleri" id="ixir-mail-plans-title" align="center"}
    <p>İhtiyacınıza uygun paketi seçin.</p>
   </header>
@@ -29,9 +31,11 @@
      <span class="ixir-kms-save ixir-wh-save">%30 tasarruf</span>
     </div>
     <div class="ixir-kms-billing ixir-wh-billing">
-     <button type="button" class="ixir-kms-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-starter">Ödeme
+     <button type="button" class="ixir-kms-billing-btn ixir-wh-billing-btn" aria-expanded="false"
+      aria-controls="ixir-wh-bill-starter">Ödeme
       Planları</button>
-     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-starter" role="dialog" aria-label="Starter ödeme planı">
+     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-starter" role="dialog"
+      aria-label="Starter ödeme planı">
       <div class="ixir-kms-billing-top ixir-wh-billing-top">
        <strong>Starter</strong>
        <button type="button" class="ixir-kms-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -60,7 +64,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-kms-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-kms-buy ixir-wh-buy" data-pid="284" data-name="Starter" data-product="Kurumsal Mail Server"
+     data-billingcycle="annually" href="#">Satın Al</a>
     <div class="ixir-kms-quota ixir-wh-quota">
      <div><i class="fas fa-microchip" aria-hidden="true"></i><span>CPU</span><b>2 Core</b></div>
      <div><i class="fas fa-memory" aria-hidden="true"></i><span>RAM(GB)</span><b>4</b></div>
@@ -82,7 +87,8 @@
      <button type="button" class="ixir-kms-billing-btn ixir-wh-billing-btn" aria-expanded="false"
       aria-controls="ixir-wh-bill-essential">Ödeme
       Planları</button>
-     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-essential" role="dialog" aria-label="Essential ödeme planı">
+     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-essential" role="dialog"
+      aria-label="Essential ödeme planı">
       <div class="ixir-kms-billing-top ixir-wh-billing-top">
        <strong>Essential</strong>
        <button type="button" class="ixir-kms-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -111,7 +117,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-kms-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-kms-buy ixir-wh-buy" data-pid="285" data-name="Essential" data-product="Kurumsal Mail Server"
+     data-billingcycle="annually" href="#">Satın Al</a>
     <div class="ixir-kms-quota ixir-wh-quota">
      <div><i class="fas fa-microchip" aria-hidden="true"></i><span>CPU</span><b>4 Core</b></div>
      <div><i class="fas fa-memory" aria-hidden="true"></i><span>RAM(GB)</span><b>6</b></div>
@@ -129,9 +136,11 @@
      <span class="ixir-kms-save ixir-wh-save">%30 tasarruf</span>
     </div>
     <div class="ixir-kms-billing ixir-wh-billing">
-     <button type="button" class="ixir-kms-billing-btn ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-advanced">Ödeme
+     <button type="button" class="ixir-kms-billing-btn ixir-wh-billing-btn" aria-expanded="false"
+      aria-controls="ixir-wh-bill-advanced">Ödeme
       Planları</button>
-     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-advanced" role="dialog" aria-label="Advanced ödeme planı">
+     <div class="ixir-kms-billing-pop ixir-wh-billing-pop" id="ixir-wh-bill-advanced" role="dialog"
+      aria-label="Advanced ödeme planı">
       <div class="ixir-kms-billing-top ixir-wh-billing-top">
        <strong>Advanced Planı</strong>
        <button type="button" class="ixir-kms-billing-close ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -160,7 +169,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-kms-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-kms-buy ixir-wh-buy" data-pid="286" data-name="Advanced" data-product="Kurumsal Mail Server"
+     data-billingcycle="annually" href="#">Satın Al</a>
     <div class="ixir-kms-quota ixir-wh-quota">
      <div><i class="fas fa-microchip" aria-hidden="true"></i><span>CPU</span><b>6 Core</b></div>
      <div><i class="fas fa-memory" aria-hidden="true"></i><span>RAM(GB)</span><b>8</b></div>
@@ -211,7 +221,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-kms-buy ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-kms-buy ixir-wh-buy" data-pid="420" data-name="Premium" data-product="Kurumsal Mail Server"
+     data-billingcycle="annually" href="#">Satın Al</a>
     <div class="ixir-kms-quota ixir-wh-quota">
      <div><i class="fas fa-microchip" aria-hidden="true"></i><span>CPU</span><b>8 Core</b></div>
      <div><i class="fas fa-memory" aria-hidden="true"></i><span>RAM(GB)</span><b>16</b></div>
@@ -225,25 +236,34 @@
     <p class="ixir-kms-shared-label ixir-wh-shared-label">Tüm paketlerde ortak bulunan özellikler</p>
     <span>Hangi paketi seçerseniz seçin, aşağıdaki özelliklerin tamamı dahildir.</span>
    </div>
-   <ul class="ixir-kms-shared ixir-wh-shared ixir-kms-shared--5 ixir-wh-shared--5 ixir-kms-shared--click ixir-wh-shared--click" id="ixir-km-shared" data-visible="10">
-    <li><i class="fas fa-globe" aria-hidden="true"></i>Sınırsız Domain Barındırma<span class="ixir-kms-tip ixir-wh-tip"><button
-       type="button" class="ixir-kms-tip-btn ixir-wh-tip-btn" aria-label="Sınırsız Domain Barındırma açıklaması"><i class="fas fa-info-circle"
-        aria-hidden="true"></i></button><span class="ixir-kms-tip-box ixir-wh-tip-box" role="tooltip">İstediğiniz kadar domain ile mail oluşturun.</span></span></li>
-    <li><i class="fas fa-shield-alt" aria-hidden="true"></i>%100 KVKK Uyumlu<span class="ixir-kms-tip ixir-wh-tip"><button
-       type="button" class="ixir-kms-tip-btn ixir-wh-tip-btn" aria-label="%100 KVKK Uyumlu açıklaması"><i class="fas fa-info-circle"
-        aria-hidden="true"></i></button><span class="ixir-kms-tip-box ixir-wh-tip-box" role="tooltip">Tüm yasal mevzuata tam uyumluluk</span></span></li>
-    <li><i class="fas fa-calendar-alt" aria-hidden="true"></i>Paylaşımlı Takvim<span class="ixir-kms-tip ixir-wh-tip"><button
-       type="button" class="ixir-kms-tip-btn ixir-wh-tip-btn" aria-label="Paylaşımlı Takvim açıklaması"><i class="fas fa-info-circle"
-        aria-hidden="true"></i></button><span class="ixir-kms-tip-box ixir-wh-tip-box" role="tooltip">Ekip iş birliği ve randevu yönetimi</span></span></li>
-    <li><i class="fas fa-user-shield" aria-hidden="true"></i>Gelişmiş Güvenlik<span class="ixir-kms-tip ixir-wh-tip"><button
-       type="button" class="ixir-kms-tip-btn ixir-wh-tip-btn" aria-label="Gelişmiş Güvenlik açıklaması"><i class="fas fa-info-circle"
-        aria-hidden="true"></i></button><span class="ixir-kms-tip-box ixir-wh-tip-box" role="tooltip">Anti-Spam ve Anti-Virüs koruması</span></span></li>
-    <li><i class="fas fa-network-wired" aria-hidden="true"></i>Dedicated IP<span class="ixir-kms-tip ixir-wh-tip"><button
-       type="button" class="ixir-kms-tip-btn ixir-wh-tip-btn" aria-label="Dedicated IP açıklaması"><i class="fas fa-info-circle"
-        aria-hidden="true"></i></button><span class="ixir-kms-tip-box ixir-wh-tip-box" role="tooltip">Size özel IP — mail itibarınız güvende</span></span></li>
-    <li><i class="fas fa-certificate" aria-hidden="true"></i>DKIM / SPF / DMARC<span class="ixir-kms-tip ixir-wh-tip"><button
-       type="button" class="ixir-kms-tip-btn ixir-wh-tip-btn" aria-label="DKIM / SPF / DMARC açıklaması"><i
-        class="fas fa-info-circle" aria-hidden="true"></i></button><span class="ixir-kms-tip-box ixir-wh-tip-box" role="tooltip">E-posta kimlik doğrulama kurulum dahil</span></span></li>
+   <ul
+    class="ixir-kms-shared ixir-wh-shared ixir-kms-shared--5 ixir-wh-shared--5 ixir-kms-shared--click ixir-wh-shared--click"
+    id="ixir-km-shared" data-visible="10">
+    <li><i class="fas fa-globe" aria-hidden="true"></i>Sınırsız Domain Barındırma<span
+      class="ixir-kms-tip ixir-wh-tip"><button type="button" class="ixir-kms-tip-btn ixir-wh-tip-btn"
+       aria-label="Sınırsız Domain Barındırma açıklaması"><i class="fas fa-info-circle"
+        aria-hidden="true"></i></button><span class="ixir-kms-tip-box ixir-wh-tip-box" role="tooltip">İstediğiniz kadar
+       domain ile mail oluşturun.</span></span></li>
+    <li><i class="fas fa-shield-alt" aria-hidden="true"></i>%100 KVKK Uyumlu<span
+      class="ixir-kms-tip ixir-wh-tip"><button type="button" class="ixir-kms-tip-btn ixir-wh-tip-btn"
+       aria-label="%100 KVKK Uyumlu açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
+       class="ixir-kms-tip-box ixir-wh-tip-box" role="tooltip">Tüm yasal mevzuata tam uyumluluk</span></span></li>
+    <li><i class="fas fa-calendar-alt" aria-hidden="true"></i>Paylaşımlı Takvim<span
+      class="ixir-kms-tip ixir-wh-tip"><button type="button" class="ixir-kms-tip-btn ixir-wh-tip-btn"
+       aria-label="Paylaşımlı Takvim açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
+       class="ixir-kms-tip-box ixir-wh-tip-box" role="tooltip">Ekip iş birliği ve randevu yönetimi</span></span></li>
+    <li><i class="fas fa-user-shield" aria-hidden="true"></i>Gelişmiş Güvenlik<span
+      class="ixir-kms-tip ixir-wh-tip"><button type="button" class="ixir-kms-tip-btn ixir-wh-tip-btn"
+       aria-label="Gelişmiş Güvenlik açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
+       class="ixir-kms-tip-box ixir-wh-tip-box" role="tooltip">Anti-Spam ve Anti-Virüs koruması</span></span></li>
+    <li><i class="fas fa-network-wired" aria-hidden="true"></i>Dedicated IP<span
+      class="ixir-kms-tip ixir-wh-tip"><button type="button" class="ixir-kms-tip-btn ixir-wh-tip-btn"
+       aria-label="Dedicated IP açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
+       class="ixir-kms-tip-box ixir-wh-tip-box" role="tooltip">Size özel IP — mail itibarınız güvende</span></span></li>
+    <li><i class="fas fa-certificate" aria-hidden="true"></i>DKIM / SPF / DMARC<span
+      class="ixir-kms-tip ixir-wh-tip"><button type="button" class="ixir-kms-tip-btn ixir-wh-tip-btn"
+       aria-label="DKIM / SPF / DMARC açıklaması"><i class="fas fa-info-circle" aria-hidden="true"></i></button><span
+       class="ixir-kms-tip-box ixir-wh-tip-box" role="tooltip">E-posta kimlik doğrulama kurulum dahil</span></span></li>
     <li><i class="fas fa-envelope-open-text" aria-hidden="true"></i>Sınırsız E-Posta Hesabı</li>
     <li><i class="fas fa-paper-plane" aria-hidden="true"></i>Sınırsız Gönderim Kotası</li>
     <li><i class="fas fa-sync-alt" aria-hidden="true"></i>POP/IMAP/SMTP</li>

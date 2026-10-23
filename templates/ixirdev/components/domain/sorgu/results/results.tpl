@@ -35,10 +35,10 @@
        <span class="domain-price">
         <span class="price"></span>
         <button type="button" class="btn btn-primary btn-add-to-cart" data-whois="0" data-domain="">
-         <span class="to-add">Sepete Ekle</span>
+         <span class="to-add"><i class="fas fa-shopping-cart" aria-hidden="true"></i>Sepete Ekle</span>
          <span class="loading"><i class="fas fa-spinner fa-spin"></i> {lang key='loading'}</span>
          <span class="added"><i class="far fa-shopping-cart"></i> {lang key='domaincheckeradded'}</span>
-         <span class="unavailable">{$LANG.domaincheckertaken}</span>
+         <span class="unavailable"><i class="fas fa-times" aria-hidden="true"></i>{$LANG.domaincheckertaken}</span>
         </button>
        </span>
       </span>
@@ -63,21 +63,7 @@
     </div>
    </div>
 
-   {assign var="ixirSpotList" value=$ixirSpotlightTlds}
-   {if !$ixirSpotList}
-    {assign var="ixirSpotList" value=[
-                                                                                                                              ['tldNoDots'=>'com','tld'=>'.com','register'=>'615.00'],
-                                                                                                                              ['tldNoDots'=>'net','tld'=>'.net','register'=>'655.00'],
-                                                                                                                              ['tldNoDots'=>'comtr','tld'=>'.com.tr','register'=>'150.00'],
-                                                                                                                              ['tldNoDots'=>'nettr','tld'=>'.net.tr','register'=>'150.00'],
-                                                                                                                              ['tldNoDots'=>'tr','tld'=>'.tr','register'=>'200.00'],
-                                                                                                                              ['tldNoDots'=>'xyz','tld'=>'.xyz','register'=>'125.00'],
-                                                                                                                              ['tldNoDots'=>'info','tld'=>'.info','register'=>'220.00'],
-                                                                                                                              ['tldNoDots'=>'pro','tld'=>'.pro','register'=>'200.00'],
-                                                                                                                              ['tldNoDots'=>'org','tld'=>'.org','register'=>'555.00'],
-                                                                                                                              ['tldNoDots'=>'work','tld'=>'.work','register'=>'150.00']
-                                                                                                                            ]}
-   {/if}
+   {assign var="ixirSpotList" value=$ixirSpotlightTlds|default:[]}
    <div id="spotlightTlds" class="ixir-spotlights spotlight-tlds clearfix">
     <div class="spotlight-tlds-container">
      {foreach $ixirSpotList as $data}
@@ -91,13 +77,15 @@
          <span class="available price" data-fallback="{$data.register|escape:'html'}">{$data.register}</span>
          <div class="ixir-spot-action">
           <button type="button" class="btn btn-add-to-cart w-hidden" data-whois="0" data-domain="">
-           <span class="to-add">Ekle</span>
+           <span class="to-add"><i class="fas fa-shopping-cart" aria-hidden="true"></i>Sepete Ekle</span>
            <span class="loading"><i class="fas fa-spinner fa-spin"></i> {lang key='loading'}</span>
            <span class="added">{lang key='domaincheckeradded'}</span>
-           <span class="unavailable">{$LANG.domaincheckertaken}</span>
+           <span class="unavailable"><i class="fas fa-times" aria-hidden="true"></i>{$LANG.domaincheckertaken}</span>
           </button>
-          <button type="button" class="btn unavailable w-hidden" disabled="disabled">Uygun değil</button>
-          <button type="button" class="btn invalid w-hidden" disabled="disabled">Uygun değil</button>
+          <button type="button" class="btn unavailable w-hidden" disabled="disabled"><i class="fas fa-times"
+            aria-hidden="true"></i>Uygun değil</button>
+          <button type="button" class="btn invalid w-hidden" disabled="disabled"><i class="fas fa-times"
+            aria-hidden="true"></i>Uygun değil</button>
          </div>
         </div>
        </div>
@@ -127,10 +115,10 @@
       <div class="actions">
        <span class="price"></span>
        <button type="button" class="btn btn-add-to-cart" data-whois="1" data-domain="">
-        <span class="to-add">Sepete Ekle</span>
+        <span class="to-add"><i class="fas fa-shopping-cart" aria-hidden="true"></i>Sepete Ekle</span>
         <span class="loading"><i class="fas fa-spinner fa-spin"></i> {lang key='loading'}</span>
         <span class="added"><i class="far fa-shopping-cart"></i> {lang key='domaincheckeradded'}</span>
-        <span class="unavailable">{$LANG.domaincheckertaken}</span>
+        <span class="unavailable"><i class="fas fa-times" aria-hidden="true"></i>{$LANG.domaincheckertaken}</span>
        </button>
        <button type="button" class="btn btn-primary domain-contact-support w-hidden">
         {lang key='domainChecker.contactSupport'}

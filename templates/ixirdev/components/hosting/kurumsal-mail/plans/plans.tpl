@@ -14,7 +14,8 @@
  <div class="container">
   <header class="ixir-wh-plans-head">
    <div class="ixir-badge-pill ixir-ssl-badge-pill">
-    <i class="fas fa-envelope-open-text" aria-hidden="true"></i> E-POSTA PAKETLERİ</div>
+    <i class="fas fa-envelope-open-text" aria-hidden="true"></i> E-POSTA PAKETLERİ
+   </div>
    {include file="$template/components/Heading.tpl" title="Kurumsal Mail Hosting Paketleri" id="ixir-wh-plans-title" align="center"}
    <p>İhtiyacınıza uygun paketi seçin.</p>
   </header>
@@ -60,7 +61,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="373" data-name="Starter" data-product="Kurumsal Mail Hosting"
+     data-billingcycle="annually" href="#">Satın Al</a>
     <div class="ixir-wh-quota">
      <div><i class="fas fa-hdd" aria-hidden="true"></i><span>Disk Alanı</span><b>100 GB</b></div>
      <div><i class="fas fa-envelope" aria-hidden="true"></i><span>E-posta Sayısı</span><b>10 Adet</b></div>
@@ -108,7 +110,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="410" data-name="Essential" data-product="Kurumsal Mail Hosting"
+     data-billingcycle="annually" href="#">Satın Al</a>
     <div class="ixir-wh-quota">
      <div><i class="fas fa-hdd" aria-hidden="true"></i><span>Disk Alanı</span><b>200 GB</b></div>
      <div><i class="fas fa-envelope" aria-hidden="true"></i><span>E-posta Sayısı</span><b>30 Adet</b></div>
@@ -156,7 +159,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="374" data-name="Advanced" data-product="Kurumsal Mail Hosting"
+     data-billingcycle="annually" href="#">Satın Al</a>
     <div class="ixir-wh-quota">
      <div><i class="fas fa-hdd" aria-hidden="true"></i><span>Disk Alanı</span><b>300 GB</b></div>
      <div><i class="fas fa-envelope" aria-hidden="true"></i><span>E-posta Sayısı</span><b>100 Adet</b></div>
@@ -172,11 +176,9 @@
      <span class="ixir-wh-save">%30 tasarruf</span>
     </div>
     <div class="ixir-wh-billing">
-     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false"
-      aria-controls="ixir-wh-bill-premium">Ödeme
+     <button type="button" class="ixir-wh-billing-btn" aria-expanded="false" aria-controls="ixir-wh-bill-premium">Ödeme
       Planları</button>
-     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-premium" role="dialog"
-      aria-label="Premium ödeme planı">
+     <div class="ixir-wh-billing-pop" id="ixir-wh-bill-premium" role="dialog" aria-label="Premium ödeme planı">
       <div class="ixir-wh-billing-top">
        <strong>Premium Planı</strong>
        <button type="button" class="ixir-wh-billing-close" aria-label="Kapat">&times;</button>
@@ -205,7 +207,8 @@
       <p>* En avantajlı fiyat</p>
      </div>
     </div>
-    <a class="ixir-wh-buy" href="{$WEB_ROOT}/sepet">Satın Al</a>
+    <a class="ixir-wh-buy" data-pid="375" data-name="Premium" data-product="Kurumsal Mail Hosting"
+     data-billingcycle="annually" href="#">Satın Al</a>
     <div class="ixir-wh-quota">
      <div><i class="fas fa-hdd" aria-hidden="true"></i><span>Disk Alanı</span><b>500 GB</b></div>
      <div><i class="fas fa-envelope" aria-hidden="true"></i><span>E-posta Sayısı</span><b>300 Adet</b></div>
